@@ -1,7 +1,0 @@
-Hello world!
-My name is Fiyin Gabriel.
-
-My goal for this programme is to
-1. Learn how software development works.
-2. Create some  functional web applications.
-3. Make at least 5 apps using software development.
