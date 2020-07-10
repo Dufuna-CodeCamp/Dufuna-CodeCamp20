@@ -1,0 +1,3 @@
+Hello world
+My name is Edeh John am a boy.
+I have been able to push my first task to github
