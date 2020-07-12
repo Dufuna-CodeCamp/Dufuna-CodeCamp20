@@ -1,4 +1,0 @@
-Hello World!
-My name is Michael Olubajo.
-
-I have been able to push my first task to github.
