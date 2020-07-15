@@ -1,3 +1,0 @@
-Hello world!
-My Name is Aderonke Odebunmi.
-I have been able to puch my first task to Github.
