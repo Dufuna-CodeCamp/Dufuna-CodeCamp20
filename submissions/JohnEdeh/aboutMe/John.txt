@@ -1,0 +1,4 @@
+Hello world
+My name is Edeh John.
+I have been able to push my first task to github.
+at the end of the course, I should be able to understand both practically and otherwise software engineering and be able to to become one and made some professional swap.
