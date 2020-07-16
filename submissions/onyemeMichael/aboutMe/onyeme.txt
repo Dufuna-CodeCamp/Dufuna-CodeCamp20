@@ -1,0 +1,8 @@
+Hello world!
+My name is Onyeme Michael.
+By the end of this training, I want to have achieved the following:
+
+1. Learn how software development works.
+2. Create some fully functional web applications.
+3. Solve at least three(3) real world problems around me using software development.
+4. Ultimately becoming a Software Engineer.
