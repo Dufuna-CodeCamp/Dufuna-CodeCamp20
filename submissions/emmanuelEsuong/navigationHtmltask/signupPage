@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <nav><pre>
+
+        <a href="signUp_page.html">SignUp</a>
+
+        <a href="productPage.html">Product List</a>
+
+        <a href="contactForm.html">Contact Us</a>
+
+    </nav></pre>
+
+    <br>
+
+    <h1>SignUp:</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>SignUp</legend><br> 
+            
+            <!--Name-->
+                <label for="username">Username:</label>  
+                <input type="text" name="username" id="username" /><br><br>
+
+                <label for="firstname">First Name:</label>  
+                <input type="text" name="firstname" id="firstname" /><br><br>
+
+                <label for="lastname">Last Name:</label>  
+                <input type="text" name="lastname" id="lastname" /><br><br>
+
+
+            <!--Email-->
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" /><br><br>
+
+                
+                <label for="number">Phone Number</label> 
+                <input type="text" name="number" id="number" /><br><br>
+
+            <!--Contact Adress-->
+                <label for="address">Contact Address</label> 
+                <input type="text" name="address" id="address" placeholder="street name, house/apartment number" /><br><br>
+
+            <!--Shipping Adress-->
+                <label for="shippingaddress">Shipping Address</label> 
+                <input type="text" name="address" id="address" placeholder="street name, house/apartment number" /><br><br>
+                
+            <!--City-->  
+            <label>City:</label>
+            <input list="city" id="city" name="cityy">  
+                <datalist id="City">
+                    <option value="Lagos"/> 
+                    <option value="Ibadan"/> 
+                    <option value="Abeokuta"/> 
+                    <option value="Calabar"/>
+                    <option value="Porthacourt"/>
+                </datalist><br><br>
+
+            <!--Gender-->
+                <label for="Male">Gender:</label><br><br>
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="male">Male</label> <br><br>
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="female">Female</label> <br><br>
+            
+            <!--Password-->
+                <label>Password:</label>
+                <input type="password" name="password" /> <br><br>
+
+            <!--Password-->
+                <label>Confirm Password:</label>
+                <input type="password" name="password" placeholder="repeat password" /> <br><br>
+            
+            <!--T/C consent-->
+                <label for="terms">I accept the terms and conditions:</label>
+                <input type="radio" name="terms" value="Yes" id="yes">
+                <label for="yes">Yes</label> <br><br>
+
+            <!--html button: submit-->
+                <button type="submit">SignUp</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
