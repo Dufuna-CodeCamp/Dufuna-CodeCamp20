@@ -1,0 +1,3 @@
+my name is ejike iweriebor
+this is supposed to be my first pull request
+i hope to know a lot about software development by the end of this program
