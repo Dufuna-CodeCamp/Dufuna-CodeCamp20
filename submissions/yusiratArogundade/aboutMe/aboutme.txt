@@ -1,0 +1,6 @@
+Hello world
+My name is Yusirat Arogundade
+ ---What I plan to achieve at the end of this program---
+1.	To create an online e-commerce for a Fashion Store
+2.	To solve real life problem with the aid of software
+3.	To become a full stack developer
