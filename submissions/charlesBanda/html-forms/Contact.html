@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Msika/Contact-us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Contact form</legend>
+
+      <label for="firstname">Firstname</label><br>
+      <input type="text" name="firstname" id="firstname"><br>
+      <label for="lastname">Lastname</label><br>
+      <input type="text" name="lastname" id="Lastname"><br>
+      <label for="Email">Email</label><br>
+      <input type="email" name="Email Address" id="email" placeholder="Enter your email address"><br>
+      <label for="">What's this about?</label><br>
+      <input list="enquiry-options" name="enquiry" id="enquiry">
+      <datalist id="enquiry-options">
+        <option value="Product description"/>
+        <option value="Delivery Time"/>
+        <option value="Return Policy"/>
+        <option value="Product cost"/>
+        <option value="Money Back Procedure"/>
+        <option value="Payment options"/>
+        <option value="Item Available?" selected/>
+        <option value="Other"/>
+      </datalist>
+      <br><br>
+        <input type="text" name="Product ID" placeholder="Enter Product #"><br><br>
+      <textarea rows="10" cols="50" placeholder="Go ahead, we are listening...."></textarea><br>
+      <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+  </body>
+  <footer>&copy; 2020 Msika.com</footer>
+</html>
