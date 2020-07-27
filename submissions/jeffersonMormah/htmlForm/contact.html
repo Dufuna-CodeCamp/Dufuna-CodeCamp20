@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact Form Page
+        </title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Ebekel Contact Form</h1>
+        <form>
+        <label for="fullName">Full Name</label>
+        <br/>
+        <input type="text" name="FullName" id="FullName"/>
+        <br/>
+        <label for="Email">Email</label>
+        <br/>
+        <input type="email" name="email" id="email" placeholder="Enter your email address"/>
+        <br/>
+        <label for="subject">Subject</label>
+        <br/>
+        <select name="subject" id="subject">
+            <option value="please select">Please Select</option>
+            <option value="software development">Software development</option>
+            <option value="introduction to git">Introduction to Git</option>
+            <option value="introduction to html">Introduction to HTML</option>
+            <option value="html forms">HTML Forms</option>
+        </select>
+        <br/>
+        Message:<br/>
+        <textarea rows="5" cols="30" name="message">
+
+        </textarea>
+        <br/>
+        <input type="submit" name="submit" value="submit"/>
+        </form>
+    </body>
+</html>
