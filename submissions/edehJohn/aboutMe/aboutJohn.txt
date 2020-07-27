@@ -1,4 +1,4 @@
 Hello world
 My name is Edeh John.
-I have been able to push my first task to github; though with little stress.
+I have been able to push my first task to github; though with little stress and peristance.
 at the end of the course, I should be able to understand both practically and otherwise software engineering and be able to create an app that will help solve laboratory analysis and data management. And also never to give up in any task giving until it is accommplished even when it looks complicated.
