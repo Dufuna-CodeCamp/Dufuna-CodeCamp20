@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-I seek to effectively design websites and applications. Use my coding knowledge to improve FinTech in Africa. 
-=======
 fintech
->>>>>>> master
