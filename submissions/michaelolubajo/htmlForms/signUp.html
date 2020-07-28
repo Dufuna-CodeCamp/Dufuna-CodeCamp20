@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Contact Us Page</title>
+	<title>Sign Up Page</title>
 </head>
 <body>
 	<a href=""><img src="../introductionToHtml/images/logo.png"></a>
 	<div class="topnav">
-  		<input type="text" placeholder="Search..">
 	</div>
 	<div class="topnav">
   		<a class="active" href="#home">Home</a>
@@ -16,23 +15,28 @@
   		<a href="signup.html">Sign Up</a>
 	</div>
 
-	<h1>Contact Us</h1>
-	<form>
+	<h1>Sign Up</h1>
+	<form action="#" method="post" enctype="multipart/form-data">
 		<fieldset>
 				<legend></legend>
 
-				<label for="fullname">Full Name</label> <br>
-				<input type="text" name="fullname" id="fullname" placeholder="Enter your full name"> <br><br>
+				<label for="firstname">First Name</label> <br>
+				<input type="text" name="firstname" id="firstname" placeholder="Enter First Name"> <br><br>
+				<label for="lasstname">Last Name</label> <br>
+				<input type="text" name="lastname" id="lastname"  placeholder="Enter Last Name"> <br><br>
 				<label for="emailaddress">Email Address</label><br>
 				<input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
-				<label for="subject">Subject</label><br>
-				<input type="text" name="subject" id="subject" placeholder="Enter subject of message"><br><br>
-				<label>Message</label><br>
-				<textarea name="message" id="message" cols="50" rows="10" placeholder="Enter your message here"></textarea><br><br>
-				<button type="submit">Submit</button>
+				<label for="phonenumber">Phone Number</label><br>
+				<input type="text" name="phonenumber" placeholder="Enter Phone Number"><br><br>
+				<label>Password</label><br>
+				<input type="password" name="password" placeholder="Enter Password"><br><br>
+				By signing up you accept our terms and conditions<br><br>
+				<button type="submit">Sign Up!</button>
 
 		</fieldset>
+	</form>
 		<hr>
+
 
 		<footer>
 			<h3>Social Media</h3>
