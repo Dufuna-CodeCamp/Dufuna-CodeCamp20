@@ -213,14 +213,9 @@ color: #fff;
     margin: 20px 30px 17px 30px ;
     padding: 0 30px;
     border-radius: 10px;
-
-    
 }
 
 }
-
-
-
 
 @media screen and ( max-width:600px ) {
 
@@ -285,7 +280,6 @@ color: #fff;
         margin:0 124px 0 170px;
     }
     
-   
     #checkbox-signup{
         width: 12px;
         height: 15px;

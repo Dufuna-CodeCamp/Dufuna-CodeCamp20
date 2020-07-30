@@ -130,10 +130,6 @@ textarea{
     background-color:rgb(255, 166, 95) ;
 }
 
-
-
-
-
 /**********************************
   FOOTER
   ***********************************/
@@ -226,15 +222,10 @@ color: #fff;
 .contact-form fieldset{
     margin: 20px 30px 17px 30px ;
     padding: 0 30px;
-    border-radius: 10px;
-
-    
+    border-radius: 10px; 
 }
 
 }
-
-
-
 
 @media screen and ( max-width:600px ) {
 
@@ -321,21 +312,19 @@ textarea{
     width: 350px;
     height: 100px;
 }
-
-
   
-     /**********************************
+/**********************************
          FOOTER
-      ***********************************/
-    .footer-link{
-        display: block;
-        margin-left: 15px;
+***********************************/
+.footer-link{
+    display: block;
+    margin-left: 15px;
     }
-    .social h3{
-        margin-top: 20px;
+.social h3{
+    margin-top: 20px;
     }
-    .social-link li{
-        margin-right: 5px;
+.social-link li{
+    margin-right: 5px;
     }
     
 }
