@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 body {
     margin: 0;
@@ -12,6 +11,7 @@ body {
     font-size: 22px;
     line-height: 27px;
     font-family: oswald PT sans serif;
+    text-decoration: none;
 }
 /**********************************
   HEADING
@@ -23,7 +23,6 @@ header{
     background-color: rgb(255, 166, 95);
     color:black;
     align-items: center;
-
 }
  .logo{
     margin-right:auto;
@@ -65,7 +64,6 @@ header{
     margin-left: 50px;
     margin-top: 50px;
     padding-top: 14px;
-
 }
 .product-del h3{
     font-size: 25px;
@@ -130,7 +128,7 @@ header{
     margin-bottom: 30px;
     padding: 20px;
 }
-.lap-1 h5, .charger h5, .bag h5 {
+.product-related h5 {
     text-align: center;
     color: #000;
 }
@@ -146,7 +144,6 @@ footer{
     justify-content: space-evenly;
     padding-top: 37px;
     flex-wrap: wrap;
-
 }
 .footer-link ul {
     list-style: none;
@@ -195,22 +192,18 @@ color: #fff;
 /**********************************
   RESPONSIVENESS
   ***********************************/
-
-
 @media screen and ( max-width:1085px ){
 
-    
 /**********************************
   HEADING
   ***********************************/
-    header{
-        flex-flow:wrap;
-        justify-content: flex-end;
-    
-    }
-    .navbar-link li{
-        margin: 15px;
-    }
+header{
+    flex-flow:wrap;
+    justify-content: flex-end;
+}
+.navbar-link li{
+    margin: 15px;
+}
     
 /**********************************
   PAGE:PRODUCT
@@ -246,7 +239,6 @@ color: #fff;
 
 @media screen and ( max-width:600px ) {
 
-
 /**********************************
   HEADER
 ***********************************/
@@ -268,7 +260,6 @@ header{
 /**********************************
 PAGE:PRODUCT
 ***********************************/
-
 .product{
     flex-wrap: wrap;
     margin: 20px;
@@ -302,6 +293,5 @@ FOOTER
 }
 .social-link li{
     margin-right: 5px;
-}
-    
+}  
 }
