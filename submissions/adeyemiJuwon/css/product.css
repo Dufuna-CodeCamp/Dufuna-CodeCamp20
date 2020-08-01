@@ -11,6 +11,8 @@ body {
     font-size: 22px;
     line-height: 27px;
     font-family: oswald PT sans serif;
+}
+a{
     text-decoration: none;
 }
 /**********************************
@@ -38,7 +40,6 @@ header{
     color:black;
 }
 .navbar-link a{
-    text-decoration: none;
     color: black;
 }
 .navbar-link li a:hover{
@@ -119,9 +120,6 @@ header{
     margin-top: 40px;
     margin-bottom: 35px;
 }
-.product-related a{
-    text-decoration: none;
-}
 .lap-1, .charger, .bag{
     max-width: 399px;
     background-color: #fff;
@@ -155,7 +153,6 @@ footer{
     margin-bottom: 15px;
 }
 .footer-link ul a{
-    text-decoration: none;
     color: white;
 }
 .footer-link input{
