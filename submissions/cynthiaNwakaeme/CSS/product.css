@@ -17,6 +17,8 @@ ul, h2, h3, p{
 }
 li a{
     text-decoration: none;
+    display: inline;
+    color: white; 
 }
 /* THE HEADER */
 header{
@@ -148,10 +150,6 @@ footer{
     float: left;
     width: 33%;
 }
-ul li a{
-    display: inline;
-    color: white;  
-}
 .footer-box ul li,
 .footer-box-3 ul li
 {
@@ -188,9 +186,9 @@ footer p{
     display: block;
 }
 /* HANDLING RESPONSIVENESS / RESOLUTIONS */
-@media screen and (max-width:595px){
-    header #nav-branding,
+@media screen and (max-width:594px){
     header nav,
+    header #nav-branding,
     header .nav-container  nav li{
         float: none;
         text-align: left;
@@ -206,8 +204,6 @@ footer p{
         float: none;
         width: 310px;
     }
-    .footer-box,
-    .footer-box-2,
     .footer-box-3{
         float: none;
         display: inline;
