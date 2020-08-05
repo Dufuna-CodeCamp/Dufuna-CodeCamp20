@@ -1,0 +1,243 @@
+/* media-query (tablet)*/
+@media screen and (min-width: 765px) and (max-width: 900px) {
+        /* signUp page */
+    /* formfield */
+    #s-form {
+        border-radius: 25px;
+        border: solid 1px;
+        padding: 35px 20px 20px 20px;
+        border: 2px 2px 2px 2px
+    }
+    /* signupform */
+    #form {
+        overflow: hidden;
+        margin-top: 10px;
+        float: right;
+        margin-right: 5.5cm;
+    }
+    #form input {
+        width: 550px;
+        padding: 10px;
+        border-radius: 7px;
+        border: solid 1px;
+    }
+    #table, #form {
+        display: inline-block;
+    }
+    #form #terms {
+        width: 50px;
+        float: left;
+        margin-left: 2cm;
+    }
+    #termsLabel {
+        color: rgb(2, 209, 2);
+        font-weight: bold;
+    }
+    button {
+        border-radius: 3px;
+        border: 0px;
+        margin-left: 220px;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(2, 209, 2);
+        font-weight: bold;
+        color: white;
+    }  
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        overflow: hidden;
+    }
+    /* registration info */
+    #regis {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(2, 209, 2);
+    }
+    #rg, #rgs, #gt {
+        text-align: center;
+        margin-left: 7.5cm;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+    #signin{
+        color:rgb(2, 209, 2);
+    }
+    #supT {
+        height: 22.5cm;
+    }
+    footer {
+        height: 5.3cm;
+    }
+    #icons {
+        margin-right: 1.5cm;
+    }
+    #copyright {
+        margin-left: 6cm;
+        margin-top: 1cm;
+    }
+}
+/* media-query (mobile)*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /* top navigation */
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(2, 209, 2);
+        text-align: center;
+        font-size: 35px;
+    }
+    .topnav #logo {
+        margin-left: 0.7cm;
+        margin-top: 0.5cm;
+    }
+    .topnav a {
+        float: left;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    .topnav-right {
+        float: left;
+        margin-top: 0cm;
+        margin-right: 19cm;
+        margin-left: 0.5cm;
+        width: 300px;    
+    }
+    /* signUp page */
+    /* formfield */
+    #s-form {
+        border-radius: 25px;
+        border: solid 1px;
+        padding: 35px 20px 20px 20px;
+        border: 2px 2px 2px 2px
+    }
+    /* signupform */
+    #form {
+        overflow: hidden;
+        margin-top: 10px;
+        float: right;
+        margin-right: 5.5cm;
+    }
+    #form input {
+        width: 550px;
+        height: 0.8cm;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px;
+    }
+    #table, #form {
+        display: inline-block;
+    }
+    
+    #form #terms {
+        width: 50px;
+        float: left;
+        margin-left: 2cm;
+    }
+    #termsLabel {
+        color: rgb(2, 209, 2);
+        font-weight: bold;
+    }
+    button {
+        border-radius: 3px;
+        border: 0px;
+        margin-left: 220px;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(2, 209, 2);
+        font-weight: bold;
+        color: white;
+    }  
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        overflow: hidden;
+    }
+    /* registration info */
+    #regis {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: rgb(2, 209, 2);
+    }
+    #rg, #rgs, #gt {
+        text-align: center;
+        margin-left: 7.5cm;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+    #signin{
+        color:rgb(2, 209, 2);
+    }
+    /* form container display */
+    #supT {
+        height: 25cm;
+    }
+    /*footer*/
+    footer {
+        height: 16cm;
+    }
+    .fotnav-left a {
+        font-size: 40px;
+    }
+    .fotnav-left {
+        margin-left: 1.5cm;
+        width: auto;
+    }
+     #fotnav li a {
+        text-decoration: none;
+        color: white;
+    }   
+    #newsLetter label, #submit {
+        font-size: 30px;
+    }
+    #newsLetter #newslabel {
+        float: left;
+        font-size: 40px;
+        width: 20cm;
+        margin-right: 9cm;
+        text-align: left;
+    }
+    #newsLetter input {
+        height: 1.3cm;
+        width: 8cm;
+    }
+    #newsLetter button {
+        height: 1.7cm;
+        padding-top: 0cm;
+        padding-bottom: 5px;
+        margin-top: 8px;
+    }
+    #newsLetter {
+        float: left;
+        margin-left: 1.5cm;
+        width: 500px;
+    }
+    #icons {
+        margin-top: 15px;
+        margin-right: 14.5cm;
+    }
+    #icons li {
+        font-size: 30px;
+    }
+    #icons a {
+        height: 1cm;
+        width: 1.3cm;
+    } 
+    #copyright {
+        margin-left: 4cm;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 35px;
+        width: 600px;
+    }
+}
