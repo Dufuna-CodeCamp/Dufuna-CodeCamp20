@@ -1,0 +1,63 @@
+body    {
+    text-align: center;
+}
+h1  {
+    margin-top:5px;
+    margin-bottom:20px;
+    color: aqua;
+}
+h2  {
+    color:blueviolet;
+}
+
+img{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+
+.google  {
+    font-size: 10px;
+    color: blue;
+    width: 25%;
+    position: relative;
+    transition-duration:0.4s;  
+    height: 25%;
+    padding-top: 0%;
+    font-size: 16px;
+    padding:5px 10px ;
+    cursor: pointer;
+}     
+.google:hover{
+    background-color: rgb(160, 137, 137);
+}
+input[type=text] {
+    border:none;
+    border-bottom: 1px solid blueviolet;
+    width: 25%;
+}
+input[type=email] {
+    border:none;
+    border-bottom: 1px solid blueviolet;
+    width: 25%;
+}
+input[type=password] {
+    border:none;
+    border-bottom: 1px solid blueviolet;
+    width: 25%;
+}
+.signup     {
+    font-size: 10px;
+    color: blue;
+    width: 25%;
+    position: relative;
+    transition-duration:0.4s;  
+    height: 25%;
+    padding-top: 0%;
+    font-size: 16px;
+    padding:5px 10px ;
+    cursor: pointer;
+}
+.signup:hover{
+    background-color: rgb(160, 137, 137);
+}
