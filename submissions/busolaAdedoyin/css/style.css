@@ -114,12 +114,12 @@
  .form2 {
     float: left;
     width: 40%;
-    padding: 2% 4%;
+    padding: 2% 5%;
   }
 .fo-input {
     border: 1px solid darkgrey;
     border-radius: 10px;
-    padding: 20px;
+    padding: 2% 5%;
  }
 
 .tags h1 {
@@ -137,7 +137,7 @@
 .fo-input input[type=text],
 .fo-input input[type=email],
 .fo-input input[type=password] {
-    width: 95%;
+    width: 80%;
     border: 1px solid #cccccc;
     border-radius: 7px;
     padding: 10px;
