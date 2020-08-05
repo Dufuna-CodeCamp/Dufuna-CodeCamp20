@@ -1,0 +1,159 @@
+html {
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* top navigation */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(2, 209, 2);
+    text-align: center;
+    font-size: 17px;
+}
+.topnav a {
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+.topnav-right {
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+/* signUp page */
+/* formfield */
+#s-form {
+    border-radius: 25px;
+    border: solid 1px;
+    padding: 35px 20px 20px 20px;
+    border: 2px 2px 2px 2px
+}
+/* signupform */
+#form {
+    overflow: hidden;
+    margin-top: 10px;
+    float: right;
+    margin-right: 1cm;
+}
+#form input {
+    width: 500px;
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1px;
+}
+#table, #form {
+    display: inline-block;
+}
+#form #terms {
+    width: 50px;
+    float: left;
+    margin-left: 2cm;
+}
+#termsLabel {
+    color: rgb(2, 209, 2);
+    font-weight: bold;
+}
+button {
+    border-radius: 3px;
+    border: 0px;
+    margin-left: 220px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(2, 209, 2);
+    font-weight: bold;
+    color: white;
+}  
+ul {
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+}
+/* registration info */
+#regis {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(2, 209, 2);
+}
+#rg, #rgs, #gt {
+    text-align: center;
+    margin-left: 220px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+#signin{
+    color:rgb(2, 209, 2);
+}
+/* footer */
+footer {
+    background-color: rgb(2, 209, 2);
+    height: 3.7cm;
+}
+/* footer navigation */
+.fotnav-left {
+    list-style-type: none;
+}
+.fotnav-left, #newsLetter, #icons {
+    display: inline-block;
+    float: left;
+}
+#fotnav li a {
+    text-decoration: none;
+    color: white;
+}
+/* footer social media icons */
+#icons {
+    float: right;
+    margin-top: 15px;
+    margin-right: 1cm;
+}
+/* footer newsletter signUp */
+#newsLetter {
+    margin-left: 11cm;
+    margin-top: 20px;
+}
+#input-email {
+    border-radius: 0px;
+    width: 185px;
+    height: 15px;
+    border: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#submit {
+    color: rgb(3, 192, 3);
+    border-radius: 0px;
+    border: 0px;
+    background-color: white;
+    margin-left: 0px;
+    height: 29px;
+}
+#input-email, #submit {
+    display: inline;
+}
+#newsLabel, #connect {
+    color: white;
+}
+#foot {
+    margin: 10px 40px 1px 40px;
+}
+li {
+    margin-top: 10px;
+}
+/* footer copyright note */ 
+#copyright {
+    text-align: center;
+    float: left;
+    margin-left: 350px;
+    margin-top: 40px;
+    color: white
+}
