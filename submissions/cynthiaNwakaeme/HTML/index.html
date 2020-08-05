@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taries Empire</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
      <!-- 
@@ -13,19 +14,19 @@
         
      -->
      <header>
-        <a href="../HTML/index.html"> <img src="../HTML/img/logo.PNG" alt="TARIES EMPIRE"></a>`
-        <nav>
-            <ul>
-                <li><a href="#toClientsProfile">Queen/King Client Name</a></li>
-                <li>
-                    <input type="text" name="categories" id="categories" placeholder="Search for products, brands and categories">
-                    <button type="submit">Search</button>
-                </li>
-                <li><a href="index.html">Product</a></li>
-                <li><a href="../HTML-Form/contact.html">Contact Us</a></li>
-                <li><a href="../HTML-Form/signup.html">Register</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <div id="nav-branding">
+                <h2>TARIES EMPIRE</h2>
+                <p>...bringing you Africans' Luxury 'n' style </p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../HTML/index.html">Product Page</a></li>
+                    <li><a href="../HTML-Form/contact.html">Contact Us</a></li>
+                    <li><a href="../HTML-Form/signup.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- 
         THIS IS A SEARCHED PRODUCT DETAILS.
@@ -38,8 +39,8 @@
         <main>
             <span><em>Home > SkinCare > Black+Soap</em></span>
             <div>
-                <img src="img/PAcked black soap.jpg" alt="J-Royalty African Black Soap">
-                <img src="img/African-Black-Soap.jpg" alt="Unpacked J-Royalty African Black Soap">
+                <img src="img/packed-black-soap.jpg" alt="J-Royalty African Black Soap">
+                <img src="img/african-black-Soap.jpg" alt="Unpacked J-Royalty African Black Soap">
             </div>
             <h2>J-royalty Organic African black soap - 450g</h2> 
             <span><em>Rating: </em>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
@@ -132,43 +133,30 @@
         THIS IS THE PAGE FOOTER.
      -->
      <footer>
-        <hr>
-        <div>
-            <input type="email" name="email" id="email" placeholder="Email for Newsletter">
-            <input type="submit" name="male" id="male" value="Male">
-            <input type="submit" name="female" id="female" value="Female">
-        
-            <div>
-                <div>
-                    <ul><h3><a href="index.html">TARIES EMPIRE</a></h3>
-                        <li><a href="">About us</a></li>
-                        <li><a href="../HTML-Form/contact.html">Contact us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Taries Career</a></li>
-                        <li><a href="#">Terms and Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                <ul><h5>MORE INFO</h5>
-                    <li><a href="#">Corporate and Bulk Purchases</a></li>
-                    <li><a href="#">Become an affiliant Partner</a></li>
-                    <li><a href="#">Become a Sales Consultant</a></li>
-                    <li><a href="#">Become a Logisitics service Partner</a></li>
-                </ul>
-                </div>
-                <div>
-                    <ul><h5>JOIN US ON</h5>
-                    <li><a href="https://www.facebook.com">Facebook</a></li>
-                    <li><a href="https://www.twitter.com">Twitter</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                    <li><a href="#">Taries Blog</a></li>
-                </ul>
-                </div>
-            </div> 
+        <div class="footer-box">
+            <ul>
+                <li><a href="../HTML-Form/contact.html">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
         </div>
-        
+        <div class="footer-box-2">
+            <label for="newsletter">Sign up for our Newsletter</label>
+            <br>
+            <input type="email" name="newsletter" id="email" placeholder="Enter your email address">
+            <button type="submit" name="submit_form" id="submit_form">SUBMIT</button>
+        </div>
+        <div class="footer-box-3">
+            <h5>CONNECT WITH US</h5>
+            <ul >
+                <li><a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a></li>
+                <li><a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a></li>
+                <li><a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a></li>
+            </ul>
+        </div>
+        <br>
+        <p>Copyright &copy; 2020, Taries Empire All rights reserved</p> 
     </footer>
 </body>
 </html>
