@@ -182,6 +182,7 @@ aside .form-document {
     display: inline-flex;
     padding:10px ;
     margin-left: 30px;
+    margin-top: -35px;
 }
 .footer3 ul li img{
     width: 50px;
@@ -190,6 +191,9 @@ aside .form-document {
 
 footer h5{
     text-align: center;
+    margin-top: 5px;
+    font-family: Helvetica;
+    font-weight: bold;
 }
 
 footer p{
