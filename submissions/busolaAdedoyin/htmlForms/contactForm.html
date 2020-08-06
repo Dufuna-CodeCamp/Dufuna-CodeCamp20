@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link href="../css/style2.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+</head>
+<body>
     <title>Contact Form Page</title>
 </head>
 <body>
@@ -13,20 +19,89 @@
 <a href="../introductionToHtml/index.html">Products</a>
 <fieldset>
     <legend>Contact Form</legend>
-    <h1>Contact Us Here</h1>
-    <form>
-        <label for="fullName"> Full Name</label><br>
-        <input type="text" name="fullName" id="fullName"><br>
-        <label for="email">Email</label><br>
-        <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
-        <label for="subject">Subject</label><br>
-        <input type="text" name="subject" id="subject"><br>
-        <label for="messageInput">Message</label><br>
-        <textarea name="messageInput" id="messageInput" cols="30" rows="10"></textarea><br>
-        <button type="submit">Submit</button>
 
-    </form>
-</fieldset>
+
+    <header>
+        <div class="nav-section">
+            <div id="nav-logo">
+                <h2>PEARLS FABRICS</h2>
+                <p>...making you look good</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Product Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="sign-up-page.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-container">
+        <div class="information">
+            <img src="./logos/telephone.jpg">
+            <p>Please contact us via this numbers</p>
+            <p>+123 803 303 0000</p>
+            <p>+123 816 710 6842</p>
+            <img src="./logos/opened-message.png">
+            <p>Email Address:</p>
+            <p>support@domain.com</p>
+        <div class="info-logo">
+            <li><img src="./logos/facebook.png"></li>
+            <li><img src="./logos/twitter.png"></li>
+            <li><img src="./logos/gmail.png"></li>
+            <li><img src="./logos/youtube.jpg"></li>
+        </div>
+        </div>
+        <div class="fill-form">
+            <img src="./logos/message.png">
+            <p>Or better still send us a message</p>
+            <form action="#" method="post">
+                <div class="inputs">
+                    <label for="fullName"> Full Name</label><br>
+                    <input type="text" name="fullName" id="fullName"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" name="subject" id="subject"><br>
+                    <label for="messageInput">Message</label><br>
+                    <textarea name="messageInput" id="messageInput" cols="50" rows="8"></textarea><br>
+                <input type="submit" value="SEND">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer newsletter">
+            <p>Sign up for our Newsletter</p>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" style="width: 50%; border-radius:0px; padding:5px">
+                    <input type="button" value="SUBMIT">
+                </form>
+            </div>
+
+        </div>
+        <div class="footer logo">
+            <p>CONNECT WITH US</p>
+            <li><img src="./logos/facebook.png"></li>
+            <li><img src="./logos/twitter.png"></li>
+            <li><img src="./logos/gmail.png"></li>
+            <li><img src="./logos/youtube.jpg"></li>
+        </div>
+        <p class="last">&copy; Copyright2020 pearlsfabrics.com All rights reserved </p>
+
+    </footer>
+</body>
+</html>
 
 </body>
 </html>
