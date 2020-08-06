@@ -178,20 +178,17 @@ footer p{
         padding:0 3%;
         float: none;
 }
-
 main, aside {
     width: 70%;
     margin: auto;
     padding-bottom: 17px;
 }
-
 main {
     text-align: center;
 }
 .footer1, .footer2 {
     width: 44%;
 }
-
 .footer3 {
     width: 44%;
 }
@@ -199,12 +196,10 @@ main {
     display: inline;
 }
 }
-
 @media screen and (max-width:550px){
     main {
         margin: auto;
     }
-
     .form-document button{
         width: 90px;
         margin: 10px 75px;
