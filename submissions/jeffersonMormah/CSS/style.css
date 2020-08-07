@@ -1,3 +1,6 @@
+body{
+    font-family: 'Franklin Gothic Medium';
+}
 .nav-links{
     width: 100%;
     margin: auto;
@@ -18,7 +21,6 @@ header {
 header a {
     color: #F5F5DC;
     font-size: 17px;
-    font-family: 'Franklin Gothic Medium';
     font-weight: bold;
     margin-left: 320px;
 }
@@ -53,17 +55,14 @@ main {
 }
 main h1 {
     font-size: 50px;
-    font-family: 'Franklin Gothic Medium';
     color: coral;
 }
 main p  {
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium';
     color: brown;
 }
 main a {
     font-size: 20px;
-    font-family:'Franklin Gothic Medium';
     color: blue;
 }
 aside {
@@ -86,10 +85,9 @@ aside .form-document {
     display: inline-block;
     width: 48%;
     margin-left: 20px;
-    font-family: 'Franklin Gothic Medium';
 }
  .form-document input {
-     margin-top: 1%;
+     margin-top: 1px;
      margin-left: 20px;
      border: 2px solid #000000;
      border-radius: 50px;
@@ -128,7 +126,6 @@ aside .form-document {
  {
      margin-bottom: 8px;
      font-size: 17px;
-    font-family: 'Franklin Gothic Medium';
     font-weight: bold;
  }
  .footer1 ul li a{
@@ -161,7 +158,6 @@ aside .form-document {
 footer h5{
     text-align: center;
     margin-top: 5px;
-    font-family: 'Franklin Gothic Medium';
     font-weight: bold;
 }
 footer p{
@@ -186,12 +182,10 @@ main, aside {
 main {
     text-align: center;
 }
-.footer1, .footer2 {
+.footer1, .footer2, .footer3 {
     width: 44%;
 }
-.footer3 {
-    width: 44%;
-}
+
 .footer3 ul li{
     display: inline;
 }
