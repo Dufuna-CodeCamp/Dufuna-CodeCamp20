@@ -57,7 +57,7 @@
  footer {
      background-color:#333366;
      overflow: hidden;
-     padding: 20px 0 0 20px;
+     padding: 20px 10px 10px 20px;
      border-top:4px solid yellow;
  }
 
@@ -66,6 +66,7 @@
      float: left;
      width: 33.33%;
      font-weight: lighter;
+     padding-bottom: 20px;
  }
 
  .footer li {
@@ -79,7 +80,8 @@
      color: white;
      font-weight: lighter;
      opacity: 0.5;
-     padding-left: 50px;
+     padding-left: 35px;
+     /* padding-top: 20px; */
      display: block;
  }
  .logo li {
@@ -100,7 +102,6 @@
  .last {
      color: #ffffff;
      margin: 0;
-     padding: 0;
  }
 
  ::placeholder {
