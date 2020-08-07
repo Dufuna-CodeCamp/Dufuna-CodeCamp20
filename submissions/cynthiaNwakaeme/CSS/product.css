@@ -11,39 +11,41 @@ body{
     margin: auto;
     overflow: hidden;
 }
-ul{ 
+ul, h2, h3, p{ 
     padding: 0;
     margin: 0;
+}
+li a{
+    text-decoration: none;
+    display: inline;
+    color: white; 
 }
 /* THE HEADER */
 header{
     background:#9d426b; 
     color: white;
     padding-top: 10px;
-    min-height: 15%;
+    min-height: 25px;
     border-bottom: goldenrod 3px solid;
-    
 }
 header a{
     color: white;
-    text-decoration: none;
     font-size: 16px;
 }
-
 header li{
     display: inline;
     padding:0 30px;
 }
-header #nav-branding{
+#nav-branding{
     float: left;
     padding-bottom: 10px;
 }
-header #nav-branding h2,header #nav-branding p{
+#nav-branding h2, #nav-branding p{
     margin:0;
     padding:0;
     color:white;
 }
-header nav{
+nav{
     float: right;
     margin-top: 15px;
 }
@@ -51,44 +53,35 @@ header a:hover{
     text-transform: uppercase;
     color:white;
     font-weight: bold;
-
 }
 /* THE CONTAINER */
 main{
-    width: 90%;
-    padding: 2%;
-    overflow: hidden;
-    
+    margin: 15px;
+    padding: 20px;
+    overflow: hidden; 
 }
 /* MAIN */
 .main-img{
     float: left;
     width: 230px;
-    margin: 10px 0 10px 30px;   
+    margin: 2px 0 10px 30px;   
     border: 1px solid rgb(129, 129, 129);    
 }
 .main-img img{
-    width: 85%;
-    padding: 2% 10%;
+    width: 200px;
+    padding: 10px 20px;
     height: inherit;
 }
         /* MAIN IMAGE DETAILS */
 .img-details{
     float:left;
-    width: 305px; 
+    width: 300px; 
     margin-left: 30px;
-}
-.img-details h3,
-.img-details h4
-{
-    padding: 0;
-    margin: 13px 0;
 }
 #quality h4, #quality table{
     display: inline-table;
     padding: 0 ;
     margin: 0 ;
-
 }
 #quality table{
     border-collapse: collapse;
@@ -101,62 +94,56 @@ main{
     text-decoration: none;
 }
 .img-details button{
-    width: 130px;
+    width: 100px;
     border-radius: 12px;
     background-color: goldenrod;
     color: #fff;
-    padding: 10px;
+    padding: 8px;
     border: none;
-    font-size: 16px;
+    font-weight: bold;
 }
 .description{
-    margin:0 48px; 
+    margin:0 55px; 
     padding-bottom: 20px;
 }
 .description h4{
     padding: 0;
     margin: 0;
 }
-.description p{
-    padding: 0;
-    margin: 8px 0;
-}
-/* ASIDE */
+/* ASIDE: THIS IS FOR RELATED PRODUCT */
 aside{
     background-color: rgb(231, 227, 227);
-    padding:4% 0 5% 0;
+    padding:20px 0;
     margin: auto;
     overflow: hidden;
 }
 aside h3{
-    padding: 0;
-    margin: 0;
     text-align: center;
 }
 .img-slide{
     float: left;
     width: 30%;
-    height: 10%;
+    height: 285px;
     margin:20px 0 0 30px;
     background-color: white;
 }
 .img-slide a img{
-    width: 65%;
-    height: 20%;
-    margin:10px 60px 0 60px;
+    width: 188px;
+    height: 200px;
+    margin:10px 85px 0 85px;
 }
 .img-slide p{
     text-align: center;
     font-weight: bold;
     margin-bottom: 0 ;
 }
-
 /* THE FOOTER */
 footer{
-    overflow: hidden;
     background-color: #9d426b;
     padding:20px 0 0 50px;
     color: white;
+    overflow: hidden;
+    clear: both;
 }
 .footer-box,
 .footer-box-2,
@@ -177,7 +164,7 @@ footer{
 }
 .footer-box-2 button[type="submit"]{
     height: 30px;
-    padding: 0 5%;
+    padding: 0 10px;
     font-size: 12px;
     color: #9d426b;
     font-weight: bold;
@@ -187,64 +174,61 @@ footer{
     padding: 3px 18px 3px ;
     font-size: 11px; 
 }
-.footer-box-2 input::placeholder{
-    color: #9d426b;
-}
 .footer-box-3 h5{
     padding: 0;
     margin: 0;
 }
 .footer-box-3 ul li{
     display: inline-flex;
-    padding: 8px ;
+    padding:10px;
+    
 }
 .footer-box-3 ul li img{
     width: 35px;
+    height: 30px;
 }
 footer p{
+    text-align: center;
     display: block;
 }
 /* HANDLING RESPONSIVENESS / RESOLUTIONS */
-@media screen and (max-width:595px){
+@media screen and (max-width:594px){
+    header nav,
+    header #nav-branding,
+    header .nav-container  nav li{
+        float: none;
+        text-align: left;
+        display: block;
+    } 
     .main-img{
-        padding: 0 30px;
+        padding: 0 20px;
     }
     aside{
         padding-bottom: 50px;
     }
     aside .img-slide{
         float: none;
-        width: 85%;
+        width: 310px;
     }
     .footer-box,
     .footer-box-2,
     .footer-box-3{
-        float: none;
+        float:none;
         display: inline;
     }
-}
-@media screen and (max-width: 809px) {
-    header #nav-branding,
-    header nav,
-    header .nav-container  nav li{
-        float: none;
-        text-align: center;
-        padding:0 3%;
-    } 
 }
 @media screen and (max-width: 920px){
     .slide1, 
     .slide2,
     .slide3{
-        width: 44%;
+        width: 340px;
     }
     .footer-box,
     .footer-box-2{
-        width: 50%;
+        width: 350px;
     }
     .footer-box-3{
         float: none;
-        width: 50%;  
     }
     .footer-box-3 ul li{ 
         display: inline;
