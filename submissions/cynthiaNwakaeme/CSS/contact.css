@@ -176,6 +176,10 @@ footer{
     padding: 3px 18px 3px ;
     font-size: 11px; 
 }
+.footer-box-3 h5{
+    padding: 0;
+    margin: 0;
+}
 .footer-box-3 ul li{
     display: inline-flex;
     padding:10px;
@@ -189,47 +193,6 @@ footer p{
     text-align: center;
     display: block;
 }
-.footer-box,
-.footer-box-2,
-.footer-box-3{
-    float: left;
-    width: 33%;
-}
-.footer-box ul li,
-.footer-box-3 ul li
-{
-    list-style: none;
-    margin-bottom: 8px;
-}
-.footer-box ul li a{
-    text-decoration: none;
-    display: inline;
-    color: white;  
-}
-.footer-box-2 button[type="submit"]{
-    height: 30px;
-    padding: 0 5%;
-    font-size: 12px;
-    color: #9d426b;
-    font-weight: bold;
-}
-.footer-box-2 input[type="email"]{
-    height: 20px;
-    padding: 3px 18px 3px ;
-    font-size: 11px; 
-}
-.footer-box-3 ul li{
-    display: inline-flex;
-    padding:10px ;
-}
-.footer-box-3 ul li img{
-    width: 35px;
-}
-footer p{
-    text-align: center;
-    display: block;
-}
-
 /* HANDLING RESPONSIVENESS / RESOLUTIONS */
 
 @media screen and (max-width: 595px){
