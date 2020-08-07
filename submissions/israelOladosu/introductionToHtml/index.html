@@ -1,40 +1,28 @@
-</html><!DOCTYPE html>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Farmville</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-   <header>
+  <header>
     <!-- container for the site logo -->
-    <div>
-     <a href="index.html">
-      <img src="./img/Farmville flat green.png" alt="Farmville">
-     </a>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/Farmville white logo.png" alt="Farmville">
+      </a>
     </div>
-    <!-- the search and login bar -->
-    <form>
-     <input type="text" placeholder="search">
-     <button>Search</button>
-    </form>
-    <ul>
-     <li><a href="../htmlForms/signUp.html">SignUp</a></li>
-     <li><a href="../htmlForms/ContactForm.html">Contact Us</a></li>
-     <li><a href="#">Cart</a></li>
-    </ul>
-   </header>
-  <hr>
-  <nav>
-    <h4>Categories</h4>
-    <ul>
-      <li>Animals</li>
-      <li>Cereals</li>
-      <li>Legumes</li>
-      <li>Vegetables</li>
-      <li>Root and Tubers</li>
-    </ul>
-  </nav>
-  <hr>
+    <!-- login bar -->
+    <div class="signup">
+      <ul>
+        <li><a href="../htmlForms/signUp.html">Sign-up</a></li>
+        <li><a href="../htmlForms/ContactForm.html">Contact Us</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+  </header>
   <!-- product section -->
   <section>
     <p>Diary Cow</p>
@@ -46,7 +34,8 @@
     </div>
     <h3>#300,000</h3>
     <h3>Product Description</h3>
-    <p> <b>A six months old diary cow </b>that produces large quantities of milk of about<b>30.000lb</b> per year. It <b> weighs 170kg </b> with no history of any ailment.
+    <p> <b>A six months old diary cow </b>that produces large quantities of milk of about<b>30.000lb</b> per year. It
+      <b> weighs 170kg </b> with no history of any ailment.
     </p>
   </section>
   <hr>
@@ -59,14 +48,44 @@
       <li>Sheep</li>
     </ol>
   </section>
- <!--Footer-->
+  <!--Footer-->
   <footer>
-    <ul>
-     <li><a href="#">About us</a></li>
-     <li><a href="../htmlForms/ContactForm.html">Contact us</a></li>
-     <li><a href="">Terms and Conditions</a></li>
-    </ul>
-    <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
- </footer>
+    <div class="row1">
+      <div class="col1">
+        <ul>
+          <li><a href="../htmlForm/ContactForm.html">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col2">
+        <div class="newsletter">
+          <p>Sign up for our Newsletter</p>
+          <form>
+            <input type="text" placeholder="Enter your email address">
+            <button>Submit</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <p id="connect">CONNECT WITH US</p>
+          <div class="facebook">
+            <img src="./img/facebook.png" alt="facebook">
+          </div>
+          <div class="twitter">
+            <img src="./img/twitter.png" alt="twitter">
+          </div>
+          <div class="gmail">
+            <img src="./img/gmail.png" alt="gmail">
+          </div>
+          <div class="youtube">
+            <img src="./img/youtube.png" alt="youtube">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row2">
+      <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
+    </div>
+  </footer>
 </body>
 </html>
