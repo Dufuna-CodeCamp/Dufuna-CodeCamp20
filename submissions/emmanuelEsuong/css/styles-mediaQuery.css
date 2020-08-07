@@ -115,17 +115,17 @@
         border: solid 1px;
         padding: 35px 20px 20px 20px;
         border: 2px 2px 2px 2px
-    }
+    }    
     /* signupform */
     #form {
         overflow: hidden;
         margin-top: 10px;
         float: right;
-        margin-right: 5.5cm;
+        margin-right: 3.5cm;
     }
     #form input {
-        width: 550px;
-        height: 0.8cm;
+        width: 650px;
+        height: 1cm;
         padding: 10px;
         border-radius: 10px;
         border: solid 1px;
@@ -133,20 +133,26 @@
     #table, #form {
         display: inline-block;
     }
-    
+    #table {
+        margin-right: 2cm;
+        float: right;
+        width: 1100px;
+    }
     #form #terms {
-        width: 50px;
+        width: 20px;
         float: left;
-        margin-left: 2cm;
+        margin-left: 3cm;
     }
     #termsLabel {
         color: rgb(2, 209, 2);
         font-weight: bold;
+        margin-left: 10px;
+        padding-top: 40px;
     }
     button {
         border-radius: 3px;
         border: 0px;
-        margin-left: 220px;
+        margin-left: 150px;
         padding: 7px;
         padding-left: 20px;
         padding-right: 20px;
@@ -159,10 +165,10 @@
         padding: 0px;
         overflow: hidden;
     }
-    /* registration info */
+        /* registration info */
     #regis {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
+        font-size: 45px;
         font-weight: bold;
         color: rgb(2, 209, 2);
     }
@@ -172,20 +178,21 @@
         padding-bottom: 0px;
         padding-top: 0px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 28px;
+        font-size: 26.5px;
         text-align: center;
+    }
+    #table {
+        margin-right: 2cm;
+        float: right;
+        width: 1100px;
     }
     #signin{
         color:rgb(2, 209, 2);
     }
-    /* form container display */
     #supT {
-        height: 25cm;
+        height: 27cm;
     }
-    /*footer*/
-    footer {
-        height: 16cm;
-    }
+   /*footer*/
     .fotnav-left a {
         font-size: 40px;
     }
@@ -193,51 +200,65 @@
         margin-left: 1.5cm;
         width: auto;
     }
-     #fotnav li a {
-        text-decoration: none;
-        color: white;
-    }   
     #newsLetter label, #submit {
         font-size: 30px;
     }
-    #newsLetter #newslabel {
+    #newsLetter #newsLabel {
         float: left;
         font-size: 40px;
         width: 20cm;
         margin-right: 9cm;
         text-align: left;
+        color: white;
     }
-    #newsLetter input {
+    #newsLetter #input-email {
         height: 1.3cm;
         width: 8cm;
     }
-    #newsLetter button {
+    #newsLetter #submit {
         height: 1.7cm;
         padding-top: 0cm;
         padding-bottom: 5px;
         margin-top: 8px;
-    }
-    #newsLetter {
-        float: left;
-        margin-left: 1.5cm;
-        width: 500px;
+        margin-left: 4px;
+        background-color: white;
+        color: rgb(2, 209, 2);
     }
     #icons {
-        margin-top: 15px;
-        margin-right: 14.5cm;
+        margin-top: 25px;
+        margin-right: 10cm;
+        margin-left: 1.5cm;
     }
     #icons li {
         font-size: 30px;
+        color: white;
     }
     #icons a {
         height: 1cm;
         width: 1.3cm;
-    } 
+    }
+    #newsLetter {
+        float: left;
+        margin-left: 1.5cm;
+        width: 700px;
+        margin-top: 30px;
+    }
+    #fotnav li a {
+        text-decoration: none;
+        color: white;
+    }    
+    footer {
+        height: 16cm;
+        background-color:  rgb(2, 209, 2);
+        padding-top: 1cm;
+    }
     #copyright {
+        text-align: center;
         margin-left: 4cm;
         margin-top: 30px;
         margin-bottom: 20px;
         font-size: 35px;
         width: 600px;
+        color: white;
     }
 }
