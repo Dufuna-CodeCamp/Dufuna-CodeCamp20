@@ -27,16 +27,15 @@ body {
 /* formfield */
 #s-form {
     border-radius: 25px;
-    border: solid 1px;
     padding: 35px 20px 20px 20px;
-    border: 2px 2px 2px 2px
+    border: 2px 2px 2px 2px;
 }
 /* signupform */
 #form {
     overflow: hidden;
     margin-top: 10px;
     float: right;
-    margin-right: 1cm;
+    margin-right: 40px;
 }
 #form input {
     width: 500px;
@@ -50,7 +49,7 @@ body {
 #form #terms {
     width: 50px;
     float: left;
-    margin-left: 2cm;
+    margin-left: 78px;
 }
 #termsLabel {
     color: rgb(2, 209, 2);
@@ -73,38 +72,37 @@ ul {
     overflow: hidden;
 }
 /* registration info */
-#regis {
-    font-family: Arial, Helvetica, sans-serif;
+#reg-acct {
     font-size: xx-large;
     font-weight: bold;
     color: rgb(2, 209, 2);
 }
-#rg, #rgs, #gt {
+#heading, #reg-note, #acct-signin {
     text-align: center;
     margin-left: 220px;
     padding-bottom: 0px;
     padding-top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: left;
 }
+/*signin instead*/
 #signin{
     color:rgb(2, 209, 2);
 }
 /* footer */
 footer {
     background-color: rgb(2, 209, 2);
-    height: 3.7cm;
+    height: 145px;
 }
 /* footer navigation */
-.fotnav-left {
+.footnav-left {
     list-style-type: none;
 }
-.fotnav-left, #newsLetter, #icons {
+.footnav-left, #newsLetter, #icons {
     display: inline-block;
     float: left;
 }
-#fotnav li a {
+#footnav li a {
     text-decoration: none;
     color: white;
 }
@@ -112,11 +110,11 @@ footer {
 #icons {
     float: right;
     margin-top: 15px;
-    margin-right: 1cm;
+    margin-right: 40px;
 }
 /* footer newsletter signUp */
 #newsLetter {
-    margin-left: 11cm;
+    margin-left: 430px;
     margin-top: 20px;
 }
 #input-email {
