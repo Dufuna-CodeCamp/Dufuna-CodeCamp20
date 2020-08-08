@@ -1,19 +1,18 @@
 /* media-query (tablet)*/
-@media screen and (min-width: 765px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
         /* signUp page */
     /* formfield */
     #s-form {
         border-radius: 25px;
-        border: solid 1px;
         padding: 35px 20px 20px 20px;
-        border: 2px 2px 2px 2px
+        border: 2px 2px 2px 2px;
     }
     /* signupform */
     #form {
         overflow: hidden;
         margin-top: 10px;
         float: right;
-        margin-right: 5.5cm;
+        margin-right: 215px;
     }
     #form input {
         width: 550px;
@@ -27,7 +26,7 @@
     #form #terms {
         width: 50px;
         float: left;
-        margin-left: 2cm;
+        margin-left: 78px;
     }
     #termsLabel {
         color: rgb(2, 209, 2);
@@ -50,40 +49,43 @@
         overflow: hidden;
     }
     /* registration info */
-    #regis {
+    #reg-acct {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 40px;
         font-weight: bold;
         color: rgb(2, 209, 2);
     }
-    #rg, #rgs, #gt {
+    #heading, #reg-note, #acct-signin {
         text-align: center;
-        margin-left: 7.5cm;
+        margin-left: 295px;
         padding-bottom: 0px;
         padding-top: 0px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 28px;
         text-align: center;
     }
+    /*signin instead*/
     #signin{
         color:rgb(2, 209, 2);
     }
+    /*registration info container*/
     #supT {
-        height: 22.5cm;
+        height: 880px;
     }
+    /* footer */
     footer {
-        height: 5.3cm;
+        height: 205px;
     }
     #icons {
-        margin-right: 1.5cm;
+        margin-right: 60px;
     }
     #copyright {
-        margin-left: 6cm;
-        margin-top: 1cm;
+        margin-left: 235px;
+        margin-top: 40px;
     }
 }
 /* media-query (mobile)*/
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     /* top navigation */
     .topnav {
         overflow: hidden;
@@ -92,8 +94,8 @@
         font-size: 35px;
     }
     .topnav #logo {
-        margin-left: 0.7cm;
-        margin-top: 0.5cm;
+        margin-left: 25px;
+        margin-top: 20px;
     }
     .topnav a {
         float: left;
@@ -103,29 +105,28 @@
     }
     .topnav-right {
         float: left;
-        margin-top: 0cm;
-        margin-right: 19cm;
-        margin-left: 0.5cm;
+        margin-top: 0px;
+        margin-right: 740px;
+        margin-left: 20px;
         width: 300px;    
     }
     /* signUp page */
     /* formfield */
     #s-form {
         border-radius: 25px;
-        border: solid 1px;
         padding: 35px 20px 20px 20px;
-        border: 2px 2px 2px 2px
+        border: 2px 2px 2px 2px;
     }    
     /* signupform */
     #form {
         overflow: hidden;
         margin-top: 10px;
         float: right;
-        margin-right: 3.5cm;
+        margin-right: 120px;
     }
     #form input {
         width: 650px;
-        height: 1cm;
+        height: 40px;
         padding: 10px;
         border-radius: 10px;
         border: solid 1px;
@@ -134,14 +135,14 @@
         display: inline-block;
     }
     #table {
-        margin-right: 2cm;
+        margin-right: 80px;
         float: right;
         width: 1100px;
     }
     #form #terms {
         width: 20px;
         float: left;
-        margin-left: 3cm;
+        margin-left: 115px;
     }
     #termsLabel {
         color: rgb(2, 209, 2);
@@ -166,15 +167,15 @@
         overflow: hidden;
     }
         /* registration info */
-    #regis {
+    #reg-acct {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 45px;
         font-weight: bold;
         color: rgb(2, 209, 2);
     }
-    #rg, #rgs, #gt {
+    #heading, #reg-note, #acct-signin {
         text-align: center;
-        margin-left: 7.5cm;
+        margin-left: 295cm;
         padding-bottom: 0px;
         padding-top: 0px;
         font-family: Arial, Helvetica, sans-serif;
@@ -182,7 +183,7 @@
         text-align: center;
     }
     #table {
-        margin-right: 2cm;
+        margin-right: 78cm;
         float: right;
         width: 1100px;
     }
@@ -190,14 +191,14 @@
         color:rgb(2, 209, 2);
     }
     #supT {
-        height: 27cm;
+        height: 820px;
     }
-   /*footer*/
-    .fotnav-left a {
+    /*footer*/
+    .footnav-left a {
         font-size: 40px;
     }
-    .fotnav-left {
-        margin-left: 1.5cm;
+    .footnav-left {
+        margin-left: 55px;
         width: auto;
     }
     #newsLetter label, #submit {
@@ -206,18 +207,18 @@
     #newsLetter #newsLabel {
         float: left;
         font-size: 40px;
-        width: 20cm;
-        margin-right: 9cm;
+        width: 790px;
+        margin-right: 355px;
         text-align: left;
         color: white;
     }
     #newsLetter #input-email {
-        height: 1.3cm;
-        width: 8cm;
+        height: 50px;
+        width: 310px;
     }
     #newsLetter #submit {
-        height: 1.7cm;
-        padding-top: 0cm;
+        height: 65px;
+        padding-top: 0px;
         padding-bottom: 5px;
         margin-top: 8px;
         margin-left: 4px;
@@ -226,35 +227,35 @@
     }
     #icons {
         margin-top: 25px;
-        margin-right: 10cm;
-        margin-left: 1.5cm;
+        margin-right: 390px;
+        margin-left: 55px;
     }
     #icons li {
         font-size: 30px;
         color: white;
     }
     #icons a {
-        height: 1cm;
-        width: 1.3cm;
+        height: 40px;
+        width: 50px;
     }
     #newsLetter {
         float: left;
-        margin-left: 1.5cm;
+        margin-left: 55px;
         width: 700px;
         margin-top: 30px;
     }
-    #fotnav li a {
+    #footnav li a {
         text-decoration: none;
         color: white;
     }    
     footer {
-        height: 16cm;
+        height: 630px;
         background-color:  rgb(2, 209, 2);
-        padding-top: 1cm;
+        padding-top: 40px;
     }
     #copyright {
         text-align: center;
-        margin-left: 4cm;
+        margin-left: 155px;
         margin-top: 30px;
         margin-bottom: 20px;
         font-size: 35px;
