@@ -1,11 +1,14 @@
 </html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Farmville</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/product.css">
 </head>
+
 <body>
   <header>
     <!-- container for the site logo -->
@@ -24,41 +27,67 @@
     </div>
   </header>
   <!-- product section -->
-  <section>
-    <p>Diary Cow</p>
-    <div>
-      <img src="./img/cow-front-view.jpg" alt="front-view">
+  <main>
+    <section class="row-1">
+      <div class="product-details">
+        <div class="cow">
+          <img src="./img/cow-front-view.jpg" alt="front-view">
+        </div>
+        <div class="details">
+          <h4>DIARY COW</h4>
+          <p>Sex: Female</p>
+          <label for="quantity">Quantity:</label>
+          <input type="number" name="quantity" id="qty" value="2">
+          <p>Price: #900,000</p>
+          <button>BUY NOW</button>
+        </div>
+      </div>
+      <div class="description">
+      <h4>DESCRIPTION</h4>
+      <p> <b>A six months old diary cow </b>that produces large quantities of milk of about<b>30.000lb</b> per year. It
+        <b> weighs 170kg </b> with no history of any ailment.
+      </p>
     </div>
-    <div>
-      <img src="./img/cow.jpg" alt="front-view">
+    </section>
+    <!-- similar products section-->
+    <section class="row-2">
+    <h4>RELATED PRODUCTS</h4>
+    <div class="similar-product">
+      <div class="col-1">
+        <div class="bull">
+          <img src="./img/bull-cow.jpg" alt="bull">
+        </div>
+        <p>Bull</p>
+        <p>Price: #400, 000</p>
+      </div>
+      <div class="col-2">
+        <div class="goat">
+          <img src="./img/white-goat.jpg" alt="goat">
+        </div>
+        <p>White Goat</p>
+        <p>Price: #30, 000</p>
+      </div>
+      <div class="col-3">
+        <div class="sheep">
+          <img src="./img/ram.jpg" alt="sheep">
+        </div>
+        <p>Sheep</p>
+        <p>Price: #55, 000</p>
+      </div>
     </div>
-    <h3>#300,000</h3>
-    <h3>Product Description</h3>
-    <p> <b>A six months old diary cow </b>that produces large quantities of milk of about<b>30.000lb</b> per year. It
-      <b> weighs 170kg </b> with no history of any ailment.
-    </p>
-  </section>
-  <hr>
-  <!-- similar products -->
-  <section>
-    <h3>Similar Products</h3>
-    <ol>
-      <li>Bull</li>
-      <li>Goat</li>
-      <li>Sheep</li>
-    </ol>
-  </section>
+    </section>
+  </main>
   <!--Footer-->
   <footer>
-    <div class="row1">
-      <div class="col1">
+    <div class="row-1">
+      <div class="col-1">
         <ul>
           <li><a href="../htmlForm/ContactForm.html">Contact us</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Terms and Conditions</a></li>
         </ul>
       </div>
-      <div class="col2">
+      <div class="col-2">
         <div class="newsletter">
           <p>Sign up for our Newsletter</p>
           <form>
@@ -83,9 +112,10 @@
         </div>
       </div>
     </div>
-    <div class="row2">
+    <div class="row-2">
       <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
     </div>
   </footer>
 </body>
+
 </html>
