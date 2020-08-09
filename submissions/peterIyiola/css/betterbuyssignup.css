@@ -42,6 +42,7 @@ input[type=password]    {
 input[type=checkbox]    {
     padding: 5px;
     border-radius: 2px;
+    
 }
 .field    {
     border-radius: 23px;
@@ -124,4 +125,10 @@ h5  {
   footer    {
       background-color: greenyellow;
   }
+}
+.fieldcontact   {
+
+}
+.inputcontact   {
+    border: none;
 }

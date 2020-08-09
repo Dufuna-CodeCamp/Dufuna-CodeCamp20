@@ -1,0 +1,135 @@
+@media screen and (min-width:480px) {
+    body    {
+        white-space: initial;
+    }
+    .container   {
+        display: flex;
+        flex:row wrap;
+        justify-content: space-around;
+        padding:180px;
+    }
+    .flex-item  {
+        align-items: center
+    }
+    .flex-item1 {
+        margin-left:20px;
+        align-items: center;
+    }
+    a   {
+        text-decoration: none;
+    }
+    .btn    {
+        border-radius: 5px;
+        color: goldenrod;
+        margin-left: 70px;
+    }
+    .field    {
+        width:300px;
+        margin-bottom: 10px;
+        padding: 50px;
+    }
+    textarea    {
+        width: 250px;
+        height: 80px;
+    }
+    input   {
+        border: none;
+        border-bottom: 1px solid;
+        width: 250px;
+    }
+    img  {
+        margin-left: 100px;
+    }
+    .head {
+        background-color: greenyellow;
+`        flex: row wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    p   {
+        color: lightseagreen;
+        margin-left: 50px;
+        line-height: 10px;
+    }
+    h4 {
+        color: green;
+    }
+    .flex-item3 {
+        margin-left: 20px;
+        align-items: center;
+    }
+    .PN {
+        margin-left: 15px;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 10px;
+        text-align: center;
+        margin:5px;
+        border-radius: 5px;
+    
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+      .flex-container   {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: greenyellow;
+          padding:5px;
+          justify-content: space-around;
+      }
+      button{
+          color: rgb(136, 156, 136);
+          cursor: pointer;
+          border-radius: 5px;
+          img   {
+              
+          }
+      }
+      button:hover  {
+          background-color:burlywood;
+      }
+    .flex-container2   {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: greenyellow;
+      padding: 5px;
+      justify-content: space-around;
+  }
+      .CR   {
+          text-align: center;
+      }
+      footer    {
+          background-color: greenyellow;
+          padding-bottom: 5px;
+      }
+      .flex-item2   {
+          padding-top: 15px;
+      }
+      
+      }
+      
+    }
+
+    
