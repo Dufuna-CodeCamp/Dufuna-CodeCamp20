@@ -166,22 +166,20 @@
     }
         /* registration info */
     #reg-acct {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 45px;
         font-weight: bold;
         color: rgb(2, 209, 2);
     }
     #heading, #reg-note, #acct-signin {
         text-align: center;
-        margin-left: 295cm;
+        margin-left: 295px;
         padding-bottom: 0px;
         padding-top: 0px;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 26.5px;
         text-align: center;
     }
     #table {
-        margin-right: 78cm;
+        margin-right: 78px;
         float: right;
         width: 1100px;
     }
