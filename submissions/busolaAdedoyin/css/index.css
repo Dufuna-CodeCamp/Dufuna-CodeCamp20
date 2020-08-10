@@ -15,7 +15,6 @@ body {
     padding: 0;
     margin: 0;
  }
-
  header {
     background:#330066;
     color: white;
@@ -46,37 +45,29 @@ body {
     float: right;
     margin-top: 15px;
  }
-
 /* THE FOOTER */
-
 footer a {
    color: white;
    text-decoration: none;
 }
-
 footer {
    background-color:#333366;
    overflow: hidden;
    padding: 20px 0 0 20px;
    border-top:4px solid yellow;
-
 }
-
-
 .footer {
    float: left;
    width: 33.33%;
    font-weight: lighter;
    padding-bottom: 20px;
 }
-
 .footer li {
    padding:5px;
    font-weight: lighter;
    opacity: 0.5;
    list-style-type: none;
 }
-
 .footer p {
    color: white;
    font-weight: lighter;
@@ -85,7 +76,6 @@ footer {
    display: block;
    overflow: hidden;
 }
-
 .logo li {
    list-style-type: none;
    padding: 2px;
@@ -106,11 +96,9 @@ img {
    margin: 0;
    padding: 0;
 }
-
 footer ::placeholder  {
   color: lightblue;
 }
-
 input {
   background-color: white;
   color: cornflowerblue;
@@ -131,7 +119,6 @@ input {
    margin: 12px 30px 5px 0 ;
    border: 1px solid gray;
 }
-
 .upper-container2{
    width:300px;
    float: left;
@@ -167,9 +154,6 @@ input {
    padding-left: 20px;
 }
 /*LOWER CONTAINER */
-
-
-
  .lower {
    background-color:lightgray;
    padding-top: 10px;
@@ -179,9 +163,7 @@ input {
 } 
 h3 {
    text-align: center;
-    
 }
-
 .img-lower {
    float: left;
    width: 30%;
@@ -189,25 +171,20 @@ h3 {
    margin:20px;
    background-color: whitesmoke;
    margin-bottom: 20px;
-
 }
-
 .img-lower img {
    width:200px;
    height:160px;
    margin: 15px 85px 0 85px;
 }
-
 .img-lower p {
    text-align: center;
    font-weight: bold;
    padding: 0;
    margin: 0;
-
 }
 
 /*MEDIA QUERY */
-
 @media screen and (max-width: 950px) {   
  .img-lower {
     width: 280px;
@@ -234,9 +211,7 @@ h3 {
        float: none;
        text-align: center;
        padding: 0 20px;
-
    }
-  
 }
 @media screen and (max-width: 470px ){
    header nav,
@@ -245,19 +220,12 @@ h3 {
        float: none;
        text-align: left;
       display: block;
-
    }
-
    .img-lower {
       /* margin-right: 100px; */
       float:none;
       width: 280px;
       margin-left:0px;
    }
-
 }
-
-
-
-
-
+}
