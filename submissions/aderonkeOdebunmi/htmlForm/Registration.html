@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+    </head>
+    <header>
+        <img src="images/everyqlogo3.jpg">
+            <ul>
+     <li><a href="registration.html">Join Us</a></li>
+    <li><a href="../introductionToHtml/productPage.html">Product Page</a></li>
+    <li><a href="contactformPage.html">Contact Us</a></li>
+            </ul>
+    </header>
+    <body>
+        <h1>Registration</h1>
+        <form actions="#" method="post" encotype="multipart-form data">
+            <label for="firstname">First Name</label><br>
+            <input type="text" name="fname" id="firstname"><br>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="lname" id="lastname"><br><br>
+            <label for="address">Address</label><br>
+            <input type="text" name="address" id="address"><br><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" value="Male" id="male">
+            <label for="Male">Male</label><br>
+            <INPUT TYPE="RADIO" name="gender" value="Female" id="female">
+            <label for="Female">Female</label><br><br>
+            <label for="Email:">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"/><br><br>
+            <label for="username:">Username:</label>
+            <input type="username" name="username" id="username"><br><br>
+            <label>Password:</label>
+            <input type="password" name="password"><br><br>
+            <label>Confirm Password:</label>
+            <input type="password2" name="password2"><br><br>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+            <option value="nigeria" selected>Nigeria</option>   
+            <option value="ghana">Ghana</option>
+            <option value="south Africa">South Africa</option>
+            <option value="kenya">Kenya</option>
+            </select><br><br>
+            <input type="checkbox" name="subscribe" id="subscribe" value="subscribe">
+            <label for="subscribe">Yes, I want to receive exclusive email offers & sale alerts</label><br>
+             <button onclick="alert('Registration Successful')">Join Now</button>
+    </form>
+   </body>
+</html> 
