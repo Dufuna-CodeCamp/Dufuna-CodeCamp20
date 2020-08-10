@@ -87,7 +87,7 @@ main .col-2 .col-2-row-2 form input, textarea{
  border: none;
  border-bottom: 1px solid #5f5f5f;
 }
-main .col-2 .col-2-row-2 form textarea{
+textarea{
  border: 1px solid #5f5f5f;
 }
 main .col-2 .col-2-row-2 form .message-label{
@@ -133,7 +133,7 @@ footer .row-1 .col-2 form input::-ms-input-placeholder
 {
   color: #004b18;
 }
-footer .row-1 .col-2 form button{
+footer button{
   padding: 0.7em 1em;
   color: #004b18;
   border: 2px solid black;
