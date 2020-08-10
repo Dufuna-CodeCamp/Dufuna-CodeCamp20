@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Lato' , sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav a[href*="*"] {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li {
+    color: white;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: palegreen;
+}
+
+a:visited {
+    color: white;
+}
+
+.register {
+    display: inline;
+    margin: 100px 50px ;
+    padding: 5px;
+}
+
+.account {
+    width: 365px;
+    height: 122px;
+    font-size: 45px;
+    font-weight: bold;
+    color: olive;
+}
+
+.registering {
+    width: 528px;
+    height: 151px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.registering a[href*="#"] {
+    color: olive;
+    text-decoration: underline;
+}
+
+.information {
+    padding: 100px 80px;
+}
+
+.inform {
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: -50px;
+}
+
+img {
+    height: 50px;
+}
+
+#fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
+    width: 521px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#terms {
+    margin-left: 130px;
+}
+
+.ton {
+    font-weight: bold;
+    margin-left: 200px;
+    padding: 10px 30px;
+    background-color: olive;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    color: olive;
+    font-weight: bold;
+    height: 40px;
+}
+
+
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer div {
+    padding: 50px 150px 0 40px ;
+}
+
+footer ul {
+    margin: 5px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: olive;
+    color: white;
+}
+
+.connect {
+    margin-top: -10px;
+}
+
+.newsletter {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.newsletter input {
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+}
+
+
+
+@media screen and (min-width: 640px) {
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .sign,
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+nav{
+    padding: 10px;
+    background-color: olive;
+    color: white;
+    position: relative;
+}
