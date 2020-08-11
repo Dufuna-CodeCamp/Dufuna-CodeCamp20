@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(6, 11, 73)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.rad{
+    overflow-y: hidden;
+}
+fieldset {
+    width: 50vw;
+    border-radius: 23px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+    
+.footer {
+    background-color: salmon;
+    margin: 0;
+}
+.footer-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color:salmon;
+}
+
+@media (max-width: 576px) {
+    .footer {
+        margin-bottom: 0;
+    }
+    .bord {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+.signup{
+    padding-top: 5rem;
+}
+.signup h1{
+    color: salmon;
+    padding-top: 7rem;
+}
+.form-control{
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#terms {
+    color:salmon;
+}
+
+.bord{
+    border: 1px solid rgb(134, 133, 133);
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+
+.signin {
+    color:salmon;
+}
+::placeholder{
+    color: salmon;
+}
+.footer-copyright {
+    text-align: center;
+}
+
+.checkbox {
+    border: 3px;
+    padding: 100px;
+}
+
+#sign-up{
+    background: salmon;
+    padding: 10px 25px;
+    color: white;
+    border-color: salmon;
+}
+.btn-salmon {
+    background: transparent;
+    padding: 2px 15px;
+    border: 1px solid white;
+}
+.footer-nav li {
+    line-height: 3px;
+}
+
+span {
+    font-size: 0.8rem;
+}
