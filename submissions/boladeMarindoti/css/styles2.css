@@ -75,7 +75,7 @@ main{
 }
         /* MAIN IMAGE DETAILS */
 .img-details{
-    float:right;
+    float: left;
     width: 300px; 
     margin-left: 30px;
 }
