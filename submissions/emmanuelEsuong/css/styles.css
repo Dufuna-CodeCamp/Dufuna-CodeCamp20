@@ -337,7 +337,7 @@ li {
     #newsLetter #submit {
         height: 65px;
         padding-bottom: 5px;
-        margin-top: 8px 4px 0px 0px;
+        margin: 8px 4px 0px 0px;
         background-color: white;
         color: rgb(2, 209, 2);
     }
