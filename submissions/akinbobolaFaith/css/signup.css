@@ -1,7 +1,7 @@
 body {
-    margin: 0;
+    margin: 0 -80px 0 0;
     font-family: 'Lato' , sans-serif;
-    font-size: 16px;
+    font-size: 16px
 }
 
 * {
@@ -9,7 +9,7 @@ body {
 }
 
 nav a[href*="*"] {
-    font-size: 25px;
+    font-size: 31px;
     font-weight: bold;
     color: white;
 }
@@ -26,8 +26,8 @@ a {
 }
 
 nav li {
+    margin: 5px;
     color: white;
-
 }
 
 a:link {
@@ -42,25 +42,31 @@ a:visited {
     color: white;
 }
 
+a[href*="#"] {
+    color: white;
+}
+
 .register {
-    display: inline;
-    margin: 100px 50px ;
-    padding: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: -webkit-center;
 }
 
 .account {
-    width: 365px;
-    height: 122px;
-    font-size: 45px;
+    width: 250px;
+   /* height: 122px; */
+    font-size: 40px;
     font-weight: bold;
     color: olive;
 }
 
 .registering {
-    width: 528px;
-    height: 151px;
-    font-size: 25px;
-    text-align: left;
+    width: 250px;
+  /*  height: 151px; */
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
 }
 
 .registering a[href*="#"] {
@@ -69,14 +75,18 @@ a:visited {
 }
 
 .information {
-    padding: 100px 80px;
+    width: 100%;
+    padding: 0 34px 74px 34px;
+    display: flex;
+    justify-content: center;
 }
 
 .inform {
+    width: 200px;
     border-width: 1px;
     border-radius: 20px;
-    padding: 50px;
-    margin: -50px;
+    padding: 35px 45px;
+    margin: 0 0 -50px 0;
 }
 
 img {
@@ -84,18 +94,20 @@ img {
 }
 
 #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
-    width: 521px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-#terms {
-    margin-left: 130px;
+.term {
+    text-align: center;
 }
 
 .ton {
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 168px;
     padding: 10px 30px;
     background-color: olive;
     color: white;
@@ -104,20 +116,20 @@ img {
     border-radius: 5px;
 }
 
-.newsletter button {
-    color: olive;
-    font-weight: bold;
-    height: 40px;
+.sign {
+    display: flex;
+   /* flex-wrap: wrap; */
+    flex-direction: column;
 }
-
 
 footer p {
     text-align: center;
     padding: 10px;
+    margin: auto;
 }
 
 .footer div {
-    padding: 50px 150px 0 40px ;
+    padding: 15px 150px -1px 40px ;
 }
 
 footer ul {
@@ -130,13 +142,17 @@ footer {
     color: white;
 }
 
+. .connect p {
+    margin: 0;
+}
+
 .connect {
-    margin-top: -10px;
+    margin-top: 0;
 }
 
 .newsletter {
     margin-top: 10px;
-    padding: 15px;
+    padding: 15px 0;
     font-size: 20px;
 }
 
@@ -146,9 +162,99 @@ footer {
     font-size: 15px;
 }
 
-
+.newsletter button {
+    color: olive;
+    font-weight: bold;
+    height: 40px;
+}
 
 @media screen and (min-width: 640px) {
+    body {
+        margin: 0;
+    }
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }   
+
+    .sign {
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .register {
+        width: 35%;
+        margin: 100px 25px;
+        padding: 20px;
+    }
+
+    .account {
+        width: 360px;
+        font-size: 45px;
+        font-weight: bold;
+        color: olive;
+    }    
+
+    .registering {
+        width: 367px;
+        margin: 10px 0;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .information {
+        width: 55%;
+        padding: 100px 50px;
+        display: flex;
+        justify-content: center
+    }
+
+    .inform {
+        width: 500px;
+        height: 725px;
+        margin: -50px;
+        
+    }
+
+    .info {
+        height: 650px;
+    }
+
+    label,
+    input {
+        margin-bottom: 10px;
+    }
+
+    #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
+        width: 100%;
+    }
+
+    #terms {
+        text-align: center;
+    }
+
+    .footer div {
+        padding: 50px 150px 0 40px ;
+    }
+
+    .newsletter {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1050px) {
+    body {
+        margin: 0 -25px 0 0;
+    }
     nav {
         padding: 25px 35px;
     }
@@ -160,16 +266,72 @@ footer {
         float: right;
     }
 
-    .sign,
-    .footer {
+    .sign {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    } 
+    
+    .register {
+        width: 100%;
+        margin: 9px 25px;
+        text-align: -webkit-center;
+    }
+    
+    .account {
+        width: 360px;
+        text-align: center;
+    }
+    
+    .registering {
+        width: 367px;
+        text-align: center;
+    }
+
+    .information {
+        width: 100%;
+        padding: 23px 50px 70px 54px;
+    }
+    
+    .inform {
+        width: 500px;
+        height: 725px;
+        margin: -24px;
+    }
+    
+    .info {
+        height: 650px;
+    }
+
+    #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
+        width: 100%;   
+    }
+
+    .term {
+        text-align: center;
+    }
+
+    .ton {
+        margin-left: 148px;
+    }
+
+    .footer div {
+        padding: 50px 150px 0 40px ;
+    }
+
+    .newsletter {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 20px;
     }
 }
-
+   
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 nav{
-    padding: 10px;
+    padding: 10px 10px 10px 27px;
     background-color: olive;
     color: white;
     position: relative;
