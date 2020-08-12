@@ -55,7 +55,6 @@ footer {
    overflow: hidden;
    padding: 20px 0 0 20px;
    border-top:4px solid yellow;
-
 }
 .footer {
    float: left;
@@ -160,8 +159,8 @@ input {
    margin-left: 30px;
    overflow: hidden;
 } 
-h3 {
-   text-align: center;  
+h3 { 
+   text-align: center;
 }
 .img-lower {
    float: left;
@@ -182,6 +181,7 @@ h3 {
    padding: 0;
    margin: 0;
 }
+
 /*MEDIA QUERY */
 @media screen and (max-width: 950px) {   
  .img-lower {
