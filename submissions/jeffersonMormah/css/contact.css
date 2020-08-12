@@ -1,6 +1,6 @@
 body{
     font-family: 'Franklin Gothic Medium';
-    background-color: azure;
+    background-color:snow;
 }
 .nav-container{
     width: 100%;
@@ -111,16 +111,16 @@ aside .contact-form label {
 aside .contact-form input {
     margin-top: 1px;
     margin-left: 20px;
-    border: 2px solid #000000;
-    border-radius: 50px;
+    border: none;
+    border-bottom: 2px solid #000000;
     width: 90%;
     height: 30px;
 }
 aside .contact-form select {
     margin-top: 1px;
     margin-left: 20px;
-    border: 2px solid #000000;
-    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #000000;
     width: 90%;
     height: 30px;
 }
