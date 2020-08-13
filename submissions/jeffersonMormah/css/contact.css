@@ -128,7 +128,7 @@ aside .contact-form select {
     width: 90%;
     height: 30px;
 }
-aside .contact-form textarea {
+textarea {
     margin-top: 1px;
     margin-left: 20px;
     border: 2px solid #000000;
@@ -174,12 +174,12 @@ footer {
 }
 .footer2 input[type="email"]{
    height: 25px;
-   padding: 3px 18px 3px ;
+   padding: 3px 18px 3px 0;
    font-size: 12px; 
 }
 .footer2 button[type="submit"]{
    height: 30px;
-   padding: 0 5%;
+   padding: 0 5px;
    font-size: 12px;
    background-color:  rgb(250,128,114);
    color: #F5F5DC;
@@ -214,11 +214,11 @@ footer p{
     header nav,
     header .nav-container  nav li{
         text-align: center;
-        padding:0 3%;
+        padding:0 3px;
         float: none;
 }
 main, aside {
-    width: 70%;
+    width: 70px;
     margin: auto;
     padding-bottom: 17px;
 }
@@ -226,7 +226,7 @@ main {
     text-align: center;
 }
 .footer1, .footer2, .footer3 {
-    width: 44%;
+    width: 44px;
 }
 .footer3 ul li{
     display: inline;
@@ -244,10 +244,10 @@ main {
 @media screen and (max-width: 920px) {
     .footer1, 
     .footer2{
-        width: 50%;
+        width: 50px;
     }
     .footer3 {
-        width: 50%;
+        width: 50px;
     }
     .footer3 ul li{
         display: inline;
