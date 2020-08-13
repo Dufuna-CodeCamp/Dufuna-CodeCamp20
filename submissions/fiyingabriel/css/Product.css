@@ -26,7 +26,7 @@ ul{
   list-style-type: none;
 }
 #shi li {
-    padding: 0px 0px 10px 10px;
+    padding: 0 0 10px 10px;
     font-weight: bold;
     font-size: 15px;
 }
@@ -52,7 +52,7 @@ ul{
 }
 #buy-now {
     border-radius: 15px;
-    margin-left: 0px;
+    margin-left: 0;
     padding: 10px;
     font-size: 17px;
 }
@@ -68,7 +68,7 @@ ul{
 #pi {
     width: 520px;
     height: 355px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 #pc {
     width: 395px;
@@ -115,11 +115,11 @@ footer {
 /* footer social media icons */
 #icons {
     float: right;
-    margin: 15px 40px 0px 0px;
+    margin: 15px 40px 0 0;
 }
 /* footer newsletter signUp */
 #newsLetter {
-    margin: 20px 0px 0px 430px; 
+    margin: 20px 0 0 430px; 
 }
 #input-email {
     width: 185px;
@@ -147,7 +147,7 @@ li {
 #copyright {
     text-align: center;
     float: left;
-    margin: 40px 0px 0px 350px;
+    margin: 40px 0 0 350px;
     color: white
 }
 
@@ -200,7 +200,7 @@ li {
         font-size: 35px;
     }
     .topnav #logo {
-        margin: 20px 0px 0px 25px;
+        margin: 20px 0 0 25px;
     }
     .topnav a {
         float: left;
@@ -210,7 +210,7 @@ li {
     }
     .topnav-right {
         float: left;
-        margin: 0px 740px 0px 20px;
+        margin: 0 740px 0 20px;
         width: 300px;    
     }
     .prod-list {
@@ -218,7 +218,7 @@ li {
         margin-left: 40px;
         margin-right: 40px;
         height: 990px;
-        margin-top: 0px;
+        margin-top: 0;
     }
     .detail #pot-combo li {
         font-size: 25px;
@@ -227,7 +227,7 @@ li {
         float: right;
         width: 595px;
         height: 615px;
-        margin-top: 0px;
+        margin-top: 0;
         margin-left: 115px;
     }
     .top-prod {
@@ -236,7 +236,7 @@ li {
     #des {
         padding-bottom: 5;
         margin-bottom: 0;
-        margin-top: 0px;
+        margin-top: 0;
         font-size: 20px;
     }    
     /*related products*/
@@ -291,12 +291,12 @@ li {
     #newsLetter #submit {
         height: 65px;
         padding-bottom: 5px;
-        margin: 8px 4px 0px 0px;
+        margin: 8px 4px 0 0;
         background-color: white;
         color: rgb(2, 209, 2);
     }
     #icons {
-        margin: 25px 55px 0px 390px;
+        margin: 25px 55px 0 390px;
     }
     #icons li {
         font-size: 30px;
@@ -308,7 +308,7 @@ li {
     }
     #newsLetter {
         float: left;
-        margin: 30px 55px 0px 0px;
+        margin: 30px 55px 0 0;
         width: 700px;
     }
     #footnav li a {
@@ -322,7 +322,7 @@ li {
     }
     #copyright {
         text-align: center;
-        margin: 30px 0px 20px 155px;
+        margin: 30px 0 20px 155px;
         font-size: 35px;
         width: 600px;
         color: white;
