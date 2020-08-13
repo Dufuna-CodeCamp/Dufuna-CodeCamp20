@@ -1,4 +1,4 @@
-    .container   {
+   .container   {
         display: flex;
         flex:row wrap;
         justify-content: space-around;
@@ -10,6 +10,10 @@
     .flex-item1 {
         margin-left:20px;
         align-items: center;
+    }
+    .logo   {
+        width: 30px;
+        height:30px;
     }
     .pp {
         padding-top: 13px;
@@ -122,7 +126,7 @@
       footer    {
           background-color: greenyellow;
       }
-@media screen and (max-width:780px) {
+ 
     .flex-item1   {
         width: 100%;
     }
@@ -132,4 +136,24 @@
     .field{
         width: 100%;
     }
-    .flex-container
+@media screen and (max-width:480px) {
+    
+    .flex-item1   {
+        height: 50%;
+    }
+    .class  {
+        height: 50%;
+    }
+    .Name   {
+        width:75%;
+    }
+    .container   {
+        display: block;
+        flex:row wrap;
+        justify-content: space-around;
+        padding:18px;
+    }
+    .flex-container   {
+        display: block;
+    }
+}
