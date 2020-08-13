@@ -1,7 +1,5 @@
   
-html {
-    display: block;
-}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,13 +47,13 @@ ul{
 #qt {
     text-align: center;
     width: 45px;
-    padding: 3px 3px 3px 3px;
+    padding: 3px;
     border-radius: 1px;
 }
 #buy-now {
     border-radius: 15px;
     margin-left: 0px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     font-size: 17px;
 }
 /* top display product description */
@@ -64,7 +62,6 @@ ul{
 }
 #des {
     padding-bottom: 1px;
-    font-family: 'Calibri';
     font-size: 20px;
 }
 /* product images */
@@ -165,7 +162,6 @@ li {
     /* top display product description */
     #des {
         padding-bottom: 5px;
-        font-family: 'Calibri';
         font-size: 18px;
     }
     /* product images */
@@ -186,7 +182,7 @@ li {
         margin-left: 20px;
         background-color: #004b18;
         font-weight: bold;
-        padding-right: 0px 30px 0px 30px;
+        padding-right: 30px;
     }
     .others {
         background-color: rgb(234, 236, 232);
@@ -235,11 +231,11 @@ li {
         margin-left: 115px;
     }
     .top-prod {
-        padding: 0px;
+        padding: 0;
     }
     #des {
-        padding-bottom: 5px;
-        margin-bottom: 0px;
+        padding-bottom: 5;
+        margin-bottom: 0;
         margin-top: 0px;
         font-size: 20px;
     }    
