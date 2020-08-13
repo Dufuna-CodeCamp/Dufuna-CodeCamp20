@@ -24,6 +24,9 @@ body {
     float: right;
     padding-left: 12px;
 }
+ul{
+  list-style-type: none;
+}
 #shi li {
     padding: 0px 0px 10px 10px;
     font-weight: bold;
