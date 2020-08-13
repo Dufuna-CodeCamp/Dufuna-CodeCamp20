@@ -1,0 +1,341 @@
+body {
+    margin: 0 -52px 0 0;
+    font-family: 'Lato' , sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav a[href*="*"] {
+     font-size: 31px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    color: white;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: palegreen;
+}
+
+a:visited {
+    color: white;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+    padding: 15px 35px 0;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.p1, .p2, .p3 {
+    line-height: 50px;
+}
+
+.informate {
+    width: 100%;
+    padding: 0 25px 24px;
+}
+
+.formate {
+    width: 100%;
+    padding: 13px 23px;
+}
+
+.image {
+    text-align: center;
+}
+   
+.informate p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+}
+
+#fname, #email, #subject, input{
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.number,
+.address,
+.connect1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.25px;
+}
+
+.num,
+.domain {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+#input {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: grey;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+}
+img {
+    height: 50px;
+    padding: 8px;
+}
+
+.ton {
+    font-weight: bold;
+    margin-left: 100%x;
+    padding: 10px 30px;
+    background-color: olive;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    float: right;
+}
+
+.contactus {
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.footer div {
+    padding: 15px 150px -1px 40px ;
+}
+
+footer ul {
+    margin: 5px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: olive;
+    color: white;
+}
+
+. .connect p {
+    margin: 0;
+}
+
+.connect {
+    margin-top: 0;
+}
+
+.newsletter {
+    margin-top: 10px;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.newsletter input {
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.newsletter button {
+    color: olive;
+    font-weight: bold;
+    height: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        margin: 0;
+    }
+
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .contactus {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact {
+        width: 40%;
+        text-align: center;
+        padding: 140px 50px;
+    }
+
+    .number,
+    .address,
+    .connect1 {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
+    }
+
+    .informate {
+        width: 55%;
+        padding: 85px;
+    }
+
+    .formate {
+        width: 500px;
+        height: 625px;
+        padding: 12px 35px;
+    }
+
+    .informate p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
+        text-align: center;
+    }
+
+    textarea {
+        width: 500px;
+        height: 180px;
+    }
+ 
+    .footer div {
+        padding: 50px 150px 0 40px ;
+    }
+
+    .newsletter {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1050px) {
+    body {
+        margin: 0;
+    }
+
+    nav {
+        padding: 25px 35px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .contactus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p1, .p2, .p3 {
+        line-height: 50px;
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+        padding: 38px 50px;
+    }
+
+    .number,
+    .address,
+    .connect1 {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
+    }
+
+    .informate {
+        width: 100%;
+        padding: 0 160px 50px;
+    }
+
+    .informate p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
+        text-align: center;
+    }
+
+    .formate {
+        width: 100%;
+        height: 625px;
+        padding: 12px 35px;
+    }
+
+    textarea {
+        width: 500px;
+        height: 180px;
+    }
+ 
+    .footer div {
+        padding: 50px 150px 0 40px ;
+    }
+
+    .newsletter {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+}
+
+nav{
+    padding: 10px;
+    background-color: olive;
+    color: white;
+    position: relative;
+}
+
