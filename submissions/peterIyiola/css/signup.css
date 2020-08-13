@@ -1,0 +1,135 @@
+    .container   {
+        display: flex;
+        flex:row wrap;
+        justify-content: space-around;
+        padding:18px;
+    }
+    .flex-item  {
+        align-items: center
+    }
+    .flex-item1 {
+        margin-left:20px;
+        align-items: center;
+    }
+    .pp {
+        padding-top: 13px;
+    }
+    .CU {
+        padding-top: 13px;
+    }
+    .SU {
+        padding-top: 13px;
+    }
+    
+    .firstname  {
+        border-radius: 25px;
+    }
+    a   {
+        text-decoration: none;
+    }
+    .btn    {
+        border-radius: 5px;
+        color: goldenrod;
+        margin-left: 70px;
+        cursor: pointer;
+    }
+    .btn:hover  {
+        background-color:burlywood;
+    }
+    .Name   {
+        border-radius: 10px;
+        padding: 5px;
+        width: 300px;
+    }
+    .field    {
+        border-radius: 23px;
+        width: 28px;
+    }
+   .submit  {
+       width: fit-content;
+       cursor: pointer;
+   }
+   .submit:hover  {
+    background-color:burlywood;
+}
+    .head {
+        background-color: greenyellow;
+        flex: row wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    label  {
+        margin-left:0px;
+        padding-left: 5px;
+    }
+    p   {
+        color: lightseagreen;
+    }
+    h2,
+    h4,
+    h5  {
+        color: green;
+    }
+    #flex-item3 {
+        border-radius: 0%;
+    }
+    
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 15px;
+        text-align: center;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+      .flex-container   {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: greenyellow;
+          padding: 5px;
+          justify-content: space-around;
+      }
+      .flex-container2  {
+          display: flex;
+          flex-direction:row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+      }
+      .CR   {
+          text-align: center;
+      }
+      footer    {
+          background-color: greenyellow;
+      }
+@media screen and (max-width:780px) {
+    .flex-item1   {
+        width: 100%;
+    }
+    .flex-container{
+        width:100%;
+    }
+    .field{
+        width: 100%;
+    }
+    .flex-container
