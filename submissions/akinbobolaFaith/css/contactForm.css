@@ -154,7 +154,7 @@ footer {
     color: white;
 }
 
-. .connect p {
+.connect p {
     margin: 0;
 }
 
@@ -180,10 +180,6 @@ footer {
     height: 40px;
 }
 
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 @media screen and (min-width: 640px) {
     body {
@@ -330,6 +326,11 @@ footer {
         font-size: 20px;
     }
 
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav{
