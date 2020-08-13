@@ -59,9 +59,7 @@ footer {
    overflow: hidden;
    padding: 20px 0 0 20px;
    border-top:4px solid yellow;
-
 }
-
 
 .footer {
    float: left;
@@ -131,12 +129,10 @@ input {
    margin: 12px 30px 5px 0 ;
    border: 1px solid gray;
 }
-
 .upper-container2{
    width:300px;
    float: left;
    font-weight: bolder;
-   /* margin-bottom: 30px; */
 }
 .upper-container1 img {
    height: inherit;
@@ -162,14 +158,10 @@ input {
    margin-top: 10px;
 }
 .word {
-   /* float: left; */
    margin: auto;
    padding-left: 20px;
 }
 /*LOWER CONTAINER */
-
-
-
  .lower {
    background-color:lightgray;
    padding-top: 10px;
@@ -178,8 +170,7 @@ input {
    overflow: hidden;
 } 
 h3 {
-   text-align: center;
-    
+    text-align: center;
 }
 
 .img-lower {
@@ -191,19 +182,16 @@ h3 {
    margin-bottom: 20px;
 
 }
-
 .img-lower img {
    width:200px;
    height:160px;
    margin: 15px 85px 0 85px;
 }
-
 .img-lower p {
    text-align: center;
    font-weight: bold;
    padding: 0;
    margin: 0;
-
 }
 
 /*MEDIA QUERY */
@@ -211,16 +199,14 @@ h3 {
 @media screen and (max-width: 950px) {   
  .img-lower {
     width: 280px;
-
  }
-.img-lower img {
+ img {
    margin:15px 50px 0 50px;
    }
 .newsletter, .box1{
    width:330px;
 }
 .last {
-   /* display: block; */
    text-align: center;
 }
 .logo {
@@ -249,7 +235,6 @@ h3 {
    }
 
    .img-lower {
-      /* margin-right: 100px; */
       float:none;
       width: 280px;
       margin-left:0px;
