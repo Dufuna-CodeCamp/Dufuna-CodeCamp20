@@ -144,13 +144,12 @@ footer {
     margin-bottom: 8px;
     font-size: 17px;
    font-weight: bold;
-   text-decoration: none;
 }
 .footer1 ul li a{
    display: inline;
-   color: rgb(250,128,114); 
+   color: rgb(250,128,114);  
    list-style: none;
-   text-decoration: none; 
+   text-decoration: none;
 }
 .footer2 input[type="email"]{
    height: 25px;
@@ -187,9 +186,9 @@ footer p{
    margin-left: 30px;
 }
 @media screen and (max-width:850px){
-    header #nav-brand,
+    header .nav-title,
     header nav,
-    header .nav-case  nav li{
+    header .nav-container  nav li{
         text-align: center;
         padding:0 3px;
         float: none;
@@ -202,7 +201,6 @@ main, aside {
 main {
     text-align: center;
 }
-
 .footer1, .footer2, .footer3 {
     width: 44%;
 }
@@ -210,17 +208,35 @@ main {
     display: inline;
 }
 }
+@media screen and (max-width:550px){
+    main {
+        margin: auto;
+    }
+    .contact-form button{
+        width: 90px;
+        margin: 10px 75px;
+    }
+}
 @media screen and (max-width: 920px) {
+    .image1,
+    .image2,
+    .image3{
+        width: 320px;
+    }
     .footer1, 
     .footer2{
-        width: 50%;
+        width: 320px;
     }
     .footer3 {
-        width: 50%;
+        float: none;
+        margin-top: 0px;
+        padding: 3px
     }
     .footer3 ul li{
         display: inline;
     }
+    footer p{
+        text-align: center;
+    }
 }
-
 
