@@ -15,6 +15,7 @@ body {
     padding: 0;
     margin: 0;
  }
+
  header {
     background:#330066;
     color: white;
@@ -45,29 +46,35 @@ body {
     float: right;
     margin-top: 15px;
  }
+
 /* THE FOOTER */
+
 footer a {
    color: white;
    text-decoration: none;
 }
+
 footer {
    background-color:#333366;
    overflow: hidden;
    padding: 20px 0 0 20px;
    border-top:4px solid yellow;
 }
+
 .footer {
    float: left;
    width: 33.33%;
    font-weight: lighter;
    padding-bottom: 20px;
 }
+
 .footer li {
    padding:5px;
    font-weight: lighter;
    opacity: 0.5;
    list-style-type: none;
 }
+
 .footer p {
    color: white;
    font-weight: lighter;
@@ -76,6 +83,7 @@ footer {
    display: block;
    overflow: hidden;
 }
+
 .logo li {
    list-style-type: none;
    padding: 2px;
@@ -96,9 +104,11 @@ img {
    margin: 0;
    padding: 0;
 }
+
 footer ::placeholder  {
   color: lightblue;
 }
+
 input {
   background-color: white;
   color: cornflowerblue;
@@ -123,7 +133,6 @@ input {
    width:300px;
    float: left;
    font-weight: bolder;
-   /* margin-bottom: 30px; */
 }
 .upper-container1 img {
    height: inherit;
@@ -149,7 +158,6 @@ input {
    margin-top: 10px;
 }
 .word {
-   /* float: left; */
    margin: auto;
    padding-left: 20px;
 }
@@ -162,8 +170,9 @@ input {
    overflow: hidden;
 } 
 h3 {
-   text-align: center;
+    text-align: center;
 }
+
 .img-lower {
    float: left;
    width: 30%;
@@ -171,6 +180,7 @@ h3 {
    margin:20px;
    background-color: whitesmoke;
    margin-bottom: 20px;
+
 }
 .img-lower img {
    width:200px;
@@ -185,19 +195,18 @@ h3 {
 }
 
 /*MEDIA QUERY */
+
 @media screen and (max-width: 950px) {   
  .img-lower {
     width: 280px;
-
  }
-.img-lower img {
+ img {
    margin:15px 50px 0 50px;
    }
 .newsletter, .box1{
    width:330px;
 }
 .last {
-   /* display: block; */
    text-align: center;
 }
 .logo {
@@ -211,7 +220,9 @@ h3 {
        float: none;
        text-align: center;
        padding: 0 20px;
+
    }
+  
 }
 @media screen and (max-width: 470px ){
    header nav,
@@ -220,12 +231,14 @@ h3 {
        float: none;
        text-align: left;
       display: block;
+
    }
+
    .img-lower {
-      /* margin-right: 100px; */
       float:none;
       width: 280px;
       margin-left:0px;
    }
+
 }
 }
