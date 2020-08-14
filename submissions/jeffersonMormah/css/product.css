@@ -67,7 +67,7 @@ header nav{
 .img-description {
     float: left;
     width: 250px;
-    margin-left: 450px;
+    margin-left: 550px;
 }
 #stock h4, #stock table{
     display: inline-table;
@@ -93,7 +93,7 @@ header nav{
     font-weight: bold;
 }
 .product-description{
-    margin:0 55px; 
+    margin-top: 55px;; 
     padding-bottom: 20px;
 }
 .product-description h4{
@@ -167,7 +167,7 @@ footer {
 .footer3 ul li{
    display: inline-flex;
    padding:10px ;
-   margin-left: 30px;
+   margin-left: 20px;
    margin-top: -35px;
 }
 .footer3 ul li img{
@@ -203,18 +203,20 @@ main {
 }
 .footer1, .footer2, .footer3 {
     width: 44%;
+    margin: 30px;
 }
 .footer3 ul li{
     display: inline;
 }
+
 }
 @media screen and (max-width:550px){
     main {
         margin: auto;
     }
-    .contact-form button{
+    .img-description{
         width: 90px;
-        margin: 10px 75px;
+        margin: 10px 100px 75px;
     }
 }
 @media screen and (max-width: 920px) {
@@ -230,6 +232,7 @@ main {
     .footer3 {
         float: none;
         margin-top: 0px;
+        margin-bottom: 20px;
         padding: 3px
     }
     .footer3 ul li{
