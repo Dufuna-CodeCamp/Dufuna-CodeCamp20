@@ -7,7 +7,7 @@
     .flex-item  {
         align-items: center;
     }
-    .flex-item1 {
+    .register {
         margin-left:20px;
         align-items: center;
     }
@@ -15,18 +15,14 @@
         width: 30px;
         height:30px;
     }
-    .pp {
+    .productpagelink {
         padding-top: 13px;
     }
-    .CU {
+    .contactlink {
         padding-top: 13px;
     }
-    .SU {
+    .signuplink {
         padding-top: 13px;
-    }
-    
-    .firstname  {
-        border-radius: 25px;
     }
     a   {
         text-decoration: none;
@@ -46,12 +42,12 @@
     .check  {
         margin-left: 30px;
     }
-    .Name   {
+    .name   {
         border-radius: 10px;
         padding: 5px;
         width: 300px;
     }
-    .FS   {
+    .fields   {
         border-radius: 23px;
         width: 100px;
         margin-right: 100px;
@@ -70,21 +66,7 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    label  {
-        margin-left:0px;
-        padding-left: 5px;
-    }
-    p   {
-        color: lightseagreen;
-    }
-    h2,
-    h4,
-    h5  {
-        color: green;
-    }
-    #flex-item3 {
-        border-radius: 0%;
-    }
+    
     
     .fa {
         padding: 10px;
@@ -129,11 +111,10 @@
           align-items: center;
           justify-content: space-evenly;
       }
-      .CR   {
-          text-align: center;
-      }
+      
       footer    {
           background-color: greenyellow;
+          text-align: center;
       }
  
     .flex-item1   {
@@ -143,17 +124,13 @@
     .flex-container{
         width:100%;
     }
-    .field{
-        width: 100%;
-    }
+   
 @media screen and (max-width:480px) {
     .flex-item1   {
         height: 50%;
     }
-    .class  {
-        height: 50%;
-    }
-    .Name   {
+  
+    .name   {
         width:75%;
     }
     .container   {
