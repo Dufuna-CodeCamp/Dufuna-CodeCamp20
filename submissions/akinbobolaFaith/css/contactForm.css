@@ -1,7 +1,7 @@
 body {
-    margin: 0 -80px 0 0;
+    margin: 0 -52px 0 0;
     font-family: 'Lato' , sans-serif;
-    font-size: 16px
+    font-size: 16px;
 }
 
 * {
@@ -9,7 +9,7 @@ body {
 }
 
 nav a[href*="*"] {
-    font-size: 31px;
+     font-size: 31px;
     font-weight: bold;
     color: white;
 }
@@ -21,13 +21,13 @@ footer ul {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
+nav li {
+    color: white;
+    margin: 5px;
 }
 
-nav li {
-    margin: 5px;
-    color: white;
+a {
+    text-decoration: none;
 }
 
 a:link {
@@ -42,83 +42,95 @@ a:visited {
     color: white;
 }
 
-a[href*="#"] {
-    color: white;
-}
-
-.register {
+.contact {
     width: 100%;
-    margin: 0;
-    padding: 20px;
-    text-align: -webkit-center;
+    text-align: center;
+    padding: 15px 35px 0;
 }
 
-.account {
-    width: 250px;
-   /* height: 122px; */
-    font-size: 40px;
+.contact p {
+    margin: 5px 0;
+}
+
+.p1, .p2, .p3 {
+    line-height: 50px;
+}
+
+.informate {
+    width: 100%;
+    padding: 0 25px 24px;
+}
+
+.formate {
+    width: 100%;
+    padding: 13px 23px;
+}
+
+.image {
+    text-align: center;
+}
+   
+.informate p {
+    font-size: 18px;
     font-weight: bold;
-    color: olive;
-}
-
-.registering {
-    width: 250px;
-  /*  height: 151px; */
-    margin: 0;
-    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
     text-align: center;
 }
 
-.registering a[href*="#"] {
-    color: olive;
-    text-decoration: underline;
-}
-
-.information {
+#fname, #email, #subject, input{
     width: 100%;
-    padding: 0 34px 74px 34px;
-    display: flex;
-    justify-content: center;
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.inform {
-    width: 200px;
-    border-width: 1px;
-    border-radius: 20px;
-    padding: 35px 45px;
-    margin: 0 0 -50px 0;
+.number,
+.address,
+.connect1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.25px;
 }
 
+.num,
+.domain {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+#input {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: grey;
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+}
 img {
     height: 50px;
-}
-
-#fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.term {
-    text-align: center;
+    padding: 8px;
 }
 
 .ton {
     font-weight: bold;
-    margin-left: 168px;
+    margin-left: 100%x;
     padding: 10px 30px;
     background-color: olive;
     color: white;
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
+    float: right;
 }
 
-.sign {
+.contactus {
     display: flex;
-   /* flex-wrap: wrap; */
     flex-direction: column;
 }
 
@@ -168,10 +180,12 @@ footer {
     height: 40px;
 }
 
+
 @media screen and (min-width: 640px) {
     body {
         margin: 0;
     }
+
     nav {
         padding: 25px 35px;
     }
@@ -181,65 +195,52 @@ footer {
         padding: 8px;
         margin-right: 50px;
         float: right;
-    }   
+    }
 
-    .sign {
-        
+    .contactus {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .register {
-        width: 35%;
-        margin: 100px 25px;
-        padding: 20px;
+    .contact {
+        width: 40%;
+        text-align: center;
+        padding: 140px 50px;
     }
 
-    .account {
-        width: 360px;
-        font-size: 45px;
-        font-weight: bold;
-        color: olive;
-    }    
-
-    .registering {
-        width: 367px;
-        margin: 10px 0;
+    .number,
+    .address,
+    .connect1 {
         font-size: 25px;
-        text-align: left;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
     }
 
-    .information {
+    .informate {
         width: 55%;
-        padding: 100px 50px;
-        display: flex;
-        justify-content: center
+        padding: 85px;
     }
 
-    .inform {
+    .formate {
         width: 500px;
-        height: 725px;
-        margin: -50px;
-        
+        height: 625px;
+        padding: 12px 35px;
     }
 
-    .info {
-        height: 650px;
-    }
-
-    label,
-    input {
-        margin-bottom: 10px;
-    }
-
-    #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
-        width: 100%;
-    }
-
-    #terms {
+    .informate p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
         text-align: center;
     }
 
+    textarea {
+        width: 500px;
+        height: 180px;
+    }
+ 
     .footer div {
         padding: 50px 150px 0 40px ;
     }
@@ -253,8 +254,9 @@ footer {
 
 @media screen and (min-width: 640px) and (max-width: 1050px) {
     body {
-        margin: 0 -25px 0 0;
+        margin: 0;
     }
+
     nav {
         padding: 25px 35px;
     }
@@ -266,54 +268,54 @@ footer {
         float: right;
     }
 
-    .sign {
+    .contactus {
         display: flex;
         flex-direction: column;
-    } 
-    
-    .register {
+    }
+
+    .p1, .p2, .p3 {
+        line-height: 50px;
+    }
+
+    .contact {
         width: 100%;
-        margin: 9px 25px;
-        text-align: -webkit-center;
-    }
-    
-    .account {
-        width: 360px;
         text-align: center;
+        padding: 38px 50px;
     }
-    
-    .registering {
-        width: 367px;
+
+    .number,
+    .address,
+    .connect1 {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
+    }
+
+    .informate {
+        width: 100%;
+        padding: 0 160px 50px;
+    }
+
+    .informate p {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1.25px;
         text-align: center;
     }
 
-    .information {
+    .formate {
         width: 100%;
-        padding: 23px 50px 70px 54px;
+        height: 625px;
+        padding: 12px 35px;
     }
-    
-    .inform {
+
+    textarea {
         width: 500px;
-        height: 725px;
-        margin: -24px;
+        height: 180px;
     }
-    
-    .info {
-        height: 650px;
-    }
-
-    #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
-        width: 100%;   
-    }
-
-    .term {
-        text-align: center;
-    }
-
-    .ton {
-        margin-left: 148px;
-    }
-
+ 
     .footer div {
         padding: 50px 150px 0 40px ;
     }
@@ -323,16 +325,18 @@ footer {
         padding: 15px;
         font-size: 20px;
     }
+
 }
-   
+
 .footer {
     display: flex;
     flex-wrap: wrap;
 }
 
 nav{
-    padding: 10px 10px 10px 27px;
+    padding: 10px;
     background-color: olive;
     color: white;
     position: relative;
 }
+
