@@ -5,7 +5,7 @@
         padding:18px;
     }
     .flex-item  {
-        align-items: center
+        align-items: center;
     }
     .flex-item1 {
         margin-left:20px;
@@ -32,22 +32,30 @@
         text-decoration: none;
     }
     .btn    {
-        border-radius: 5px;
+        border-radius: 1px;
         color: goldenrod;
-        margin-left: 70px;
+        margin-left: 100px;
         cursor: pointer;
+        width: 100px;
+        height: 30px;
     }
+    
     .btn:hover  {
         background-color:burlywood;
+    }
+    .check  {
+        margin-left: 30px;
     }
     .Name   {
         border-radius: 10px;
         padding: 5px;
         width: 300px;
     }
-    .field    {
+    .FS   {
         border-radius: 23px;
-        width: 28px;
+        width: 100px;
+        margin-right: 100px;
+        
     }
    .submit  {
        width: fit-content;
@@ -112,6 +120,7 @@
           background-color: greenyellow;
           padding: 5px;
           justify-content: space-around;
+    
       }
       .flex-container2  {
           display: flex;
@@ -128,7 +137,8 @@
       }
  
     .flex-item1   {
-        width: 100%;
+        width: 200px;
+        margin-left: 100px;
     }
     .flex-container{
         width:100%;
@@ -137,7 +147,6 @@
         width: 100%;
     }
 @media screen and (max-width:480px) {
-    
     .flex-item1   {
         height: 50%;
     }
