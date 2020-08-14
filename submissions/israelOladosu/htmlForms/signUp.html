@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>Sign Up Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
- <header>
-  <!-- container for the site logo -->
-  <div>
-   <a href="index.html">
-    <img src="../introductionToHtml/img/Farmville flat green.png" alt="Farmvile">
-   </a>
-  </div>
-  <!-- the search and login bar -->
-  <form>
-   <input type="text" placeholder="search">
-   <button>Search</button>
-  </form>
-  <ul>
-   <li><a href="signUp.html">Sign Up</a></li>
-   <li><a href="./ContactForm.html">Contact Us</a></li>
-   <li><a href="../introductionToHtml/index.html">Product Page</a></li>
-  </ul>
- </header>
- <hr>
- <fieldset>
-  <legend>Sign Up</legend>
-  <form>
-   <label for="firstName">First Name</label><br>
-   <input type="text" name="firstName" id="firstName" placeholder="First Name"><br><br>
-   <label for="lastName">Last Name</label><br>
-   <input type="text" name="lastName" id="lastName" placeholder="Last Name"><br><br>
-   <label for="email">Email</label><br>
-   <input type="email" name="email" id="email" placeholder="Email"><br><br>
-   <label for="password">Password</label><br>
-   <input type="password" name="password" id="password" placeholder="Password"><br><br>
-   <label for="Gender">Gender</label><br>
-   <input type="radio" name="gender" id="male" value="male">
-   <label for="male">Male</label><br>
-   <input type="radio" name="gender" id="female" value="female">
-   <label for="male">Female</label><br>
-   <label for="address">Address</label><br>
-   <input type="text" name="address" id="address" placeholder="Address"><br><br>
-   <label for="city">City</label><br>
-   <input list="city-list" name="city" id="city">
-   <datalist id="city-list">
-    <option value="Abia">
-    <option value="Adamawa">
-    <option value="Akwa Ibom">
-    <option value="Anambra">
-    <option value="Bauchi">
-    <option value="Bayelsa">
-    <option value="Benue">
-    <option value="Borno">
-    <option value="Cross River">
-    <option value="Delta">
-    <option value="Ebonyi">
-    <option value="Edo">
-    <option value="Ekiti">
-    <option value="Enugu">
-    <option value="Gombe">
-    <option value="Imo">
-    <option value="Jigawa">
-    <option value="Kaduna">
-    <option value="Kano">
-    <option value="Kastina">
-    <option value="Kebbi">
-    <option value="Kogi">
-    <option value="Kwara">
-    <option value="Lagos">
-    <option value="Nasarawa">
-    <option value="Niger">
-    <option value="Ogun">
-    <option value="Ondo">
-    <option value="Osun">
-    <option value="Oyo">
-    <option value="Plateau">
-    <option value="Rivers">
-    <option value="Sokoto">
-    <option value="Taraba">
-    <option value="Yobe">
-    <option value="Zamfara">
-   </datalist><br><br>
-   <button type="submit">Sign Up</button>
-  </form>
- </fieldset>
- <footer>
-  <ul>
-   <li><a href="#">About us</a></li>
-   <li><a href="./ContactForm.html">Contact us</a></li>
-   <li><a href="#">Terms and Conditions</a></li>
-  </ul>
-  <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
- </footer>
+  <header>
+    <!-- container for the site logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="../introductionToHtml/img/Farmville_white_logo.png" alt="Farmvile">
+      </a>
+    </div>
+    <div>
+      <ul>
+        <li><a href="../introductionToHtml/index.html">Product Page</a></li>
+        <li><a href="./ContactForm.html">Contact Us</a></li>
+        <li><a href="signUp.html">Sign-up</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- main body -->
+  <main>
+    <div class="col-1">
+      <div class="heading">
+        <h1>Register your Account</h1>
+        <p>Registering an account gives you access to sweet promo and events available to only registered customers</p>
+      </div>
+      <p class="existed">Already got an account? <a href="#">Sign in</a></p>
+    </div>
+    <div class="col-2">
+      <form>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+        <label for="lastName">Other Names</label>
+        <input type="text" name="otherName" id="otherName">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <laBEl for='phoneNumber'>Phone Number</laBEl>
+        <input type="text" name="phoneNumber" id="phone">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="pswd">
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree" class="agree">I agree to the Terms and Conditions</label>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="row-1">
+      <div class="col-1">
+        <ul>
+          <li><a href="ContactForm.html">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <div class="newsletter">
+          <p>Sign up for our Newsletter</p>
+          <form>
+            <input type="text" placeholder="Enter your email address">
+            <button>Submit</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <p id="connect">CONNECT WITH US</p>
+          <div class="facebook">
+            <img src="../introductionToHtml/img/facebook.png" alt="facebook">
+          </div>
+          <div class="twitter">
+            <img src="../introductionToHtml/img/twitter.png" alt="twitter">
+          </div>
+          <div class="gmail">
+            <img src="../introductionToHtml/img/gmail.png" alt="gmail">
+          </div>
+          <div class="youtube">
+            <img src="../introductionToHtml/img/youtube.png" alt="youtube">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-2">
+      <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
+    </div>
+  </footer>
 </body>
 </html>
