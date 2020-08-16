@@ -61,13 +61,16 @@ header nav{
 }
 .teflon-image{
     height: inherit;
-    margin-left: 30px;
+    margin-left: -30px;
     
 }
 .img-description {
     float: left;
     width: 250px;
-    margin-left: 550px;
+    margin-left: 50px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+    
 }
 #stock h4, #stock table{
     display: inline-table;
@@ -93,10 +96,11 @@ header nav{
     font-weight: bold;
 }
 .product-description{
-    margin-top: 55px;; 
+    margin-top: 55px;
     padding-bottom: 20px;
 }
 .product-description h4{
+    margin-top: 80px;
     padding: 0;
     margin: 0;
     font-size: 20px;
