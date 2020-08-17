@@ -57,10 +57,14 @@ ul {
     border-radius: 1px;
 }
 #buy-now {
+    color: white;
+    background-color: rgb(2, 209, 2);
     border-radius: 15px;
+    border: 0.5px;
     margin-left: 0px;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
     font-size: 17px;
+    font-weight: bold;
 }
 /* top display product description */
 .prod-detail {
@@ -87,16 +91,15 @@ ul {
     text-align: center;
 }
 .others .three {
-    margin-left: 95px;
+    margin-left: 50px;
 }
 .two, .three, .four {
     display: inline-block;
     text-align: center;
     font-size: 20px;
-    margin-left: 40px;
     background-color: rgb(183, 252, 140);
     font-weight: bold;
-    padding: 0px 25px 0px 25px;
+    padding: 5px 20px 5px 20px;
 }
 .others {
     background-color: rgb(234, 236, 232);
@@ -136,7 +139,8 @@ footer {
 #submit {
     color: rgb(3, 192, 3);
     background-color: white;
-    height: 29px;
+    height: 30px;
+    border: 0.5px;
 }
 #input-email, #submit {
     display: inline;

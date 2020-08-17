@@ -66,9 +66,12 @@ ul {
     text-align: center;
 }
 #submit-c {
+    color: white;
+    background: rgb(2, 209, 2);
     float: right;
     margin-right: 10px;
     border-radius: 2px;
+    border: 0.5px;
     padding: 5px 15px 5px 15px;
 }
 /* form container display */
@@ -116,7 +119,8 @@ footer {
 #submit {
     color: rgb(3, 192, 3);
     background-color: white;
-    height: 29px;
+    height: 30px;
+    border: 0.5px;
 }
 #input-email, #submit {
     display: inline;
