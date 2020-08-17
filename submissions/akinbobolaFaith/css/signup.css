@@ -21,20 +21,15 @@ footer ul {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 nav li {
     margin: 5px;
     color: white;
 }
 
-a:link {
-    text-decoration: none;
-}
-
+a,
+a:link,
 a:hover {
+    text-decoration: none;
     color: palegreen;
 }
 
