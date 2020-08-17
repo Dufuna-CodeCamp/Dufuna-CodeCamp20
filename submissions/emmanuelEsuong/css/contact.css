@@ -21,6 +21,9 @@ body {
     float: right;
     margin: 15px 50px 0px 0px;
 }
+ul {
+    list-style-type: none;
+}
 /* contact us page */
 /* phone, envelop and comment icons */
 #phone, #mail-env, #c-icon {

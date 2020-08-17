@@ -114,7 +114,10 @@ footer {
 #submit {
     color: rgb(3, 192, 3);
     background-color: white;
-    height: 29px;
+    height: 32px;
+    margin-left: 1px;
+    padding: 5px 10px 5px 10px;
+    border: 0.5px;
 }
 #input-email, #submit {
     display: inline;
@@ -134,85 +137,6 @@ li {
     float: left;
     margin: 40px 0px 0px 350px;
     color: white
-}
-
-/* media-query (tablet)*/
-@media screen and (min-width: 768px) and (max-width: 900px) {
-        /* signUp page */
-    /* formfield */
-    #s-form {
-        border-radius: 25px;
-        padding: 35px 20px 20px 20px;
-        border: 2px 2px 2px 2px;
-    }
-    /* signupform */
-    #form {
-        overflow: hidden;
-        margin: 10px 215px 0px 0px;
-        float: right;
-    }
-    #form input {
-        width: 550px;
-        padding: 10px;
-        border-radius: 7px;
-        border: solid 1px;
-    }
-    #table, #form {
-        display: inline-block;
-    }
-    #form #terms {
-        width: 50px;
-        float: left;
-        margin-left: 78px;
-    }
-    #termsLabel {
-        color: rgb(2, 209, 2);
-        font-weight: bold;
-    }
-    button {
-        border-radius: 3px;
-        border: 0px;
-        margin-left: 220px;
-        padding: 7px;
-        padding: 5px 20px 5px 20px;
-        background-color: rgb(2, 209, 2);
-        font-weight: bold;
-        color: white;
-    }  
-    ul {
-        list-style-type: none;
-        overflow: hidden;
-    }
-    /* registration info */
-    #reg-acct {
-        font-size: 40px;
-        font-weight: bold;
-        color: rgb(2, 209, 2);
-    }
-    #heading, #reg-note, #acct-signin {
-        text-align: center;
-        margin-left: 295px;
-        font-size: 28px;
-        text-align: center;
-    }
-    /*signin instead*/
-    #signin{
-        color:rgb(2, 209, 2);
-    }
-    /*registration info container*/
-    #supT {
-        height: 880px;
-    }
-    /* footer */
-    footer {
-        height: 205px;
-    }
-    #icons {
-        margin-right: 60px;
-    }
-    #copyright {
-        margin: 40px, 0px 235px 0px;
-    }
 }
 /* media-query (mobile)*/
 @media screen and (max-width: 500px) {

@@ -21,6 +21,10 @@ body {
     float: right;
     margin: 15px 50px 0px 0px;
 }
+ul {
+    list-style-type: none;
+}
+
 /* product page */
 /* top displayed product and detail */
 #pot-combo {
