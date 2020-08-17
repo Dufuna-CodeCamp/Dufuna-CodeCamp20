@@ -17,6 +17,10 @@ body {
     text-decoration: none;
     color: white;
 }
+.topnav-right {
+    float: right;
+    margin: 15px 50px 0px 0px;
+}
 /* product page */
 /* top displayed product and detail */
 #pot-combo {
