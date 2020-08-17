@@ -1,59 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!--header-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JustBuyIt</title>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+        <!-- links -->
+        <link rel="stylesheet" type="text/css" href="../css/Product.css">
 </head>
-
+    <!--page body-->
 <body>
-  <header>
-    <!-- container for the site logo -->
-    <div class="logo">
-      <a href="index.html">
-        <h1>JustBuyIt</h1>
-      </a>
-    </div>
-    <!-- login bar -->
-    <div class="signup">
-      <ul>
-        <li><a href="../htmlForms/signUp.html">Sign-up</a></li>
-        <li><a href="../htmlForms/ContactForm.html">Contact Us</a></li>
-        <li><a href="#">Cart</a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- product section -->
-  <main>
-    <img src="./img/rere.jpg">
-    <h3>Price: N90,000</h3>
-    <button>Buy</button>
-  </main>
-  <footer>
-    <div class="row-1">
-      <div class="col-1">
-        <ul>
-          <li><a href="../htmlForms/ContactForm.html">Contact us</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
-        </ul>
-      </div>
-      <div class="col-2">
-        <div class="newsletter">
-          <p>Sign up for our Newsletter</p>
-          <form>
-            <input type="text" placeholder="Enter your email address">
-            <button>Submit</button>
-          </form>
+        <!--top navigation -->
+        <div class="topnav">
+            <a href="#"><h1>JustBuyIt</h1></a>
+            <div class="topnav-right">
+                <a href="index.html"><h1>Product Page</h1></a>
+                <a href="../htmlForms/contactForm.html"><h1>Contact Us</h1></a>
+                <a href="../htmlForms/signUp.html"><h1>Sign-up</h1></a>
+            </div>
         </div>
+        <br><br>
+            <!--Products/Menu list-->   
+        <div class="prod-list">
+            <div class="top-prod">
+                <!--top product image-->
+                <table >
+                    <ul id="Pic">
+                        <li><img src="img/shirts.jpg" id="pi"></li>
+                    </ul>
+                </table>
+            </div>
+            <!--top product detail-->
+            <div class="detail">
+                <table>
+                    <ul id="shi">
+                            <li>Blue shirt</li>
+                        <li>Brand: Polka-dot</li>
+                        <li>
+                        <label>Quantity:</label>
+                        <input type="text" name="text" placeholder="2" id="qt"/>
+                        </li>
+                        <li>Price: £204</li>
+                        <li><button type="submit" id="buy-now">BUY NOW</button></li>
+                    </ul>
+                </table>
+            </div>
+            <!--top product description-->
+            <div class="prod-detail">
+                <h4 id="des"><b>DESCRIPTION</b></h4>
+                <P id="des">This is a shirt you can put on all day. This polka dot designed shirt guarantees maximum comfort for whoever wears. The strength of material assures that it is long lasting from the moment it goes off the shelf.</P>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="row-2">
-      <p>Copyright &copy; 2020 JustBuyIt.com All rights reserved. </p>
-    </div>
-  </footer>
-</body>
-
+        <br><br>
+        <!--related products list-->
+        <div class="others">
+                <h3 id="rps">RELATED PRODUCTS</h3>
+            <div class="three">
+                <table>
+                    <ul id="third">
+                        <li><img src="img/shoes2.jpg" id="pc"></li>
+                        <li>Tennis shoes</li>
+                        <li>Price: £150</li>
+                    </ul>
+                </table>
+            </div>
+            <div class="four">
+                <table> 
+                    <ul id="fouth">
+                        <li><img src="img/shoes.jpg" id="pc"></li>
+                        <li>High Heels</li>
+                        <li>Price: £140</li>
+                    </ul>
+                </table>
+            </div>
+            <div class="two">
+                <table>
+                    <ul id="second">
+                        <li><img src="img/shoes3.jpg" id="pc"></li>
+                        <li>Black Office Shoes</li>
+                        <li>Price: £210</li>
+                    </ul>
+                </table>
+            </div>
+        </div>
+<!--footer-->
+<footer>
+    <div id="foot">
+        <!--footer nav-->
+        <div class="footnav-left"> 
+            <table id="fn"> 
+                <ul id="footnav">          
+                    <li><a href="../htmlForms/ContactForm.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </table>
+        </div>
+        <!--news letter-->
+        <div id="newsLetter">
+            <label id="newsLabel">Sign up for our Newsletter</label>
+            <br>
+            <input type="text" name="text" id="input-email" placeholder="Enter your email address"/>
+            <span><button type="submit" id="submit">SUBMIT</button></span>    
+        </div>
+    <!--copyright-->
+    <p id="copyright">Copyright &copy; 2020 JustBuyIt.com  All rights reserved.</p>
+</footer>
 </html>
