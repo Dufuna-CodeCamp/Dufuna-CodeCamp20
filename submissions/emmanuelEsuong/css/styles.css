@@ -234,7 +234,7 @@ li {
     }
     .topnav-right {
         float: left;
-        margin: 0px; 740px; 0px 20px;
+        margin: 0px 740px 0px 20px;
         width: 300px;    
     }
     /* signUp page */
@@ -247,7 +247,7 @@ li {
     /* signupform */
     #form {
         overflow: hidden;
-        margin: 10px; 120px 0px 0px;
+        margin: 10px 120px 0px 0px;
         float: right;
     }
     #form input {
