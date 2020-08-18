@@ -116,6 +116,10 @@
           background-color: greenyellow;
           text-align: center;
       }
+      .contacts   {
+        text-align: left;
+        padding-right: 50px;
+    }
  
     .flex-item1   {
         width: 200px;
@@ -129,6 +133,7 @@
     .flex-item1   {
         height: 50%;
     }
+    
   
     .name   {
         width:75%;
