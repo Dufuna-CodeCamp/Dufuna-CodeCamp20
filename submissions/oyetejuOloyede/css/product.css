@@ -72,11 +72,14 @@ body{
   .product {
     display: flex;
     flex-wrap: nowrap;
+    float: left;
+    width: 90%;
+    margin-left: 50px;
 }
 .product-img{
     border: 1px solid #000;
     max-width: 469px;
-    margin: 50px 50px 0 50px;
+    margin: 50px 0 0 0;
 }
 .product img , .product-related img{
     width: 100%;
