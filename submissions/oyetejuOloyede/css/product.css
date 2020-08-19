@@ -143,11 +143,15 @@ body{
     margin-top: 40px;
     margin-bottom: 35px;
 }
-.dont, .Unfreedom, .political{
-    max-width: 399px;
+.dont, .unfreedom, .political{
+    width: 30%;
     background-color: #fff;
     margin-bottom: 30px;
     padding: 20px;
+}
+img{
+    max-width: 100%;
+    height: inherit;
 }
 .product-related h5 {
     text-align: center;
@@ -226,7 +230,7 @@ body{
         font-size: 16px;
         line-height: 24px;
     }
-    .dont, .Unfreedom, .political{
+    .dont, .unfreedom, .political{
         flex-basis: 250px;
         margin: 20px;
     }
