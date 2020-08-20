@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Phone House</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+        <div class="navbar">            
+            <h4><img src="./images/logo.png" width="50px" alt=""></h4>
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Product Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+        </div>
+        <section>
+            <div class="box">
+                <div class="small-box don">
+                    <h1>Register Your Account</h1>
+                    <p>
+                        Registering an account gives you access to sweet promos
+                        and events available to only registered customers.
+                    </p>
+                    <P>Already got an account?<a href="#" id="signin"> SIgn In</a></P>
+                </div>
+                <div class="small-box forms">
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <fieldset>
+                            <label for="firstname">First Name</label> <br>
+                            <input type="text" class="input" name="firstname" id="firstname"><br>
+                            <label for="lastname">Last Name</label> <br>
+                            <input type="text" class="input" name="lastname" id="lastname"><br>
+                            <label for="email"> Email Address</label> <br>
+                            <input type="text" class="input" name="email" id="email"><br>
+                            <label for="password">Password</label> <br>
+                            <input type="password" class="input" name="password" id="password1"><br>
+                            <label for="confirm_password">Confirm Password</label> <br>
+                            <input type="password" class="input" name="confirm_password" id="confirm_password"><br>
+                            <input type="checkbox" name="" id="terms"> I agree to the Terms and Condition
+                            <br> <br>
+                            <div class="text-center pb-3 text-white">
+                                <input type="submit" value="Sign Up" id="sign-up">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-box">
+                <div class="footer-smallbox nav">
+                    <ul class="url">
+                        <li><a href="../html-forms/contact-form.html" class="text-white">Contact Us</a></li> <br>
+                        <li><a href="#" class="text-white">About Us</a></li> <br>
+                        <li><a href="#" class="text-white">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-smallbox">
+                    <h2 class="foot">Sign up for our newsletter</h2>
+                    <Input type="email" name="email_address" id="email_address" placeholder="Enter your email address">
+                    <input type="submit" value="Submit" id="sign-up">
+                </div>
+                <div class="footer-smallbox">
+                    <h2>CONNECT WITH US</h2>
+                    <i class="fa fa-facebook fa-3x"></i>
+                    <i class="fa fa-twitter fa-3x"></i>
+                    <i class="fa fa-envelope fa-3x"></i>
+                    <i class="fa fa-youtube-square fa-3x"></i>
+                </div>
+            </div>
+            <h5>
+                Copyright 2020 phonehouse.com All Rights Reserved.
+            </h5>
+        </section>
+    </body>
+</html>
