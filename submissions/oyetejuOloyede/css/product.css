@@ -232,7 +232,12 @@ img{
     }
     .dont, .unfreedom, .political{
         flex-basis: 250px;
-        margin: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;       
+    }
+    .political{
+        margin-bottom: 20px;
     }
     .product-related{
         justify-content: space-between;
