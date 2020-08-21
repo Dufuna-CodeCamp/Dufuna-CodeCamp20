@@ -33,7 +33,7 @@ html, body{
 padding-left: 25px;
 }	
 
-p{
+a{
 	text-decoration: none;
 }
 
@@ -56,7 +56,6 @@ header .logo{
 
 header .logo-text{
 	margin: 9px;
-	font-family: 'Ubuntu', sans-serif;
 }
 
 header ul {
@@ -102,7 +101,7 @@ header ul li a:hover {
 
 .content .main-content .registration-title{
    
-   font-size: 250%; 
+   font-size: 48px; 
    color: #69629f;
    padding-top: 140px;
    width: 50%;
@@ -249,7 +248,7 @@ header ul li a:hover {
 ul .nav{
 	margin-left: 40px;
 	background: yellow;
-	padding:0px;
+	padding:0;
 	list-style: none;
 }
 
@@ -385,8 +384,14 @@ label {
     width: 100%;
 	font-size: 13px;
 	line-height: 0.5cm;
-	padding-left: 12%;
-	padding-right:12%;
+	padding-left:20px;
+	padding-right:80px;
+	text-align: center;
+	margin: auto;
+}
+.content .main-content .section-one p{
+    width: 100%;
+	text-align: center;
 
 }
     .content .main-content .registration-title{
@@ -396,6 +401,7 @@ label {
     font-weight: bold;
     margin: 0 auto;
     padding-top: 1px;
+    text-align: center;
 }
 
 .content .sidebar {
