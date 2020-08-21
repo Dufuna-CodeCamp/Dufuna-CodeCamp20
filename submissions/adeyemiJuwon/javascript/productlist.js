@@ -32,10 +32,10 @@ const newList = productList.map((product) => {
   productPrice.innerText = product.price;
   productPrice.classList.add('product_price')
   wrapper.classList.add('wrapper')
-  wrapper.append(productImage, productName, productPrice);
+  wrapper.append( productName, productImage, productPrice);
   return wrapper;
 });
-
+console.log(productRelated)
 function initializeProducts() {
   productRelated.append(...newList);
 }
