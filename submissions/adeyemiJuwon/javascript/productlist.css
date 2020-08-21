@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product list</title>
-  <style>
-      *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 body {
     margin: 0;
@@ -35,11 +26,9 @@ h3{
     margin-top: 40px;
     margin-bottom: 35px;
 }
-
 .product_name, .product_price {
     text-align: center;
-    color: #000;
-  
+    color: #000; 
 }
 .wrapper{
     max-width: 399px;
@@ -47,16 +36,3 @@ h3{
     margin-bottom: 30px;
     padding: 20px;
 }
-  </style>
-</head>
-
-<body>
-  <div class="related-product">
-    <h3> RELATED PRODUCTS</h3>
-    <div class="productRelated">
-    </div>
-  </div>
-  <script src='product.js'></script>
-</body>
-
-</html>

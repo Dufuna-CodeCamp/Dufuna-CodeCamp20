@@ -2,23 +2,23 @@
 const productList = [
     {
       name: "Xiaomi Redmibook",
-      imgUrl: "img/laptop1.jpg",
+      imgUrl: "../introductionToHtml/img/laptop 1.jpg",
       price: "£819.52 GBP"
       
     },
     {
       name: "1.8m DC Charging power",
-      imgUrl: "img/charger.jpg",
+      imgUrl: "../introductionToHtml/img/charger.jpg",
       price: "£4.26 GBP"
     },
     {
       name: "11 Inch Laptop Bag Tablet Zipper Pouch Sleeve for MacBook Air",
-      imgUrl: "img/bag1.jpg",
+      imgUrl: "../introductionToHtml/img/bag 1.jpg",
       price: "£5.95"
     }
   ];
 
-  const productRelated = document.getElementsByClassName("productRelated")[0];
+const productRelated = document.getElementsByClassName("productRelated")[0];
 const newList = productList.map((product) => {
   let productImage = document.createElement("img");
   let productName = document.createElement("div");
@@ -39,8 +39,4 @@ const newList = productList.map((product) => {
 function initializeProducts() {
   productRelated.append(...newList);
 }
-
-initializeProducts();
-
-    
-  
+initializeProducts(); 
