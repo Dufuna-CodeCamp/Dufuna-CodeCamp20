@@ -2,17 +2,18 @@
         display: flex;
         flex:row wrap;
         justify-content: space-around;
-        padding:18px;
-        width: fit-content;
+        padding:20px;
+        column-width: auto;
     }
-    .flex-item  {
-        align-items: center;
+    h2  {
+        width:50%;    
+        }
+    .register   {
+        width: 25%;
+        margin-right: 10px;
+        
     }
-    .register {
-        margin-left:20px;
-        align-items: center;
-        width: 400px;
-    }
+    
     .logo   {
         width: 30px;
         height:30px;
@@ -53,7 +54,6 @@
         border-radius: 23px;
         width: 100px;
         margin-right: 100px;
-        
     }
    .submit  {
        width: fit-content;
@@ -135,6 +135,9 @@
     .flex-item1   {
         height: 50%;
     }
+    h2  {
+        width: 80%;
+    }
     .name   {
         width:75%;
     }
@@ -145,14 +148,16 @@
         
     }
     .register   {
-        margin-left: 80px;
+        margin-left:auto;
+        width: 50%;
+        margin-right: auto;
     }
     .check  {
         margin:0 auto;
     }
     .btn{;
-        margin:0
-        position: relative;
+        margin-right:150px;
+        margin-left:40px;
     }
     
     .fields {
@@ -177,9 +182,18 @@
         margin-left: 200px;   
         text-align: justify;
         font-size: large;
+        width:60%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .name   {
         width: 400px;
+    }
+    h2  {
+        width: 60%;
+        text-align: center;
+        margin-left: 60px;
+
     }
     
 
