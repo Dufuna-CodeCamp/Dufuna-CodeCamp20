@@ -18,7 +18,6 @@ const productList = [
     }
   ];
 
-const productRelated = document.getElementsByClassName("productRelated")[0];
 const newList = productList.map((product) => {
   let productImage = document.createElement("img");
   let productName = document.createElement("div");
@@ -26,17 +25,10 @@ const newList = productList.map((product) => {
   let wrapper = document.createElement("div");
   
   productName.innerText = product.name;
-  productName.classList.add('product_name')
   productImage.src = product.imgUrl;
-  productImage.classList.add('product_image')
   productPrice.innerText = product.price;
   productPrice.classList.add('product_price')
-  wrapper.classList.add('wrapper')
   wrapper.append( productName, productImage, productPrice);
   return wrapper;
 });
-console.log(productRelated)
-function initializeProducts() {
-  productRelated.append(...newList);
-}
-initializeProducts(); 
+console.log(newList) 
