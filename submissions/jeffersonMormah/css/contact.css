@@ -128,11 +128,8 @@ aside .contact-form select {
     width: 90%;
     height: 30px;
 }
-<<<<<<< HEAD
 aside .contact-form textarea {
-=======
 textarea {
->>>>>>> 46c93c76184ec4d37096ee47fca906118fe7205d
     margin-top: 1px;
     margin-left: 20px;
     border: 2px solid #000000;
@@ -178,20 +175,14 @@ footer {
 }
 .footer2 input[type="email"]{
    height: 25px;
-<<<<<<< HEAD
    padding: 3px 18px 3px ;
-=======
    padding: 3px 18px 3px 0;
->>>>>>> 46c93c76184ec4d37096ee47fca906118fe7205d
    font-size: 12px; 
 }
 .footer2 button[type="submit"]{
    height: 30px;
-<<<<<<< HEAD
    padding: 0 5%;
-=======
    padding: 0 5px;
->>>>>>> 46c93c76184ec4d37096ee47fca906118fe7205d
    font-size: 12px;
    background-color:  rgb(250,128,114);
    color: #F5F5DC;
@@ -230,11 +221,8 @@ footer p{
         float: none;
 }
 main, aside {
-<<<<<<< HEAD
     width: 70%;
-=======
     width: 70px;
->>>>>>> 46c93c76184ec4d37096ee47fca906118fe7205d
     margin: auto;
     padding-bottom: 17px;
 }
@@ -242,11 +230,8 @@ main {
     text-align: center;
 }
 .footer1, .footer2, .footer3 {
-<<<<<<< HEAD
     width: 44%;
-=======
     width: 44px;
->>>>>>> 46c93c76184ec4d37096ee47fca906118fe7205d
 }
 .footer3 ul li{
     display: inline;
@@ -264,17 +249,14 @@ main {
 @media screen and (max-width: 920px) {
     .footer1, 
     .footer2{
-<<<<<<< HEAD
         width: 50%;
     }
     .footer3 {
         width: 50%;
-=======
         width: 50px;
     }
     .footer3 {
         width: 50px;
->>>>>>> 46c93c76184ec4d37096ee47fca906118fe7205d
     }
     .footer3 ul li{
         display: inline;
