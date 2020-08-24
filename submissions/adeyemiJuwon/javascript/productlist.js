@@ -18,17 +18,7 @@ const productList = [
     }
   ];
 
-const newList = productList.map((product) => {
-  let productImage = document.createElement("img");
-  let productName = document.createElement("div");
-  let productPrice = document.createElement("div");
-  let wrapper = document.createElement("div");
+  const newList = productList.forEach((product) => {
+    console.log(product)
+  });
   
-  productName.innerText = product.name;
-  productImage.src = product.imgUrl;
-  productPrice.innerText = product.price;
-  productPrice.classList.add('product_price')
-  wrapper.append( productName, productImage, productPrice);
-  return wrapper;
-});
-console.log(newList) 
