@@ -1,0 +1,288 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+ }
+
+ /* THE HEADER */
+ .nav-section {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+ }
+ ul {
+    padding: 0;
+    margin: 0;
+ }
+
+ header {
+    background:#f77b00;
+    color: white;
+    padding-top: 15px;
+    min-height: 2px;
+ }
+ header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+ }
+ header li {
+    display: inline;
+    padding:0 30px;
+ }
+ header #nav-logo {
+    float: left;
+    margin: 15px 15px;
+ }
+ header #nav-logo h2,
+ header #nav-logo p {
+    margin:0;
+    padding:0;
+    color:white;
+ }
+ header nav {
+    float: right;
+    margin: 15px 15px;
+ }
+
+/* FOOTER */
+ footer a {
+    color: white;
+    text-decoration: none;
+ }
+
+ footer  {
+    background-color:#f77b00;
+    overflow: hidden;
+    padding: 15px 0 0 20px;
+   
+ }
+ 
+ .footer {
+    float: left;
+    width: 33.33%;
+    font-weight: lighter;
+ }
+
+ .footer li {
+    padding:5px;
+    font-weight: lighter;
+    list-style-type: none;
+ }
+
+ .footer p {
+    color: white;
+    font-weight: lighter;
+    padding-left: 50px;
+    display: block;
+ }
+ .logo li {
+    list-style-type: none;
+    padding: 2px;
+    border-radius: 10px;
+    display: inline-grid;
+    margin: 0 10px;
+ }
+
+ .info {
+    position: absolute;
+    left: 300px;
+   
+ }
+
+ footer nav {
+    overflow: hidden;
+ }
+
+ img {
+    height: 25px;
+    text-decoration: none;
+ }
+
+/* CONTAINER */
+ .con {
+    overflow: hidden;
+    width: 95%;
+    margin:auto;
+ }
+ .act {
+   float: left;
+   width: 40%;
+   margin:0 20px;
+   padding: 5px 15px 0 15px;
+   text-align: center;
+ }
+
+ .act h3{
+    color: grey;
+ }
+ .contact-form fieldset h3{
+   margin:0 20px;
+}
+.contact-form img{
+   display: block;
+   margin:24px auto;
+}
+
+ textarea{
+  width: 390px;
+  height: 100px;
+}
+
+.contact-form h3{
+   color: #f77b00;
+   text-align: center;
+}
+ .social-contact li{
+   display: inline-block;
+   margin-right: 10px;
+ }
+ .form2 {
+    float: right;
+    width: 40%;
+    padding: 2% 5%;
+  }
+.fo-input {
+    border: 1px solid darkgrey;
+    border-radius:0px;
+    padding: 2% 5%;
+    width: 85%;
+ }
+
+.act h1 {
+    color:#f77b00;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+
+ }
+ 
+.fo-input input[type=text],
+.fo-input input[type=email] {
+   border: none;
+   border-bottom: 2px solid lightgray;
+   width: 85%;
+   font-size: 20px;
+   line-height: 1.5;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   font-family: Montserrat; 
+
+}
+
+ input[type=submit] {
+    background-color:#f77b00;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 35px;
+    margin:0 300px;
+   font-size: 12px;
+ }
+ 
+ form input {
+    background-color: white;
+    color:#282828;
+    padding: 5px;
+    border-style: none;
+    font-weight: bold;
+ }
+
+ 
+ .log-in {
+     color: gray;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ .kt {
+    color: white;
+ }
+
+ /* RESPONSIVE */
+ @media screen and (max-width: 800px) {
+     header nav,
+     header .nav-section nav li,
+     header #nav-logo {
+         float: none;
+         text-align: center;
+         padding: 0 3%;
+
+     }
+     .act
+     .form2 {
+         float:none;
+         width:85% ;
+         margin:0 20px;
+         padding: 2% 5%;
+     }
+     textarea{
+      width: 240px;
+      height: 100px;
+    }
+
+     input[type=submit]{
+      width: 40%;
+      margin:0 140px;
+      padding: 12px 20px;
+    
+ }
+ 
+ @media screen and (max-width: 640px){
+    .act {
+      width: 40%;
+      margin:0 20px;
+      padding: 5% 25%;
+      text-align: center;
+ }
+
+ .form2 {
+   width: 85%;
+   padding: auto;
+   padding-bottom: 10%;
+}
+
+   input[type=submit]{
+      width: 40%;
+      margin:0 180px;
+      padding: 12px 20px;
+}
+ textarea{
+   width: 320px;
+   height: 100px;
+ }
+
+ }
+
+ @media screen and (max-width: 360px ){
+      .act {
+         width: 40%;
+         margin:0 20px;
+         padding: 5% 25%;
+         text-align: center;
+      }
+            
+      .form2 {
+         width: 85%;
+         padding: auto;
+     }
+     input[type=submit]{
+      width: 40%;
+      margin:0 130px;
+      padding: 12px 35px;
+
+     }
+
+     textarea{
+      width: 220px;
+      height: 100px;
+    }
+ }
+}
