@@ -16,10 +16,7 @@ var productList = [
         productPrice:8750
     }
 ];
- for(var i = 0; i < productList.length; i++){
-    for(var  x in productList[i]){
-        console.log(productList[i]['productName'] + " with " + productList[i]['imageUrl'] + " is sold for  " + productList[i]['productPrice'])
+    for(var  x in productList){
+        console.log(productList[x]['productName'] + " with " + productList[x]['imageUrl'] + " is sold for  " + productList[x]['productPrice'])
     };
- }
-
-
+ 
