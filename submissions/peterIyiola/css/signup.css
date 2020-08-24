@@ -14,10 +14,7 @@
         
     }
     
-    .logo   {
-        width: 30px;
-        height:30px;
-    }
+    
     .productpagelink {
         padding-top: 13px;
     }
@@ -62,11 +59,9 @@
    .submit:hover  {
     background-color:burlywood;
 }
-    .head {
-        background-color: greenyellow;
-        flex: row wrap;
-        flex-direction: row;
-        justify-content: space-around;
+    img {
+        height: 40px;
+        width:  100%;
     }
     
     
