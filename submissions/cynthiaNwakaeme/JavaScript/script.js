@@ -21,22 +21,17 @@ var productList = [
 for (let product = 0; product < productList.length; product++) {
     console.log(productList[product].productName + " with " + productList[product].imageUrl + " is sold for " + productList[product].productPrice + ".");
 };
-
 // Using the While Loop
-var product = 0;
-while (product < productList.length){
-    console.log(productList[product].productName + " with " + productList[product].imageUrl + " is sold for " + productList[product].productPrice + ".");
-    product++;
-};
-
+// var product = 0;
+// while (product < productList.length){
+//     console.log(productList[product].productName + " with " + productList[product].imageUrl + " is sold for " + productList[product].productPrice + ".");
+//     product++;
+// };
 // Using the Do ... While Loop
-var product = 0;
+// var product = 0;
 
-do {
-    console.log(productList[product].productName + " with " + productList[product].imageUrl + " is sold for " + productList[product].productPrice + ".");
-    product++;
-}
-while (product < productList.length);
-
-
-
+// do {
+//     console.log(productList[product].productName + " with " + productList[product].imageUrl + " is sold for " + productList[product].productPrice + ".");
+//     product++;
+// }
+// while (product < productList.length);
