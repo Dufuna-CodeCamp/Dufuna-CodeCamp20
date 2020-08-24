@@ -26,7 +26,6 @@ html, body{
 	color: #444;
 	line-height: 1.5rem;
 	margin: 0 auto;
-
 }
 
 #form-label{
@@ -39,8 +38,7 @@ a{
 
 header{
 	background-color: #69629f;
-	height: 66px;
-	
+	height: 66px;	
 }
 
 header *{
@@ -50,8 +48,7 @@ header *{
 header .logo{
 	float: left;
 	height: inherit;
-	margin-left: 2em;
-	
+	margin-left: 2em;	
 }
 
 header .logo-text{
@@ -62,30 +59,25 @@ header ul {
 	float: right;
 	margin: 0px
 	padding:0px;
-	list-style: none;
-	
+	list-style: none;	
 }
 
 header ul li{
 	float: left;
 	
 }
-
 header ul li a{
 	display: block;
 	padding: 21px;
 	text-decoration: none;
-
 }
 
 header ul li a:hover {
 	background-color: #5e578e;
 	transition: 0.5s;
 }
-
 .page-wrapper{
-	min-height: 100%;
-	
+	min-height: 100%;	
 }
 
 /**--Content--**/
@@ -93,20 +85,16 @@ header ul li a:hover {
 	width: 90%;
 	margin: 10px auto 30px;
 }
-
 .content .main-content{
 	width: 58%;
 	float: left;	
 }
-
 .content .main-content .registration-title{
-   
    font-size: 48px; 
    color: #69629f;
    padding-top: 140px;
    width: 50%;
    margin: 0 auto;
-  
 }
 
 .content .main-content .section-one{
@@ -116,25 +104,18 @@ header ul li a:hover {
 	font-size: 25px;
 	color: grey;
 }
-
 .content .main-content .section-one .reg-wording{
   width: 130%;
-
 }
-
 .content .main-content .section-one .reg-wording a{
   font-weight: bold;
-
 }
-
 /**Sidebar styles**/
-
 .content .sidebar {
 	width: 30%;
 	float: left;
 	border: 1px solid grey;
-	border-radius: 10px;
-	
+	border-radius: 10px;	
 }
 
 .content .sidebar .section {
@@ -168,7 +149,6 @@ header ul li a:hover {
 
 .footer{
 	background-color: #69629f;
-	/**padding: 4rem;**/
 	padding: 10px;
 }
 .footer-content{
@@ -184,9 +164,7 @@ header ul li a:hover {
 
 .footer .footer-section a{
 	color: white;
-	text-decoration: none;
 	list-style-type: none;
-
 }
 
 .footer .footer-section ul{
@@ -198,7 +176,6 @@ header ul li a:hover {
 	border-radius: 5px;
 	padding: 8px;
 	border: none;
-
 }
 .footer .footer-content .footer-section input[type="button"]{
     background-color: white;
@@ -219,24 +196,17 @@ header ul li a:hover {
   color: white;
   text-align: center;
 }
-
-
-
 /** end of footer**/
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #69629f;
   opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #69629f;
-}
-
+  }
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #69629f;
 }
-
-
+}
 /**Media queries for tablet**/
 
 @media screen and (max-width: 1300px){
@@ -251,9 +221,7 @@ ul .nav{
 	padding:0;
 	list-style: none;
 }
-
 }
-
 @media screen and (max-width: 1300px){
   .content{
    width: 100%;
@@ -262,24 +230,21 @@ ul .nav{
 	width: 100%;
 	padding: 10px;
   }
-
   .content .main-content .section-one{
     width: 100%;
 	font-size: 20px;
-	line-height: 0.5cm;
-	padding-left: 12%;
-	padding-right:12%;
-	margin-left: 13%;
+	line-height: 20px;
+	text-align: center;
+	padding-right: 165px;
 }
-    .content .main-content .registration-title{
-   
+   .content .main-content .registration-title{
     font-size: 30px; 
     color: #69629f;
     font-weight: bold;
     margin: 0 auto;
     padding-top: 1px;
+    text-align: center;
 }
-
 .content .sidebar {
 	width: 90%;
 	margin-left: 40px;
@@ -292,7 +257,6 @@ ul .nav{
 	width: 30%;
 	margin-bottom: 10px;
 }
-
 }
 
 @media screen and (max-width: 1300px){
@@ -300,12 +264,10 @@ ul .nav{
   	  height: 40vh;
   }
 
-  .footer .footer-content .footer-section.newslatter{
-    
+  .footer .footer-content .footer-section.newslatter{ 
     width: 100%;	
-
   }
-    .footer .footer-content .footer-section.newslatter p{
+   .footer .footer-content .footer-section.newslatter p{
   text-align: right;
   margin-right:80px;
   padding-right: 40px;
@@ -316,11 +278,8 @@ ul .nav{
    height: 40px;
    margin: 4px;
    border:1px solid #69629f ;
-
 }
-
 /**Media queries for mobile**/
-
 @media screen and (max-width: 425px){
 .text-input {
 	padding: .3rem 1rem;
@@ -332,10 +291,8 @@ ul .nav{
 	line-height: 1.1rem;
 }
 .btn{
-	
 	padding: .7rem 1rem;
 	margin-top: 10px;
-	
 }
 #terms{
 	font-size: 12px;
@@ -352,38 +309,33 @@ label {
  header{
 	background-color: #69629f;
 	height: 44px;
-	
 }
 
   header .logo{
 	margin-left: 10px;
-	
 }
   header .logo-text{
 	font-size: 20px;
 }	
 
   header ul li a{
-	
 	padding: 0;
 	font-size: 16px;	
 }
-
 }
 
 @media screen and (max-width: 425px){
   .content{
-   width: 100%;
+   /**width: 100%;**/
   }
   .content .main-content{
-	width: 100%;
+	/**width: 100%;**/
 	padding: 20px;
   }
-
   .content .main-content .section-one{
-    width: 100%;
-	font-size: 13px;
-	line-height: 0.5cm;
+    /**width: 100%;**/
+    font-size: 13px;
+	/**line-height: 0.5cm;**/
 	padding-left:20px;
 	padding-right:80px;
 	text-align: center;
@@ -392,10 +344,8 @@ label {
 .content .main-content .section-one p{
     width: 100%;
 	text-align: center;
-
 }
     .content .main-content .registration-title{
-   
     font-size: 20px; 
     color: #69629f;
     font-weight: bold;
@@ -403,16 +353,13 @@ label {
     padding-top: 1px;
     text-align: center;
 }
-
 .content .sidebar {
 	width: 90%;
 	margin-left: 20px;
 }
  .footer{
-	
 	height:auto;
 }
-
 .footer .footer-content{
 	height: auto;
 	flex-direction: column;
@@ -427,23 +374,17 @@ label {
 .footer .footer-copyright{
   font-size: 15px;
 }
-
 }
-
 @media screen and (max-width: 425px){
-
 header ul {
 	width: 100%;
 	background-color:#69629f;
 	margin-top: 0px;
-
 }
 
 header ul li{
 width: 100%;
-
 }
-
 header .logo{
 	padding-left: 20px;
 }
@@ -451,15 +392,8 @@ header .logo{
 header ul li a{
 	padding-top: 1px;
 }
-
 }
 
-@media screen and (max-width: 425px){
-.content .registration-for{
-	width: 10%;
-	
-   }
-}
 
 
 
