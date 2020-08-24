@@ -2,7 +2,7 @@
 const productList = [
   {
     productName: "Xiaomi Redmibook",
-    imageUrl: "../introductionToHtml/img/laptop1.jpg",
+    imageUrl: "../introductionToHtml/img/laptop 1.jpg",
     productPrice: "£819.52 GBP"
     
   },
@@ -13,12 +13,11 @@ const productList = [
   },
   {
     productName: "11 Inch Laptop Bag Tablet Zipper Pouch Sleeve for MacBook Air",
-    imageUrl: "../introductionToHtml/img/bag1.jpg",
+    imageUrl: "../introductionToHtml/img/bag 1.jpg",
     productPrice: "£5.95"
   }
 ];
 
-const newList = productList.forEach((product) => {
-console.log(product.productName + ' with '+ product.imageUrl + ' is sold for ' + product.productPrice)
+productList.forEach((product) => {
+  console.log(product.productName + ' with '+ product.imageUrl + ' is sold for ' + product.productPrice)
 });
-
