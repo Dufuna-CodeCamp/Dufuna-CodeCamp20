@@ -22,3 +22,5 @@ productList.forEach((product) => {
     `${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}`
   );
 });
+
+
