@@ -1,0 +1,255 @@
+body{
+    font-family: 'Franklin Gothic Medium';
+    background-color:white;
+}
+.nav-container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex; 
+}
+ul li {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    background:rgb(250,128,114);
+    color: #F5F5DC;
+    padding-top: 10px;
+    min-height: 15%;
+    border-bottom:4px solid #0000FF;
+}
+header a {
+    color: #F5F5DC;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 200px;
+    list-style: none;
+    text-decoration: none;
+}
+header li {
+    display: inline;
+    padding: 0 20px;
+    text-decoration: none;
+}
+header .nav-title {
+    float: left;
+    padding-bottom: 12px;
+}
+header .nav-title h2,header .nav-title p{
+    margin:0;
+    padding:0;
+    color:white;
+}
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+.contact-content{
+    overflow: hidden;
+    padding: 40px auto;
+    margin: auto;
+    width: 90%;
+}
+main {
+    float: left;
+    text-align: center;
+    width: 45%;
+    margin-top: 55px;
+}
+main h1 {
+    font-size: 30px;
+    text-align: center;
+    color: coral;
+}
+main h3 {
+    font-size: 20px;
+    color: blue;
+}
+.medialink{
+    float: left;
+}
+.medialink ul li {
+   margin-bottom: 8px;
+   font-size: 17px;
+   font-weight: bold;
+   display: inline-flex;
+   padding:10px ;
+   margin-left: 2px;
+   margin-top: -35px;
+}
+.medialink ul li img{
+    width: 70px;
+    text-align: center;
+    margin-top: 3px;
+}
+aside {
+    float: left;
+    width: 48%;
+    margin-top: 55px;
+    margin-left: 40px;  
+}
+aside .contact-form{
+    padding: 20px;
+    width: 94%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+aside .contact-form h1{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+aside .contact-form label {
+    color: rgb(250,128,114);
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 48%;
+    margin-left: 20px;
+}
+aside .contact-form input {
+    margin-top: 1px;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    width: 90%;
+    height: 30px;
+}
+aside .contact-form select {
+    margin-top: 1px;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    width: 90%;
+    height: 30px;
+}
+textarea {
+    margin-top: 1px;
+    margin-left: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 90%;
+    height: 100px;
+}
+.contact-form button {
+    width: 75px;
+    height: 45px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: coral;
+    color: black;
+    margin-left: 200px;
+}
+footer {
+    overflow: hidden;;
+    padding: 20px 0 0 50px;
+    color: rgb(250,128,114);
+}
+.footer1, 
+.footer2, 
+.footer3 {
+    float: left;
+    width: 28%;
+}
+.footer1 ul li,
+.footer3 ul li
+{
+    margin-bottom: 8px;
+    font-size: 17px;
+   font-weight: bold;
+   list-style: none;
+   text-decoration: none;
+}
+.footer1 ul li a{
+   display: inline;
+   color: rgb(250,128,114);  
+   list-style: none;
+   text-decoration: none;
+}
+.footer2 input[type="email"]{
+   height: 25px;
+   padding: 3px 18px 3px 0;
+   font-size: 12px; 
+}
+.footer2 button[type="submit"]{
+   height: 30px;
+   padding: 0 5px;
+   font-size: 12px;
+   background-color:  rgb(250,128,114);
+   color: #F5F5DC;
+   font-weight: bold;
+}
+.footer3 ul li{
+   display: inline-flex;
+   padding:10px ;
+   margin-left: 30px;
+   margin-top: -35px;
+   list-style: none;
+   text-decoration: none;
+}
+.footer3 ul li img{
+   width: 50px;
+   text-align: left;
+   list-style: none;
+}
+footer h5{
+   text-align: center;
+   margin-top: 5px;
+   font-weight: bold;
+}
+footer p{
+   text-align: center;
+   display: block;
+   margin-top: 150px;
+   margin-left: 30px;
+}
+@media screen and (max-width:850px){
+    header .nav-title,
+    header nav,
+    header .nav-container  nav li{
+        text-align: center;
+        padding:0 3px;
+        float: none;
+}
+main, aside {
+    width: 70px;
+    margin: auto;
+    padding-bottom: 17px;
+}
+main {
+    text-align: center;
+}
+.footer1, .footer2, .footer3 {
+    width: 44px;
+}
+.footer3 ul li{
+    display: inline;
+}
+}
+@media screen and (max-width:550px){
+    main {
+        margin: auto;
+    }
+    .contact-form button{
+        width: 90px;
+        margin: 10px 75px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .footer1, 
+    .footer2{
+        width: 50px;
+    }
+    .footer3 {
+        width: 50px;
+    }
+    .footer3 ul li{
+        display: inline;
+    }
+}
