@@ -2,18 +2,18 @@
 const productList = [
   {
     productName: "Xiaomi Redmibook",
-    imageUrl: "img/laptop1.jpg",
+    imageUrl: "../introductionToHtml/img/laptop1.jpg",
     productPrice: "£819.52 GBP"
     
   },
   {
     productName: "1.8m DC Charging power",
-    imageUrl: "img/charger.jpg",
+    imageUrl: "../introductionToHtml/img/charger.jpg",
     productPrice: "£4.26 GBP"
   },
   {
     productName: "11 Inch Laptop Bag Tablet Zipper Pouch Sleeve for MacBook Air",
-    imageUrl: "img/bag1.jpg",
+    imageUrl: "../introductionToHtml/img/bag1.jpg",
     productPrice: "£5.95"
   }
 ];
