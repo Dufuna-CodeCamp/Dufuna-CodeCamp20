@@ -1,0 +1,43 @@
+!DOCTYPE html
+<html lang=ENG>
+    <meta charset UTF-8>
+    <head>
+        <title>CONTACT FORM</title>
+    </head>
+    <body>
+        <h1>SPENDTHRIFT!</h1>
+        <nav>
+           <a href="../html/product_page.html">Product</a>
+        </nav><br>
+        <form>
+            <fieldset>
+                <legend>CONTACT FORM</legend>
+                <label name="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname"/><br><br>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname"/><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid email"/><br>
+               
+                <label  for="subject">Subject</label>
+
+                <select name="subject" id="subject">
+                    <option value="confirm-order">I want to Confirm my Order</option>
+                    <option value="cancel-order">I want to Cancel my Order</option>
+                    <option value="payment-issue">I have a Payment Issue</option>
+                    <option value="return-order">I want to Return my Order</option>
+                    <option value="track-return-request">I want to Track my Return/Refund Request</option>
+                    <option value="counterfeit-issue">I want to Report a Counterfeit Issue</option>
+                    <option value="item-missing">My Item is Missing</option>
+                </select><br><br>
+                
+                <label for="comments">Input Message</label><br>
+                <textarea name="comments" id="comments" rows="20" cols="50"></textarea><br><br>
+                <input type="button" Value= "submit"id="submit"/>
+
+
+            </fieldset>
+        </form>
+        <p>&copy;SPENDTHRIFT! 2020</p>
+    </body>
+</html>
