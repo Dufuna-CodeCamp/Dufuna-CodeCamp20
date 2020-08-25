@@ -1,7 +1,7 @@
 var x = 123 -7;
-var i;
 
-for(i = 1; i < x; i++){
+
+for(var i = 1; i < x; i++){
 	if(i % 3 == 0 && i % 5 == 0){
 		console.log('Software Developer');
 	}
