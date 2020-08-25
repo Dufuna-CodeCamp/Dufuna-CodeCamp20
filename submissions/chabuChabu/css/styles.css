@@ -197,16 +197,14 @@ header ul li a:hover {
   text-align: center;
 }
 /** end of footer**/
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { /** for all modern browers**/
   color: #69629f;
-  opacity: 1; /* Firefox */
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #69629f;
-  }
-::-ms-input-placeholder { /* Microsoft Edge */
+  opacity: 1;  
+}
+:-ms-input-placeholder { /* IE 10-11 */
   color: #69629f;
 }
-}
+
 /**Media queries for tablet**/
 
 @media screen and (max-width: 1300px){
