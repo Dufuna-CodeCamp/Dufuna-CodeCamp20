@@ -128,7 +128,7 @@ aside .contact-form select {
     width: 90%;
     height: 30px;
 }
-aside .contact-form textarea {
+ 
 textarea {
     margin-top: 1px;
     margin-left: 20px;
@@ -222,7 +222,6 @@ footer p{
 }
 main, aside {
     width: 70%;
-    width: 70px;
     margin: auto;
     padding-bottom: 17px;
 }
@@ -230,8 +229,7 @@ main {
     text-align: center;
 }
 .footer1, .footer2, .footer3 {
-    width: 44%;
-    width: 44px;
+    width: 44%; 
 }
 .footer3 ul li{
     display: inline;
@@ -253,10 +251,9 @@ main {
     }
     .footer3 {
         width: 50%;
-        width: 50px;
     }
     .footer3 {
-        width: 50px;
+        width: 50%;
     }
     .footer3 ul li{
         display: inline;
