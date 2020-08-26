@@ -146,7 +146,7 @@
     .check  {
         margin:0 auto;
     }
-    .btn{;
+    .btn{
         margin-right:150px;
         margin-left:40px;
     }
@@ -162,8 +162,8 @@
     .container  {
         display: block;
         justify-content: center;
-        width:
         
+    
     }
     .fields {
         margin: 0 auto;
