@@ -87,7 +87,7 @@ main h3 {
 }
 aside {
     float: left;
-    width: 48%;
+    width: 48px;
     margin-top: 55px;
     margin-left: 40px;  
 }
@@ -156,7 +156,7 @@ footer {
 .footer2, 
 .footer3 {
     float: left;
-    width: 28%;
+    width: 28px;
 }
 .footer1 ul li,
 .footer3 ul li
@@ -220,7 +220,7 @@ footer p{
         float: none;
 }
 main, aside {
-    width: 70%;
+    width: 70px;
     margin: auto;
     padding-bottom: 17px;
 }
@@ -228,7 +228,7 @@ main {
     text-align: center;
 }
 .footer1, .footer2, .footer3 {
-    width: 44%; 
+    width: 44px; 
 }
 .footer3 ul li{
     display: inline;
@@ -246,13 +246,13 @@ main {
 @media screen and (max-width: 920px) {
     .footer1, 
     .footer2{
-        width: 50%;
+        width: 50px;
     }
     .footer3 {
-        width: 50%;
+        width: 50px;
     }
     .footer3 {
-        width: 50%;
+        width: 50px;
     }
     .footer3 ul li{
         display: inline;
