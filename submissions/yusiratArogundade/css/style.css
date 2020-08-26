@@ -1,9 +1,3 @@
-/*@media screen and (max-width: 360px ){
-    .information, .fill-form {
-        float: none;
-    }
-
-}*/
 *{
 	box-sizing: border-box;
 	font-family: 'Rubik', sans-serif;
@@ -23,20 +17,17 @@ body{
 	align-items: center;
 	justify-content: space-between;
 	display: flex;
-	padding: 10px 10px;
+	padding: 10px;
 }
 img{
 	/*padding: 10px auto;*/
-	margin-left: 5px;
-	
+	margin-left: 5px;	
 }
 ul{
-	
 	list-style: none;
 }
 nav li{
-	float: left;
-	
+	float: left;	
 }
 nav a{
 	display: inline-block;
@@ -56,7 +47,6 @@ nav a:hover,
 	justify-content:center;
 	padding: 20px 40px;
 }
-
 .reg-info{
 	margin: 10px auto;
 	float: left;
@@ -82,14 +72,12 @@ nav a:hover,
 .sign-up-form{
 	float: right;
 }
-
 #form-rec{
 	border-radius: 15px;
 }
 form label,
 form input{
-	padding: 10px;
-	
+	padding: 10px;	
 }
 form input{
 		width: 400px;
@@ -100,24 +88,24 @@ form input{
 #check-label{
 	display:block;
 	position: relative;
-	padding-left: 25px;
+	padding-left: 90px;
 	margin-left: 40px;
-	font-size: 12px;
+	font-size: 17px;
 }
 #check{
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 10px;
+	left:50px;
 	height: 12px;
 	width: 12px;
-}
+	}
 form button{
 	border: 1px;
 	background-color:#26323D;
 	border-radius: 10px;
 	width: 120px;
 	height: 40px;
-	margin-left: 100px;
+	margin-left: 170px;
 	font-size: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -172,8 +160,6 @@ form button{
 .social-connect li img{
 	display: inline-grid;
 	float: left;
-
-
 }
 .social-connect h3{
 	text-align: center;
@@ -181,8 +167,8 @@ form button{
 }
 .social-connect img{
 	width: 40px;
-	height: 40px;
-	margin-left:20px;
+	height: 30px;
+	margin-left:40px;
 	margin-right: auto;
 	opacity: 0.5
 }
@@ -192,17 +178,42 @@ form button{
 	text-align: center;
 }
 @media screen and (max-width: 800px){
+	.content-wrapper{
+	justify-content:center;
+		padding-left: 140px
+			}
+	.reg-info{
+	margin: 10px 0;
+	float: none;
+	font-stretch: normal;
+	}
+	.reg-info p{
+		padding-left: 0;
+		text-align: center;
+	}
+	.reg-info p{
+		letter-spacing: normal;
+		font-size: 18px
+	}
+	.sign-up-form{
+	float: none;
+	width: 500px;
+}
+	form input{
+		width: 500px;
+	}
 	.news-mail input{
-		width: 120px;
+		width: 180px;
 	}
 	.news-mail button{
-		width: 60px;
+		width: 80px;
 	}
 	.social-connect img{
-		margin-left: auto;
-		width: 35px;
-		height: 35px;
-	}
+	width: 40px;
+	height: 30px;
+	margin-left:10px;
+	margin-right: auto;
+  }
 }
 @media screen and (max-width: 640px){
 	/****header navigation ****/
@@ -217,22 +228,35 @@ form button{
 			justify-content: space-around;
 		}
 		/****main content ****/
-		.content-wraper{
-			display: grid;
-			grid-row: 100px;
-		}
+		.content-wrapper{
+	justify-content:center;
+		padding-left: 40px;
+			}
 		.sign-up-form,
 		.reg-info{
 			float: none;
-			margin:10px 0;
+			margin:10px;
 		}
+	form input{
+		width: 500px;		
+	}
 		/****footer navigation ****/
+	.footer-wrap{
+		grid-template-columns: 1fr 1fr;
+	}
+	.footer-nav{
+		grid-row: span 2;
+	}
+	.social-connect h3{
+		text-align: left
+	}	
 		.social-connect img{
-		margin-right: 5px
+		margin-left:-40px;
+	  margin-right:50px 
 		}
 		.reg-info h1,
 		.reg-info p{
-			text-align: center
+			text-align: center;
 		}
 }
 /****when maximum view width is360px ****/
@@ -249,7 +273,6 @@ form button{
 			margin-left:5%;
 			justify-content: space-around;
 		}
-
 	nav li{
 		float: none;
 	}
@@ -265,6 +288,16 @@ form button{
 		width: 250px;
 	}
 	/****footer navigation ****/
+	#check-label{
+	padding-left: 20px;
+	font-size: 12px;
+}
+#check{
+	left:-20px;
+	}
+form button{
+	margin-left: 60px;
+	}
 	.footer-wrap{
 			padding-left: 30px;
 	}
@@ -275,8 +308,7 @@ form button{
 	}
 	.news-mail h3,
 	.social-connect h3{
-		text-align: left;
-		
+		text-align: left;		
 	}
 	.social-connect img{
 		margin-left:-5px;
@@ -284,5 +316,8 @@ form button{
 	}
 	.footer-wrap ul{
 		margin-left: -30px;
+	}
+	.footer-wrap p{
+		margin-left:-7px
 	}
 }
