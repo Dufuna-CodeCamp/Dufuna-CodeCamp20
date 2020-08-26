@@ -175,7 +175,6 @@ footer {
 }
 .footer2 input[type="email"]{
    height: 25px;
-   padding: 3px 18px 3px ;
    padding: 3px 18px 3px 0;
    font-size: 12px; 
 }
