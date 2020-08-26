@@ -1,4 +1,0 @@
-Hello,
-At the end of this project I want to be able to:
-- Use my softawre development skills to solve real-life problems.
-- Be employed by a tech-organisation or start my tech business.
