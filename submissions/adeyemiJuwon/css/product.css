@@ -26,9 +26,12 @@ header{
     color:black;
     align-items: center;
 }
- .logo{
+ h2{
     margin-right:auto;
 }
+.logo{
+    margin-right:auto;
+  }
 .navbar-link{
     list-style: none;
 }
