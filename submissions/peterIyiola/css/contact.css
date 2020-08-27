@@ -5,6 +5,10 @@
     padding:40px;
 
 }
+img     {
+    height:30px;
+    width: 40px;
+}
 .flex-container   {
     display: flex;
     flex-direction: row;
@@ -20,13 +24,13 @@
     justify-content: space-around;
 }
 .productpagelink {
-    padding-top: 13px;
+    padding-top: 9px;
 }
 .contactformlink {
-    padding-top: 13px;
+    padding-top: 9px;
 }
 .signuppagelink {
-    padding-top: 13px;
+    padding-top: 9px;
 }
 .name   {
     width:350px;
@@ -97,7 +101,7 @@ h4  {
   }
 
 .message    {
-    margin-left: 150px;
+    margin-left: 170px;
     position: relative;
 }
 .messagehead    {
