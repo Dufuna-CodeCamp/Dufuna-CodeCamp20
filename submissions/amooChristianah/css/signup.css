@@ -83,14 +83,14 @@ main p a{
         /* ASIDE SECTION */
 aside{
     float: left;
-    width: 50%;
-    margin-left: 5%;
+    width: 400px;
+    margin-left: 10%;
 }
 aside .form-details{
     padding: 20px;
-    width: 90%;
+    width: 500px;
     border:1px solid rgb(129, 129, 129);
-    border-radius: 3%;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 .form-details label{
@@ -218,6 +218,13 @@ color: #fff;
            align-items: flex-start;
                 
             }
+
+            aside .form-details{
+                width: 300px!important;
+                position: relative;
+                left: 20px!important;
+            }
+    
     .navbar-link li {
             display: block;
              text-align: left;
@@ -225,12 +232,19 @@ color: #fff;
             font-size: 16px;
             margin-left:10px ;
             color:black;
+            position: relative;
+            right: 40px;
             }
         }
+
+       
 @media screen and (max-width: 500px){
+
+    
     main{
         margin: auto;
     }
+
     .form-details input[type="checkbox"]{
         margin-left:5px;
     }
@@ -250,7 +264,7 @@ color: #fff;
     main,
     aside{
         float:none;
-        width: 80%;
+        width: 500px;
         margin: auto;
         padding-bottom: 15px;
     }
@@ -262,11 +276,11 @@ color: #fff;
     }
     .footer-box,
     .footer-box-2{
-        width: 50%;
+        width: 200px;
     }
     .footer-box-3{
         float: none;
-        width: 50%;  
+        width: 200px;  
     }
     .footer-box-3 ul li{ 
         display: inline;
@@ -275,11 +289,11 @@ color: #fff;
 @media screen and (max-width: 920px){
     .footer-box,
     .footer-box-2{
-        width: 50%;
+        width: 200px;
     }
     .footer-box-3{
         float: none;
-        width: 50%;  
+        width: 200px;  
     }
     .footer-box-3 ul li{ 
         display: inline;
