@@ -83,14 +83,14 @@ main p a{
       /* ASIDE FRAME */
 aside{
   float: left;
-  width: 50%;
-  margin-left: 5%;
+  width: 400px;
+  margin-left: 10%;
 }
 aside .form-page{
   padding: 20px;
-  width: 90%;
+  width: 500px;
   border:1px solid;
-  border-radius: 3%;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 .form-page label{
@@ -214,6 +214,10 @@ color: #fff;
   main{
       margin: auto;
   }
+
+ aside .form-page{
+   width: 250px!important;
+ }
   .form-page input[type="checkbox"]{
       margin-left:5px;
   }
