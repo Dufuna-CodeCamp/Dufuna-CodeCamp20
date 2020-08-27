@@ -113,7 +113,7 @@ aside .form-page{
   
 }
 .form-page input[type="checkbox"]{
-  margin-left: 25%;
+  margin-left: 25px;
   margin-bottom: 15px;
   
 }
@@ -210,13 +210,15 @@ color: #fff;
       right: 10px;
  
   } 
+
+
     
-  main{
-      margin: auto;
-  }
+  
 
  aside .form-page{
    width: 250px!important;
+   position: relative;
+   left:70px;
  }
   .form-page input[type="checkbox"]{
       margin-left:5px;
@@ -244,7 +246,7 @@ color: #fff;
   main,
   aside{
       float:none;
-      width: 80%;
+      width: 500px;
       margin: auto;
       padding-bottom: 15px;
   }
@@ -271,11 +273,11 @@ color: #fff;
    }
   .footer-box,
   .footer-box-2{
-      width: 50%;
+      width: 200px;
   }
   .footer-box-3{
       float: none;
-      width: 50%;  
+      width: 200px;  
   }
   .footer-box-3 ul li{ 
       display: inline;
