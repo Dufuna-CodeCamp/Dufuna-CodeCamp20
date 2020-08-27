@@ -1,113 +1,279 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
+/* NAVBAR SECTION */
+.navbar {
+  background: purple;
+  padding: 15px;
+  display: flex;
+  align-items: right;
 }
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(6, 11, 73)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.navbar .logo {
+  color: #fff;
 }
-.rad{
-    overflow-y: hidden;
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
 }
-fieldset {
-    width: 50vw;
-    border-radius: 23px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin: 0 auto;
-    position: relative;
+li {
+  padding-right: 25px;
 }
-    
-.footer {
-    background-color: salmon;
-    margin: 0;
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
 }
-.footer-nav{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@media (max-width: 576px) {
+  .navbar {
+    display: block;
+    align-items: left;
+    justify-content: left;
+    width: 100vw;
+  }
+  .navbar-nav {
+    display: block;
+    margin-top: 5px;
+  }
+  .nav-item {
+    padding-bottom: 10px;
+  }
+  .logo {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .navbar {
+    display: block;
+    align-items: left;
+    justify-content: left;
+    width: 100vw;
+  }
+  .navbar-nav {
+    display: block;
+    margin-top: 5px;
+  }
+  .nav-item {
+    padding-bottom: 10px;
+  }
+  .logo {
+    padding-bottom: 0px;
+  }
 }
 
-.navbar {
-    background-color:salmon;
+/* BOX SECTION */
+.box {
+  display: flex;
+  padding: 10px;
+}
+.small-box {
+  flex-direction: row;
+  width: 48%;
+  padding: 5px 10px;
+}
+.forms {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 0px;
+}
+.message {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.send {
+  color: black;
+  font-size: 1.5rem;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input[list="subjects-list"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+  font-size: 1rem;
+}
+
+.don {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 1.5rem;
+}
+.submit {
+  text-align: right;
+  margin-right: 45px;
+}
+#message {
+  width: 90%;
+  padding-bottom: 70px;
+}
+#signup {
+  background-color: purple;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+/* fonter awesome in the body */
+.fa-phone {
+  color: blue;
+}
+.fa-envelope-open {
+  color: blue;
+}
+.facebook {
+  color: blue;
+}
+.youtube {
+  color: red;
+}
+.twitter {
+  color: blue;
+}
+
+.message {
+  color: blue;
 }
 
 @media (max-width: 576px) {
-    .footer {
-        margin-bottom: 0;
-    }
-    .bord {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-}
-.signup{
-    padding-top: 5rem;
-}
-.signup h1{
-    color: salmon;
-    padding-top: 7rem;
-}
-.form-control{
-    border-radius: 10px;
-    width: 95%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-#terms {
-    color:salmon;
-}
-
-.bord{
-    border: 1px solid rgb(134, 133, 133);
+  .box {
+    display: block;
+  }
+  .small-box {
     width: 100%;
-    border-radius: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    }
-
-.signin {
-    color:salmon;
-}
-::placeholder{
-    color: salmon;
-}
-.footer-copyright {
-    text-align: center;
-}
-
-.checkbox {
-    border: 3px;
-    padding: 100px;
-}
-
-#sign-up{
-    background: salmon;
     padding: 10px 25px;
-    color: white;
-    border-color: salmon;
-}
-.btn-salmon {
-    background: transparent;
-    padding: 2px 15px;
-    border: 1px solid white;
-}
-.footer-nav li {
-    line-height: 3px;
-}
-
-strong {
-    font-size: 1.5rem;
+  }
+  .forms {
+    margin-top: 10px;
+  }
+  .submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+  }
 }
 
-input {
-    border: none !important;
-    border-bottom: 2px solid black !important;
+@media (max-width: 800px) {
+  .box {
+    display: block;
+  }
+  .small-box {
+    width: 100%;
+    padding: 10px 25px;
+  }
+  .forms {
+    margin-top: 10px;
+  }
+  .submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+  }
 }
-input:focus{
-    outline: none;
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: purple;
+}
+.footer-box {
+  flex-direction: row;
+  width: 33%;
+  padding: 5px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.footer-box1 {
+  flex-direction: row;
+  width: 33%;
+  padding: 5px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.footer-box2 {
+  flex-direction: row;
+  width: 33%;
+  padding: 5px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.url {
+  padding-left: 10px;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.url a {
+  text-decoration: none;
+  color: white;
+}
+.copyright {
+  text-align: center;
+  background-color: purple;
+  color: white;
+  padding-bottom: 20px;
+}
+#sign-up {
+  width: 100px;
+  background-color: purple;
+  color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.connect {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  footer {
+    display: block;
+  }
+  .footer-box {
+    width: 100%;
+  }
+  .copyright {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .foot {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+  }
+  .footer-box {
+    flex-direction: row;
+    width: 50%;
+  }
+ .footer-box2 {
+    flex-direction: row;
+    width: 100%;
+    padding-left: 380px;
+  }
+  .copyright {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .foot {
+    padding-bottom: 10px;
+  }
 }
