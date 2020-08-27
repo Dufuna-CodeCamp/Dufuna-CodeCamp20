@@ -1,0 +1,216 @@
+body {
+        width: 100%;
+        background-color: #ffffff;
+        margin:0;
+        padding:0;
+}
+.check1{
+        width:40%;
+        padding-top: 50px;
+}
+.pic {
+        padding-left: 2%;
+}
+h1 {
+        color: purple;
+        font-size: 50px;
+}
+b {
+        color: purple;
+        font-size: 50px;
+        font-family: Montserrat;
+        line-height: 0.4;
+}
+.top {
+        width: 100%;
+        height: 70px;
+        background-color: purple;
+}
+.nav-link {
+        height: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.19;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-decoration: none;
+        float: right;
+        margin-right: 40px;
+        margin-top: 25px;  
+}
+article {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.23;
+                letter-spacing: normal;
+                text-align: left;
+                color: #5f5f5f;
+}
+.log {
+        font-weight: bold;
+        color: purple;
+        text-decoration: none;
+}
+.rectangle-1 {
+        width: 40%;
+        height: auto;
+        border-radius: 23px;
+        border: solid 1px #707070;
+        background-color: #ffffff;
+        margin-top:80px;
+        margin-bottom:20px; 
+        margin-left:15%; 
+        padding:20px;       
+}
+.checkbox{
+        display:flex;
+        width:70%;
+        margin-left: 20%;
+        margin-top: 3%;
+        color: purple;
+}
+.check {
+    display: flex;
+    padding-left: 5%;
+    padding-right:5%;
+    margin-bottom: 0;
+}
+.rectangle-2 {
+        width: 80%;
+        height: 30px;
+        border-radius: 10px;
+        border: solid 2px #5f5f5f;
+        margin-left: 10%;
+}
+.text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5f5f5f;
+        margin-left: 10%;
+        padding-top:30px;
+}
+.btn {
+                width: 50%;
+                height: 48px;
+                border-radius: 4px;
+                background-color: purple;
+                color: white;
+                margin-top:20px;
+                margin-left:25%;
+}
+/* footer */
+.bass {
+        color: white;
+        text-decoration: none;
+}
+#foot {
+        width: 100%;
+        height: auto;
+        background-color: purple;
+}
+.base {
+        display:flex;
+        color: white;
+        margin-top: 15%;
+        margin-left: 8%;
+}
+.base2{
+        display:flex;
+        margin-top:8px;
+        margin-left: 10%; 
+        width: 70%;
+}
+.base-3 {
+        margin: 10px 40px 10px 50px;
+}
+.base-4 {
+        font-size: 20px;
+        line-height: 0.5;
+        margin-left: 13%;
+}
+li {
+        list-style: none;
+        margin: 10px;
+}
+.button1 {
+        color: purple;
+        background: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+}
+.note {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0;
+}
+/* media quieres */
+@media screen and (max-width:800px) {
+        .check1{
+                width:60%;
+                margin-left:20%;
+                padding-top: 20px;
+        }
+        h1{
+                font-size: 30px;
+                text-align:center;
+        }
+        b{
+                font-size: 30px;
+                margin-left: 35%;
+        }
+        article{
+                font-size: 20px;
+                text-align:center;
+        }
+        .check{
+                display:flex;
+                flex-direction: column;
+        }
+        .rectangle-1{
+                width:80%;
+                margin-left:10%;
+        }
+        .base{
+                display: flex;
+                flex-direction: column;
+                margin-left: 0;
+        }
+        .base1 {
+                font-size: 15px;
+                margin-left: 5%;
+        }
+        .base-4 {
+                font-size: 15px;
+                line-height: 0.5;
+                margin-left: 15%;
+                margin-top: 5%;
+        }
+        .base2{
+                display: flex;
+                flex-direction: column; 
+                margin-left:0;
+        }
+        .button {
+                margin: 0;
+        }  
+}
+@media(max-width:500px){
+        .check1{
+                width:90%;
+                margin-left:5%;
+                padding-top: 10px;
+        }
+        .rectangle-1{
+                width:90%;
+                margin-left:5%;
+                padding:5px;
+        }
+}
