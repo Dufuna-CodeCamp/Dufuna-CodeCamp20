@@ -17,6 +17,13 @@ body {
     text-decoration: none;
     color: white;
 }
+.topnav-right {
+    float: right;
+    margin: 15px 50px 0px 0px;
+}
+ul {
+    list-style-type: none;
+}
 /* contact us page */
 /* phone, envelop and comment icons */
 #phone, #mail-env, #c-icon {
@@ -59,9 +66,12 @@ body {
     text-align: center;
 }
 #submit-c {
+    color: white;
+    background: rgb(2, 209, 2);
     float: right;
     margin-right: 10px;
     border-radius: 2px;
+    border: 0.5px;
     padding: 5px 15px 5px 15px;
 }
 /* form container display */
@@ -109,7 +119,8 @@ footer {
 #submit {
     color: rgb(3, 192, 3);
     background-color: white;
-    height: 29px;
+    height: 30px;
+    border: 0.5px;
 }
 #input-email, #submit {
     display: inline;
@@ -127,13 +138,24 @@ li {
 #copyright {
     text-align: center;
     float: left;
-    margin: 40px 0px 0px 350px;
+    margin: 40px 0px 0px 250px;
     color: white
 }
 
 /* media-query (tablet)*/
 @media screen and (min-width: 768px) and (max-width: 900px) {
-    /* contact form */
+    /* contact us page */
+    /* phone, envelop and comment icons */
+    #phone, #mail-env, #c-icon {
+        color:rgb(103, 255, 2);
+    }
+    #ph, #env {
+        margin-left: 10px;
+    }
+    .mail-icon li, .phone-icon li, .connect-us li {
+        text-align: center;
+        font-size: 20px;
+    }
     .no-outline {
         border-style: hidden hidden groove hidden;
         padding: 10px 0px 10px 0px;
@@ -146,8 +168,11 @@ li {
     }
     #submit-c {
         float: right;
+        color: white;
+        background-color: rgb(2, 209, 2);
         margin-right: 10px;
         border-radius: 2px;
+        border: 0.5px;
         padding: 15px 10px 10px 15px;
     }
     #contact-com {
@@ -160,8 +185,9 @@ li {
     }
     #contactForm {
         overflow: hidden;
-        margin-top: 25px;
+        margin: 25px 50px 5px 200px;
         padding-top: 15px;
+        width: 600px;
     }
     #contactForm input {
         width: 500px;
@@ -169,26 +195,26 @@ li {
     }
     /* form container display */
     .contact-us {
-        margin: 40px 0px 0px 325px;
+        margin: 40px 5px 0px 20px;
     }
     .contact {
-        margin-right: 215px;
+        margin-right: 205px;
     }
     .contact-info {
         height: 810px;
     }
     /* footer */
     footer {
-        height: 205px;
+        height: 225px;
     }
     #icons {
         margin-right: 60px;
     }
     #copyright {
-        margin: 40px, 0px 235px 0px;
+        margin: 40px, 50px 5px 0px;
     }
-}
-/* media-query (mobile)*/
+
+    /* media-query (mobile)*/
 @media screen and (max-width: 500px) {
     /* top navigation */
     .topnav {
@@ -210,6 +236,9 @@ li {
         float: left;
         margin: 0px 740px 0px 20px;
         width: 300px;    
+    }
+    ul {
+        list-style-type: none;
     }
     /* contact us page */
     /* phone, envelop and comment icons */
@@ -241,7 +270,7 @@ li {
     }
     #contactForm {
         overflow: hidden;
-        margin-top: 25px;
+        margin: 25px 50px 5px 170px;
         padding-top: 15px;
         font-size: 30px;
     }
@@ -255,6 +284,8 @@ li {
     }
     #submit-c {
         float: right;
+        color: white;
+        background-color: rgb(2, 209, 2);
         margin-right: 10px;
         border-radius: 2px;
         padding: 15px 10px 10px 15px;
@@ -299,12 +330,12 @@ li {
     #newsLetter #submit {
         height: 65px;
         padding-bottom: 5px;
-        margin: 8px 4px 0px 0px;
+        margin: 8px 4px 4px 4px;
         background-color: white;
         color: rgb(2, 209, 2);
     }
     #icons {
-        margin: 25px 55px 0px 390px;
+        margin: 25px 55px 0px 100px;
     }
     #icons li {
         font-size: 30px;
@@ -316,7 +347,7 @@ li {
     }
     #newsLetter {
         float: left;
-        margin: 30px 55px 0px 0px;
+        margin: 30px 55px 0px 100px;
         width: 700px;
     }
     #footnav li a {
