@@ -28,3 +28,20 @@ for(let i = 0; i< productList.length; i++){
 }
 
 //TASK 2
+
+// Writing the numbers from 1 and the positive difference between 7 and 123 
+var output = [];
+function positiveNum(){
+    for(var count = 1; count < 123; count++){
+        if(count % 3 === 0 && count % 5 === 0){
+        output.push("Software Developer");
+    }else if(count % 3 === 0){
+        output.push("Software");
+    }else if(count % 5 === 0){
+        output.push("Developer");
+    }else{
+        output.push(count);
+    }
+}
+console.log(output);
+}
