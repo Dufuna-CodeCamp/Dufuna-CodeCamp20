@@ -33,7 +33,7 @@ for(let i = 0; i< productList.length; i++){
 
 function diffNum(count){
     var output = [];
-        for(var count = 7; count <= 123; count++){
+        for(var count = 1; count <= 123; count++){
             if(count % 3 === 0 && count % 5 === 0){
                 output.push("Software Developer");
             }else if(count % 3 === 0){
