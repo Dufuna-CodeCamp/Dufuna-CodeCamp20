@@ -57,15 +57,15 @@ header nav{
 .container{
     overflow: hidden;
     padding: 30px 0;
-    margin: auto;
-    width: 90%;
+    margin: auto; 
 }
 
     /* MAIN SECTION */
 main{
     float: left;
     text-align: left;
-    width: 43%;
+    width: 480px;
+    margin: 50px;
 }
 main h1{
     color:black;
@@ -84,7 +84,8 @@ main p a{
 aside{
     float: left;
     width: 400px;
-    margin-left: 10%;
+    position: relative;
+    left: 80px;
 }
 aside .form-details{
     padding: 20px;
@@ -219,12 +220,6 @@ color: #fff;
                 
             }
 
-            aside .form-details{
-                width: 300px!important;
-                position: relative;
-                left: 20px!important;
-            }
-    
     .navbar-link li {
             display: block;
              text-align: left;
@@ -235,6 +230,13 @@ color: #fff;
             position: relative;
             right: 40px;
             }
+
+    aside .form-details{
+            width: 300px !important;
+            position: relative;
+            left: 10px;
+            }
+            
         }
 
        
@@ -259,7 +261,7 @@ color: #fff;
     header .nav-container  nav li{
         float: none;
         text-align: center;
-        padding:0 3%;
+        padding:0 10px;
     }
     main,
     aside{
@@ -271,6 +273,7 @@ color: #fff;
     main{
         text-align: center;
     }
+
     .form-details input[type="checkbox"]{
         margin-left: 50px;
     }
@@ -287,6 +290,11 @@ color: #fff;
     }  
 }
 @media screen and (max-width: 920px){
+    aside .form-details{
+        width: 500px;
+        position: relative;
+        right: 100px;
+    }
     .footer-box,
     .footer-box-2{
         width: 200px;
