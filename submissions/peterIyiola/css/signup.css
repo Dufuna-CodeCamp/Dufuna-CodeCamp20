@@ -1,0 +1,192 @@
+   .container   {
+        display: flex;
+        flex:row wrap;
+        justify-content: space-around;
+        padding:20px;
+        column-width: auto;
+    }
+    h2  {
+        width:50%;    
+        }
+    .register   {
+        width: 25%;
+        margin-right: 10px;
+        
+    }
+    .productpagelink {
+        padding-top: 13px;
+    }
+    .contactlink {
+        padding-top: 13px;
+    }
+    .signuplink {
+        padding-top: 13px;
+    }
+    a   {
+        text-decoration: none;
+    }
+    .btn    {
+        border-radius: 1px;
+        color: goldenrod;
+        margin-left: 100px;
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+    }
+    
+    .btn:hover  {
+        background-color:burlywood;
+    }
+    .check  {
+        margin-left: 30px;
+    }
+    .name   {
+        border-radius: 10px;
+        padding: 5px;
+        width: 300px;
+    }
+    .fields   {
+        border-radius: 23px;
+        width: 100px;
+        margin-right: 100px;
+    }
+   .submit  {
+       width: fit-content;
+       cursor: pointer;
+   }
+   .submit:hover  {
+    background-color:burlywood;
+}
+    img {
+        height: 40px;
+        width:  100%;
+    }    
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 15px;
+        text-align: center;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+      .flex-container   {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-color: greenyellow;
+          padding: 5px;
+          justify-content: space-around;
+    
+      }
+      .flex-container2  {
+          display: flex;
+          flex-direction:row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+      }
+      
+      footer    {
+          background-color: greenyellow;
+          text-align: center;
+      }
+      .contacts   {
+        text-align: left;
+        padding-right: 50px;
+    }
+ 
+    .flex-item1   {
+        width: 200px;
+        margin-left: 100px;
+    }
+    .flex-container{
+        width:100%;
+    }
+   
+@media screen and (max-width:480px)  {
+    .flex-item1   {
+        height: 50%;
+    }
+    h2  {
+        width: 80%;
+    }
+    .name   {
+        width:75%;
+    }
+    .container   {
+        display: block;
+        flex:row wrap;
+        justify-content: center;
+        
+    }
+    .register   {
+        margin-left:auto;
+        width: 50%;
+        margin-right: auto;
+    }
+    .check  {
+        margin:0 auto;
+    }
+    .btn{;
+        margin-right:150px;
+        margin-left:40px;
+    }
+    
+    .fields {
+        margin: 0 auto;
+    }
+    .flex-container   {
+        display: block;
+    }
+}
+@media screen and (max-width:780px) and (min-width:480px){
+    .container  {
+        display: block;
+        justify-content: center;
+        width:
+        
+    }
+    .fields {
+        margin: 0 auto;
+        width: 400px;
+    }
+    .register   {
+        margin-left: 200px;   
+        text-align: justify;
+        font-size: large;
+        width:60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .name   {
+        width: 400px;
+    }
+    h2  {
+        width: 60%;
+        text-align: center;
+        margin-left: 60px;
+
+    }
+    
+
+    
+}
