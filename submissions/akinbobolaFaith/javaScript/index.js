@@ -8,7 +8,7 @@ var productList = [
     {
         productName: "UGG Men's Biltmore Chelsea Boot",
         imageUrl: "../html/image/UGG-Men-Biltmore-Chelsea-Boot2.jpeg",
-        productPrice: "24,999",
+        productPrice: "#24,999",
     },
     
     {
