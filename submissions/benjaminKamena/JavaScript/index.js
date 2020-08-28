@@ -30,18 +30,40 @@ for(let i = 0; i< productList.length; i++){
 //TASK 2
 
 // Writing the numbers from 1 and the positive difference between 7 and 123 
-var output = [];
-function positiveNum(){
-    for(var count = 1; count < 123; count++){
-        if(count % 3 === 0 && count % 5 === 0){
-        output.push("Software Developer");
-    }else if(count % 3 === 0){
-        output.push("Software");
-    }else if(count % 5 === 0){
-        output.push("Developer");
-    }else{
-        output.push(count);
+
+function diffNum(count){
+    var output = [];
+        for(var count = 7; count <= 123; count++){
+            if(count % 3 === 0 && count % 5 === 0){
+                output.push("Software Developer");
+            }else if(count % 3 === 0){
+                output.push("Software");
+            }else if(count % 5 === 0){
+                output.push("Developer");
+            }else{
+                output.push(count);
+            }
+        } console.log(output);
     }
-}
-console.log(output);
-}
+
+//TASK 3 trying out
+// 99 bottles of beer
+
+/*function beerSong() {  
+    var bottles;
+    var bottlesLeft;
+    for (i = 99; i >= 1; i--) {
+      if (i == 1) {
+        bottles = "bottle";
+        bottlesLeft = "No bottles of beer on the wall!";
+      } else {
+        bottles = "bottles";
+        bottlesLeft = i - 1 + " bottles of beer on the wall!";
+      } console.log(i+ " " + bottles + " of beer on the wall,");
+      console.log(i+ " " + bottles + " of beer,");
+      console.log("Take one down, pass it around,");
+      console.log(bottlesLeft);
+      } 
+      
+  }
+  console.log(beerSong());*/
