@@ -238,25 +238,23 @@ main{
   width: 90px;
   margin: 10px 70px;
 }
-.footer-part{
-  display: block;
-  margin-left: 15px;
-}
-.social-media h3{
-  margin-top: 20px;
-}
-.social-part li{
-  margin-right: 5px;
+.footer-box,
+.footer-box-2,
+.footer-box-3{
+  float: none;
+  display: inline;
 }
 }
 
-@media screen and (max-width: 809px){
-  main,
-  aside{
-      float:none;
-      width: 80%;
-      margin: auto;
-      padding-bottom: 15px;
+@media screen and (max-width: 900px){
+ .signup-text{
+    display: flex;
+      flex-direction:column;
+  }
+  aside, main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
   }
   main{
       text-align: center;
