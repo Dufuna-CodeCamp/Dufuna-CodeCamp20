@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 22px;
+}
+a {
+  text-decoration: none;
+}
+/********************
+        header
+**********************/
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  background: #1b1a1b;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo {
+  margin-right:auto;
+  margin-left: 5%;
+}
+.logo a {
+  font-family: "", cursive;
+  color: #1b82d6;
+  font-weight: 100; 
+}
+.span-logo {
+  color: #1b82d6;
+  font-family: "Grenze Gotisch", cursive;
+  font-weight: 900;
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link li {
+  display: inline-block;
+  line-height: 15px;
+  font-size: 18px;
+  margin: 0 30px 0 0;
+}
+.nav-link a {
+  color: rgb(226, 221, 221);
+}
+.nav-link li a:hover {
+  color: grey;
+}
+.signup-text{
+  display: flex;
+  flex-wrap: nowrap;
+    padding: 30px 0;
+    margin: auto;
+    width: 90%;
+}
+main{
+  text-align: left;
+  width: 43%;
+}
+main h1{
+  color: #1b82d6;
+  text-align: left;
+  font-size: 50px;
+  margin: 10px;
+  width: 365px;
+  height: 122px;
+  line-height: 1.22;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+main p{
+  color: black;
+  font-size: 25px;
+  padding: unset;
+  margin: 10px 0 0 60px;
+  line-height: 35px;
+}
+main p a{
+  color: #1b82d6;
+  font-size: 22px;
+}
+aside{
+  float: left;
+  width: 50%;
+  margin-left: 5%;
+}
+aside .form-group{
+  padding: 20px;
+  width: 90%;
+  border:1px solid #1b1a1b;
+  border-radius: 3%;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.form-group label{
+  color: #1b1a1b;
+  font-size: 13px;
+  margin-bottom: 20px;     
+}
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="password"]
+{
+  width: 95%;
+  height: 25px;
+  border: 1px solid #1b1a1b;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  
+}
+.form-group input[type="checkbox"]{
+  margin-left: 25%;
+  margin-bottom: 15px;
+  border: 6px #1b1a1b;
+}
+.form-group label[for="terms-conditions"]{
+  font-weight: bolder;
+  color: #1b82d6;
+
+}
+.form-group button{
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #1b82d6;
+  color: #fff;
+  margin: 0 160px;
+  border: none;
+  font-size: 18px;
+}
+footer {
+  background-color: #1b1a1b;
+  height: 100%;
+}
+.footer-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 35px;
+ 
+}
+.footer-part ul {
+  list-style: none;
+}
+.footer-part ul li {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+}
+.footer-part ul a {
+  color: white;
+}
+.footer-part input{
+  width: 253px;
+  height: 40px;
+  line-height: 19px;
+  font-size: 14px;
+}
+.footer-part button{
+  width: 108px;
+  height: 44px;
+  font-size:18px;
+  line-height: 22px;
+  margin-top: 9px;
+  background-color: #1b82d6;
+  color: #fff;
+}
+footer p{
+  text-align: center;
+  color: #fff;
+  }
+ 
+.social-media h3, .footer-part h3{
+    color: white;
+}
+.social-icons{
+  margin-top: 13px;
+  margin-left: auto;
+}
+.social-icons li{
+    display: inline-block;
+    margin-left: 12px;
+}
+/* media querries */
+@media screen and (max-width:1088px){
+  header{
+   flex-flow: wrap;
+   justify-content: flex-end;
+   
+  } 
+  .nav-link li{
+    margin: 16px; 
+  }
+}
+
+
+@media screen and (max-width:687px){
+  header{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nav-link li {
+  display: block;
+  text-align: left;
+  line-height: 19px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.signup-text
+{
+  flex-wrap: wrap;
+  margin: 10px;
+}
+main{
+  margin: auto;
+}
+.form-group input[type="checkbox"]{
+  margin-left:5px;
+}
+.form-group button{
+  width: 90px;
+  margin: 10px 70px;
+}
+.footer-part{
+  display: block;
+  margin-left: 15px;
+}
+.social-media h3{
+  margin-top: 20px;
+}
+.social-part li{
+  margin-right: 5px;
+}
+}
+
+@media screen and (max-width: 809px){
+  main,
+  aside{
+      float:none;
+      width: 80%;
+      margin: auto;
+      padding-bottom: 15px;
+  }
+  main{
+      text-align: center;
+  }
+  .form-group input[type="checkbox"]{
+      margin-left: 50px;
+  }
+
+}
