@@ -5,11 +5,13 @@ body{
  
 }
 .nav-bar{
-  width: 95%;
+  width: 1300px;
   margin: auto;
   overflow: hidden;
 }
-ul,h2, h3, p{ 
+
+
+ul, h3, p{ 
   padding: 0;
   margin: 0;
 }
@@ -58,15 +60,15 @@ header a:hover{
   overflow: hidden;
   padding: 30px 0;
   margin: auto;
-  width: 90%;
+  width: 1200px;
 }
 
       /* MAIN FRAME */
 main{
   float: left;
   text-align: left;
-  width: 43%;
-  display: f;
+  width: 500px;
+ 
 }
 main h1{
   color:#00d1cf;
@@ -84,7 +86,7 @@ main p a{
 aside{
   float: left;
   width: 400px;
-  margin-left: 10%;
+  margin-left: 70px;
 }
 aside .form-page{
   padding: 20px;
@@ -104,7 +106,7 @@ aside .form-page{
 .form-page input[type="email"],
 .form-page input[type="password"]
 {
-  width: 95%;
+  width: 500px;
   height: 30px;
   border: 1px solid;
   border-radius: 8px;
@@ -189,6 +191,7 @@ color: #fff;
   text-decoration: none;
 }
 .social h3, .footer-link h3{
+  
   color: white;
 }
 .social-link li{
@@ -211,15 +214,38 @@ color: #fff;
  
   } 
 
-
+main{
+   position: relative;  
+   right:30px;
+   text-align: center;
+   font-size: 30px;
+}
+main p{
+  font-size: 20px;
+  text-align: center;
+  margin:0px 7px 0px 7px;
+}
     
   
 
  aside .form-page{
-   width: 250px!important;
-   position: relative;
-   left:70px;
+   width: 350px;
+ 
  }
+
+ .form-page input[type="text"],
+.form-page input[type="tel"],
+.form-page input[type="email"],
+.form-page input[type="password"]
+{
+  width: 350px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  
+  
+}
   .form-page input[type="checkbox"]{
       margin-left:5px;
   }
@@ -237,30 +263,30 @@ color: #fff;
   .social-link li{
     margin-right: 5px;
   }  
-  
+  }
 
-  
-}
+
+
+
 @media screen and (max-width: 809px) {
-
+  
+ 
   main,
   aside{
       float:none;
       width: 500px;
-      margin: auto;
+      margin: 0px 70px 0px 70px;
       padding-bottom: 15px;
-  }
-  main{
       text-align: center;
   }
-  .form-page input[type="checkbox"]{
+
+ 
+  .form-details input[type="checkbox"]{
       margin-left: 50px;
   }
   
 
-  
-  
-}
+
 @media screen and (max-width: 920px){
   .nav-bar h2,.para{
     position: relative;
@@ -282,4 +308,5 @@ color: #fff;
   .footer-box-3 ul li{ 
       display: inline;
   }
+}
 }
