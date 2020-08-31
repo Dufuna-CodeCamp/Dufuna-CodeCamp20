@@ -1,0 +1,309 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+ 
+}
+.nav-bar{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+ul,h2, h3, p{ 
+  padding: 0;
+  margin: 0;
+}
+
+li a{
+  text-decoration: none;
+  display: inline;
+  color: white; 
+}
+
+header{
+  background:#00d1cf; 
+  color: white;
+  padding-top: 10px;
+  min-height: 25px;
+}
+header a{
+  color: white;
+  font-size: 16px;
+}
+header li{
+  display: inline;
+  padding:0 30px;
+}
+#nav-brand{
+  float: left;
+  padding-bottom: 10px;
+}
+#nav-brand h2, #nav-brand p{
+  margin:0;
+  padding:0;
+  color:white;
+}
+nav{
+  float: right;
+  margin-top: 15px;
+}
+header a:hover{
+  text-transform: uppercase;
+  color:white;
+  font-weight: bold;
+}
+
+
+.max{
+  margin: 15px;
+  padding: 20px;
+  overflow: hidden; 
+}
+
+
+
+.max-img{
+  float: left;
+  width: 250px;
+ margin:15px 0px 0px 30px;
+ border: 1px solid;
+ 
+}
+
+.max-img img{
+  width: 250px;
+ padding: 10px 10px;
+position: relative;
+right: 20px;
+ 
+  
+}
+
+.details{
+  float: left;
+  width: 300px;
+  margin-left:20px;
+}
+.det{
+  display: inline-table;
+  padding: 0 ;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.price{
+  font-weight:bold;
+}
+button{
+  border-radius: 15px;
+  width: 100px;
+  background-color:#00d3cf;
+  padding: 10px;
+  border:none;
+  font-weight: bold;
+  color:white
+}
+
+button:hover{
+  color: white;
+  background-color: turquoise;
+}
+
+.Description{
+  margin:0 55px; 
+  padding-bottom: 20px;
+}
+.Description p{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.products{
+  background-color: #ebebeb;
+
+}
+.products h3{
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+.product-image{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  margin-top: 40px;
+ 
+  
+}
+.ice1, .ice2, .ice3{
+  width: 300px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.products h5 {
+  text-align: center;
+  color: #000;
+}
+footer{
+  background-color:#00d1cf;
+}
+.footer-link{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 37px;
+  flex-wrap: wrap;
+}
+.footer-link ul {
+  list-style: none;
+}
+.footer-link ul li{
+  color: white;
+  line-height: 20px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.footer-link ul a{
+  color: white;
+  text-decoration: none;
+}
+.footer-link input{
+  width: 253px;
+  height: 44px;
+  line-height: 19px;
+  font-size: 16px;
+  color:#00d1cf;
+}
+.footer-link button{
+  width: 108px;
+  height: 44px;
+  font-size:18px;
+  line-height: 22px;
+  margin-top: 9px;
+  color:#00d1cf;
+  background-color: white;
+}
+footer p{
+text-align: center;
+color: #fff;
+}
+.social-link{
+  margin-top: 13px;
+  margin-left: auto;
+  text-decoration: none;
+}
+.social h3, .footer-link h3{
+  color: white;
+}
+.social-link li{
+  display: inline-block;
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+
+/*Responsiveness*/
+
+@media screen and (max-width:920px){
+  
+  .nav-bar h2,.para{
+   position: relative;
+   left:20px;
+  }
+   
+  .max-img{
+    padding: 0 20px;
+    position: relative;
+    right: 20px;
+    }
+
+    .det,.price{
+      position: relative;
+      right:10px;
+      font-weight: bold;
+      font-size: 17px;
+    
+}
+.Description p{
+  font-size: 20px;
+}
+.button{
+  width: 130px;
+  position: relative;
+  right: 10px;
+}
+.Description{
+  font-size:15px;
+}
+
+
+.product-image{
+  justify-content: space-between;
+  margin:  30px 30px 0px 30px;
+}
+
+.products h3 {
+  font-size: 20px;
+}
+
+}
+
+
+@media screen and (max-width:600px){
+  header nav,
+  header #nav-brand,
+  header .nav-bar  nav li{
+      float: none;
+      text-align:left;
+      display: block;
+      position: relative;
+      right: 10px;
+ 
+  } 
+  .max-img{
+    padding: 0 20px;
+    margin:15px 0px 0px 15px;
+    }
+
+    .det,.price{
+     position: relative;
+     right: 25px;
+      font-weight: bold;
+    
+}
+.button{
+  width: 120px;
+  position: relative;
+  right: 30px;
+}
+.Description{
+  position: relative;
+  right: 25px;
+  font-size:20px;
+}
+.product-image{
+  justify-content: space-evenly;
+  margin:  2
+  0px 0px 0px 0px;
+  
+}
+.related-product h3 {
+  font-size: 20px;
+}
+.products h3 {
+  font-size: 20px;
+}
+.footer-link{
+  display: block;
+  margin-left: 20px;
+}
+.social h3{
+  margin-top: 20px;
+}
+.social-link li{
+  margin-right: 5px;
+}  
+
+}
