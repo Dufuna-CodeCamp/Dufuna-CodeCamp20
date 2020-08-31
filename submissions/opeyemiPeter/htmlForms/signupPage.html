@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>:: clearPath SHOES</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:: clearPath SHOES</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grenze+Gotisch:wght@100;200;600&display=swap" rel="stylesheet">
+  </head>
 <body>
-  <h1><a href="#"></a> clearPATH </a> </h1>
-  <nav class="navbar">
-    <a href="/html/index.html">Product Page</a>
-    <a href="signupPage.html">Sign Up</a>
-    <a href="contactPage.html">Contact Us</a>
-      <a href="#">Brand</a>
-      <a href="#">Accessories</a>
-      <a href="#">About Us</a>
-  </nav>
-<br> <br>
-<section >
-  <div class="signup">
-    <div class="reg-account"> 
-      <h3>Get Started with clearPATH</h3>
+  <header>
+    <!-- logo area -->
+    <div class="logo">
+      <a href="../html/index.html" class="word-logo"> <span class="span-logo"> clear</span>path.ng</a>
     </div>
-    <div class="signup-form">
-        <form>
-          <fieldset>
-            <div class="signup-input">
-              <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br><br>
-              <input type="text" placeholder="Email" name="email" id="email"><br><br>
-              <input type="number" placeholder="Mobile Number" id="phoneNumber" name="phoneNubmer"> <br><br>
-              <input type="password" placeholder="Password" name="password" id="password"><br> <br>
-              <select name="Select a country" id="country" >
-                <option value="Nigeria">Nigeria</option>
-                <option value="Nigeria">Ghana</option>
-                <option value="Nigeria">South Afica</option>
-                <option value="Nigeria">Kenya</option>
-                <option value="Nigeria">Others</option>
-              </select>
-              <button type="submit">Sign up for free</button><br> <br>
-            </div> <br>
-              <input type="checkbox" checked="checked" name="remember" id="checkbox-signup"><a href="#"> I agree to the Terms and Conditions</a>
-              </label><br>
-        </fieldset>
-        <p class="reg-sign">Already have an account? <a href="#">Sign in</a></p>
-      </form>
+    <!-- navigation  -->
+    <div class="navbar">
+      <nav>
+        <ul class="nav-link">
+                <li>  <a href="../html/index.html">Product Page</a> </li>    
+                <li><a href="/htmlForms/contactPage.html">Contact Us</a></li>
+                <li>  <a href="/htmlForms/signupPage.html">Sign Up</a>
+                </li> 
+        </ul>
+      </nav>
     </div>
+</header>
+<section class="signup-text">
+  <main >
+      <h1>Register your Account</h1>
+      <p>Registering an account gives you
+          access to discount, promo and events 
+          available to only registered customers</p>
+       <p>
+           Already got an account?<span><a href="login.html"> Sign in</a></span>
+      </p>
+  </main>
+  <aside >
+      <form action="#">
+          <div class="form-group">
+              <label for="first_name">First Name</label>
+              <br>
+              <input type="text" name="first_name" id="first_name" maxlength="30">
+              <br>
+              <label for="last_name">Last Name</label>
+              <br>
+              <input type="text" name="last_name" id="last_name" maxlength="50">
+              <br>
+              <label for="other_name">Other Names</label>
+              <br>
+              <input type="text" name="ther_name" id="ther_name" maxlength="50">
+              <br>
+              <label for="phone_number">Phone Number</label>
+              <br>
+              <input type="tel" name="phone_number" id="phone_number" >
+              <br>
+              <label for="email">Email Address</label>
+              <br>
+              <input type="email" name="email" id="email"  maxlength="50">
+              <br>
+              <label for="password">Password</label>
+              <br>
+              <input type="password" name="password" id="password" >
+              <br>
+              <label for="confirm_password">Confirm Password</label>
+              <br>
+              <input type="password" name="confirm_password" id="confirm_password" >
+              <br>
+              <input type="checkbox" name="terms-conditions" id="terms-conditions">
+              <label for="terms-conditions">I agree to the Terms and conditions</label>
+              <br>
+              <button type="submit" name="submit_form" id="submit_form">SIGN UP</button>
+          </div>
+          </form> 
+      
+  </aside> 
+</section>
+<footer>
+  <div class="footer-part">
+      <div>
+      <ul>
+        <li> <a href="../htmlForms/contactPage.html"> Contact Us </a></li>  
+        <li> <a href="#"> About Us </a></li>
+        <li> <a href="#"> Terms and Conditions </a></li>
+      </ul>
   </div>
-  </section>
+  <div class="newsletter">
+      <h3>Sign up for the Newsletter</h3>
+      <input type="text" placeholder=" Enter your mail address">
+      <button type="submit"> SUBMIT</button>
+  </div>
+  <div class="social-media">
+      <h3>CONNECT WITH US</h3>
+      <ul class="social-icons">
+          <li><a href="#"><img src="../html/Images/facebook.png" alt="facebook-icon"></i></a></li>
+          <li><a href="#"><img src="../html/Images/twitter.png" alt="twitter-icon"></a></li>
+          <li><a href=""></a><img src="../html/Images/gmail.png" alt="gmail-icon"></a></li>
+          <li><a href="#"><img src="../html/Images/youtube.jpg" alt="youtube-icon"></a></li>
+       </ul>
+  </div>
+ 
+  </div>
+  <p> Copyright &copy; 2020 clearpath.ng All rights reserved.</p>
+</footer>  
 </body>
 </html>
