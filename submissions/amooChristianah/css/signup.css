@@ -104,7 +104,7 @@ aside .form-details{
 .form-details input[type="email"],
 .form-details input[type="password"]
 {
-    width: 95%;
+    width: 480px;
     height: 25px;
     border: 1px solid rgb(129, 129, 129);
     border-radius: 8px;
@@ -113,7 +113,7 @@ aside .form-details{
 
 }
 .form-details input[type="checkbox"]{
-    margin-left: 25%;
+    margin-left: 100px;
     margin-bottom: 15px;
 
 }
@@ -236,6 +236,20 @@ color: #fff;
             position: relative;
             left: 10px;
             }
+
+            .form-details input[type="text"],
+.form-details input[type="tel"],
+.form-details input[type="email"],
+.form-details input[type="password"]
+{
+    width: 290px;
+    height: 25px;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 8px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+
+}
             
         }
 
