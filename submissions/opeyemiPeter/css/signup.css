@@ -27,7 +27,7 @@ header {
 }
 .logo {
   margin-right:auto;
-  margin-left: 5%;
+  margin-left: 80px;
 }
 .logo a {
   font-family: "", cursive;
@@ -95,7 +95,7 @@ main p a{
 aside{
   float: left;
   width: 50%;
-  margin-left: 5%;
+  margin-left: 80px;
 }
 aside .form-group{
   padding: 20px;
