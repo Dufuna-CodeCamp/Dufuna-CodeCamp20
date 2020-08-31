@@ -170,7 +170,8 @@ footer    {
 
 @media screen and (max-width:780px) and (min-width:480px){
 .grid-similaritems  {
-    display: grid;
-    grid-template-columns: auto auto;
+    display:
 }
+.similaritem3   {
+    
 }
