@@ -27,7 +27,7 @@ header {
 }
 .logo {
   margin-right: auto;
-  margin-left: 90px;
+  margin-left: 30px;
 }
 .logo a {
   font-family: '', cursive;
@@ -245,6 +245,8 @@ footer p {
   }
   .social-media-class {
     width: 40px;
+    margin-left: 100px;
+    display: flex;
   }
   .image-contact,
   .image-contact2,
