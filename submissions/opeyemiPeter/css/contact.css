@@ -27,7 +27,7 @@ header {
 }
 .logo {
   margin-right: auto;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .logo a {
   font-family: '', cursive;
@@ -225,13 +225,16 @@ footer p {
     flex-direction: column;
     align-items: flex-start;
   }
+  .logo{
+    margin-left: 10px;
+  }
   .nav-link li {
     display: block;
     text-align: left;
     line-height: 19px;
     font-size: 16px;
     margin-left: 30px;
-    margin: 20px; 
+    margin: 10px; 
   }
   .contact {
     flex-flow: column;
@@ -246,7 +249,7 @@ footer p {
   }
   .social-media-class {
     width: 40px;
-    margin-left: 170px;
+    margin-left: 125px;
     display: flex;
   }
   .image-contact,
@@ -254,17 +257,19 @@ footer p {
   .image-contact3 {
     width: 30px;
   }
-  .form-group input {
+  .form-group input{
     width: 350px;
     height: 25px;
     border: none;
     border-bottom: 1px solid #000;
     font-size: 10px;
     line-height: 15px;
+
   }
   .form-group fieldset {
     padding: 10px 20px 10px 40px;
-    margin: 30px 10px 15px 10px;
+    margin: 30px 10px 15px 45px;
+    display: flex;
   }
   fieldset {
     margin: 0;
@@ -283,7 +288,8 @@ footer p {
   }
 
   .form-group .move {
-    width: 50px;
+    width: 60px;
+    margin-left: 270px;
   }
   textarea {
     width: 350px;
