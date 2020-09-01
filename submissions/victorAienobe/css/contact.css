@@ -3,6 +3,7 @@ body {
     background-color: #ffffff;
     margin:0;
     padding:0;
+    height: auto;
 }
 .pic {
     padding-left: 20px;
@@ -135,22 +136,22 @@ li {
 }
 /********* media quieres ********/
 @media screen and (max-width:480px) {
-    .main1 {
-        margin-left: 0;
-    }
-    .area {
-        width: 200px;
+    .main {
+        width: 100%;
+        margin: 10px 0 0 50px;
     }
 }
 @media screen and (max-width:800px) {
     .main {
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
     }
     .main1 {
         width: 60%;
         text-align: center;
         margin-left: 25px;
+        margin-top: 20px;
     }
     aside {
         width: 60%;
@@ -191,7 +192,11 @@ li {
 }
 @media screen and (max-width: 1200px) {
     .area {
-        width: 254px;
+        width: 200px;
+        margin-left: 25px;
+    }
+    .main {
+        margin-top: 10px;
     }
     .btn {
         margin: 15px 0 0 100px;
