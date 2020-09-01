@@ -27,7 +27,7 @@ header {
 }
 .logo {
   margin-right: auto;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .logo a {
   font-family: '', cursive;
@@ -68,21 +68,21 @@ header {
   text-align: center;
 }
 
-.contact-number {
+.contact-number{
   text-align: center;
   list-style: none;
   margin-top: 10px;
 }
-.contact-number a {
+.contact-number a{
   text-decoration: none;
   color: #000;
   letter-spacing: 1px;
   font-size: 22px;
 }
 
-.social-media-class {
+.social-media-class{
   margin: 20px auto;
-  display: table;
+  display: flex;
 }
 
 .social-media-class li {
@@ -230,7 +230,8 @@ footer p {
     text-align: left;
     line-height: 19px;
     font-size: 16px;
-    margin-left: 30px; 
+    margin-left: 30px;
+    margin: 20px; 
   }
   .contact {
     flex-flow: column;
@@ -245,7 +246,7 @@ footer p {
   }
   .social-media-class {
     width: 40px;
-    margin-left: 100px;
+    margin-left: 170px;
     display: flex;
   }
   .image-contact,
