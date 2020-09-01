@@ -30,21 +30,20 @@ for(let i = 0; i< productList.length; i++){
 //TASK 2
 
 // Writing the numbers from 1 and the positive difference between 7 and 123 
+var output = Math.abs(7-123);
+function diffNum(){
+    for(var i = 1; i <= output; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            return "Software Developer";
+        }else if(i % 3 === 0){
+            return "Software";
+        }else if(i % 5 === 0){
+            return "Developer";
+        } else{
 
-function diffNum(count){
-    var output = [];
-        for(var count = 1; count <= 123; count++){
-            if(count % 3 === 0 && count % 5 === 0){
-                output.push("Software Developer");
-            }else if(count % 3 === 0){
-                output.push("Software");
-            }else if(count % 5 === 0){
-                output.push("Developer");
-            }else{
-                output.push(count);
-            }
-        } console.log(output);
-    }
+        }
+    } console.log(output);
+}
 
 //TASK 3 trying out
 // 99 bottles of beer
