@@ -26,17 +26,17 @@ header {
   padding-bottom: 10px;
 }
 .logo {
-  margin-right:auto;
+  margin-right: auto;
   margin-left: 90px;
 }
 .logo a {
-  font-family: "", cursive;
+  font-family: '', cursive;
   color: #1b82d6;
-  font-weight: 100; 
+  font-weight: 100;
 }
 .span-logo {
   color: #1b82d6;
-  font-family: "Grenze Gotisch", cursive;
+  font-family: 'Grenze Gotisch', cursive;
   font-weight: 900;
 }
 .nav-link {
@@ -54,59 +54,56 @@ header {
 .nav-link li a:hover {
   color: grey;
 }
-.contact{
+.contact {
   display: flex;
   justify-content: space-evenly;
 }
-.contact-details{
+.contact-details {
   margin-top: 119px;
 }
-.contact h3{
+.contact h3 {
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 1.25px;
   text-align: center;
 }
 
-.contact-number{
+.contact-number {
   text-align: center;
   list-style: none;
   margin-top: 10px;
-  
 }
-.contact-number a{
+.contact-number a {
   text-decoration: none;
   color: #000;
   letter-spacing: 1px;
   font-size: 22px;
 }
 
-.social-media-class{
+.social-media-class {
   margin: 20px auto;
   display: table;
-  
 }
 
-.social-media-class li{
+.social-media-class li {
   display: inline-block;
   margin-right: 20px;
-  
 }
 
-.image-contact{
+.image-contact {
   display: block;
-  margin: 20px auto 15px auto ;
+  margin: 20px auto 15px auto;
   width: 40px;
 }
-.image-contact2{
+.image-contact2 {
   margin: 20px auto 15px 159px;
   width: 70px;
-} 
+}
 
-.image-contact3{
+.image-contact3 {
   width: 70px;
 }
-.form-group input{
+.form-group input {
   width: 500px;
   height: 50px;
   border: none;
@@ -114,33 +111,33 @@ header {
   font-size: 20px;
   line-height: 30px;
 }
-textarea{
+textarea {
   width: 500px;
   height: 250px;
 }
-.form-group fieldset{
+.form-group fieldset {
   margin: 72px 55px 36px 0;
   padding: 24px 66px 10px 47px;
 }
-.form-group h3{
+.form-group h3 {
   margin: 25px 66px 43px 72px;
 }
-.form-group img{
+.form-group img {
   display: block;
   margin: 24px auto 0 auto;
 }
-.form-group label{
+.form-group label {
   font-size: 20px;
   line-height: 30px;
 }
-.move{
+.move {
   border-radius: 4px;
   margin: 19px 0px 32px 400px;
 }
 
-.form-group .move{
+.form-group .move {
   width: 113px;
-  background-color:#1b82d6 ;
+  background-color: #1b82d6;
 }
 footer {
   background-color: #1b1a1b;
@@ -151,7 +148,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 35px;
- 
 }
 .footer-part ul {
   list-style: none;
@@ -167,130 +163,137 @@ footer {
 .footer-part ul a {
   color: white;
 }
-.footer-part input{
+.footer-part input {
   width: 253px;
   height: 40px;
   line-height: 19px;
   font-size: 14px;
 }
-.footer-part button{
+.footer-part button {
   width: 108px;
   height: 44px;
-  font-size:18px;
+  font-size: 18px;
   line-height: 22px;
   margin-top: 9px;
   background-color: #1b82d6;
   color: #fff;
 }
-footer p{
+footer p {
   text-align: center;
   color: #fff;
-  }
- 
-.social-media h3, .footer-part h3{
-    color: white;
 }
-.social-icons{
+
+.social-media h3,
+.footer-part h3 {
+  color: white;
+}
+.social-icons {
   margin-top: 13px;
   margin-left: auto;
 }
-.social-icons li{
-    display: inline-block;
-    margin-left: 12px;
+.social-icons li {
+  display: inline-block;
+  margin-left: 12px;
 }
 
 /* media querries */
 
-@media screen and (max-width:1088px){
-  header{
-   flex-flow: wrap;
-   justify-content: flex-end;
-   
-  } 
-  .nav-link li{
-    margin: 16px; 
+@media screen and (max-width: 1088px) {
+  header {
+    flex-flow: wrap;
+    justify-content: flex-end;
   }
-  .contact{
+  .nav-link li {
+    margin: 16px;
+  }
+  .contact {
     flex-wrap: nowrap;
     flex-flow: column;
-}
-.contact-details{
+  }
+  .contact-details {
     margin-top: 20px;
-}
-.form-group fieldset{
-    margin: 20px 30px 17px 30px ;
+  }
+  .form-group fieldset {
+    margin: 20px 30px 17px 30px;
     padding: 0 30px;
-    border-radius: 10px; 
+    border-radius: 10px;
+  }
 }
-}
 
-
-
-@media screen and (max-width:687px){
-  header{
+@media screen and (max-width: 687px) {
+  header {
     flex-direction: column;
     align-items: flex-start;
-}
-.nav-link li {
-  display: block;
-  text-align: left;
-  line-height: 19px;
-  font-size: 16px;
-  margin-left: 30px;
-}
-.contact{
-  flex-flow: column;
-}
-.contact-number a{
-  font-size: 16px;
-}
-.social-media-class{
-  width: 40px;
-}
-.image-contact,.image-contact2, .image-contact3{
-  width: 30px;
-}
-.form-group input{
-  width: 350px;
-  height: 25px;
-  border: none;
-  border-bottom: 1px solid #000;
-  font-size: 10px;
-  line-height: 15px;
-}
-.form-group fieldset{
-  padding: 10px 20px 10px 40px;
-  margin: 30px 10px 15px 10PX;
+  }
+  .nav-link li {
+    display: block;
+    text-align: left;
+    line-height: 19px;
+    font-size: 16px;
+    margin-left: 30px; 
+  }
+  .contact {
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  .form-group {
+    flex-basis: 400px;
+    width: 360px;
+  }
+  .contact-number a {
+    font-size: 16px;
+  }
+  .social-media-class {
+    width: 40px;
+  }
+  .image-contact,
+  .image-contact2,
+  .image-contact3 {
+    width: 30px;
+  }
+  .form-group input {
+    width: 350px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .form-group fieldset {
+    padding: 10px 20px 10px 40px;
+    margin: 30px 10px 15px 10px;
+  }
+  fieldset {
+    margin: 0;
+  }
+  .form-group h3 {
+    margin: 10px 30px 15px 20px;
+  }
+  .form-group {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .form-group img {
+    display: block;
+    margin: 24px auto 0 auto;
+    width: 30px;
+  }
 
-}
-.form-group h3{
-  margin: 10px 30px 15px 20px;
-}
-.form-group{
-  font-size: 20px;
-  line-height: 30px;
-}
-.form-group img{
-  display: block;
-  margin: 24px auto 0 auto;
-  width: 30px;
-}
-
-.form-group .move{
-  width: 50px;
-}
-textarea{
-  width: 350px;
-  height: 100px;
-}
-.footer-part{
-  display: block;
-  margin-left: 15px;
-}
-.social-media h3{
-  margin-top: 20px;
-}
-.social-part li{
-  margin-right: 5px;
-}
+  .form-group .move {
+    width: 50px;
+  }
+  textarea {
+    width: 350px;
+    height: 100px;
+  }
+  .footer-part {
+    display: block;
+    margin-left: 15px;
+  }
+  .social-media h3 {
+    margin-top: 20px;
+  }
+  .social-part li {
+    margin-right: 5px;
+  }
 }
