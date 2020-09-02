@@ -39,11 +39,11 @@ function diffNum(){
             return "Software";
         }else if(i % 5 === 0){
             return "Developer";
-        } else{
-
-        }
-    } console.log(output);
+        } else{}
+    }
 }
+
+diffNum(output);
 
 //TASK 3 trying out
 // 99 bottles of beer
