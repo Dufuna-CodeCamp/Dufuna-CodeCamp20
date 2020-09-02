@@ -43,7 +43,7 @@ function diffNum(){
     }
 }
 
-diffNum(output);
+diffNum();
 
 //TASK 3 trying out
 // 99 bottles of beer
