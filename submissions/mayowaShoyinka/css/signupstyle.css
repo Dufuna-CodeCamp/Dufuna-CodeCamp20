@@ -12,7 +12,7 @@ body{
 .navigation-header{
   overflow:hidden;
   background-color:#116466;
-  padding:25px 4em 0 20px;
+  padding:25px 56px 0 20px;
   line-height:50px;
 }
 .navigation-header a{
@@ -208,7 +208,3 @@ input[type="checkbox"]{
     padding-bottom:30px;
   }
 }
-
-
-
-
