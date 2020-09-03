@@ -2,7 +2,7 @@ let a = 123;
   let b = 7;
   let c = a - b;
 
-for (var i = 1; i < c; i++){
+for (var i = 1; i <= c; i++){
 
     if (i % 3 == 0 && i % 5 == 0){
         console.log('Software Developer');
