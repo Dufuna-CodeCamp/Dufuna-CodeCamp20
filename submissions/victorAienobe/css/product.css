@@ -3,6 +3,7 @@ body {
     background-color: #ffffff;
     padding: 0;
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /******Header*****/
 .pic {
@@ -15,7 +16,6 @@ body {
 }
 .nav-link {
     height: 19px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.19;
     letter-spacing: normal;
@@ -42,7 +42,6 @@ main {
  h4, p {
     margin-left: 30px;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     line-height: 1.2;
 }
 .btn {
@@ -58,7 +57,6 @@ h3 {margin-bottom: 0;
     margin-left: 30px;
     line-height: 2.0;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .box {
         width: 46px;
@@ -120,14 +118,12 @@ li {
 .button1 {
     color: purple;
     background: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 .note {
     text-align: center;
     color: white;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0;
 }
 /********* media quieres ********/
