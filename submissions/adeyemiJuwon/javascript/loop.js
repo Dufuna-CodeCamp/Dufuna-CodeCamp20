@@ -15,6 +15,5 @@ for (var i = 1; i < c; i++){
     
     }else{
         console.log(i);
-    
     }
     }
