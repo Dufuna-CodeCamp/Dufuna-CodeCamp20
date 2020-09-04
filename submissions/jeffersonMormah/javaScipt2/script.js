@@ -3,7 +3,7 @@ var b = 123;
 var c = 7;
 var d = b - a;
 
-while(d > a){
+for (var a = 1; a < d; a++){
   if ((a % 3) === 0) {
       console.log("Software")
   } else if ((a % 5) === 0){
@@ -13,7 +13,6 @@ while(d > a){
   } else {
       console.log(a);
   }
-  a++;
 };
 
 
