@@ -171,6 +171,10 @@ footer{
     margin-top: 9px;
     color: rgb(255, 166, 95) ;;
 }
+.error{
+    color: rgb(209, 21, 21);
+    font-size:16px;
+}
 footer p{
 text-align: center;
 color: #fff;
