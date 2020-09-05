@@ -86,11 +86,12 @@ a[href*="#"] {
 
 img {
     height: 50px;
+    padding: 8px;
 }
 
 #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
     width: 100%;
-    height: 50px;
+    height: 34px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -102,7 +103,7 @@ img {
 
 .ton {
     font-weight: bold;
-    margin-left: 168px;
+    margin-left: 148px;
     padding: 10px 30px;
     background-color: olive;
     color: white;
@@ -113,8 +114,12 @@ img {
 
 .sign {
     display: flex;
-   /* flex-wrap: wrap; */
     flex-direction: column;
+}
+
+.error-block {
+    font-size: 14px;
+    color: red;
 }
 
 footer p {
@@ -213,7 +218,7 @@ footer {
 
     .inform {
         width: 500px;
-        height: 725px;
+        height: 790px;
         margin: -50px;
         
     }
@@ -222,21 +227,13 @@ footer {
         height: 650px;
     }
 
-    label,
-    input {
-        margin-bottom: 10px;
-    }
 
     #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
         width: 100%;
     }
 
-    #terms {
-        text-align: center;
-    }
-
     .footer div {
-        padding: 50px 150px 0 40px ;
+        padding: 50px 140px 0 40px ;
     }
 
     .newsletter {
@@ -248,7 +245,7 @@ footer {
 
 @media screen and (min-width: 640px) and (max-width: 1050px) {
     body {
-        margin: 0 -25px 0 0;
+        margin: 0 -52px 0 0;
     }
     nav {
         padding: 25px 35px;
@@ -284,12 +281,12 @@ footer {
 
     .information {
         width: 100%;
-        padding: 23px 50px 70px 54px;
+        padding: 23px 50px 150px 54px;
     }
     
     .inform {
         width: 500px;
-        height: 725px;
+        height: 790px;
         margin: -24px;
     }
     
@@ -301,7 +298,7 @@ footer {
         width: 100%;   
     }
 
-    .term {
+    #terms {
         text-align: center;
     }
 

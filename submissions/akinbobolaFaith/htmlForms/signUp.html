@@ -34,24 +34,30 @@
                     <div class="info">
                         <label for="fname">First Name</label><br>
                         <input type="text" name="fname" id="fname">
+                        <span class="error-block"></span><br><br>
                         <label for="lname">Last Name</label><br>
                         <input type="text" name="lname" id="lname">
+                        <span class="error-block"></span><br><br>
                         <label for="mname">Other Names</label><br>
-                        <input type="text" name="mname" id="mname">
+                        <input type="text" name="mname" id="mname"><br><br>
                         <label for="pnumber">Phone Number</label><br>
                         <input type="number" name="pnumber" id="pnumber">
+                        <span class="error-block"></span><br><br>
                         <label for="email">Email</label><br>
                         <input type="email" name="email" id="email">
+                        <span class="error-block"></span><br><br>
                         <label for="password">Password</label><br>
                         <input type="password" name="password" id="password">
+                        <span class="error-block"></span><br><br>
                         <label for="cpassword">Confirm Password</label><br>
-                        <input type="password" name="cpassword" id="cpassword"><br>
-                        <div class="term">
+                        <input type="password" name="cpassword" id="cpassword">
+                        <span class="error-block"></span><br><br>
+                        <div class = "term">
                             <input type="checkbox" name="conditions" id="terms" value="terms">
                             <label for="terms">I agree to the Terms and Conditions</label>
                         </div>
                         <br>
-                        <button class="ton">Sign Up</button>
+                        <button type="submit" class="ton">Sign Up</button>
                     </div>
                 </fieldset>   
             </form>
@@ -84,5 +90,6 @@
             </div>
             <p> Copyright &copy; 2020 zeezystores.com. All rights reserved.</p>
         </footer>
+        <script src="../dom/signUp.js"></script>
     </body>
 </html>
