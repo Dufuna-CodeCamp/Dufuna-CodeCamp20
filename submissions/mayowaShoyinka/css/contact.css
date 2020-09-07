@@ -60,9 +60,6 @@ body{
   margin-left:15px;
   margin-bottom:10px;
 }
-.flaticon-call, .flaticon-email, .flaticon-mail{
-  color:#116466;
-}
 .form-right{
   float:right;
   width:45%;
@@ -74,6 +71,10 @@ body{
 }
 .form-right-header{
   text-align: center;
+}
+.form-right img{
+  width: 35px;
+  height:35px;
 }
 .form-right h2{ 
   padding-bottom:20px;
