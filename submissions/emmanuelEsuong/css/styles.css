@@ -54,6 +54,7 @@ body {
 }
 button {
     border-radius: 3px;
+    border: 0.5px;
     margin-left: 220px;
     padding: 7px 20px 7px 20px; 
     background-color: rgb(2, 209, 2);
@@ -114,7 +115,10 @@ footer {
 #submit {
     color: rgb(3, 192, 3);
     background-color: white;
-    height: 29px;
+    height: 32px;
+    margin-left: 1px;
+    padding: 5px 10px 5px 10px;
+    border: 0.5px;
 }
 #input-email, #submit {
     display: inline;
@@ -135,9 +139,8 @@ li {
     margin: 40px 0px 0px 350px;
     color: white
 }
-
-/* media-query (tablet)*/
-@media screen and (min-width: 768px) and (max-width: 900px) {
+    /* media-query (tablet)*/
+    @media screen and (min-width: 768px) and (max-width: 900px) {
         /* signUp page */
     /* formfield */
     #s-form {
@@ -148,7 +151,7 @@ li {
     /* signupform */
     #form {
         overflow: hidden;
-        margin: 10px 215px 0px 0px;
+        margin: 10px 150px 5px 50px;
         float: right;
     }
     #form input {
@@ -174,13 +177,15 @@ li {
         border: 0px;
         margin-left: 220px;
         padding: 7px;
-        padding: 5px 20px 5px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
         background-color: rgb(2, 209, 2);
         font-weight: bold;
         color: white;
     }  
     ul {
         list-style-type: none;
+        padding: 0px;
         overflow: hidden;
     }
     /* registration info */
@@ -192,30 +197,29 @@ li {
     #heading, #reg-note, #acct-signin {
         text-align: center;
         margin-left: 295px;
+        padding-bottom: 0px;
+        padding-top: 0px;
         font-size: 28px;
         text-align: center;
     }
-    /*signin instead*/
     #signin{
         color:rgb(2, 209, 2);
     }
-    /*registration info container*/
     #supT {
         height: 880px;
     }
-    /* footer */
     footer {
-        height: 205px;
-    }
-    #icons {
-        margin-right: 60px;
+        background-color: rgb(2, 209, 2);
+        height: 200px;
     }
     #copyright {
-        margin: 40px, 0px 235px 0px;
+        text-align: center;
+        float: left;
+        margin: 40px 0px 0px 250px;
+        color: white
     }
-}
 /* media-query (mobile)*/
-@media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px) {
     /* top navigation */
     .topnav {
         overflow: hidden;
@@ -234,7 +238,7 @@ li {
     }
     .topnav-right {
         float: left;
-        margin: 0px; 740px; 0px 20px;
+        margin: 0px 740px 0px 20px;
         width: 300px;    
     }
     /* signUp page */
@@ -247,7 +251,7 @@ li {
     /* signupform */
     #form {
         overflow: hidden;
-        margin: 10px; 120px 0px 0px;
+        margin: 10px 120px 0px 0px;
         float: right;
     }
     #form input {
@@ -309,7 +313,7 @@ li {
         color:rgb(2, 209, 2);
     }
     #supT {
-        height: 820px;
+        height: 1000px;
     }
     /*footer*/
     .footnav-left a {
@@ -342,7 +346,7 @@ li {
         color: rgb(2, 209, 2);
     }
     #icons {
-        margin: 25px 55px 0px 390px;
+        margin: 25px 55px 0px 100px;
     }
     #icons li {
         font-size: 30px;
@@ -354,7 +358,7 @@ li {
     }
     #newsLetter {
         float: left;
-        margin: 30px 55px 0px 0px;
+        margin: 30px 55px 0px 100px;
         width: 700px;
     }
     #footnav li a {

@@ -68,7 +68,7 @@ a img{
     margin: 0;
   }
 
-  .nav-content ul li{
+.nav-content ul li{
     display: inline;
     padding: 0 30px;
     font-family: Montserrat;
@@ -81,7 +81,7 @@ a img{
     text-align: left;
     color: white;
   }
-  ul li a{
+ul li a{
     cursor: pointer;
     font-family: Montserrat;
     display: -webkit-inline-box;
@@ -91,7 +91,7 @@ a img{
   }
 
 
-  .container{
+.container{
     overflow: hidden;
     padding: 30px 0;
     margin: auto;
