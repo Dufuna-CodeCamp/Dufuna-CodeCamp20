@@ -2,20 +2,20 @@ var productList=[
 {
   productName:"STRAWBERRY ICE-CREAM SANDWICHES",
   ImageUrl:"../html/img/hand.png",
-  productPrice:"&#163;7.52"
+  productPrice:"N300.00",
 
 },
 
 {
   productName:"MATCHA BANANA ICE CREAM",
   ImageUrl:"../html/img/ice4.png",
-  productPrice:"&#163;4.26",
+  productPrice:"N500.00",
 },
 
 {
   productName:"COCONUT MILK AND AVOCADO ICE CREAM",
   ImageUrl:"../html/img/ice3.png",
-  productPrice:"&#163;5.95",
+  productPrice:"N900.00",
 },
 ];
  productList.forEach((product)=>{
