@@ -7,83 +7,32 @@ let signupForm = document.querySelector('.information'),
     confirmPassword = document.getElementById('cpassword')
 ;
 
-function important (field, event) {
-    if(field.value == '') {
-        field.nextElementSibling.innerHTML = "This field is required";
+function nameValidation(name, event, innerHTML) {
+    let nameRegex = /^[a-z]+$/i;
+    if(name.value == '') {
+        name.nextElementSibling.innerHTML = "This field is required";
+        event.preventDefault();
+        return false;
+    } else if(!name.value.match(nameRegex)) {
+        name.nextElementSibling.innerHTML = innerHTML;
         event.preventDefault();
         return false;
     } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}
-
-function firstNameValidation(event) {
-    let firstNameRegex = /^[a-z]+$/i;
-    if(!firstName.value.match(firstNameRegex)) {
-        firstName.nextElementSibling.innerHTML = "Please enter your First Name";
-        event.preventDefault();
-        return false;
-    }  else {
-        firstName.nextElementSibling.innerHTML = "";
+        name.nextElementSibling.innerHTML = "";
         return true;
     }
 } 
 
-function lastNameValidation(event) {
-    let lastNameRegex = /^[a-z]+$/i;
-    if(!lastName.value.match(lastNameRegex)) {
-        lastName.nextElementSibling.innerHTML = "Please enter your Last Name";
+function fieldValidation(event, field, fieldRegex, innerHTML, innerHTMLTwo) {
+    if(field.value === '') {
+        field.nextElementSibling.innerHTML = innerHTML;
+        event.preventDefault();
+    } else if (!field.value.match(fieldRegex)) {
+        field.nextElementSibling.innerHTML = innerHTMLTwo;
         event.preventDefault();
         return false;
     } else {
-        lastName.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}
-
-function phoneNumberValidation(event) {
-    let phoneNumberRegex = /^[\+]?[0-9]{10,14}$/i;
-    if (phoneNumber.value.length === 0) {
-        phoneNumber.nextElementSibling.innerHTML = "Please enter your phone number";
-        event.preventDefault();
-        
-    } else if (!phoneNumber.value.match(phoneNumberRegex)) {
-        phoneNumber.nextElementSibling.innerHTML = "Please enter a valid phone number";
-        event.preventDefault();
-        return false;
-    } else {
-        phoneNumber.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}
-    
-function emailValidation(event) {
-    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
-    if (email.value.length === 0) {
-        email.nextElementSibling.innerHTML = "Please enter your Email Address";
-        event.preventDefault();
-    } else if (!email.value.match(emailRegex)) {
-        email.nextElementSibling.innerHTML = "Please enter a valid email";
-        event.preventDefault();
-        return false;
-    } else {
-        email.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}
-
-function passwordValidation(event) {
-    let pwdRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
-    if (password.value.length === 0) {
-        password.nextElementSibling.innerHTML = "Please enter your Password";
-        event.preventDefault();
-    } else if (!password.value.match(pwdRegex)) {
-        password.nextElementSibling.innerHTML = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number";
-        event.preventDefault();
-        return false;
-    } else {
-        password.nextElementSibling.innerHTML = "";
+        field.nextElementSibling.innerHTML = "";
         return true;
     }
 }
@@ -103,20 +52,17 @@ function confirmPasswordValidation(event) {
 }
 
 function information(e) {
-    important(firstName, e);
-    important(lastName, e);
-    important(phoneNumber, e);
-    important(email, e);
-    important(password, e);
-    important(confirmPassword, e);
-    firstNameValidation(e);
-    lastNameValidation(e);
-    phoneNumberValidation(e);
-    emailValidation(e);
-    passwordValidation(e);
+    const phoneNumberRegex = /^[\+]?[0-9]{10,14}$/i;
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
+    const pwdRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
+
+    nameValidation(firstName, e, "Please enter your First name");
+    nameValidation(lastName, e, "Please enter your Last name");
+    fieldValidation(e, phoneNumber, phoneNumberRegex, "Please enter your phone number", "Please enter a valid phone number");
+    fieldValidation(e, email, emailRegex, "Please enter your Email address", "Please enter a valid email");
+    fieldValidation(e, password, pwdRegex, "Please enter your passwod", "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number");
     confirmPasswordValidation(e);
     return true;
 }
-
 
 signupForm.addEventListener("submit", information);

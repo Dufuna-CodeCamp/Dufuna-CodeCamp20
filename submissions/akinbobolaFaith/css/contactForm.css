@@ -51,6 +51,11 @@ a:visited {
     line-height: 50px;
 }
 
+.code-block {
+    color: red;
+    font-size: 14px;
+}
+
 .informate {
     width: 100%;
     padding: 0 25px 24px;
@@ -96,11 +101,10 @@ a:visited {
     line-height: 1.2;
 }
 
-#input {
+.mate label {
     font-size: 20px;
-    line-height: 30px;
-    font-weight: bold;
-    color: grey;
+    color: rgb(128 128 128);
+    font-weight: 500;
 }
 
 textarea {
@@ -219,7 +223,7 @@ footer {
 
     .formate {
         width: 500px;
-        height: 625px;
+        height: 688px;
         padding: 12px 35px;
     }
 
@@ -289,7 +293,7 @@ footer {
 
     .informate {
         width: 100%;
-        padding: 0 160px 50px;
+        padding:70px 50px;
     }
 
     .informate p {
@@ -302,7 +306,7 @@ footer {
 
     .formate {
         width: 100%;
-        height: 625px;
+        height: 688px;
         padding: 12px 35px;
     }
 
