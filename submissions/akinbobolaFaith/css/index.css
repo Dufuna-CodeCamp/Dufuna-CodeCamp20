@@ -110,6 +110,7 @@ input {
 
 img {
     height: 50px;
+    padding: 8px;
 }
 
 footer p {
@@ -188,7 +189,7 @@ footer {
     }
     
     .footer div {
-        padding: 50px 150px 0 40px ;
+        padding: 50px 140px 0 40px ;
     }
 
     .newsletter {
@@ -244,7 +245,7 @@ footer {
     }
 
     .footer div {
-        padding: 50px 150px 0 40px ;
+        padding: 50px 80px 0 40px ;
     }
 
     .newsletter {
