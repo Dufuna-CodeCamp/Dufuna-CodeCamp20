@@ -47,4 +47,3 @@ function informate(e) {
 }
 
 sendForm.addEventListener("submit", informate);
-;
