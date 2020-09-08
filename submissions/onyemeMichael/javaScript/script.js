@@ -55,12 +55,12 @@ for (let product = 0; product < productList.length; product++) {
 // console.log(str);
 // console.log(str2);
 
-// TASk 1
+// TASk 2
 const diff = 123 - 7;
 var  output = 1;
 
 // // //Using Switch Statement
-while (output < diff) {
+while (output <= diff) {
     switch (true) {
         case ((output % 3 === 0) && (output % 5 === 0)):
             console.log("Software Developer");
