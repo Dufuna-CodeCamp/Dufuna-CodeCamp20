@@ -3,7 +3,7 @@
  const diff=  123-7;
  var count=1;
 
- while (count < diff){
+ while (count <= diff){
    switch(true){
 
     case((count % 3 === 0) && (count % 5 ===0)):
