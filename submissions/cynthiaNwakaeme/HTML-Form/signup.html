@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,54 +25,61 @@
         </div>
     </header>
     <section class="container">
-        <main >
+        <main>
             <h1>Register your Account</h1>
-            <p>Registering your account gives you
-                access to discount, promo and events 
-                available only to registered customers. </p>
-             <p>
-                 Already have an account?<span><a href="login.html"> LOGIN</a></span>
+            <p>Registering your account gives you access to discount, promo and events available only to registered customers. </p>
+            <p>
+                Already have an account?<span><a href="login.html"> LOGIN</a></span>
             </p>
         </main>
-        <aside >
-            <form action="#">
+        <aside>
+            <form id=validateForm action="#">
                 <div class="form-details">
-                    <label for="first_name">First Name</label>
+                    <label for="firstName">First Name</label>
                     <br>
-                    <input type="text" name="first_name" id="first_name" maxlength="30">
+                    <input type="text" name="firstName" id="firstName" maxlength="50">
+                    <span class="error-block"></span>
                     <br>
-                    <label for="last_name">Last Name</label>
+                    <label for="lastName">Last Name</label>
                     <br>
-                    <input type="text" name="last_name" id="last_name" maxlength="50">
+                    <input type="text" name="lastName" id="lastName" maxlength="50">
+                    <span class="error-block"></span>
                     <br>
-                    <label for="other_name">Other Names</label>
+                    <label for="otherName">Other Names</label>
                     <br>
-                    <input type="text" name="ther_name" id="ther_name" maxlength="50">
+                    <input type="text" name="otherName" id="otherName" maxlength="50">
+                    <span class="error-block"></span>
                     <br>
-                    <label for="phone_number">Phone Number</label>
+                    <label for="phoneNumber">Phone Number</label>
                     <br>
-                    <input type="tel" name="phone_number" id="phone_number" >
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                    <span class="error-block"></span>
                     <br>
                     <label for="email">Email Address</label>
                     <br>
-                    <input type="email" name="email" id="email"  maxlength="50">
+                    <input type="email" name="email" id="email">
+                    <span class="error-block"></span>
                     <br>
                     <label for="password">Password</label>
                     <br>
-                    <input type="password" name="password" id="password" >
+                    <input type="password" name="password" id="password">
+                    <span class="error-block"></span>
                     <br>
-                    <label for="confirm_password">Confirm Password</label>
+                    <label for="confirmPassword">Confirm Password</label>
                     <br>
-                    <input type="password" name="confirm_password" id="confirm_password" >
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    <span class="error-block"></span>
                     <br>
                     <input type="checkbox" name="terms-conditions" id="terms-conditions">
                     <label for="terms-conditions">I agree to the Terms and conditions</label>
+                    <span class="error-block"></span>
                     <br>
+                    <span class="error-block"></span><br>
                     <button type="submit" name="submit_form" id="submit_form">SIGN UP</button>
                 </div>
-                </form> 
-            
-        </aside> 
+            </form>
+
+        </aside>
     </section>
     <footer>
         <div class="footer-box">
@@ -89,15 +97,27 @@
         </div>
         <div class="footer-box-3">
             <h5>CONNECT WITH US</h5>
-            <ul >
-                <li><a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a></li>
-                <li><a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a></li>
-                <li><a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a></li>
+            <ul>
+                <li>
+                    <a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a>
+                </li>
             </ul>
         </div>
         <br>
-        <p>Copyright &copy; 2020, Taries Empire All rights reserved</p> 
+        <p>Copyright &copy; 2020, Taries Empire All rights reserved</p>
     </footer>
+
+    <script src="../domManipulation/signUp.js"></script>
+
 </body>
+
 </html>

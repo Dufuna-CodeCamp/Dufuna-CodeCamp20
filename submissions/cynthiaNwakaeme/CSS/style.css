@@ -67,7 +67,6 @@ main{
     float: left;
     text-align: left;
     width: 43%;
-    display: f;
 }
 main h1{
     color: #9d426b;
@@ -97,7 +96,7 @@ aside .form-details{
 }
 .form-details label{
     color: rgb(146, 144, 144);
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 20px;     
 }
 .form-details input[type="text"],
@@ -127,11 +126,15 @@ aside .form-details{
     border-radius: 5px;
     background-color: #9d426b;
     color: #fff;
-    margin: 0 160px;
+    margin: 0 auto;
+    display: block;
     border: none;
     font-size: 18px;
 }
-
+.error-block{
+    color: #e22b2b;
+    font-size: 12px;
+}
 /* THE FOOTER */
 footer{
     overflow: hidden;
@@ -190,10 +193,6 @@ footer p{
     }
     .form-details input[type="checkbox"]{
         margin-left:5px;
-    }
-    .form-details button{
-        width: 90px;
-        margin: 10px 70px;
     }
     .footer-box,
     .footer-box-2,
