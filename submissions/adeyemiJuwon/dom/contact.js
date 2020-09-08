@@ -4,63 +4,58 @@ let fullName = document.getElementById('fullName');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 
-
-
-function fullNameValidation(event){
-    fullNameRegex = /^(a-z|A-Z|0-9)*[^#$%^&*()']*$/;
-    if (!fullName.value.match(fullNameRegex)){
-        fullName.nextElementSibling.innerHTML = "Please enter your Name";
+function emailNameValidation(field, event, error1, error2){
+    if (!field.value.match(Regex)){
+        field.nextElementSibling.innerHTML = error1;
         event.preventDefault();
         return false;
-    } else if(fullName.value === ""){
-        fullName.nextElementSibling.innerHTML = "Please enter your Name";
+    } else if(field.value === ""){
+        field.nextElementSibling.innerHTML = error2;
         event.preventDefault();
         return false;
     }else{
-        fullName.nextElementSibling.innerHTML = "";
+        field.nextElementSibling.innerHTML = "";
         return true;
     }
 }
-function emailValidation(event){
-    emailContactRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (!emailContact.value.match(emailContactRegex)){
-        emailContact.nextElementSibling.innerHTML = "Please enter a valid email";
-        event.preventDefault();
-        return false;
-    }else if(emailContact.value === ""){
-        emailContact.nextElementSibling.innerHTML = "Please enter your Email Address";
-        event.preventDefault();
-        return false;
-    }else{
-        emailContact.nextElementSibling.innerHTML = "";
-        return true;
-    }
+
+function fullNameValidation(){
+    Regex = /^(a-z|A-Z|0-9)*[^#$%^&*()']*$/;
+    emailNameValidation(fullName, event, "Please enter your Name", "Please enter your Name");
+    return true
+    
 }
-function subjectValidation(event){
-     if(subject.value === ""){
-        subject.nextElementSibling.innerHTML = "Please enter a message subject";
-        event.preventDefault();
-        return false;
-     }else{
-        subject.nextElementSibling.innerHTML = "";
-        return true;
-     }
+function emailValidation(){
+    Regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    emailNameValidation(emailContact, event, "Please enter a valid email", "Please enter your Email Address");
+    return true
 }
-function messageValidation(event){
-    if(message.value === ""){
-        document.querySelector(".error-message").innerHTML = "Please enter your Message";
+
+function subjectMessageValidation(field, event, error, x){
+    if(field.value === ""){
+       document.querySelectorAll(".error-message")[x].innerHTML = error;
        event.preventDefault();
        return false;
     }else{
-    document.querySelector(".error-message").innerHTML= "";
+       document.querySelectorAll(".error-message")[x].innerHTML = "";
        return true;
     }
 }
-function validateFormContact(e){
-    fullNameValidation(event);
-    emailValidation(event);
-    subjectValidation(event);
-    messageValidation(event)
+function subjectValidation(){
+    subjectMessageValidation(subject, event, "Please enter a message subject", 0);
+    return true
+    
+}
+function messageValidation(){
+    subjectMessageValidation(message, event, "Please enter your Message", 1);
+    return true
+    
+}
+function validateFormContact(){
+    fullNameValidation();
+    emailValidation();
+    subjectValidation();
+    messageValidation();
     return true;
 }
 
