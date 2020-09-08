@@ -1,3 +1,4 @@
+//TASK 1
 let productList = [
     {
         productName: "QUBO P19 5.5",
@@ -53,3 +54,42 @@ for (let product = 0; product < productList.length; product++) {
 
 // console.log(str);
 // console.log(str2);
+
+// TASk 2
+const diff = 123 - 7;
+var  output = 1;
+
+// // //Using Switch Statement
+while (output <= diff) {
+    switch (true) {
+        case ((output % 3 === 0) && (output % 5 === 0)):
+            console.log("Software Developer");
+            break;
+        case ((output % 5) === 0):
+            console.log("Developer");
+            break;
+        case ((output % 3) === 0):
+            console.log("Software");
+            break;
+        default:
+            console.log(output);
+    }
+    output++;
+};
+
+//Using For Loop
+// const diff = 123 - 7;
+// for (let x = 1; x <= diff; x++) {
+//   let output = "";
+//   if (x % 3 !== 0 && x % 5 !== 0) {
+//     output = x;
+//   } else {
+//     if (x % 3 === 0) {
+//       output += "software ";
+//     }
+//     if (x % 5 === 0) {
+//       output += "development";
+//     }
+//   }
+//   console.log(output);
+// };
