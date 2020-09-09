@@ -23,9 +23,8 @@ productList.forEach((product) => {
 
 
 
-  
 
-  /* TASK 2 */
+/* TASK 2 */
 
   var x = 123 - 7;
 
