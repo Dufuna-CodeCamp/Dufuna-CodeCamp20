@@ -1,77 +1,54 @@
+let $MyProductsButton = document.getElementById("show-js");
 
-var productList = [
+$MyProductsButton.addEventListener("click", MyProducts);
+let products = [
     {
-        productName: 'Chiffon Fabric'
-        ImageUrl: 'img/chiffonfab.jpg',
-        productPrices: 4500,
-    },
-     {
-        productName: 'Lace Fabric',
-        imageUrl: 'img/lacefab.jpg'
-        productPrices: 12500,
+        name: "Applelaptop",
+        image: "images/applecomp1.jpg",
+        price: "NGN345,000",
     },
     {
-        productName: 'Polish Fabric'
-        imageUrl:'img/polishfab.jpg',
-        "productPrices":
-    }
+        name: "Dell",
+        image: "images/dell.jpeg",
+        price: "NGN123,000",
+    },
+    {
+        name: "Samsung",
+        image: "images/computer3.jpg",
+        price: "NGN56,000",
+    },
+    {
+        name: "Techno",
+        image: "images/phone3.jpg",
+        price: "NGN 23,000",
+    },
+    {
+        name: "IPhone",
+        image: "images/phone2.jpg",
+        price: "NGN 133,500",
+    },
+    {
+        name: "Infinix",
+        image: "images/phone1.jpg",
+        price: "NGN 87,000",
+    },
 ];
-    for(var in productList){
-        console.log(productList[x]['productName'] + " with " + productList[x]['imageUrl'] + " is sold for  " + productList[x]['productPrice'])
-    };
 
-    let $MyProductsButton = document.getElementById("show-js");
+function MyProducts() {
+    let $product = document.getElementById("products-js");
+    let productsContent = "";
 
-    $MyProductsButton.addEventListener("click", MyProducts);
-    let products = [
-        {
-            name: "Applelaptop",
-            image: "images/applecomp1.jpg",
-            price: "NGN345,000",
-        },
-        {
-            name: "Dell",
-            image: "images/dell.jpeg",
-            price: "NGN123,000",
-        },
-        {
-            name: "Samsung",
-            image: "images/computer3.jpg",
-            price: "NGN56,000",
-        },
-        {
-            name: "Techno",
-            image: "images/phone3.jpg",
-            price: "NGN 23,000",
-        },
-        {
-            name: "IPhone",
-            image: "images/phone2.jpg",
-            price: "NGN 133,500",
-        },
-        {
-            name: "Infinix",
-            image: "images/phone1.jpg",
-            price: "NGN 87,000",
-        },
-    ];
-    
-    function MyProducts() {
-        let $product = document.getElementById("products-js");
-        let productsContent = "";
-    
-        products.forEach(function (product) {
-            let productsContent = `<div class="product-img">
-                                    <img src="${product.image}" class="product-img" alt=""/>
-                                    <div class="product-content">
-                                        <span class="product-title">${product.name}</span>
-                                        </div>
-                                        <div class="product-content">
-                                        <span class="product-price">${product.price}</span>
+    products.forEach(function (product) {
+        let productsContent = `<div class="product-img">
+                                <img src="${product.image}" class="product-img" alt=""/>
+                                <div class="product-content">
+                                    <span class="product-title">${product.name}</span>
                                     </div>
-                                </div>`;
-    
-            $product.innerHTML += productsContent;
-        });
-    } 
- 
+                                    <div class="product-content">
+                                    <span class="product-price">${product.price}</span>
+                                </div>
+                            </div>`;
+
+        $product.innerHTML += productsContent;
+    });
+}
