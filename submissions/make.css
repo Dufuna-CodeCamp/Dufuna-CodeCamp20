@@ -193,7 +193,7 @@ form button{
 	color: yellow;
 	text-align: center;
 }
-@media screen and (max-width: 800px){
+media screen and max-width: 800px){
 	.content-wrapper{
 	justify-content:center;
 		padding-left: 140px
@@ -212,7 +212,7 @@ form button{
 		font-size: 18px
 	}
 	.sign-up-form{
-	float: none;
+	float none;
 	width: 500px;
 }
 	form input{
@@ -234,7 +234,7 @@ form button{
 @media screen and (max-width: 640px){
 	/****header navigation ****/
 	.nav-wrapper{
-		display: grid;
+		display grid;
 		grid-row: 170px 20px;
 		align-items: : center;
 		justify-content: center;
@@ -247,7 +247,7 @@ form button{
 .content-wrapper{
 	grid-template-columns: none;
 	padding: 0;
-	margin: 0;
+	marg: 0;
 	height: 1100px;
 	overflow: hidden;
 }
@@ -272,9 +272,9 @@ form button{
 	margin-left: 20px;
 }
 .social img{
- 	padding-left: -60px; 
-	margin-left: 140px;
-	margin-right: -100px;
+ 	padding-left: -60px
+	margin-left: 140px
+	margin-right: -100px
 }
 .msg-form{
 	margin-top: 30px;
@@ -294,7 +294,7 @@ form button{
 
 /****footer navigation ****/
 	.footer-wrap{
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1f 1fr;
 	}
 	.footer-nav{
 		grid-row: span 2;
@@ -325,8 +325,7 @@ form button{
 			margin-left:5%;
 			justify-content: space-around;
 		}
-	nav li{
-		float: none;
+	nav lifloat: none;
 	}
 	/****main content ****/
 	.contact li,
@@ -344,7 +343,7 @@ form button{
 	margin-left: 40px;
 	margin-right: -20px;
 }
-.msg-form{
+-form{
 	width: 350px;
 	margin-left: 20px;
 	padding-top:0;	
@@ -352,14 +351,14 @@ form button{
 }
 form img{
 	margin-left: 120px;
-	}
+	
 .msg-form form input{
 	width: 90%;
 	height: 30px;
 	border: none;
 	border-bottom: 2px solid black;
 }
-form button{
+form button
 		margin-left: 70px;
 	}
 	/****footer navigation ****/
@@ -370,12 +369,12 @@ form button{
 	.news-mail,
 	.social-connect{
 		grid-column: 1/-1;
-	}
+	
 	.news-mail h3,
 	.social-connect h3{
 		text-align: left;		
 	}
-	.social-connect img{
+	.social-connect img
 		margin-left:-5px;
 		margin-right: 20px
 	}
