@@ -19,8 +19,8 @@ function required(field, error, event){
 }
 
 
-function emailNameValidation(field, error, Regex, event ){
-    if (!field.value.match(Regex)){
+function emailNameValidation(field, error, regex, event ){
+    if (!field.value.match(regex)){
         field.nextElementSibling.innerHTML = error;
         event.preventDefault();
         return false;
