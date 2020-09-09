@@ -4,13 +4,10 @@ let fullName = document.getElementById('fullName');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 
-function emailNameValidation(field, event, error1, error2){
-    if (!field.value.match(Regex)){
-        field.nextElementSibling.innerHTML = error1;
-        event.preventDefault();
-        return false;
-    } else if(field.value === ""){
-        field.nextElementSibling.innerHTML = error2;
+
+function required(field, error, event){
+    if(field.value == ""){
+        field.nextElementSibling.innerHTML = error;
         event.preventDefault();
         return false;
     }else{
@@ -19,43 +16,25 @@ function emailNameValidation(field, event, error1, error2){
     }
 }
 
-function fullNameValidation(){
-    Regex = /^(a-z|A-Z|0-9)*[^#$%^&*()']*$/;
-    emailNameValidation(fullName, event, "Please enter your Name", "Please enter your Name");
-    return true
-    
-}
-function emailValidation(){
-    Regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    emailNameValidation(emailContact, event, "Please enter a valid email", "Please enter your Email Address");
-    return true
-}
 
-function subjectMessageValidation(field, event, error, x){
-    if(field.value === ""){
-       document.querySelectorAll(".error-message")[x].innerHTML = error;
-       event.preventDefault();
-       return false;
+function emailNameValidation(field, error, Regex, event ){
+    if (!field.value.match(Regex)){
+        field.nextElementSibling.innerHTML = error;
+        event.preventDefault();
+        return false;
     }else{
-       document.querySelectorAll(".error-message")[x].innerHTML = "";
-       return true;
+        field.nextElementSibling.innerHTML = "";
+        return true;
     }
 }
-function subjectValidation(){
-    subjectMessageValidation(subject, event, "Please enter a message subject", 0);
-    return true
-    
-}
-function messageValidation(){
-    subjectMessageValidation(message, event, "Please enter your Message", 1);
-    return true
-    
-}
+
 function validateFormContact(){
-    fullNameValidation();
-    emailValidation();
-    subjectValidation();
-    messageValidation();
+    required(fullName, "Please enter your Name", event );
+    required(emailContact, "Please enter your Email Address", event );
+    required(subject, "Please enter a message subject", event );
+    required(message, "Please enter your Message", event );
+    emailNameValidation( fullName,"Please enter your Name", "/^(a-z|A-Z|0-9)*[^#$%^&*()']*$/", event );
+    emailNameValidation( emailContact,"Please enter a valid email", "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/", event );
     return true;
 }
 
