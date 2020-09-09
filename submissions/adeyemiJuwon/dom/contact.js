@@ -35,7 +35,7 @@ function validateFormContact(event){
     required(emailContact, "Please enter your Email Address", event );
     required(subject, "Please enter a message subject", event );
     required(message, "Please enter your Message", event );
-    emailNameValidation( fullName,"Please enter your Name", fullNameRegex, event );
+    emailNameValidation( fullName,"Please name should contain letters only", fullNameRegex, event );
     emailNameValidation( emailContact,"Please enter a valid email", emailRegex, event );
     return true;
 }
