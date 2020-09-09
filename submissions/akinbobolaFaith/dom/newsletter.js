@@ -15,8 +15,4 @@ function newsletterValidation (event) {
     }
 }
 
-function newsletterSignup(e) {
-    newsletterValidation(e);
-}
-
-submitForm.addEventListener("submit", newsletterSignup);
+submitForm.addEventListener("submit", newsletterValidation);
