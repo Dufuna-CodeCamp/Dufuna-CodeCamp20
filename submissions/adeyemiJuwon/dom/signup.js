@@ -11,21 +11,6 @@ let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
 let passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
 let passwordError = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number."
 
-    function nameValidation(name, error1, error2, event,) {
-    if(name.value == "") {
-        name.nextElementSibling.innerHTML = error1;
-        event.preventDefault();
-        return false;
-    } else if(!name.value.match(nameRegex)) {
-        name.nextElementSibling.innerHTML = error2;
-        event.preventDefault();
-        return false;
-    } else {
-        name.nextElementSibling.innerHTML = "";
-        return true;
-    }
-} 
-
 function fieldValidation(field, fieldRegex, error1, error2, event) {
     
     if(field.value === "") {
@@ -58,8 +43,8 @@ function confirmPasswordValidation(event) {
 function validationSignupForm(event) {
     
 
-    nameValidation(firstName, "Please enter your First name", "Please First Name can only contain letters.", event);
-    nameValidation(lastName, "Please enter your Last name", "Please Last Name can only contain letters." , event);
+    fieldValidation(firstName, nameRegex, "Please enter your First name", "Please First Name can only contain letters.", event);
+    fieldValidation(lastName, nameRegex, "Please enter your Last name", "Please Last Name can only contain letters." , event);
     fieldValidation( phoneNumber, phoneNumberRegex, "Please enter your phone number", "Please enter a valid phone number", event);
     fieldValidation( emailSignup, emailRegex, "Please enter your Email address", "Please enter a valid email", event);
     fieldValidation( password, passwordRegex, "Please enter your passwod", passwordError, event);
