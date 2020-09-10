@@ -8,7 +8,7 @@ let submitForm = document.getElementById("validateForm"),
   phoneNumber = document.getElementById("phone");
 
 var regEx = {
-  name: /[^A-Za-z0-9]/,
+  name: /[^A-Za-z]/,
   password: /^(?=.*[A-Z])(?=.*[a-z])(?=.*[@$!%*?&_<>':;])(?=.*[\d])[a-zA-Z0-9@$!%*?&_<>':;]{6,}$/,
   email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i,
   phoneNumber: /^[\+0-9]{11,}$/,
@@ -19,7 +19,6 @@ function required(field, e) {
     field.nextElementSibling.innerHTML = `Please confirm your password`;
   } else if (field.value == "") {
     field.nextElementSibling.innerHTML = `Please enter your ${field.previousElementSibling.innerText}`;
-    console.dir(field);
     e.preventDefault();
     return false;
   } else if (
@@ -38,7 +37,6 @@ function required(field, e) {
 function passwordCheck(pswd1, pswd2, e) {
   if (pswd1.value !== "") {
     if (pswd1.id === "password" && !regEx.password.test(pswd1.value)) {
-      console.log(regEx.password.test(pswd1.value));
       pswd1.nextElementSibling.innerHTML =
         "Your password should have a minimum of 5 characters, 1 capital letter, 1 special character eg @ and 1 number.";
       e.preventDefault();
