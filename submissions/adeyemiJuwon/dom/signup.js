@@ -7,7 +7,7 @@ let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirmPassword');
 let nameRegex = /^[A-Za-z]+$/;
 let phoneNumberRegex = "/^[]?[0-9]{10,14}$/i";
-let emailRegex = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.{2,6})+$/";
+let emailRegex = "/^+([\-]?\w+)*@\w+([-]?+)*({2,6})+$/";
 let passwordRegex = /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/;
 let passwordError = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number."
 
