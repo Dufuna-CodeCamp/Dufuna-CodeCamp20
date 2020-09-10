@@ -73,7 +73,7 @@ const validation = (e) => {
 }
 
 const checkNum = phoneNum => {
-    return /^[\+]?[0-9]{8,14}$/i.match(phoneNum);
+    return /^[\+0-9]{8,15}$/.match(phoneNum);
 }
 
 const validEmail = emailAddress => {
