@@ -5,10 +5,10 @@ let phoneNumber = document.getElementById('phoneNumber');
 let emailSignup = document.getElementById('emailSignup');
 let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirmPassword');
-let nameRegex = "/^(a-z|A-Z|0-9)*[^#$%^&*()']*$/";
+let nameRegex = /^[A-Za-z]+$/;;
 let phoneNumberRegex = "/^[\+]?[0-9]{10,14}$/i";
 let emailRegex = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/";
-let passwordRegex = "/^(?=.*[a-z].*[a-z])(?=.*[A-Z].*[A-Z])(?=.*\d.*\d)(?=.*\W.*\W)[a-zA-Z0-9\S]{6,}$/";
+let passwordRegex = /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/;
 let passwordError = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number."
 
 function fieldValidation(field, fieldRegex, error1, error2, event) {
