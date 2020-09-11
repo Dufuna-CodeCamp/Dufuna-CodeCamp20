@@ -6,35 +6,15 @@ let submitForm = document.getElementById("validateForm"),
     password = document.getElementById("password"),
     confirmPassword = document.getElementById("confirmPassword");
 
-// 2. Name Field Validation (To ensure input name has only alphabet)
-// nameRegex: Any character from upper A to lower z
-function validate(field, event, result, output) {
-    const nameRegex = /^[a-zA-Z]/;
 
+validate = (field, event, regEx, result, output) => {
     if (field.value === "") {
-        field.nextElementSibling.innerHTML = result; //When field is empty
+        field.nextElementSibling.innerHTML = result;
         event.preventDefault();
         return false;
-    } else if (!field.value.match(nameRegex)) {
-        field.nextElementSibling.innerHTML = output; //When name has special characters or numbers
-        event.preventDefault();
-        return false;
-    } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}
-// 2. Phone Field Validation (Ensure only integers and + are allowed)
-//phoneRegex: I considered international numbers and office lines( >= 8 digits )
-function phoneValidation(field, event) {
-    const phoneRegex = /^[\+]?[0-9]{8,14}$/i;
-
-    if (field.value === "") {
-        field.nextElementSibling.innerHTML = "Please enter your Phone Number"; //When field is empty
-        event.preventDefault();
-        return false;
-    } else if (!field.value.match(phoneRegex)) {
-        field.nextElementSibling.innerHTML = "Please enter a valid Phone Number"; //When field has not a mail format
+    } else
+    if (!field.value.match(regEx)) {
+        field.nextElementSibling.innerHTML = output;
         event.preventDefault();
         return false;
     } else {
@@ -43,27 +23,7 @@ function phoneValidation(field, event) {
     }
 }
 
-// 3. Email Field Validation (To ensure input type is in an email-address format)
-// emailRegex: email format (outlook.com, gmail.com etc)
-function emailValidation(field, event) {
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
-
-    if (field.value === "") {
-        field.nextElementSibling.innerHTML = "Please enter your Email";
-        event.preventDefault();
-        return false;
-    } else if (!field.value.match(emailRegex)) {
-        field.nextElementSibling.innerHTML = "Please enter a valid Email";
-        event.preventDefault();
-        return false;
-    } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
-    }
-}
-
-// 4. Password Validation
-function passwordValidation(password1, password2, event) {
+passwordValidation = (password1, password2, event) => {
     const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
     if ((password1.value && password2.value) === "") {
@@ -89,15 +49,20 @@ function passwordValidation(password1, password2, event) {
     }
 }
 
-// 5. This function is used to call the validate function in 1-4 to the individual input field
-function validateForm(event) {
-    validate(firstName, event, "Please enter your First Name", "Please enter a valid First Name");
-    validate(lastName, event, "Please enter your Last Name", "Please enter a valid Last Name");
-    phoneValidation(phoneNumber, event);
-    emailValidation(email, event);
+// 5. This function is used to call the validate function to the individual input field
+validateForm = (event) => {
+    const nameRegex = /^[a-zA-Z]/,
+        phoneRegex = /^[\+]?[0-9]{8,14}$/i,
+        emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+
+    validate(firstName, event, nameRegex, "Please enter your First Name", "Please enter a valid First Name");
+    validate(lastName, event, nameRegex, "Please enter your Last Name", "Please enter a valid Last Name");
+    validate(phoneNumber, event, phoneRegex, "Please enter your Phone Number", "Please enter a valid Phone Number");
+    validate(email, event, emailRegex, "Please enter your Email", "Please enter a valid Email");
     passwordValidation(password, confirmPassword, event)
 
     return true;
 }
-// To validate the form, an Event listener is added to the submit button
+
+// To validate the form, an Event listener is added to the submit button from the form ID
 submitForm.addEventListener("submit", validateForm)
