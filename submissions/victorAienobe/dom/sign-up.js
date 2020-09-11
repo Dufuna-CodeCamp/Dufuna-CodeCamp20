@@ -6,92 +6,29 @@ let phoneNumber = document.getElementById('phoneNumber');
 let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirmPassword');
 
-function validateNames(field, event) {
-    let regex = /^[a-z]+$/i;
+function validateRegex(field, regex, error1, error2, event) {
     if(field.value === "") {
-      firstName.nextElementSibling.innerHTML = 'Please enter your First name';
-      lastName.nextElementSibling.innerHTML = 'Please enter your Last name';
+      field.nextElementSibling.innerHTML = error1;
       event.preventDefault();
       return false;
-    } else if (!field.value.match(regex)) {
-    event.preventDefault();
-    return false;
-    } else {
+    } else if (!(field.value.match(regex))) {
+        field.nextElementSibling.innerHTML = error2;
+        event.preventDefault();
+        return false;
+        }
+    else {
       field.nextElementSibling.innerHTML = "";
       return true;
-    }
-} 
-
-function validatePhoneNumber(event) {
-    let phoneRegex = /^[+0-9]+$/;
-    if(phoneNumber.value === '') {
-        phoneNumber.nextElementSibling.innerHTML = 'Please enter your Phone Number';
-        event.preventDefault();
-        return false;
-    } else if (!phoneNumber.value.match(phoneRegex)) {
-        phoneNumber.nextElementSibling.innerHTML = 'Please enter a valid phone number';
-        event.preventDefault();
-        return false;
-    } else {
-        phoneNumber.nextElementSibling.innerHTML = '';
-        return true;
-    }
-}
-
-function validateEmail(event) {
-    let emailRegex = /[a-z0-9]+@[a-z]+\.com$/i;
-    if(email.value === '') {
-        email.nextElementSibling.innerHTML = 'Please enter your Email Address';
-        event.preventDefault();
-        return false;
-    } else if (!email.value.match(emailRegex)) {
-        email.nextElementSibling.innerHTML = 'Please enter a valid email';
-        event.preventDefault();
-        return false;
-    } else {
-        email.nextElementSibling.innerHTML = '';
-        return true;
-    }
-}
-
-function validatePassword(event) {
-    let pwdRegex =  /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%_^&*-]).{6,}$/;
-    if (password.value === '') {
-        password.nextElementSibling.innerHTML = 'Please enter your Password';
-        event.preventDefault();
-        return false;
-    } else if (!password.value.match(pwdRegex)) {
-        password.nextElementSibling.innerHTML = 'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number';
-        event.preventDefault();
-        return false;
-    } else {
-        password.nextElementSibling.innerHTML = '';
-        return true;
-    }
-} 
-
-function validateConfirmPassword(event) {
-    if (confirmPassword.value === '') {
-        confirmPassword.nextElementSibling.innerHTML = 'Please confirm your Password';
-        event.preventDefault();
-        return false;
-    } else if (!(confirmPassword.value === password.value)) {
-        confirmPassword.nextElementSibling.innerHTML = 'Your passwords don\'t match';
-        event.preventDefault();
-        return false;
-    } else {
-        confirmPassword.nextElementSibling.innerHTML = '';
-        return true;
     }
 }
 
 function validateForm(e) {
-    validateNames(firstName, e);
-    validateNames(lastName, e);
-    validatePhoneNumber(e);
-    validateEmail(e);
-    validatePassword(e);
-    validateConfirmPassword(e);
+    validateRegex(firstName, /^[a-z]+$/i, 'Please enter your First name', 'Please enter your First name', e);
+    validateRegex(lastName, /^[a-z]+$/i, 'Please enter your Last name', 'Please enter your Last name', e);
+    validateRegex(phoneNumber, /^[+0-9]+$/, 'Please enter your Phone Number', "Please enter a valid phone number", e);
+    validateRegex(email, /[a-z0-9]+@[a-z]+\.com$/i, 'Please enter your Email Address', 'Please enter a valid email', e);
+    validateRegex(password, /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%_^&*-]).{6,}$/, 'Please enter your Password', 'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number', e);
+    validateRegex(confirmPassword, password.value, 'Please confirm your Password', 'Your passwords don\'t match', e);
     return true; 
 }
 
