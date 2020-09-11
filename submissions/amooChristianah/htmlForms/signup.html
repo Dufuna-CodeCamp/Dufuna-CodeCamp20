@@ -38,7 +38,7 @@
               <label for="phone-number">Phone Number</label> <br>
               <input type="tel" name="phone-number" id="phone-number"><br>
               <label for="email">Email Address</label><br>
-              <input type="email" name="email" id="email" maxlength="50"><br>
+              <input type="email" name="email" class="email" maxlength="50"><br>
               <label for="password">Password</label><br>
               <input type="password" name="password" id="password">
               <br>
@@ -60,11 +60,12 @@
               <li> <a href="#"> Terms and Conditions </a></li>
             </ul>
         </div>
-        <div>
+        <form id="newsletter">
             <h3>Sign up for the Newsletter</h3>
-            <input type="text" placeholder=" Enter your mail address">
-            <button type="submit"> SUBMIT</button>
-        </div>
+            <input type="text" placeholder=" Enter your email address" id="email">
+            <button type="submit"> SUBMIT</button><br><br>
+            <span class="error"></span>
+        </form>
         <div class="social">
             <h4>CONNECT WITH US</h4>
             <ul class="social-link">
@@ -77,5 +78,7 @@
         </div>
         <p class="text-p">Copyright &copy; 2020, Ample Togs.</p>
     </footer>    
+
+    <script src="../DOM/newsletter.js"></script>
 </body>
 </html>
