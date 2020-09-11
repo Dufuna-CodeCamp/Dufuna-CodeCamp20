@@ -4,7 +4,6 @@
         <title>Sign Up</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="../css/style.css">
-        <script src="../domManipulation/signup.js"></script>
     </head>
     <body>
         <header>
@@ -29,20 +28,26 @@
             <p><em>Already have an account?</em><a href = "#Sign">LOGIN</a></p>
         </main>
     <aside>
-        <form>
+        <form class="form-signup">
                 <div class ="form-document">
             <label for="first">First Name</label><br/>
             <input type="text" name="FirstName" id="FirstName"/><br/><br/>
+            <span class="error-block"></span><br/><br/>
             <label for="last">Last Name</label><br/>
             <input type="text" name="LastName" id="LastName"/><br/><br/>
+            <span class="error-block"></span><br/><br/>
             <label for="phone">Phone Number</label><br/>
             <input type="Phone" name="Phone" id="Phone"/><br/><br/>
+            <span class="error-block"></span><br/><br/>
             <label for="email">Email</label><br/>
             <input type="email" name="email" id = "email"/><br/><br/>
+            <span class="error-block"></span><br/><br/>
             <label for="password">Password</label><br/>
             <input type="password" name="Password" id="Password"/><br/><br/>
+            <span class="error-block"></span><br/><br/>
             <label for="conf-password">Confirm Password</label><br/>
             <input type="password" name="Password" id="conf-password"/><br/><br/>
+            <span class="error-block"></span><br/><br/>
             <button type="submit" id="submit" value="submit">Sign Up</button>
         </div>
         </form>
@@ -73,5 +78,6 @@
         <br/><br/>
             <p>Copyright 2020 Ebekel chemicals All rights reserved</p>
         </footer>
+        <script src="../domManipulation/signup.js"></script>
     </body>
 </html>

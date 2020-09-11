@@ -1,7 +1,7 @@
 const submitBtn = document.getElementById("submit");
 
 const validation = (e) => {
-    e.preventDefault();
+    
     const firstName = document.getElementById("FirstName");
     const lastName = document.getElementById("LastName");
     const phoneNum = document.getElementById("Phone");
@@ -13,13 +13,13 @@ const validation = (e) => {
 
     if (firstName.value === "") {
         firstName.nextElementSibling.innerHTML = "Please Enter Your First Name";
-        firstName.focus();
+        e.preventDefault();
         return false;
     } 
 
     if (lastName.value === "") {
         lastName.nextElementSibling.innerHTML = "Please Enter Your Last Name";
-        lastName.focus();
+        e.preventDefault();
         return false;
     }
 
@@ -30,7 +30,7 @@ const validation = (e) => {
     } 
     if (!checkNum(phoneNum.value)) {
         phoneNum.nextElementSibling.innerHTML = "Please Enter a valid Phone Number";
-        phoneNum.focus();
+        e.preventDefault();
         return false;
     }
     if (emailAddress.value === "") {
@@ -41,35 +41,36 @@ const validation = (e) => {
 
     if (!validEmail(emailAddress.value)) {
         emailAddress.nextElementSibling.innerHTML = "Please Enter a Valid Email address";
-        emailAddress.focus();
+        e.preventDefault();
         return false;
     }
 
     if (passWord.value === "") {
         passWord.nextElementSibling.innerHTML = "Please Enter Your Password";
-        passWord.focus();
+        e.preventDefault();
         return false;
     }
 
     if(!pwdVal(passWord.value)) {
         passWord.nextElementSibling.innerHTML = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character and 1 number."
-        passWord.focus();
+        e.preventDefault();
         return false;
     }
 
     if(confPassword.value === "") {
         confPassword.nextElementSibling.innerHTML = "Please Confirm Your Password";
-        confPassword.focus();
+        e.preventDefault();
         return false;
     }
 
-    if (!confPwd(confPassword.value)) {
-        confPassword.nextElementSibling.innerHTML = "Your Password Did not match";
-        confPassword.focus();
+    if (password.value !== confirmPassword.value) {
+        confirmPassword.nextElementSibling.innerHTML = "Your password don't match";
+        e.preventDefault();
         return false;
     }
 
     return true;
+
 }
 
 const checkNum = phoneNum => {
@@ -77,7 +78,7 @@ const checkNum = phoneNum => {
 }
 
 const validEmail = emailAddress => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.match(emailAddress);
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/.match(emailAddress);
 }
 
 const pwdVal = passWord => {
