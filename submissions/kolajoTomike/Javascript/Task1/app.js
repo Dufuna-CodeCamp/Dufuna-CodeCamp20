@@ -21,6 +21,3 @@ var productList=[
  productList.forEach((product)=>{
     console.log(product.productName + ' with '+ product.imageUrl + ' is sold for ' + product.productPrice)
  });
-
-
- 
