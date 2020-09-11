@@ -4,14 +4,13 @@ let submitForm = document.getElementById("validateForm"),
   confirmPassword = document.getElementById("pswd"),
   firstName = document.getElementById("firstName"),
   lastName = document.getElementById("lastName"),
-  otherName = document.getElementById("otherName"),
   phoneNumber = document.getElementById("phone");
 
 var regEx = {
   name: /[^A-Za-z]/,
   password: /^(?=.*[A-Z])(?=.*[a-z])(?=.*[@$!%*?&_<>':;])(?=.*[\d])[a-zA-Z0-9@$!%*?&_<>':;]{6,}$/,
-  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i,
-  phoneNumber: /^[\+0-9]{11,}$/,
+  email: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i,
+  phoneNumber: /^[+0-9]{11,}$/,
 };
 
 function required(field, e) {

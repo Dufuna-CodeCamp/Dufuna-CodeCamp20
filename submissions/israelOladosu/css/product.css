@@ -81,10 +81,6 @@ input::-webkit-inner-spin-button{
   -webkit-appearance: none;
   margin:0;
 }
-main .row-1 .details p:last-of-type{
- font-weight: bold;
- margin-top: 1em;
-}
 main button{
  padding: 0.5em 0.7em;
  background: orange;
