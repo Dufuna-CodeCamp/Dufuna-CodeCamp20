@@ -1,18 +1,18 @@
 * {box-sizing: border-box;}
-body {
+body{
   margin: 0;
  font-family: 'Open Sans', sans-seri;
  inlin-height: 1.5;
  height: 100%;
 }
 /*---header section----*/
-.header {
+.header{
   overflow: hidden;
   background-color: #b6249e;
   padding: 25px 4em 0 20px;
   line-height: 50px;
 }
-.header a {
+.header a{
   float: left;
   color: white;
   text-align: center;
@@ -22,11 +22,11 @@ body {
   line-height: 25px;
   border-radius: 4px
 }
-.header a.logo {
+.header a.logo{
   font-size: 30px;
   font-weight: bold;
 }
-.header-right {
+.header-right{
   float: right;  
 }
 .header-right :hover{
@@ -44,16 +44,14 @@ body {
   width: 40%;
   margin: 20px 0 20px 45px;
   padding-top: 80px;
+  font-size: 20px;
 }
 .split-left h1,h2{
   color: #b6249e;
-  padding: 0px;
-  margin:  0px;
+  padding: 0;
+  margin:  0;
   font-weight: bold;
   font-size: 25px;
-}
-.split-left{
-  font-size: 20px;
 }
 .split-right{
   float: right;
@@ -63,8 +61,8 @@ body {
   margin: 22px 45px 22px 0;
   padding: 43px;
 }
-.split-right input[type="text"], 
-.split-right input[type="email"],
+.split-right input[type="text"]
+.split-right input[type="email"]
 .split-right input[type="password"]{
   width: 100%;
   border-radius: 7px;
@@ -74,7 +72,7 @@ body {
 }
 .split-right label{
   color: black;
-  font-size: 17px;
+  font-size: 14px;
 }
 .split-right button{
   margin: 0 auto;
@@ -87,14 +85,14 @@ body {
   padding: 10px;
 }
 .split-right input[type="checkbox"]{
-  margin: 10px 0px 10px 30px; 
+  margin: 10px 0 10px 30px; 
 }
 /*---this is footer section---*/
 .foot{
   background-color: #b6249e;
 }
-.left-content, 
-.middle-content, 
+.left-content 
+.middle-content 
 .right-content{
   float: left;
   width: 33.3%;
@@ -144,7 +142,7 @@ body {
     text-align: left;
     padding: 4px;
   }
-  .header-right {
+  .header-right{
     float: none;
   }
   /*media query for body*/
@@ -155,17 +153,17 @@ body {
     margin: 0 0 19px 20px;
   }  
   .split-right label{
-    font-size: 18px;
+    font-size: 16px;
   }
   /*media query for footer*/
-  .left-content, 
-  .middle-content, 
+  .left-content
+  .middle-content 
   .right-content{
     float: none;
     display: block;
     font-size: 10px;
   }
-  .left-content, 
+  .left-content 
   .middle-content{
     font-size: 15px;
   }
@@ -205,7 +203,7 @@ body {
     text-align: center;
   }
   .split-right label{
-    font-size: 20px;
+    font-size: 18px;
   }
   /*---for footer---*/
   .left-content,
