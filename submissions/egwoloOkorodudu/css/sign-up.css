@@ -61,9 +61,7 @@ body{
   margin: 22px 45px 22px 0;
   padding: 43px;
 }
-.split-right input[type="text"]
-.split-right input[type="email"]
-.split-right input[type="password"]{
+.split-right input[type="text"],.split-right input[type="email"],.split-right input[type="password"]{
   width: 100%;
   border-radius: 7px;
   height: 40px;
@@ -91,9 +89,7 @@ body{
 .foot{
   background-color: #b6249e;
 }
-.left-content 
-.middle-content 
-.right-content{
+.left-content,.middle-content,.right-content{
   float: left;
   width: 33.3%;
   color: #fff; 
@@ -156,9 +152,7 @@ body{
     font-size: 16px;
   }
   /*media query for footer*/
-  .left-content
-  .middle-content 
-  .right-content{
+  .left-content,.middle-content,.right-content{
     float: none;
     display: block;
     font-size: 10px;
