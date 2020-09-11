@@ -28,64 +28,53 @@ function required(field, e) {
 }
 
 function passwordValidation(pswd1, pswd2, e) {
-  if (pswd1.value !== "") {
-    if (pswd1.id === "password" && !regEx.password.test(pswd1.value)) {
-      pswd1.nextElementSibling.innerHTML =
-        "Your password should have a minimum of 5 characters, 1 capital letter, 1 special character eg @ and 1 number.";
-      e.preventDefault();
-      return false;
-    } else if (pswd1.value.trim() !== pswd2.value.trim()) {
-      pswd1.nextElementSibling.innerHTML = "Your passwords don't match";
-      pswd2.nextElementSibling.innerHTML = "Your passwords don't match";
-      e.preventDefault();
-      return false;
-    } else {
-      pswd1.nextElementSibling.innerHTML = "";
-      pswd2.nextElementSibling.innerHTML = "";
-      return true;
-    }
+  if (pswd1.id === "password" && !regEx.password.test(pswd1.value)) {
+    pswd1.nextElementSibling.innerHTML =
+      "Your password should have a minimum of 5 characters, 1 capital letter, 1 special character eg @ and 1 number.";
+    e.preventDefault();
+    return false;
+  } else if (pswd1.value.trim() !== pswd2.value.trim()) {
+    pswd1.nextElementSibling.innerHTML = "Your passwords don't match";
+    pswd2.nextElementSibling.innerHTML = "Your passwords don't match";
+    e.preventDefault();
+    return false;
+  } else {
+    pswd1.nextElementSibling.innerHTML = "";
+    pswd2.nextElementSibling.innerHTML = "";
+    return true;
   }
 }
 
 function nameValidation(name, e) {
-  if (name.value !== "") {
-    if (
-      (name.id === "firstName" || name.id === "lastName") &&
-      name.value.match(regEx.name)
-    ) {
-      name.nextElementSibling.innerHTML = `${name.previousElementSibling.innerText} must not contain special character`;
-      e.preventDefault();
-      return false;
-    } else {
-      email.nextElementSibling.innerHTML = "";
-      return true;
-    }
+  if (name.value.match(regEx.name)) {
+    name.nextElementSibling.innerHTML = `${name.previousElementSibling.innerText} must not contain special character`;
+    e.preventDefault();
+    return false;
+  } else {
+    name.nextElementSibling.innerHTML = "";
+    return true;
   }
 }
 
 function emailValidation(email, e) {
-  if (email.value !== "") {
-    if (!regEx.email.test(email.value)) {
-      email.nextElementSibling.innerHTML = "Please enter a valid email";
-      e.preventDefault();
-      return false;
-    } else {
-      email.nextElementSibling.innerHTML = "";
-      return true;
-    }
+  if (!regEx.email.test(email.value)) {
+    email.nextElementSibling.innerHTML = "Please enter a valid email";
+    e.preventDefault();
+    return false;
+  } else {
+    email.nextElementSibling.innerHTML = "";
+    return true;
   }
 }
 
 function phoneNumberValidation(digit, e) {
-  if (digit.value !== "") {
-    if (!regEx.phoneNumber.test(digit.value)) {
-      digit.nextElementSibling.innerHTML = "Please enter a valid phone number";
-      e.preventDefault();
-      return false;
-    } else {
-      digit.nextElementSibling.innerHTML = "";
-      return true;
-    }
+  if (!regEx.phoneNumber.test(digit.value)) {
+    digit.nextElementSibling.innerHTML = "Please enter a valid phone number";
+    e.preventDefault();
+    return false;
+  } else {
+    digit.nextElementSibling.innerHTML = "";
+    return true;
   }
 }
 
