@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+@media screen and (min-width: 769px) {
+    .content {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+        }
+    .left-div, .right-div {
+        float: left;
+        width: 50%;
+        margin: auto;
+        padding: 10px 80px;
+        align-items: center;
+    }
+    }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .content {
+            display: inline-block;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+        }
+    .left-div, .right-div {
+        margin: 15px auto;
+        padding: 0px 70px;
+        align-items: center;
+    }
+    }
+
+@media screen and (max-width: 359px) {
+    .content {
+            display: inline-block;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+        }
+    }
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+.nav-list li a, .foot-list li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-list li a:hover, .foot-list li a:hover{
+    color: black;
+}
+
+li, a {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header, footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rosybrown;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.foot-list {
+    margin-right: auto;
+    list-style: none;
+}
+
+.email-div {
+    display: flex;
+    margin: 0px 5px;
+}
+
+.foot-signup {
+    margin-right: auto;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register {
+    color: rosybrown;
+}
+fieldset {
+    border-radius: 20px;
+    padding: 21px;
+}
+label {
+    line-height: 30px;
+}
+
+.left-div a {
+    text-decoration: underline;
+}
+
+label {
+    margin-top: 200px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    margin-top: 0px;
+}
+
+.submit-btn {
+    display: block;
+    border-radius: 10%;
+    width: 20%;
+    height: auto;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: rosybrown;
+}
+
+.submit-btn:hover {
+    color: black;
+}
+.terms-box {
+    display: inline-block;
+    margin: 10px auto;
+    width: 20px;
+    height: auto;
+}
+hr {
+    width: 50%;
+    margin: 0px auto 10px auto;
+}
+.newsletter-input {
+    margin-right: 20px;
+}
+
+.conn-logo {
+    width: 30px;
+    height: auto;
+    margin: 5px;
+}
