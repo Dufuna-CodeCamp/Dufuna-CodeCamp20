@@ -61,9 +61,12 @@ main .row-1 .product-details .cow{
  padding: 0 4em;
  border: 1px solid black;
 }
-main .row-1 .details p:first-of-type{
+main .row-1 .details p{
  font-weight: bold;
  margin: 1em 0;
+}
+main .row-1 .details p:last-of-type{
+ margin-bottom: 0;
 }
 main label{
  font-weight: bold;

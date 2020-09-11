@@ -21,20 +21,13 @@ function required(field, e) {
     field.nextElementSibling.innerHTML = `Please enter your ${field.previousElementSibling.innerText}`;
     e.preventDefault();
     return false;
-  } else if (
-    (field.id === "firstName" || field.id === "lastName") &&
-    field.value.match(regEx.name)
-  ) {
-    field.nextElementSibling.innerHTML = `${field.previousElementSibling.innerText} must not contain special character`;
-    e.preventDefault();
-    return false;
   } else {
     field.nextElementSibling.innerHTML = "";
     return true;
   }
 }
 
-function passwordCheck(pswd1, pswd2, e) {
+function passwordValidation(pswd1, pswd2, e) {
   if (pswd1.value !== "") {
     if (pswd1.id === "password" && !regEx.password.test(pswd1.value)) {
       pswd1.nextElementSibling.innerHTML =
@@ -54,7 +47,23 @@ function passwordCheck(pswd1, pswd2, e) {
   }
 }
 
-function emailCheck(email, e) {
+function nameValidation(name, e) {
+  if (name.value !== "") {
+    if (
+      (name.id === "firstName" || name.id === "lastName") &&
+      name.value.match(regEx.name)
+    ) {
+      name.nextElementSibling.innerHTML = `${name.previousElementSibling.innerText} must not contain special character`;
+      e.preventDefault();
+      return false;
+    } else {
+      email.nextElementSibling.innerHTML = "";
+      return true;
+    }
+  }
+}
+
+function emailValidation(email, e) {
   if (email.value !== "") {
     if (!regEx.email.test(email.value)) {
       email.nextElementSibling.innerHTML = "Please enter a valid email";
@@ -67,7 +76,7 @@ function emailCheck(email, e) {
   }
 }
 
-function phoneNumberCheck(digit, e) {
+function phoneNumberValidation(digit, e) {
   if (digit.value !== "") {
     if (!regEx.phoneNumber.test(digit.value)) {
       digit.nextElementSibling.innerHTML = "Please enter a valid phone number";
@@ -87,9 +96,11 @@ function validateForm(e) {
   required(firstName, e);
   required(lastName, e);
   required(phoneNumber, e);
-  passwordCheck(password, confirmPassword, e);
-  emailCheck(email, e);
-  phoneNumberCheck(phoneNumber, e);
+  nameValidation(firstName, e);
+  nameValidation(lastName, e);
+  passwordValidation(password, confirmPassword, e);
+  emailValidation(email, e);
+  phoneNumberValidation(phoneNumber, e);
   return true;
 }
 
