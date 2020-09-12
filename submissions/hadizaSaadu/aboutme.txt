@@ -1,6 +1,6 @@
 hello world!
 my name is Hadiza
-I am glad to be a part of dufuna
+I am glad to be a part of dufuna.
 I have been able to push my task to Github.
 By the end of this program program, i would love to be a confident software developer.
 and build a network with great minds in here.
