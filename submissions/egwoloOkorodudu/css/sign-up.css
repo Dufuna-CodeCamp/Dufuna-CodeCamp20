@@ -27,7 +27,7 @@ body{
   font-weight: bold;
 }
 .header-right{
-  float: right;  
+  float: right;
 }
 .header-right :hover{
   color: black
@@ -83,7 +83,7 @@ body{
   padding: 10px;
 }
 .split-right input[type="checkbox"]{
-  margin: 10px 0 10px 30px; 
+  margin: 10px 0 10px 30px;
 }
 /*---this is footer section---*/
 .foot{
@@ -92,7 +92,7 @@ body{
 .left-content,.middle-content,.right-content{
   float: left;
   width: 33.3%;
-  color: #fff; 
+  color: #fff;
   font-size: 20px;
 }
 .left-content ul{
@@ -126,7 +126,7 @@ body{
   margin: 0 auto;
   display: block;
   padding-top: 20px;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   font-size: 17px;
 }
@@ -147,7 +147,7 @@ body{
   }
   input[type="checkbox"]{
     margin: 0 0 19px 20px;
-  }  
+  }
   .split-right label{
     font-size: 16px;
   }
@@ -157,7 +157,7 @@ body{
     display: block;
     font-size: 10px;
   }
-  .left-content 
+  .left-content
   .middle-content{
     font-size: 15px;
   }
