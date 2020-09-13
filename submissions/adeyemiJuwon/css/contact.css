@@ -104,6 +104,7 @@ header{
 textarea{
     width: 500px;
     height: 250px;
+    margin-bottom: 10px;
 }
 .contact-form fieldset{
     margin: 72px 55px 36px 0;
@@ -170,6 +171,15 @@ footer{
     line-height: 22px;
     margin-top: 9px;
     color: rgb(255, 166, 95) ;;
+}
+.error{
+    color: rgb(209, 21, 21);
+    font-size:16px;
+    display: block;
+}
+.error-message{
+    color: rgb(209, 21, 21);
+    font-size:16px;
 }
 footer p{
 text-align: center;

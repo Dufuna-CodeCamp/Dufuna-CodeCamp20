@@ -62,7 +62,7 @@
                 <br>
                 <label for="email">Email Address</label>
                 <br>
-                <input type="email" name="email" id="email"  maxlength="50">
+                <input type="email" name="email" class="email"  maxlength="50">
                 <br>
                 <label for="password">Password</label>
                 <br>
@@ -91,11 +91,12 @@
         <li> <a href="#"> Terms and Conditions </a></li>
       </ul>
   </div>
-  <div>
+  <form id="newsletter">
       <h3>Sign up for the Newsletter</h3>
-      <input type="text" placeholder=" Enter your mail address">
-      <button type="submit"> SUBMIT</button>
-  </div>
+      <input type="text" placeholder=" Enter your mail address" id="email" >
+      <button type="submit"> SUBMIT</button><br><br>
+      <span class="error"></span>
+  </form>
   <div class="social">
       <h3>CONNECT WITH US</h3>
       <ul class="social-link">
@@ -106,8 +107,9 @@
        </ul>
   </div>
   </div>
-  
+  <br><br>
 <p>Copyright &copy; 2020, The Berry Ice-Cream.</p>
 </footer>
+<script src="../DOM/newletter.js"></script>
 </body>
 </html>

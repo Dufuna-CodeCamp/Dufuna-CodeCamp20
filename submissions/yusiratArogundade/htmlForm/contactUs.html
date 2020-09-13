@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Form</title>
+	<title>Sign up page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div>
-		<header>
-			<section>			
-				<h1>INDULGENCE FASHION HUB</h1>			
-				<input type="search"> <button>search</button>
-			</section>			
-		</header>
-	</div>
-	<div>
-		<section>
+	<div class="nav-wrapper">
+		<div class="nav-logo">
+				<img src="../HTML/images/logo.png">
+		</div>
+		<div>
 			<nav>
-			<table>
-				<tr><th><a href="../HTML/index.html"><h3>Product</h3></a></th>
-					<th> <a href=""><h3>About us</h3></a></th>
-					<th><a href="../htmlForm/contactUs.html"><h3>Contact Us</h3></a></th>
-					<th><a href=""><h3>Men Wears</h3></a></th>
-					<th><a href=""><h3>Women Wears</h3></a></th>
-					<th> <a href=""><h3>Baby Wears</h3></a></th>
-				</tr>
-			</table>			
-		</nav>
-		</section>		
+				<ul>
+					<li><a href="../HTML/index.html">Product</a></li>
+					<li><a href="../htmlForm/contactUs.html">Contact</a></li>
+					<li><a href="../htmlForm/signUp.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</div>	
 	</div>
-	<h2> Contact Us Here</h2>
-	<form>
-		<fieldset>
-			<legend>Contact Us Details</legend>
-				<label for="full_name">Full Name</label><br/>
-				<input type="text" name="full_name" id="full_name"><br/>
-				<br/>
-				<label for="email">Email</label><br/>
-				<input type="email" name="email" id="email" placeholder="Enter your email address here"><br/>
-				<br/>
-				<label for="subject">Subject</label><br/>
-				<input type="text" name="subject" id="subject"><br/>
-				<br/>
-				<label for="message">Message</label><br/>
-				<textarea rows="10" cols="60" > </textarea> <br/>
-				<br/>
-				<button type="submit" name="submit" value="submit">Submit</button>			
-		</fieldset>
-	</form>
-	<hr>
-	<div>
-		<footer>
-			<table>
-				<tr><th><strong>ayusirat@gmail.com</strong></th>
-				<th><strong>07035703937</strong></th>
-				</tr>
-			</table>
-			<hr>
-			<p>Copyright &copy; Indulgence Fashion Hub</p>
-		</footer>
+	<div class="content-wrapper">
+		<div class="connect">
+			<div class="contact">
+			<img src="../HTML/images/call-logo.png"></li>
+				<h4>Please contact us via these numbers:</h4>
+				<ul><li>+123 803 303 0000</li>
+					<li>+123 816 710 6842</li>
+				</ul>			
+		</div>
+		<div class="mail">
+			<img src="../HTML/images/msg-logo.png"></li>
+			<h4>Email Address:</h4></li>
+			<p>support@indulgence_247hub.com</p>
+		</div>
+		<div class="social">
+			<h4>Or Connect with us:</h4>
+			<ul>
+				<li><a href="#"><img src="../HTML/images/facebook-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/twiiter-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/gmail-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/youtube-logo.png"></a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="msg-form">
+			<form>
+				<fieldset>
+					<img src="../HTML/images/msg-logo.png" id="msg-call"><br>
+					<h4>Or better still send us a message</h4><br>
+					<label for="full_name">Full Name</label><br>
+					<input type="text" name="full_name"><br>
+					<label for="email_address">Email Address</label><br>
+					<input type="text" name="email_address"><br>
+					<label for="subject">Subject</label><br>
+					<input type="text" name="Subject"><br>
+					<label for="message">Message</label><br>
+					<textarea  name="message"></textarea><br>
+					<button type="submit">Send</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	
+	<div class="footer-wrap">
+		<div class="footer-nav">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</div>
+		<div class="news-mail">
+			<h3>Sign up for our Newsletter</h3>
+			<input type="email" name="name" placeholder="enter your email">
+			<button type="submit" name="submit" value="submit">SUBMIT</button>
+		</div>
+		<div class="social-connect">
+			<h3>CONNECT WITH US</h3>
+			<ul>
+				<li><a href="#"><img src="../HTML/images/facebook-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/twiiter-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/gmail-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/youtube-logo.png"></a></li>
+			</ul>
+		</div>
+		<p>&copy; Copyright2020 indulgencefashionhub.com All rights reserved</p>
 	</div>
 </body>
 </html>
