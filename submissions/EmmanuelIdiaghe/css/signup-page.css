@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     .content {
             display: flex;
             width: 100%;
@@ -13,9 +13,21 @@
         padding: 10px 80px;
         align-items: center;
     }
+    header, .footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: rosybrown;
+        padding: 0 10px;
+    }
+    .nav-list li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 5px;
+    }
     }
 
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 451px) and (max-width: 900px) {
     .content {
             display: inline-block;
             width: 100%;
@@ -27,15 +39,53 @@
         padding: 0 70px;
         align-items: center;
     }
+    header, .footer {
+        display: flex;
+        justify-content: flex-end;
+        background-color: rosybrown;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .nav-list li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 5px;
+    }
     }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 450px) {
     .content {
             display: inline-block;
             width: 100%;
-            margin: auto;
+            padding: 0 30px;
+            margin: 10px auto;
             align-items: center;
         }
+    .left-div, .right-div {
+        margin: 15px auto;
+        padding: 0 0px;
+        align-items: center;
+    }
+    .left-div {
+        text-align: center;
+    }
+    .nav-list li {
+        display: block;
+        padding: 10px;
+        margin: 0 5px;
+    }
+    header, .footer {
+        display: block;
+        background-color: rosybrown;
+        margin: 5px 0;
+        padding: 0 10px;
+    }
+    .foot-list {
+        margin-bottom: 15px;
+    }
+    .conn {
+        margin-top: 15px;
+    }
     }
 
 * {
@@ -55,12 +105,6 @@
     list-style: none;
 }
 
-.nav-list li {
-    display: inline-block;
-    padding: 10px;
-    margin: 0 5px;
-}
-
 .nav-list li a, .foot-list li a{
     transition: all 0.3s ease 0s;
 }
@@ -75,14 +119,6 @@ li, a {
     font-size: 16px;
     color: white;
     text-decoration: none;
-}
-
-header, footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: rosybrown;
-    align-items: center;
-    padding: 0 10px;
 }
 
 .foot-list {
@@ -101,7 +137,7 @@ header, footer {
 
 .copyright {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .register {
@@ -111,7 +147,7 @@ fieldset {
     border-radius: 20px;
     padding: 21px;
 }
-label {
+.right-div label {
     line-height: 30px;
     margin-top: 200px;
 }
@@ -129,8 +165,8 @@ input {
 
 .submit-btn {
     display: block;
-    border-radius: 10%;
-    width: 20%;
+    border-radius: 5%;
+    width: 40%;
     height: auto;
     margin: auto;
     color: white;
@@ -149,15 +185,21 @@ input {
     height: auto;
 }
 hr {
-    width: 50%;
+    width: 70%;
     margin: 0 auto 10px;
 }
 .newsletter-input {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .conn-logo {
     width: 30px;
-    height: auto;
+    height: 30px;
     margin: 5px;
+}
+.conn-div {
+    display: inline-block;
+}
+footer {
+    background-color: rosybrown;
 }
