@@ -21,4 +21,4 @@ var productList = [
 // for Loop
 for (let x = 0; x < productList.length; x++) {
     console.log(productList[x].productName + " with " + productList[x].imageUrl + " is sold for " + productList[x].productPrice + ".");
-};
+}
