@@ -45,30 +45,30 @@ body{
     border-radius: 50%;
   }
   
-    h2{
+h2{
       margin: 0;
       padding: 0;
       color: white;
     }
   
-    p{
+p{
       margin: 0;
       padding: 0;
       color: white;
       font-family: Montserrat;
     }
   
-    .nav-content{
+.nav-content{
       float: right;
       margin-top: 15px;
     }
   
-    .nav-content ul{
+.nav-content ul{
       padding: 0;
       margin: 0;
     }
   
-    .nav-content ul li{
+.nav-content ul li{
       display: inline;
       padding: 0 30px;
       font-family: Montserrat;
@@ -81,8 +81,8 @@ body{
       text-align: left;
       color: white;
     }
-    ul li a{
-      cursor: pointer;
+ul li a{
+  cursor: pointer;
       font-family: Montserrat;
       display: -webkit-inline-box;
       color: #fff;
@@ -90,9 +90,9 @@ body{
       font-size: large;
     }
 
-    @media screen and (max-width: 986px)
-    {
-      .contact {
+@media screen and (max-width: 986px)
+{
+  .contact {
     flex-wrap: nowrap;
     flex-flow: column;
   }
@@ -155,6 +155,7 @@ body{
   font-family: Montserrat;
   margin: 25px 66px 43px 72px;
 }
+
 
 .contact h3 {
   font-size: 25px;
