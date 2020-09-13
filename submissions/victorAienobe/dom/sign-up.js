@@ -5,6 +5,16 @@ let email = document.getElementById('email');
 let phoneNumber = document.getElementById('phoneNumber');
 let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirmPassword');
+let firstNameMsg = 'Please enter your First name';
+let lastNameMsg = 'Please enter your Last name';
+let phoneMsg = 'Please enter your Phone Number';
+let phoneErrorMsg = 'Please enter a valid phone number';
+let emailMsg = 'Please enter your Email Address';
+let emailErrorMsg = 'Please enter a valid email';
+let pwdMsg =  'Please enter your Password';
+let pwdErrorMsg = 'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number';
+let confirmPwdMsg = 'Please confirm your Password';
+let confirmPwdErrorMsg = 'Your passwords don\'t match';
 
 function validateRegex(field, regex, error1, error2, event) {
     if(field.value === "") {
@@ -23,12 +33,12 @@ function validateRegex(field, regex, error1, error2, event) {
 }
 
 function validateForm(e) {
-    validateRegex(firstName, /^[a-z]+$/i, 'Please enter your First name', 'Please enter your First name', e);
-    validateRegex(lastName, /^[a-z]+$/i, 'Please enter your Last name', 'Please enter your Last name', e);
-    validateRegex(phoneNumber, /^[+0-9]+$/, 'Please enter your Phone Number', "Please enter a valid phone number", e);
-    validateRegex(email, /[a-z0-9]+@[a-z]+\.com$/i, 'Please enter your Email Address', 'Please enter a valid email', e);
-    validateRegex(password, /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%_^&*-]).{6,}$/, 'Please enter your Password', 'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number', e);
-    validateRegex(confirmPassword, password.value, 'Please confirm your Password', 'Your passwords don\'t match', e);
+    validateRegex(firstName, /^[a-z]+$/i, firstNameMsg, firstNameMsg, e);
+    validateRegex(lastName, /^[a-z]+$/i, lastNameMsg, lastNameMsg, e);
+    validateRegex(phoneNumber, /^[+0-9]+$/, phoneMsg, phoneErrorMsg, e);
+    validateRegex(email, /[a-z0-9]+@[a-z]+\.com$/i, emailMsg, emailErrorMsg, e);
+    validateRegex(password, /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%_^&*-]).{6,}$/, pwdMsg, pwdErrorMsg, e);
+    validateRegex(confirmPassword, password.value, confirmPwdMsg, confirmPwdErrorMsg, e);
     return true; 
 }
 
