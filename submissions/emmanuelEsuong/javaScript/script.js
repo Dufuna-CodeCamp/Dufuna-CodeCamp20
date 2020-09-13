@@ -22,3 +22,23 @@ var productList = [
 for (let x = 0; x < productList.length; x++) {
     console.log(productList[x].productName + " with " + productList[x].imageUrl + " is sold for " + productList[x].productPrice + ".");
 }
+
+
+// 2nd Task
+
+var x = 123-7;
+
+for(var i = 1; i < x; i++){
+	if(i % 3 == 0 && i % 5 == 0){
+		console.log('Software Developer');
+	}
+	else if (i % 5 == 0){
+		console.log('Developer');
+    }
+    else if ( i % 3 == 0) {
+		console.log('Software');
+	}
+	else {
+		console.log(i);
+	}
+}
