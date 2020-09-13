@@ -13,6 +13,9 @@ body {
 img {
   width: 100%;
 }
+button{
+  cursor: pointer;
+}
 /* header */
 header {
   background: #004b18;

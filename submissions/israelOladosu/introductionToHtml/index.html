@@ -36,12 +36,14 @@
         <div class="details">
           <h4>DIARY COW</h4>
           <p>Sex: Female</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="qty" value="1">
-          <p>Price: &#8358;900,000</p>
-          <p>Shipping Cost: &#8358;900,000</p>
-          <p>Total Cost: &#8358;900,000</p>
-          <button>BUY NOW</button>
+          <form id="validateForm">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="qty" >
+            <p id="price">Price: &#8358;<span>900000</span></p>
+            <p id='shipping_cost'>Shipping Cost: &#8358;<span></span></p>
+            <p id="total_cost">Total Cost: &#8358;<span></span></p>
+            <button>BUY NOW</button>
+          </form>
         </div>
       </div>
       <div class="description">
@@ -118,6 +120,7 @@
       <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
     </div>
   </footer>
+  <script src="../DomManipulation/product.js"></script>
 </body>
 
 </html>

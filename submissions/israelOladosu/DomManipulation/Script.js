@@ -13,11 +13,9 @@ var regEx = {
   phoneNumber: /^[+0-9]{11,}$/,
 };
 
-function required(field, e) {
-  if (field.id == "pswd" && field.value == "") {
-    field.nextElementSibling.innerHTML = `Please confirm your password`;
-  } else if (field.value == "") {
-    field.nextElementSibling.innerHTML = `Please enter your ${field.previousElementSibling.innerText}`;
+function required(field, e, errMsg) {
+if (field.value == "") {
+    field.nextElementSibling.innerHTML = errMsg;
     e.preventDefault();
     return false;
   } else {
@@ -78,12 +76,12 @@ function phoneNumberValidation(digit, e) {
 }
 
 function validateForm(e) {
-  required(email, e);
-  required(password, e);
-  required(confirmPassword, e);
-  required(firstName, e);
-  required(lastName, e);
-  required(phoneNumber, e);
+  required(email, e), `Please enter your ${email.previousElementSibling.innerText}`;
+  required(password, e, `Please enter your ${password.previousElementSibling.innerText}`);
+  required(confirmPassword, e, `Please confirm your password`);
+  required(firstName, e, `Please enter your ${firstName.previousElementSibling.innerText}`);
+  required(lastName, e, `Please enter your ${lastName.previousElementSibling.innerText}`);
+  required(phoneNumber, e, `Please enter your ${phoneNumber.previousElementSibling.innerText}`);
   nameValidation(firstName, e);
   nameValidation(lastName, e);
   passwordValidation(password, confirmPassword, e);
