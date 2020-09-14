@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../CSS/contact.css">
 </head>
+
 <body>
     <header>
         <div class="nav-container">
@@ -23,7 +25,7 @@
         </div>
     </header>
     <section class="container">
-        <main >
+        <main>
             <div>
                 <img src="../HTML/img/phone.png" alt="Phone">
                 <h3>Please contact us via these numbers:</h3>
@@ -35,13 +37,21 @@
                 <h3>Email Address:</h3>
                 <p>support@taries_empire.com</p>
             </div>
-            <div >
+            <div>
                 <h3>CONNECT WITH US</h3>
-                <ul >
-                    <li><a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a></li>
-                    <li><a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a></li>
-                    <li><a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a></li>
+                <ul>
+                    <li>
+                        <a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a>
+                    </li>
                 </ul>
             </div>
         </main>
@@ -49,23 +59,29 @@
             <div class="enquiry-details">
                 <img src="../HTML/img/envelop.jpg" alt="Email Us">
                 <h3>You can also send us a message</h3>
-                <input type="text" name="full_name" id="full_name" placeholder="Full Name">
-                <br>
-                <input type="email" name="email" id="email" placeholder="Email Address">
-                <br>
-                <input type="text" name="order_id" id="order_id" placeholder="Order Identification Number" maxlength="15">
-                <br>
-                <input type="text" name="subject" id="subject" placeholder="Subject">
-                <br><br>
-                <label for="description">Message</label>
-                <br>
-                <textarea name="description" id="description" cols="50" rows="15"></textarea>
-
-                <button type="submit"> SEND</button>
-            
+                <form action="#" id="validateForm">
+                    <input type="text" name="full_name" id="fullName" placeholder="Full Name">
+                    <span class="error-block"></span>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <span class="error-block"></span>
+                    <br>
+                    <input type="text" name="order_id" id="order_id" placeholder="Order Identification Number" maxlength="15">
+                    <br>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <span class="error-block"></span>
+                    <br><br>
+                    <label for="description">Message</label>
+                    <span class="error-block"></span>
+                    <br>
+                    <textarea name="description" id="description" cols="50" rows="15"></textarea>
+                    <span class="error-block"></span>
+                    <br>
+                    <button type="submit"> SEND</button>
+                </form>
             </div>
-        </aside>    
-    </section>    
+        </aside>
+    </section>
     <footer>
         <div class="footer-box">
             <ul>
@@ -75,23 +91,36 @@
             </ul>
         </div>
         <div class="footer-box-2">
-            <label for="newsletter">Sign up for our Newsletter</label>
-            <br>
-            <input type="email" name="newsletter" id="email" placeholder="Enter your email address">
-            <button type="submit" name="submit_form" id="submit_form">SUBMIT</button>
+            <form id="requiredField">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <br>
+                <input type="email" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                <button type="submit">SUBMIT</button><br>
+                <span class="errorMessage"></span>
+            </form>
         </div>
         <div class="footer-box-3">
             <h5>CONNECT WITH US</h5>
-            <ul >
-                <li><a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a></li>
-                <li><a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a></li>
-                <li><a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a></li>
+            <ul>
+                <li>
+                    <a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a>
+                </li>
             </ul>
         </div>
         <br>
-        <p>Copyright &copy; 2020, Taries Empire All rights reserved</p> 
+        <p>Copyright &copy; 2020, Taries Empire All rights reserved</p>
     </footer>
-    
+    <script src="../domManipulation/contact.js"></script>
+    <script src="../domManipulation/newsletter.js"></script>
 </body>
+
 </html>
