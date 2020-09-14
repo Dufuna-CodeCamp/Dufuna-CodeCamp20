@@ -8,5 +8,5 @@ else if( i % 3 ==0)
     console.log("software");
 
 else  (i % 5 ==0)
-    console.log(i);
+    console.log("Developer");
 }
