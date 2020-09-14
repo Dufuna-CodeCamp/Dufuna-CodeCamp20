@@ -32,21 +32,28 @@
       <p class="existed">Already got an account? <a href="#">Sign in</a></p>
     </div>
     <div class="col-2">
-      <form>
+      <form id="validateForm">
         <label for="firstName">First Name</label>
         <input type="text" name="firstName" id="firstName">
+        <span class="error-block"></span>
         <label for="lastName">Last Name</label>
         <input type="text" name="lastName" id="lastName">
+        <span class="error-block"></span>
         <label for="lastName">Other Names</label>
         <input type="text" name="otherName" id="otherName">
-        <label for="email">Email</label>
+        <span class="error-block"></span>
+        <label for="email">Email Address</label>
         <input type="email" name="email" id="email">
+        <span class="error-block"></span>
         <laBEl for='phoneNumber'>Phone Number</laBEl>
         <input type="text" name="phoneNumber" id="phone">
+        <span class="error-block"></span>
         <label for="password">Password</label>
         <input type="password" name="password" id="password">
+        <span class="error-block"></span>
         <label for="confirmPassword">Confirm Password</label>
         <input type="password" name="confirmPassword" id="pswd">
+        <span class="error-block"></span>
         <input type="checkbox" name="agree" id="agree">
         <label for="agree" class="agree">I agree to the Terms and Conditions</label>
         <button type="submit">Sign Up</button>
@@ -91,5 +98,6 @@
       <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
     </div>
   </footer>
+  <script src="../DomManipulation/Script.js"></script>
 </body>
 </html>

@@ -66,12 +66,17 @@
       </div>
       <!--Contact us Form-->
       <div class="col-2-row-2">
-      <form>
-        <input type="text" name="fullName" id="fullName" placeholder="Full Name">
+      <form id="validateForm">
+        <input type="text" name="fullName" id="fullname" placeholder="Full Name">
+        <span class="error-block"></span>
         <input type="email" name="email" id="email" placeholder="Email">
+        <span class="error-block"></span>
         <input type="text" name="subject" id="subject" placeholder="Subject">
+        <span class="error-block"></span>
         <label for="message" class="message-label">Message</label>
+        <span class="error-block"></span>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <span class="error-block"></span>
         <button type="submit">SEND</button>
       </form>
     </div> 
@@ -116,6 +121,7 @@
       <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
     </div>
   </footer>
+  <script src="../DomManipulation/contact.js"></script>
 </body>
 
 </html>
