@@ -1,5 +1,5 @@
 let quantity = document.getElementById("quantity");
-let price = document.getElementById("price");
+// let price = document.getElementById("price");
 let shippingCost = document.getElementById("shippingCost");
 let totalCost = document.getElementById("totalCost");
 let button = document.getElementById("btn");
