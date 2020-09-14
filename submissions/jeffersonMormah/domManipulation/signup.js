@@ -7,7 +7,7 @@ let passWord = document.getElementById("Password");
 let confPassword = document.getElementById("conf-password");
 let nameCheck = /^[A-za-z]/;
 let checkNum =  /^[\+0-9]{8,15}$/;
-let validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
+let validEmail = /^+([]?+)*@+([-]?+)*({2,6})+$/;
 let pwdVal = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 let firstNameInput = "Please Enter Your First Name";
 let firstNameError = "It can contain only letters";
