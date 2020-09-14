@@ -10,8 +10,7 @@ sendForm.addEventListener("submit", require = (event) => {
         errorMessage.innerHTML = "Please enter your email";
         event.preventDefault();
         return false;
-    } else
-    if (!newsletter.value.match(emailRegex)) {
+    } else if (!newsletter.value.match(emailRegex)) {
         errorMessage.innerHTML = "Please enter a valid email";
         event.preventDefault();
         return false;
