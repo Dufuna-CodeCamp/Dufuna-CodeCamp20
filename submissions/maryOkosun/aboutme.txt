@@ -1,3 +1,0 @@
-This is MARY. I am a software developer.
-
-I have been able to push my first task to github.
