@@ -2,9 +2,7 @@ let submitForm = document.getElementById("validateForm"),
   email = document.getElementById("email"),
   fullname = document.getElementById("fullname"),
   subject = document.getElementById("subject"),
-  message = document.getElementById("message"),
-  newsEmail = document.getElementById("newsEmail"),
-  newsLetter = document.getElementById("newsLetter");
+  message = document.getElementById("message");
 
 var regEx = {
   name: /[A-Za-z]/,

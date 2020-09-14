@@ -4,9 +4,7 @@ let submitForm = document.getElementById("validateForm"),
   confirmPassword = document.getElementById("pswd"),
   firstName = document.getElementById("firstName"),
   lastName = document.getElementById("lastName"),
-  phoneNumber = document.getElementById("phone"),
-  newsEmail = document.getElementById("newsEmail"),
-  newsLetter = document.getElementById("newsLetter");
+  phoneNumber = document.getElementById("phone");
 
 var regEx = {
   name: /[A-Za-z]/,
