@@ -7,7 +7,7 @@ let submitForm = document.getElementById("validateForm"),
     confirmPassword = document.getElementById("confirmPassword");
 
 
-validate = (field, event, regEx, result, output) => {
+let validate = (field, event, regEx, result, output) => {
     if (field.value === "") {
         field.nextElementSibling.innerHTML = result;
         event.preventDefault();
@@ -23,7 +23,7 @@ validate = (field, event, regEx, result, output) => {
     }
 }
 
-passwordValidation = (password1, password2, event) => {
+let passwordValidation = (password1, password2, event) => {
     const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
     if ((password1.value && password2.value) === "") {
@@ -49,8 +49,8 @@ passwordValidation = (password1, password2, event) => {
     }
 }
 
-// 5. This function is used to call the validate function to the individual input field
-validateForm = (event) => {
+// 5. This function is used to call the validate and passwordValidation function to the individual input field
+let validateForm = (event) => {
     const nameRegex = /^[a-zA-Z]/,
         phoneRegex = /^[\+]?[0-9]{8,14}$/i,
         emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;

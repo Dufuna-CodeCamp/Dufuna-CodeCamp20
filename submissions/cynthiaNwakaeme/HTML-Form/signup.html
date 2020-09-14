@@ -90,10 +90,13 @@
             </ul>
         </div>
         <div class="footer-box-2">
-            <label for="newsletter">Sign up for our Newsletter</label>
-            <br>
-            <input type="email" name="newsletter" id="email" placeholder="Enter your email address">
-            <button type="submit" name="submit_form" id="submit_form">SUBMIT</button>
+            <form id="requiredField">
+                <label for="newsletter">Sign up for our Newsletter</label>
+                <br>
+                <input type="email" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                <button type="submit">SUBMIT</button><br>
+                <span class="errorMessage"></span>
+            </form>
         </div>
         <div class="footer-box-3">
             <h5>CONNECT WITH US</h5>
@@ -117,6 +120,7 @@
     </footer>
 
     <script src="../domManipulation/signUp.js"></script>
+    <script src="../domManipulation/newsletter.js"></script>
 
 </body>
 

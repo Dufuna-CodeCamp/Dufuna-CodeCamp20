@@ -171,6 +171,12 @@ aside {
     font-size: 13px;
 }
 
+.errorMessage {
+    color: yellow;
+    display: block;
+    font-weight: bold;
+}
+
 
 /* THE FOOTER */
 
@@ -233,6 +239,7 @@ footer {
 footer p {
     text-align: center;
     display: block;
+    margin-top: 10px;
 }
 
 
@@ -270,14 +277,16 @@ footer p {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 920px) {
+@media screen and (max-width: 920px) {
     .footer-box,
     .footer-box-2 {
         width: 350px;
+        margin-bottom: 15px;
     }
     .footer-box-3 {
         float: none;
         width: 350px;
+        margin-bottom: 15px;
     }
     .footer-box-3 ul li {
         display: inline;
