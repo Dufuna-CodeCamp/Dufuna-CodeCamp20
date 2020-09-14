@@ -78,6 +78,13 @@ aside .form-document {
     border-radius: 20px;
     margin-bottom: 12px;
 }
+.error-block {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    font-family: sans-serif;
+    color: coral;
+}
 .form-document label {
     color: rgb(250,128,114);
     font-size: 20px;
