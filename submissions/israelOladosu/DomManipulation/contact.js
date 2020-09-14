@@ -6,7 +6,7 @@ let submitForm = document.getElementById("validateForm"),
 
 var regEx = {
   name: /[A-Za-z]/,
-  email: /([a-z\d\.-]+)@([a-z\d-]+).([a-z]{2,8})$/i,
+  email: /([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i,
 };
 
 const required = (field, e, err, reg, errMsg) => {
