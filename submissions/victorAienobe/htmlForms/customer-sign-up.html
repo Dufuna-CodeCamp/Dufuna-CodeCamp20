@@ -25,27 +25,33 @@
                 <article>Already got an account? <a href="#" class="log">Sign in</a></article>
             </div>
             <div class="rectangle-1">
-                <form>
+                <form id="validateForm" method="POST">
                     <label for="firstname" class="text">First Name</label> <br>
-                    <input type="text" name="fullname" class="rectangle-2"/> <br>
+                    <input type="text" id="firstName" class="rectangle-2"/> 
+                    <span class="error"></span> <br>
         
                     <label for="lastname" class="text">Last Name</label> <br>
-                    <input type="text" name="lastname" class="rectangle-2"/> <br>
+                    <input type="text" id="lastName" name="lastname" class="rectangle-2"/>
+                    <span class="error"></span> <br>
         
                     <label for="othernames" class="text">Other Names</label> <br>
-                    <input type="text" name="othernames" class="rectangle-2"/> <br>
+                    <input type="text" name="othernames" class="rectangle-2"/> <br> 
         
                     <label for="phonenumber" class="text">Phone Number</label> <br>
-                    <input type="number" name="phonenumber" class="rectangle-2"/> <br>
+                    <input type="text" id="phoneNumber" name="phonenumber" class="rectangle-2"/>
+                    <span class="error"></span> <br>
      
                     <label for="emailaddress" class="text">Email Address</label> <br>
-                    <input type="email" name="emailaddress" class="rectangle-2"/> <br>
+                    <input type="text" id="email" name="emailaddress" class="rectangle-2"/>
+                    <span class="error"></span> <br>
     
                     <label for="password" class="text">Password</label> <br>
-                    <input type="password" name="password" class="rectangle-2"/> <br>
+                    <input type="password" id="password" name="password" class="rectangle-2"/>
+                    <span class="error"></span> <br>
     
                     <label for="confirmpassword" class="text">Confirm Password</label> <br>
-                    <input type="password" name="confirmpassword" class="rectangle-2"/> <br>
+                    <input type="password" id="confirmPassword" name="confirmpassword" class="rectangle-2"/>
+                    <span class="error"></span> <br>
 
                     <div class="checkbox">
                         <input type="checkbox" class="box"/> <label class="vikk">I agree to the Terms and Conditions</label> <br>
@@ -82,5 +88,6 @@
             <h5 class="note">Copyright 2020 Viks-Zone.com All rights reserved.</h5>
         </footer>  
         </div>
+        <script src="../dom/sign-up.js"></script>
     </body>
 </html>
