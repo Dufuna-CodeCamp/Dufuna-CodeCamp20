@@ -81,9 +81,10 @@ aside .form-document {
 .error-block {
     display: block;
     font-size: 14px;
+    font-weight: 400;
     text-align: center;
     font-family: sans-serif;
-    color: coral;
+    color: blue;
 }
 .form-document label {
     color: rgb(250,128,114);
