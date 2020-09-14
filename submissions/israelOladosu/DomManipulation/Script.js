@@ -91,13 +91,3 @@ function validateForm(e) {
 }
 
 submitForm.addEventListener("submit", validateForm);
-
-newsLetter.addEventListener("submit", function () {
-  required(
-    newsEmail,
-    e,
-    regEx.email,
-    `Please enter your Email Address`,
-    "Please enter a valid email"
-  );
-});
