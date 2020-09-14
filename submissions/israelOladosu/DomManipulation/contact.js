@@ -2,7 +2,9 @@ let submitForm = document.getElementById("validateForm"),
   email = document.getElementById("email"),
   fullname = document.getElementById("fullname"),
   subject = document.getElementById("subject"),
-  message = document.getElementById("message");
+  message = document.getElementById("message"),
+  newsEmail = document.getElementById("newsEmail"),
+  newsLetter = document.getElementById("newsLetter");
 
 var regEx = {
   name: /[A-Za-z]/,
@@ -48,3 +50,13 @@ function validateForm(e) {
 }
 
 submitForm.addEventListener("submit", validateForm);
+
+newsLetter.addEventListener("submit", function () {
+  required(
+    newsEmail,
+    e,
+    regEx.email,
+    `Please enter your Email Address`,
+    "Please enter a valid email"
+  );
+});
