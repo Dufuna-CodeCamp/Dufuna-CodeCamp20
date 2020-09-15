@@ -7,6 +7,6 @@
         <title>Deleting Cookies with PHP</title>
     </head>
     <body>
-        <?php echo "Cookies Deleted " ?>
+        <?php echo "<h1>Cookies Deleted</h1>" ?>
     </body>
 </html>

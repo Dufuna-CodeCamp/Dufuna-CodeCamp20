@@ -5,9 +5,9 @@
     <body>
         <?php 
             if (isset($_COOKIE["name"])) {
-                echo "Welcome " . $_COOKIE["name"] . "<br />";
+                echo "<h1>Welcome " . $_COOKIE["name"] . "</h1><br />";
             } else {
-                echo "Sorry... Not recognized" . "<br />";
+                echo "<h1>Sorry... Not recognized" . "</h1><br />";
             }
         ?>
     </body>

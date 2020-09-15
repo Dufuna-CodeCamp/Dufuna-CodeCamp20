@@ -6,8 +6,8 @@
         $_SESSION['counter'] = 1;
     }
 
-    $msg = "You have visited this site (". $_SESSION['counter'];
-    $msg .= ") in this session";
+    $msg = "<h1>You have visited this site (". $_SESSION['counter'];
+    $msg .= ") in this session</h1>";
 ?>
 
 <html>
@@ -16,10 +16,10 @@
     </head>
     <body>
         <?php echo ($msg) ?>
-        <p>
+        <h3>
             To continue click the following link <br />
             <a href="session_page1.php">Move to the previous page on the site</a>
             <a href="logout.php">Log out</a>
-        </p>
+        </h3>
     </body>
 </html>

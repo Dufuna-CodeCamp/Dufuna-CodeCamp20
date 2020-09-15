@@ -8,9 +8,9 @@
         <title>Setting Cookies with PHP</title>
     </head>
     <body>
-        <?php echo "Set Cookies"."<br/>"; ?>
-        <p>My name is <?php echo $_COOKIE["name"]. "<br/>"; ?></p>
-        <p>I am <?php echo $_COOKIE["age"]; ?> years old</p>
-        <a href="cookies_page2.php">Move to welcome page</a>
+        <?php echo "<h1>Set Cookies"."</h1><br/>"; ?>
+        <h2>My name is <?php echo $_COOKIE["name"]. "<br/>"; ?></p>
+        <h2>I am <?php echo $_COOKIE["age"]; ?> years old</p>
+        <a href="cookies_page2.php"><h5>Move to welcome page</h5></a>
     </body>
 </html>
