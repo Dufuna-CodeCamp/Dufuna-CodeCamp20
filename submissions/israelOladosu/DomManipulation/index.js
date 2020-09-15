@@ -4,6 +4,8 @@ let submitForm = document.getElementById("validateForm"),
   total_cost = document.getElementById("total_cost"),
   price = document.getElementById("price");
 
+const RegEx = /^[0-9]$/;
+
 document.addEventListener("DOMContentLoaded", function () {
   if (+price.lastChild.innerText < 1000) {
     shipping_cost.lastChild.innerHTML = `<span>100</span>`;
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 qty.addEventListener("input", function () {
-  if (qty.value !== "") {
+  if (+qty.value > 1) {
     total_cost.lastChild.innerHTML = `<span>${
       +qty.value *
       (+price.lastChild.innerText + +shipping_cost.lastChild.innerText)
@@ -44,6 +46,10 @@ qty.addEventListener("input", function () {
 
 submitForm.addEventListener("submit", function (e) {
   if (qty.value === "") {
+    e.preventDefault();
+    return false;
+  } else if (qty.value < 0 || !RegEx.test(qty.value)) {
+    field.nextElementSibling.innerHTML = "please enter a valid quantity";
     e.preventDefault();
     return false;
   } else {
