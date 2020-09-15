@@ -3,7 +3,7 @@ let sendForm = document.getElementById("requiredField"),
     errorMessage = document.querySelector(".errorMessage");
 
 // To validate the Newsletter
-sendForm.addEventListener("submit", require = (event) => {
+let valide = (event) => {
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
 
     if (newsletter.value === "") {
@@ -19,4 +19,6 @@ sendForm.addEventListener("submit", require = (event) => {
         errorMessage.innerHTML = "";
         return true;
     }
-});
+}
+
+sendForm.addEventListener("submit", valide)
