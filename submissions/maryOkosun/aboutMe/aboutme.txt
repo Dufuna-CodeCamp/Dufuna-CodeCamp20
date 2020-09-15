@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 This is MARY. At the end of this program, I want to be a software developer.
 I also want to make as much network as possible.
 
+=======
+I am MARY OKOSUN. 
+At the end of this program,I hope to have enough knowledge to be a software developer and have as much network as possible.
+>>>>>>> 654d4ab6f8c7d258e29af9707aedb89ec38eac19
