@@ -36,10 +36,14 @@
         <div class="details">
           <h4>DIARY COW</h4>
           <p>Sex: Female</p>
-          <label for="quantity">Quantity:</label>
-          <input type="number" name="quantity" id="qty" value="2">
-          <p>Price: #900,000</p>
-          <button>BUY NOW</button>
+          <form id="validateForm">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="qty" >
+            <p id="price">Price: &#8358;<span>900000</span></p>
+            <p id='shipping_cost'>Shipping Cost: &#8358;<span></span></p>
+            <p id="total_cost">Total Cost: &#8358;<span></span></p>
+            <button>BUY NOW</button>
+          </form>
         </div>
       </div>
       <div class="description">
@@ -58,21 +62,21 @@
           <img src="./img/bull-cow.jpg" alt="bull">
         </div>
         <p>Bull</p>
-        <p>Price: #400, 000</p>
+        <p>Price: &#8358;400, 000</p>
       </div>
       <div class="col-2">
         <div class="goat">
           <img src="./img/white-goat.jpg" alt="goat">
         </div>
         <p>White Goat</p>
-        <p>Price: #30, 000</p>
+        <p>Price: &#8358;30, 000</p>
       </div>
       <div class="col-3">
         <div class="sheep">
           <img src="./img/ram.jpg" alt="sheep">
         </div>
         <p>Sheep</p>
-        <p>Price: #55, 000</p>
+        <p>Price: &#8358;55, 000</p>
       </div>
     </div>
     </section>
@@ -90,9 +94,14 @@
       <div class="col-2">
         <div class="newsletter">
           <p>Sign up for our Newsletter</p>
-          <form>
-            <input type="text" placeholder="Enter your email address">
-            <button>Submit</button>
+          <form id="newsLetter">
+            <input
+                type="text"
+                placeholder="Enter your email address"
+                id="newsEmail"
+            />
+            <span class="error-block"></span>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <div class="social-media">
@@ -116,6 +125,7 @@
       <p>Copyright &copy; 2020 Farmville.com All rights reserved. </p>
     </div>
   </footer>
+  <script src="../DomManipulation/product.js"></script>
 </body>
 
 </html>

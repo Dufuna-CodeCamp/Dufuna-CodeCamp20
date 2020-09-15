@@ -32,23 +32,22 @@
                 <img src="../html/images/youtubelogo.png" alt="youtube">
             </div>
             <aside>
-                <div class="sub">
+                <form class="sub" id="submit">
                     <img class="email" src="../html/images/ic_email_24px.svg" alt="email">
                      <br>
                     <b class="text">Or better still send us a message</b>
-                     <br>
-                    <input class="side" type="text" placeholder="Full Name"/> 
-                     <br>
-                    <input class="side" type="email" placeholder="Email Address"/>
-                     <br>
-                    <input class="side" type="text" placeholder="Subject"/>
-                     <br>
+                    <input id="fullName" class="side" type="text" placeholder="Full Name"/>
+                     <span class="error"></span> <br>
+                    <input id="email" class="side" type="email" placeholder="Email Address"/>
+                     <span class="error"></span> <br>
+                    <input id="subject" class="side" type="text" placeholder="Subject"/>
+                     <span class="error"></span> <br>
                     <label id="text2">Message</label> 
                     <br>
-                    <textarea class="area" rows="15" cols="30"></textarea> 
-                    <br>
+                    <textarea id="textArea" class="area" rows="15" cols="30"></textarea> 
+                    <span class="error"></span> <br>
                     <button class="btn" type="submit">SEND</button>
-                </div>
+                </form>
             </aside>
         </div>
         <footer id="foot">
@@ -78,5 +77,6 @@
             </div>
             <h5 class="note">Copyright 2020 Viks-Zone.com All rights reserved.</h5>
         </footer>
+        <script src="../dom/contact.js"></script>
     </body>
 </html>
