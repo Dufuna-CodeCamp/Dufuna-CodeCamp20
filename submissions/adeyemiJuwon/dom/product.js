@@ -46,25 +46,19 @@ function buttonDeactived(){
 	if(quantity.value === ''){
 		button.disabled = true;
 	}
+	else if(quantity.value < 1){
+		quantity.value = "";
+		quantity.value.focus()
+	} 
+
 	else{
 		button.disabled = false;
 		
 	}
 	return true
 }
-function emptyQuantity(event){
-	event.preventDefault()
-	if(quantity.value < 1){
-		quantity.value = "";
-		quantity.value.focus()
-	} 
-	else{
-		quantity.value = quantity.value
-	}
-	return true
-}
+
 function shippingTotalCost(e){
-	emptyQuantity(e)
 	buttonDeactived(e)
 	shipp(e)
 	cost(e)
