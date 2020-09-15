@@ -1,62 +1,62 @@
 let quantity = document.getElementById("quantity");
-// let price = document.getElementById("price");
+let price = document.getElementById("price");
 let shippingCost = document.getElementById("shippingCost");
 let totalCost = document.getElementById("totalCost");
 let button = document.getElementById("btn");
+let customer = document.getElementById('customer-price');
+let grossPrice = quantity.value * Number(price.innerHTML);
 
 
-let itemPrice = 900;
-let shipping = 100;
-let grossPrice = quantity.value * itemPrice;
-// shippingCost.innerHTML = "£" + shipping + " GBP";
-// totalCost.innerHTML = "£" + (grossPrice + shipping) + " GBP"
 
-
+function shipp(){
+	grossPrice = quantity.value * Number(price.innerHTML);
+	if ( grossPrice < 1000){
+		shipping = 100
+		shippingCost.innerHTML = "£" + shipping + " GBP";
+	}
+	else if(grossPrice >= 1000 && grossPrice < 20000){
+		shipping= 0.15 * grossPrice
+		shippingCost.innerHTML = "£" + shipping + " GBP";
+	}else if (grossPrice >= 20000 && grossPrice < 100000){
+		shipping= 0.20 * grossPrice
+		shippingCost.innerHTML = "£" + shipping + " GBP";
+	}else{
+		shipping = 25000
+		shippingCost.innerHTML = "£" + shipping + " GBP";
+	}
+	return true
+}
 
 
 
 function cost(){
 
 	if (quantity.value > 1){
-		grossPrice = quantity.value * itemPrice;
+		grossPrice = quantity.value * Number(price.innerHTML);
 		totalCost.innerHTML = "£" + (grossPrice + shipping) + " GBP";
 	} else{
-		totalCost.innerHTML = "£" + (itemPrice + shipping) + " GBP"; 
+		totalCost.innerHTML = "£" + (Number(price.innerHTML) + shipping) + " GBP"; 
 	}
 	return true
 	
 	
-}
-function shipp(){
-	if(grossPrice >= 1000 && grossPrice < 20000){
-		shipping= 0.15*grossPrice
-		shippingCost.innerHTML = "£" + shipping + " GBP";
-	}else if (grossPrice >= 20000 && grossPrice < 100000){
-		shipping= 0.20*grossPrice
-		shippingCost.innerHTML = "£" + shipping + " GBP";
-	}else if (grossPrice > 100000){
-		shipping = 25000
-		shippingCost.innerHTML = "£" + shipping + " GBP";
-	}else{
-		shipping = 100
-		shippingCost.innerHTML = "£" + shipping + " GBP";
-	}
-	return true
 }
 
 function buttonDeactived(){
-	if(quantity.value === ""){
-		button.style.backgroundColor = "#888";
-		button.style.color = "#fff";
-
-	} else {
-		button.style.backgroundColor = "rgb(255, 166, 95)";
+	if(quantity.value === ''){
+		button.disabled = true;
+	}
+	else{
+		button.disabled = false;
+		
 	}
 	return true
 }
-function emptyQuantity(){
+function emptyQuantity(event){
+	event.preventDefault()
 	if(quantity.value < 1){
 		quantity.value = "";
+		quantity.value.focus()
 	} 
 	else{
 		quantity.value = quantity.value
@@ -69,4 +69,14 @@ function shippingTotalCost(e){
 	shipp(e)
 	cost(e)
 }
-quantity.addEventListener("change", shippingTotalCost )
+document.addEventListener('DOMContentLoaded', function(){
+    
+	customer.addEventListener('submit', shippingTotalCost);
+
+	button.disabled = true;
+
+	quantity.addEventListener("change", shippingTotalCost)
+	
+
+});
+
