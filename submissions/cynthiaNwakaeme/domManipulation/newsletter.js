@@ -4,7 +4,7 @@ let sendForm = document.getElementById("requiredField"),
 
 // To validate the Newsletter
 let valide = (event) => {
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+    const emailRegex = /([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i;
 
     if (newsletter.value === "") {
         errorMessage.innerHTML = "Please enter a your email";
