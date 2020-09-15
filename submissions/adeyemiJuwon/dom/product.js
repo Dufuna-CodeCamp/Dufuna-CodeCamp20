@@ -42,24 +42,21 @@ function cost(){
 	
 }
 
-function buttonDeactived(){
-	if(quantity.value === ''){
-		button.disabled = true;
-	}
-	else if(quantity.value < 1){
-		quantity.value = "";
-		quantity.value.focus()
-	} 
 
-	else{
+function lessThanOneInteger(){
+	if(quantity.value < 1){
+		quantity.value = 1;
+		quantity.nextElementSibling.innerHTML = "Please enter a valid quantity";
+		button.disabled = true;
+	}else{
 		button.disabled = false;
-		
+		quantity.nextElementSibling.innerHTML = ""
 	}
-	return true
+
 }
 
 function shippingTotalCost(e){
-	buttonDeactived(e)
+	lessThanOneInteger(e)
 	shipp(e)
 	cost(e)
 }
