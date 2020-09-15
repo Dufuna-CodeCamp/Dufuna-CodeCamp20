@@ -113,11 +113,6 @@ main {
     margin: 0;
 }
 
-input[type=number] {
-    height: 25px;
-    width: 50px;
-}
-
 
 /*TO REMOVE THE ARROWS IN AN INPUT[type="number"] for Chrome, Safari, Edge, Opera  */
 
@@ -127,10 +122,10 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-
-/* Firefox */
-
 input[type=number] {
+    height: 25px;
+    width: 50px;
+    /* Firefox */
     -moz-appearance: textfield;
 }
 
