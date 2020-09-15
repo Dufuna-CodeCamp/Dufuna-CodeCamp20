@@ -85,16 +85,15 @@ main {
 
 .main-img {
     float: left;
-    height: 260px;
     width: 230px;
-    margin: 2px 0 5px 8px;
-    border: 1px solid #818181;
+    margin: 2px 0 10px 30px;
+    border: 1px solid rgb(129, 129, 129);
 }
 
 .main-img img {
     width: 200px;
     padding: 10px 20px;
-    height: 230px;
+    height: inherit;
 }
 
 
@@ -102,31 +101,29 @@ main {
 
 .img-details {
     float: left;
-    width: 330px;
+    width: 300px;
     margin-left: 30px;
 }
 
-#quantity h4,
-#quantity input {
-    display: inline-block;
+#quality h4,
+#quality table {
+    display: inline-table;
     padding: 0;
     margin: 0;
 }
 
-
-/*TO REMOVE THE ARROWS IN AN INPUT[type="number"] for Chrome, Safari, Edge, Opera  */
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+#quality table {
+    border-collapse: collapse;
 }
 
-input[type=number] {
-    height: 25px;
-    width: 50px;
-    /* Firefox */
-    -moz-appearance: textfield;
+#quality table,
+#quality th {
+    border: 1px solid rgb(129, 129, 129);
+    padding: 0 8px;
+}
+
+#quality tr th a {
+    text-decoration: none;
 }
 
 .img-details button {
@@ -137,18 +134,16 @@ input[type=number] {
     padding: 8px;
     border: none;
     font-weight: bold;
-    height: 40px;
 }
 
 .description {
-    margin: 0 35px;
+    margin: 0 55px;
     padding-bottom: 20px;
-    text-align: justify;
 }
 
 .description h4 {
     padding: 0;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 
@@ -186,7 +181,7 @@ aside h3 {
 }
 
 .errorMessage {
-    color: yellow;
+    color: rgb(255, 255, 0);
     display: block;
     font-weight: bold;
 }
@@ -195,18 +190,17 @@ aside h3 {
 /* THE FOOTER */
 
 footer {
+    overflow: hidden;
     background-color: #9d426b;
     padding: 20px 0 0 50px;
     color: white;
-    overflow: hidden;
-    clear: both;
 }
 
 .footer-box,
 .footer-box-2,
 .footer-box-3 {
     float: left;
-    width: 32%;
+    width: 33.3%;
 }
 
 .footer-box ul li,
@@ -223,7 +217,7 @@ footer {
 
 .footer-box-2 button[type="submit"] {
     height: 30px;
-    padding: 0 20px;
+    padding: 0 5%;
     font-size: 12px;
     color: #9d426b;
     font-weight: bold;
@@ -247,13 +241,10 @@ footer {
 
 .footer-box-3 ul li img {
     width: 35px;
-    height: 30px;
 }
 
 footer p {
-    text-align: center;
     display: block;
-    margin-top: 10px;
 }
 
 
@@ -277,10 +268,6 @@ footer p {
         float: none;
         width: 310px;
     }
-    .img-slide {
-        margin: 30px auto;
-        display: block;
-    }
     .footer-box,
     .footer-box-2,
     .footer-box-3 {
@@ -298,12 +285,9 @@ footer p {
     .footer-box,
     .footer-box-2 {
         width: 350px;
-        margin-bottom: 10px;
     }
     .footer-box-3 {
         float: none;
-        width: 350px;
-        margin-bottom: 10px;
     }
     .footer-box-3 ul li {
         display: inline;
