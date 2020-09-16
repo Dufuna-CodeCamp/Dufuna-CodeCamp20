@@ -7,6 +7,9 @@ if (i % 3 ==0 && i % 5 ==0)
 else if( i % 3 ==0)   
     console.log(i + " " + "software");
 
-else  (i % 5 ==0)
+else if (i % 5 ==0)
+    console.log(i + " " + "Development");
+
+else 
     console.log(i);
 }
