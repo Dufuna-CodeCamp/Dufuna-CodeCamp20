@@ -74,6 +74,11 @@ article {
 }
 .error {
         font-size: 20px;
+        color: red;
+        margin: 10px 0 70px 38px;
+}
+.error2 {
+        font-size: 20px;
         display: block;
         color: red;
         margin: auto;
