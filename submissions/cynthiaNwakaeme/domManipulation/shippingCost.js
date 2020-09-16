@@ -15,6 +15,7 @@ let shippingAnalysis = (event) => {
 
     } else {
         button.disabled = false;
+        button.style.backgroundColor = "rgb(218, 165, 32)";
         let productPrice = (quantity.value * price.innerHTML);
 
         if (productPrice <= 1000) {
@@ -43,6 +44,6 @@ let shippingAnalysis = (event) => {
     }
 };
 
-button.addEventListener("click", buttonValidate = (event) => {
+quantity.addEventListener("input", inputValidator = (event) => {
     shippingAnalysis(event);
 });
