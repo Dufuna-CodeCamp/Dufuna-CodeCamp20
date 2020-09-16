@@ -60,14 +60,4 @@ function shippingTotalCost(){
 	cost();
 }
 
-document.addEventListener('input', function(){
-    
-	customer.addEventListener('submit', function(e){
-		e.preventDefault();
-		shippingTotalCost();
-	});
-
-	button.disabled = true;
-
-	quantity.addEventListener("change", shippingTotalCost);	
-});
+document.addEventListener('input',shippingTotalCost)
