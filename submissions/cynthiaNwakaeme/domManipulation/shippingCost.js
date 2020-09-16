@@ -7,7 +7,9 @@ let quantity = document.getElementById("quantityNumber"),
 
 
 let shippingAnalysis = (event) => {
-    if (quantity.value == "" || quantity.value < 1) {
+    let integerRegex = /[^0-9]/g; //To ensure only integers are allowed
+
+    if (quantity.value == "" || quantity.value < 1 || quantity.value.match(integerRegex)) {
         button.disabled = true;
         button.style.backgroundColor = "rgba(218, 165, 32, 0.55)";
         shippingCost.innerHTML = 0;
