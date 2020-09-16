@@ -30,6 +30,7 @@ function shipp(){
 
 
 function cost(){
+	shipp();
 
 	if (quantity.value > 1){
 		grossPrice = quantity.value * Number(price.innerHTML);
@@ -56,11 +57,10 @@ function lessThanOneInteger(){
 
 function shippingTotalCost(){
 	lessThanOneInteger();
-	shipp();
 	cost();
 }
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('input', function(){
     
 	customer.addEventListener('submit', function(e){
 		e.preventDefault();
