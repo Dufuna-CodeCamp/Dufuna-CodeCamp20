@@ -17,7 +17,7 @@ function shipp(){
 	else if(grossPrice >= 1000 && grossPrice < 20000){
 		shipping= 0.15 * grossPrice
 		shippingCost.innerHTML = "£" + shipping + " GBP";
-	}else if (grossPrice >= 20000 && grossPrice < 100000){
+	}else if (grossPrice >= 20000 && grossPrice <= 100000){
 		shipping= 0.20 * grossPrice
 		shippingCost.innerHTML = "£" + shipping + " GBP";
 	}else{
@@ -45,7 +45,6 @@ function cost(){
 
 function lessThanOneInteger(){
 	if(quantity.value < 1){
-		quantity.value = 1;
 		quantity.nextElementSibling.innerHTML = "Please enter a valid quantity";
 		button.disabled = true;
 	}else{
@@ -56,18 +55,18 @@ function lessThanOneInteger(){
 }
 
 function shippingTotalCost(e){
-	lessThanOneInteger(e)
-	shipp(e)
-	cost(e)
+	lessThanOneInteger();
+	shipp();
+	cost();
 }
+
 document.addEventListener('DOMContentLoaded', function(){
     
-	customer.addEventListener('submit', shippingTotalCost);
+	customer.addEventListener('submit', function(e){
+		e.preventDefault();
+	});
 
 	button.disabled = true;
 
-	quantity.addEventListener("change", shippingTotalCost)
-	
-
+	quantity.addEventListener("change", shippingTotalCost);	
 });
-
