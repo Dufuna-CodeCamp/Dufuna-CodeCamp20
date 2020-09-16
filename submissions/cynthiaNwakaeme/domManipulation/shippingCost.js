@@ -10,6 +10,8 @@ let shippingAnalysis = (event) => {
     if (quantity.value == "" || quantity.value <= 0) {
         button.disabled = true;
         button.style.backgroundColor = "rgba(218, 165, 32, 0.55)";
+        shippingCost.innerHTML = 0;
+        totalCost.innerHTML = 0;
         event.preventDefault();
         return false;
 
