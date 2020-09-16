@@ -7,13 +7,16 @@ var quantity = document.getElementById('quantity'),
     productPrice = unitPrice * quantity.value,
     shipping = 0.15 * productPrice
 ;
-
-function quantityField() {
-    if (quantity.value === '' )  {
+console.dir(quantity);
+function quantityField(event) {
+    let quantityRegex = /^[1-9]+[0-9]*$/;
+    if (!quantity.value.match(quantityRegex))  {
         button.disabled = true;
-        shipping.innerHTML = '';
+        quantity.nextElementSibling.innerHTML = "Please enter a valid quantity";
+        event.preventDefault();
     }else {
         button.disabled = false;
+        quantity.nextElementSibling.innerHTML = "";
     }
 }
 
