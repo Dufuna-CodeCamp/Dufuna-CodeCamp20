@@ -14,7 +14,7 @@ function shipp(){
 		shipping = 100
 		shippingCost.innerHTML = "£" + shipping + " GBP";
 	}
-	else if(grossPrice >= 1000 && grossPrice < 20000){
+	else if(grossPrice >= 1000 && grossPrice <= 20000){
 		shipping= 0.15 * grossPrice
 		shippingCost.innerHTML = "£" + shipping + " GBP";
 	}else if (grossPrice >= 20000 && grossPrice <= 100000){
