@@ -22,6 +22,6 @@ var productList = [
 
 //For Loop to successively display each property.
 
-for (let index=0; index < productList.length; index++) {
-    console.log(productList[index].productName + " with " + productList[index].imageUrl + " is sold for " + productList[index].productPrice);
+for (let loopNum=0; loopNum < productList.length; loopNum++) {
+    console.log(productList[loopNum].productName + " with " + productList[loopNum].imageUrl + " is sold for " + productList[loopNum].productPrice);
 }
