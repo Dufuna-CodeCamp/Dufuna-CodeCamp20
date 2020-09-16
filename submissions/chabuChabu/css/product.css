@@ -29,8 +29,7 @@ header .logo-text{
 }
 header ul {
 	float: right;
-	margin: 0
-	padding:0;
+	padding-left:40px;
 	list-style: none;
 }
 header ul li{
