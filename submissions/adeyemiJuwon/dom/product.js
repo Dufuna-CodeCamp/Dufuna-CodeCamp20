@@ -54,7 +54,7 @@ function lessThanOneInteger(){
 
 }
 
-function shippingTotalCost(e){
+function shippingTotalCost(){
 	lessThanOneInteger();
 	shipp();
 	cost();
