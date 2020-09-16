@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
 	customer.addEventListener('submit', function(e){
 		e.preventDefault();
+		shippingTotalCost();
 	});
 
 	button.disabled = true;
