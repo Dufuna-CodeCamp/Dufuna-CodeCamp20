@@ -3,7 +3,6 @@ let price = document.getElementById("price");
 let shippingCost = document.getElementById("shippingCost");
 let totalCost = document.getElementById("totalCost");
 let button = document.getElementById("btn");
-let customer = document.getElementById('customer-price');
 let grossPrice = quantity.value * Number(price.innerHTML);
 
 
