@@ -1,5 +1,4 @@
-var brand = document.querySelector('.brand'),
-    quantity = document.getElementById('quantity'),
+var quantity = document.getElementById('quantity'),
     price = document.getElementById('price'),
     shipping = document.getElementById('shipping'),
     cost = document.getElementById('cost'),
