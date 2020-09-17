@@ -14,7 +14,7 @@ let shippingAnalysis = () => {
         button.style.backgroundColor = "rgba(218, 165, 32, 0.55)";
         shippingCost.innerHTML = 0;
         totalCost.innerHTML = 0;
-        return true;
+        return false;
 
     } else {
         button.disabled = false;
