@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: oswald PT sans serif;
+    margin: 0;
+    padding: 0;
+ }
+
+a{
+    text-decoration: none;
+}
+/* HEADING */
+  .nav-section {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+ }
+ ul {
+    padding: 0;
+    margin: 0;
+ }
+
+ header {
+    background:#f77b00;
+    color: white;
+    padding-top: 15px;
+    min-height: 2px;
+ }
+ header a {
+    color: white;
+    text-decoration: none;
+ }
+ header li {
+    display: inline;
+    padding:0 30px;
+ }
+ header #nav-logo {
+    float: left;
+    margin: 15px 15px;
+ }
+ header #nav-logo h2,
+ header #nav-logo p {
+    margin:0;
+    padding:0;
+    color:white;
+ }
+ header nav {
+    float: right;
+    margin: 15px 15px;
+ }
+
+/* PAGE:PRODUCT */
+  .product {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.product-img{
+    border: 1px solid #000;
+    max-width: 469px;
+    margin: 50px 50px 0 50px;
+}
+.product img , .product-related img{
+    width: 100%;
+}
+.product-del{
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 14px;
+}
+.product-del h3{
+    font-size: 25px;
+    line-height: 30px;
+}
+.product-del h4{
+    font-size: 22px;
+    line-height: 27px;
+    margin:20px 0;
+}
+.product-del input{
+    max-width: 70px;
+    height: 37px;
+    padding-left: 5px;
+}
+.product-del button{
+    width: 170px;
+    height: 47px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f77b00;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+}
+.description{
+    margin-left: 50px;
+}
+.description h3{
+    text-align:left;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 23px;
+}
+.description p{
+    text-align:left;
+    margin:8px 0 30px 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+.related-product{
+    background-color: #ebebeb;
+}
+.related-product h3{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.product-related{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.lap-1, .charger, .bag{
+    max-width: 399px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.product-related h5 {
+    text-align: center;
+    color: #000;
+}
+
+/* FOOTER */
+  footer a {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ .kt {
+    color: white;
+ }
+
+ footer  {
+    background-color:#f77b00;
+    overflow: hidden;
+    padding: 15px 0 0 20px;
+   
+ }
+ 
+ .footer {
+    float: left;
+    width: 33.33%;
+    font-weight: lighter;
+ }
+
+ .footer li {
+    padding:5px;
+    font-weight: lighter;
+    list-style-type: none;
+ }
+
+ footer img {
+    height: 25px;
+    text-decoration: none;
+ }
+
+ .footer p {
+    color: white;
+    font-weight: lighter;
+    padding-left: 50px;
+    display: block;
+ }
+ .logo li {
+    list-style-type: none;
+    padding: 2px;
+    border-radius: 10px;
+    display: inline-grid;
+    margin: 0 10px;
+ }
+
+ .info {
+    position: absolute;
+    left: 300px;
+   
+ }
+
+ footer nav {
+    overflow: hidden;
+ }
+
+/* RESPONSIVENESS */
+@media screen and ( max-width:1085px ){
+    header nav,
+     header .nav-section nav li,
+     header #nav-logo {
+         float: none;
+         text-align: center;
+         padding: 0 3%;
+     }
+
+header{
+    flex-flow:wrap;
+    justify-content: flex-end;
+}
+.navbar-link li{
+    margin: 15px;
+}
+    
+.product-img{
+    margin: 10px;
+}
+.product-del button{
+    width: 130px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.description h3, .description p{
+    font-size: 14px;
+    line-height: 18px;
+}
+.description p{
+    margin: 10px;
+}
+.product-del h3, .product-del h4{
+    font-size: 20px;
+    line-height: 24px;
+}
+.lap-1, .charger, .bag{
+    flex-basis: 250px;
+    margin: 20px;
+}
+.product-related{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+}
+
+@media screen and ( max-width:600px ) {
+
+header{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navbar-link li {
+    display: block;
+    text-align: left;
+    line-height: 19px;
+    font-size: 16px;
+    margin-left:10px ;
+    color:black;
+}
+.logo{
+    margin-left: 10px;
+}
+
+.product{
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.product-del{
+    margin: 20px;
+}
+.description{
+    margin-left: 30px;
+}
+.product-related{
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.related-product h3 {
+    font-size: 20px;
+}
+.lap-1, .charger, .bag{
+    flex-basis: 399px;
+    margin: 10px;
+}
+
+.footer-link{
+    display: block;
+    margin-left: 15px;
+}
+.social h3{
+    margin-top: 20px;
+}
+.social-link li{
+    margin-right: 5px;
+}
+
+}

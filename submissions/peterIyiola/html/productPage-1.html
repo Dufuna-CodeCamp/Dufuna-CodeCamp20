@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <title>Better Buys</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BetterBuys/productpage</title>
+      <link href="../css/productpage.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
-      <div>
-         
-            <h1><b>Better Buys</b></h1>
-          <a href="./productPage-1.html">Product page</a><br><br>
-         <a href="../htmlForms/contactForm.html">Contact Form</a><br>
-         <h4><i>Your neighbourhood electronics store</i></h4>
-         <hr>
+      <div class="flex-container">
          <div>
-            <input type="text" name="box" placeholder="Type your Search here"</input>
-            <button>Search</button> <br>
-            <br>
-            <button>Signin</button>
-            <button>Register</button>
+            <img class="logo" src="../htmlForms/images/BBlogo.jpg" alt="BetterBuys Logo"/>
          </div>
-         <!--What we sell-->
-         <div>
-            <h3>Check us out for your:</h3>
-            <ul>
-               <li>TVs</li>
-               <li>Sound Systems</li>
-               </Sound>
-               <li>Air Conditioners</li>
-               <li>Refrigertors</li>
-            </ul>
+         <div class="productpagelink">
+            <a href="productPage-1.html">Product Page</a>
          </div>
-         <section>
-         <!--Product Images and Description-->
-         <div>
-            <ul>
-               <li>
-                  <a href="#"><img src="TVs.jpg" alt="Smart TV"></a>
-                  <p>65 inches QLED SMART TV 
-                     <br>
-                     +Wall Brackets and 12 Months warranty<br>
-                     Price = 250,000
-                  </p>
-               </li>
-               <li>
-                  <a href="#"><img src="HT.jpg" alt="Home Theatre" ></a>
-                  <p>Samsung Home Theatre System <br>
-                     Price=120,000 <br>
-                     High Definition Surround System
-                     Bluetooth Enabled
-                  </p>
-               </li>
-               <hr>
-               <p>Thermocool 2HP Air conditioner <br>
-                  Price=170,000
-               </p>
-               <hr>
-               <p>Hisense Regrigerators<br>
-                  Price =200,000 
-                  <br>
-                  Hisense 24Litres Refrigerator<br>
-                  Buttom Freezer and Water Dispenser
-               </p>
-            </ul>
+         <div class="contactlink">
+            <a href="../htmlForms/contactForm.html">Contact Us</a>
          </div>
-         <div>
-            <h4>
-               <p></p>
-               Similar Products
-               <ol>
-                  <li>LG LED 55 Inches ANdroid TV</li>
-                  <li>Hisense HD Sound System</li>
-                  <li>Polystar Double Door Refrigerator</li>
-                  <li>Scanfrost Air Purifier Air conditioner</li>
-               </ol>
-               </p>
-            </h4>
+         <div class="signuplink">
+            <a href="../htmlForms/signuppage.html">Sign Up</a>
          </div>
       </div>
-      <footer>
-         <ul>
-            <li><a href="https://www.twitter.com">twitter</a></li>
-            <li><a href="https://www.linkedin.com">Linkedin</a></li>
-            <li><a href="https://www.medium.com">Medium</a></li>
-         </ul>
-         <p>&copy; 2020 My Product Page</p>
-      </footer>
+      <div class="product">
+      <div class="productimage">
+     <img src="../htmlForms/images/samsung2.jpg" alt="samsung TV"/>
+      </div>
+      <div class="productdescription">
+     <h4>65 INCHES CURVED QLED 4K TV</h4>
+     <p>Brand:Samsung</p>
+     <form class="quantity">
+      <label for="Number">Quantity</label>
+      <input list="Number">
+      <datalist id="Number">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+      </datalist>
+    </form>
+   <p>Price:<span>&#8358;</span>750000</p>
+   <button class="btn">BUY NOW</button>
+      </div>
+      </div>
+      <div class="about">
+   <p><b>DESCRIPTION</b></p>  
+   <P>Discover the Next Innovation in TV and see colour in a whole new light with our Q7 QLED TV. Ground-breaking Quantum Dot technology delivers unbelievable colour, brightness and contrast, and with elegant design and clever connectivity, QLED TV pairs seamless style with stunning picture.</P>
+      </div> 
+   <div class="content">
+   <h4>RELATED PRODUCTS</h4>
+    <div class="grid-similaritems">
+       <div class="similaritem1">
+    <img src="../htmlForms/images/samsung1.jpg" alt="Samsung"/>
+    <div class="item1">
+    <p>Samsung 55" Q60R Flat Smart 4K QLED TV</p>
+    <p>Price:<span>&#8358;</span>650000</p>
+    </div>
+       </div>
+       
+       <div class="similaritem2">
+    <img src="../htmlForms/images/samsung3.jpg" alt="Samsung"/>
+    <div class="item2">
+    <p>Samsung 40" Smart Full HD LED TV 40n5300 2019</p>
+    <p>Price:<span>&#8358;</span>550000</p>
+    </div>
+       </div>
+       <div class="similaritem3">
+    <img src="../htmlForms/images/samsung4.jpg" alt="Samsung"/>
+    <div class="item3">
+    <p>Samsung 43" Curved QLED TV </p>
+    <p>Price:<span>&#8358;</span>600000</p>
+    </div>
+       </div>
+    </div>
+   </div>
+    <footer>
+      <div class="flex-container2">
+         <div class="contacts">
+            <a href="#">Contact Us</a><br>
+            <a href="#">About us</a><br>
+            <a href="#">Terms and Conditions</a><br>
+         </div>
+         <div id="subscribe">
+            <p>Subscribe to our Newsletter</p>
+            <input type="email" id="email" placeholder="enter your email address"/>
+            <button class="submit">SUBMIT</button>
+         </div>
+         <div class="socialmedia">
+            <p>Connect with us</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>&copy; 2020 BetterBuys.com All Rights Reserved</p>
+      </div>
+   </footer>
+</body>
+</html>
    </body>
-
+</html>

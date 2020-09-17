@@ -4,58 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Page</title>
+  <link rel="stylesheet" href="../css/product.css">
 </head>
 <body>
-   <section>
-     <h1>The Berry Ice Cream</h1>
-     <nav>
+   <header>
+    <div class="nav-bar">
+      <div id="nav-brand">
+          <h2>THE BERRY ICE-CREAM </h2>
+          <p class="para">...we make you want more </p>
+      </div>
+      <nav>
+         
+          <ul>
+              <li>
+                  <a href="product.html">Product page</a>
+              </li>
+              <li>
+                  <a href="../HTMLforms/contact.html">Contact Us</a>
+              </li>
+              <li>
+                  <a href="../HTMLforms/signup.html">Sign-up</a>
+              </li>
+          </ul>
+      </nav> 
+  </div>
+  </header>
+
+  <section class="container">
+    <div class="max">
+     <div class="max-img">
+      <img src="img/UCE2.png" alt="">
+       </div>
+
+   <div class="details">
+    <h4 class="det">STRAWBERRY CHILLED ICE-CREAM</h4>
+    <h4 class="det">Brand:Supreme Perfect</h4>
+    <h4 class="det">Quantity:
+      <input type="number" value="2" name="quantity " id="quantity"></h4>
+      <h4 class="price">Price: $300</h4>
+      <button class="button"> BUY NOW</button>
+    </main>
+   </div>
+  </div>
+    <div class="Description">
+   <h4>DESCRIPTION</h4>
+   <p>The berry Ice-cream is a rich, sweet, creamy frozen food made from variously flavored cream and milk products churned or stirred to a smooth consistency during the freezing process and often containing gelatin, eggs, fruits, nuts, etc. </p>
+  </div>
+  <div class=" products">
+    <h3> RELATED PRODUCTS</h3>
+    <div class=" product-image">
+    <div class="ice1">
+         <img src="img/hand.png" alt="" width="300px">
+        <h5>STRAWBERRY ICE-CREAM SANDWICHES</h5>
+        <h5>Price: &#163;7.52</h5>
+        
+    </div>
+    <div class="ice2">
+         <img src="img/ice4.png" alt="" width="300px">
+        <h5> MATCHA BANANA ICE CREAM</h5>
+        <h5> Price: &#163;4.26</h5>
+        
+    </div>
+    <div class="ice3">
+         <img src="img/ice3.png" alt="" width="300px"> 
+        <h5>COCONUT MILK AND AVOCADO ICE CREAM</h5>
+        <h5>Price: &#163;5.95</h5>
+   
+    </div>
+    </div>
+</div>
+</section>
+</section>
+<footer>
+  <div class="footer-link">
+      <div>
       <ul>
-      <li><a href="/html/index.html">Product Page</a></li>
-            <li><a href="/htmlForms/signUp.html">Sign Up</a></li>
-            <li><a href="/htmlForms/contact.html">Contact</a></li>
-            </ul>
-    </nav>
-     <img src="img/ice1.jpg" alt="" width="30%" height="30%">
-     <img src="img/ice2.jpg" alt="" width="30%" height="30%">
-     <h3>Price:N2,000</h3><br>
-     <h1>DESCRIPTION</h1>
-     <p>The berry Ice-cream is a rich, sweet, creamy frozen food made from variously flavored cream and milk products churned or stirred to a smooth consistency during the freezing process and often containing gelatin, eggs, fruits, nuts, etc. It comes in different flavours like Mint Chocolate Chip,
-      Chocolate Chip Cookies Dough,
-      Buttered Pecan,
-      Birthday Cake,Strawberry.</p>
-      <h1>Benefits of The Berry Cafe </h1>
-      <ul>
-        <li>It Is Loaded With Vitamins and Minerals</li>
-        <li>It Gives You Energy.</li>
-        <li>It Helps Boost Your Immunity</li>
-        <li>It Makes You Happier. </li>
-        <li>It Prevents Breast Cancer</li>
+        <li> <a href="../HTMLforms/contact.html"> Contact Us </a></li>  
+        <li> <a href="#"> About Us </a></li>
+        <li> <a href="#"> Terms and Conditions </a></li>
       </ul>
-   </section>
-   <section>
-    <h1>Checkout Similar Product</h1>
-    <ol>
-      <li><a href="#">MATCHA BANANA GREEN TEA ICE CREAM</a></li>
-      <li><a href="#">STRAWBERRY AND BANANA ICE-CREAM SANDWICHES</a></li>
-      <li><a href="#">COCONUT MILK AND AVOCADO ICE CREAM</a></li>
-    </ol>
+  </div>
+  
+  <form id="newsletter">
+    <h3>Sign up for the Newsletter</h3>
+    <input type="text" placeholder=" Enter your mail address" id="email" >
+    <button type="submit"> SUBMIT</button><br><br>
+    <span class="error"></span>
+</form>
+  
+  <div class="social">
+      <h3>CONNECT WITH US</h3>
+      <ul class="social-link">
+          <li><a href="#"><img src="img/facebooklogo.png" alt=""></i></a></li>
+          <li><a href="#"><img src="img/twiiterlogo.png" alt=""></a></li>
+          <li><a href="#"></a><img src="../html/img/ic_email_24px.png" alt=""></a></li>
+          <li><a href="#"><img src="img/youtubelogo.jpg" alt=""></a></li>
+       </ul>
+  </div>
+  </div>
+  <br><br>
+<p>Copyright &copy; 2020, The Berry Ice-Cream.</p>
+</footer>
 
 
-    <h1>OUR SERVICES</h1>
-    <ul>
-      <li><a href="#">Home Delivery</a></li>
-      <li><a href="#">Pick-Up</a></li>
-      <li><a href="#">Order</a></li>
-    </ul>
-   </section>
-   <footer>
-     <h1>Follow Us</h1>
-     <ul>
-       <li><a href="#">Twitter</a></li>
-       <li><a href="#">Instagram</a></li>
-       <li><a href="#">Fecebook</a></li>
-       <li><a href="#">LinkedIn</a></li>
-     </ul>
-   </footer>
-</body>
+<script src="../DOM/newletter.js"></script>   
+</body>     
 </html>
+    

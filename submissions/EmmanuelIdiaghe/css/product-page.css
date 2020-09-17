@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+@media screen and (min-width: 900px) {
+    .content {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+    header, .footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: rosybrown;
+        padding: 0 10px;
+    }
+    .nav-list li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 5px;
+    }
+    .bottom-div {
+        width: 100%;
+        display: flex;
+    }
+    .top-div {
+        width: 100%;
+        display: flex;
+    }
+    .content img {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+    }
+    .topmost-div, .bottommost-div {
+        padding: 10px 50px;
+    }
+    }
+
+@media screen and (min-width: 451px) and (max-width: 900px) {
+    .content {
+            display: inline-block;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+        }
+    header, .footer {
+        display: flex;
+        justify-content: flex-end;
+        background-color: rosybrown;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .nav-list li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 5px;
+    }
+    .bottom-div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-div {
+        width: 100%;
+        display: flex;
+    }
+    .content img {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+    }
+    .topmost-div, .bottommost-div {
+        padding: 10px 50px;
+    }
+    }
+
+    @media screen and (max-width: 450px) {
+    .content {
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            align-items: center;
+        }
+    .nav-list li {
+        display: block;
+        padding: 10px;
+        margin: 0 5px;
+    }
+    header, .footer {
+        display: block;
+        background-color: rosybrown;
+        margin: 5px 0;
+        padding: 0 10px;
+    }
+    .foot-list {
+        margin-bottom: 15px;
+    }
+    .conn {
+        margin-top: 15px;
+    }
+    .bottom-div {
+        width: 100%;
+        display: block;
+    }
+    .top-div {
+        width: 100%;
+        display: block;
+    }
+    .content img {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+    }
+    .topmost-div, .bottommost-div {
+        padding: 10px;
+    }
+    }
+
+* {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.right-div {
+    line-height: 30px;
+}
+.right-div .submit-btn {
+    margin: 0;
+}
+.qty-input {
+    width: 20%;
+    border-radius: 2px;
+}
+.topmost-div {
+    text-align: justify;
+    padding: 0 20px;
+}
+.bottommost-div {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(188, 143, 143, 0.2);
+}
+.related-product {
+    margin: 20px auto;
+    padding: 10px;
+}
+.logo {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: auto;
+}
+.field-icon {
+    text-align: center;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list li a, .foot-list li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-list li a:hover, .foot-list li a:hover{
+    color: black;
+}
+li, a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+.foot-list {
+    margin-right: auto;
+    list-style: none;
+}
+.email-div {
+    display: flex;
+    margin: 0 5px;
+}
+.foot-signup {
+    margin-right: auto;
+}
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+footer input {
+    width: 100%;
+    height: 30px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+.submit-btn {
+    display: block;
+    border-radius: 5%;
+    width: 30%;
+    height: 30px;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: rosybrown;
+}
+.submit-btn:hover {
+    color: black;
+}
+.newsletter-input {
+    margin-right: 10px;
+}
+.conn-logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.conn-div {
+    display: inline-block;
+}
+footer {
+    background-color: rosybrown;
+}
