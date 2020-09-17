@@ -6,7 +6,7 @@ let quantity = document.getElementById("quantityNumber"),
 
 
 
-let shippingAnalysis = (event) => {
+let shippingAnalysis = () => {
     let integerRegex = /[^0-9]/g; //To ensure only integers are allowed
 
     if (quantity.value == "" || quantity.value < 1 || quantity.value.match(integerRegex)) {
@@ -14,8 +14,7 @@ let shippingAnalysis = (event) => {
         button.style.backgroundColor = "rgba(218, 165, 32, 0.55)";
         shippingCost.innerHTML = 0;
         totalCost.innerHTML = 0;
-        event.preventDefault();
-        return false;
+        return true;
 
     } else {
         button.disabled = false;
@@ -23,26 +22,24 @@ let shippingAnalysis = (event) => {
         let productPrice = (quantity.value * price.innerHTML);
 
         if (productPrice <= 1000) {
-            shippingCost.innerHTML = parseInt(100);
-            totalCost.innerHTML = parseInt(productPrice) + parseInt(shippingCost.innerHTML);
-            event.preventDefault();
+            shippingCost.innerHTML = parseFloat(100);
+            totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
             return false;
 
         } else if (productPrice > 1000 && productPrice <= 20000) {
-            shippingCost.innerHTML = parseInt(0.15 * productPrice);
-            totalCost.innerHTML = parseInt(productPrice) + parseInt(shippingCost.innerHTML);
-            event.preventDefault();
+            shippingCost.innerHTML = parseFloat(0.15 * productPrice);
+            totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
+
             return false;
 
         } else if (productPrice > 20000 && productPrice <= 100000) {
-            shippingCost.innerHTML = parseInt(0.20 * productPrice);
-            totalCost.innerHTML = parseInt(productPrice) + parseInt(shippingCost.innerHTML);
-            event.preventDefault();
+            shippingCost.innerHTML = parseFloat(0.20 * productPrice);
+            totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
             return false;
 
         } else {
             shippingCost.innerHTML = 25000;
-            totalCost.innerHTML = parseInt(productPrice) + parseInt(shippingCost.innerHTML);
+            totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
             return true;
         }
     }
