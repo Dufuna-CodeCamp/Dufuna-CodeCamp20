@@ -34,13 +34,13 @@ for (let loopNum=0; loopNum < productList.length; loopNum++) {
 const positiveDiff = (Math.abs(7 - 123));
 
 for (var counter = 1; counter <= positiveDiff; counter++) {
-    if(((counter % 3) == 0) && ((counter % 5) == 0)) {
+    if(counter % 3 == 0 && counter % 5 == 0) {
         console.log("Software" + " " + "Developer");
     }
-    else if((counter % 3) == 0) {
+    else if(counter % 3 == 0) {
         console.log("Software");
     }
-    else if((counter % 5) == 0) {
+    else if(counter % 5 == 0) {
         console.log("Developer");
     }
     else console.log(counter);
