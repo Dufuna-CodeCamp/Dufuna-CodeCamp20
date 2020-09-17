@@ -78,7 +78,7 @@ body{
   width: 45px;
   height: 50px;
 }
-.right h2{ 
+.right h2{
   padding-bottom: 20px;
   padding-top: 10px;
   margin: 0;
@@ -145,9 +145,6 @@ textarea{
   margin-top: 2px;
   border: 1px solid black;
   height: 30px;
-}
-::placeholder{
-  font-size: 15px;
 }
 #foot-button{
   color: #b6249e;
