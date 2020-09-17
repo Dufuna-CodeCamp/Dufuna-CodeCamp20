@@ -37,7 +37,7 @@ function emailValidation(event){
         event.preventDefault();
         return false
     } else{
-        let emailRegrex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let emailRegrex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,3})+$/;
         if(!email.value.match(emailRegrex)){
             email.nextElementSibling.innerHTML = "Please enter a valid email";
             event.preventDefault();
