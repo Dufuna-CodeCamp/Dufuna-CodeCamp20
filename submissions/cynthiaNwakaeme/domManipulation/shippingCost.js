@@ -45,6 +45,4 @@ let shippingAnalysis = () => {
     }
 };
 
-quantity.addEventListener("input", inputValidator = (event) => {
-    shippingAnalysis(event);
-});
+quantity.addEventListener("input", shippingAnalysis);
