@@ -25,3 +25,23 @@ var productList = [
 for (let loopNum=0; loopNum < productList.length; loopNum++) {
     console.log(productList[loopNum].productName + " with " + productList[loopNum].imageUrl + " is sold for " + productList[loopNum].productPrice);
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+    Task: Print Numbers from 1 - 116 with conditionals
+*/
+
+const positiveDiff = (Math.abs(7 - 123));
+
+for (var counter = 1; counter <= positiveDiff; counter++) {
+    if(((counter % 3) == 0) && ((counter % 5) == 0)) {
+        console.log("Software" + " " + "Developer");
+    }
+    else if((counter % 3) == 0) {
+        console.log("Software");
+    }
+    else if((counter % 5) == 0) {
+        console.log("Developer");
+    }
+    else console.log(counter);
+}
