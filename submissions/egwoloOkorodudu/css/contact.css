@@ -11,7 +11,7 @@ body{
 .header{
     overflow: hidden;
     background-color: #b6249e;
-    padding: 25px 4em 0 20px;
+    padding: 25px 56px 0 20px;
     line-height: 50px;
 }
 .header a{
@@ -93,7 +93,7 @@ body{
   background-color: rgb(243, 233, 238);
 }
 ::placeholder{
-  font-size: 20px;
+  font-size: 17px;
   color: black;
 }
 .label{
