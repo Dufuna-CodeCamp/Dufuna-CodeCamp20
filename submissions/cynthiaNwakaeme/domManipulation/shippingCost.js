@@ -24,18 +24,17 @@ let shippingAnalysis = () => {
         if (productPrice <= 1000) {
             shippingCost.innerHTML = parseFloat(100);
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
-            return false;
+            return true;
 
         } else if (productPrice > 1000 && productPrice <= 20000) {
             shippingCost.innerHTML = parseFloat(0.15 * productPrice);
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
-
-            return false;
+            return true;
 
         } else if (productPrice > 20000 && productPrice <= 100000) {
             shippingCost.innerHTML = parseFloat(0.20 * productPrice);
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
-            return false;
+           return true;
 
         } else {
             shippingCost.innerHTML = 25000;
