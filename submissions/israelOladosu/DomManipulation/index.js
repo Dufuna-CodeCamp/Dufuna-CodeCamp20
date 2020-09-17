@@ -4,7 +4,7 @@ let submitForm = document.getElementById("validateForm"),
   total_cost = document.getElementById("total_cost"),
   price = document.getElementById("price");
 
-const RegEx = /^[0-9]$/;
+const regularEx = /^[0-9]$/;
 
 function shippingCost(cost) {
   if (+cost < 1000) {
@@ -36,7 +36,7 @@ submitForm.addEventListener("submit", function (e) {
   if (qty.value === "") {
     e.preventDefault();
     return false;
-  } else if (qty.value < 0 || !RegEx.test(qty.value)) {
+  } else if (qty.value < 0 || !regularEx.test(qty.value)) {
     field.nextElementSibling.innerHTML = "please enter a valid quantity";
     e.preventDefault();
     return false;
