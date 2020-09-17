@@ -77,6 +77,15 @@ input {
     font-size: 13px;
 }
 
+.oxford button:disabled {
+    background:#b1b1b1;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 13px;
+}
+
 .oxford {
     display: flex;
     flex-direction: column;
@@ -114,7 +123,7 @@ img {
 }
 
 .error-block {
-    font-size: 17px;
+    font-size: 13px;
     color: red;
     padding: 0;
 }
