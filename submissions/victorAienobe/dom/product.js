@@ -24,9 +24,9 @@ function cost(event) {
 function shipping() {
     if(price.innerHTML < 1000) {
         shipCost.innerHTML = 100;
-    } else if(price.innerHTML >= 1000 && price.innerHTML < 20000) {
+    } else if(price.innerHTML >= 1000 && price.innerHTML <= 20000) {
         shipCost.innerHTML = 0.15 * price.innerHTML;
-    } else if(price.innerHTML >= 20000 && price.innerHTML < 100000) {
+    } else if(price.innerHTML > 20000 && price.innerHTML <= 100000) {
         shipCost.innerHTML = 0.2 * price.innerHTML;
     } else {
         shipCost.innerHTML = 25000;
