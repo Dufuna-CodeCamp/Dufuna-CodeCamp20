@@ -1,7 +1,7 @@
-let submit = document.getElementById('submit');
+let submit = document.getElementById('submit1');
 let newsLetter = document.getElementById('newsLetter');
 
-function valid(field, event) {
+function valide(field, event) {
     let regex = /[a-z0-9]+@[a-z]+\.com$/i;
     if (field.value === '') {
         field.nextElementSibling.innerHTML = "Please enter your Email Address";
@@ -18,7 +18,7 @@ function valid(field, event) {
 }
 
 function validate(e) {
-    valid(newsLetter, e);
+    valide(newsLetter, e);
     return true;
 }
 
