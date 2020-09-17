@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Page</title>
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/product.css">
 </head>
 <body>
@@ -34,7 +33,7 @@
   <section class="container">
     <div class="max">
      <div class="max-img">
-      <img src="img/ice5.png" alt="">
+      <img src="img/UCE2.png" alt="">
        </div>
 
    <div class="details">
@@ -85,11 +84,14 @@
         <li> <a href="#"> Terms and Conditions </a></li>
       </ul>
   </div>
-  <div>
-      <h3>Sign up for the Newsletter</h3>
-      <input type="text" placeholder=" Enter your mail address">
-      <button type="submit"> SUBMIT</button>
-  </div>
+  
+  <form id="newsletter">
+    <h3>Sign up for the Newsletter</h3>
+    <input type="text" placeholder=" Enter your mail address" id="email" >
+    <button type="submit"> SUBMIT</button><br><br>
+    <span class="error"></span>
+</form>
+  
   <div class="social">
       <h3>CONNECT WITH US</h3>
       <ul class="social-link">
@@ -100,9 +102,12 @@
        </ul>
   </div>
   </div>
-  
+  <br><br>
 <p>Copyright &copy; 2020, The Berry Ice-Cream.</p>
 </footer>
-     
-     
+
+
+<script src="../DOM/newletter.js"></script>   
+</body>     
+</html>
     

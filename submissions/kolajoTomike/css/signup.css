@@ -133,7 +133,10 @@ aside .form-page{
   border: none;
   font-size: 18px;
 }
-
+span{
+  color:white;
+  font-weight: bold;
+}
 
 footer{
   background-color:#00d1cf;

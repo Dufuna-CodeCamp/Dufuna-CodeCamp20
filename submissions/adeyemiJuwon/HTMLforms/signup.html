@@ -37,30 +37,37 @@
     <p class="reg-sign">Already got an account? <a href="#">Sign in</a></p>
   </div>
   <div class="signup-form">
-      <form>
-        <fieldset>
-          <div class="signup-input">
-            <label for="firstName">First Name</label><br>
-            <input type="text" id="firstName" name="firstName" placeholder=""><br>
-            <label for="LastName">Last Name</label><br>
-            <input type="text" id="lastName" name="lastName" placeholder=""><br>
-            <label for="OtherNames">Other Names</label><br>
-            <input type="text" id="otherNames" name="otherNames" placeholder=""><br>
-            <label for="phoneNumber"> Phone Number</label><br>
-            <input type="number" placeholder="" id="phoneNumber" name="phoneNubmer"> <br>
-            <label for="email">Email</label><br>
-            <input type="text" placeholder="" name="email" id="email"><br>
-            <label for="password">Password</label><br>
-            <input type="password" placeholder="" name="password" id="password"><br>
-            <label for="confirmPassword">Confirm Password</label><br>
-            <input type="password" placeholder="" name="confirmPassword" id="confirmPassword"><br>
-            <label>
-            <input type="checkbox" checked="checked" name="remember" id="checkbox-signup"><a href="#"> I agree to the Terms and Conditions</a>
-            </label><br>
-            <button type="submit">SIGN UP</button><br> <br>
-          </div>
-      </fieldset>
-    </form>
+    <form id="signup">
+      <fieldset>
+        <div class="signup-input">
+          <label for="firstName">First Name</label><br>
+          <input type="text" id="firstName" name="firstName" placeholder="">
+          <span class="error"></span><br>
+          <label for="LastName">Last Name</label><br>
+          <input type="text" id="lastName" name="lastName" placeholder="">
+          <span class="error"></span><br>
+          <label for="OtherNames">Other Names</label><br>
+          <input type="text" id="otherNames" name="otherNames" placeholder="">
+          <span class="error"></span><br>
+          <label for="phoneNumber"> Phone Number</label><br>
+          <input type="number" placeholder="" id="phoneNumber" name="phoneNubmer">
+          <span class="error"></span><br>
+          <label for="email">Email</label><br>
+          <input type="email" placeholder="" name="email" id="emailSignup">
+          <span class="error"></span><br>
+          <label for="password">Password</label><br>
+          <input type="password" placeholder="" name="password" id="password">
+          <span class="error"></span><br>
+          <label for="confirmPassword">Confirm Password</label><br>
+          <input type="password" placeholder="" name="confirmPassword" id="confirmPassword">
+          <span class="error"></span><br>
+          <label>
+          <input type="checkbox"  name="remember" id="checkbox-signup">
+          <label for="checkbox"> <a href="#"> I agree to the Terms and Conditions</a></label><br>
+          <button type="submit">SIGN UP</button><br> <br>
+        </div>
+    </fieldset>
+  </form>
   </div>
 </div>
 </section>
@@ -92,6 +99,7 @@
   </div>
     <p>Copyright &copy; 2020, Martha's Living Brands.</p>
 </footer> 
+<script src="../dom/signup.js"></script>
 <script src="../dom/newsletter.js"></script>
 </body>
 </html>

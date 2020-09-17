@@ -50,7 +50,6 @@ a[href*="#"] {
 
 .account {
     width: 250px;
-   /* height: 122px; */
     font-size: 40px;
     font-weight: bold;
     color: olive;
@@ -118,8 +117,9 @@ img {
 }
 
 .error-block {
-    font-size: 14px;
+    font-size: 17px;
     color: red;
+    padding: 0;
 }
 
 footer p {
@@ -128,8 +128,8 @@ footer p {
     margin: auto;
 }
 
-.footer div {
-    padding: 15px 150px -1px 40px ;
+.footer > div {
+    padding: 9px 100px 13px 20px ;
 }
 
 footer ul {
@@ -144,28 +144,34 @@ footer {
 
 .connect p {
     margin: 0;
+    text-align: left;
 }
 
 .connect {
     margin-top: 0;
 }
 
-.newsletter {
+.newsletterSignup {
     margin-top: 10px;
-    padding: 15px 0;
     font-size: 20px;
+    padding-left: 25px;
 }
 
-.newsletter input {
+.newsletterSignup input {
     width: 250px;
     height: 40px;
     font-size: 15px;
 }
 
-.newsletter button {
+.newsletterSignup button {
     color: olive;
     font-weight: bold;
     height: 40px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (min-width: 640px) {
@@ -232,13 +238,12 @@ footer {
         width: 100%;
     }
 
-    .footer div {
+    .footer > div {
         padding: 50px 140px 0 40px ;
     }
 
-    .newsletter {
-        margin-top: 10px;
-        padding: 15px;
+    .newsletterSignup {
+        padding: 48px 140px 0 70px;
         font-size: 20px;
     }
 }
@@ -302,13 +307,12 @@ footer {
         margin-left: 148px;
     }
 
-    .footer div {
+    .footer > div {
         padding: 50px 150px 0 40px ;
     }
 
-    .newsletter {
-        margin-top: 10px;
-        padding: 15px;
+    .newsletterSignup {
+        padding: 48px 140px 0 45px;
         font-size: 20px;
     }
 }

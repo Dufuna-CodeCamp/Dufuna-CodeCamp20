@@ -151,6 +151,10 @@ button:hover{
 }
 
 
+span{
+  color:white;
+  font-weight: bold;
+}
 footer{
   background-color:#00d1cf;
   margin-top:50px;

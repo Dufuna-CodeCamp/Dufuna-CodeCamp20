@@ -23,7 +23,10 @@ header .logo{
 	height: inherit;
 	margin-left: 20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 206fb44699b841259e72957f11a8188df879eb21
 header .logo-text{
 	margin: 9px;
 }
@@ -71,7 +74,10 @@ header ul li a:hover {
     text-align: center;
     border:1px solid grey;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 206fb44699b841259e72957f11a8188df879eb21
 .contact-form h1{
 	margin-top: 0;
 	font-weight: 200;
@@ -211,12 +217,20 @@ header ul li a:hover {
 @media screen and (max-width: 768px){
 	.contact-form{
 		width: 95%;
+<<<<<<< HEAD
 		padding:10px;
+=======
+		padding: 10px;
+>>>>>>> 206fb44699b841259e72957f11a8188df879eb21
 		margin:10px 20px 10px 0;
 	}
 	.content .contact-content{
 	width: 100%;
+<<<<<<< HEAD
 	padding: 0;
+=======
+	padding:0;
+>>>>>>> 206fb44699b841259e72957f11a8188df879eb21
 	margin: 0;
 }
 .content .contact-content .social-media{
@@ -244,7 +258,11 @@ header ul li a:hover {
 	font-size: 16px;
 }
 ul .nav{
+<<<<<<< HEAD
 	margin-left: 40px;
+=======
+	margin-left:40px;
+>>>>>>> 206fb44699b841259e72957f11a8188df879eb21
 	padding:0;
 	list-style: none;
 }
@@ -285,6 +303,10 @@ ul .nav{
   header .logo-text{
 	font-size: 20px;
 }	
+<<<<<<< HEAD
+=======
+
+>>>>>>> 206fb44699b841259e72957f11a8188df879eb21
   header ul li a{
 	padding: 0;
 	font-size: 16px;	
