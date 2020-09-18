@@ -218,6 +218,9 @@ footer p{
     display: inline-block;
     margin-left: 12px;
 }
+.err{
+  color:red ;
+}
 /* Media querries */
 
 @media screen and (max-width:1088px){
