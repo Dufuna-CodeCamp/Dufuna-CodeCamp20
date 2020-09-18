@@ -13,7 +13,7 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
     event.preventDefault();
     return false;
   }
-  if (!field.value.match(regExp)) {
+ else if (!field.value.match(regExp)) {
     field.nextElementSibling.innerHTML = errorMess2;
     event.preventDefault();
     return false;
@@ -32,7 +32,7 @@ function passwordValidation(password1, password2, event) {
     event.preventDefault();
     return false;
   }
-  if (
+ else if (
     !(password1.value.match(passwordRegex)) &&
     !(password2.value.match(passwordRegex))
   ) {
@@ -43,7 +43,7 @@ function passwordValidation(password1, password2, event) {
     event.preventDefault();
     return false;
   }
-  if (password1.value !== password2.value) {
+  else if (password1.value !== password2.value) {
     password1.nextElementSibling.innerHTML = "Password don't match!";
     password2.nextElementSibling.innerHTML = "Password don't match!";
     event.preventDefault();
