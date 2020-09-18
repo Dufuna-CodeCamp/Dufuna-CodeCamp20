@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div id="nav-branding">
+                <h2>TARIES EMPIRE</h2>
+                <p>...bringing you Africans' Luxury 'n' style </p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../HTML/index.html">Product Page</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <main>
+            <h1>Register your Account</h1>
+            <p>Registering your account gives you access to discount, promo and events available only to registered customers. </p>
+            <p>
+                Already have an account?<span><a href="login.html"> LOGIN</a></span>
+            </p>
+        </main>
+        <aside>
+            <form id=validateForm action="#">
+                <div class="form-details">
+                    <label for="firstName">First Name</label>
+                    <br>
+                    <input type="text" name="firstName" id="firstName" maxlength="50">
+                    <span class="error-block"></span>
+                    <br>
+                    <label for="lastName">Last Name</label>
+                    <br>
+                    <input type="text" name="lastName" id="lastName" maxlength="50">
+                    <span class="error-block"></span>
+                    <br>
+                    <label for="otherName">Other Names</label>
+                    <br>
+                    <input type="text" name="otherName" id="otherName" maxlength="50">
+                    <span class="error-block"></span>
+                    <br>
+                    <label for="phoneNumber">Phone Number</label>
+                    <br>
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                    <span class="error-block"></span>
+                    <br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                    <span class="error-block"></span>
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password" id="password">
+                    <span class="error-block"></span>
+                    <br>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <br>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    <span class="error-block"></span>
+                    <br>
+                    <input type="checkbox" name="terms-conditions" id="terms-conditions">
+                    <label for="terms-conditions">I agree to the Terms and conditions</label>
+                    <span class="error-block"></span>
+                    <br>
+                    <span class="error-block"></span><br>
+                    <button type="submit" name="submit_form" id="submit_form">SIGN UP</button>
+                </div>
+            </form>
+
+        </aside>
+    </section>
+    <footer>
+        <div class="footer-box">
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-box-2">
+            <form id="requiredField">
+                <label for="newsletters">Sign up for our Newsletter</label>
+                <br>
+                <input type="email" name="newsletters" id="newsletter" placeholder="Enter your email address">
+                <button type="submit">SUBMIT</button><br>
+                <span class="errorMessage"></span>
+            </form>
+        </div>
+        <div class="footer-box-3">
+            <h5>CONNECT WITH US</h5>
+            <ul>
+                <li>
+                    <a href="#"><img src="../HTML/img/facebook-logo.png" alt="Faacebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/twitter-logo.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/gmail-logo.png" alt="Gmail"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../HTML/img/youtube.png" alt="Youtube"></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <p>Copyright &copy; 2020, Taries Empire All rights reserved</p>
+    </footer>
+
+    <script src="../domManipulation/signUp.js"></script>
+    <script src="../domManipulation/newsletter.js"></script>
+
+</body>
+
+</html>

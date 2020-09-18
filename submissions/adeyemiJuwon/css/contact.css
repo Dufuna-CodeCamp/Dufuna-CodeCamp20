@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=PT+Sans:ital@0;1&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: oswald, PT sans, sans-serif;
+}
+/**********************************
+  HEADING
+  ***********************************/
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 166, 95);
+    color:black;
+    align-items: center;
+
+}
+ .logo{
+    margin-right:auto;
+}
+.navbar-link{
+    list-style: none;
+}
+.navbar-link li {
+    display: inline-block;
+    line-height: 19px;
+    font-size: 20px;
+    margin-right: 86px;
+    color:black;
+}
+.navbar-link a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-link li a:hover{
+    color: white;
+}
+
+/**********************************
+  PAGE:CONTACT
+  ***********************************/
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-us{
+    margin-top: 119px;
+}
+.contact h3{
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.25px;
+    text-align: center;
+}
+
+.contact-list{
+    text-align: center;
+    list-style: none;
+    margin-top: 10px;
+    
+}
+.contact-list a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.social-contact{
+    margin: 20px auto;
+    display: table;
+    
+}
+
+.social-contact li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.img-contact{
+    display: block;
+    margin: 20px auto 15px auto ;
+}
+.contact-form input{
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    line-height: 30px;
+}
+textarea{
+    width: 500px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+.contact-form fieldset{
+    margin: 72px 55px 36px 0;
+    padding: 24px 66px 10px 47px;
+}
+.contact-form h3{
+    margin: 25px 66px 43px 72px;
+}
+.contact-form img{
+    display: block;
+    margin: 24px auto 0 auto;
+}
+.contact-form label{
+    font-size: 20px;
+    line-height: 30px;
+}
+.contact-send{
+    border-radius: 4px;
+    margin: 19px 0px 32px 400px;
+}
+
+.contact-form .contact-send{
+    width: 113px;
+    background-color:rgb(255, 166, 95) ;
+}
+
+/**********************************
+  FOOTER
+  ***********************************/
+footer{
+    background-color:rgb(255, 166, 95) ;
+}
+.footer-link{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 37px;
+    flex-wrap: wrap;
+
+}
+.footer-link ul {
+    list-style: none;
+}
+.footer-link ul li{
+    color: white;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-link ul a{
+    text-decoration: none;
+    color: white;
+}
+.footer-link input{
+    width: 253px;
+    height: 44px;
+    line-height: 19px;
+    font-size: 16px;
+    color: rgb(255, 166, 95) ;
+}
+.footer-link button{
+    width: 108px;
+    height: 44px;
+    font-size:18px;
+    line-height: 22px;
+    margin-top: 9px;
+    color: rgb(255, 166, 95) ;;
+}
+.error{
+    color: rgb(209, 21, 21);
+    font-size:16px;
+    display: block;
+}
+.error-message{
+    color: rgb(209, 21, 21);
+    font-size:16px;
+}
+footer p{
+text-align: center;
+color: #fff;
+}
+.social-link{
+    margin-top: 13px;
+    margin-left: auto;
+}
+.social h3, .footer-link h3{
+    color: white;
+}
+.social-link li{
+    display: inline-block;
+    margin-left: 12px;
+}
+
+
+/**********************************
+  RESPONSIVENESS
+  ***********************************/
+
+
+@media screen and ( max-width:1085px ){
+
+    
+   /**********************************
+  HEADING
+  ***********************************/
+    header{
+        flex-flow:wrap;
+        justify-content: flex-end;
+    
+    }
+    .navbar-link li{
+        margin: 15px;
+    }
+    
+
+/**********************************
+  PAGE: CONTACT
+  ***********************************/
+.contact{
+    flex-wrap: nowrap;
+    flex-flow: column;
+}
+.contact-us{
+    margin-top: 20px;
+}
+.contact-form fieldset{
+    margin: 20px 30px 17px 30px ;
+    padding: 0 30px;
+    border-radius: 10px; 
+}
+
+}
+
+@media screen and ( max-width:600px ) {
+
+
+/**********************************
+  HEADER
+***********************************/
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar-link li {
+        display: block;
+        text-align: left;
+        line-height: 19px;
+        font-size: 16px;
+        margin-left:10px ;
+        color:black;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+   
+    /**********************************
+  PAGE: CONTACT
+  ***********************************/
+  .contact{
+      flex-flow: column;
+  }
+  
+  .contact h3{
+    font-size: 20px;
+    line-height: 15px;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+.contact-list a{
+    font-size: 16px;
+}
+  .img-contact{
+    width: 30px;
+}
+
+.social-contact img{
+    width: 40px;
+}
+.social-contact{
+    margin: 10px auto;
+}
+.contact-form input{
+    width: 350px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 10px;
+    line-height: 15px;
+}
+.contact-form fieldset{
+    margin: 30px 10px 15px 10PX;
+    padding: 10px 20px 10px 40px;
+}
+.contact-form h3{
+    margin: 10px 30px 15px 20px;
+}
+.contact-form img{
+    display: block;
+    margin: 24px auto 0 auto;
+    width: 30px;
+}
+.contact-form label{
+    font-size: 20px;
+    line-height: 30px;
+}
+.contact-send{
+    border-radius: 4px;
+    margin: 19px 0px 32px 300px;
+}
+
+.contact-form .contact-send{
+    width: 50px;
+}
+textarea{
+    width: 350px;
+    height: 100px;
+}
+  
+/**********************************
+         FOOTER
+***********************************/
+.footer-link{
+    display: block;
+    margin-left: 15px;
+}
+.social h3{
+    margin-top: 20px;
+}
+.social-link li{
+    margin-right: 5px;
+}
+    
+}
