@@ -22,20 +22,6 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
   }
 }
 
-function confirmPasswordValidation(event) {
-  if (confirmPassword.value === "") {
-    confirmPassword.nextElementSibling.innerHTML = "Please confirm your Password";
-    event.preventDefault();
-  } else if (!(password.value == confirmPassword.value)) {
-    confirmPassword.nextElementSibling.innerHTML = "Your password don't match";
-    event.preventDefault();
-    return false;
-  } else {
-    confirmPassword.nextElementSibling.innerHTML = "";
-    return true;
-  }
-}
-
 
 // form field validation
 function formValidation(event) {
@@ -80,7 +66,13 @@ function formValidation(event) {
     "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number",
     event
   );
-  confirmPasswordValidation(event);
+  validation(
+    confirmPassword,
+    passwordRegex,
+    "Please confirm your Password",
+    "Your password don't match",
+    event
+  );
 
   return true;
 }
