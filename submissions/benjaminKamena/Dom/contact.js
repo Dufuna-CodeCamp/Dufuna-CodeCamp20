@@ -38,10 +38,10 @@ function messageSubjectValidation(field, event, error){
 }
 
 function contactValidation(event){
-    messageSubjectValidation(subject, event, "Please enter a message subject");
-    messageSubjectValidation(message, event, "Please enter your Message");
     fieldValaidation(fullName, event, nameRegex, "Please enter your Name","Please name should contain letters only");
     fieldValaidation(email, event, emailRegex, "Please enter your Email Address", "Please enter a valid email");
+    messageSubjectValidation(subject, event, "Please enter a message subject");
+    messageSubjectValidation(message, event, "Please enter your Message");
 
     return true;
 }
