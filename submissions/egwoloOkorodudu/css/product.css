@@ -90,7 +90,7 @@ body{
    overflow: hidden;
 }
 .looks2 h1{
-  text-align: center; 
+  text-align: center;
 }
 .related-product img{
    width: 170px;
@@ -111,7 +111,7 @@ body{
 text-align: center;
 font-weight: bold;
 margin: 0;
-padding: 0; 
+padding: 0;
 }
 /*---this is footer section---*/
 .foot{
@@ -162,7 +162,7 @@ font-size: 17px;
   display: block;
   text-align: left;
   padding: 4px;
-} 
+}
 .header-right{
   float: none;
 }
@@ -175,7 +175,7 @@ font-size: 17px;
  }
  .desscribe{
 width: 90%;
-} 
+}
 /*for footer*/
 .left-content
 .middle-content
