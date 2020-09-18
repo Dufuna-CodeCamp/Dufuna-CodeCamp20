@@ -147,6 +147,11 @@ button:hover{
   text-align: center;
   color: #000;
 }
+
+span{
+  color:white;
+  font-weight: bold;
+}
 footer{
   background-color:#00d1cf;
 }

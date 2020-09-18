@@ -147,7 +147,10 @@ footer{
 }
 .error{
     color: rgb(209, 21, 21);
+        display: block;
+        margin-left: 41px;
 }
+
 footer p{
 text-align: center;
 color: #fff;

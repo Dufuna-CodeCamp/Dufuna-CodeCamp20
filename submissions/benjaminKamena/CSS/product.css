@@ -234,6 +234,11 @@ footer {
         padding: 3px 18px 3px;
         font-size: 14px;
       }
+
+.error-block span{
+        font-size: 12px;
+        color: red;
+      }
       .footer-links button{
         height: 30px;
         padding: 0 5%;
