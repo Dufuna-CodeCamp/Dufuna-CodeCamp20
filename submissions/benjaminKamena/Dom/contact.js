@@ -5,12 +5,28 @@ let contactForm = document.getElementById("contact"),
     email = document.getElementById("email"),
     subject = document.getElementById("subject"),
     message = document.getElementById("message"),
-    nameRegex = "/^(a-z|A-Z|0-9)*[^#$%^&*()']*$/",
+    nameRegex = "/^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/",
     emailRegex = "/^+([]?+)*@+([-]?+)*({2,3})+$/";
 
 
-function required(field, error, event){
-    if(field.value == ""){
+function fieldValaidation(field, event, regex, error_1, error_2){
+    if(field.value === ""){
+        field.nextElementSibling.innerHTML = error_1;
+        event.preventDefault();
+        return false;
+    } else if(!field.value.match(regex)){
+        field.nextElementSibling.innerHTML = error_2;
+        event.preventDefault();
+        return false;
+    } else {
+        field.nextElementSibling.innerHTML = "";
+        return false;
+    }
+}
+
+
+function messageSubjectValidation(field, event, error){
+    if(field.value === ""){
         field.nextElementSibling.innerHTML = error;
         event.preventDefault();
         return false;
@@ -18,26 +34,14 @@ function required(field, error, event){
         field.nextElementSibling.innerHTML = "";
         return true;
     }
-}
 
-function emailNameValidation(field, error, regex, event){
-    if(!field.value.match(regex)){
-        field.nextElementSibling.innerHTML = error;
-        event.preventDefault();
-        return false;
-    } else{
-        field.nextElementSibling.innerHTML = "";
-        return false;
-    }
 }
 
 function contactValidation(event){
-    required(fullName,"Please enter your Name", event)
-    required(email, "Please enter your Email Address", event);
-    required(subject, "Please enter a message subject", event);
-    required(message, "Please enter your Message", event);
-    emailNameValidation(fullName,"Please name should contain letters only", nameRegex, event);
-    emailNameValidation(email, "Please enter a valid email", emailRegex, event);
+    messageSubjectValidation(subject, event, "Please enter a message subject");
+    messageSubjectValidation(message, event, "Please enter your Message");
+    fieldValaidation(fullName, event, nameRegex, "Please enter your Name","Please name should contain letters only");
+    fieldValaidation(email, event, emailRegex, "Please enter your Email Address", "Please enter a valid email");
 
     return true;
 }
