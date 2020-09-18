@@ -12,8 +12,7 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
     field.nextElementSibling.innerHTML = errorMess1;
     event.preventDefault();
     return false;
-  }
- else if (!field.value.match(regExp)) {
+  } else if (!field.value.match(regExp)) {
     field.nextElementSibling.innerHTML = errorMess2;
     event.preventDefault();
     return false;
@@ -23,43 +22,27 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
   }
 }
 
-function passwordValidation(password1, password2, event) {
-  const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
-
-  if ((password1.value && password2.value) === "") {
-    password1.nextElementSibling.innerHTML = "Please enter your password";
-    password2.nextElementSibling.innerHTML = "Please confirm your password";
+function confirmPasswordValidation(event) {
+  if (confirmPassword.value === "") {
+    confirmPassword.nextElementSibling.innerHTML = "Please confirm your Password";
     event.preventDefault();
-    return false;
-  }
- else if (
-    !(password1.value.match(passwordRegex)) &&
-    !(password2.value.match(passwordRegex))
-  ) {
-    password1.nextElementSibling.innerHTML =
-      "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number";
-    password2.nextElementSibling.innerHTML =
-      "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number";
-    event.preventDefault();
-    return false;
-  }
-  else if (password1.value !== password2.value) {
-    password1.nextElementSibling.innerHTML = "Password don't match!";
-    password2.nextElementSibling.innerHTML = "Password don't match!";
+  } else if (!(password.value == confirmPassword.value)) {
+    confirmPassword.nextElementSibling.innerHTML = "Your password don't match";
     event.preventDefault();
     return false;
   } else {
-    password1.nextElementSibling.innerHTML = "";
-    password2.nextElementSibling.innerHTML = "";
+    confirmPassword.nextElementSibling.innerHTML = "";
     return true;
   }
 }
+
 
 // form field validation
 function formValidation(event) {
   const nameRegex = /^[a-zA-Z]/,
     phoneRegex = /^[\+]?[0-9]{8,14}$/i,
-    emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+    emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/,
+    passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
 
   validation(
@@ -90,7 +73,14 @@ function formValidation(event) {
     "Please enter a valid Email",
     event
   );
-   passwordValidation(password, confirmPassword, event);
+  validation(
+    password,
+    passwordRegex,
+    "Please enter your password",
+    "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number",
+    event
+  );
+  confirmPasswordValidation(event);
 
   return true;
 }
