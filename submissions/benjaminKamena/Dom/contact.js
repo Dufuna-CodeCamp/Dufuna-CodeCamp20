@@ -6,7 +6,7 @@ let contactForm = document.querySelector('#contact'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message'),
     nameRegex = "/^([a-zA-Z0-9]+|[a-zA-Z0-9]+{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+{1}[a-zA-Z0-9]{3,}{1}[a-zA-Z0-9]{1,})$/",
-    emailRegex = "/^+([-]?+)*@+([-]?\w+)*({2,6})+$/";
+    emailRegex = "/^+([-]?+)*@+([-]?+)*({2,6})+$/";
     
 
 
