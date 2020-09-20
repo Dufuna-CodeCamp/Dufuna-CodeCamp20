@@ -1,32 +1,32 @@
 // contact validation
 
-let contactForm = document.getElementById("contact"),
-    fullName = document.getElementById("fullName"),
-    email = document.getElementById("email"),
-    subject = document.getElementById("subject"),
-    message = document.getElementById("message"),
-    nameRegex = "/^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/",
-    emailRegex = "/^+([]?+)*@+([-]?+)*({2,3})+$/";
+let contactForm = document.querySelector('#contact'),
+    fullName = document.getElementById('fullName'),
+    email = document.getElementById('email'),
+    subject = document.getElementById('subject'),
+    message = document.getElementById('message'),
+    nameRegex = "/^([a-zA-Z0-9]+|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{3,}\s{1}[a-zA-Z0-9]{1,})$/",
+    emailRegex = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/";
+    
 
 
-function fieldValaidation(field, event, regex, error_1, error_2){
-    if(field.value === ""){
+function fieldValaidation(event, field, fieldRegex, error_1, error_2){
+    if(field.value === ''){
         field.nextElementSibling.innerHTML = error_1;
         event.preventDefault();
         return false;
-    } else if(!field.value.match(regex)){
+    } else if(!field.value.match(fieldRegex)){
         field.nextElementSibling.innerHTML = error_2;
         event.preventDefault();
-        return false;
+        return false;  
     } else {
         field.nextElementSibling.innerHTML = "";
-        return false;
+        return true;
     }
 }
 
-
-function messageSubjectValidation(field, event, error){
-    if(field.value === ""){
+function messageSubjectValidation(event, field, error){
+    if(field.value === ''){
         field.nextElementSibling.innerHTML = error;
         event.preventDefault();
         return false;
@@ -37,12 +37,11 @@ function messageSubjectValidation(field, event, error){
 
 }
 
-function contactValidation(event){
-    fieldValaidation(fullName, event, nameRegex, "Please enter your Name","Please name should contain letters only");
-    fieldValaidation(email, event, emailRegex, "Please enter your Email Address", "Please enter a valid email");
-    messageSubjectValidation(subject, event, "Please enter a message subject");
-    messageSubjectValidation(message, event, "Please enter your Message");
-
+function contactValidation(e){
+    fieldValaidation(e, fullName, nameRegex, "Please enter your Name", "Please name should contain letters only");
+    fieldValaidation(e, email, emailRegex, "Please enter your Email Address", "Please enter a valid email");
+    messageSubjectValidation(e, subject,"Please enter a message subject");
+    messageSubjectValidation(e, message, "Please enter your Message");
     return true;
 }
 
