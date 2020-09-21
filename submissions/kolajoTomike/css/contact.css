@@ -91,6 +91,10 @@ aside{
   margin-left: 20px;
 }
 
+.error{
+  color:red;
+}
+
 #details{
   overflow: hidden;
   padding: 20px;

@@ -1,7 +1,6 @@
     let form = document.getElementById("signup_form"),
     firstName = document.getElementById("firstName"),
     lastName = document.getElementById("lastName"),
-    otherName= document.getElementById("otherName")
     phoneNumber = document.getElementById("phoneNumber"),
     formEmail = document.getElementById("formEmail"),
     password = document.getElementById("password"),
@@ -24,17 +23,13 @@
     }
   }
   
-  
-  // form field validation
-  function formValidation(event) {
+    // form field validation
+    function formValidation(event) {
     const nameRegex = /^[a-zA-Z]/,
       phoneRegex = /^[\+]?[0-9]{8,14}$/i,
       emailRegex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,10})+$/,
       passwordRegex = /(?=.\d)(?=.[a-z])(?=.*[a-zA-Z]).{6,}$/;
-  
-  
-  
-    validation(
+  validation(
       firstName,
       nameRegex,
       "Please enter your First Name",
@@ -69,7 +64,6 @@
         "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number",
         event
        );
-       
        validation(
          confirmPassword,
          passwordRegex,
@@ -77,8 +71,7 @@
          "Your password don't match",
          event
        );
-
-    return true;
+        return true;
   }
   
   form.addEventListener("submit", formValidation);
