@@ -18,7 +18,3 @@ let emailRegex = /^\w+[\w-]*\@\w+((-\w+)|(\w*))[a-z]{2,3}$/;
        
     }
     submitForm.addEventListener('submit', validateForm);
-
-
-
-    
