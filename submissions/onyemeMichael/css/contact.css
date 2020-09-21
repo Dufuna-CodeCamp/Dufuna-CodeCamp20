@@ -107,6 +107,14 @@ body {
     width: 95%;
     margin:auto;
  }
+
+ section form .error-block {
+   font-size: 0.8em;
+   color: red;
+   display: block;
+   text-align: left;
+ }
+ 
  .act {
    float: left;
    width: 40%;
@@ -177,7 +185,7 @@ body {
 
 }
 
- input[type=submit] {
+ button[type=submit] {
     background-color:#f77b00;
     border-radius: 4px;
     color: white;
