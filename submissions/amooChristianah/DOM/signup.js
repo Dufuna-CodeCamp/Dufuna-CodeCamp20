@@ -28,7 +28,7 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
 // form field validation
 function formValidation(event) {
   const nameRegex = /^[a-zA-Z]/,
-    phoneRegex = /^[\+]?[0-9]{8,14}$/,
+    phoneRegex = /^[+]?[0-9]{8,14}$/,
     emailRegex = /^\w+([-]?\w+)@\w+([-]?\w+)(\w{2,10})+$/,
     passwordRegex = /(?=d)(?=.[a-z])(?=.*[a-zA-Z]).{6,}$/;
 validation(
