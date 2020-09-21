@@ -26,10 +26,10 @@
     // form field validation
     function formValidation(event) {
     const nameRegex = /^[a-zA-Z]/,
-      phoneRegex = /^[\+]?[0-9]{8,14}$/i,
-      emailRegex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,10})+$/,
-      passwordRegex = /(?=.\d)(?=.[a-z])(?=.*[a-zA-Z]).{6,}$/;
-  validation(
+      phoneRegex = /^[\+]?[0-9]{8,14}$/,
+      emailRegex = /^\w+([-]?\w+)@\w+([-]?\w+)(\w{2,10})+$/,
+      passwordRegex = /(?=d)(?=.[a-z])(?=.*[a-zA-Z]).{6,}$/;
+    validation(
       firstName,
       nameRegex,
       "Please enter your First Name",
