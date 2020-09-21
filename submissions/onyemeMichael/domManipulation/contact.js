@@ -7,7 +7,7 @@ let submitForm = document.getElementById("validateForm"),
 var regex = {
     name: /[A-Za-z]/,
     email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-};
+}
 
 //FullName Validation
 function nameValidation(event) {
@@ -19,7 +19,7 @@ function nameValidation(event) {
         fullName.nextElementSibling.nextElementSibling.innerHTML = "";
         return true;
     }
-};
+}
 
 var err = "Please enter your Email Addres",
     errMsg = "Please enter a valid Email";
@@ -38,7 +38,7 @@ function emailValidation(email, event, regex,err, errMsg) {
         email.nextElementSibling.nextElementSibling.innerHTML = "";
         return true;
     }
-};
+}
 
 subValidation = (event) => {
     if (!subject.value.match(regex)) {
@@ -49,7 +49,7 @@ subValidation = (event) => {
         subject.nextElementSibling.nextElementSibling.innerHTML = "";
         return true;
     }
-};
+}
 
 msgValidation = (event) => {
     if (!message.value.match(regex)) {
@@ -60,7 +60,7 @@ msgValidation = (event) => {
         message.nextElementSibling.nextElementSibling.innerHTML = "";
         return;
     }
-};
+}
 
 function validateForm(e) {
     nameValidation(e);
@@ -68,7 +68,7 @@ function validateForm(e) {
     subValidation(e);
     msgValidation(e);
     return true;
-};
+}
 
 submitForm.addEventListener("submit", validateForm);
 
@@ -88,7 +88,7 @@ submitForm.addEventListener("submit", validateForm);
 // var regEx = {
 //     name: /[A-Za-z]/,
 //     email: /([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i,
-//   };
+//   }
   
 // function contactFormValidation(field, regEx, err, errMsg, event){
 // 	 if(field.value == ''){
@@ -103,7 +103,7 @@ submitForm.addEventListener("submit", validateForm);
 //         field.nextElementSibling.nextElementSibling.innerHTML = "";
 //         return true;
 //     }
-// };
+// }
 
 // function validateForm(e){
 // 	contactFormValidation(fullName, regEx, fullNameMsg, fullNameMsg2, e);
@@ -111,6 +111,6 @@ submitForm.addEventListener("submit", validateForm);
 // 	contactFormValidation(subject, regEx, subjectMsg, subjectMsg, e);
 // 	contactFormValidation(message, regEx, msgInputError, msgInputError, e);
 //  	 return true;
-// };
+// }
 
 // submitForm.addEventListener("submit", validateForm);
