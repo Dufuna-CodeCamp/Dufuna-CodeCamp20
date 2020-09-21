@@ -7,8 +7,7 @@ let form = document.getElementById("signup_form"),
   confirmPassword = document.getElementById("confirm_password");
 
 function validation(field, regExp, errorMess1, errorMess2, event) {
-  event.preventDefault();
-  if (field.value === "") {
+   if (field.value === "") {
     field.nextElementSibling.innerHTML = errorMess1;
     event.preventDefault();
     return false;
