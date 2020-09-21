@@ -18,6 +18,7 @@ function contactValidation(field, regEx, error1, error2, event) {
     return true;
   }
 }
+
 function required(field, error, event) {
   if (field.value == "") {
     field.nextElementSibling.innerHTML = error;
@@ -30,7 +31,7 @@ function required(field, error, event) {
 }
 
 function contactFormValidation(event) {
-  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/,
+  const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
     nameRegex = /^[a-zA-Z]/;
   required(subject, "Please enter a message subject", event);
   required(textArea, "Please enter your Message", event);
