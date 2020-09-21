@@ -25,22 +25,45 @@
         </div>
         <div class="right-div">
             <fieldset>
-                <label for="First-name">First Name:</label>
-                <input type="text" name="first-name"><br>
-                <label for="last-name">Last Name:</label>
-                <input type="text" name="last-name"><br>
-                <label for="other-names">Other Names:</label>
-                <input type="text" name="other-names"><br>
-                <label for="phone-number">Phone Number:</label>
-                <input type="text" name="phone-number"><br>
-                <label for="email-address">Email Address</label>
-                <input type="email" name="email-address"><br>
-                <label for="password">Password:</label>
-                <input type="text" name="password"><br>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="text" name="confirm-password"><br>
-                <input type="checkbox" class="terms-box">I agree to the terms and conditions<br><hr>
-                <input type="submit" class="submit-btn" value="SIGN UP">
+                <div>
+                    <label for="First-name">First Name:</label>
+                    <input type="text" name="first-name" id="firstName">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="lastName">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="other-names">Other Names:</label>
+                    <input type="text" name="other-names" id="otherNames">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="text" name="phone-number" id="phone">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="email-address" id="email">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" id="password">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="text" name="confirm-password" id="confirmPass">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <input type="checkbox" class="terms-box">I agree to the terms and conditions<br><hr>
+                    <button class="submit-btn" id="submitBtn">SIGN UP</button>
+                </div>
             </fieldset>
         </div>
     </div>
@@ -71,5 +94,6 @@
             <p>All Rights Reserved</p>
         </div>
     </footer>
+<script src="../domManipulation/sign-up.js"></script>
 </body>
 </html>

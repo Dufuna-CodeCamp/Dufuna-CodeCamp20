@@ -146,6 +146,7 @@ li, a {
 fieldset {
     border-radius: 20px;
     padding: 21px;
+    line-height: 30px;
 }
 .right-div label {
     line-height: 30px;
@@ -202,4 +203,8 @@ hr {
 }
 footer {
     background-color: rosybrown;
+}
+.errorSpan {
+    color: red;
+    font-size: 12px;
 }
