@@ -6,7 +6,7 @@ let submitForm = document.getElementById("validateForm"),
 
 var regex = {
     name: /[A-Za-z]/,
-    email: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    email:/^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
 }
 
 //FullName Validation
