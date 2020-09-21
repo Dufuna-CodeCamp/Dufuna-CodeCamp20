@@ -1,4 +1,0 @@
-Hello world!
-My name is Damisi Mahmood.
-
-I have been able to push my first git task
