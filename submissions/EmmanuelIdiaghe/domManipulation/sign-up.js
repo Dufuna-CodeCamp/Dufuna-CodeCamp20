@@ -1,6 +1,5 @@
 let firstName   = document.getElementById('firstName'),
     lastName    = document.getElementById('lastName'),
-    otherNames  = document.getElementById('otherNames'),
     phone       = document.getElementById('phone'),
     email       = document.getElementById('email'),
     password    = document.getElementById('password'),
@@ -10,7 +9,7 @@ let firstName   = document.getElementById('firstName'),
     errorMsg    = "",
     nameRegexMatch  = /^[A-Za-z]*$/,
     phoneRegexMatch = /[+][0-9]*$/,
-    emailRegexMatch = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/,
+    emailRegexMatch = /^([a-zA-Z0-9_.\-]+)@([a-zA-Z0-9_.\-]+)\.([a-zA-Z]{2,5})$/,
     passRegexMatch  = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$&+,:;=?@#|'<>.^*()%!-])[0-9a-zA-Z$&+,:;=?@#|'<>.^*()%!-]{8,}$/;
 
 function required(field, event) {
