@@ -4,14 +4,12 @@ let submitForm = document.getElementById("validateForm"),
     subject = document.getElementById("subject"),
     message = document.getElementById("message");
 
-var regex = {
-    name: /[A-Za-z]/,
-    email:/^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
-}
+var regexName = /[A-Za-z]/,
+    regexEmail = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/;
 
 //FullName Validation
 function nameValidation(event) {
-    if (!fullName.value.match(regex)) {
+    if (!fullName.value.match(regexName)) {
         fullName.nextElementSibling.nextElementSibling.innerHTML = "Please enter your Name";
         event.preventDefault();
         return false;
@@ -25,12 +23,12 @@ var err = "Please enter your Email Addres",
     errMsg = "Please enter a valid Email";
 
 //Email Validation
-function emailValidation(email, event, regex,err, errMsg) {
+function emailValidation(email, event, regexEmail,err, errMsg) {
     if (email.value === '') {
         email.nextElementSibling.nextElementSibling.innerHTML = err;
         event.preventDefault();
         return false;
-    } else if(!(email.value.match(regex))) {
+    } else if(!(email.value.match(regexEmail))) {
         email.nextElementSibling.nextElementSibling.innerHTML = errMsg;
         event.preventDefault();
         return false;
@@ -41,7 +39,7 @@ function emailValidation(email, event, regex,err, errMsg) {
 }
 
 subValidation = (event) => {
-    if (!subject.value.match(regex)) {
+    if (!subject.value.match(regexName)) {
         subject.nextElementSibling.nextElementSibling.innerHTML = "Please enter a Message Subject";
         event.preventDefault();
         return false;
@@ -52,7 +50,7 @@ subValidation = (event) => {
 }
 
 msgValidation = (event) => {
-    if (!message.value.match(regex)) {
+    if (!message.value.match(regexName)) {
         message.nextElementSibling.nextElementSibling.innerHTML = "Please enter your Message";
         event.preventDefault();
         return false;
@@ -64,7 +62,7 @@ msgValidation = (event) => {
 
 function validateForm(e) {
     nameValidation(e);
-    emailValidation(email, e, regex,err, errMsg);
+    emailValidation(email, e, regexEmail,err, errMsg);
     subValidation(e);
     msgValidation(e);
     return true;

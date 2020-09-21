@@ -236,7 +236,7 @@ body {
       height: 100px;
     }
 
-     input[type=submit]{
+     button[type=submit]{
       width: 40%;
       margin:0 140px;
       padding: 12px 20px;
@@ -257,7 +257,7 @@ body {
    padding-bottom: 10%;
 }
 
-   input[type=submit]{
+   button[type=submit]{
       width: 40%;
       margin:0 180px;
       padding: 12px 20px;
@@ -281,7 +281,7 @@ body {
          width: 85%;
          padding: auto;
      }
-     input[type=submit]{
+     button[type=submit]{
       width: 40%;
       margin:0 130px;
       padding: 12px 35px;
