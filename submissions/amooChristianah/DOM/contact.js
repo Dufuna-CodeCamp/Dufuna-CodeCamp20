@@ -37,7 +37,7 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
   // form field validation
 function formValidation(event) {
   const nameRegex = /^[a-zA-Z]/,
-        emailRegexp = /^\w+[\w-]*\@\w+((-\w+)|(\w*))[a-z]{2,3}$/;
+        emailRegexp = /^\w+[w-]*\w+((w+)|(w*))[a-z]{2,3}$/;
         required(subject , "Please enter a message subject" , event);
         required(message, "Please enter your Message", event);
 
