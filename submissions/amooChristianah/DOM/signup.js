@@ -23,9 +23,9 @@ function validation(field, regExp, errorMess1, errorMess2, event) {
 }
 
 
-
 // form field validation
 function formValidation(event) {
+  let passwordCode = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number"
   const nameRegex = /^[a-zA-Z]/,
     phoneRegex = /^[+]?[0-9]{8,14}$/,
     emailRegex = /^\w+([-]?\w+)@\w+([-]?\w+)(\w{2,10})+$/,
@@ -63,7 +63,7 @@ validation(
     password,
     passwordRegex,
     "Please enter your password",
-    "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number",
+    passwordCode,
     event
 
   );
@@ -71,7 +71,7 @@ validation(
     confirmPassword,
     passwordRegex,
       "Please confirm your password",
-      "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number",
+      passwordCode,
       event
   );
    passwordValidation(password, confirmPassword, event);
