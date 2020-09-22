@@ -4,7 +4,7 @@ let email = document.getElementById("email");
 let contactSubject = document.getElementById("subject");
 let contactMessage = document.getElementById("message");
 let validName = /^[A-Za-z]/;
-let validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+let validEmail = /^+([]?+)*@+([-]?+)*({2,6})+$/;
 let validSubject = /^[A-Za-z]/;
 let validMessage = /^[A-Za-z]/;
 let nameField = "Please enter Your Name";
@@ -14,7 +14,7 @@ let emailError = "Please enter a valid email address";
 let subjectField = "Please Enter a subject";
 let subjectError = "Enter selected subject";
 let messageField = "Please enter a Message";
-let messageError = "Message should contain only letters";
+let messageError = "Please enter a Message";
 
 
 const fieldContact = (field, fieldRegex,result, error, e) => {
