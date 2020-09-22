@@ -1,0 +1,4 @@
+Hello World,
+My name is Anthonia Adollo and I desire to become a significant player in AI and the future of work.
+
+I have been able to push my first task commit to GitHub
