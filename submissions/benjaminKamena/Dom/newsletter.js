@@ -1,10 +1,7 @@
-
-
+// newsletter validation
 let newsletterSubmitForm = document.getElementById("newsletterSignUp"),
     newsletter = document.getElementById("emailAddress"),
     newsletterRegex = "/^+([-]?+)*@+([-]?+)*({2,6})+$/";
-
-
 
 function newsletterValidation(event){
     if(newsletter.value === ""){
@@ -20,6 +17,5 @@ function newsletterValidation(event){
         return true;
     }
 }
-
 
 newsletterSubmitForm.addEventListener("submit", newsletterValidation);
