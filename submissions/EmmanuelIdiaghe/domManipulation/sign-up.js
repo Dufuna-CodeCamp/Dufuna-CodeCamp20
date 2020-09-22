@@ -13,7 +13,7 @@ let firstName       = document.getElementById('firstName'),
     errorMsg        = "",
     nameRegexMatch  = /^[A-Za-z]*$/,
     phoneRegexMatch = /[+][0-9]*$/,
-    emailRegexMatch = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z]{2,5})/,
+    emailRegexMatch = /^([a-zA-Z0-9_-]+)@([a-zA-Z0-9_-]+)\.([a-zA-Z]{2,5})$/,
     passRegexMatch  = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$&+,:;=?@#|'<>.^*()%!-])[0-9a-zA-Z$&+,:;=?@#|'<>.^*()%!-]{8,}$/;
 
 //Regular Expression to ensure strict compliance with input formats
