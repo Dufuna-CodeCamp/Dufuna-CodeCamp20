@@ -174,8 +174,14 @@ input[type =text]:hover {
    font-weight: bold;
 }
 
+#let {
+   width: 50%;
+   border-radius: 0px;
+   padding: 5px;
+}
+
 ::placeholder {
-   color: lightblue;
+   color: rgb(94, 85, 85);
 }
 .last {
     color: #ffffff;
