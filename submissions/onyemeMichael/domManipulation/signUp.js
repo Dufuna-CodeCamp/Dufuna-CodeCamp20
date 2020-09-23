@@ -8,7 +8,7 @@ let cpassword = document.getElementById('conPass');
 
 const nameRegex = /^[a-z]+$/i,
       phoneRegex = /^[+0-9]+$/i,
-      emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/,
+      emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
       passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
 function formValidation(field, regEx, errorMsg1, errorMsg2, event){
