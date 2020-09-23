@@ -109,6 +109,14 @@ img {
    padding: 30px 0;
    margin: auto;
 }
+
+section form .error-block {
+   font-size: 0.8em;
+   color: red;
+   display: block;
+   text-align: left;
+ }
+ 
 .act {
    float: left;
    width: 43%;
@@ -146,7 +154,7 @@ img {
    border-radius: 7px;
    padding: 10px;
 }
-input[type=submit] {
+button[type=submit] {
    background-color:#f77b00;
    border-radius: 5px;
    color: white;
