@@ -4,9 +4,8 @@ let quantity = document.getElementById("quantity"),
     shippingCost = document.getElementById("shippingCost"),
     total = document.getElementById("totalCost"),
     submit = document.getElementById("btn"),
-    perUnit = price.innerHTML,
-    productPrice = perUnit * quantity.value;
-
+    perUnitPrice = price.innerHTML,
+    productPrice = perUnitPrice * quantity.value;
 
 function quantityField(){
     let productRegex = /^[1-9]+[0-9]*$/;
@@ -19,46 +18,37 @@ function quantityField(){
     }
 }
 
-function priceField(){
-    if(quantity.value > 0){
-        productPrice = perUnit * quantity.value;
-        price.innerHTML = productPrice;
+function cost(){
+    shippingAmount();
+    if(quantity.value > 1){
+        productPrice = perUnitPrice * quantity.value;
+        totalCost.innerHTML = productPrice + shipping;
     } else{
-        return false;
+        totalCost.innerHTML = productPrice + shipping;
     }
 }
 
 function shippingAmount(){
+    productPrice = perUnitPrice * quantity.value;
     if(productPrice < 1000){
-        cost = 100;
-        shippingCost.innerHTML =  cost;
+        shipping = 100;
+        shippingCost.innerHTML =  shipping;
     } else if((productPrice >= 1000) && (productPrice <= 20000)){
-        cost = 0.15 * productPrice;
-        shippingCost.innerHTML =  cost;
+        shipping = 0.15 * productPrice;
+        shippingCost.innerHTML =  shipping;
     } else if((productPrice >= 20000) && (productPrice <= 100000)){
-        cost = 0.2 * productPrice;
-        shippingCost.innerHTML =  cost;
-    } else if(productPrice >= 100000){
-        cost = 25000;
-        shippingCost.innerHTML =  cost;
+        shipping = 0.2 * productPrice;
+        shippingCost.innerHTML =  shipping;
     } else{
+        shipping = 25000;
+        shippingCost.innerHTML =  shipping;
         return true;
     }
 }
 
-function totalCostAmount (){
-    if(quantity.value > 0){
-        total.innerHTML = cost + productPrice;
-    } else{
-        return true;
-    }
-}
-
-function costCalculationValidation(){
+function totalCostAmount(){
+    cost();
     quantityField();
-    priceField();
-    shippingAmount();
-    totalCostAmount();
 }
 
-quantity.addEventListener("input", costCalculationValidation)
+quantity.addEventListener("input", totalCostAmount)

@@ -87,6 +87,7 @@ ul li a{
   color: #fff;
   font-weight: bolder;
   font-size: large;
+  text-decoration: none;
 }
 .product {
   display: flex;
