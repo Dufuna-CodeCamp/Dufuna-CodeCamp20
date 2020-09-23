@@ -88,7 +88,7 @@ body{
   margin: 20px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid grey
+  border-bottom: 2px solid grey;
 }
 label{
   color: grey;
