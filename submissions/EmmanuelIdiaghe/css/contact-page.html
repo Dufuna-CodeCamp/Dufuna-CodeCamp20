@@ -40,15 +40,27 @@
                     <img class="message-icon" src="images/message-icon.jpg">
                     <h4>You could send us a message</h4><br>
                 </div>
-                <label for="full-name">Full Name:</label>
-                <input type="text" name="full-name"><br>
-                <label for="email-address">Email Address:</label>
-                <input type="text" name="email-address"><br>
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject"><br>
-                <label for="full-name">Message:</label><br>
-                <textarea cols="20" rows="5"  placeholder="please enter message here..."></textarea><br>
-                <input type="submit" class="submit-btn" value="SEND">
+                <div>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" name="full-name" id="fullName">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="email-address">Email Address:</label>
+                    <input type="text" name="email-address" id="emailAddress">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="full-name">Message:</label><br>
+                    <textarea cols="20" rows="5"  placeholder="please enter message here..." id="message"></textarea>
+                    <span class="errorSpan"></span>
+                </div>
+                <input type="submit" class="submit-btn" value="SEND" id="submitBtn">
             </fieldset>
         </div>
     </div>
@@ -79,5 +91,6 @@
             <p>All Rights Reserved</p>
         </div>
     </footer>
+    <script src="../domManipulation/contact-page.js"></script>
 </body>
 </html>
