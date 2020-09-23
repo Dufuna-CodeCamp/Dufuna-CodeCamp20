@@ -146,9 +146,9 @@ a{
     color: white;
  }
  
- #let {
+ #letter {
     width: 50%;
-    border-radius: 0px;
+    border-radius: 0;
     padding: 5px;
  }
 

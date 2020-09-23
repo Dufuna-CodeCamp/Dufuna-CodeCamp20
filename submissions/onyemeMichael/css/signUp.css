@@ -174,9 +174,9 @@ input[type =text]:hover {
    font-weight: bold;
 }
 
-#let {
+#letter {
    width: 50%;
-   border-radius: 0px;
+   border-radius: 0;
    padding: 5px;
 }
 
