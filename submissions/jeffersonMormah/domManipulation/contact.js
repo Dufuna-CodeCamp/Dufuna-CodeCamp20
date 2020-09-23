@@ -9,10 +9,8 @@ let nameField = "Please enter Your Name";
 let nameError = "It must contain only letters";
 let emailField = "Please enter your email address";
 let emailError = "Please enter a valid email address";
-let subjectField = "Please Enter a subject";
-let subjectError = "Enter selected subject";
-let messageField = "Please enter a Message";
-let messageError = "Message should contain characters";
+let subjectError = "Please Enter a subject";
+let messageError = "Please enter a Message";
 
 
 const fieldContact = (field, fieldRegex,result, error, e) => {
@@ -34,8 +32,8 @@ const fieldContact = (field, fieldRegex,result, error, e) => {
 const validate = (e) => {
     fieldContact(fullName,validName,nameField,nameError,e);
     fieldContact(email, validEmail, emailField, emailError, e);
-    fieldContact(contactSubject, subjectField, subjectError, e);
-    fieldContact(contactMessage, messageField, messageError, e);
+    fieldContact(contactSubject, subjectError, e);
+    fieldContact(contactMessage, messageError, e);
       return true;
 }
 
