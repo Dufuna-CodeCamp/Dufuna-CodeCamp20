@@ -1,8 +1,0 @@
-My name is Cherish Ebojudah.
-At the end of this internship, I hope to be able to boldly say I'm a front end developer without feeling inadequate.
-I know that I still have a long way to go and one of the beauties of being a developer is that learning never stops, 
-but I earnestly hope that by the end of this CodeCamp,
-the constant feeling of being overwhelmed by the vastness of what I'm yet to know will be drastically reduced,
-and I will be able to start and finish projects, build web applications and provide practical solutions to real life problems with code.
-
-And more importantly, get my first developer job!
