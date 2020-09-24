@@ -221,3 +221,7 @@ footer input {
 footer {
     background-color: rosybrown;
 }
+#newsError {
+    color: white;
+    font-size: 12px;
+}
