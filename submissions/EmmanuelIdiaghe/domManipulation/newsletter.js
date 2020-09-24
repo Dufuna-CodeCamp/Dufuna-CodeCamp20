@@ -3,28 +3,27 @@
 */
 // Declaration of variables
 let newsBtn    = document.getElementById('newsBtn');
+    newsEmail  = document.getElementById('newsEmail'),
+    newsError  = document.getElementById('newsError'),
+    field      = "Please enter your Email Address",
+    error      = "Please enter a valid email",
+    emailMatch = /^([a-zA-Z0-9_-]+)@([a-zA-Z0-9_-]+)\.([a-zA-Z]{2,5})$/;
 
 //Function to validate form
 function validateNews(event) {
-    let newsEmail  = document.getElementById('newsEmail'),
-        newsError  = document.getElementById('newsError'),
-        fieldName  = "Please enter your Email Address",
-        errorMsg   = "Please enter a valid email",
-        emailRegexMatch = /^([a-zA-Z0-9_-]+)@([a-zA-Z0-9_-]+)\.([a-zA-Z]{2,5})$/;
-
     if (newsEmail.value == "") {
-        newsError.innerHTML = fieldName;
+        newsError.innerHTML = field;
         event.preventDefault();
         return false;
     }
     
-    if (!(newsEmail.value.match(emailRegexMatch))) {
-        newsError.innerHTML = errorMsg;
+    if (!(newsEmail.value.match(emailMatch))) {
+        newsError.innerHTML = error;
         event.preventDefault();
         return false;
     }
 
-    if ((!(newsEmail.value == "")) && (newsEmail.value.match(emailRegexMatch))) {
+    if ((!(newsEmail.value == "")) && (newsEmail.value.match(emailMatch))) {
         newsError.innerHTML = "";
         return true;
     }
