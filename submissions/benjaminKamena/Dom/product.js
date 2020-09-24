@@ -2,7 +2,7 @@
 let quantity = document.getElementById("quantity"),
     price = document.getElementById("price"),
     shippingCost = document.getElementById("shippingCost"),
-    total = document.getElementById("totalCost"),
+    totalCost = document.getElementById("totalCost"),
     submit = document.getElementById("btn"),
     perUnitPrice = price.innerHTML,
     productPrice = perUnitPrice * quantity.value;
@@ -18,10 +18,10 @@ function quantityField(){
     }
 }
 
-function cost(){
-    shippingAmount();
+function cost(productPrice){
+    productPrice = perUnitPrice * quantity.value;
     if(quantity.value > 1){
-        productPrice = perUnitPrice * quantity.value;
+        shippingAmount();
         totalCost.innerHTML = productPrice + shipping;
     } else{
         totalCost.innerHTML = productPrice + shipping;
@@ -42,8 +42,7 @@ function shippingAmount(){
     } else{
         shipping = 25000;
         shippingCost.innerHTML =  shipping;
-        return true;
-    }
+    } return true;
 }
 
 function totalCostAmount(){
