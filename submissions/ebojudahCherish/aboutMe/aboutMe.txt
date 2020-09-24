@@ -1,5 +1,10 @@
 At the end of the Dufuna Codecamp I hope to be able to start and finish a project.
-I hope to have the know-how to handle small projects on my own and collaborate on big ones, to be able to provide solutions to real everyday problems.
+I hope to be able to boldly say I'm a front end developer without feeling inadequate.
+I know that I still have a long way to go and one of the beauties of being a developer is that learning never stops, 
+but I earnestly hope that by the end of this CodeCamp,
+the constant feeling of being overwhelmed by the vastness of what I'm yet to know will be drastically reduced,
+and I will be able to start and finish small projects on my own and collaborate on big ones, build web applications and provide practical solutions to real life problems with code.
+
 I hope to have the confidence that comes with knowing what you're doing.
 
 And more importantly, I hope to land my first developer job!
