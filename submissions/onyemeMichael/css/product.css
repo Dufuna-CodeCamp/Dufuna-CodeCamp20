@@ -145,6 +145,12 @@ a{
  .kt {
     color: white;
  }
+ 
+ #letter {
+    width: 50%;
+    border-radius: 0;
+    padding: 5px;
+ }
 
  footer  {
     background-color:#f77b00;

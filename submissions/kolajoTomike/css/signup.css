@@ -100,6 +100,14 @@ aside .form-page{
   margin-bottom: 20px;     
 }
 
+.error-block{
+  color: red;
+}
+
+.error{
+  color:red;
+}
+
 
 .form-page input[type="text"],
 .form-page input[type="tel"],

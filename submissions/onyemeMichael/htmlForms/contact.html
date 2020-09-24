@@ -6,6 +6,7 @@
     <title>Contact Us Page</title>
     <link href="../css/contact.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="nav-section">
@@ -39,23 +40,37 @@
                    <li><a href="http//:www.youtube.com"><img src="../html/image/logo/youtube-logo.png" alt=""></a></li>
                   </ul>
             </div>
-
             <div class="form2">
-                <form action="#" method="post" class="position-form">
+                <form action="#" method="post" id="validateForm">
                     <div class="fo-input">
                         <div class="contact-form">
-                      <img src="../html/image/logo/ic_email_24px.png" alt="">
-                        <h3>Or better still send us Message</h3>
-                    </div>
-                       <input type="text" id="fullName" name="fullName"placeholder="Full Name"><br><br>
-                       <input type="email" id="email" name="email" placeholder="Email Address"><br><br>
-                       <input type="text" name="subject" id="subject" placeholder="Subject" ><br><br>
-                       <label for="message">Message</label><br>
-                <textarea id="subject" name="subject" placeholder="" ></textarea><br>
-                <input type="submit" value="SEND">
-               </div>
-                </form>
-                </div>
+                           <img src="../html/image/logo/ic_email_24px.png" alt="">
+                           <h3>Or better still send us Message</h3>
+                       </div>
+                       <div>
+                            <label for="fullName"> Full Name</label><br>
+                            <input type="text" name="fullName" id="fullName"><br>
+                            <span class="error-block"></span><br>
+                       </div>
+                       <div>
+                            <label for="email">Email</label><br>
+                            <input type="text" name="email" id="email"><br>
+                            <span class="error-block"></span><br>
+                       </div> 
+                       <div>
+                            <label for="subject">Subject</label><br>
+                            <input type="text" name="subject" id="subject"><br>
+                            <span class="error-block"></span><br>
+                       </div>
+                       <div>
+                            <label for="messageInput">Message</label><br>
+                            <textarea name="message" id="message" cols="0" rows="8"></textarea><br>
+                            <span class="error-block"></span><br>
+                       </div>
+                    <button type="submit">SEND</button>
+                  </div>
+             </form>
+           </div>
         </div>
     </section>
     <footer>
@@ -70,7 +85,7 @@
             <h3 class="kt">Sign up for our Newsletter</h3>
             <div class="newsletter">
                 <form>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address" style="width: 50%; border-radius:0px; padding:5px">
+                    <input type="email" name="email" id="letter" placeholder="Enter your email address">
                     <input type="button" value="SUBMIT">
                 </form>
             </div>
@@ -86,6 +101,7 @@
         </div><br>
     <p class="kt"> Copyright &copy; 2020 mixstore.com. All rights reserved.</p>
 
+<script src="../domManipulation/contact.js"></script>
 </footer>
 </body>
 </html>

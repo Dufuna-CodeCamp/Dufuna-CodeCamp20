@@ -107,6 +107,14 @@ body {
     width: 95%;
     margin:auto;
  }
+
+ section form .error-block {
+   font-size: 0.8em;
+   color: red;
+   display: block;
+   text-align: left;
+ }
+ 
  .act {
    float: left;
    width: 40%;
@@ -177,7 +185,7 @@ body {
 
 }
 
- input[type=submit] {
+ button[type=submit] {
     background-color:#f77b00;
     border-radius: 4px;
     color: white;
@@ -201,6 +209,12 @@ body {
      text-decoration: none;
      font-size: 18px;
  }
+
+ #letter {
+   width: 50%;
+   border-radius: 0;
+   padding: 5px;
+}
 
  .kt {
     color: white;
@@ -228,7 +242,7 @@ body {
       height: 100px;
     }
 
-     input[type=submit]{
+     button[type=submit]{
       width: 40%;
       margin:0 140px;
       padding: 12px 20px;
@@ -249,7 +263,7 @@ body {
    padding-bottom: 10%;
 }
 
-   input[type=submit]{
+   button[type=submit]{
       width: 40%;
       margin:0 180px;
       padding: 12px 20px;
@@ -273,7 +287,7 @@ body {
          width: 85%;
          padding: auto;
      }
-     input[type=submit]{
+     button[type=submit]{
       width: 40%;
       margin:0 130px;
       padding: 12px 35px;

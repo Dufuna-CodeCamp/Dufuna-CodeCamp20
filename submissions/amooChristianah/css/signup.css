@@ -94,6 +94,16 @@ aside .form-details{
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
+.error{
+    color: red;
+    font-size: 15px;
+}
+
+.errorBlock{
+    color: red;
+    font-size: 17px;
+}
 .form-details label{
     color: black;
     font-size: 13px;
