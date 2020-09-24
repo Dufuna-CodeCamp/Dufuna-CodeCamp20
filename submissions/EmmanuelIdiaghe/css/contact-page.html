@@ -11,9 +11,9 @@
         <img src="images/EMANCIPATOR.png" alt="logo" class="logo">
         <nav>
             <ul class="nav-list">
-                <li><a href="#">Product Page</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="product-page.html">Product Page</a></li>
+                <li><a href="contact-page.html">Contact Us</a></li>
+                <li><a href="signup-page.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -74,8 +74,9 @@
         <div class="foot-signup">
             <label class="signup-label">Sign up for our News Letter:</label><br>
             <div class="email-div">
-                <input type="text" name="newsletter" placeholder="enter your email address" class="newsletter-input">
-                <input type="submit" class="submit-btn" value="Enter">
+                <span id="newsError"></span>
+                <input type="text" name="newsletter" placeholder="enter your email address" class="newsletter-input" id="newsEmail">
+                <button class="submit-btn" id="newsBtn">ENTER</button>
             </div>
         </div>
         <div class="conn-div">
@@ -92,5 +93,6 @@
         </div>
     </footer>
     <script src="../domManipulation/contact-page.js"></script>
+    <script src="../domManipulation/newsletter.js"></script>
 </body>
 </html>
