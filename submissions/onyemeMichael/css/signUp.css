@@ -55,7 +55,7 @@ footer a {
 }
 
 footer  {
-   background-color:#282828;
+   background-color:#f77b00;
    overflow: hidden;
    padding: 15px 0 0 20px;
   
@@ -109,6 +109,14 @@ img {
    padding: 30px 0;
    margin: auto;
 }
+
+section form .error-block {
+   font-size: 0.8em;
+   color: red;
+   display: block;
+   text-align: left;
+ }
+ 
 .act {
    float: left;
    width: 43%;
@@ -146,7 +154,7 @@ img {
    border-radius: 7px;
    padding: 10px;
 }
-input[type=submit] {
+button[type=submit] {
    background-color:#f77b00;
    border-radius: 5px;
    color: white;
@@ -166,8 +174,14 @@ input[type =text]:hover {
    font-weight: bold;
 }
 
+#letter {
+   width: 50%;
+   border-radius: 0;
+   padding: 5px;
+}
+
 ::placeholder {
-   color: lightblue;
+   color: rgb(94, 85, 85);
 }
 .last {
     color: #ffffff;

@@ -3,74 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
-  <h1>The Berry Ice Cream</h1>
-<nav>
-  <ul>
-  <li><a href="/html/index.html">Product Page</a></li>
-        <li><a href="/htmlForms/signUp.html">Sign Up</a></li>
-        <li><a href="/htmlForms/contact.html">Contact</a></li>
-        </ul>
-</nav>
-
-
-<section>
-  <fieldset>
-  <div class="signUp">
-      <div class="tags">
-          <h1>CREATE ACCOUNT</h1>
+    
+  <header>
+    <div class="nav-bar">
+      <div id="nav-brand">
+          <h2>THE BERRY ICE-CREAM </h2>
+          <p class="para">...we make you want more </p>
       </div>
+      <nav>
+         
+          <ul>
+              <li>
+                  <a href="../html/index.html">Product page</a>
+              </li>
+              <li>
+                  <a href="../HTMLforms/contact.html">Contact Us</a>
+              </li>
+              <li>
+                  <a href="../HTMLforms/signup.html">Sign-up</a>
+              </li>
+          </ul>
+      </nav> 
+  </div>
+  </header>
 
-      <div class="form2">
-          <form action="#" method="post" class="position-form">
-              <div class="fo-input">
-                  
-                  <input type="text" name="firstname" id="firstname" placeholder="firstname"><br><br>
-                  
-                  <input type="text" name="lastname" id="lastname" placeholder="lastname"><br><br>
-              
-                  <input type="email" name="email" id="email" placeholder="email@gmail.com"><br><br>
 
-                  <input type="phone" name="phone-number" id="phone-number" placeholder="Phone-number"><br><br>
-                  
-                  <input type="password" name="password" id="password" placeholder="Password"><br><br>
-       
-                  <input type="password" name="password" id="password" placeholder="Confirm password"><br><br>
-                    
-                  <input type="radio" id="male" name="gender" value="male">
-                       <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                       <label for="female">Female</label><br><br>
+  <section class="container">
+    <main >
+        <h1>Register your Account</h1>
+        <p>Registering your account gives you
+            access to discount, promo and events 
+            available only to registered customers. </p>
+         <p>
+             Already have an account?<span><a href="login.html"> LOGIN</a></span>
+        </p>
+    </main>
+    <aside >
+        <form action="#"   id="signup_form"  class="form-page" >
+         
+                <label for="first_name">First Name</label>
+                <br>
+               <input type="text" name="first_name" id="firstName" maxlength="50">
+               <p class="error-block"></p><br>
+                 <label for="last_name">Last Name</label>
+                 <br>
+                <input type="text" name="last_name" id="lastName" maxlength="50">
+                <p class="error-block"></p><br>
+                <label for="other_name">Other Names</label>
+                <br>
+                <input type="text" name="ther_name" id="otherName" maxlength="50">
+                <p class="error-block"></p><br>
+                <label for="phone_number">Phone Number</label>
+                <br>
+                <input type="text" name="phone_number" id="phoneNumber" >
+                <p class="error-block"></p><br>
+                <label for="email">Email Address</label>
+                <br>
+                 <input type="email" name="email" id="formEmail"  maxlength="50">
+                <p class="error-block"></p><br>
+             <label for="password">Password</label>
+             <br>
+                <input type="password" name="password" id="password" >
+                <p class="error-block"></p><br>
+                <label for="confirm_password">Confirm Password</label>
+                <br>
+                 <input type="password" name="confirm_password" id="confirmPassword" >
+                <p class="error-block"></p><br>
+                
+                  <input type="checkbox" name="terms-conditions" id="terms-conditions">
+                <label for="terms-conditions">I agree to the Terms and conditions</label>
+                
+                <button type="submit" name="submit_form" class="btn" id="submit_form">SIGN UP</button>
+            </form> 
+         </aside> 
+</section>
 
-                       <label for="Country:">Country</label>
-                       <select name="country" id="country">
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="South-Africa">South-Africa</option>
-                        <option value="Ghana">Ghana</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Others">Others</option>
-                        
-
-                       </select>
-
-                      
-
-              </section>
-
-              <div class="tick-it">
-                <input type="checkbox" name="terms" id="terms" value="terms">
-                <label for="terms">I agree to the Terms and Conditions</label><br>
-                </div>
-                <input type="submit" value="Sign up">
-            </div>
-
-         </form>
-
+<footer>
+  <div class="footer-link">
+      <div>
+      <ul>
+        <li> <a href="../HTMLforms/contact.html"> Contact Us </a></li>  
+        <li> <a href="#"> About Us </a></li>
+        <li> <a href="#"> Terms and Conditions </a></li>
+      </ul>
     </div>
-</div>
-
-</fieldset>
+  <form id="newsletter">
+      <h3>Sign up for the Newsletter</h3>
+      <input type="text" placeholder=" Enter your mail address" id="email" >
+      <button type="submit"> SUBMIT</button><br><br>
+      <span class="error"></span>
+  </form>
+  <div class="social">
+      <h3>CONNECT WITH US</h3>
+      <ul class="social-link">
+          <li><a href="#"><img src="../html/img/facebooklogo.png" alt=""></i></a></li>
+          <li><a href="#"><img src="../html/img/twiiterlogo.png" alt=""></a></li>
+          <li><a href=""></a><img src="../html/img/ic_email_24px.png" alt=""></a></li>
+          <li><a href="#"><img src="../html/img/youtubelogo.jpg" alt=""></a></li>
+       </ul>
+  </div>
+  </div>
+  <br><br>
+<p>Copyright &copy; 2020, The Berry Ice-Cream.</p>
+</footer>
+<script src="../DOM/newletter.js"></script>
+<script src="../DOM/signup.js"></script>
 </body>
 </html>

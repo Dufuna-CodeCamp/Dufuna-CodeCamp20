@@ -41,15 +41,19 @@
                 </ul>
             </div>
     <aside class="contact-form">
-        <form>
+        <form id="contact">
         <fieldset>
           <img src="../html/img/ic_email_24px.png" alt="email">
           <h3>Or better still send us Message</h3>
-            <input type="text" id="fullName" name="fullName" placeholder="Your name.."><br><br>
-            <input type="text" id="email" placeholder="Email"><br><br>
-            <input type="text" id="subject" placeholder="Subject"><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Your name..">
+            <span class="error-block"></span><br><br>
+            <input type="text" id="email" placeholder="Email">
+            <span class="error-block"></span><br><br>
+            <input type="text" id="subject" placeholder="Subject">
+            <span class="error-block"></span><br>
             <label for="message">Message</label><br>
-            <textarea id="subject" name="subject" cols="50" rows="20"></textarea><br><br>
+            <textarea id="message" name="subject" cols="30" rows="20"></textarea>
+            <span class="error-block"></span><br><br>
             <input type="submit" value="Send" class="contact-submit">
         </fieldset>
         </form>
@@ -65,11 +69,14 @@
                     <li>Terms Conditions</li>
                   </ul>
                 </div>
+                <form id="newsletterSignUp">
                 <div>
                    <label for="news-letter">Sign up for our Newsletter</label>
                    <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter your email address">
+                   <span class="error-block"></span>
                    <button type="submit">Submit</button>
                 </div>
+              </form>
                 <div class="social">
                 <h5>CONNECT WITH US</h5>
                  <ul class="social-links">
@@ -83,5 +90,7 @@
                 <p>Copyright &copy, 2020 unthu.com All rights reserved.</p>
         </footer>
     </section>
+    <script src="../Dom/contact.js"></script>
+    <script src="../Dom/newsletter.js"></script>
 </body>
 </html>

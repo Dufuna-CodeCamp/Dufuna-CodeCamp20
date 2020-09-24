@@ -48,12 +48,16 @@
                             <img src="../html/image/ic_drafts_24px.png"><br>
                         </div>
                         <p>Or better still send us a message</p><br>
-                        <input type="text" name="fname" id="fname" placeholder="Full Name"><br><br>
-                        <input type="email" name="email" id="email" placeholder="Email"><br><br>
-                        <input type="text" name="subject" id="subject" placeholder="Subject"><br><br>
+                        <input type="text" name="fname" id="fname" placeholder="Full Name">
+                        <span class="error-block"></span><br><br>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <span class="error-block"></span><br><br>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <span class="error-block"></span><br><br>
                         <label for="input">Message</label><br>
-                        <textarea name="input" id="input" cols="30" rows="10"></textarea><br><br>
-                        <button class="ton">SEND</button>
+                        <textarea name="input" id="input" cols="30" rows="10"></textarea>
+                        <span class="error-block"></span><br><br>
+                        <button type="submit" class="ton">SEND</button>
                     </div>
                 </fieldset>
             </form>
@@ -69,11 +73,16 @@
                     </ul>
                 </div>
                 <br><br>
-                <div class="newsletter">
+                <form class="newsletterSignup">
                     <label for="newsletter">Sign Up for our Newsletter</label><br><br>
-                    <input type="text" name="newsletter" id="newsletter" placeholder="Enter your email address">
-                    <button>SUBMIT</button>
-                </div>
+                    <div class="news">
+                        <div class="letter">
+                            <input type="text" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                            <div class="error-block" id="error"></div>
+                        </div>
+                        <div class="letter-I"><button type="submit">SUBMIT</button></div>
+                    </div>
+                </form>
                 <br><br>
                 <div class="connect">
                     <p>CONNECT WITH US</p>
@@ -87,5 +96,7 @@
             </div>
             <p> Copyright &copy; 2020 zeezystores.com. All rights reserved.</p>
         </footer>
+        <script src="../dom/contactForm.js"></script>
+        <script src="../dom/newsletter.js"></script>
     </body>
 </html>

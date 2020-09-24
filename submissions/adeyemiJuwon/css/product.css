@@ -10,7 +10,7 @@ body {
     padding: 0;
     font-size: 22px;
     line-height: 27px;
-    font-family: oswald PT sans serif;
+    font-family: oswald, PTsans, serif;
 }
 a{
     text-decoration: none;
@@ -134,14 +134,16 @@ header{
 /**********************************
   FOOTER
   ***********************************/
-footer{
-    background-color:rgb(255, 166, 95) ;
+  footer{
+    background-color:rgb(255, 166, 95);
+    font-size: 16px;
 }
 .footer-link{
     display: flex;
     justify-content: space-evenly;
     padding-top: 37px;
     flex-wrap: wrap;
+
 }
 .footer-link ul {
     list-style: none;
@@ -153,6 +155,7 @@ footer{
     margin-bottom: 15px;
 }
 .footer-link ul a{
+    text-decoration: none;
     color: white;
 }
 .footer-link input{
@@ -169,6 +172,15 @@ footer{
     line-height: 22px;
     margin-top: 9px;
     color: rgb(255, 166, 95) ;;
+}
+.error-message{
+    color:rgb(209, 21, 21) ;
+    font-size: 16px;
+    display: block;
+}
+.error{
+    color: rgb(209, 21, 21);
+    font-size:16px;
 }
 footer p{
 text-align: center;

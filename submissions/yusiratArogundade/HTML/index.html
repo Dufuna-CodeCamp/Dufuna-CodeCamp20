@@ -3,108 +3,86 @@
 <head>
 	<meta charset="utf-8">
 	<title>My Product Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/product.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div>
-		<header>
-			<section>			
-				<h1>INDULGENCE FASHION HUB</h1>			
-				<input type="search"> <button>search</button>
-			</section>			
-		</header>
-	</div>
-	<div>
-		<section>
+	<div class="nav-wrapper">
+		<div class="nav-logo">
+				<img src="../HTML/images/logo.png">
+		</div>
+		<div>
 			<nav>
-			<table>
-				<tr><th> <a href=""><h3>About us</h3></a></th>
-					<th><a href="../htmlForm/contactUs.html"><h3>Contact Us</h3></a></th>
-					<th><a href=""><h3>Men Wears</h3></a></th>
-					<th><a href=""><h3>Women Wears</h3></a></th>
-					<th> <a href=""><h3>Baby Wears</h3></a></th>
-				</tr>
-			</table>			
-		</nav>
-		</section>		
+				<ul>
+					<li><a href="../HTML/index.html">Product</a></li>
+					<li><a href="../htmlForm/contactUs.html">Contact</a></li>
+					<li><a href="../htmlForm/signUp.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</div>	
 	</div>
-	<hr>
-	<div>
-		<section>
-			<h2>Baby Wears</h2>
-			<table>
-				<tr>
-					<th><img src="baby.png"></th>
-					<th><table>
-						<tr>
-							<th><h2>Baby Girl Ankara One Hand A-Cut Dress</h2></th>
-						</tr>
-						<tr>
-							<th><h3>Descriptiion</h3>
-								<ul>
-									<li>Beautiful African prints and soft cotton combo</li>
-									<li>Smart and simple</li>
-									<li>Classy hand crafted stylish designs for infants and  kids.</li>
-									<li>Very affordable, breathable and comfortable to wear in hot/dry seasons</li>
-									<li>It can be adjusted to fit as desired as it can suit a wide range of body length and sizes. </li>
-									<li>The materials are genuine DaViva and Woodin prints.</li>
-									<li>Durable, long lasting, and machine washable.</li>
-								</ul>
-							</th>
-							<tr><th><h4><strong>Price &#8358; 4,500</strong></h4></th></tr>
-						</tr>
-					</table>						
-					</th>
-				</tr>
-			</table>
-		</section>
+	<div class="container">
+		<div class="pDescribe">
+			<img src="images/baby.png">
+			<h2> One Hand A-Cut Dress</h2>
+			<h2>Brand: Ankara</h2>
+			<h2>Quantity: <input type="text" name="quantity" placeholder="2"></h2>
+			<h2><strong>Price : &#8358; 4,500</strong></h2>
+			<button type="submit">Buy Now</button>
+		</div>
+		<div class="describe">
+				<h2>Description</h2>
+				<p>Beautiful African prints and soft cotton combo, Smart and simple, Classy hand crafted stylish designs for infants and  kids, Very affordable, breathable and comfortable to wear in hot/dry seasons.
+				</p>
 	</div>
-	<div>
-		<section>			
-			<table>
-				<tr>
-					<th><img src="baby2.png"></th>
-					<th><table>
-						<tr>
-							<th><h2>Flower Girls Pleated Dress </h2></th>
-						</tr>
-						<tr>
-							<th><h3>Descriptiion</h3>
-								<ul>
-									<li>Soft Material and first class workmanship.</li>
-									<li>Loose and comfortable</li>
-									<li>Daily Wear, School, Party Costume, Best gift for Girl</li>
-									<li>Material: Polyester + Cotton Blend</li>
-									<li>Sleeve: Sleeveless</li>
-								</ul>
-							</th>
-							<tr><th><h4><strong>Price &#8358; 5,500</strong></h4></th></tr>
-						</tr>
-					</table>						
-					</th>
-				</tr>
-			</table>
-		</section>
+	<div class="product-related">
+		<h2>RELATED PRODUCTS</h2>
+		<div class="product-display">
+			<div class="product">
+				<a href="#"><img src="images/baby2.png" alt="">
+					<h4>Floral baby dress</h4>
+					<h4>Price : &#8358; 4,500</h4>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#"><img src="images/baby3.png" alt="">
+					<h4>Flower Wedding Dress</h4>
+					<h4>Price : &#8358; 4,500</h4>
+				</a>
+			</div>
+			<div class="product">
+				<a href="#"><img src="images/baby4.png" alt="">
+					<h4>Tiered Organza Tulle Dress</h4>
+					<h4>Price : &#8358; 4,500</h4>
+				</a>
+			</div>
+		</div>
+		
 	</div>
-	<div>
-		<h3>Similar Product</h3>
-		<ol>
-			<li><a href="">Baby Girl Princess Bridesmaid Gown </a></li>
-			<li><a href="">Girl Children Casual Wedding Evening Dinner Party Skirt Dress</a></li>
-			<li><a href="">Kids Girls Embroidery Wedding Costume Blue Tulle Party Dress</a></li>
-			<li><a href="">Toddler Girl Princess Bridesmaid Gown</a></li>
-		</ol>		
-	</div>
-	<hr>
-	<div>
-		<footer>
-			<table>
-				<tr><th><strong>ayusirat@gmail.com</strong></th>
-				<th><strong>07035703937</strong></th>
-				</tr>
-			</table>
-			<hr>
-			<p>Copyright &copy; Indulgence Fashion Hub</p>
-		</footer>
+		<div class="footer-wrap">
+		<div class="footer-nav">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</div>
+		<div class="news-mail">
+			<h3>Sign up for our Newsletter</h3>
+			<input type="email" name="name" placeholder="enter your email">
+			<button type="submit" name="submit" value="submit">SUBMIT</button>
+		</div>
+		<div class="social-connect">
+			<h3>CONNECT WITH US</h3>
+			<ul>
+				<li><a href="#"><img src="../HTML/images/facebook-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/twiiter-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/gmail-logo.png"></a></li>
+				<li><a href="#"><img src="../HTML/images/youtube-logo.png"></a></li>
+			</ul>
+		</div>
+		<p>&copy; Copyright2020 indulgencefashionhub.com All rights reserved</p>
 	</div>
 </body>
 </html>
