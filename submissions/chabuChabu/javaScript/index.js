@@ -15,8 +15,8 @@ var productList = [
     productPrice: "$230",
    }
 ]
-for(i = 0;i < productList.length;i++){
-   console.log(productList[i].productName+" with "+productList[0].imageUrl+" is sold for "+productList[0].productPrice);
+for(var i = 0;i < productList.length;i++){
+   console.log(productList[i].productName+" with "+productList[i].imageUrl+" is sold for "+productList[i].productPrice);
 }
 
    
