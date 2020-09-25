@@ -37,7 +37,10 @@ let
             errorInput.innerHTML = "please enter a valid quantity";
             buyNow.disabled = true;
         }
-        else errorInput.innerHTML = "";
+        else {
+            errorInput.innerHTML = "";
+            buyNow.disabled = false;
+        }
 
         if (productPrice.value < 1000) { 
             shippingCost.value = 100;
