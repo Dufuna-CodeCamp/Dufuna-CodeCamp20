@@ -19,13 +19,13 @@ function quantityField(){
 }
 
 function cost(productPrice){
-    productPrice = perUnitPrice * quantity.value;
+    shippingAmount();
     if(quantity.value > 1){
-        shippingAmount();
+        productPrice = perUnitPrice * quantity.value;
         totalCost.innerHTML = productPrice + shipping;
     } else{
-        totalCost.innerHTML = productPrice + shipping;
-    }
+        totalCost.innerHTML = perUnitPrice;
+    } return true;
 }
 
 function shippingAmount(){
