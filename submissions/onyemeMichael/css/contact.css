@@ -96,6 +96,19 @@ body {
     overflow: hidden;
  }
 
+ .error-message {
+   color:yellow;
+   font-size: 0.8em;
+   display: block;
+ }
+
+ footer form button[type=submit] {
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    padding: 5px;
+ }
+
  img {
     height: 25px;
     text-decoration: none;
@@ -185,7 +198,7 @@ body {
 
 }
 
- button[type=submit] {
+ section form button[type=submit] {
     background-color:#f77b00;
     border-radius: 4px;
     color: white;
@@ -242,13 +255,13 @@ body {
       height: 100px;
     }
 
-     button[type=submit]{
+     section form button[type=submit]{
       width: 40%;
       margin:0 140px;
       padding: 12px 20px;
-    
  }
  
+
  @media screen and (max-width: 640px){
     .act {
       width: 40%;
@@ -263,7 +276,7 @@ body {
    padding-bottom: 10%;
 }
 
-   button[type=submit]{
+section form button[type=submit]{
       width: 40%;
       margin:0 180px;
       padding: 12px 20px;
@@ -287,7 +300,7 @@ body {
          width: 85%;
          padding: auto;
      }
-     button[type=submit]{
+     section form button[type=submit]{
       width: 40%;
       margin:0 130px;
       padding: 12px 35px;

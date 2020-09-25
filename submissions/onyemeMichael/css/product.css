@@ -141,6 +141,13 @@ a{
     color: white;
     text-decoration: none;
  }
+
+ .error-message {
+    color: yellow;
+    font-size: 0.8em;
+    display: block;
+
+  }
  
  .kt {
     color: white;
@@ -176,12 +183,6 @@ a{
     text-decoration: none;
  }
 
- .footer p {
-    color: white;
-    font-weight: lighter;
-    padding-left: 50px;
-    display: block;
- }
  .logo li {
     list-style-type: none;
     padding: 2px;
@@ -245,6 +246,7 @@ header{
     justify-content: space-between;
     margin-top: 20px;
 }
+
 }
 
 @media screen and ( max-width:600px ) {
