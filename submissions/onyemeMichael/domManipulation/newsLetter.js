@@ -2,7 +2,7 @@ let sendForm = document.getElementById('send'),
     newsLetter = document.getElementById('letter'),
     errorMsg = document.querySelector(".error-message");
 
-const Regex = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/; 
+const Regex = /([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})$/i; 
 
 function validateForm(e) {
     if (newsLetter.value === "") {
