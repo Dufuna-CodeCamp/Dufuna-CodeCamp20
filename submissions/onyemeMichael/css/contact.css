@@ -97,7 +97,7 @@ body {
  }
 
  .error-message {
-   color:yellow;
+   color:red;
    font-size: 0.8em;
    display: block;
  }
