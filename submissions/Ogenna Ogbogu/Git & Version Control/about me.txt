@@ -1,5 +1,0 @@
-This is a list of things I have learned in the last couple of weeks.
-How to use cmd.
-I loaded ubuntu on my computer to enable me work with two different operating systems.
-I better understand the software development process.
-How to stay focused on tasks.
