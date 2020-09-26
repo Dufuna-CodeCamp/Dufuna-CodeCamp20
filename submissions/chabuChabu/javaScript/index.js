@@ -18,8 +18,3 @@ var productList = [
 for(var i = 0;i < productList.length;i++){
    console.log(productList[i].productName+" with "+productList[i].imageUrl+" is sold for "+productList[i].productPrice);
 }
-
-   
-   
-
-
