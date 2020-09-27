@@ -20,7 +20,7 @@ for(var i = 0;i < productList.length;i++){
 }
 /*JavaScript Task two*/
 var posdiff = 123 - 7;
- for(var  increment = 1;increment<posdiff;increment++){
+ for(var increment = 1;increment<posdiff;increment++){
      if(increment % 3 === 0 && increment % 5 ===0){
          console.log("Software Developer");
      }else if(increment % 3 === 0){
