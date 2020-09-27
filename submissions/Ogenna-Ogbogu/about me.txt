@@ -1,5 +1,0 @@
-Hello world!
-My name is Ogenna.
-
-I have been learning how to create repos and push tasks to github.
-Learning how to push from local to remote repo.
