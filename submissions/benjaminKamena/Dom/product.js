@@ -18,36 +18,23 @@ function quantityField(){
     }
 }
 
-function cost(productPrice){
-    shippingAmount();
-    if(quantity.value > 1){
-        productPrice = perUnitPrice * quantity.value;
-        totalCost.innerHTML = productPrice + shipping;
-    } else{
-        totalCost.innerHTML = perUnitPrice;
-    } return true;
-}
-
 function shippingAmount(){
     productPrice = perUnitPrice * quantity.value;
     if(productPrice < 1000){
-        shipping = 100;
-        shippingCost.innerHTML =  shipping;
+        shippingCost.innerHTML =  100;
     } else if((productPrice >= 1000) && (productPrice <= 20000)){
-        shipping = 0.15 * productPrice;
-        shippingCost.innerHTML =  shipping;
+        shippingCost.innerHTML =  0.15 * productPrice;
     } else if((productPrice >= 20000) && (productPrice <= 100000)){
-        shipping = 0.2 * productPrice;
-        shippingCost.innerHTML =  shipping;
+        shippingCost.innerHTML = 0.2 * productPrice;
     } else{
-        shipping = 25000;
-        shippingCost.innerHTML =  shipping;
-    } return true;
+        shippingCost.innerHTML =  25000;
+    } totalCost.innerHTML = Number(shippingCost.innerHTML) + Number(perUnitPrice);
 }
 
 function totalCostAmount(){
-    cost();
+    shippingAmount();
     quantityField();
+    return true;
 }
 
 quantity.addEventListener("input", totalCostAmount)
