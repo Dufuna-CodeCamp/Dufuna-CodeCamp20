@@ -32,7 +32,7 @@ function shipping() {
     } else {
         shipCost.innerHTML = 25000;
     }
-    totalCost.innerHTML = Number(shipCost.innerHTML) + Number(price.innerHTML);
+    totalCost.innerHTML = Number(shipCost.innerHTML) + sum;
 }
 
 function validate(e) {
