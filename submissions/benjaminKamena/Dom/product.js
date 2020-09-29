@@ -28,7 +28,7 @@ function shippingAmount(){
         shippingCost.innerHTML = 0.2 * productPrice;
     } else{
         shippingCost.innerHTML =  25000;
-    } totalCost.innerHTML = Number(shippingCost.innerHTML) + Number(perUnitPrice);
+    } totalCost.innerHTML = parseFloat(shippingCost.innerHTML) + parseFloat(perUnitPrice);
 }
 
 function totalCostAmount(){
