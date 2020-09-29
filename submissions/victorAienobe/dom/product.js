@@ -3,6 +3,7 @@ var price = document.getElementById('price');
 let shipCost = document.getElementById('shipCost');
 let totalCost = document.getElementById('totalCost');
 let button = document.getElementById('btn');
+let sum = Number(price.innerHTML) * quantity.value;
 
 function cost(event) {
     let regex = /^[0-9]+$/;
@@ -13,7 +14,7 @@ function cost(event) {
         event.preventDefault();
         return false;
     } else {
-        price.innerHTML *= quantity.value;
+        sum = Number(price.innerHTML) * quantity.value;
         qty.nextElementSibling.innerHTML = '';
         button.disabled = false;
         button.style.backgroundColor = 'goldenrod';
@@ -22,12 +23,12 @@ function cost(event) {
 }
 
 function shipping() {
-    if(price.innerHTML < 1000) {
+    if(sum < 1000) {
         shipCost.innerHTML = 100;
-    } else if(price.innerHTML >= 1000 && price.innerHTML <= 20000) {
-        shipCost.innerHTML = 0.15 * price.innerHTML;
-    } else if(price.innerHTML > 20000 && price.innerHTML <= 100000) {
-        shipCost.innerHTML = 0.2 * price.innerHTML;
+    } else if(sum >= 1000 && sum <= 20000) {
+        shipCost.innerHTML = 0.15 * sum;
+    } else if(sum > 20000 && sum <= 100000) {
+        shipCost.innerHTML = 0.2 * sum;
     } else {
         shipCost.innerHTML = 25000;
     }
