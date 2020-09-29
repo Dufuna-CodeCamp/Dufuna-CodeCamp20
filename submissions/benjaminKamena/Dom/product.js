@@ -21,11 +21,11 @@ function quantityField(){
 function shippingAmount(){
     productPrice = perUnitPrice * quantity.value;
     if(productPrice < 1000){
-        shippingCost.innerHTML =  100;
+        shippingCost.innerHTML =  parseFloat(100);
     } else if((productPrice >= 1000) && (productPrice <= 20000)){
-        shippingCost.innerHTML =  0.15 * productPrice;
+        shippingCost.innerHTML =  parseFloat(0.15 * productPrice);
     } else if((productPrice >= 20000) && (productPrice <= 100000)){
-        shippingCost.innerHTML = 0.2 * productPrice;
+        shippingCost.innerHTML = parseFloat(0.2 * productPrice);
     } else{
         shippingCost.innerHTML =  25000;
     } totalCost.innerHTML = parseFloat(shippingCost.innerHTML) + parseFloat(perUnitPrice);
