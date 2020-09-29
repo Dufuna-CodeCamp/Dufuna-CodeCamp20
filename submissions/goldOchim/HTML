@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            gold-ecommerce
+        </title>
+    </head>
+    <body>
+        <h1>
+            GA-JETS STORES 
+        </h1>
+           
+            <table>
+                <tr>
+                    <th>  <img src="C:\Users\pc\Documents\DUFUNA MOBILE TRACK\tab1.jpeg" width="214" height="236">
+                    </img> </th>
+                    <th>Samsung Tablet </th>
+                    <th>N145, 500</th>
+                    <th>    64gb memory, 2gb RAM, 13.0 mega pixel for front camera</th>
+                </tr>
+                <tr>
+                    <th>  <img src="C:\Users\pc\Documents\DUFUNA MOBILE TRACK\headp5.jpeg" width="200" height="236">
+                    </img> </th>
+                    <th>Beats by Dre HeadPhones </th>
+                    <th>N97,000</th>
+                    <th>     Bass sound system, sensor sensitive control, fitting head grip</th>
+                </tr>
+                <tr>
+                    <th>  <img src="C:\Users\pc\Documents\DUFUNA MOBILE TRACK\headp3.jpeg" width="300" height="236">
+                    </img> </th>
+                    <th>Generic Headphones </th>
+                    <th>N74, 500</th>
+                    <th>     Bass system, Turbo power life, 7 meters bluetooth connectivity</th>
+                </tr>
+                <tr>
+                    <th>  <img src="C:\Users\pc\Documents\DUFUNA MOBILE TRACK\lap2.jpeg" width="300" height="236">
+                    </img> </th>
+                    <th>Samsung laptop </th>
+                    <th>N204, 500</th>
+                    <th>     500GB Hard Disk, 4GB RAM, 15 inch width</th>
+                </tr>
+              
+            </table>
+
+            <h2>Similar Products</h2>
+            <ol>
+                <li> <a href="C:\Users\pc\Documents\DUFUNA MOBILE TRACK\headphones.html">Headphones</a></li>
+                <li>Infinix Tablets </li>
+                <li>HP Laptops</li>
+                <li>Dell laptops</li>
+            </ol>
+
+
+    </body>
+</html>
