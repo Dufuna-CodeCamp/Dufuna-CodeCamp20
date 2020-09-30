@@ -32,8 +32,8 @@ function shippingAmount(){
 }
 
 function totalCostAmount(){
-    shippingAmount();
     quantityField();
+    shippingAmount();
     return true;
 }
 
