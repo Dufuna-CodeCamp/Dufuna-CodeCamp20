@@ -14,4 +14,3 @@ for (let i = 1; i <= positiveDiff; i++) {
         console.log(i +"");
     }
     }
-
