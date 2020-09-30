@@ -11,6 +11,6 @@ for (let i = 1; i <= positiveDiff; i++) {
         console.log("Developer");
     }
     else {
-        console.log(i +"");
+        console.log(i + " ");
     }
     }
