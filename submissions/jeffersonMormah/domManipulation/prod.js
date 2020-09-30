@@ -14,7 +14,7 @@ const calcShipping = (e) => {
         e.preventDefault();
         return false;
     } else {
-        productPrice.innerHTML *= productQty.value;
+        Number(productPrice.innerHTML) * productQty.value;
         productQty.nextElementSibling.innerHTML = "";
         button.disabled = false;
         button.style.backgroundColor = 'coral';
@@ -23,16 +23,17 @@ const calcShipping = (e) => {
 }
 
 const calcTotal = () => {
-    if (productPrice.innerHTML < 1000){
+    let priceVal =  Number(productPrice.innerHTML) * productQty.value;
+    if (priceVal < 1000){
         shipCost.innerHTML = 100;
-    } else if (productPrice.innerHTML >= 1000 && productPrice.innerHTML <= 20000 ) {
-        shipCost.innerHTML = 0.15 * productPrice.innerHTML;
-    } else if (productPrice.innerHTML > 20000 && productPrice.innerHTML <= 100000) {
-        shipCost.innerHTML = 0.20 * productPrice.innerHTML;
+    } else if (priceVal >= 1000 && priceVal <= 20000 ) {
+        shipCost.innerHTML = 0.15 * priceVal;
+    } else if (priceVal > 20000 && priceVal <= 100000) {
+        shipCost.innerHTML = 0.20 * priceVal;
     } else {
         shipCost.innerHTML = 25000;
     }
-    totalCost.innerHTML = Number(shipCost.innerHTML) + Number(productPrice.innerHTML);
+    totalCost.innerHTML = Number(shipCost.innerHTML) + priceVal;
 }
 
 const prodValidation = (e) => {
