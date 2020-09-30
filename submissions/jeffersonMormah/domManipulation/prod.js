@@ -6,7 +6,7 @@ let button = document.getElementById("btn");
 let qtyRegex =  /^[0-9]+$/;
 
 
-const calcShipping = (e) => {
+const productShipping = (e) => {
     if (productQty.value <= 0 || !(productQty.match(qtyRegex))) {
         productQty.nextElementSibling.innerHTML = "please enter a valid quantity";
         button.disabled = true;
@@ -37,7 +37,7 @@ const calcTotal = () => {
 }
 
 const prodValidation = (e) => {
-    calcShipping(e);
+    productShipping(e);
     calcTotal();
     return true;
 }
