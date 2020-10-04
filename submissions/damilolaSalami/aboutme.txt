@@ -1,4 +1,4 @@
 Hello World!
 My name is Damilola Salami.
 
-I have been able to push my first task to Github.
+I hope to get better at the end of the training.
