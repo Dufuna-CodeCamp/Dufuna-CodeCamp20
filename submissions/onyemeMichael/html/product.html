@@ -32,9 +32,13 @@
         <h3>Tecno Phantom 9 6.39-Inch FHD (6GB,128GB ROM) Andriod 9.0 Pie (16MP + 8MP + 2MP) + 32MP 4G Smartphone</h3>
         <h4>Brand: Tecno</h4>
         <h4>Quantity:
-        <input type="number" value="2" name="quantity " id="quantity"></h4>
-        <h4>Price: &#8358;<strong>277,998</strong></h4>
-        <button> BUY NOW</button>
+            <input type="number" value="1" name="quantity " id="quantity">
+            <div class="error-block" id="error"></div>
+            </h4>
+            <h4>Price: &#8358;<span id="price">138999</span></h4>
+            <h4>Shipping cost: &#8358;<span id="shippingCost">25000</span></h4>
+            <h4>Total cost: &#8358;<span id="cost">163999</span></h4>
+            <button type="button" id="btn">BUY NOW</button>
     </div>
     </div>
     <div class="description">
@@ -96,6 +100,7 @@
 <p class="kt"> Copyright &copy; 2020 mixstore.com. All rights reserved.</p>
 
 <script src="../domManipulation/newsLetter.js"></script>
+<script src="../domManipulation/product.js"></script>
 </footer>
 </body>
 </html>

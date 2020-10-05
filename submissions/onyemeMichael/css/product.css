@@ -94,6 +94,16 @@ a{
     line-height: 27px;
     color: white;
 }
+.product-del button:disabled {
+    background:#b1b1b1;
+    width: 170px;
+    height: 47px;
+    border-radius: 20px;
+    border: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+}
 .description{
     margin-left: 50px;
 }
@@ -143,12 +153,16 @@ a{
  }
 
  .error-message {
-    color: red
+    color: red;
     font-size: 0.8em;
     display: block;
 
-  }
- 
+ }
+ .error-block{
+    color: red;
+    font-size: 0.8em;
+    display: block;
+ }
  .kt {
     color: white;
  }
