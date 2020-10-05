@@ -58,5 +58,6 @@ function fixIndex() {
     priceField();
     shippingAmount();
     totalCost();
-  
+}
+
 quantity.addEventListener("input", fixIndex);
