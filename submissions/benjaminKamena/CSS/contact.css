@@ -88,6 +88,7 @@ body{
       color: #fff;
       font-weight: bolder;
       font-size: large;
+      text-decoration: none;
     }
 
     @media screen and (max-width: 986px)
