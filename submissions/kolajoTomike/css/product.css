@@ -67,6 +67,7 @@ header a:hover{
   width: 250px;
  margin:15px 0px 0px 30px;
  border: 1px solid;
+ height: 300px;
  
 }
 
@@ -90,9 +91,15 @@ right: 20px;
   margin-bottom: 0px;
   font-weight: bold;
 }
-.price{
+#price{
   font-weight:bold;
 }
+#shipping-cost{
+  font-weight:bold;
+}
+#total-cost{
+  font-weight:bold;
+  }
 button{
   border-radius: 15px;
   width: 100px;
@@ -101,6 +108,7 @@ button{
   border:none;
   font-weight: bold;
   color:white
+  
 }
 
 button:hover{
@@ -148,9 +156,8 @@ button:hover{
   color: #000;
 }
 
-span{
-  color:white;
-  font-weight: bold;
+.error{
+  color:red;
 }
 footer{
   background-color:#00d1cf;
