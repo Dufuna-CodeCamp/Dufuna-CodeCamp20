@@ -225,3 +225,11 @@ footer {
     color: white;
     font-size: 12px;
 }
+#productPrice, #shippingCost, #totalCost {
+    color: black;
+    font-size: 15px;
+}
+#errorInput {
+    color: red;
+    font-size: 12px;
+}
