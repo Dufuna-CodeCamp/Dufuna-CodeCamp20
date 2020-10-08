@@ -98,6 +98,13 @@ footer nav {
    overflow: hidden;
 }
 
+.error-message {
+   color:red;
+   font-size: 0.8em;
+   display: block;
+ }
+ 
+
 img {
    height: 25px;
    text-decoration: none;
@@ -109,6 +116,14 @@ img {
    padding: 30px 0;
    margin: auto;
 }
+
+section form .error-block {
+   font-size: 0.8em;
+   color: red;
+   display: block;
+   text-align: left;
+ }
+ 
 .act {
    float: left;
    width: 43%;
@@ -146,7 +161,8 @@ img {
    border-radius: 7px;
    padding: 10px;
 }
-input[type=submit] {
+
+section form button[type=submit] {
    background-color:#f77b00;
    border-radius: 5px;
    color: white;
@@ -162,12 +178,18 @@ input[type =text]:hover {
    background-color: white;
    color:#282828;
    padding: 5px;
-   border-style: none;
+   border-style: 0;
    font-weight: bold;
 }
 
+#letter {
+   width: 50%;
+   border-radius: 0;
+   padding: 5px;
+}
+
 ::placeholder {
-   color: lightblue;
+   color: rgb(94, 85, 85);
 }
 .last {
     color: #ffffff;
