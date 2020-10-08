@@ -42,23 +42,15 @@
                 <img src="img/packed-black-soap.jpg" alt="J-Royalty African Black Soap">
             </div>
             <div class="img-details">
-                <h3>J-ROYALTY ORGAINC BLACK SOAP</h3>
-                <h4>Price: &#x20A6;2,500</h4>
-                <span id="quality">
-                        <h4>Quantity: </h4>
-                        <table >
-                            <tr>
-                                <th><a href="#">-</a></th>
-                                <th>1</th>
-                                <th><a href="#">+</a></th>
-                            </tr>
-                        </table>
-                    </span>
-                <br><br>
-                <span><em>Rating: </em>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                <br><br>
-
-                <button>BUY NOW</button>
+                <h3>J-ROYALTY ORGAINC BLACK SOAP</h3><br>
+                <span id="quantity">
+                    <h4>Quantity: </h4>
+                    <input type="number" name="quantity" value= "1" id="quantityNumber">
+                </span>
+                <h4>Price: &#x20A6;<span id="price"> 250 </span></h4>
+                <h4>Shipping Cost: &#x20A6; <span id="shippingCost"> 100 </span></h4>
+                <h4>Total Cost: &#x20A6;<span id="totalCost">350 </span></h4>
+                <button type="submit" id="buyNow">BUY NOW</button>
             </div>
         </main>
         <div class="description">
@@ -129,6 +121,7 @@
         <p>Copyright &copy; 2020, Taries Empire All rights reserved</p>
     </footer>
     <script src="../domManipulation/newsletter.js"></script>
+    <script src="../domManipulation/shippingCost.js"></script>
 </body>
 
 </html>

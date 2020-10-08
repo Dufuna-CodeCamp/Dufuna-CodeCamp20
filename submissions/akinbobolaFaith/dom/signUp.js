@@ -9,7 +9,7 @@ let signupForm = document.querySelector('.information'),
 
 function nameValidation(name, event, innerHTML) {
     let nameRegex = /^[a-z]+$/i;
-    if(name.value == '') {
+    if(name.value === '') {
         name.nextElementSibling.innerHTML = "This field is required";
         event.preventDefault();
         return false;

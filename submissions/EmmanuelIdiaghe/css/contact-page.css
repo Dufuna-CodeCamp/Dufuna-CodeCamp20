@@ -162,6 +162,7 @@ li, a {
 fieldset {
     border-radius: 20px;
     padding: 21px;
+    line-height: 30px;
 }
 .right-div label {
     line-height: 30px;
@@ -214,4 +215,12 @@ footer {
     color: rosybrown;
     margin: 0 auto;
     text-decoration: underline;
+}
+.errorSpan {
+    color: red;
+    font-size: 12px;
+}
+#newsError {
+    color: white;
+    font-size: 12px;
 }

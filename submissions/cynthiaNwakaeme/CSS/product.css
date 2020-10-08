@@ -85,15 +85,16 @@ main {
 
 .main-img {
     float: left;
+    height: 260px;
     width: 230px;
-    margin: 2px 0 10px 30px;
-    border: 1px solid rgb(129, 129, 129);
+    margin: 2px 0 5px 8px;
+    border: 1px solid #818181;
 }
 
 .main-img img {
     width: 200px;
     padding: 10px 20px;
-    height: inherit;
+    height: 230px;
 }
 
 
@@ -101,29 +102,31 @@ main {
 
 .img-details {
     float: left;
-    width: 300px;
+    width: 330px;
     margin-left: 30px;
 }
 
-#quality h4,
-#quality table {
-    display: inline-table;
+#quantity h4,
+#quantity input {
+    display: inline-block;
     padding: 0;
     margin: 0;
 }
 
-#quality table {
-    border-collapse: collapse;
+
+/*TO REMOVE THE ARROWS IN AN INPUT[type="number"] for Chrome, Safari, Edge, Opera  */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-#quality table,
-#quality th {
-    border: 1px solid rgb(129, 129, 129);
-    padding: 0 8px;
-}
-
-#quality tr th a {
-    text-decoration: none;
+input[type=number] {
+    height: 25px;
+    width: 50px;
+    /* Firefox */
+    -moz-appearance: textfield;
 }
 
 .img-details button {
@@ -134,16 +137,18 @@ main {
     padding: 8px;
     border: none;
     font-weight: bold;
+    height: 40px;
 }
 
 .description {
-    margin: 0 55px;
+    margin: 0 35px;
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 .description h4 {
     padding: 0;
-    margin: 0;
+    margin-bottom: 8px;
 }
 
 
@@ -218,7 +223,7 @@ footer {
 
 .footer-box-2 button[type="submit"] {
     height: 30px;
-    padding: 0 5%;
+    padding: 0 20px;
     font-size: 12px;
     color: #9d426b;
     font-weight: bold;
@@ -271,6 +276,10 @@ footer p {
     aside .img-slide {
         float: none;
         width: 310px;
+    }
+    .img-slide {
+        margin: 30px auto;
+        display: block;
     }
     .footer-box,
     .footer-box-2,

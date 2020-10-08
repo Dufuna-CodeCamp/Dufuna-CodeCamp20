@@ -25,10 +25,15 @@
     <div class="product-prop">
         <h3>MADDISSON JAMES SWEATSHIRT</h3>
         <h4>Brand: Ellie Wilde</h4>
-        <h4>Quantity:
-        <input type="number" value="2" name="quantity " id="quantity"></h4>
-        <h4>Price: NGN 25,000</h4>
-        <button> BUY NOW</button>
+        <form action="" id="pricing">
+            <h4>Quantity:
+              <input type="number" value="1" name="quantity " id="qty-num">
+            </h4>
+            <h4>Price: &#8358; <span id="product-price"> 1000 </span></h4>
+            <h4>Shipping Cost:&#8358; <span id="shipping-cost"></span></h4>
+            <h4>Total Cost: &#8358; <span id="total-cost"></span></h4>
+            <button type="submit" id="pricing-btn"> BUY NOW</button>
+          </form>
     </div>
     </div>
     <div class="description">
@@ -47,7 +52,8 @@
         </div>
         <div class="section-img4">
             <img src="images/demo.jpg" class="section-img1">
-            <h5>ANGILQUE WHITE TOP</h5>
+            <h5>ANGILI
+                QUE WHITE TOP</h5>
             <h5> Price: #3500</h5>
             </a>
         </div>
@@ -74,7 +80,7 @@
             <h3>Sign up for the Newsletter</h3>
             <input type="text" placeholder=" Enter your email address" id="email">
             <button type="submit"> SUBMIT</button><br><br>
-            <span class="error"></span>
+            <span class="errorBlock"></span>
         </form>
     </div>
     <div class="social">
@@ -90,5 +96,6 @@
     <p class="text-p">Copyright &copy; 2020, Ample Togs.</p>
 </footer>
 <script src="../DOM/newsletter.js"></script>
+<script src="../DOM/product.js"></script>
 </body>
 </html>

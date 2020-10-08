@@ -159,8 +159,7 @@ aside .form-details {
 }
 
 .errorMessage {
-    color: rgb(255, 255, 0);
-    display: block;
+    color: yellow;
     font-weight: bold;
 }
 
