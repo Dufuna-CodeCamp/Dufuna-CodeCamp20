@@ -1,0 +1,157 @@
+/*
+let submitBtn = document.getElementById('submitBtn'),
+    FirstName = document.getElementsById('firstName'),
+    lastName = document.getElementById('lastName'),
+    PhoneNumber = document.getElementById('phoneNumber'),
+    email = document.getElementById('email'),
+    password = document.getElementByID('password'),
+    confirmPassword = document.getElementById('confirmPassword');
+
+    
+form.addEventListener('submit',(e) =>   {
+    e.preventDefault();
+    checkInputs();
+});
+
+function checkInputs()  {
+    let emailValue = email.value.trim()
+    let firstNameValue = firstName.value.trim()
+    let passwordValue = password.value.trim()
+    let lastNameValue = firstName.value.trim()
+    let confimPasswordValue = confirmPassword.value.trim()
+    let phoneNumberValue = phoneNumber.value.trim()
+
+}
+
+        if (firstNamevalue === "") {
+            field.nextElementSibling.innerHTML = 'This field should be filled';
+           
+            return false;
+        }
+        else    {   
+            field.nextElementSibling.innerHTML = "";
+            return true;
+
+        }
+        /*
+        //form Input Validation
+    function validateInput(event)    {
+        let emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/;
+        if (!email.value.match(emailRegex))  {
+            email.nextElementSibling.innerHTML = 'Enter a valid email address';
+            event.preventDefault;
+            return false;
+        }
+    
+        else {
+            return true;
+        }
+        let passwordRegex   = 
+        
+
+        }
+    }
+
+function Form(e)    {
+    required(firstName, e);
+    required(lastName, e);
+    required(PhoneNumber, e);
+    required(email, e);
+    required(password, e);
+    required(confirmPassword, e);
+    validateEmail(e);
+    return true;
+}
+
+
+
+*/
+
+let email;
+let formError;
+let firstName;
+let lastName;
+let phoneNumber;
+let passsword;
+let confirmPassword;
+let submitBtn;
+let form;
+
+function validateInput(emailValue){
+    let emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/;
+        if (!emailValue.match(emailRegex))   {
+            emailValue.nextElementSibling.innerHTML = 'please enter a valid email address';
+            email.preventDefault();
+            return false;
+}
+    else if (emailValue === "") {
+            emailValue.nextElementSibling.innerHTML = 'Enter your email address'
+            return false;
+    }
+        else    {
+            emailValue.nextElementSibling.innerHTML = ""
+            return true;
+        }
+ 
+  function validatePassword (passwordValue) {
+      let passwordRegex =   /^[a-z0-9]+$/i;
+      if (!passwordValue.match(passwordRegex))  {
+          passwordValue.nextElementSibling.innerHTML = "password must contain at least one letter,number and special character";
+          password.preventDefault();
+          return false;
+      }
+      else if (passwordValue.length < 6)    {
+          password.nextElementSibling.innerHTML = "password length must be equal to or greater than Six";
+          passwordValue.preventDefault();
+          return false;
+
+      }
+      else{
+          password.nextElementSibling.innerHTML = "";
+          return true;
+      }
+  }
+  function validatePassword (confirmpasswordValue) {
+    let passwordRegex =   /^[a-z0-9]+$/i;
+    if (!confirmpasswordValue.match(passwordRegex))  {
+        confirmpasswordValue.nextElementSibling.innerHTML = "password must contain at least one letter,number and special character";
+        confirmpasswordValue.preventDefault();
+        return false;
+    }
+    else if (passwordValue.length < 6)    {
+        confirmpassword.nextElementSibling.innerHTML = "password length must be equal to or greater than Six";
+        confirmpasswordValue.preventDefault();
+        return false;
+
+    }
+    else{
+        confirmpassword.nextElementSibling.innerHTML = "";
+        return true;
+    }
+    
+function submitForm(eventForm)  {
+    eventForm.preventDefault()
+let emailValue = emailI.value;
+let firstNameValue = firstName.value;
+let passwordValue = password.value;
+let lastNameValue = firstName.value;
+let confimPasswordValue = confirmPassword.value;
+let phoneNumberValue = phoneNumber.value;
+
+validateInput(emailValue,firstNameValue,passwordValue,lastNameValue,confimPasswordValue,phoneNumberValue)  
+}
+//this function is called Immediately
+(function() {
+    emailInput = document.getElementById('email')
+    formError = document.getElementById('formError')
+    firstName = document.getElementById('firstName')
+    lastName = document.getElementById('lastName')
+    phoneNumber = document.getElementById('phoneNumber')
+    passsword   = document.getElementById('password')
+    confirmPassword = document.getElementById('confirmPassword')
+    submitBtn= document.getElementById('submitBtn')
+    form= document.getElementById('form')
+},
+
+    submitBtn.addEventListener(submit,Form)
+

@@ -28,27 +28,36 @@
             <p>Already got an account?<a href="#"> sign in</a></p>
          </div>
          <fieldset class="fields">
-               <form>
+            
+               <form id="validateForm" method="POST">
                   <label class="first name">First Name</label><br>
-                  <input type="text" class="name"/><br><br>
-                  <label class="lastname name">Last Name</label><br>
-                  <input type="text" class="name"/><br><br>
+                  <input type="text" class="name" id="firstName"/>
+                  <span class="error"></span><br><br>
+                  <label class="lastname">Last Name</label><br>
+                  <input type="text" class="name" id="lastName"/>
+                  <span class="error"></span><br><br>
                   <label class="othernames">Other Names</label><br>
-                  <input type="text" class="name"/><br><br>
+                  <input type="text" class="name" id="otherNames"/>
+                  <span class="error"></span><br><br>
                   <label class="phone no">Phone Number</label><br>
-                  <input type="text" class="name"/><br><br>
+                  <input type="text" class="name" id="phoneNumber"/>
+                  <span class="error"></span><br><br>
                   <label class="email">Email Address</label><br>
-                  <input type="email" class="name" placeholder="abc@domain.com"/><br><br>
+                  <input type="email" class="name" placeholder="abc@domain.com" id="email"/>
+                  <span class="error"></span><br><br>
                   <label class="password">Password</label><br>
-                  <input type="password" class="name"/><br><br>
-                  <label class='conf '>Confirm Password</label><br>
-                  <input type="password" class="name"/><br>
+                  <input type="password" class="name" id="password"/>
+                  <span class="error"></span><br><br>
+                  <label class='conf'>Confirm Password</label><br>
+                  <input type="password" class="name" id="confirmPassword"/>
+                  <span class="error"></span><br><br>
+                  <button type="submit" class="btn" id="submitBtn">Submit</button>
+                  
                </form>
                <div class="check">
                   <input type="checkbox"  value="check"/>
                   <label class="checkbox">I agree to the terms and conditions</label><br><br>
                </div>
-               <button class="btn">SIGN UP</button>
       </div>
          </fieldset><br>
       <footer>
@@ -75,6 +84,7 @@
             <p>&copy; 2020 BetterBuys.com All Rights Reserved</p>
          </div>
       </footer>
+      <script src="../DOM/signup.js"></script>
    </body>
 </html>
 
