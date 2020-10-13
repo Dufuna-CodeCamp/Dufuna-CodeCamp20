@@ -193,7 +193,7 @@ CREATE TABLE `products` (
   KEY `fk_products_categorys_idx` (`category`),
   CONSTRAINT `fk_products_admin_users` FOREIGN KEY (`admin_user`) REFERENCES `admin_users` (`admin_user_id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_products_categorys` FOREIGN KEY (`category`) REFERENCES `categorys` (`category_id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
