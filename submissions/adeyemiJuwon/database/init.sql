@@ -97,7 +97,7 @@ CREATE TABLE `customers` (
   `state` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
   `country` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`customer_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
