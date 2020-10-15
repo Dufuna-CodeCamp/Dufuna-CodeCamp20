@@ -43,7 +43,7 @@ function lNameValidation (event){
 }
 
 function phoneValidation(event){
-    let phoneRegex = /^[\+]?[0-9]{8,14}$/i;
+    let phoneRegex = /^[+]?[0-9]{8,14}$/i;
     if(phoneNumber.value === ""){
         phoneNumber.nextElementSibling.innerHTML = "Please enter the phone number";
         event.preventDefault();
@@ -58,7 +58,7 @@ function phoneValidation(event){
 }
 
 function emailValidation(event){
-    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if(emailAddress.value === ""){
         emailAddress.nextElementSibling.innerHTML = "Please enter your Email Address";
         event.preventDefault();
@@ -73,7 +73,7 @@ function emailValidation(event){
 }
 
 function passwordValidation(event){
-    let passRegex = ("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})");
+    let passRegex = ("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{6,})");
     if (password.value === ""){
         password.nextElementSibling.innerHTML = "Please enter the password ";
         event.preventDefault();
