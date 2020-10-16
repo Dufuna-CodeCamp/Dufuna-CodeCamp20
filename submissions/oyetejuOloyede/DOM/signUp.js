@@ -1,80 +1,45 @@
-let form = document.getElementById("signup_form"),
-  firstName = document.getElementById("first_name"),
-  lastName = document.getElementById("last_name"),
-  phoneNumber = document.getElementById("phone_number"),
-  formEmail = document.getElementById("form_email"),
-  password = document.getElementById("password"),
-  confirmPassword = document.getElementById("confirm_password");
+let submitForm = document.getElementById('validateForm');
+let firstName = document.getElementById('firstName');
+let lastName = document.getElementById('lastName');
+let email = document.getElementById('email');
+let phoneNumber = document.getElementById('phoneNumber');
+let password = document.getElementById('password');
+let confirmPassword = document.getElementById('confirmPassword');
+let firstNameMsg = 'Please enter your First name';
+let lastNameMsg = 'Please enter your Last name';
+let phoneMsg = 'Please enter your Phone Number';
+let phoneErrorMsg = 'Please enter a valid phone number';
+let emailMsg = 'Please enter your Email Address';
+let emailErrorMsg = 'Please enter a valid email';
+let pwdMsg =  'Please enter your Password';
+let pwdErrorMsg = 'Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number';
+let confirmPwdMsg = 'Please confirm your Password';
+let confirmPwdErrorMsg = 'Your passwords don\'t match';
 
-function validation(field, regExp, errorMess1, errorMess2, event) {
-  event.preventDefault();
-  if (field.value === "") {
-    field.nextElementSibling.innerHTML = errorMess1;
-    event.preventDefault();
-    return false;
-  } else if (!field.value.match(regExp)) {
-    field.nextElementSibling.innerHTML = errorMess2;
-    event.preventDefault();
-    return false;
-  } else {
-    field.nextElementSibling.innerHTML = "";
-    return true;
-  }
+function validateRegex(field, regex, error1, error2, event) {
+    if(field.value === "") {
+      field.nextElementSibling.innerHTML = error1;
+      event.preventDefault();
+      return false;
+    } else if (!(field.value.match(regex))) {
+        field.nextElementSibling.innerHTML = error2;
+        event.preventDefault();
+        return false;
+        }
+    else {
+      field.nextElementSibling.innerHTML = "";
+      return true;
+    }
 }
 
-
-// form field validation
-function formValidation(event) {
-  const nameRegex = /^[a-zA-Z]/,
-    phoneRegex = /^[\+.]?[0-9]{8,14}$/i,
-    emailRegex = /^\w+([\..]?\w+)*@\w+([\..]?\w+)*(\.\w{2,10})+$/,
-    passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
-
-
-  validation(
-    firstName,
-    nameRegex,
-    "Please enter your First Name",
-    "Please enter a valid First Name ",
-    event
-  );
-  validation(
-    lastName,
-    nameRegex,
-    "Please enter your Last Name",
-    "Please enter a valid Last Name",
-    event
-  );
-  validation(
-    phoneNumber,
-    phoneRegex,
-    "Please enter your Phone Number",
-    "Please enter a valid Phone Number",
-    event
-  );
-  validation(
-    formEmail,
-    emailRegex,
-    "Please enter your Email",
-    "Please enter a valid Email",
-    event
-  );
-  validation(
-    password,
-    passwordRegex,
-    "Please enter your password",
-    "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number",
-    event
-  );
-  validation(
-    confirmPassword,
-    passwordRegex,
-    "Please confirm your Password",
-    "Your password don't match",
-    event
-  );
-
-  return true;
+function validateForm(e) {
+    validateRegex(firstName, /^[a-z]+$/i, firstNameMsg, firstNameMsg, e);
+    validateRegex(lastName, /^[a-z]+$/i, lastNameMsg, lastNameMsg, e);
+    validateRegex(phoneNumber, /^[+0-9]+$/, phoneMsg, phoneErrorMsg, e);
+    validateRegex(email, /[a-z0-9]+@[a-z]+\.com$/i, emailMsg, emailErrorMsg, e);
+    validateRegex(password, /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[#?!@$%_^&*-]).{6,}$/, pwdMsg, pwdErrorMsg, e);
+    validateRegex(confirmPassword, password.value, confirmPwdMsg, confirmPwdErrorMsg, e);
+    return true; 
 }
 
-form.addEventListener("submit", formValidation);
+submitForm.addEventListener('submit', validateForm);
