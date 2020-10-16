@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `admin_users`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `admin_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `email_address` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
-  `phone` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `name` varchar(50)  NOT NULL,
+  `email_address` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `phone` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -57,9 +57,9 @@ DROP TABLE IF EXISTS `categorys`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `categorys` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
-  `category` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `category` varchar(100) NOT NULL,
   PRIMARY KEY (`category_id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,19 +86,19 @@ DROP TABLE IF EXISTS `customers`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `customers` (
   `customer_id` int(11) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `last_name` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `email_address` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
-  `phone` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `contact_address` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
-  `street_address` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `first_name` varchar(50)  NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email_address` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `contact_address` varchar(250) NOT NULL,
+  `street_address` varchar(250) NOT NULL,
   `zip_code` int(11) DEFAULT NULL,
-  `city` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `state` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `country` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `city` varchar(50)  NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `country` varchar(50) NOT NULL,
   PRIMARY KEY (`customer_id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -131,7 +131,7 @@ CREATE TABLE `order_items` (
   KEY `fk_order_items_products_idx` (`product_id`),
   CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON UPDATE CASCADE
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +161,7 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`order_id`),
   KEY `fk_orders_customers_idx` (`customer_id`),
   CONSTRAINT `fk_orders_customers` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON UPDATE CASCADE
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,20 +192,20 @@ DROP TABLE IF EXISTS `products`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `products` (
   `product_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `description` text COLLATE utf8mb4_general_ci NOT NULL,
-  `image` text COLLATE utf8mb4_general_ci,
+  `name` varchar(50) NOT NULL,
+  `description` text  NOT NULL,
+  `image` text,
   `unit_price` decimal(8,2) NOT NULL,
   `category_id` int(11) NOT NULL,
   `admin_user_id` int(11) NOT NULL,
   `quantity_in_stock` int(11) NOT NULL,
-  `stock_level` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `stock_level` varchar(50) NOT NULL,
   PRIMARY KEY (`product_id`),
   KEY `fk_products_admin_users_idx` (`admin_user_id`),
   KEY `fk_products_categorys_idx` (`category_id`),
   CONSTRAINT `fk_products_admin_users` FOREIGN KEY (`admin_user_id`) REFERENCES `admin_users` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_products_categorys` FOREIGN KEY (`category_id`) REFERENCES `categorys` (`category_id`) ON UPDATE CASCADE
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
