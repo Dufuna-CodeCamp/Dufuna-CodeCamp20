@@ -3,7 +3,7 @@ CREATE DATABASE farmvile;
 use farmvile;
 
 -- categories table 
-CREATE TABLE categorries (
+CREATE TABLE categories (
     id INT NOT NULL AUTO_INCREMENT,
     category_name VARCHAR(50) NOT NULL,
     PRIMARY KEY(id)
