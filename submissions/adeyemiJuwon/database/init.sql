@@ -20,24 +20,21 @@
 --
 
 DROP TABLE IF EXISTS `admin_users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `admin_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50)  NOT NULL,
+  `name` varchar(50) NOT NULL,
   `email_address` varchar(250) NOT NULL,
   `password` varchar(250) NOT NULL,
-  `phone` varchar(50) DEFAULT NULL,
+  `phone` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `admin_users`
 --
 
-LOCK TABLES `admin_users` WRITE;
-/*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
+
 INSERT INTO `admin_users` VALUES (1,'juwon','samju7778@gmail.com','ade100','23480-667-76598'),
 (2,'samuel','samju6677@gmail.com','sam100','23480-667-76598'),
 (3,'nuru','nuru@gmail.com','nuru100','23480-667-87598'),
@@ -45,82 +42,72 @@ INSERT INTO `admin_users` VALUES (1,'juwon','samju7778@gmail.com','ade100','2348
 (5,'feyi','feyi@gmail.com','feyi100','23480-567-76598'),
 (6,'temidayo','temi@gmail.com','temi100','23480-667-76598'),
 (7,'seye','seye@gmail.com','seye100','23480-667-76690');
-/*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
--- Table structure for table `categorys`
+-- Table structure for table `categories`
 --
 
-DROP TABLE IF EXISTS `categorys`;
+DROP TABLE IF EXISTS `categories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `categorys` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(100) NOT NULL,
-  PRIMARY KEY (`category_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `categorys`
+-- Dumping data for table `categories`
 --
 
-LOCK TABLES `categorys` WRITE;
-/*!40000 ALTER TABLE `categorys` DISABLE KEYS */;
-INSERT INTO `categorys` VALUES (1,'Laptop Accessiories '),
+
+INSERT INTO `categories` VALUES (1,'Laptop Accessiories '),
 (2,'Baby Care & Wear'),
 (3,'Women Collection'),
 (4,'Electronic Accessiories'),
 (5,'Smart Home & Garden'),
 (6,'Lights & Lighting');
-/*!40000 ALTER TABLE `categorys` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `customers`
 --
 
 DROP TABLE IF EXISTS `customers`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `customers` (
-  `customer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50)  NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email_address` varchar(250) NOT NULL,
-  `password` varchar(250) NOT NULL,
-  `phone` varchar(50) DEFAULT NULL,
+  `password` varchar(250)  NOT NULL,
+  `phone` varchar(50)  NOT NULL,
   `contact_address` varchar(250) NOT NULL,
-  `street_address` varchar(250) NOT NULL,
+  `street_address` varchar(250)  NOT NULL,
   `zip_code` int(11) DEFAULT NULL,
   `city` varchar(50)  NOT NULL,
   `state` varchar(50) NOT NULL,
-  `country` varchar(50) NOT NULL,
-  PRIMARY KEY (`customer_id`)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `country` varchar(50)  NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `customers`
 --
 
-LOCK TABLES `customers` WRITE;
-/*!40000 ALTER TABLE `customers` DISABLE KEYS */;
+
 INSERT INTO `customers` VALUES (1,'Samuel','Adeniyi','ade@gmail.com','adew200',' 234-80775-67589','5 Ogunmefun Somolu Lagos','Ogunmefun',27704,'Lagos','Lagos','Nigeria'),
 (2,'Ronke','Adeyemi','ronke@gmail.com','ronke200','234-80665-67589','10 Ring Road Ibadan Oyo','Ring Road',27705,'Ibadan','Oyo','Nigeria'),
 (3,'Itunu','Adekoya','itunu@gmail.com','itunu200','234-80675-67589','11 wale Somolu Lagos','wale',27704,'Lagos','Lagos','Nigeria'),
 (4,'Wale','Ejigboye','wale@gmail.com','wale200','234-80775-67579','5 Ogonbiade Kunlede Ilorin ','Ogonbiade',27703,'Ilorin','Kwara','Nigeria');
-/*!40000 ALTER TABLE `customers` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `order_items`
 --
 
 DROP TABLE IF EXISTS `order_items`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `order_items` (
   `order_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
@@ -129,47 +116,42 @@ CREATE TABLE `order_items` (
   `total_amount` decimal(8,2) NOT NULL,
   PRIMARY KEY (`order_id`,`product_id`),
   KEY `fk_order_items_products_idx` (`product_id`),
-  CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`) ON UPDATE CASCADE,
-  CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON UPDATE CASCADE
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
+  CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `order_items`
 --
 
-LOCK TABLES `order_items` WRITE;
-/*!40000 ALTER TABLE `order_items` DISABLE KEYS */;
+
 INSERT INTO `order_items` VALUES (1,4,4,3.74,14.96),
 (2,1,2,9.10,18.20),
 (2,2,2,2.94,5.88),
 (2,3,4,1.66,6.64);
 /*!40000 ALTER TABLE `order_items` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `orders`
 --
 
 DROP TABLE IF EXISTS `orders`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `orders` (
-  `order_id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `customer_id` int(11) NOT NULL,
   `order_date` date NOT NULL,
-  PRIMARY KEY (`order_id`),
+  PRIMARY KEY (`id`),
   KEY `fk_orders_customers_idx` (`customer_id`),
-  CONSTRAINT `fk_orders_customers` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON UPDATE CASCADE
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  CONSTRAINT `fk_orders_customers` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 --
 -- Dumping data for table `orders`
 --
 
-LOCK TABLES `orders` WRITE;
-/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
 INSERT INTO `orders` VALUES (1,2,'2020-01-30'),
 (2,1,'2020-08-02'),
 (3,3,'2019-12-01'),
@@ -180,46 +162,41 @@ INSERT INTO `orders` VALUES (1,2,'2020-01-30'),
 (8,3,'2020-08-08'),
 (9,1,'2020-07-05'),
 (10,3,'2020-04-22');
-/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `products`
 --
 
 DROP TABLE IF EXISTS `products`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `products` (
-  `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
-  `description` text  NOT NULL,
-  `image` text,
+  `description` text NOT NULL,
+  `image` text NOT NULL,
   `unit_price` decimal(8,2) NOT NULL,
   `category_id` int(11) NOT NULL,
   `admin_user_id` int(11) NOT NULL,
   `quantity_in_stock` int(11) NOT NULL,
   `stock_level` varchar(50) NOT NULL,
-  PRIMARY KEY (`product_id`),
+  PRIMARY KEY (`id`),
   KEY `fk_products_admin_users_idx` (`admin_user_id`),
   KEY `fk_products_categorys_idx` (`category_id`),
   CONSTRAINT `fk_products_admin_users` FOREIGN KEY (`admin_user_id`) REFERENCES `admin_users` (`id`) ON UPDATE CASCADE,
-  CONSTRAINT `fk_products_categorys` FOREIGN KEY (`category_id`) REFERENCES `categorys` (`category_id`) ON UPDATE CASCADE
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `fk_products_categorys` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `products`
 --
 
-LOCK TABLES `products` WRITE;
-/*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Xiaomi Mi Notebook Pro 2019 15.6 inch Windows 10','Chinese Language Home Edition Intel Core i5 - 8250U Quad Core 1.6GHz CPU 8GB RAM 256GB SSD 1.0MP Front Camera Fingerprint Sensor',NULL,1485.83,1,2,50,'low stock'),
-(2,'Xiaomi Redmibook','Chinese Language Home Edition Intel Core i5 - 8250U Quad Core 1.6GHz CPU 8GB RAM 256GB SSD 1.0MP Front Camera Fingerprint Sensor',NULL,819.52,1,1,100,'low stock'),
-(3,'Charging power','1.8m DC Charging power ',NULL,4.26,1,4,2000,'in stock'),
-(4,'Laptop Bag','11 Inch Laptop Bag Tablet Zipper Pouch Sleeve for MacBook Air',NULL,6.95,1,6,2000,'in stock');
-/*!40000 ALTER TABLE `products` ENABLE KEYS */;
-UNLOCK TABLES;
+
+INSERT INTO `products` VALUES (1,'Xiaomi Mi Notebook Pro 2019 15.6 inch Windows 10','Chinese Language Home Edition Intel Core i5 - 8250U Quad Core 1.6GHz CPU 8GB RAM 256GB SSD 1.0MP Front Camera Fingerprint Sensor','load_file(https://samju200.github.io/samju/simple/img/laptop.jpg)',1485.83,1,2,50,'low stock'),
+(2,'Xiaomi Redmibook','Chinese Language Home Edition Intel Core i5 - 8250U Quad Core 1.6GHz CPU 8GB RAM 256GB SSD 1.0MP Front Camera Fingerprint Sensor','load_file(https://samju200.github.io/samju/simple/img/laptop1.jpg)',819.52,1,1,100,'low stock'),
+(3,'Charging power','1.8m DC Charging power ','load_file(https://samju200.github.io/samju/simple/img/charger.jpg)',4.26,1,4,2000,'in stock'),
+(4,'Laptop Bag','11 Inch Laptop Bag Tablet Zipper Pouch Sleeve for MacBook Air','load_file(https://samju200.github.io/samju/simple/img/bag1.jpg)',6.95,1,6,2000,'in stock');
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -230,4 +207,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-16 10:17:16
+-- Dump completed on 2020-10-17  9:42:00
