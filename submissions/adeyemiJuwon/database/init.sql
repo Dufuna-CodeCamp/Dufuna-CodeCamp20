@@ -49,8 +49,6 @@ INSERT INTO `admin_users` VALUES (1,'juwon','samju7778@gmail.com','ade100','2348
 --
 
 DROP TABLE IF EXISTS `categories`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(100) NOT NULL,
@@ -109,13 +107,13 @@ INSERT INTO `customers` VALUES (1,'Samuel','Adeniyi','ade@gmail.com','adew200','
 
 DROP TABLE IF EXISTS `order_items`;
 CREATE TABLE `order_items` (
+   `product_id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
   `unit_price` decimal(8,2) NOT NULL,
   `total_amount` decimal(8,2) NOT NULL,
-  PRIMARY KEY (`order_id`,`product_id`),
   KEY `fk_order_items_products_idx` (`product_id`),
+  KEY `fk_order_items_order_idx` (`product_id`),
   CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -126,10 +124,10 @@ CREATE TABLE `order_items` (
 --
 
 
-INSERT INTO `order_items` VALUES (1,4,4,3.74,14.96),
-(2,1,2,9.10,18.20),
+INSERT INTO `order_items` VALUES (4,1,4,3.74,14.96),
+(1,2,2,9.10,18.20),
 (2,2,2,2.94,5.88),
-(2,3,4,1.66,6.64);
+(3,2,4,1.66,6.64);
 /*!40000 ALTER TABLE `order_items` ENABLE KEYS */;
 
 
