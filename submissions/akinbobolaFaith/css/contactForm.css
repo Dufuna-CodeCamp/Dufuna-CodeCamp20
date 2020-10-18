@@ -9,7 +9,7 @@ body {
 }
 
 nav a[href="#"] {
-     font-size: 31px;
+    font-size: 31px;
     font-weight: bold;
     color: white;
 }

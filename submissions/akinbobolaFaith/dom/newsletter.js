@@ -1,5 +1,5 @@
-let submitForm = document.querySelector('.footer-center'),
-    newsletter = document.getElementById('footer-email')
+let submitForm = document.querySelector('.newsletterSignup'),
+    newsletter = document.getElementById('newsletter')
 ;
 
 function newsletterValidation (event) {
