@@ -79,8 +79,8 @@ CREATE TABLE admins (
 	phone_number VARCHAR(15) NOT NULL,
 	PRIMARY KEY (admin_id)
 );
-drop table admins;
-select * from admin;
+
+
 -- Inserted values into the products table
 INSERT INTO products (name, description, image, category_id, admin_id, unit_price, stock_level, status)
 VALUES ('blue white collar tee shirt', 'This is a quality shirt you can put on all day', LOAD_FILE('C:\Users\Aienobe\Desktop\Dufuna-CodeCamp20\submissions\victorAienobe\html\images\shirts.png'), 2, 1, '250', '70', 'in stock'),
