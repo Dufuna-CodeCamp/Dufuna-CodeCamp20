@@ -18,6 +18,7 @@ function inputValidation(event, input, inputRegex, innerHTML, innerHTMLTwo) {
         input.nextElementSibling.innerHTML = "";
     }
 }
+
 function fieldValidation(event, field, innerHTML) {
     if (field.value === '') {
         field.nextElementSibling.innerHTML = innerHTML;
