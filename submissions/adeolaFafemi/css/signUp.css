@@ -114,7 +114,7 @@ html{
 .bodydiv{
     display: flex;
 }
-.box{
+.box1{
     flex-basis: 50%;
 }
 .regNotes{
@@ -142,7 +142,7 @@ html{
     margin-top: 60px;
     margin-bottom: 50px;
     margin-left: 50px;
-    width: 600px; 
+    width: 600px;
     padding-left: 55px;
     padding-right: 50px;
     padding-top: 20px;
@@ -198,7 +198,7 @@ html{
      }
      .regNotes h1{
         line-height: 30px;
-        font-size: 25px; 
+        font-size: 25px;
         text-align: center;
      }
      .regNotes h1, .regNotes .secondLine{
@@ -209,7 +209,7 @@ html{
         margin-top: 10px;
         margin-bottom: 30px;
         margin-left: 5px;
-        width: 470px; 
+        width: 470px;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 30px;
@@ -272,7 +272,7 @@ html{
          }
          .regNotes h1{
             line-height: 61px;
-            font-size: 50px; 
+            font-size: 50px;
             text-align: center;
          }
          #firstname{
@@ -286,7 +286,7 @@ html{
             margin-top: 30px;
             margin-bottom: 50px;
             margin-left: 20px;
-            width:600px; 
+            width:600px;
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 45px;
@@ -342,7 +342,7 @@ html{
 }
 .footerDiv{
     display: flex;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
 }
 .box{
@@ -460,7 +460,7 @@ html{
     }
     .footerDiv{
         display: grid;
-        bottom: 0px;
+        bottom: 0;
         width: 100%;
         grid-template-columns:1fr 1fr ;
         grid-template-rows: auto;
