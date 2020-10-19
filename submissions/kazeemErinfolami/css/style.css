@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+img{
+    width: 200px;
+  height: auto;
+  border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+form{
+      text-align: center;
+  }
+.header{
+font-weight: lighter;
+font-style: inherit;
+font-size: 300%;
+font-family:  Chalkduster, Arial, Helvetica, sans-serif;
+margin-top: 0px;
+color: dimgray;
+}
+.goolgeSignup{
+    display: inline-block;
+    background-color: rgb(243, 8, 8);
+    margin-top: 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 13px 10%;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.or{
+    margin-top: 40px;
+    color: dimgray;
+    font-size: larger;
+}
+/* input{
+    
+    text-decoration: underline;
+} */
+.forminput {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px groove black;
+    width: 32%;
+    position: absolute;
+    left: 34%;
+    margin-top: 30px;
+    font-size: 120%;
+  }
+h4{
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+}
+.agree{
+    margin-top: 30px;   
+}
+.signupbutton{
+    margin-top: 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 13px 12%;
+    color: white;
+    background-color: #87CEFA;
+    font-size: large;
+    cursor: pointer;
+}
+section{
+    position: absolute;
+    left: 34%;
+    margin-top: 20px;
+}
+
+/* footer{
+    position: absolute;
+    left: 40%;
+    font-size: 100%;
+    margin-top: 90px;
+} */
+footer{
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: gray;
+}
+.ta{
+    color: rgb(136, 32, 32);
+}
+.fa{
+    color: #87CEFA;
+}
+@media only screen and (max-width: 600px) {
+    .forminput {
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 1px groove black;
+        width: 57%;
+        position: absolute;
+        left: 20%;
+        margin-top: 30px;
+        font-size: 120%;
+      }
+    section{
+        position: absolute;
+        left: 20%;
+        margin-top: 20px;
+    }
+  }
