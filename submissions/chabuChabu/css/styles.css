@@ -24,6 +24,11 @@ html, body{
 	line-height: 20px;
 	margin: 0 auto;
 }
+.error-block {
+	color: red;
+	font-size: 14px;
+	margin-left: 23px;
+}
 #form-label{
 padding-left: 25px;
 }	
