@@ -26,7 +26,7 @@ function valid(regex, field, error1, error2, event) {
 }
 
 function validation(e) {
-    valid(/^[a-z]+$/i, fullName, fullNameMsg, fullNameMsg, e);
+    valid(/^[a-z]+$/i, fullName, fullNameMsg1, fullNameMsg2, e);
     valid(/[a-z0-9]+@[a-z]+\.com$/i, email, emailMsg, emailErrorMsg, e);
     valid(/^[a-z]+$/i, subject, subjectMsg, subjectMsg, e);
     valid(/^[a-z0-9]+$/i, textArea, textAreaMsg, textAreaMsg, e);
