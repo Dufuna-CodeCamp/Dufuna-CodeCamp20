@@ -21,7 +21,7 @@ font-weight: lighter;
 font-style: inherit;
 font-size: 200%;
 font-family: 'Rajdhani', sans-serif;
-margin-top: 0px;
+margin-top: 0;
 color: dimgray;
 }
 .Googlelogo{
@@ -51,7 +51,6 @@ color: dimgray;
     color: dimgray;
     font-size: larger;
     font-family: 'Rajdhani', sans-serif;
-    color: rgb(160, 159, 159);
 }
 /* input{
     
@@ -106,7 +105,7 @@ section{
     left: 36%;
     margin-top: 20px;
     margin-bottom: 90px;
-}h
+}
 .ta{
     color: rgb(136, 32, 32);
 }
