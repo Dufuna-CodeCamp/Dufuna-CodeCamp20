@@ -95,9 +95,9 @@ VALUES('farm animals'),
 
 -- insert into admins
 INSERT INTO admins (firstname, lastname, email, admin_password, phone_number)
-VALUES ('Nifemi', 'Omotola', 'nifemi@email.com', 'omotola', 08012345678),
-       ('Olatokunbo', 'Fagbamigbe', 'tox@email.com', 'tox', 09012345678 ),
-       ('Israel', 'Oladosu', 'Fahrenheit@email.com', 'fahrenheit', 08112345678);
+VALUES ('Nifemi', 'Omotola', 'nifemi@email.com', 'omotola', '08012345678'),
+       ('Olatokunbo', 'Fagbamigbe', 'tox@email.com', 'tox', '09012345678' ),
+       ('Israel', 'Oladosu', 'Fahrenheit@email.com', 'fahrenheit', '08112345678');
 
 -- insert into products table
 INSERT INTO products (product_name, product_description, product_image, unit_price, stock_level, product_status, admin_id, category_id)
