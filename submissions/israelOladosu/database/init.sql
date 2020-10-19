@@ -26,7 +26,7 @@ CREATE TABLE products (
     product_name VARCHAR(50) NOT NULL,
     product_description VARCHAR(150) NOT NULL,
     product_image BLOB,
-    unit_price INT NOT NULL,
+    unit_price DECIMAL(19,4) NOT NULL,
     stock_level INT NOT NULL,
     product_status VARCHAR(20) NOT NULL,
     admin_id INT NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE addresses (
 -- orders table
 CREATE TABLE orders (
     id INT NOT NULL AUTO_INCREMENT,
-    order_amount INT NOT NULL,
+    order_amount DECIMAL(19,4) NOT NULL,
     made_at DATETIME NOT NULL,
     customer_id INT NOT NULL,
     PRIMARY KEY(id),
@@ -74,8 +74,8 @@ CREATE TABLE orders (
 CREATE TABLE items (
     id INT NOT NULL AUTO_INCREMENT,
     quantity INT NOT NULL,
-    unit_price INT NOT NULL,
-    total_amoumt INT NOT NULL,
+    unit_price DECIMAL(19,4) NOT NULL,
+    total_amoumt DECIMAL(19,4) NOT NULL,
     product_id INT NOT NULL,
     order_id INT NOT NULL,
     PRIMARY KEY(id),
