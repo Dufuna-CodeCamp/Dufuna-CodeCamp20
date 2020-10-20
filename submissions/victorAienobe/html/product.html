@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/product.css">
+        <title>Product Page</title>
+    </head>
+    <body>
+        <header class="top">
+            <nav>
+                <img src="../html/images/logo.png" class="pic" alt="logo">
+                <a class="nav-link" href="../htmlForms/customer-sign-up.html">Sign-up</a>
+                <a class="nav-link" href="../htmlForms/contact.html">Contact Us</a>
+                <a class="nav-link" href="../html/product.html">Product Page</a>
+            </nav>
+        </header>
+        <main>
+            <div class="main1">
+                <img class="pix" src="../html/images/shirts.png" alt="shirt">
+               <div class="main2">
+                <h3>BLUE-WHITE COLLAR TEE SHIRT</h3>  
+                <b>Brand: Polka-dot</b>
+                <br>
+                <b>Quantity:</b><input id="quantity" type="number" class="box" value="1"/>
+                <span class="error1"></span>
+                <br>
+                <b>Price:$</b><span id="price">250</span>
+                <br>
+                <b>Shipping cost:$</b><span id="shipCost">50</span>
+                <br>
+                <b>Total cost:$</b><span id="totalCost">350</span>
+                <br>
+                <button class="btn" id="btn" type="submit">BUY NOW</button>
+               </div>
+            </div>
+            <h4>DESCRIPTION</h4>
+            <p>This is a shirt you can put on all day. This polka dot designed shirt guarantees maximum comfort for whoever wears. The strength
+                 of material assures that it is long lasting from the moment it goes off the shelf.</p>
+        </main>
+        <section>
+            <h4>RELATED PRODUCTS</h4>
+            <div class="main3">
+                <figure>
+                    <img class="pix" src="../html/images/Capture3.JPG" alt="game">
+                    <figcaption>
+                        <b>Play Station 5 Console <br> Price: $700</b>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="pix" src="../html/images/Capture2.JPG" alt="jersey">
+                    <figcaption>
+                        <b>PSG Nike Kit 20/21 Season<br> Price: $50</b>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="pix" src="../html/images/Jordan-x-PSG-x-Nike-PhantomVSN.jpg" alt="boot">
+                    <figcaption>
+                        <b>Nike-Jordan Mercurial Boots <br> Price: $350</b>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <footer id="foot">
+            <div class="base">
+                <div class="base1">
+                    <ul>
+                        <li><a class="bass" href="#">Contact Us</a></li>
+                        <li><a class="bass" href="#">About Us</a></li>
+                        <li><a class="bass" href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="base2">
+                    <form class="base-3" id="submit1">
+                        <label for="newsletter" >Sign up for our Newsletter</label> <br>
+                        <input type="text" id="newsLetter" name="newsletter" class="button" placeholder="Enter your email address">
+                        <span class="error"></span>
+                        <button type="submit" name="submit_form" class="button1">SUBMIT</button>
+                    </form>
+                    <div class="base-4">
+                        <h5>CONNECT WITH US</h5>
+                            <a href="#"><img src="../html/images/facebooklogo.png" alt="Facebook"></a>
+                            <a href="#"><img src="../html/images/twiiterlogo.png" alt="Twitter"></a>
+                            <a href="#"><img src="../html/images/gmaillogo.png" alt="Gmail"></a>
+                            <a href="#"><img src="../html/images/youtubelogo.png" alt="Youtube"></a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <h5 class="note">Copyright 2020 Viks-Zone.com All rights reserved.</h5>
+        </footer>
+        <script src="../dom/newsLetter.js"></script>
+        <script src="../dom/product.js"></script>
+    </body>
+</html>

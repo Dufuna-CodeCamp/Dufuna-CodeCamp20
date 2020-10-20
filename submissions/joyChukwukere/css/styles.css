@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Nav bar */
+.navbar {
+  background-color: purple;
+  width: 100%;
+ padding: 15px 0;
+}
+.nav-bar h4 {
+  color: #fff;
+  padding-left: 10px;
+}
+.navbar-nav {
+  display: inline-flex;
+  float: right;
+  margin-top: -20px; 
+}
+li {
+  list-style: none;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+.box {
+  width: 100%;
+  display: inline-flex;
+}
+.small-box {
+  width: 50%;
+  padding: 2px 10px;
+}
+.don {
+  padding-top: 10rem;
+  font-size: 2rem;
+}
+.forms {
+  padding-top: 40px;
+}
+/* Body */
+fieldset {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 80%;
+}
+
+.heading {
+  text-align: left;
+  padding-top: 20px;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#signin {
+  color: purple;
+}
+
+/* sign up button */
+
+#sign-up {
+  width: 100px;
+  background-color: purple;
+  color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+/* new footer */
+.footer-box {
+  width: 100%;
+  display: inline-flex;
+  background-color: purple;
+}
+.footer-smallbox {
+  width: 33.3%;
+  padding: 10px 10px;
+}
+
+/* footer */
+h2 {
+  color: white;
+}
+
+.footer {
+  background-color: purple;
+}
+.button {
+  background-color: purple;
+  width: 50px;
+}
+#sign-up {
+  height: 40px;
+  width: 150px;
+}
+
+#email_address {
+  width: 200px;
+  height: 30px;
+  color: purple;
+}
+.footer-nav {
+  list-style: none;
+}
+::placeholder {
+  font-size: 1rem;
+  color: purple;
+}
+/* font awesome in the footer*/
+
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: blue;
+}
+.fa-envelope {
+  color: white;
+}
+.fa-youtube-square {
+  color: white;
+}
+
+/* url for the footer */
+.url {
+  padding-left: 10px;
+  list-style-position: none;
+  text-decoration-line: none;
+  padding-top: 5px;
+}
+
+/* Sign up for our newsletter */
+.email_address {
+  padding-left: 300px;
+  padding-top: auto;
+}
+/* Connect With Us */
+.account {
+  padding-left: 700px;
+  padding-top: auto;
+  margin-top: 0px;
+  flex-direction: row;
+}
+
+/* copyright */
+h5 {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+/* media queries  ...............................................................*/
+/* small screen................................... */
+@media (max-width: 576px) {
+  .box {
+    display: block;
+    overflow-x: hidden;
+  }
+  .small-box {
+    width: 90%;
+  }
+  .don {
+    padding-top: 0px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+.nav-item {
+  display: block;
+  padding-bottom: 20px;
+  text-align: left;
+}
+ h4{
+   padding-bottom: 30px;
+ }
+
+/* footer -sm size media  query . */
+  .footer-box {
+    display: block;
+  }
+  .footer-smallbox {
+    width: auto;
+    font-display: 10px;
+    line-height: 15px;
+    padding: 20px;
+    display: inline-block;
+  }
+  
+  .footer-box (
+  display: block;
+  overflow: hidden ;
+}
+
+.foot {
+  padding-bottom: 20px;
+}
+.footer-smallbox {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* media queries for tablet.................................... */
+
+@media (max-width: 800px) {
+  .don {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 150px;
+    width: 90%;
+  }
+  .navbar-nav {
+    align-content: left;
+  }
+  .box {
+    display: block;
+  }
+  
+.small-box {
+  width: 100%;  
+  text-align: center;
+}
+.nav {
+line-height: 2px;
+}
+.footer-box {
+  padding-bottom: 100px;
+}
+}

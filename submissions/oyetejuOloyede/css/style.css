@@ -1,0 +1,199 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height:1.4em;
+    margin: 0;
+}
+
+.container{
+    width:500px;
+    margin:0;
+}
+
+.button{
+    background-color:red;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    text-align: center;
+}
+
+.clr{
+    clear:both;
+}
+
+.header-block{
+    position: relative;
+    background-color: red;
+    padding:10px;
+    height: 50px;
+    /*Header Color and Height*/
+    width: 100%;
+}
+.logo-container{
+    float: left;
+}
+
+.logo-container>a>img{
+    width: 40%;
+    height: 40%;
+}
+.header-right{
+    float: right;
+    list-style: none;
+}
+.header-right>li{
+    display: inline;
+    margin: 10px;
+}
+.header-right>li>a{
+    text-decoration: none;
+    color: white;
+}
+.header-links:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.clr{
+    clear:both;
+}
+
+.box-1{
+    background-color: red;
+    color:#fff;
+    padding:20px;
+}
+
+.p-box{
+    float:left;
+    width:32%;
+}
+
+.box-2{
+    background-color:white;
+    color:black;
+    width: 80%;
+    padding:20px;
+    height:60%;
+    margin: auto;
+}
+
+.main-block{
+    float: left;
+    width:40%;
+    border:1px solid #ccc;
+    padding:10px;
+    text-align: center; 
+}
+
+.main-block h2{
+    color: red;
+    text-align: center;
+}
+
+.clr{
+    clear:both;
+}
+
+.form-container{
+    float: right;
+    width:40%;
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.my-form{
+    padding-bottom:15px;
+    /* margin: 0 auto; */
+}
+
+.my-form label{
+    display:block;
+}
+
+.box-3{
+    background-color: red;
+    color:#fff;
+    padding:20px;
+}
+
+.box-3 h6{
+    text-align: center;
+}
+
+.button{
+    background-color:red;
+    color:white;
+    text-align: center;
+}
+
+.block{
+    float:left;
+    width:32%; 
+}
+
+@media (max-width: 640px){
+    body{
+        width: 100%;
+    }
+    .header-block {
+        width:100%;
+        height: 120px;
+    }
+    .header-right-cont{
+        margin: auto;
+        width: auto;
+       
+    }
+    .header-right{
+        margin: auto;
+       
+    }
+    .header-right li{
+       display: block;
+       width: 100%;
+       text-align: center;
+    }
+    .main-block{
+        display: block;
+        width: 100%;
+    }
+    .form-container{
+        clear: both;
+        width:100%;
+        border:1px solid #ccc;
+        padding:10px;
+        display: block;
+    }
+    .logo-container{
+        display: block;
+        clear: both;
+    }
+
+    .logo-container>a>img{
+        width: 40%;
+        height: 40%;
+    }
+    .box-3{
+        width: 100%;
+    }
+    .block{
+        display: block;
+        clear: both;
+        width:100%; 
+    }
+    .block>ul>li{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .box-3 h6{
+        text-align: center;
+        font-size: 12px;
+        width: 80%;
+    }
+}
