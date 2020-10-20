@@ -20,10 +20,11 @@
 --
 
 DROP TABLE IF EXISTS `admin_users`;
+
 CREATE TABLE `admin_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `email_address` varchar(250) NOT NULL,
+  `name` varchar(50)  NOT NULL,
+  `email_address` varchar(250)  NOT NULL,
   `password` varchar(250) NOT NULL,
   `phone` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
@@ -44,14 +45,16 @@ INSERT INTO `admin_users` VALUES (1,'juwon','samju7778@gmail.com','ade100','2348
 (7,'seye','seye@gmail.com','seye100','23480-667-76690');
 
 
+
 --
 -- Table structure for table `categories`
 --
 
 DROP TABLE IF EXISTS `categories`;
+
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `category` varchar(100) NOT NULL,
+  `category` varchar(100)  NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -68,109 +71,17 @@ INSERT INTO `categories` VALUES (1,'Laptop Accessiories '),
 (5,'Smart Home & Garden'),
 (6,'Lights & Lighting');
 
---
--- Table structure for table `customers`
---
-
-DROP TABLE IF EXISTS `customers`;
-CREATE TABLE `customers` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50)  NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `email_address` varchar(250) NOT NULL,
-  `password` varchar(250)  NOT NULL,
-  `phone` varchar(50)  NOT NULL,
-  `contact_address` varchar(250) NOT NULL,
-  `street_address` varchar(250)  NOT NULL,
-  `zip_code` int(11) DEFAULT NULL,
-  `city` varchar(50)  NOT NULL,
-  `state` varchar(50) NOT NULL,
-  `country` varchar(50)  NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `customers`
---
-
-
-INSERT INTO `customers` VALUES (1,'Samuel','Adeniyi','ade@gmail.com','adew200',' 234-80775-67589','5 Ogunmefun Somolu Lagos','Ogunmefun',27704,'Lagos','Lagos','Nigeria'),
-(2,'Ronke','Adeyemi','ronke@gmail.com','ronke200','234-80665-67589','10 Ring Road Ibadan Oyo','Ring Road',27705,'Ibadan','Oyo','Nigeria'),
-(3,'Itunu','Adekoya','itunu@gmail.com','itunu200','234-80675-67589','11 wale Somolu Lagos','wale',27704,'Lagos','Lagos','Nigeria'),
-(4,'Wale','Ejigboye','wale@gmail.com','wale200','234-80775-67579','5 Ogonbiade Kunlede Ilorin ','Ogonbiade',27703,'Ilorin','Kwara','Nigeria');
-
-
---
--- Table structure for table `order_items`
---
-
-DROP TABLE IF EXISTS `order_items`;
-CREATE TABLE `order_items` (
-   `product_id` int(11) NOT NULL,
-  `order_id` int(11) NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `unit_price` decimal(8,2) NOT NULL,
-  `total_amount` decimal(8,2) NOT NULL,
-  KEY `fk_order_items_products_idx` (`product_id`),
-  KEY `fk_order_items_order_idx` (`order_id`),
-  CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
-  CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `order_items`
---
-
-
-INSERT INTO `order_items` VALUES (4,1,4,3.74,14.96),
-(1,2,2,9.10,18.20),
-(2,2,2,2.94,5.88),
-(3,2,4,1.66,6.64);
-/*!40000 ALTER TABLE `order_items` ENABLE KEYS */;
-
-
---
--- Table structure for table `orders`
---
-
-DROP TABLE IF EXISTS `orders`;
-CREATE TABLE `orders` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `customer_id` int(11) NOT NULL,
-  `order_date` date NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_orders_customers_idx` (`customer_id`),
-  CONSTRAINT `fk_orders_customers` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` VALUES (1,2,'2020-01-30'),
-(2,1,'2020-08-02'),
-(3,3,'2019-12-01'),
-(4,2,'2020-01-22'),
-(5,1,'2020-08-25'),
-(6,4,'2019-11-18'),
-(7,2,'2020-09-22'),
-(8,3,'2020-08-08'),
-(9,1,'2020-07-05'),
-(10,3,'2020-04-22');
-
 
 --
 -- Table structure for table `products`
 --
 
 DROP TABLE IF EXISTS `products`;
+
 CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text NOT NULL,
+  `name` varchar(50)  NOT NULL,
+  `description` text  NOT NULL,
   `image` text NOT NULL,
   `unit_price` decimal(8,2) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -195,6 +106,107 @@ INSERT INTO `products` VALUES (1,'Xiaomi Mi Notebook Pro 2019 15.6 inch Windows 
 (3,'Charging power','1.8m DC Charging power ','load_file(https://samju200.github.io/samju/simple/img/charger.jpg)',4.26,1,4,2000,'in stock'),
 (4,'Laptop Bag','11 Inch Laptop Bag Tablet Zipper Pouch Sleeve for MacBook Air','load_file(https://samju200.github.io/samju/simple/img/bag1.jpg)',6.95,1,6,2000,'in stock');
 
+
+--
+-- Table structure for table `customers`
+--
+
+DROP TABLE IF EXISTS `customers`;
+
+CREATE TABLE `customers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50)  NOT NULL,
+  `email_address` varchar(250) NOT NULL,
+  `password` varchar(250)  NOT NULL,
+  `phone` varchar(50)  NOT NULL,
+  `contact_address` varchar(250)  NOT NULL,
+  `street_address` varchar(250)  NOT NULL,
+  `zip_code` int(11) DEFAULT NULL,
+  `city` varchar(50) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `country` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `customers`
+--
+
+
+INSERT INTO `customers` VALUES (1,'Samuel','Adeniyi','ade@gmail.com','adew200',' 234-80775-67589','5 Ogunmefun Somolu Lagos','Ogunmefun',27704,'Lagos','Lagos','Nigeria'),
+(2,'Ronke','Adeyemi','ronke@gmail.com','ronke200','234-80665-67589','10 Ring Road Ibadan Oyo','Ring Road',27705,'Ibadan','Oyo','Nigeria'),
+(3,'Itunu','Adekoya','itunu@gmail.com','itunu200','234-80675-67589','11 wale Somolu Lagos','wale',27704,'Lagos','Lagos','Nigeria'),
+(4,'Wale','Ejigboye','wale@gmail.com','wale200','234-80775-67579','5 Ogonbiade Kunlede Ilorin ','Ogonbiade',27703,'Ilorin','Kwara','Nigeria');
+
+
+
+
+--
+-- Table structure for table `orders`
+--
+
+DROP TABLE IF EXISTS `orders`;
+
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `customer_id` int(11) NOT NULL,
+  `order_date` date NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_orders_customers_idx` (`customer_id`),
+  CONSTRAINT `fk_orders_customers` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `orders`
+--
+
+
+INSERT INTO `orders` VALUES (1,2,'2020-01-30'),
+(2,1,'2020-08-02'),
+(3,3,'2019-12-01'),
+(4,2,'2020-01-22'),
+(5,1,'2020-08-25'),
+(6,4,'2019-11-18'),
+(7,2,'2020-09-22'),
+(8,3,'2020-08-08'),
+(9,1,'2020-07-05'),
+(10,3,'2020-04-22');
+
+--
+-- Table structure for table `order_items`
+--
+
+DROP TABLE IF EXISTS `order_items`;
+
+CREATE TABLE `order_items` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `unit_price` decimal(8,2) NOT NULL,
+  `total_amount` decimal(8,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_order_items_products_idx` (`product_id`),
+  KEY `fk_order_items_orders_idx` (`order_id`),
+  CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
+  CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `order_items`
+--
+
+
+INSERT INTO `order_items` VALUES (1,1,4,4,3.74,14.96),
+(2,2,1,2,9.10,18.20),
+(3,2,3,4,1.66,6.64),
+(4,2,2,2,2.94,5.88);
+
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -205,4 +217,4 @@ INSERT INTO `products` VALUES (1,'Xiaomi Mi Notebook Pro 2019 15.6 inch Windows 
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-17  9:42:00
+-- Dump completed on 2020-10-20 19:06:03
