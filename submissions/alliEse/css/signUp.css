@@ -1,0 +1,82 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  font-family: Roboto, Helvetica, sans-serif;
+  color: rgb(77, 77, 74);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+ul li a {
+  color: rgb(77, 77, 74);
+}
+.header {
+  text-align: center;
+  font-weight: 100;
+}
+#google {
+  display: flex;
+  justify-content: center;
+}
+.Google {
+  text-align: center;
+  padding: 10px;
+  border-radius: 2px;
+  width: 390px;
+  background-color: white;
+  margin: 30px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 100;
+  box-shadow: none;
+  border: none;
+}
+.or {
+  text-align: center;
+  font-weight: 100;
+}
+form {
+  position: relative;
+  display: block;
+  max-width: 342px;
+  width: 100%;
+  margin: 19px auto 0;
+}
+input {
+  width: 302px;
+  border-style: none;
+  border-bottom: 2px solid rgba(65, 154, 249, 0.99);
+  margin: 12px;
+  padding: 9px;
+  outline: none;
+  box-shadow: none;
+  font-size: 20px;
+}
+hr {
+  color: rgb(77, 77, 74);
+}
+.login {
+  width: 292px;
+  padding: 8px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: white;
+  margin: 30px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 100;
+  box-shadow: none;
+  border: none;
+}
+.bottom {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgba(65, 154, 249, 0.99);
+}
