@@ -70,7 +70,9 @@ CREATE TABLE customers (
 	PRIMARY KEY (id)
 );
 
-INSERT INTO customers (firstname, lastname, email_address, password, created_by)
+ALTER TABLE customers CHANGE created_by created_at DATETIME;
+
+INSERT INTO customers (firstname, lastname, email_address, password, created_at)
 VALUES ('Michael', 'Daniel', 'miichaeldaniel@gmail.com', 'Danmichael24.', now()),
 ('Chukwu', 'Flora', 'chukwuflora@gmail.com', 'floRal58chuks.', now()),
 ('Adeola', 'Abosede', 'bosededebola@gmail.com', 'Debolboss_1984', now()),
@@ -113,7 +115,9 @@ CREATE TABLE orders (
 	FOREIGN KEY (customers_id) REFERENCES customers (id)
 );
 
-INSERT INTO orders (customers_id, amount, date, created_at)
+ALTER TABLE orders CHANGE date order_date VARCHAR(50) NOT NULL;
+
+INSERT INTO orders (customers_id, amount, order_date, created_at)
 VALUES(3, 28000.00, cast(now() AS DATE), now()),
 (1, 22000.00, cast(now() AS DATE), now()),
 (5, 126000.00, cast(now() AS DATE), now()),
