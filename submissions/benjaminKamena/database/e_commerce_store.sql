@@ -1,23 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.1
--- https://www.phpmyadmin.net/
---
--- Host: localhost
--- Generation Time: Oct 19, 2020 at 09:55 AM
--- Server version: 8.0.18
--- PHP Version: 7.3.11
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `e_commerce_store`
 --
@@ -28,13 +8,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin users`
 --
 
-CREATE TABLE `admin users` (
+CREATE TABLE `admin_users` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `email_address` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `phone_number` varchar(13) COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `name` varchar(100) NOT NULL,
+  `email_address` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `phone_number` varchar(13) NOT NULL
+);
 
 --
 -- Dumping data for table `admin users`
@@ -52,8 +32,8 @@ INSERT INTO `admin users` (`id`, `name`, `email_address`, `password`, `phone_num
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
-  `category_name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `category_name` varchar(255) NOT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -61,15 +41,15 @@ CREATE TABLE `categories` (
 -- Table structure for table `contact details`
 --
 
-CREATE TABLE `contact details` (
+CREATE TABLE `contact_details` (
   `id` int(11) NOT NULL,
-  `street_address` text COLLATE utf8mb4_general_ci NOT NULL,
-  `city` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `state` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `street_address` text NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `state` varchar(100) NOT NULL,
   `zip_code` int(100) NOT NULL,
-  `phone_number` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `country` varchar(100) COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `phone_number` varchar(100) NOT NULL,
+  `country` varchar(100) NOT NULL
+);
 
 -- --------------------------------------------------------
 
@@ -79,14 +59,12 @@ CREATE TABLE `contact details` (
 
 CREATE TABLE `customers` (
   `id` int(11) NOT NULL,
-  `fName` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `lName` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `email_address` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `fName` varchar(255) NOT NULL,
+  `lName` varchar(255) NOT NULL,
+  `email_address` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
   `contact_info` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
+);
 
 --
 -- Table structure for table `orders`
@@ -97,9 +75,9 @@ CREATE TABLE `orders` (
   `amount` int(100) NOT NULL,
   `customer_id` int(11) NOT NULL,
   `date` date NOT NULL,
-  `qauntity` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `qauntity` varchar(255) NOT NULL,
   `total` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 -- --------------------------------------------------------
 
@@ -109,15 +87,15 @@ CREATE TABLE `orders` (
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
-  `product_name` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `description` text COLLATE utf8mb4_general_ci NOT NULL,
-  `image` text COLLATE utf8mb4_general_ci NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `description` text NOT NULL,
+  `image` text NOT NULL,
   `unit_price` int(10) NOT NULL,
   `category` int(11) NOT NULL,
   `created_by` int(11) NOT NULL,
   `stock` int(11) NOT NULL,
   `order_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 -- --------------------------------------------------------
 
@@ -129,7 +107,7 @@ CREATE TABLE `stocks` (
   `id` int(11) NOT NULL,
   `total_quantity` int(11) NOT NULL,
   `status` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 -- --------------------------------------------------------
 
@@ -139,10 +117,10 @@ CREATE TABLE `stocks` (
 
 CREATE TABLE `stock_status` (
   `id` int(11) NOT NULL,
-  `in_stock` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `out_of_stock` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `in_stock` varchar(100) NOT NULL,
+  `out_of_stock` varchar(100)NOT NULL,
   `low_stock` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 --
 -- Indexes for dumped tables
@@ -151,7 +129,7 @@ CREATE TABLE `stock_status` (
 --
 -- Indexes for table `admin users`
 --
-ALTER TABLE `admin users`
+ALTER TABLE `admin_users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -163,7 +141,7 @@ ALTER TABLE `categories`
 --
 -- Indexes for table `contact details`
 --
-ALTER TABLE `contact details`
+ALTER TABLE `contact_details`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -210,7 +188,7 @@ ALTER TABLE `stock_status`
 --
 -- AUTO_INCREMENT for table `admin users`
 --
-ALTER TABLE `admin users`
+ALTER TABLE `admin_users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
@@ -222,7 +200,7 @@ ALTER TABLE `categories`
 --
 -- AUTO_INCREMENT for table `contact details`
 --
-ALTER TABLE `contact details`
+ALTER TABLE `contact_details`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -289,7 +267,3 @@ ALTER TABLE `stocks`
 ALTER TABLE `stock_status`
   ADD CONSTRAINT `stock_status_ibfk_1` FOREIGN KEY (`id`) REFERENCES `stocks` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
