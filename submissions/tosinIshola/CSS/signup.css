@@ -13,7 +13,7 @@ body{
     margin: 0;
     font-size: 18px;
 }
-header .logo{
+header #logo{
     width:15em;
     margin-left: 0.2em;
 }
@@ -52,15 +52,15 @@ header {
 main{
     padding: 2.5em;
 }
-main .heading{
+main #heading{
     width: 72%;
     margin: 1em auto;
     text-align: center ;
 }
-main .heading h1{
+main #heading h1{
     color: #E9967A;
 }
-main .signin{
+main #signin{
     margin-bottom: 1em;
     text-align: center;
     font-size: 1rem;
@@ -85,7 +85,7 @@ main form input[type = checkbox] {
     width: 10%;
     margin-bottom: 1em;
 }
-main form .agree{
+main form #agree{
     display: inline;
     font-size: 1em;
     font-weight: bold;
@@ -96,11 +96,7 @@ main form label{
     display: block;
     margin-bottom: 0.5em;
 }
-main form .error-block{
-    font-size: 0.8em;
-    color: green;
-    display: block;
-}
+
 main form button{
     display: block;
     margin: 0.5em auto 0;
@@ -157,22 +153,22 @@ footer .footer .coloumn2#connect{
 
 /* social medias */
 
-.facebook{
+#facebook{
     display: inline-block;
     width: 2em;
     margin-left: 0.3em;
 }
-.twitter{
+#twitter{
     display: inline-block;
     width: 1.7em;
     margin-left: 0.1em;
 }
-.instagram{
+#instagram{
     display: inline-block;
     width: 2.7em;
     margin-left: 0.3em
 }
-.gmail {
+#gmail {
     display: inline-block;
     width: 2.0em;
     margin-left: 0.1em;
@@ -197,10 +193,10 @@ footer .footer .coloumn2#connect{
         display: flex;
         flex-direction: row;
     }
-    main .heading{
+    main #heading{
         width: 60%;
     }
-    main form .agree{
+    main form #agree{
         font-size: 1em;
     }
     footer .footer{
@@ -228,11 +224,11 @@ footer .footer .coloumn2#connect{
         align-self: center;
         text-align: left;
     }
-    main .column1 .heading{
+    main .column1 #heading{
         text-align: left;
         width: 100%;
     }
-    main .existed{
+    main #signin{
         text-align: left;
         width: 100%;
         margin: 0 auto 1em;
