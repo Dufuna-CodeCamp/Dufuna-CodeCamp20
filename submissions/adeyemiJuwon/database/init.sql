@@ -113,7 +113,7 @@ CREATE TABLE `order_items` (
   `unit_price` decimal(8,2) NOT NULL,
   `total_amount` decimal(8,2) NOT NULL,
   KEY `fk_order_items_products_idx` (`product_id`),
-  KEY `fk_order_items_order_idx` (`product_id`),
+  KEY `fk_order_items_order_idx` (`order_id`),
   CONSTRAINT `fk_order_items_orders` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `fk_order_items_products` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
