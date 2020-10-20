@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Bakes 'N' Parfait</h2>
+            <p> ...your perfect and healthy treat!</p>
+        </div>
+        <nav>
+           <div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="../HTML/index.html">Shop</a></li>
+                <li>Account</li>
+                <li>Blog</li>
+            </ul>
+           </div>
+        </nav>
+        <form action="#" method="POST">
+           <h2><b>Have a question or suggestion or comment?</b></h2>
+           <h3>We will be glad to hear from you.</h3>
+           <h3>Give us a call - 07080000012</h3>
+           <h3>or</h3>
+           <h3>Send an email to - hello@bakesnparfait.com</h3>
+           <div class="container">
+            <fieldset>
+              <legend><b>Need Help?</b></legend>
+              <h3>Send us your request using the online form below <br> and we will get back to you within 24hours of <br> business time.</h3>
+
+              <label for="fname"><b>Firstname</b></label>
+              <input type="text" placeholder="Enter your firstname" name="fname" required>
+              <br>
+              <label for="lname"><b>Lastname</b></label>
+              <input type="text" placeholder="Enter yourlastname" name="lname" required>
+              <br>
+              <label for="email"><b>Email</b></label>
+              <input type="email" placeholder="Enter your email" name="email" required>
+              <br>
+              <label for="subject"><b>Subject</b></label>
+               <select id="subject" name="subject">
+                   <option value="" disabled selected>Select an Option</option>
+                   <option value="">I want to confirm my order</option>
+                   <option value="">I want to cancel my order</option>
+                   <option value="">I have a payment issue</option>
+                   <option value="">I have some other request</option>
+                   <option value="">Other issues</option>
+                </select> 
+                <br> 
+                <br>
+              <label for="message"><b>Message</b></label>
+              <textarea id="" name="subject" placeholder="Give us full details of your contact reason here"></textarea>
+              <br>
+              <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>

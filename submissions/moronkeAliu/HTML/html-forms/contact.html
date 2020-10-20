@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Bakes 'N' Parfait</h2>
+            <p> ...your perfect and healthy treat!</p>
+        </div>
+        <nav>
+           <div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li><a href="/index.html">Shop</a></li>
+                <li><a href="/html-forms/contact.html">Account</a></li>
+                <li>Blog</li>
+            </ul>
+           </div>
+        </nav>
+        <form action="#" method="POST">
+            <h2>My Account</h2>
+            <div class="column">
+                <div class="card">
+                   <div class="container">
+                      <fieldset>
+                        <legend>Login</legend>
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="usernane" required>
+                        <br>
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <div class="clearfix">
+                            <button type="button">Cancel</button>
+                            <button type="submit">Login</button>
+                        </div>
+                        
+                        <div class="container">
+                            <span class="password"><a href="#">Forgot Your Password?</a></span>
+                          </div>
+                       </fieldset>
+                   </div>
+                   </div>
+                </form>
+                <form action="#" method="POST">
+                <div class="card">
+                    <div class="container">
+                       <fieldset>
+                         <legend>SignUp</legend>
+                         <label for="username"><b>Username</b></label>
+                         <input type="text" placeholder="Enter Username" name="usernane" required>
+                         <br>
+                         <label for="email"><b>Email</b></label>
+                         <input type="email" placeholder="Enter Email" name="email" required>
+                         <br>
+                         <label for="password"><b>Password</b></label>
+                         <input type="password" placeholder="Enter Password" name="password" required>
+                         <br>
+                         <label for="password-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="password-repeat" required>
+                         <br>
+                        <label>
+                        <input type="checkbox" checked="checked" name="newsletter">Subcribe to our newsletters.
+                        </label>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                         <div class="clearfix">
+                            <button type="button">Cancel</button>
+                            <button type="submit">Register</button>
+                          </div>
+                        </fieldset>
+                    </div>
+                    </div>
+            </div>
+
+        </form>
+        <footer>
+            <p>© 2020 Bakes 'N' Parfait. Powered by Moronke Aliu</p>
+        </footer>
+    </body>
+</html>
