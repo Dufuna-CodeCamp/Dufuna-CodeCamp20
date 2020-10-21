@@ -47,23 +47,30 @@
       		    </div>
 			</div>
 			 <div class="contact-form">
-  	              <a href="https://www.facebook.com"><input type="image"class="social" src="../html/images/closed-envelope.svg"></a>
-	                   <p class="text">Or better still send us a message</p>
-	                   <div class="txtb">
-		                   <input type="text" name="" value="" placeholder="Full Name">
-	                   </div>
-	                   <div class="txtb">
-		                    <input type="email" name="" value="" placeholder="Email">
-	                   </div>
-	                   <div class="txtb">
-		                    <input type="text" name="" value="" placeholder="Subject">
-	                   </div>
-	                   <div id="txtb-title">
-		                  <label>Message</label>
-	                   </div>
-	                   <div id="textarea">
-	                   </div>
-                      <a class="btn">Send</a>
+				 <form id="contactForm" action="" method="">
+					<a href="https://www.facebook.com"><input type="image"class="social" src="../html/images/closed-envelope.svg"></a>
+					<p class="text">Or better still send us a message</p>
+					<div class="txtb">
+						<input type="text" name="" value="" id="fullName" placeholder="Full Name">
+						<span class="error-block"></span>
+					</div>
+					<div class="txtb">
+						 <input type="email" name="" value="" id="emailaddress" placeholder="Email">
+						 <span class="error-block"></span>
+					</div>
+					<div class="txtb">
+						 <input type="text" name="" value="" id="subject" placeholder="Subject">
+						 <span class="error-block"></span>
+					</div>
+					<div id="txtb-title">
+					   <label>Message</label>
+					</div>
+					<div >
+						<textarea id="textarea"></textarea>
+						<span class="error-block"></span>
+					</div>
+				   <input type="submit" class="btn" value="Send">
+				 </form>
              </div>
 		</div>
 	</div>
@@ -95,5 +102,6 @@
 		&copy; Copyright 2020 Kwathu All rights reserved
 	</div>
 	<!--footer-->
+	<script src="../javaScript/contactForm.js"></script>
 </body>
 </html>
