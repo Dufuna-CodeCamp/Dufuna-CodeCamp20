@@ -66,11 +66,10 @@ CREATE TABLE customers (
 	lastname VARCHAR(50) NOT NULL,
 	email_address VARCHAR(100) NOT NULL,
 	password VARCHAR(50) NOT NULL,
-	created_by DATETIME,
+	created_at DATETIME,
 	PRIMARY KEY (id)
 );
 
-ALTER TABLE customers CHANGE created_by created_at DATETIME;
 
 INSERT INTO customers (firstname, lastname, email_address, password, created_at)
 VALUES ('Michael', 'Daniel', 'miichaeldaniel@gmail.com', 'Danmichael24.', now()),
@@ -109,13 +108,11 @@ CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
 	customers_id INT NOT NULL,
 	amount DECIMAL(10,2) NOT NULL,
-	date VARCHAR(50) NOT NULL,
+	order_date VARCHAR(50) NOT NULL,
 	created_at VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (customers_id) REFERENCES customers (id)
 );
-
-ALTER TABLE orders CHANGE date order_date VARCHAR(50) NOT NULL;
 
 INSERT INTO orders (customers_id, amount, order_date, created_at)
 VALUES(3, 28000.00, cast(now() AS DATE), now()),
