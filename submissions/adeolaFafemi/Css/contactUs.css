@@ -161,10 +161,10 @@
 .contact-msg{
     border:1px solid #707070;
     padding: 40px;
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 .contact-msg p{
-    text-align: center; 
+    text-align: center;
 }
 .contact-msg .fa-envelope{
    font-size: 50px;
@@ -242,9 +242,7 @@
         font-size: 14px;
     }
     .social-media img{
-        margin-left: 10px;
-    }
-    .social-media img{
+        margin-left:10px;
         width: 50px;
     }
     .social-media .images-page .smaller{
@@ -258,12 +256,11 @@
         margin-bottom: 40px;
     }
     .contact-msg p{
-        text-align: center; 
+        text-align: center;
     }
     .contact-msg .fa-envelope{
        font-size: 30px;
     }
-    
     .contact-msg #email,.contact-msg #fullname,.contact-msg #subject{
         width: 350px;
         height: 30px;
