@@ -27,14 +27,14 @@ CREATE TABLE products (
 	image BLOB,
     category_id INT NOT NULL,
     admin_id INT NOT NULL,
-	unit_price INT NOT NULL,
+	unit_price DECIMAL(4,0) NOT NULL,
     stock_level INT NOT NULL,
     status VARCHAR(20) NOT NULL,
 	PRIMARY KEY (id),
     FOREIGN KEY (category_id) REFERENCES categories (id) ON DELETE CASCADE,
     FOREIGN KEY (admin_id) REFERENCES admins (id) ON DELETE CASCADE
 );
-
+drop table products;
 -- Created the customers table
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -75,7 +75,7 @@ CREATE TABLE order_items (
 	order_id INT NOT NULL,
 	product_id INT NOT NULL,
 	quantity INT NOT NULL,
-	unit_price INT NOT NULL,
+	unit_price DECIMAL(4,0) NOT NULL,
 	total_amount DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id),
 	FOREIGN KEY (order_id) REFERENCES orders (id) ON DELETE CASCADE,
