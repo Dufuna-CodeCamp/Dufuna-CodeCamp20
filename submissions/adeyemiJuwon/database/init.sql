@@ -26,7 +26,7 @@ CREATE TABLE `admin_users` (
   `name` varchar(50)  NOT NULL,
   `email_address` varchar(250)  NOT NULL,
   `password` varchar(250) NOT NULL,
-  `phone` varchar(50) NOT NULL,
+  `phone_number` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -119,7 +119,7 @@ CREATE TABLE `customers` (
   `last_name` varchar(50)  NOT NULL,
   `email_address` varchar(250) NOT NULL,
   `password` varchar(250)  NOT NULL,
-  `phone` varchar(50)  NOT NULL,
+  `phone_number` varchar(50)  NOT NULL,
   `contact_address` varchar(250)  NOT NULL,
   `street_address` varchar(250)  NOT NULL,
   `zip_code` int(11) DEFAULT NULL,
