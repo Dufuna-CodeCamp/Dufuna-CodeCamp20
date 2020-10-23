@@ -198,7 +198,7 @@ img {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   header nav,
   header .nav-section nav li,
   header #nav-logo {
