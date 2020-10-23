@@ -1,0 +1,538 @@
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&display=swap');
+/************navbar************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    background-color:#cc2900;
+    justify-content: space-between;
+}
+.heading-links{
+    justify-content: flex-end;
+}
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 86px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar li a:hover{
+    color: #707070;
+}
+.navbar .logo img{
+    height: 50px;
+    margin: 15px 0 10px 10px;
+}
+/****************Responsiveness**************/
+
+/*****Phone*****/
+@media screen and (max-width:700px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar li{
+        display: block;
+        list-style-type: none;
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .navbar li a:hover{
+        color: #707070;
+    }
+    .navbar .logo img{
+        display: block;
+        height: 50px;
+        margin: 30px 0 10px 20px;
+    }
+}
+@media only screen and (max-width:1085px) and (min-width:700px){
+    .navbar{
+        display: flex;
+        align-items:center;
+        background-color:#cc2900;
+        justify-content: space-between;
+    }
+    
+    .navbar li{
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .navbar li a:hover{
+        color: #707070;
+    }
+    .navbar .logo img{
+        height: 50px;
+        margin: 15px 0 10px 10px;
+    }
+}
+/*****Page body****/
+.product-details{
+    display: flex;
+    margin: 50px auto 30px;
+}
+.product-image{
+   align-items: center;
+   margin-left:150px ;
+   border: 1px solid #707070;
+}
+.product-figures{
+    padding-left:30px;
+}
+.product-figures h1{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5f5f;
+    line-height: 30px;
+}
+.product-figures p, .product-figures .buynow, .product-figures label{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5f5f;
+    line-height: 39px;
+    margin: 20px auto 0;
+}
+.product-figures input[type=submit]{
+    font-size: 22px;
+    font-weight: bold;
+    color: #5f5f5f;
+    background-color: #ff1a1a;
+    border: 1px solid #ff1a1a;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    width:160px;
+    height: 60px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.product-figures #quantity{
+    width:50px;
+    height: 30px;
+    margin: 20px 20px 0;
+}
+.product-description{
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5f5f;
+    margin-left: 150px;
+}
+.product-description h3{
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0;
+}
+.product-description p{
+    font-size: 20px;
+    line-height: 25px;
+    margin: 8px 0;
+    padding: 0;
+}
+.related-products{
+    text-align: center;
+    background-color: #ebebeb;
+    padding-bottom: 60px;
+}
+.related-h2{
+    padding: 20px;
+    width: 100%;
+}
+.related-h2 h2{
+    font-size: 22px;
+    line-height: 27px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5f5f;
+}
+.recommended{
+    display: flex;
+}
+.rec-image{
+    background-color: #ffffff;
+    margin: auto;
+    width: 300px;
+}
+.rec-image img{
+    width: 250px;
+    height: 300px;
+    background-color: #ffffff;
+    margin: 30px auto;
+}
+.rec-image h2{
+    font-size: 22px;
+    line-height: 27px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5f5f;
+}
+/*******Responsiveness******/
+@media screen and (max-width:700px){
+    .product-details{
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto 15px;
+    }
+    .product-image{
+       margin-left:20px;
+       width: 400px;
+    }
+    .product-image img{
+        width: 350px; 
+    }
+    .product-figures{
+        padding-left:20px;
+        margin-top: 20px;
+    }
+    .product-figures h1{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product-figures p, .product-figures .buynow, .product-figures label{
+        font-size: 14px;
+        line-height: 18px;
+        margin: 10px auto 0;
+    }
+    .product-figures input[type=submit]{
+        font-size: 14px;
+        line-height: 18px;
+        width:90px;
+        height: 40px;
+        border-radius: 12px;
+        margin: 10px auto;
+    }
+    .product-figures #quantity{
+        width:30px;
+        height: 20px;
+        margin: 10px 10px 0;
+    }
+    .product-description{
+        margin-left: 20px;
+    }
+    .product-description h3{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product-description p{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 8px 0 20px;
+    }
+    .related-products{
+        text-align: center;
+        background-color: #ebebeb;
+    }
+    .related-h2{
+        padding: 20px;
+        width: 100%;
+    }
+    .related-h2 h2{
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .recommended{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .rec-image{
+        margin: 10px auto;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+    .rec-image img{
+        width: 250px;
+        height: 300px;
+        margin: 30px auto 0;
+    }
+    .rec-image h2{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+}
+@media only screen and (max-width:1085px) and (min-width:700px){
+    .product-details{
+        display: flex;
+        margin: 50px auto 30px;
+    }
+    .product-image{
+       margin-left:20px;
+    }
+    .product-figures{
+        padding-left:10px;
+    }
+    .product-figures h1{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .product-figures p, .product-figures .buynow, .product-figures label{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .product-figures input[type=submit]{
+        font-size: 22px;
+        line-height: 30px;
+        width:140px;
+        height: 50px;
+        border-radius: 20px;
+    }
+    .product-description{
+        margin-left: 20px;
+    }
+    .product-description h3{
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0;
+    }
+    .product-description p{
+        font-size: 18px;
+        line-height: 25px;
+        margin: 8px 0 20px;
+    }
+    .related-products{
+        text-align: center;
+        background-color: #ebebeb;
+        padding-bottom: 50px;
+    }
+    .related-h2 h2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .recommended{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas:
+                "image1 image2"
+                "image3 .";
+    }
+    .image1{
+        grid-area: image1;
+    }
+    .image2{
+        grid-area: image2;
+    }
+    .image3{
+        grid-area: image3;
+    }
+    .rec-image{
+        background-color: #ffffff;
+        margin: 20px auto 0;
+        width: 300px;
+    }
+    .rec-image img{
+        width: 250px;
+        height: 300px;
+        background-color: #ffffff;
+        margin: 30px auto;
+    }
+    .rec-image h2{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+/*footer*/
+.footer{
+    background-color: #cc2900;
+}
+.footer-div{
+    display: flex;
+    bottom: 0;
+    width: 100%;
+}
+.box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.footer-div .contact-us li{
+    list-style-type: none;
+    padding: 7px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+}
+.footer-div .contact-us a{
+    text-decoration: none;
+    color: #fcf8f8;
+}
+.footer-div .sign-up p{
+    color: #fcf8f8;
+    padding: 7px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-div .sign-up .enter-email{
+    padding-left: 7px;
+    height: 40px;
+    width: 300px;
+    border: 1px solid #707070;
+}
+.footer-div .sign-up .enter-email::placeholder{
+    color: #ffad99;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 10px;
+}
+.footer-div .sign-up .enter-btn{
+    height: 40px;
+    width: 100px;
+    border: 1px solid #707070;
+    font-size: 18px;
+}
+.footer-div .sign-up .enter-btn p{
+    font-size: 18px;
+    color: #cc2900;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 22px;
+}
+.connect-us p{
+    font-size: 18px;
+    color: #fcf8f8;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px;
+    line-height: 22px;
+    text-align: left;
+}
+.connect-us img{
+    padding-left: 7px;
+    border-radius: 11px;
+    background-color: transparent;
+}
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    font-size: 18px;
+    color: #fcf8f8;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+@media screen and (max-width:700px){
+    .footer{
+        width: 100%;
+        background-color: #cc2900;
+        margin-top: auto;
+    }
+    .footer-div{
+        flex-direction: column;
+    }
+    .footer-div .sign-up .written{
+        padding-left: 19px;
+    }
+    .footer-div .sign-up .enter-email{
+        margin-left: 19px;
+    }
+    .connect-us p{
+        padding-left: 19px;
+    }
+    .connect-us .imges{
+        margin-left: 19px;
+    }
+    .connect-us .imges img{
+        width: 50px;
+        border-radius: 5px;
+    }
+    .connect-us .imges .smaller{
+        width: 37px;
+    }
+    .footer-div .contact-us li{
+        padding-left: 19px;
+
+    }
+    .footer-div .sign-up .enter-btn{
+        height: 40px;
+        width: 90px;
+        border: 1px solid #707070;
+        font-size: 13px;
+    }
+
+}
+@media only screen and (max-width:1085px) and (min-width:700px){
+    .footer{
+        width: 100%;
+        background-color: #cc2900;
+        margin-top: auto;
+    }
+    .footer-div{
+        display: grid;
+        bottom: 0;
+        width: 100%;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas:
+                "ContactUs SignUp"
+                "ContactUs ConnectUs";
+    }
+    .contact-us{
+        grid-area: ContactUs;
+    }
+    .connect-us{
+        grid-area: ConnectUs;
+    }
+    .sign-up{
+        grid-area: SignUp;
+    }
+    .footer-div .sign-up .enter-email{
+        padding-left: 7px;
+        height: 40px;
+        width: 200px;
+        border: 1px solid #707070;
+        margin-top: -2px;
+    }
+    .footer-div .sign-up .enter-email::placeholder{
+        color: #cc2900;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        padding-left: 3px;
+    }
+    .connect-us .imges img{
+        width: 50px;
+        border-radius: 5px;
+    }
+    .connect-us .imges .smaller{
+        width: 37px;
+    }
+    .footer-div .sign-up .enter-btn{
+        height: 40px;
+        width: 90px;
+        border: 1px solid #707070;
+        font-size: 13px;
+    }
+}
