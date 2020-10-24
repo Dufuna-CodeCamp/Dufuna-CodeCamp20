@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/contactpage.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
     <title>CONTACT FORM</title>
 </head>
+
 <body>
-    <ul>
-        <li> <a href="#"> Home </a></li>
-        <li> <a href="#"> WOMEN</a></li>
-        <li> <a href="#"> MEN  </a></li>
-        <li> <a href="../html/index.html" target="_blank"> Product </a></li>
-        <li> <a href="#"> Cart </a></li>
-    </ul>
-    <form action="" method="POST"> 
-        <fieldset>
-            <legend><h4>CONTACT US</h4></legend>
-            <!-- This is for the User's fullname-->
-            <label for="fname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname"><br><br>
+    <div class="header">
+        <nav>
+            <div class="left-side">
+                <div class="tab">
+                    <strong>BOOTSTRAPS</strong>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="link-wrapper">
+                    <a href="../html/index.html"> Product Page </a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="../html-forms/contactform.html">Contact Us</a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="../css/sign-up.html">Sign-up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="presentation">
+        <div class="sidebar">
+            <!-- for the phone numbers -->
+            <div class="number">
+                <img class="call" src="call.png" alt="call_logo" width="48px" height="45.6px">
+                <h4> Please contact us via these numbers:</h4>
+                <p> +123 803 303 0000 </p>
+                <p> +123 816 710 6842 </p><br><br>
+            </div>
+            <!-- for the email address -->
+            <div class="address">
+                <img class="draft" src="drafts.png" alt="draft_logo" width="48px" height="45.6px">
+                <h3>Email Address:</h3>
+                <p> support@domain.com</p><br><br>
+            </div>
 
-            <!-- This is for the User's Email-->
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
+            <!-- for the social media -->
+            <div class="connect">
+                <h4> Or Connect with us:</h4>
+                <div class="images">
+                    <img src="logos_facebook.png" alt="facebook_logo" width="45px" height="41px">
+                    <img src="twitter.png" alt="twitter_logo" width="48px" height="43px">
+                    <img src="logos_google-gmail.png" alt="gmail_logo" width="63px" height="41px">
+                    <img src="logos_youtube.png" alt="youtube_logo" width="69px" height="43px">
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" method="POST">
+                <fieldset>
+                    <img class="mail" src="email.png" alt="mail-icon" width="48px" height="37.7px">
+                    <p class="better"> Or better still send us a message</p>
+                    <!-- This is for the User's fullname-->
+                    <label for="fname">Full Name</label><br>
+                    <input type="text" id="fullname" placeholder="Full Name" name="fullname"><br><br>
 
-            <!-- This is for the message subject-->
-            <label>Subject:</label><br>
-            <textarea rows= "2" cols = "50" name = "message"> </textarea><br><br>
+                    <!-- This is for the User's Email-->
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" placeholder="Email" name="email"><br><br>
+
+                    <!-- This is for the message subject-->
+                    <label>Subject</label><br>
+                    <input type="text" id="email" placeholder="Subject" name="email"><br><br>
 
 
-            <!-- This is for the message input -->
-            <label>Message:</label><br>
-            <textarea rows= "10" cols = "50" name = "message"> </textarea><br><br>
+                    <!-- This is for the message input -->
+                    <label>Message</label><br>
+                    <textarea id="message" rows="10" cols="50" name="message"></textarea>
 
-            <!-- This is for the submit button to post the news-->
-            <input type="submit" value="submit">
-        </fieldset>
+                    <!-- This is for the submit button to post the news-->
+                    <button type="button" id="sendbutton">SEND</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="about">
+                <p> Contact Us </p>  
+                <p> About Us </p> 
+                <p> Terms and Conditions </p> 
+              </div> 
+          
+              <div class="newsletter">
+                  <label for="email">Sign up for our Newsletter</label><br><br>
+                  <input type="text" id="newslettter" name="email" placeholder="Enter your email address">
+                  <button type="button" id="submitbutton">SUBMIT</button>
+              </div>
+      
+              <div class="connect">
+                  <p> CONNECT WITH US</p>
+                  <div class="images">
+                      <img src="../html-forms/logos_facebook.png" alt="facebook_logo" width="45px" height="41px">
+                      <img src="../html-forms/twitter.png" alt="twitter_logo" width="48px" height="43px">
+                      <img src="../html-forms/logos_google-gmail.png" alt="gmail_logo" width="63px" height="41px">
+                      <img src="../html-forms/logos_youtube.png" alt="youtube_logo" width="69px" height="43px">
+                  </div>
+              </div>
+        </div>
+        <p> &#169; 2020 BootStraps</p> 
+    </footer>
 </body>
+
 </html>
