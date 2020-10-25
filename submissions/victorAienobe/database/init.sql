@@ -34,7 +34,7 @@ CREATE TABLE products (
     FOREIGN KEY (category_id) REFERENCES categories (id) ON DELETE CASCADE,
     FOREIGN KEY (admin_id) REFERENCES admins (id) ON DELETE CASCADE
 );
-drop table products;
+
 -- Created the customers table
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -54,7 +54,7 @@ CREATE TABLE customer_addresses (
 	state VARCHAR(20) NOT NULL,
 	zip_code INT,
 	country VARCHAR(20) NOT NULL,
-	phone_number BIGINT NOT NULL,
+	phone_number VARCHAR(15) NOT NULL,
     PRIMARY KEY (id),
 	FOREIGN KEY (customer_id) REFERENCES customers (id) ON DELETE CASCADE
 );
@@ -91,10 +91,10 @@ VALUES ('game console'),
 
 -- Inserted values into the admins table
 INSERT INTO admins (name, email, password, phone_number) 
-VALUES ('victor aienobe', 'viktornobe@gmail.com', 'smoke&mirrors', +2348108088144),
-('benedit ejike', 'ben@gmail.com', 'thanos', +2349025725272),
-('chidi okpala', 'chidi@gmail.com', 'drstrange', +2347026372527),
-('simon alvin peters', 'alvinpeters@gmail.com', 'aryastark', +2348025745262);
+VALUES ('victor aienobe', 'viktornobe@gmail.com', 'smoke&mirrors', '08108088144'),
+('benedit ejike', 'ben@gmail.com', 'thanos', '09025725272'),
+('chidi okpala', 'chidi@gmail.com', 'drstrange', '07026372527'),
+('simon alvin peters', 'alvinpeters@gmail.com', 'aryastark', '08025745262');
 
 -- Inserted values into the products table
 INSERT INTO products (name, description, image, category_id, admin_id, unit_price, stock_level, status)
@@ -111,9 +111,9 @@ VALUES ('precious', 'aienobe', 'presh@gmail.com', 'wordpass'),
 
 -- Inserted values into the customer addresses table
 INSERT INTO customer_addresses (customer_id, street_address, city, state, zip_code, country, phone_number)
-VALUES (1, '36 utagban street', 'benin', 'edo', '300121', 'nigeria', '+2349057558198'),
-(2, '23 bdpa ugbowo', 'benin', 'edo', '300240', 'nigeria', '+2347055582253'),
-(3, '4 alumini drive', 'port harcourt', 'rivers', '500272', 'nigeria', '+2348137327259');
+VALUES (1, '36 utagban street', 'benin', 'edo', '300121', 'nigeria', '09057558198'),
+(2, '23 bdpa ugbowo', 'benin', 'edo', '300240', 'nigeria', '07055582253'),
+(3, '4 alumini drive', 'port harcourt', 'rivers', '500272', 'nigeria', '08137327259');
 
 -- Inserted values into the orders table
 INSERT INTO orders (customer_orders, order_amount, order_created_at)
