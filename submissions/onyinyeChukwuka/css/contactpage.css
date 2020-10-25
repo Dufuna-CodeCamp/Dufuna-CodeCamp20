@@ -8,20 +8,14 @@ body {
 .header {
     justify-content: space-between;
     padding: 2px;
-    height: 70px;
     background-color: #0066f5;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
 }
 
-.right-side {
-    display: flex;
-    margin-left: 30px;
-}
+.right-side {}
 
 .left-side {
     display: flex;
@@ -56,18 +50,16 @@ nav>.right-side>div {
 }
 
 .presentation {
-    display: flex;
     width: 90%;
     margin-top: 50px;
     margin-left: 20px;
-    justify-content: space-between;
 }
 
 /* for the left div  */
 
 .images {
+    display: flex;
     justify-content: space-around;
-    margin-left: 150px;
 }
 
 .mail {
@@ -171,8 +163,6 @@ nav>.right-side>div {
 /* for the form */
 
 form {
-    width: 607px;
-    height: 620px;
     background-color: #ffffff;
     font-family: Montserrat;
     font-size: 18px;
@@ -184,15 +174,19 @@ form {
     text-align: left;
     color: #5f5f5f;
     margin-top: 10px;
+    border: solid 1px #707070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
 }
 
 label {
     visibility: hidden;
-}
-
-label:last-of-type {
-    visibility: visible;
-    margin-left: 25px;
 }
 
 .draft {
@@ -203,7 +197,7 @@ label:last-of-type {
 }
 
 #fullname, #email, #subject {
-    width: 494px;
+    width: 80%;
     border: none;
     outline: inherit;
     border-bottom: 1px solid#707070;
@@ -216,12 +210,12 @@ label:last-of-type {
     letter-spacing: 1px;
     text-align: left;
     color: #5f5f5f;
-    margin-left: 26.5px;
+    margin: 0 auto;
 }
 
 #message {
-    width: 494px;
-    height: 142px;
+    height: 300px;
+    width: 100%;
     border: solid 1px #707070;
     background-color: #ffffff;
     font-family: Montserrat;
@@ -233,7 +227,6 @@ label:last-of-type {
     letter-spacing: 1px;
     text-align: left;
     color: #5f5f5f;
-    margin-left: 26.5px;
 }
 
 #sendbutton {
@@ -243,7 +236,6 @@ label:last-of-type {
     border-radius: 4px;
     background-color: #0066f5;
     padding: 2px;
-    margin-left: 390px;
     font-family: Raleway;
     font-size: 18px;
     font-weight: bold;
@@ -255,18 +247,16 @@ label:last-of-type {
     color: #ffffff;
 }
 
+.text-area>label {
+    visibility: visible;
+}
+
 /* for the footer */
 
 .footer {
-    height: 203px;
     background-color: #0066f5;
     padding: 20px;
     color: #fcf8f8;
-}
-
-.footer-wrapper {
-    display: flex;
-    justify-content: space-between;
 }
 
 .footer>p {
@@ -331,7 +321,97 @@ label:last-of-type {
     text-align: left;
     color: #fcf8f8;
 }
+.newsletter label {
+    visibility: visible;
+}
+.newsletter-input {
+    display: flex;
+}
 
-@media screen and (min-width:768px) and (max-width: 1279px) {}
+.text-area {
+    width: 80%;
+}
 
-@media screen and (min-width: 1280px) {}
+.button-wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    .images {
+        width: 350px;
+        margin: auto;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* for the header */
+    .right-side {
+        display: flex;
+    }
+    .footer {
+        height: 203px;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        height: 70px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* for the header */
+    .right-side {
+        display: flex;
+    }
+    .left-side {
+        display: flex;
+    }
+    .presentation {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* for the form */
+    form {
+        width: 607px;
+        height: 620px;
+    }
+    #fullname, #email, #subject {
+        width: 494px;
+    }
+    #message {
+        width: 494px;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sendbutton {
+        margin-left: 390px;
+    }
+    /* for the left div  */
+    .images {
+        justify-content: space-around;
+        /* margin-left: 150px; */
+    }
+    form {
+        height: auto;
+    }
+    .footer {
+        height: 203px;
+    }
+    .socials{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
