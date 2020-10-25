@@ -10,6 +10,7 @@
     display:flex;
     flex-direction: column;
     min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar{
     display: flex;
@@ -31,7 +32,6 @@
 .navbar li a{
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
 }
 .navbar li a:hover{
     color: #707070;
@@ -60,7 +60,6 @@
     .navbar li a{
         text-decoration: none;
         color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
     }
     .navbar li a:hover{
         color: #707070;
@@ -90,7 +89,6 @@
     .navbar li a{
         text-decoration: none;
         color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
     }
     .navbar li a:hover{
         color: #707070;
@@ -115,14 +113,12 @@
 }
 .product-figures h1{
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
     color: #5f5f5f;
     line-height: 30px;
 }
 .product-figures p, .product-figures .buynow, .product-figures label{
     font-size: 22px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
     color: #5f5f5f;
     line-height: 39px;
     margin: 20px auto 0;
@@ -133,12 +129,15 @@
     color: #5f5f5f;
     background-color: #ff1a1a;
     border: 1px solid #ff1a1a;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 30px;
     width:160px;
     height: 60px;
     border-radius: 20px;
     margin: 20px auto;
+}
+.product-figures input[type=submit]:hover{
+    color: #ffffff;
 }
 .product-figures #quantity{
     width:50px;
@@ -146,7 +145,6 @@
     margin: 20px 20px 0;
 }
 .product-description{
-    font-family: 'Montserrat', sans-serif;
     color: #5f5f5f;
     margin-left: 150px;
 }
@@ -173,7 +171,6 @@
 .related-h2 h2{
     font-size: 22px;
     line-height: 27px;
-    font-family: 'Montserrat', sans-serif;
     color: #5f5f5f;
 }
 .recommended{
@@ -193,7 +190,6 @@
 .rec-image h2{
     font-size: 22px;
     line-height: 27px;
-    font-family: 'Montserrat', sans-serif;
     color: #5f5f5f;
 }
 /*******Responsiveness******/
@@ -380,7 +376,6 @@
     padding: 7px;
     font-size: 18px;
     line-height: 22px;
-    font-family: 'Montserrat', sans-serif;
     padding-left: 20px;
 }
 .footer-div .contact-us a{
@@ -392,7 +387,6 @@
     padding: 7px;
     font-size: 18px;
     line-height: 22px;
-    font-family: 'Montserrat', sans-serif;
 }
 .footer-div .sign-up .enter-email{
     padding-left: 7px;
@@ -416,14 +410,13 @@
 .footer-div .sign-up .enter-btn p{
     font-size: 18px;
     color: #cc2900;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     line-height: 22px;
 }
 .connect-us p{
     font-size: 18px;
     color: #fcf8f8;
-    font-family: 'Montserrat', sans-serif;
     padding: 7px;
     line-height: 22px;
     text-align: left;
@@ -439,7 +432,6 @@
 .copyright p{
     font-size: 18px;
     color: #fcf8f8;
-    font-family: 'Montserrat', sans-serif;
     padding-bottom: 15px;
     line-height: 22px;
     text-align: center;
@@ -518,7 +510,6 @@
     }
     .footer-div .sign-up .enter-email::placeholder{
         color: #cc2900;
-        font-family: 'Montserrat', sans-serif;
         font-size: 13px;
         padding-left: 3px;
     }
