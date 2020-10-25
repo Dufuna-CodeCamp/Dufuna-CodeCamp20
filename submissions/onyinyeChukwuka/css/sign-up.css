@@ -281,9 +281,6 @@ form {
         flex-direction: column;
         align-items: flex-end;
     }
-    .connect p {
-        padding-left: 0px;
-    }
 
 }
 

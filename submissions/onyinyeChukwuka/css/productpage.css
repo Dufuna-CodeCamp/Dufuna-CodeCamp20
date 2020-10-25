@@ -257,7 +257,6 @@ img {
     line-height: 1.22;
     letter-spacing: normal;
     text-align: left;
-    padding-left: 0px;
 }
 
 .connect img {
@@ -378,10 +377,7 @@ img {
         width: 399px;
         height: 500px;
     }
-    .footer-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+    
     .socials {
         width: 70%;
         display: flex;
