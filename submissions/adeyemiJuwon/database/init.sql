@@ -122,7 +122,7 @@ CREATE TABLE `customers` (
   `phone_number` varchar(50)  NOT NULL,
   `contact_address` varchar(250)  NOT NULL,
   `street_address` varchar(250)  NOT NULL,
-  `zip_code` int(11) DEFAULT NULL,
+  `zip_code` int(11) NULL,
   `city` varchar(50) NOT NULL,
   `state` varchar(50) NOT NULL,
   `country` varchar(50) NOT NULL,
