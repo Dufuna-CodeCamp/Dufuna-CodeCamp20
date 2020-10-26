@@ -241,7 +241,8 @@ footer button {
 	}
 	.main {
 	    padding: 0;
-	    line-height: 25px;}
+	    line-height: 25px;
+	}
 	.sidebar{
 		width: 90%;
 		margin-right: 7px;
