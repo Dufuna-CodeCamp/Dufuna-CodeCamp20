@@ -36,21 +36,44 @@
 			</div>
 			<div class="sidebar">
 			  	<div class=" section-form">
-			  		<form action="#" method="post">
-			  			<label id="form-label">First Name</label>
-			  			<input type="text" name="firstname" class="text-input">
-			  			<label id="form-label">Last Name</label>
-			  			<input type="text" name="lastname" class="text-input">
-			  			<label id="form-label">Other Name</label>
-			  			<input type="text" name="othertname" class="text-input">
-			  			<label id="form-label">Email Address</label>
-			  			<input type="text" name="emailaddress" class="text-input">
-			  			<label id="form-label">Password</label>
-			  			<input type="text" name="password" class="text-input">
-			  			<label id="form-label">Confirm Password</label>
-			  			<input type="text" name="confirm-password" class="text-input">
+			  		<form id="validateSignUp" action="#" method="post">
+						<div>
+							<label id="form-label">First Name</label>
+							<input type="text" id="firstName" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+			  			<div>
+                            <label id="form-label">Last Name</label>
+							<input type="text" id="lastName" class="text-input"  >
+							<span class="error-block"></span>   
+						</div>
+			  			<div>
+							<label id="form-label">Other Name</label>
+							<input type="text" id="otherName" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+						<div>
+							<label id="form-label">Phone Number</label>
+							<input type="text" id="phoneNumber" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+			  	        <div>
+							<label id="form-label">Email Address</label>
+							<input type="text" id="emailAddress" class="text-input">
+							<span class="error-block"></span>
+						</div>
+			  			<div>
+                            <label id="form-label">Password</label>
+							<input type="text" id="password" class="text-input" >
+							<span class="error-block"></span>   
+						</div>
+			  			<div>
+							<label id="form-label">Confirm Password</label>
+							<input type="text" id="confirmPassword" class="text-input" >
+							<span class="error-block"></span>
+						</div>
 			  			<label id="terms"><input type="checkbox" name="conditionscheckbox" class="checkbox">I agree to the Terms and Conditions</label>
-			  			<input type="button" name="Submit" class="btn" value="SIGN UP">
+			  			<input type="submit" class="btn" value="SIGN UP">
 			  		</form>
 			  	</div>
 	          </div>
@@ -86,5 +109,6 @@
 		</div>
 
 	<!--footer-->
+	<script src="../javaScript/signup.js"></script>
 </body>
 </html>
