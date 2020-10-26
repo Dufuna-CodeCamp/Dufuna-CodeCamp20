@@ -19,9 +19,13 @@ function required(field, error, event){
 }
 
 
-function emailNameValidation(field, error, regex, event ){
-    if (!field.value.match(regex)){
-        field.nextElementSibling.innerHTML = error;
+function emailNameValidation(field, error1, error2, regex, event ){
+    if(field.value == ""){
+        field.nextElementSibling.innerHTML = error1;
+        event.preventDefault();
+        return false;
+    }else if (!field.value.match(regex)){
+        field.nextElementSibling.innerHTML = error2;
         event.preventDefault();
         return false;
     }else{
@@ -31,12 +35,10 @@ function emailNameValidation(field, error, regex, event ){
 }
 
 function validateFormContact(event){
-    required(fullName, "Please enter your Name", event );
-    required(emailContact, "Please enter your Email Address", event );
     required(subject, "Please enter a message subject", event );
     required(message, "Please enter your Message", event );
-    emailNameValidation( fullName,"Please name should contain letters only", fullNameRegex, event );
-    emailNameValidation( emailContact,"Please enter a valid email", emailRegex, event );
+    emailNameValidation( fullName, "Please enter your Name","Please name should contain letters only", fullNameRegex, event );
+    emailNameValidation( emailContact, "Please enter your Email Address","Please enter a valid email", emailRegex, event );
     return true;
 }
 
