@@ -42,7 +42,7 @@ CREATE TABLE products (
 	id INT NOT NULL AUTO_INCREMENT,
     product_name VARCHAR (50) NOT NULL,
     product_description VARCHAR (255) NOT NULL,
-    product_image BLOB,
+    product_image BLOB NOT NULL,
     unit_price DECIMAL (16,4) NOT NULL,
     stock_level INT NOT NULL,
     product_status VARCHAR (15),
