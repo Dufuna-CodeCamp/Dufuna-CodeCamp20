@@ -62,7 +62,7 @@ VALUES('Dele', 'Amid', 'Male', 1, 'PC174599', 'C102'),
       ('Rita', 'Godspower', 'Female', 2, 'PC56785', 'C103');
 
 -- insert into trips table
-INSERT INTO trips (passenger_class, passenger_ticket, trip_fare, number_of_parents_children, number_of_siblings_spouse, assigned_cabin, point_of_embarkation)
+INSERT INTO trips (passenger_class, passenger_ticket, trip_fare, number_of_parents_children, number_of_siblings_spouse, assigned_cabin, point_of_embarkation, passenger_id)
 VALUES(1, 'PC174599', 500000, 4, 0, 'C102', 'Abuja', 1),
       (1, 'PC56785', 500000, 0, 2, 'C103', 'Abuja', 2);
 
