@@ -50,15 +50,19 @@
         </ul>
       </div>
       <div class="contact-form"> 
-        <form>
+        <form id="contact-form">
           <fieldset>
               <img src="../introductionToHtml/img/ic_email_24px.png" alt="">
               <h3>Or better still send us Message</h3>
-                <input type="text" id="fullName" name="fullName" placeholder="Full Name"><br><br>
-                <input type="email" id="email" name="email" placeholder="Email Address"><br><br>
-                <input type="text" name="subject" id="subject" placeholder="Subject" ><br><br>
-                <label for="message">Message</label><br>
-                <textarea id="subject" name="subject" placeholder="" ></textarea><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+                <span class="error"></span><br>
+                <input type="email" id="email-contact" name="email" placeholder="Email Address">
+                <span class="error"></span><br>
+                <input type="text" name="subject" id="subject" placeholder="Subject" >
+                <span class="error"></span><br>
+                <label for="message">Message  </label><br>
+                <textarea id="message" name="message" placeholder="" ></textarea>
+                <span class="error"></span><br>
                 <input type="submit" value="Send" class="contact-send">
           </fieldset>
         </form>
@@ -76,9 +80,12 @@
       </ul>
   </div>
   <div>
-      <h3>Sign up for the Newsletter</h3>
-      <input type="text" placeholder=" Enter your mail address">
-      <button type="submit"> SUBMIT</button>
+    <h3>Sign up for the Newsletter</h3>
+    <form id="newsletter" method="post">
+    <input type="email" placeholder="Enter email" id="email">
+    <button type="submit"> SUBMIT</button><br><br>
+    <span class="error-newsletter"></span>
+</form>
   </div>
   <div class="social"> 
     <h3>CONNECT WITH US</h3>
@@ -91,7 +98,9 @@
   </div>
   </div>
   <p>Copyright &copy; 2020, Martha's Living Brands.</p>
-</footer> 
+</footer>
+<script src="../dom/contact.js"></script>
+<script src="../dom/newsletter.js"></script>
 </body>
 </html>
    

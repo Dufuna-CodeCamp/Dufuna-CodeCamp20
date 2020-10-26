@@ -1,0 +1,256 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height:1.4em;
+    margin: 0;
+}
+
+.container{
+    width:500px;
+    margin:0;
+}
+
+.button{
+    background-color:red;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    text-align: center;
+}
+
+.clr{
+    clear:both;
+}
+
+.header-block{
+    position: relative;
+    background-color: red;
+    padding:10px;
+    height: 50px;
+    /*Header Color and Height*/
+    width: 100%;
+}
+.logo-container{
+    float: left;
+}
+
+.logo-container>a>img{
+    width: 40%;
+    height: 40%;
+}
+.header-right{
+    float: right;
+    list-style: none;
+}
+.header-right>li{
+    display: inline;
+    margin: 10px;
+}
+.header-right>li>a{
+    text-decoration: none;
+    color: white;
+}
+.header-links:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.clr{
+    clear:both;
+}
+
+ /* CONTAINER */
+.main-container {
+    overflow: hidden;
+    width: 95%;
+    padding: 15px 15px;
+    margin: auto;
+}
+
+.information {
+   float: left;
+   width: 40%;
+   text-align: left;
+   margin:0 20px;
+   padding: 5px 15px 0 15px;
+   text-align: center;
+   background-image: white;
+}
+
+.fill-form {
+    float: left;
+    width: 40%;
+    padding: 2% 5%;
+}
+
+.inputs {
+       border: 1px solid darkgrey;
+       border-radius: 10px;
+       padding: 2% 5%;
+}
+.form-input{
+    width: 100%;
+}
+
+.mail-image{
+    margin: auto;
+    width: 50px;
+}
+
+.info-logo li {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+    display: inline;
+    margin: 10px 10px;
+}
+
+.info1 {
+    /* position: relative; */
+    left: 175px;
+    top: 20px;
+    text-align: center;
+}
+.num {
+   margin-left:40px;
+}
+.info1 img {
+    padding-left: 40px;
+    height: 40px; 
+}
+
+.info-logo li{
+     margin:10px;
+}
+
+.box-1{
+    background-color: red;
+    color:#fff;
+    padding:20px;
+}
+
+.p-box{
+    float:left;
+    width:32%;
+}
+
+.box-2{
+    background-color:white;
+    color:black;
+    width: 80%;
+    padding:20px;
+    height:60%;
+    margin: auto;
+}
+
+.main-block{
+    float: left;
+    width:40%;
+    border:1px solid #ccc;
+    padding:10px;
+    text-align: center; 
+}
+
+.main-block h2{
+    color: red;
+    text-align: center;
+}
+
+.clr{
+    clear:both;
+}
+
+.box-3{
+    background-color: red;
+    color:#fff;
+    padding:20px;
+}
+
+.box-3 h6{
+    text-align: center;
+}
+
+.button{
+    background-color:red;
+    color:white;
+    text-align: center;
+}
+
+.block{
+    float:left;
+    width:32%; 
+}
+
+.box-3 h6{
+    text-align: center;
+    font-size: 12px;
+    width: 80%;
+}
+
+@media (max-width: 640px){
+    body{
+        width: 100%;
+    }
+    .header-block {
+        width:100%;
+        height: 120px;
+    }
+    .header-right-cont{
+        margin: auto;
+        width: auto;
+       
+    }
+    .header-right{
+        margin: auto;
+       
+    }
+    .header-right li{
+       display: block;
+       width: 100%;
+       text-align: center;
+    }
+    .information,
+    .fill-form {
+        float:none;
+        width: 85%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    .information {
+        text-align: center;
+    }
+
+    .box-3{
+        width: 100%;
+    }
+    .block{
+        display: block;
+        clear: both;
+        width:100%; 
+    }
+    .block>ul>li{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .box-3 h6{
+        text-align: center;
+        font-size: 12px;
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 640px){
+    .information, .fill-form {
+        float:none;
+    }
+}
+@media screen and (max-width: 360px ){
+    .information, .fill-form {
+        float: none;
+    }
+
+}

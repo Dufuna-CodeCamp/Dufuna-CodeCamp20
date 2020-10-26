@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/signup-page.css">
+    <title>SignUp Page</title>
+</head>
+<body>
+    <header>
+        <img src="images/EMANCIPATOR.png" alt="logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="product-page.html">Product Page</a></li>
+                <li><a href="contact-page.html">Contact Us</a></li>
+                <li><a href="signup-page.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="left-div">
+            <h1 class="register">Register your Account</h1><br>
+            <p>Registering an account gives you access to promos and events available to only registered user</p><br>
+            <p>Already got an account? <a class="register" href="#">Sign in</a></p>
+        </div>
+        <div class="right-div">
+            <fieldset>
+                <div>
+                    <label for="First-name">First Name:</label>
+                    <input type="text" name="first-name" id="firstName">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="lastName">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="other-names">Other Names:</label>
+                    <input type="text" name="other-names" id="otherNames">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="text" name="phone-number" id="phone">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="email-address" id="email">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" id="password">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="text" name="confirm-password" id="confirmPass">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <input type="checkbox" class="terms-box">I agree to the terms and conditions<br><hr>
+                    <button class="submit-btn" id="submitBtn">SIGN UP</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <ul class="foot-list">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+        <div class="foot-signup">
+            <label class="signup-label">Sign up for our News Letter:</label><br>
+            <div class="email-div">
+                <span id="newsError"></span>
+                <input type="text" name="newsletter" placeholder="enter your email address" class="newsletter-input" id="newsEmail">
+                <button class="submit-btn" id="newsBtn">ENTER</button>
+            </div>
+        </div>
+        <div class="conn-div">
+            <p class="conn">CONNECT WITH US:</p>
+            <a href="#"><img src="images/facebook-logo.png" alt="facebook-logo" class="conn-logo"></a>
+            <a href="#"><img src="images/gmail-logo.png" alt="gmail-logo" class="conn-logo"></a>
+            <a href="#"><img src="images/instagram-logo.webp" alt="instagram-logo" class="conn-logo"></a>
+            <a href="#"><img src="images/twitter-logo.jpg" alt="twitter-logo" class="conn-logo"></a>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2020 EMMY STOPSHOP</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+<script src="../domManipulation/sign-up.js"></script>
+<script src="../domManipulation/newsletter.js"></script>
+</body>
+</html>

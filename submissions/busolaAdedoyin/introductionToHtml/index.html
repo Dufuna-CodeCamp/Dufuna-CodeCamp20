@@ -1,95 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>My Product Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>PEARL FABRICS</h1>
-<h3>ABOUT US</h3>
-<p>Welcome to Pearl Fabrics Limited; We sell different types of fabrics that are quality and affordable</p>
-<a href="../htmlForms/contactForm.html">Contact Us</a>
-<a href="../htmlForms/signUpForm.html">Sign Up</a>
-<a href="../introductionToHtml/index.html">Products</a>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Product Price</th>
-        <th>Product Description</th>
-        <th></th>
 
-    </tr>
-    <tr>
-        <td>Ankara Fabric</td>
-        <td>N7,500/6yards</td>
-        <td><p>Ankara commonly known as “Ankara prints”, “African prints”,”African wax prints” “Holland wax” and “Dutch wax”,
-            is a 100% cotton fabric with vibrant patterns. It is usually a colorful cloth and is primarily associated with
-            Africa because of its tribal-like patterns and motifs</p></td>
-        <td><img src="ankarafab.jpg"></td.
-    </tr>
-    <tr>
-        <td>Chiffon Fabric</td>
-        <td>N4,500/5yards</td>
-        <td><p>Chiffon is a gossamer or gauze-like fabric that is known for its sheer, floating,
-            and shimmery nature, almost like tissue paper.Chiffon is a beautiful, decorative fabric that has many
-            positive qualities for fashion and design.</p></td>
-        <td><img src="chiffonfab2.jpg"></td>
-    </tr>
-</table>
-<hr>
-<h1>List of Similar Products</h1>
-<table>
-    <tr>
-        <th>Similar Products(Atiku)</th>
-        <th>Similar Products(Lace)</th>
-        <th>Similar Products(Polish)</th>
-        <th>Similar Products(Scuba)</th>
-        <th>Similar Products(Tulle)</th>
-    </tr>
-    <tr>
-        <td>
-            <ol>
-                <li>Boile Atiku Fabrics</li>
-                <li>Cotton Atiku Fabrics</li>
-                <li>Nylon Atiku Fabrics</li>
-                <li>Polyester Atiku Fabrics</li>
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>Chantilly Lace</li>
-                <li>Allover or Embroidered Net Lace</li>
-                <li>Alenon or French Embroidered Lace</li>
-                <li>Venise Lace </li>
-                <li>Edging Lace </li>
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>Polish Embroidery</li>
-                <li>Floral Border</li>
-                <li>Wool Fabric</li>
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>Neonprene  Scuba Fabric</li>
-                <li>Super stretch Scuba Fabric</li>
-                <li>Spandex Knitted Scuba Fabric</li>
-                <li>China Scuba Fabric</li>
-            </ol>
-        </td>
-        <td>
-            <ol>
-                <li>Cotton Tulle</li>
-                <li>Silk Tulle</li>
-                <li>Embroidered Tulle</li>
-                <li>Golden Tulle</li>
-                <li>Stretch Tulle</li>
-            </ol>
-        </td>
-    </tr>
-</table>
+    <header>
+        <div class="nav-section">
+            <div id="nav-logo">
+                <h2>PEARLS FABRICS</h2>
+                <p>...making you look good</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../introductionToHtml/index.html">Product Page</a></li>
+                    <li><a href="contactForm.html">Contact Us</a></li>
+                    <li><a href="sign-up-page.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-</body>
-</html>
+    <section>
+        <div class="main-container">
+            <div class="upper-container">
+                <div class="upper-container1">
+                    <img src="img/ankarafab.jpg">
+                </div>
+                <div class="upper-container2">
+                    <h4>FLOWERY YELLOW ANKARA FABRIC</h4>
+                    <p>Brand: Holland Wax</p>
+                    <form action="#" method="post">
+                        <div class="check">
+                        <label for="qty">Quantity:</label>
+                        <input type="text" name="qty" id="qty" placeholder="2"><br>
+                        <label for="buy">Price:#6,000</label><br>
+                        <input type="submit" value="BUY NOW">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="word">
+                <h2>DESCRIPTION</h2>
+                <p>Ankara commonly known as “Ankara prints”, “African prints”,”African wax prints” “Holland wax” and “Dutch wax”, 
+            is a 100% cotton fabric with vibrant patterns. It is usually
+            a colorful cloth and is primarily associated with Africa because of its tribal-like patterns and motifs</p>
+           </div>
+            <div class="lower">
+                <h3>RELATED PRODUCTS</h3>    
+                <div class="img-lower img1">
+                    <img src="img/chiffonfab.jpg">
+                    <p>Chiffon Fabric</p>
+                    <p>Price:#4,500</p>
+                </div>
+                <div class="img-lower img2">
+                    <img src="img/lacefab.jpg">
+                    <p>Lace Fabric</p>
+                    <p>Price:#12,500</p>
+                </div>
+                <div class="img-lower img3">
+                    <img src="img/polishfab.jpg">
+                    <p>Polish Fabric</p>
+                    <p>Price:#8,750</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+    <div class="footer box1">
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+    </div>
+    <div class="footer newsletter">
+        <p>Sign up for our Newsletter</p>
+        <div class="newsletter">
+            <form action="#" id="validateForm" method="post">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" style="width: 50%; border-radius:0px; padding:5px">
+                <input type="button" value="SUBMIT">
+            </form>
+        </div>
+
+    </div>
+    <div class="footer logo">
+        <p>CONNECT WITH US</p>
+        <li><img src="../htmlForms/logos/facebook.png"></li>
+        <li><img src="../htmlForms/logos/twitter.png"></li>
+        <li><img src="../htmlForms/logos/gmail.png"></li>
+        <li><img src="../htmlForms/logos/youtube.jpg"></li>
+    </div>
+    <p class="last">&copy; Copyright2020 pearlsfabrics.com All rights reserved </p>
+
+</footer>

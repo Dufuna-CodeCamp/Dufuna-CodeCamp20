@@ -2,134 +2,100 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="../css/signup.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
-            <h1>Zeezy Stores</h1>
-            <input type="text" placeholder="Search.." name="search">
             <ul>
-                <a href="#">Men Wear</a>
-                <a href="#">Shoes</a>
-                <a href="#">Watches</a>
-                <a href="#">Sunglasses</a>
-                <a href="#">Accessories</a>
-                <a href="#">Women Fashion</a>
-                <a href="#">Awoof Sales</a>
+                <a href="*">Zeezy Stores</a>
+                <li><a href="signUp.html">Sign Up</a></li>
+                <li><a href="../htmlForms/contactForm.html">Contact Us</a></li>
+                <li><a href="../html/index.html">Product Page</a></li>
             </ul>
         </nav>
-        <nav>
-            <ul>
-                <a href="contactForm.html">Contact Us</a>
-                <a href="signUp.html">Sign Up</a>
-                <a href="../html/index.html">Product</a>
-            </ul>
-        </nav>
-        <h1>Sign Up</h1>
-        <form>
-            <fieldset>
-                <legend>Sign Up</legend>
-                <label for="fname">First Name</label><br>
-                <input type="text" name="fname" id="fname"><br><br>
-                <label for="lname">Last Name</label><br>
-                <input type="text" name="lname" id="lname"><br><br>
-                <label for="mname">Middle Name</label><br>
-                <input type="text" name="mname" id="mname"><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
-                <label for="password">Password</label><br>
-                <input type="password" name="password"><br><br>
-                <label for="cpassword">Confirm Password</label><br>
-                <input type="password" name="cpassword"><br><br>
-                <label for="male">Gender</label> <br>
-                <input type="radio" name="gender" value="Male" id="male"> 
-                <label for="male">Male</label> <br>
-                <input type="radio" name="gender" value="Female" id="female">
-                <label for="female">Female</label> <br><br>
-                <label for="dob">Date of Birth:</label>
-                <input type="number" name="dob" value="dob" id="dob">
+        <div class="sign">
+            <div class="register">
+                <h2 class="account">Register your Account</h2>
+                <div class="registering">
+                    Registering an account gives you 
+                    access to sweet promo and events 
+                    available to only registered customers
+                    <br>
+                    <br>
+                    Already got an account?
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+            <form class="information">
+                <fieldset class="inform">
+                    <div class="info">
+                        <label for="fname">First Name</label><br>
+                        <input type="text" name="fname" id="fname">
+                        <span class="error-block"></span><br><br>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname">
+                        <span class="error-block"></span><br><br>
+                        <label for="mname">Other Names</label><br>
+                        <input type="text" name="mname" id="mname"><br><br>
+                        <label for="pnumber">Phone Number</label><br>
+                        <input type="number" name="pnumber" id="pnumber">
+                        <span class="error-block"></span><br><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email">
+                        <span class="error-block"></span><br><br>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password">
+                        <span class="error-block"></span><br><br>
+                        <label for="cpassword">Confirm Password</label><br>
+                        <input type="password" name="cpassword" id="cpassword">
+                        <span class="error-block"></span><br><br>
+                        <div class = "term">
+                            <input type="checkbox" name="conditions" id="terms" value="terms">
+                            <label for="terms">I agree to the Terms and Conditions</label>
+                        </div>
+                        <br>
+                        <button type="submit" class="ton">Sign Up</button>
+                    </div>
+                </fieldset>   
+            </form>
+        </div>
+        <footer>     
+            <div class="footer">
+               <div>
+                    <ul>
+                        <li><a href="../htmlForms/contactForm.html">Contact Us</a></li><br>
+                        <li><a href="#">About Us</a></li><br>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+               </div>
                 <br><br>
-                <label for="lga">L.G.A:</label>
-                <input type="text" name="lga" id="lga"><br><br>
-                <label for="state">State:</label>
-                <input list="state-list" name="state" id="state">
-    
-                <datalist id="state-list">
-                    <option value="Abia">
-                    <option value="Adamawa">
-                    <option value="Akwa-ibom">
-                    <option value="Anambra">
-                    <option value="Bauchi">
-                    <option value="Bayelsa">
-                    <option value="Benue">
-                    <option value="Borno">
-                    <option value="Cross-River">
-                    <option value="Delta">
-                    <option value="Edo">
-                    <option value="Ekiti">
-                    <option value="Enugu">
-                    <option value="Ebonyi">
-                    <option value="Gombe">
-                    <option value="Imo">
-                    <option value="Jigawa">
-                    <option value="Kaduna">
-                    <option value="Kano">
-                    <option value="Katsina">
-                    <option value="Kebbi">
-                    <option value="Kogi">
-                    <option value="Kwara">
-                    <option value="Lagos">
-                    <option value="Nassarawa">
-                    <option value="Niger">
-                    <option value="Ogun">
-                    <option value="Ondo">
-                    <option value="Osun">
-                    <option value="Oyo">
-                    <option value="Plateau">
-                    <option value="River">
-                    <option value="Sokoto">
-                    <option value="Taraba">
-                    <option value="Yobe">
-                    <option value="Zamfara">
-    
-                </datalist>
+                <form class="newsletterSignup">
+                    <label for="newsletter">Sign Up for our Newsletter</label><br><br>
+                    <div class="news">
+                        <div class="letter">
+                            <input type="text" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                            <div class="error-block" id="error"></div>
+                        </div>
+                        <div class="letter-I"><button type="submit">SUBMIT</button></div>
+                    </div>
+                </form>
                 <br><br>
-                <label for="country">Country:</label>
-                <input type="text" name="country" id="country"><br><br>
-    
-                <label for="address">Address</label><br>
-                <input type="text" name="address" id="address">
-                <br>
-                <br>
-                <br>
-                <button>Sign Up</button>
-            </fieldset>   
-        </form>
-        <footer>
+                <div class="connect">
+                    <p>CONNECT WITH US</p>
+                    <img src="../html/image/facebook-logo.png">
+                    <img src="../html/image/twitter-logo.png">
+                    <img src="../html/image/mail-logo.png">
+                    <img src="../html/image/youtube-logo.png">
             
-        
-            <h5>COPORATE</h5>
-            <ul>    
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Orders And ReturnsS</a></li>
-                <li><a href="#">Terms Of Service</a></li>
-            </ul>
-
-            <h5>YOU LINK</h5> 
-            <ul>
-                <li><a href="#">Delivery Query</a></li>
-                <li><a href="#">Store Location</a></li>
-                <li><a href="#">Customer Service</a></li>
-                <li><a href="#">Privacy And Policy</a></li>
-            </ul> 
-
-            <h5>SUPPORT</h5>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="contactForm.html">Contact Us</a></li>
-            </ul>
+                </div>
+                <br>       
+            </div>
             <p> Copyright &copy; 2020 zeezystores.com. All rights reserved.</p>
         </footer>
+        <script src="../dom/signUp.js"></script>
+        <script src="../dom/newsletter.js"></script>
     </body>
 </html>
