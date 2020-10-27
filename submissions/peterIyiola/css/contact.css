@@ -3,11 +3,23 @@
     flex:row wrap;
     justify-content: space-around;
     padding:40px;
+    margin-left: 100px;
 
 }
 img     {
     height:30px;
     width: 40px;
+}
+.fields {
+
+    width: 100px;
+    margin-left: 200px;
+}
+.error  {
+    font-size: 12px;
+    color:red;
+    margin-left: 50px;
+
 }
 .flex-container   {
     display: flex;

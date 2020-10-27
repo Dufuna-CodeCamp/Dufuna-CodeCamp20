@@ -6,9 +6,9 @@ password = document.getElementById('password'),
 confirmPassword = document.getElementById('confirmPassword'),
 phoneNumber = document.getElementById('phoneNumber');
 
-const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,10})+$/;
 const nameRegex = /^[a-zA-Z]/;
-const phoneNumberRegex = /^[\+]?[0-9]{8,14}$/i;
+const phoneNumberRegex = /^[]?[0-9]{8,14}$/i;
 const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
 
