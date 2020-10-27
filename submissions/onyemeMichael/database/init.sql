@@ -89,8 +89,8 @@ CREATE TABLE addresses (
 
 -- Insert into addresse table
 INSERT INTO addresses (street_adress, city, state_name, zipcode, country, phone_number, customer_id)
-VALUES ('Mykel str', 'Apapa', 'Lagos', 100335, 'Nigeria', 08182515388, 1 ),
-       ('Chuks str', 'Yaba', 'Lagos', 100375, 'Nigeria', 07012345678, 2 );
+VALUES ('Mykel str', 'Apapa', 'Lagos', '100335', 'Nigeria', '08182515388', '1' ),
+       ('Chuks str', 'Yaba', 'Lagos', '100375', 'Nigeria', '07012345678', '2' );
 
 
 -- Order Table
@@ -105,8 +105,8 @@ CREATE TABLE orders (
 
 -- Insert into orders table
 INSERT INTO orders (order_amount, ordered_at, customer_id)
-VALUES (138999, now(), 1),
-	   (88000, now(), 2);
+VALUES ('138999', now(), '1'),
+	   ('88000', now(), '2');
 
 -- Order Items Table
 CREATE TABLE order_items (
@@ -123,4 +123,4 @@ CREATE TABLE order_items (
 
 -- Insert into order items table
 INSERT INTO order_items (quantity, unit_price, total_amount, product_id, order_id)
-VALUES (1, 138999, 138999, 1, 1);
+VALUES ('1', '138999', '138999', '1', '1');
