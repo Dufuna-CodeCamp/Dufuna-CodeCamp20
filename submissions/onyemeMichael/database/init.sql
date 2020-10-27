@@ -79,7 +79,7 @@ CREATE TABLE addresses (
     street_adress VARCHAR (255) NOT NULL,
     city VARCHAR (50) NOT NULL,
     state_name VARCHAR (50) NOT NULL,
-    zipcode INT NOT NULL,
+    zipcode INT,
     country VARCHAR (50) NOT NULL,
     phone_number VARCHAR (20) NOT NULL,
     customer_id INT NOT NULL,
