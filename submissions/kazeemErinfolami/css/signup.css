@@ -27,7 +27,7 @@ a {
 label.logo {
   font-size: 250%;
   line-height: 80px;
-  padding: 0 3%;
+  padding: 0 1rem;
   font-weight: bold;
 }
 nav ul {
@@ -45,14 +45,14 @@ nav ul li {
   margin-top: 40px;
   border: 1px solid gray;
   border-radius: 20px;
-  margin-left: 50%;
-  margin-right: 2%;
+  margin-left: 45.2rem;
+  margin-right: 0.5rem;
   margin-bottom: 50px;
 }
 .form {
   margin-top: 40px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
   margin-bottom: 40px;
   padding-top: 0;
 }
@@ -87,8 +87,8 @@ section {
   position: absolute;
   top: 300px;
   right: 0;
-  left: 10%;
-  margin-right: 70%;
+  left: 9rem;
+  margin-right: 55rem;
   margin-left: 0;
 }
 
@@ -144,7 +144,7 @@ footer {
 
 #imglogo {
   position: absolute;
-  right: 25%;
+  right: 25rem;
   /*  margin-top: 0; */
 }
 .fb {
@@ -193,10 +193,17 @@ footer {
     margin-right: 180px;
     text-transform: uppercase;
   }
+  .form {
+    margin-top: 40px;
+    margin-left: 2rem;
+    margin-right: 4.5rem;
+    margin-bottom: 40px;
+    padding-top: 0;
+  }
 
   .forminput {
     display: block;
-    width: 230px;
+    width: 250px;
     height: 20px;
     border-radius: 10px;
     border: 3px solid gray;
@@ -205,16 +212,16 @@ footer {
     position: absolute;
     top: 140px;
     right: 14px;
-    left: 6%;
-    margin-right: 0%;
-    margin-left: 0%;
+    left: 1rem;
+    margin-right: 0;
+    margin-left: 0;
   }
   .container {
     margin-top: 150px;
     border: 1px solid gray;
     border-radius: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 50px;
   }
   .registerContainer {
@@ -267,7 +274,7 @@ footer {
   .media {
     display: flex;
     position: absolute;
-    top: 122%;
+    top: 63rem;
     right: 90px;
   }
   #connect {
