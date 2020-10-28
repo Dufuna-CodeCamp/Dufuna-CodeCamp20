@@ -7,33 +7,82 @@
     <title>Sign up</title>
   </head>
   <body>
-      <img src="../html/images/es.jpg">
-    <form>
-    <h1 class="header">Start using Emarket!</h1>
-    <img class="Googlelogo" src="../html/images/GoogleLogo1.jpg">
-    <button class="goolgeSignup">Sign up with Google</button>
-      <p class="or">or</p>
-      <input class="forminput" type="text" placeholder="Email" name="email" required/>
-      <br><br><br><br>
-      <input class="forminput" type="text" placeholder="Username" name="password" required/>
-      <br><br><br><br>
-      <input class="forminput" class="forminput" type="password" placeholder="Password" name="password" required/>
-      <br><br><br><br>
-      <div class="agree"><input type="checkbox" >  i agree to <a class="fa" class="ta" href="../html/index.html">Emarket Terms and Services</a></input></div>
-
-    <div id="#">
-        <button class="signupbutton" type="submit" id="#">Sign up for free</button>
-    </div>
-    </form>
+    <nav>
+      <label class="logo"><img id="logo" src="../html/images/logo.png"></label>
+      <ul>
+        <li><a href="../html/index.html">Product Page</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="../htmlForms/contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <section>
-        <div class="forget"><a class="fa" href="#">Forget password</a></div> <br>
-        <div class="login">Already have an account? <a class="fa" href="../html/index.html" class="loginlink">Login</a></div><br>
-        <div class="login">Looking for the Mac app? <a class="fa" href="#" class="loginlink">Download here</a></div>
+      <div class="registerContainer">
+        <h1 class="reg">Register your</h1>
+        <h1 class="reg">Account </h1>
+      
+      <p class="para">
+        Registering an account gives you access to sweet promo and events
+        available to only registered customers
+      </p>
+      <p class="para">Already got an account? <a href="#">Sign in</a></p>
+    </div>
     </section>
-  <!-- <footer>
-            <div>&copy; Copyright 2020:
-                <a class="fa" href="#"> Emarket</a>
-              </div>
-    </footer> -->
+    <div class="container">
+      <form>
+        <div class="form">
+          <label for="firstName">First Name :</label>
+          <input class="forminput" type="text" name="firstName" id="firstName" />
+          <label for="lastName">Last Name :</label>
+          <input class="forminput" type="text" name="lastName" id="lastName" />
+          <label for="otherName">Other Name :</label>
+          <input class="forminput" type="text" name="otherName" id="otherName" />
+          <label for="phoneNo">Phone No :</label>
+          <input class="forminput" type="number" name="phoneNo" id="phoneNo" />
+          <label for="email">Email Address :</label>
+          <input class="forminput" type="email" name="email" id="email" />
+          <label for="password">Password :</label>
+          <input class="forminput" type="password" name="password" id="password" />
+          <label for="confirmPassword">Confirm Password :</label>
+          <input class="forminput" type="password" name="confirmPassword" id="confirmPassword" />
+        </div>
+        <div class="agreeContainer">
+          <label for="agree" class="agree"><input id="box" type="checkbox" name="agree" id="agree" />I agree to the Terms
+          and Conditions</label>
+        </div>
+        <div class="signupbutton">
+          <button type="submit" id="submitbtn">Sign up</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+        <div class="contact">
+          <ul>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+          <div class="newsletter">
+            <p>Sign up for our Newsletter</p>
+            <form id="newsLetter">
+              <input type="text" placeholder="Enter your Email" id="newsEmail" />
+              <button id="newsSubmit" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="media">
+            <h3 id="connect">CONNECT WITH US</h3>
+            <ul>
+              <li><img class="fb" id="imglogo" src="../html/images/fblogo.png" alt="facebook" /></li>
+              <li><img class="tw" id="imglogo" src="../html/images/twlogo.png" alt="twitter" /></li>
+              <li><img class="gm" id="imglogo" src="../html/images/gmlogo.png" alt="gmail" /></li>
+              <li><img class="yt" id="imglogo" src="../html/images/yTlogo.png" alt="youtube" /></li>
+            </ul>
+          </div>
+      <div class="copyRight">&copy; Copyright 2020:
+        <a href="#"> Emarket</a>
+      </div>
+    </footer>
   </body>
+  
+  </html>
 </html>

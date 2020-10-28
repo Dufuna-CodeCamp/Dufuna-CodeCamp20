@@ -1,178 +1,280 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(225, 225, 217, 0.434);
+}
+nav {
+  background: rgba(211, 210, 210, 0.577);
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+#logo {
+  width: 100px;
+  height: auto;
+  display: inline;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+a {
+  color: rgba(34, 34, 34, 0.797);
+}
+label.logo {
+  font-size: 250%;
+  line-height: 80px;
+  padding: 0 3%;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  color: rgba(238, 237, 237, 0.87);
+  font-size: 120%;
+  padding-right: 90px;
+  text-transform: uppercase;
+}
+.container {
+  margin-top: 40px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-left: 50%;
+  margin-right: 2%;
+  margin-bottom: 50px;
+}
+.form {
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+.forminput {
+  display: block;
+  width: 550px;
+  height: 36px;
+  border-radius: 10px;
+  border: 3px solid gray;
+}
+label {
+  font-size: 100%;
+}
+.agreeContainer {
+  text-align: center;
+}
+.box {
+  margin-top: 0px;
+}
+.signupbutton {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#submitbtn {
+  padding: 10px 60px;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+}
+section {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  left: 10%;
+  margin-right: 70%;
+  margin-left: 0%;
+}
+
+.registerContainer {
+  font-size: x-large;
+  color: rgba(0, 0, 0, 0.55);
+}
+.para {
+  font-size: 20px;
+}
+footer {
+  padding: 3px;
+  width: 100%;
+  height: 220px;
+  background-color: rgba(187, 187, 187, 0.776);
+  color: white;
+}
+.contact {
+  position: absolute;
+  line-height: 40px;
+  padding-top: 20px;
+  margin-left: 60px;
+  font-size: x-large;
+}
+.newsletter {
+  text-align: center;
+  font-size: larger;
+  margin-top: 20px;
+  line-height: 40px;
+}
+#newsEmail {
+  padding: 10px 60px;
+}
+#newsSubmit {
+  padding: 10px 20px;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+}
+.copyRight {
+  text-align: center;
+}
+.media {
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+#connect {
+  color: rgba(0, 0, 0, 0.461);
+  line-height: 100px;
+}
+
+.copyRight {
+  margin-top: 50px;
+}
+
+#imglogo {
+  position: absolute;
+  right: 25%;
+  /*  margin-top: 0; */
+}
+.fb {
+  left: 0px;
+  width: 20%;
+  border-radius: 7px;
+}
+.tw {
+  left: 40px;
+  width: 21%;
+  border-radius: 7px;
+}
+.gm {
+  left: 80px;
+  width: 26%;
+  border-radius: 7px;
+}
+.yt {
+  left: 130px;
+  width: 26%;
+  border-radius: 7px;
+}
+
+/* mediaQuary */
+@media (max-width: 375px) {
+  nav {
+    background: rgba(211, 210, 210, 0.577);
+    height: 130px;
+    width: 100%;
+    cursor: pointer;
+  }
+  #logo {
+    width: 90px;
+    height: auto;
+    display: inline;
+    margin-top: 0px;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 5px;
+    color: rgba(238, 237, 237, 0.87);
+    font-size: 70%;
+    top: 0px;
+    margin-top: 10px;
+    margin-right: 180px;
+    text-transform: uppercase;
+  }
+
+  .forminput {
+    display: block;
+    width: 230px;
+    height: 20px;
+    border-radius: 10px;
+    border: 3px solid gray;
+  }
+  section {
+    position: absolute;
+    top: 140px;
+    right: 14px;
+    left: 6%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .container {
+    margin-top: 150px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+  .registerContainer {
+    text-align: center;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .para {
     font-size: 15px;
   }
-img{
-width: 200px;
-  height: auto;
-  border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-  }
-form{
-      text-align: center;
-  }
-.header{
-font-weight: lighter;
-font-style: inherit;
-font-size: 200%;
-font-family: 'Rajdhani', sans-serif;
-margin-top: 0;
-color: dimgray;
-}
-.Googlelogo{
-    width: 40px;
-  border-radius: 50%;
-  position: absolute;
-  left: 36%;
-    margin-left: 70px;
-    margin-right: 900px;
-    margin-top: 67px;
-}
-.goolgeSignup{
-    display: inline-block;
-    margin-top: 60px;
-    border: solid;
-    background-color: white;
-    border-color: rgb(184, 181, 181);
-    border-width: 1px;
-    border-radius: 5px;
-    padding: 15px 8%;
-    color: rgb(160, 159, 159);
-    font-size: large;
+  #submitbtn {
+    padding: 9px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
     cursor: pointer;
-}
-.or{
-    margin-top: 40px;
-    color: dimgray;
-    font-size: larger;
-    font-family: 'Rajdhani', sans-serif;
-}
-/* input{
-    
-    text-decoration: underline;
-} */
-.forminput {
-    border: none;
-    outline: none;
-    background: transparent;
-    border-bottom: 1px groove black;
-    width: 28%;
-    position: absolute;
-    left: 36%;
-    margin-top: 50px;
-    font-size: 120%;
   }
-input::placeholder {
-    color: rgb(160, 159, 159);
-    font-family: 'Rajdhani', sans-serif;
- }
-h4{
-    margin-top: 30px;
-}
-a{
-    text-decoration: none;
-}
-a:link{
-    color: #87CEFA;
-}
-.agree{
-    margin-top: 40px;
-    position: absolute;
-    left: 36%;
-    font-family: 'Rajdhani', sans-serif;
-    color: rgb(160, 159, 159);
-}
-.signupbutton{
-    margin-top: 90px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    padding: 15px 10%;
+  footer {
+    padding: 3px;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(187, 187, 187, 0.776);
     color: white;
-    background-color: #87CEFA;
-    font-size: large;
-    cursor: pointer;
-}
-section{
-    color: rgb(160, 159, 159);
-    font-family: 'Rajdhani', sans-serif;
-    position: absolute;
-    left: 36%;
-    margin-top: 20px;
-    margin-bottom: 90px;
-}
-.ta{
-    color: rgb(136, 32, 32);
-}
-.fa{
-    color: #87CEFA;
-}
-@media only screen and (max-width: 600px ) {
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-size: 15px;
-      }
-    .forminput {
-        border: none;
-        outline: none;
-        background: transparent;
-        border-bottom: 1px groove black;
-        width: 70%;
-        position: absolute;
-        left: 15%;
-        margin-top: 30px;
-        font-size: 120%;
-      }
-    section{
-        position: absolute;
-        left: 15%;
-        margin-top: 20px;
-    }
-    .signupbutton{
-        margin-top: 50px;
-        border: solid;
-        border-width: 1px;
-        border-radius: 5px;
-        padding: 15px 20%;
-        color: white;
-        background-color: #87CEFA;
-        font-size: large;
-        cursor: pointer;
-    }
-    .agree{
-        margin-top: 20px;
-        position: absolute;
-        left: 15%;
-        font-size: 80%;
-        font-family: 'Rajdhani', sans-serif;
-    }
-    .goolgeSignup{
-        display: inline-block;
-        margin-top: 60px;
-        border: solid;
-        background-color: white;
-        border-color: rgb(184, 181, 181);
-        border-width: 1px;
-        border-radius: 5px;
-        padding: 15px 15%;
-        color: rgb(160, 159, 159);
-        font-size:18px;
-        cursor: pointer;
-    }
-    .Googlelogo{
-        width: 40px;
-      border-radius: 50%;
-      position: absolute;
-      left: 15%;
-        margin-left: 10px;
-        margin-right: 900px;
-        margin-top: 67px;
-    }
   }
+  .contact {
+    position: absolute;
+    line-height: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .newsletter {
+    text-align: center;
+    font-size: larger;
+    margin-top: 90px;
+    line-height: 40px;
+  }
+  #newsEmail {
+    padding: 10px 40px;
+  }
+  #newsSubmit {
+    padding: 10px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+  }
+  .copyRight {
+    margin-top: 120px;
+    text-align: center;
+  }
+  .media {
+    display: flex;
+    position: absolute;
+    top: 122%;
+    right: 90px;
+  }
+  #connect {
+    color: rgba(0, 0, 0, 0.461);
+    line-height: 100px;
+  }
+}
