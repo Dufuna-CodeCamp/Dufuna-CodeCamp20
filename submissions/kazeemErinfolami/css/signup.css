@@ -70,7 +70,7 @@ label {
   text-align: center;
 }
 .box {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .signupbutton {
   text-align: center;
@@ -86,10 +86,10 @@ label {
 section {
   position: absolute;
   top: 300px;
-  right: 0px;
+  right: 0;
   left: 10%;
   margin-right: 70%;
-  margin-left: 0%;
+  margin-left: 0;
 }
 
 .registerContainer {
@@ -130,6 +130,7 @@ footer {
 }
 .copyRight {
   text-align: center;
+  margin-top: 50px;
 }
 .media {
   display: flex;
@@ -141,17 +142,13 @@ footer {
   line-height: 100px;
 }
 
-.copyRight {
-  margin-top: 50px;
-}
-
 #imglogo {
   position: absolute;
   right: 25%;
   /*  margin-top: 0; */
 }
 .fb {
-  left: 0px;
+  left: 0;
   width: 20%;
   border-radius: 7px;
 }
@@ -183,7 +180,7 @@ footer {
     width: 90px;
     height: auto;
     display: inline;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   nav ul li {
@@ -191,7 +188,7 @@ footer {
     line-height: 5px;
     color: rgba(238, 237, 237, 0.87);
     font-size: 70%;
-    top: 0px;
+    top: 0;
     margin-top: 10px;
     margin-right: 180px;
     text-transform: uppercase;
