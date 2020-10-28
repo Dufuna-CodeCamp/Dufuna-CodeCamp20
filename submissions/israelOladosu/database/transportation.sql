@@ -15,11 +15,8 @@ CREATE TABLE passengers (
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
     sex VARCHAR(6) NOT NULL,
-    ticket_number VARCHAR(20) NOT NULL,
-    age INT,
-    class_id INT NOT NULL,
+    age INT,,
     PRIMARY KEY(id),
-    FOREIGN KEY(class_id) REFERENCES classes(id) ON DELETE CASCADE 
 );
 
 -- trips table
@@ -33,6 +30,7 @@ CREATE TABLE trips (
     passenger_id INT NOT NULL,
     point_of_embarkation VARCHAR(255) NOT NULL,
     PRIMARY KEY(id),
+    FOREIGN KEY(class_id) REFERENCES classes(id) ON DELETE CASCADE,
     FOREIGN KEY(passenger_id) REFERENCES passengers(passenger_id) ON DELETE CASCADE
 );
 
@@ -63,9 +61,9 @@ INSERT INTO classes (class_level)
 VALUES(1),(2),(3);
 
 --insert into passangers table
-INSERT INTO passengers (firstname, lastname, sex, class_id, ticket_number)
-VALUES('Dele', 'Amid', 'Male', 1, 'PC174599'),
-      ('Rita', 'Godspower', 'Female', 2, 'PC56785');
+INSERT INTO passengers (firstname, lastname, sex)
+VALUES('Dele', 'Amid', 'Male'),
+      ('Rita', 'Godspower', 'Female');
       
 
 -- insert into trips table
