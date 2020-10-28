@@ -13,7 +13,7 @@ header img{
 	height: 100px;
 	float: left;
 	padding-bottom: 20px;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-left: 30px;
 }
 body{
@@ -37,7 +37,7 @@ nav a{
 	height: 40%;
 	line-height: 40%;
 	text-decoration: none;
-	color: white;	
+	color:white;
 }
 span{
 	color: #24305E;
@@ -50,10 +50,13 @@ span{
 	width: 30%;
 	float: left;
 	margin-top: 100px;
-	margin-left: 100px;
-	padding-left: 50px;
+	margin-left: 0px;
+	padding-left: 0px;
 	line-height: 35px;
-	word-spacing: 5px;	
+	word-spacing: 5px;
+}
+main h1{
+	font-size: 2em;
 }
 .sidebar{
 	width: 40%;
@@ -63,8 +66,8 @@ span{
 	margin-top: 20px;
 	border:solid 5px #24305E ;
 	border-radius: 23px;
-	margin-right: 20px;
-	padding: 20px 20px;
+	margin-right: 60px;
+	padding:20px;
 }
 input[type=text],
 input[type=email],
@@ -72,8 +75,8 @@ input[type=password],
 input[type=confirmpassword]{
 	padding: 8px ;
 	margin: 4px;
-	border-radius: 7px;
-	width: 80%;
+	border-radius: 5px;
+	width: 100%;
 }
 input[type=checkbox]{
 	text-align: center;
@@ -120,12 +123,15 @@ footer a{
 	padding-left: 50px;
 	color: white;
 }
+footer input[type=email]{
+	width: 70%;
+}
 footer input[type=email],
 footer button {
-	border-radius: 0px;
+	border-radius: 0;
 	padding: 5px;
-	margin-top: 0px;
-	margin-right: 3px;
+	margin-top: 0;
+	margin-right: 2px;
 }
 .right-footer{
 	width: 35%;
@@ -134,7 +140,7 @@ footer button {
 	margin-left: 5px;
 }
 .right-footer ul{
-	padding: 0px;
+	padding: 0;
 }
 .right-footer li{
 	display: inline;
@@ -170,11 +176,10 @@ footer button {
 	}
 	.sidebar{
 		width: 80%;
-		height: 420px;
 		margin-top: 10px;
 		margin-right: 80px;
 		margin-left: 80px;
-		height: 550px;
+		height: 520px;
 		padding: 7px 40px;
 	}
 	footer{
@@ -190,9 +195,9 @@ footer button {
 	.middle-footer{
 		width: 50%;
 		float: right;
-		margin-right: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.right-footer{
 		width: 50%;
@@ -207,6 +212,9 @@ footer button {
 	.copyright p{
 		margin-top: 100px;
 		padding-top: 120px;
+	}
+	footer input[type=email]{
+		width: 80%;
 	}
 	footer button {
 		padding: 2px;
@@ -232,7 +240,7 @@ footer button {
 		margin-left: 30px;
 	}
 	.main {
-	    padding: 0px;
+	    padding: 0;
 	    line-height: 25px;
 	}
 	.sidebar{
