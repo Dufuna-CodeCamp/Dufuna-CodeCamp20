@@ -235,13 +235,17 @@ footer button {
 	nav li{
 		display: inline-block;
 		width: 50%;
+		padding: 10px;
 	}
 	main button{
 		margin-left: 30px;
 	}
 	.main {
 	    padding: 0;
-	    line-height: 25px;
+	    line-height: 24px;
+	}
+	main h1{
+		font-size: 1.5em;
 	}
 	.sidebar{
 		width: 90%;
@@ -261,13 +265,36 @@ footer button {
 	}
 	footer{
 		height: 49%;
-		margin-top: 100px;
+		margin-top: 150px;
 		border-top: 60px;
+		padding-left: 25px;
+		font-size: 0.8em;
+	}
+	footer button {
+		padding: 5px;
+	}
+	
+	.left-footer,
+	.right-footer,
+	.middle-footer{
+		width: 100%;
+	}
+	footer input[type=email] {
+    	width: 70%;
+	}
+	.left-footer ul{
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	.right-footer li {
+    padding: 2px;
+    margin-left: 0;
 	}
 	.copyright p{
-		padding-top: 140px;
-		padding-right: 0px;
-		font-size: 14px;
+		padding-top: 150px;
+		padding-right: 0;
+		font-size: 12px;
 	}
 
 }
