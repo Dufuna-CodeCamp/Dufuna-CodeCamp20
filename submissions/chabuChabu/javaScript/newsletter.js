@@ -1,6 +1,6 @@
 let getForm = document.getElementById("validateNewsletter"),
     error = document.querySelector('span.footer-error-block'),
-    newslatter = document.getElementById("newsletter");
+    newsletter = document.getElementById("newsletter");
 
  function newsletterValidation(field, regdex, errorOne, errorTwo, event) {
         event.preventDefault();
