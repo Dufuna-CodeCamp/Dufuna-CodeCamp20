@@ -15,8 +15,8 @@ CREATE TABLE passengers (
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
     sex VARCHAR(6) NOT NULL,
-    age INT,,
-    PRIMARY KEY(id),
+    age INT,
+    PRIMARY KEY(id)
 );
 
 -- trips table
@@ -30,8 +30,8 @@ CREATE TABLE trips (
     passenger_id INT NOT NULL,
     point_of_embarkation VARCHAR(255) NOT NULL,
     PRIMARY KEY(id),
-    FOREIGN KEY(class_id) REFERENCES classes(id) ON DELETE CASCADE,
-    FOREIGN KEY(passenger_id) REFERENCES passengers(passenger_id) ON DELETE CASCADE
+    FOREIGN KEY(passenger_class) REFERENCES classes(id) ON DELETE CASCADE,
+    FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
 );
 
 -- cabin_classes table
@@ -39,7 +39,7 @@ CREATE TABLE cabin_classes(
     id INT NOT NULL AUTO_INCREMENT,
     cabin_code VARCHAR(10) NOT NULL,
     trip_id INT NOT NULL,
-    PRIMARY KEY(passenger_id, cabin),
+    PRIMARY KEY(id),
     FOREIGN KEY(trip_id) REFERENCES trips(id) ON DELETE CASCADE
 );
 
@@ -73,7 +73,7 @@ VALUES(1, 'PC174599', 500000, 4, 0, 'Abuja', 1),
 
 
 --insert into cabin_classes
-INSERT INTO cabin_classes(cabin, trip_id)
+INSERT INTO cabin_classes(cabin_code, trip_id)
 VALUES("C102", 1),
 	  ("C103", 2);
 
