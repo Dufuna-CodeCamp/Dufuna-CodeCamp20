@@ -30,7 +30,6 @@
 					<p class="reg-wording">
 						Registering an account gives you<br>access to sweet promo and events<br> available only to registered<br> customers<br><br> Already got an account? &nbsp <a href="#">Sign in</a>
 					</p>
-	
 				</div>
 				
 			</div>
@@ -90,10 +89,13 @@
                     <li><a href="#">Terms and Conditions</a></li>
       			</ul>
       	   </div>
-      	   <div class="footer-section links">
-      			<p>Sign up for our Newsletter</p>
-                <input type="emailaddress" name="emailaddress" placeholder="Enter your email address" >
-                <input type="button" name="Submit" value="SUBMIT">
+      	   <div class="footer-section">
+				 <form id="validateNewsletter">
+					<p>Sign up for our Newsletter</p>
+					<input class="footer-email" id="newsletter" placeholder="Enter your email address">
+					<button type="submit" class="footer-button">SUBMIT</button><br>
+                    <span class="footer-error-block"></span>
+				 </form>
       	   </div>
       	   <div class="footer-section newslatter">
                 <p>CONNECT WITH US</p>
@@ -105,10 +107,10 @@
 		</div>
 	</div>
 	<div class="footer-copyright">
-			 &copy; Copyright 2020 Kwathu All rights reserved
-		</div>
-
+		&copy; Copyright 2020 Kwathu All rights reserved
+	</div>
 	<!--footer-->
 	<script src="../javaScript/signup.js"></script>
+	<script src="../javaScript/newsletter.js"></script>
 </body>
 </html>
