@@ -1,13 +1,13 @@
 *{
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
-	
 }
-html,body{
-	box-sizing: border-box;
-	height: 100%;
+body{
 	margin: 0 auto;
 	font-size: 16px;
+	padding: 0;
+	height: 120vh;
+
 }
 header img{
 	height: 100px;
@@ -15,12 +15,6 @@ header img{
 	padding-bottom: 20px;
 	margin-top: 0;
 	margin-left: 30px;
-}
-body{
-	margin: 0;
-	padding: 0;
-	height: 120vh;
-
 }
 nav ul{
 	list-style-type: none;
@@ -34,8 +28,7 @@ nav li{
 	padding: 20px;
 }
 nav a{
-	height: 40%;
-	line-height: 40%;
+	font-size: 15px;
 	text-decoration: none;
 	color:white;
 }
@@ -47,7 +40,6 @@ span{
 	margin: 10px ;
 }
 .main{
-	width: 40%;
 	float: left;
 	text-align: center;
 	margin-top: 40px;
@@ -72,7 +64,6 @@ main h2{
 
 }
 .sidebar{
-	width: 40%;
 	height: 530px;
 	float: right;
 	font-size: 12px;
@@ -96,17 +87,16 @@ main h2{
 	width: 100%;
 }
 textarea {
-	padding: 5px ;
-	margin: 5px;
-	width: 100%;
+	padding-top: 30px;
+	margin: 20px;
+	padding-right: 30px;
 }
 main button{
 	display: inline-block;
 	text-align: center;
-	margin-top:15px;
-	margin-left: 320px;
+	margin-top: 10px;
+	margin-left: 360px;
 	width: 130px;
-	height: 30px;
 	border-radius: 5px;
 	background-color: #24305E;
 	color: white;
@@ -114,7 +104,7 @@ main button{
 footer{
 	position: absolute;
 	height: 21%;
-	top: 650px;
+	top: 670px;
 	width: 100%;
 	background-color: #24305E;
 }
@@ -129,7 +119,6 @@ footer a{
 	text-decoration: none;
 }
 .left-footer{
-	width: 20%;
 	float: left;
 	margin-left: 5px;
 }
@@ -179,8 +168,7 @@ footer button {
 	padding-top: 50px;
 }
 @media screen and (max-width: 768px){
-	html,body{
-		width: 100%;
+	body{
 		height: 150vh;
 	}
 	main button{
@@ -200,6 +188,10 @@ footer button {
 	}
 	.sidebar h2{
 	    letter-spacing: 2px;
+	}
+	textarea {
+		padding-right: 85px;
+		margin: 0;
 }
 	footer{
 		height: 250px;
@@ -207,9 +199,6 @@ footer button {
 	}
 	footer a{
 		line-height: 3px;
-	}
-	.left-footer{
-		width: 40%;
 	}
 	.middle-footer{
 		width: 50%;
@@ -232,9 +221,6 @@ footer button {
 		margin-top: 100px;
 		padding-top: 120px;
 	}
-	footer input[type=email]{
-		width: 80%;
-	}
 	footer button {
 		padding: 2px;
 		margin-left: 3px;
@@ -256,7 +242,8 @@ footer button {
 		width: 50%;
 	}
 	main button{
-		margin-left: 130px;
+		margin-left: 230px;
+		width: 70px;
 	}
 	.main {
 	    padding: 0;
@@ -288,6 +275,9 @@ footer button {
 	input[type=checkbox] {
 	    margin: 0 1px;
 	}
+	textarea{
+		width: 100%;
+	}
 	footer{
 		height: 49%;
 		margin-top: 150px;
@@ -304,17 +294,14 @@ footer button {
 	.middle-footer{
 		width: 100%;
 	}
-	footer input[type=email] {
-    	width: 70%;
-	}
 	.left-footer ul{
 		padding-left: 0;
 		margin-left: 0;
 	}
 
 	.right-footer li {
-    padding: 2px;
-    margin-left: 0;
+	    padding: 2px;
+	    margin-left: 0;
 	}
 	.copyright p{
 		padding-top: 150px;
