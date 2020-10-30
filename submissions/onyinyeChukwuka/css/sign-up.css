@@ -100,7 +100,7 @@ form {
     margin-right: 10px;
 }
 
-#firstname, #lastname, #othernames, #phonenumber, #email, #password, #cpassword {
+.texts{
     /* width: 521px; */
     width: 100%;
     height: 50px;
