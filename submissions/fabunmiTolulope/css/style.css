@@ -133,7 +133,7 @@ footer ul li{
 /**Media queries for mobile**/
 
 @media screen and (max-width: 450px) {
-	*body{
+	*{
 		width: 100%;
 	}
 	header{
@@ -269,7 +269,7 @@ footer ul li{
 /**Media queries for web*/
 
 @media screen and (min-width: 600px) {
-*body{
+*{
 	margin: auto;
 	}
 .media{
@@ -327,6 +327,9 @@ footer ul li{
 	padding: 5px;
 	list-style: none;
 	}
+	.footerlist{
+	margin-right: 100px;
+	}
 	.footer-signup{
 		margin: auto;
 	}
@@ -345,10 +348,18 @@ footer ul li{
 	}
 	.footer-connect{
 	padding: 10px;
+	margin-left: 100px;
 	}
 	.footer1 p{
 	cursor: pointer;
 	text-align: center;
     padding: 10px;
+	}
+	.footer2{
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: 1;
 	}
 }
