@@ -55,7 +55,7 @@ CREATE TABLE products (
 
 -- Insert into products table
 INSERT INTO products (product_name, product_description, product_image, unit_price, stock_level, product_status, admin_id, category_id)
-VALUES ('Tecno Phantom 9', 'Tecno Phantom 9 smartphone was launched on 10th July 2019. The phone comes with a 6.40-inch touchscreen display with a resolution of 1080x2340 pixels at a pixel density of 403 pixels per inch (ppi) and an aspect ratio of 19.5:9.', 'C:\Users\Onyeme Michael\Desktop\Dufuna-CodeCamp20\submissions\onyemeMichael\html\image\tecno.jpg', 138999, 5, 'in stock', 2, 1);
+VALUES ('Tecno Phantom 9', 'Tecno Phantom 9 smartphone was launched on 10th July 2019. The phone comes with a 6.40-inch touchscreen display with a resolution of 1080x2340 pixels at a pixel density of 403 pixels per inch (ppi) and an aspect ratio of 19.5:9.', 'C:\Users\Onyeme Michael\Desktop\Dufuna-CodeCamp20\submissions\onyemeMichael\html\image\tecno.jpg', 138999.0000, 5, 'in stock', 2, 1);
 
 
 -- Rigistered Customers Table
@@ -105,8 +105,8 @@ CREATE TABLE orders (
 
 -- Insert into orders table
 INSERT INTO orders (order_amount, ordered_at, customer_id)
-VALUES (138999, now(), 1),
-	   (88000, now(), 2);
+VALUES (138999.0000, now(), 1),
+	   (88000.0000, now(), 2);
 
 -- Order Items Table
 CREATE TABLE order_items (
@@ -123,4 +123,4 @@ CREATE TABLE order_items (
 
 -- Insert into order items table
 INSERT INTO order_items (quantity, unit_price, total_amount, product_id, order_id)
-VALUES (1, 138999, 138999, 1, 1);
+VALUES (1, 138999.0000, 138999.0000, 1, 1);
