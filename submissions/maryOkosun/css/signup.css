@@ -243,6 +243,9 @@ footer button {
 	.main {
 	    padding: 0;
 	    line-height: 24px;
+	    width: 100%;
+	    margin-left: 3px;
+	    margin-right: 3px;
 	}
 	main h1{
 		font-size: 1.5em;
