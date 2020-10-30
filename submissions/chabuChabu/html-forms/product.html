@@ -80,10 +80,13 @@
                     <li><a href="#">Terms and Conditions</a></li>
       			</ul>
       	   </div>
-      	   <div class="footer-section links">
-      			<p>Sign up for our Newsletter</p>
-                <input type="emailaddress" name="emailaddress" placeholder="Enter your email address">
-                <input type="button" name="Submit" value="SUBMIT">
+      	   <div class="footer-section">
+				 <form id="validateNewsletter">
+					<p>Sign up for our Newsletter</p>
+					<input class="footer-email" id="newsletter" placeholder="Enter your email address">
+					<button type="submit" class="footer-button">SUBMIT</button><br>
+                    <span class="footer-error-block"></span>
+				 </form>
       	   </div>
       	   <div class="footer-section newslatter">
                 <p>CONNECT WITH US</p>
@@ -98,5 +101,6 @@
 		&copy; Copyright 2020 Kwathu All rights reserved
 	</div>
 	<!--footer-->
+	<script src="../javaScript/newsletter.js"></script>
 </body>
 </html>

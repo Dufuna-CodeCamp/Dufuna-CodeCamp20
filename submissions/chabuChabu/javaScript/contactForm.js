@@ -33,5 +33,6 @@ function validateContact(event) {
         "Please enter your subject",null,event);
       contactValidation(textarea,messageRegex,
         "Please enter your message in the text area above",null,event);
+      return true;
 }
 submitForm.addEventListener("submit",validateContact);
