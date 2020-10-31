@@ -22,8 +22,6 @@ CREATE TABLE `user_admins` (
 CREATE TABLE `categories` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,
-  `category_desc` text NOT NULL,
-  `category_image` text NOT NULL,
   PRIMARY KEY (`category_id`)
 );
 
