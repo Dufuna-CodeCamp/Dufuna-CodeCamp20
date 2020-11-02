@@ -22,14 +22,12 @@ nav>.right-side>div {
     font-size: 16px;
     color: #ffffff;
     line-height: 1.19;
-    letter-spacing: normal;
     text-align: left;
 }
 
 .tab {
     color: #ffffff;
     text-decoration: none;
-    font-weight: normal;
 }
 
 .link-wrapper {
@@ -46,7 +44,6 @@ nav>.right-side>div {
     font-weight: bold;
     text-align: left;
     line-height: 1.22;
-    letter-spacing: normal;
     color: #0066f5;
     margin-bottom: 23px;
     margin-top: 175px;
@@ -55,10 +52,8 @@ nav>.right-side>div {
 .sidebar p {
     font-family: Montserrat;
     font-size: 30px;
-    font-weight: normal;
     text-align: left;
     line-height: 1.23;
-    letter-spacing: normal;
     color: #5f5f5f;
 }
 
@@ -71,9 +66,7 @@ nav>.right-side>div {
 form {
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: normal;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: left;
     color: #5f5f5f;
     margin-top: 40px;
@@ -114,7 +107,6 @@ form {
     font-size: 40px;
     font-weight: bold;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: left;
     color: #0066f5;
 }
@@ -128,7 +120,6 @@ form {
     font-size: 18px;
     font-weight: bold;
     line-height: 0.67;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
 }
@@ -148,7 +139,6 @@ form {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: center;
     color: #0066f5;
 }
@@ -166,7 +156,6 @@ form {
     font-family: Montserrat;
     font-size: 18px;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: left;
     color: #fcf8f8;
 }
@@ -186,9 +175,7 @@ form {
 .newsletter ::placeholder {
     font-family: Montserrat;
     font-size: 16px;
-    font-weight: normal;
     line-height: 1.19;
-    letter-spacing: normal;
     color: #0066f5;
     padding-left: 5px;
 }
@@ -196,9 +183,7 @@ form {
 .newsletter h4 {
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: normal;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: left;
     color: #fcf8f8;
 }
@@ -206,9 +191,7 @@ form {
 .connect p {
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: normal;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: left;
     color: #fcf8f8;
     padding-left: 50px;
