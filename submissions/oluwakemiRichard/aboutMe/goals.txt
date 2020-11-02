@@ -1,4 +1,0 @@
-My name is Oluwakemi Richard and I am an aspiring Sofware Engineer.
-At the end of this program, I hope to have been equipped with necessary skills to launch a career in sofware development. 
-I hope to be able to write and underastand Javascript codes and be able to use React framework and JQuery effectively and also to be able to fully develop the frontend of a web application.
-At the end of this program, I should be a Front end Developer that is confident in getting the job done.
