@@ -47,32 +47,6 @@ CREATE TABLE `products` (
 
 -- --------------------------------------------------------
 --
--- Table structure for table `contact_details`
---
-CREATE TABLE `contact_details` (
-  `contact_details_id` int(11) NOT NULL AUTO_INCREMENT,
-  `street_address` varchar(255) NOT NULL,
-  `city` varchar(100) NOT NULL,
-  `state` varchar(100) NOT NULL,
-  `zip_code` varchar(100) DEFAULT NULL,
-  `country` varchar(100) NOT NULL,
-  `phone_number` varchar(100) NOT NULL,
-  PRIMARY KEY (`contact_details_id`)
-);
-
--- --------------------------------------------------------
---
--- Table structure for table `orders`
---
-CREATE TABLE `orders` (
-  `order_id` int(11) NOT NULL AUTO_INCREMENT,
-  `order_amount` decimal(10,2) NOT NULL,
-  `order_date` date NOT NULL,
-  PRIMARY KEY (`order_id`)
-);
-
--- --------------------------------------------------------
---
 -- Table structure for table `customers`
 --
 CREATE TABLE `customers` (
@@ -84,8 +58,34 @@ CREATE TABLE `customers` (
   `customer_contact_address_id` int(11) NOT NULL,
   `customer_order_id` int(11) NOT NULL,
   PRIMARY KEY (`customer_id`),
-  FOREIGN KEY (`customer_contact_address_id`) REFERENCES `contact_details` (`contact_details_id`),
   FOREIGN KEY (`customer_order_id`) REFERENCES `orders` (`order_id`)
+);
+
+-- --------------------------------------------------------
+--
+-- Table structure for table `contact_details`
+--
+CREATE TABLE `contact_details` (
+  `contact_details_id` int(11) NOT NULL AUTO_INCREMENT,
+  `street_address` varchar(255) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `state` varchar(100) NOT NULL,
+  `zip_code` varchar(100) DEFAULT NULL,
+  `country` varchar(100) NOT NULL,
+  `phone_number` varchar(100) NOT NULL,
+  PRIMARY KEY (`contact_details_id`)
+  FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`)
+);
+
+-- --------------------------------------------------------
+--
+-- Table structure for table `orders`
+--
+CREATE TABLE `orders` (
+  `order_id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_amount` decimal(10,2) NOT NULL,
+  `order_date` date NOT NULL,
+  PRIMARY KEY (`order_id`)
 );
 
 -- --------------------------------------------------------
