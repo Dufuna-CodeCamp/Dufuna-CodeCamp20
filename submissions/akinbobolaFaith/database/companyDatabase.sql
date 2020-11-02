@@ -45,15 +45,8 @@ VALUES (5, 1, 'BC18529', 1000000.00, 1, 0, 'D250', 'Nigeria'),
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
 	passengers_id INT NOT NULL,
-	alive VARCHAR(20) NOT NULL,
-	dead VARCHAR(20) NOT NULL,
+	passenger_status VARCHAR(20) NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (passengers_id) REFERENCES passengers(id)
 );
 
-INSERT INTO accidents (passengers_id, alive, dead)
-VALUES (4, 'No', 'Dead'),
-(1, 'Alive',' No'),
-(3, 'No', 'Dead'),
-(2, 'Alive', 'No'),
-(5, 'Alive', 'No');
