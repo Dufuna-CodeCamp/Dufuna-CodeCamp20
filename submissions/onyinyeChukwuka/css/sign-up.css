@@ -145,6 +145,23 @@ form {
     color: #fcf8f8;
 }
 
+.facebook{
+    width: 45px;
+    height: 41px;
+}
+.twitter{
+    width: 48px;
+    height: 43px;
+}
+.gmail{
+    width: 63px;
+    height: 41px;
+}
+.youtube{
+    width: 69px;
+    height: 43px;
+}
+
 
 .about {
     font-size: 18px;
@@ -200,7 +217,7 @@ form {
         height: 70px;
     }
 
-    #firstname, #lastname, #othernames, #phonenumber, #email, #password, #cpassword {
+    .texts {
         width: 521px;
     }
     nav {
