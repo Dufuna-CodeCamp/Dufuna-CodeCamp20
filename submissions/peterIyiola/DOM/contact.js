@@ -4,7 +4,7 @@ let submitForm = document.getElementById('validateForm'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message');
 
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+    const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,10})+$/;
     const nameRegex = /^[a-zA-Z]/;
     
     function validation (field , event, result , errors , regex)  {
