@@ -10,13 +10,6 @@ CREATE TABLE passengers (
 	PRIMARY KEY(id)
 );
 
-INSERT INTO passengers (fullname, sex, age)
-VALUES ('Joy Chukwuwere', 'Female', 30),
-('Peter Iyiola', 'Male', 45),
-('Adam Cole', 'Male', 33),
-('Anna Badmus', 'Female', 30),
-('Nicholas Cage', 'Male', 20);
-
 
 /*********************TRAVEL_DETAILS TABLE*************************/
 CREATE TABLE travel_details (
@@ -33,19 +26,12 @@ CREATE TABLE travel_details (
 	FOREIGN KEY (passengers_id) REFERENCES passengers (id)
 );
 
-INSERT INTO travel_details (passengers_id, passenger_class, ticket_number, trip_fare, parents_or_children_abroad, siblings_or_spouse_abroad, cabin_class, embarkation_point)
-VALUES (5, 1, 'BC18529', 1000000.00, 1, 0, 'D250', 'Nigeria'),
-(3, 3, 'AR17459', 175000.00, 1, 0, 'C530', 'Nigeria'),
-(1, 2, 'SC18365', 500000.00, 0, 1, 'A430', 'Nigeria'),
-(2, 1, 'ER19367', 1000000.00, 1, 0, 'B007', 'Nigeria'),
-(4, 2, 'BC19149', 500000.00, 1, 0, 'D320', 'Nigeria');
-
 
 /*********************ACCIDENTS TABLE*************************/
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
 	passengers_id INT NOT NULL,
-	passenger_status VARCHAR(20) NOT NULL,
+	passenger_status BOOLEAN NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (passengers_id) REFERENCES passengers(id)
 );
