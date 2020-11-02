@@ -22,13 +22,13 @@ main {
 
 .box {
     border: 2px solid var(--box-color, rgba(105, 105, 105, 0.8));
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
     font-size: 0.8em;
     border-radius: 5px;
     width: 100px;
-    height: 50px; 
+    height: 50px;
     text-align: center;
-    margin: 0px 16px 8px 16px;
+    margin: 0 16px 8px;
 }
 
 .box:hover {
