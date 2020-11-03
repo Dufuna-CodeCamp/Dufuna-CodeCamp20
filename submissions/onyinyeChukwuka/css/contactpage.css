@@ -1,0 +1,431 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+/* for the header */
+
+.header {
+    justify-content: space-between;
+    padding: 2px;
+    background-color: #0066f5;
+}
+
+nav {
+    padding: 20px;
+}
+
+.left-side {
+    display: flex;
+}
+
+nav>.right-side>div {
+    margin-right: 100px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.tab {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.link-wrapper {
+    height: 22px;
+}
+
+.link-wrapper a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.presentation {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+/* for the left div  */
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.call {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.better {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.address h3 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.address p {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.number h4 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.number p {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.connect h4 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.connect p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcf8f8;
+}
+
+/* for the form */
+
+form {
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5f5f5f;
+    margin-top: 10px;
+    border: solid 1px #707070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+label {
+    visibility: hidden;
+}
+
+.draft {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+}
+
+#fullname, #email, #subject {
+    width: 80%;
+    border: none;
+    outline: inherit;
+    border-bottom: 1px solid#707070;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #5f5f5f;
+    margin: 0 auto;
+}
+
+#message {
+    height: 300px;
+    width: 100%;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+#sendbutton {
+    width: 133px;
+    height: 45px;
+    border: solid 1px #707070;
+    border-radius: 4px;
+    background-color: #0066f5;
+    padding: 2px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.text-area>label {
+    visibility: visible;
+}
+
+/* for the footer */
+
+.footer {
+    background-color: #0066f5;
+    padding: 20px;
+    color: #fcf8f8;
+}
+
+.footer>p {
+    text-align: center;
+}
+.facebook{
+    width: 45px;
+    height: 41px;
+}
+.twitter{
+    width: 48px;
+    height: 43px;
+}
+.gmail{
+    width: 63px;
+    height: 41px;
+}
+.youtube{
+    width: 69px;
+    height: 43px;
+}
+
+.about {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcf8f8;
+}
+
+#newslettter {
+    width: 253px;
+    height: 44px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+}
+
+#submitbutton {
+    width: 108px;
+    height: 44px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0066f5;
+}
+
+.newsletter ::placeholder {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    color: #0066f5;
+    padding-left: 5px;
+}
+
+.newsletter h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcf8f8;
+}
+.newsletter label {
+    visibility: visible;
+}
+.newsletter-input {
+    display: flex;
+}
+
+.text-area {
+    width: 80%;
+}
+
+.button-wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    .images {
+        width: 350px;
+        margin: auto;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* for the header */
+    .right-side {
+        display: flex;
+    }
+    .footer {
+        height: 203px;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        height: 70px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* for the header */
+    .right-side {
+        display: flex;
+    }
+    .left-side {
+        display: flex;
+    }
+    .presentation {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* for the form */
+    form {
+        width: 607px;
+        height: 620px;
+    }
+    #fullname, #email, #subject {
+        width: 494px;
+    }
+    #message {
+        width: 494px;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sendbutton {
+        margin-left: 390px;
+    }
+    /* for the left div  */
+    .images {
+        justify-content: space-around;
+        /* margin-left: 150px; */
+    }
+    /* form {
+        height: auto;
+    } */
+    .footer {
+        height: 203px;
+    }
+    .socials{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
