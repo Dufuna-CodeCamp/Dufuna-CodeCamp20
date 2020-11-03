@@ -1,7 +1,7 @@
 -- Total number of passengers who suvrvived
 SELECT COUNT(survived) FROM accidents WHERE survived = 1;
 
--- Total number of passengers who didi not survive
+-- Total number of passengers who didn not survive
 SELECT COUNT(survived) FROM accidents WHERE survived = 0;
 
 
