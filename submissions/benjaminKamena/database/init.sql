@@ -39,7 +39,6 @@ CREATE TABLE `products` (
   `category_id` int(11) NOT NULL,
   `total_quantity` int(11) NOT NULL,
   `status` varchar(100) NOT NULL,
-  `stock_id` int(11) NOT NULL,
   PRIMARY KEY (`product_id`),
   FOREIGN KEY (`category_id`) REFERENCES `categories` (`category_id`),
   FOREIGN KEY (`admin_id`) REFERENCES `user_admins` (`admin_id`)
@@ -55,10 +54,8 @@ CREATE TABLE `customers` (
   `customer_last_name` varchar(100) NOT NULL,
   `customer_email_address` varchar(100) NOT NULL,
   `customer_password` varchar(100) NOT NULL,
-  `customer_contact_address_id` int(11) NOT NULL,
-  `customer_order_id` int(11) NOT NULL,
   PRIMARY KEY (`customer_id`),
-  FOREIGN KEY (`customer_order_id`) REFERENCES `orders` (`order_id`)
+  FOREIGN KEY (`contact_details_id`) REFERENCES `contact_details` (`contact_details_id`)
 );
 
 -- --------------------------------------------------------
@@ -74,7 +71,6 @@ CREATE TABLE `contact_details` (
   `country` varchar(100) NOT NULL,
   `phone_number` varchar(100) NOT NULL,
   PRIMARY KEY (`contact_details_id`)
-  FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`)
 );
 
 -- --------------------------------------------------------
