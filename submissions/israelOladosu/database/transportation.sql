@@ -20,6 +20,7 @@ CREATE TABLE passengers (
 
 -- trips table
 CREATE TABLE trips (
+    id INT NOT NULL AUTO INCREMENT,
     passenger_id INT NOT NULL,
     passenger_class INT NOT NULL,
     passenger_ticket VARCHAR(20) NOT NULL,
@@ -28,7 +29,7 @@ CREATE TABLE trips (
     number_of_siblings_spouse INT NOT NULL DEFAULT 0,
     cabin VARCHAR(20),
     embarkation VARCHAR(255) NOT NULL,
-    PRIMARY KEY(passenger_id),
+    PRIMARY KEY(id),
     FOREIGN KEY(passenger_class) REFERENCES classes(id) ON DELETE CASCADE,
     FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
 );
@@ -36,9 +37,10 @@ CREATE TABLE trips (
 
 -- accident table
 CREATE TABLE accidents (
+    id INT NOT NULL AUTO INCREMENT,
     passenger_id INT NOT NULL,
     survived BOOLEAN NOT NULL,
-    PRIMARY KEY(passenger_id),
+    PRIMARY KEY(id),
     FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
 );
 
@@ -63,5 +65,5 @@ VALUES(1, 1, 'PC174599', 500000, 4, 0, 'Abuja', 'C103'),
 
 --insert into accidents
 INSERT INTO accidents ( passenger_id, survived)
-VALUES(1, 1,),
-      (2, 1,);
+VALUES(1, 1),
+      (2, 1);
