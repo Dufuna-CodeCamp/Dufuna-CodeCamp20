@@ -96,7 +96,8 @@ form {
     height: 50px;
     border-radius: 10px;
     border: solid 2px #5f5f5f;
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 36px;
 }
 
 #terms {
@@ -246,6 +247,10 @@ form {
 @media screen and (min-width: 1280px) {
     .presentation {
         display: flex;
+    }
+    .socials{
+        flex-direction: row;
+        justify-content: space-around;
     }
     .connect p {
         padding-left: 50px;
