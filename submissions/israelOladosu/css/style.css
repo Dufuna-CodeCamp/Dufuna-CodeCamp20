@@ -14,6 +14,9 @@ img {
   width: 100%;
   height: auto;
  }
+ button{
+  cursor: pointer;
+}
 /* header */
 header {
  background: #004b18;
@@ -85,6 +88,11 @@ main form .agree{
 main form label{
  display: block;
  margin-bottom: 0.5em;
+}
+main form .error-block{
+  font-size: 0.8em;
+  color: red;
+  display: block;
 }
 main form button{
  display: block;

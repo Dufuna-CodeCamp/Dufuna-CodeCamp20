@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
+    
   <header>
     <div class="nav-bar">
       <div id="nav-brand">
@@ -42,44 +43,43 @@
         </p>
     </main>
     <aside >
-        <form action="#">
-            <div class="form-page">
+        <form action="#"   id="signup_form"  class="form-page" >
+         
                 <label for="first_name">First Name</label>
                 <br>
-                <input type="text" name="first_name" id="first_name" maxlength="30">
-                <br>
-                <label for="last_name">Last Name</label>
-                <br>
-                <input type="text" name="last_name" id="last_name" maxlength="50">
-                <br>
+               <input type="text" name="first_name" id="firstName" maxlength="50">
+               <p class="error-block"></p><br>
+                 <label for="last_name">Last Name</label>
+                 <br>
+                <input type="text" name="last_name" id="lastName" maxlength="50">
+                <p class="error-block"></p><br>
                 <label for="other_name">Other Names</label>
                 <br>
-                <input type="text" name="ther_name" id="ther_name" maxlength="50">
-                <br>
+                <input type="text" name="ther_name" id="otherName" maxlength="50">
+                <p class="error-block"></p><br>
                 <label for="phone_number">Phone Number</label>
                 <br>
-                <input type="tel" name="phone_number" id="phone_number" >
-                <br>
+                <input type="text" name="phone_number" id="phoneNumber" >
+                <p class="error-block"></p><br>
                 <label for="email">Email Address</label>
                 <br>
-                <input type="email" name="email" id="email"  maxlength="50">
-                <br>
-                <label for="password">Password</label>
-                <br>
+                 <input type="email" name="email" id="formEmail"  maxlength="50">
+                <p class="error-block"></p><br>
+             <label for="password">Password</label>
+             <br>
                 <input type="password" name="password" id="password" >
-                <br>
+                <p class="error-block"></p><br>
                 <label for="confirm_password">Confirm Password</label>
                 <br>
-                <input type="password" name="confirm_password" id="confirm_password" >
-                <br>
-                <input type="checkbox" name="terms-conditions" id="terms-conditions">
+                 <input type="password" name="confirm_password" id="confirmPassword" >
+                <p class="error-block"></p><br>
+                
+                  <input type="checkbox" name="terms-conditions" id="terms-conditions">
                 <label for="terms-conditions">I agree to the Terms and conditions</label>
-                <br>
+                
                 <button type="submit" name="submit_form" class="btn" id="submit_form">SIGN UP</button>
-            </div>
             </form> 
-        
-    </aside> 
+         </aside> 
 </section>
 
 <footer>
@@ -90,12 +90,13 @@
         <li> <a href="#"> About Us </a></li>
         <li> <a href="#"> Terms and Conditions </a></li>
       </ul>
-  </div>
-  <div>
+    </div>
+  <form id="newsletter">
       <h3>Sign up for the Newsletter</h3>
-      <input type="text" placeholder=" Enter your mail address">
-      <button type="submit"> SUBMIT</button>
-  </div>
+      <input type="text" placeholder=" Enter your mail address" id="email" >
+      <button type="submit"> SUBMIT</button><br><br>
+      <span class="error"></span>
+  </form>
   <div class="social">
       <h3>CONNECT WITH US</h3>
       <ul class="social-link">
@@ -106,8 +107,10 @@
        </ul>
   </div>
   </div>
-  
+  <br><br>
 <p>Copyright &copy; 2020, The Berry Ice-Cream.</p>
 </footer>
+<script src="../DOM/newletter.js"></script>
+<script src="../DOM/signup.js"></script>
 </body>
 </html>

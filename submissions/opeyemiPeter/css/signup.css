@@ -139,8 +139,13 @@ aside .form-group {
   border: none;
   font-size: 18px;
 }
+.error{
+  color:red ;
+  font-size: 16px;
+}
+
 footer {
-  background-color: #1b1a1b;
+  background-color:#1b1a1b;
   height: 100%;
 }
 .footer-part {

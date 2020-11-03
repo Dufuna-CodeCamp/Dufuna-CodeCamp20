@@ -91,7 +91,11 @@ aside{
   margin-left: 20px;
 }
 
-.details{
+.error{
+  color:red;
+}
+
+#details{
   overflow: hidden;
   padding: 20px;
   width: 90%;
@@ -100,16 +104,16 @@ aside{
   margin-bottom: 10px;
 }
 
-.details img{
+#details img{
   padding: 0px 0px 0px 200px;
 }
-.details h3{
+#details h3{
   text-align: center;
   width: 100%; 
   font-weight: bold;
 }
 
-.details input{
+#details input{
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -118,22 +122,24 @@ aside{
   padding-top: 20px;
 }
 
-.details input:focus{
+#details input:focus{
   outline: none;
 
 }
-.details input::placeholder{
+#details input::placeholder{
   font-size: 20px;
 }
 
-.details label{
+#details label{
   padding-top: 30px;
 }
-.details textarea{
+#details textarea{
   resize: none;
   width: 95%; 
 }
-.details button{
+
+
+#details button{
   float: right;
   width: 30%;
   height: 40px;
@@ -151,6 +157,10 @@ button:hover{
 }
 
 
+span{
+  color:white;
+  font-weight: bold;
+}
 footer{
   background-color:#00d1cf;
   margin-top:50px;

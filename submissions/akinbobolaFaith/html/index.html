@@ -10,7 +10,7 @@
     <body>
         <nav>
             <ul>
-                <a href="*">Zeezy Stores</a>
+                <a class="head" href="#">Zeezy Stores</a>
                 <li><a href="../htmlForms/signUp.html">Sign Up</a></li>
                 <li><a href="../htmlForms/contactForm.html">Contact Us</a></li>
                 <li><a href="index.html">Product Page</a></li>
@@ -22,9 +22,12 @@
                 <h3>R L Fit Oxford Button-Down Pony Logo Shirt-Skyblue</h3>
                 <p>Brand: Plain</p>
                 <label for="quantity">Quantity:</label>
-                <input type="number" name="quantity" id="quantity" value="2" disabled>
-                <p>Price: &#8358;14,999</p>
-                <button>BUY NOW</button>
+                <input type="number" name="quantity" id="quantity" value="1">
+                <div class="error-block" id="error"></div>
+                <p >Price: &#8358;<span id="price">14000</span></p>
+                <p>Shipping cost: &#8358;<span id="shippingCost">2100</span></p>
+                <p>Total cost: &#8358;<span id="cost">16100</span></p>
+                <button type="button" id="myBtn">BUY NOW</button>
             </div>    
         </section>        
                 
@@ -83,5 +86,6 @@
             <p> Copyright &copy; 2020 zeezystores.com. All rights reserved.</p>
         </footer>
         <script src="../dom/newsletter.js"></script>
+        <script src="../dom/index.js"></script>
     </body>
 </html>

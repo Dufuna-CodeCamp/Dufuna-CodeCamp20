@@ -17,9 +17,9 @@
 			<h1 class="logo-text">KWATHU</h1>
 		</div>
 		<ul class="nav">
-			<li><a href="#">Product Page</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="signup.html">Sign-up</a></li>
+			<li><a href="product.html">Product Page</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="signup.html">Sign-up</a></li>
 		</ul>
 	</header>
 	<!--page Wrapper-->
@@ -47,23 +47,30 @@
       		    </div>
 			</div>
 			 <div class="contact-form">
-  	              <a href="https://www.facebook.com"><input type="image"class="social" src="../html/images/closed-envelope.svg"></a>
-	                   <p class="text">Or better still send us a message</p>
-	                   <div class="txtb">
-		                   <input type="text" name="" value="" placeholder="Full Name">
-	                   </div>
-	                   <div class="txtb">
-		                    <input type="email" name="" value="" placeholder="Email">
-	                   </div>
-	                   <div class="txtb">
-		                    <input type="text" name="" value="" placeholder="Subject">
-	                   </div>
-	                   <div id="txtb-title">
-		                  <label>Message</label>
-	                   </div>
-	                   <div id="textarea">
-	                   </div>
-                      <a class="btn">Send</a>
+				 <form id="contactForm" >
+					<a href="https://www.facebook.com"><input type="image"class="social" src="../html/images/closed-envelope.svg"></a>
+					<p class="text">Or better still send us a message</p>
+					<div class="txtb">
+						<input type="text" name="" value="" id="fullName" placeholder="Full Name">
+						<span class="error-block"></span>
+					</div>
+					<div class="txtb">
+						 <input type="text" name="" value="" id="emailaddress" placeholder="Email">
+						 <span class="error-block"></span>
+					</div>
+					<div class="txtb">
+						 <input type="text" name="" value="" id="subject" placeholder="Subject">
+						 <span class="error-block"></span>
+					</div>
+					<div id="txtb-title">
+					   <label>Message</label>
+					</div>
+					<div >
+						<textarea id="textarea"></textarea>
+						<span class="error-block"></span>
+					</div>
+				   <button type="submit" class="btn">Send</button>
+				 </form>
              </div>
 		</div>
 	</div>
@@ -77,10 +84,13 @@
                     <li><a href="#">Terms and Conditions</a></li>
       			</ul>
       	   </div>
-      	   <div class="footer-section links">
-      			<p>Sign up for our Newsletter</p>
-                <input type="emailaddress" name="emailaddress" placeholder="Enter your email address" >
-                <input type="button" name="Submit" value="SUBMIT">
+      	   <div class="footer-section">
+				 <form id="validateNewsletter">
+					<p>Sign up for our Newsletter</p>
+					<input class="footer-email" id="newsletter" placeholder="Enter your email address">
+					<button type="submit" class="footer-button">SUBMIT</button><br>
+                    <span class="footer-error-block"></span>
+				 </form>
       	   </div>
       	   <div class="footer-section newslatter">
                 <p>CONNECT WITH US</p>
@@ -95,5 +105,7 @@
 		&copy; Copyright 2020 Kwathu All rights reserved
 	</div>
 	<!--footer-->
+	<script src="../javaScript/contactForm.js"></script>
+	<script src="../javaScript/newsletter.js"></script>
 </body>
 </html>

@@ -147,7 +147,14 @@ footer{
 }
 .error{
     color: rgb(209, 21, 21);
+        display: block;
+        margin-left: 41px;
 }
+.error-newsletter{
+    color: rgb(209, 21, 21);
+    font-size:16px;
+}
+
 footer p{
 text-align: center;
 color: #fff;

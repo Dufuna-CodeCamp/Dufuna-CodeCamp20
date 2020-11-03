@@ -32,9 +32,11 @@
             <div class="product-details">
                 <h3>COVID-19 VACCINE</h3>
                 <h4>Brand: Trade Kings Product</h4>
-                <h4>Quantity: <input type="number" value="1" name="quantity" id="quantity"></h4>
-                <h4>Price : K4597</h4>
-                <button>Buy Now</button>
+                <h4>Quantity: <input type="number" value="1" name="quantity" id="quantity"></span><span class="error-block"></span></h4>
+                <h4>Price : K <span id="price">1000</span></h4>
+                <h4>Shipping Cost: K <span id="shippingCost"></span></h4>
+                <h4>Total Cost: K <span id="totalCost"></span></h4>
+                <button type="submit" id="btn">Buy Now</button>
             </div>
         </div>
         <div class="description">
@@ -81,11 +83,14 @@
             <li>Terms Conditions</li>
           </ul>
         </div>
+        <form id="newsletterSignUp">
         <div>
            <label for="news-letter">Sign up for our Newsletter</label>
            <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter your email address">
+           <span class="error-block"></span>
            <button type="submit">Submit</button>
         </div>
+       </form>
         <div class="social">
         <h5>CONNECT WITH US</h5>
          <ul class="social-links">
@@ -99,5 +104,7 @@
         <p>Copyright &copy, 2020 unthu.com All rights reserved.</p>
 </footer>
 </section>
+<script src="../Dom/newsletter.js"></script>
+<script src="../Dom/product.js"></script>
 </body>
 </html>
