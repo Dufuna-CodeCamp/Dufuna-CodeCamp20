@@ -11,9 +11,9 @@
         <h1 class="tm-class"> AMPLE TOGS</h1>
         <nav>
             <ul class="navbar-link">
-                <li><a href="/Html/index.html">Product Page</a></li>
-                <li><a href="/htmlForms/signup.html">Sign Up</a></li>
-                <li><a href="/htmlForms/contact.html">Contact Us</a></li>
+                <li><a href="../Html/index.html">Product Page</a></li>
+                <li><a href="../htmlForms/signup.html">Sign Up</a></li>
+                <li><a href="../htmlForms/contact.html">Contact Us</a></li>
             </ul>
           </nav> 
     </header>
@@ -33,28 +33,29 @@
             <div >
                 <h3>CONNECT WITH US</h3>
                 <ul >
-                    <li><a href="#"><img src="../Html/images/facebook logo.png " alt=""></i></a></li>
-                    <li><a href="#"><img src="../Html/images/twiiter logo.png " alt=""></a></li>
-                    <li><a href=""></a><img src="../Html/images/gmail logo.png " alt=""></a></li>
-                    <li><a href="#"><img src="../Html/images/youtube logo.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../Html/images/facebooklogo.png " alt=""></i></a></li>
+                    <li><a href="#"><img src="../Html/images/twiiterlogo.png " alt=""></a></li>
+                    <li><a href=""></a><img src="../Html/images/gmaillogo.png " alt=""></a></li>
+                    <li><a href="#"><img src="../Html/images/youtubelogo.jpg" alt=""></a></li>
                 </ul>
             </div>
         </main>
         <aside>
+           <form action="#" id="contact_form">
             <div class="contact-us">
                 <img src="../Html/images/ic_email_24px.png" alt="Email Us">
                 <h4>You can also send us a message</h4>
-                <input type="text" name="full_name" id="full_name" placeholder="Full Name">
+                <input type="text" name="full_name" id="full_name" placeholder="Full Name"><span class="error"></span>
                 <br>
-                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="text" name="email" class="email" id="form_email" placeholder="Email Address"><span class="error"></span>
                 <br>
-                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <input type="text" name="subject" id="subject" placeholder="Subject"><span class="error"></span>
                 <br><br>
                 <label for="description">Message</label>
-                <br>
-                <textarea name="description" id="description" cols="50" rows="15"></textarea>
+                <textarea name="description" id="description" cols="50" rows="15"></textarea><span class="error"></span><br>
                 <button type="submit"> SEND</button>
             </div>
+        </form>
         </aside>    
     </section>    
     <footer>
@@ -67,9 +68,12 @@
             </ul>
         </div>
         <div>
-            <h3>Sign up for the Newsletter</h3>
-            <input type="text" placeholder=" Enter your mail address">
-            <button type="submit"> SUBMIT</button>
+            <form id="newsletter">
+                <h3>Sign up for the Newsletter</h3>
+                <input type="text" placeholder=" Enter your email address" id="email">
+                <button type="submit"> SUBMIT</button><br><br>
+                <span class="errorBlock"></span>
+            </form>
         </div>
         <div class="social">
             <h4>CONNECT WITH US</h4>
@@ -83,5 +87,7 @@
         </div>
         <p class="text-p">Copyright &copy; 2020, Ample Togs.</p>
     </footer> 
+    <script src="../DOM/newsletter.js"></script>
+    <script src="../DOM/contact.js"></script>
 </body>
 </html>

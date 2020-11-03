@@ -100,6 +100,14 @@ aside .form-page{
   margin-bottom: 20px;     
 }
 
+.error-block{
+  color: red;
+}
+
+.error{
+  color:red;
+}
+
 
 .form-page input[type="text"],
 .form-page input[type="tel"],
@@ -133,7 +141,10 @@ aside .form-page{
   border: none;
   font-size: 18px;
 }
-
+span{
+  color:white;
+  font-weight: bold;
+}
 
 footer{
   background-color:#00d1cf;

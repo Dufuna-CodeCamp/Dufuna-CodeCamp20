@@ -141,6 +141,17 @@ aside{
     font-size: 18px;
 }
 
+.error{
+    color: red;
+    font-size: 15px;
+}
+
+.errorBlock{
+    color: red;
+    font-size: 17px;
+}
+
+
 /* THE FOOTER */
 footer{
     padding: 50px;

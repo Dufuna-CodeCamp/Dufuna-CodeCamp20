@@ -44,20 +44,24 @@
         </div>
         <div class="fill-form">
         
-            <form action="#" method="post">
+            <form action="#" id="validateForm" method="post">
                 
                 <div class="inputs">
                     <img src="./logos/message.png">
                     <p>Or better still send us a message</p>
                     <label for="fullName"> Full Name</label><br>
                     <input type="text" name="fullName" id="fullName"><br>
+                     <span class="error-block"></span><br>
                     <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email"><br>
+                    <input type="text" name="email" id="email"><br>
+                     <span class="error-block"></span><br>
                     <label for="subject">Subject</label><br>
                     <input type="text" name="subject" id="subject"><br>
+                    <span class="error-block"></span><br>
                     <label for="messageInput">Message</label><br>
                     <textarea name="messageInput" id="messageInput" cols="0" rows="8"></textarea><br>
-                <input type="submit" value="SEND">
+                    <span class="error-block"></span><br>
+                    <button type="submit">SEND</button>
                 </div>
             </form>
         </div>
@@ -92,5 +96,6 @@
         <p class="last">&copy; Copyright2020 pearlsfabrics.com All rights reserved </p>
 
     </footer>
+    <script src="../dom/contact.js"></script>
 </body>
 </html>
