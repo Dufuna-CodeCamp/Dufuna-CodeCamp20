@@ -20,7 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `passengers`;
-
 CREATE TABLE `passengers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Full_name` varchar(150) NOT NULL,
@@ -28,13 +27,10 @@ CREATE TABLE `passengers` (
   `age` int(10)  NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `passengers`
 --
-
-
 INSERT INTO `passengers` VALUES 
 (1,'juwon adeyemi','male',29),
 (2,'samuel owoso','male'),
@@ -44,15 +40,11 @@ INSERT INTO `passengers` VALUES
 (6,'temidayo alara','male',30),
 (7,'seye omodiji','female',25);
 
-
-
-
 --
 -- Table structure for table `trips`
 --
 
 DROP TABLE IF EXISTS `trips`;
-
 CREATE TABLE `trips` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `passenger_class` int(3) NOT NULL,
@@ -67,20 +59,16 @@ CREATE TABLE `trips` (
   KEY `fk_trips_passengers_idx` (`passenger_id`),
   CONSTRAINT `fk_trips_passengers_idx` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `trips`
 --
-
 
 INSERT INTO `trips` VALUES
  (1,1,'112301',300000.0000,'A102', 4, 1,'Lagos',1),
  (2,2,'112302',400000.0000, 'B104', 4, 2,'Lagos',2),
  (3,3,'112303',500000.0000, 'A104', 4, 0,'lagos',3),
  (4,1,'112304',300000.0000, 'B104', 4,1,'Lagos',4);
-
-
 
 --
 -- Table structure for table `accidents`
@@ -95,31 +83,15 @@ CREATE TABLE `accidents` (
   KEY `fk_accidents_passengers_idx` (`passenger_id`),
   CONSTRAINT `fk_accidents_passengers` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `accidents`
 --
 
-
-
 INSERT INTO `accidents` VALUES 
 (1,'yes',1),
 (2,'yes',2),
 (3,'no',4);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
