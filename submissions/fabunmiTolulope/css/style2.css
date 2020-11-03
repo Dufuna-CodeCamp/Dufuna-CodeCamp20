@@ -9,8 +9,7 @@ body{
 header{  
 	flex: 1 100%;
 	background-color: #B7EEB7;
-	height: 70px;
-}
+	height: 70px}
 header *{
 	color: #FF530E;
 }
@@ -37,73 +36,88 @@ a:hover{
 }
 .media{
 	display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  padding: 20px;
+  	margin: 20px;
+  	padding: 20px;
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
 }
-.register{
+section{
 	display: block;
 	text-align: center;
 	font-size: 150%;
 }
-.reg{
-	padding-top: 100px;
+.contact,
+.envelope,
+.connect {
+	padding-top: 30px;
 	margin: 10px 5px;
 	color: #FF530E;
 }
+img{
+	height: 40px;
+	width: 40px;
+	border-radius: 15px;
+	}
 form{
     display: flex;
     flex: 1;
     justify-content: center;
 }
-.info{
-	width: 50%
-    border: solid 3px;
-    border-radius: 20px;
-    padding: 25px 35px;
-    height: 600px
+form img{
+	height: 50px;
+	width: 50px;
+	margin-left: 200px;
 }
-#fieldlist{
+.info{
+	width: 60%;
+    border: solid 1px;
+    padding: 25px 35px;
+    height: 550px;
+}
+.info h3{
+	padding: 10px;
+}
+#full-name, #email, #subject{
+	border-style: hidden hidden solid hidden;
+    height: 25px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+	}
+#message{
 	width: 100%;
     display: flex;
-    padding: 5px
+    padding: 5px;
 }
-.name{
-	border: solid 1px;
-    border-radius: 10px;
-    width: 100%;
-    height: 35px;
-    padding-bottom: 5px;
+#textarea{
+	width: 100%;
+	height: 30%;
 }
-#phone-number, #email, #password{
-	border: solid 1px;
-    border-radius: 10px;
-    width: 100%;
-    height: 35px;
-    padding-bottom: 5px;
-}
-div.conditions{
-	color: #FF530E;
-}
-.btn{
+#btn{
 	font-weight: bold;
-	margin: 30px 140px;
+	margin: 10px 10px 10px 300px;
     padding: 10px 30px;
     background-color: #B7EEB7;
     color: #FF530E;
     font-size: 15px;
     border-radius: 5px;
-	}	
+}
 footer{
 	background-color: #B7EEB7;
 	color: #FF530E;
 	display: flex;
+	flex: 1 100%;
+	width: 100%;
 	align-content: center;
 }
 footer ul li{
 	text-align: left;
 	padding: 5px;
 	list-style: none;
+}
+.footerlist{
+	margin-right: 250px;
 }
 .footer-signup{
 		margin: auto;
@@ -123,29 +137,34 @@ footer ul li{
 }
 .footer-connect{
 	padding: 10px;
+	margin-left: 250px;
 }
+.connect .img,
 .footer-connect .img{
 	height: 40px;
 	width: 40px;
 	padding: 7px;
 	border-radius: 15px;
-}
+	}
 .footer1 p{
 	cursor: pointer;
 	text-align: center;
     padding: 10px;
 }
-
+.footer2{
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: 1;
+	}
 /**Media queries for mobile**/
 
 @media screen and (max-width: 450px) {
-	*{
-		width: 100%;
-	}
 	header{
 		text-align: left;
 		display: block;
-		height: 18vh;
+		height: 14vh;
 	}
 	header .title{
 		clear: both;
@@ -158,9 +177,6 @@ footer ul li{
 		padding: 5px;
 		float: left;
 	}
-	footer, header{
-		justify-content: space-around;
-	}
 	.nav{
 		background-color: #B7EEB7;
     	color: #FF530E;
@@ -169,60 +185,76 @@ footer ul li{
     	padding: 0;
 	}
 	.media{
+	margin: 0;
+	padding: 0;
 	display: flex;
-  	flex-direction: column;
   	justify-content: space-between;
-	}
-	.register{
+  	}
+	section{
 	display: block;
 	text-align: center;
-	font-size: 120%;
+	font-size: 80%;
 	}
-	.reg{
-	padding-top: 0;
-	margin: 0 5px;
+	.contact,
+	.envelope,
+	.connect {
+	padding-top: 15px;
+	margin: 5px;
 	color: #FF530E;
 	}
-	.info{
-	left: 60%;
-	width: 300px;
-	height: fit-content;
-	border: solid 3px;
-	border-radius: 20px;
-	padding: 0;
+	.contact img
+	.envelope img{
+	height: 40px;
+	width: 40px;
+	border-radius: 15px;
+	}
+	.connect .img,
+	.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
 	}
 	form{
-	line-height: 60%;
     display: flex;
     flex: 1;
+    justify-content: left;
 	}
-	#fieldlist{
+	form img{
+	height: 40px;
+	width: 40px;
+	border-radius: 10px;
+	margin-left: 100px;
+	}
+	.info{
+	width: 280px;
+    border: solid 1px;
+    padding: 25px 5px;
+    height: fit-content;
+	}
+	.info h3{
+	padding: 5px 0;
+	font-size: 14px;
+	}
+	#full-name, #email, #subject{
+	border-style: hidden hidden solid hidden;
+    height: 20px;
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
+	}
+	#message{
     display: flex;
-    padding: 5px;
-    margin: 0;
+    padding: 0;
 	}
-	.name{
-	border: solid 1px;
-	text-align: left;
-    border-radius: 10px;
-    height: 25px;
-    padding-bottom: 5px;
+	#textarea{
+	width: 250px;
+	height: 100px;
 	}
-	#phone-number, #email, #password{
-	border: solid 1px;
-    border-radius: 10px;
-    text-align: left;
-    height: 25px;
-    padding-bottom: 5px;
-	}
-	.conditions{
-		font-size: 14px;
-		text-align: -webkit-center;
-	}
-	.btn{
+	#btn{
 	font-weight: bold;
-	margin: 10px 20px;
-    padding: 10px 30px;
+	margin: 5px 5px 5px 200px;
+    padding: 5px;
     background-color: #B7EEB7;
     color: #FF530E;
     font-size: 15px;
@@ -239,11 +271,9 @@ footer ul li{
 	padding: 5px;
 	list-style: none;
 	display: block;
-	padding-inline-start: 0;
 	}
-	.footerlist{
-		padding: 0;
-		text-align: left;
+	.footerlist ul{
+		padding-inline-start: 0;
 	}
 	.footer-signup{
 		margin: auto;
@@ -264,75 +294,124 @@ footer ul li{
 	.footer-connect{
 	padding: 10px;
 	}
+	.footer1 p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+    font-size: 15px;
+	}
+}
+
+/**Media queries for tab*/
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+	*{
+	margin: auto;
+	}
+	header{
+	width: 100%;
+	}
+	header .title{
+	height: inherit;
+	padding: 10px;
+	}
+	header ul li{
+	padding: 5x;
+	list-style: none;
+	display: inline-block;
+	}
+	.nav{
+	background-color: #B7EEB7;
+   	color: #FF530E;
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+	}
+	.media{
+	display: flex;
+  	flex-direction: column;
+  	padding: 0;
+  	margin: 0;
+	}
+	section{
+	display: block;
+	text-align: center;
+	font-size: 150%;
+	margin: 0;
+	}
+	.contact,
+	.envelope,
+	.connect {
+	padding-top: 15px;
+	margin: 5px;
+	color: #FF530E;
+	}
+	.contact img
+	.envelope img{
+	height: 40px;
+	width: 40px;
+	border-radius: 15px;
+	}
+	.connect .img,
 	.footer-connect .img{
 	height: 40px;
 	width: 40px;
 	padding: 7px;
 	border-radius: 15px;
 	}
-	.footer1 p{
-	cursor: pointer;
-	text-align: center;
-    padding: 10px;
-    font-size: smaller;
+	form{
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    margin: 10px 0;
 	}
-}
-
-/**Media queries for web*/
-
-@media screen and (min-width: 600px) {
-*{
-	margin: auto;
-	}
-.media{
-	display: flex;
-  	flex-direction: row;
-  	justify-content: space-around;
-	}
-	header{
-	width: 100%;
-	}
-	header .title{
-	float: left;
-	height: inherit;
-	padding: 10px 20px;
-	}
-	header ul li{
-	float: right;
-	height: inherit;
-	padding: 5x;
-	list-style: none;
-	display: inline-block;
-	}
-	.register{
-	text-align: center;
-	font-size: 120%;
-	width: 35%;
-	}
-	.reg{
-	padding: 30px 0px 10px 0px;
-	margin: 10px;
-	color: #FF530E;
-	font-size: 1.5em;
-	}
-	.reg-word{
-	margin: 10px;
-	font-weight: bold;
-	font-size: 1.3em;
+	form img{
+	height: 40px;
+	width: 40px;
+	border-radius: 10px;
+	margin-left: 250px;
 	}
 	.info{
-	width: 50%;
-    border: solid 3px;
-    border-radius: 20px;
-    padding: 25px 35px;
-    height: 580px;
+	width: 600px;
+    border: solid 1px;
+    padding: 5px;
+    height: fit-content;
+	}
+	.info h3{
+	padding: 5px 0;
+	font-size: 120%;
+	}
+	#full-name, #email, #subject{
+	border-style: hidden hidden solid hidden;
+    height: 25px;
+    width: 98%;
+    padding: 8px;
+    margin-bottom: 12px;
+    font-size: 120%;
+	}
+	#message{
+    display: flex;
+    padding: 0;
+    font-size: 120%;
+	}
+	#textarea{
+	width: 98%;
+	height: 150px;
+	}
+	#btn{
+	font-weight: bold;
+	margin: 5px 5px 5px 500px;
+    padding: 5px;
+    background-color: #B7EEB7;
+    color: #FF530E;
+    font-size: 16px;
+    border-radius: 5px;
 	}
 	footer{
 	background-color: #B7EEB7;
 	color: #FF530E;
 	display: flex;
-  	flex-direction: row;
-  	justify-content: space-around;
+	font-size: 14px;
 	}
 	footer ul li{
 	text-align: left;
@@ -340,14 +419,17 @@ footer ul li{
 	list-style: none;
 	}
 	.footerlist{
-	margin-right: 100px;
+	margin-right: 10px;
+	}
+	.footerlist ul{
+		padding-inline-start: 0;
 	}
 	.footer-signup{
 		margin: auto;
 	}
 	#footer-email{
 	margin-top: 10px;
-	width: 250px;
+	width: 200px;
 	height: 30px;
 	}
 	#footer-submit{
@@ -360,13 +442,7 @@ footer ul li{
 	}
 	.footer-connect{
 	padding: 10px;
-	margin-left: 100px;
-	}
-	.footer-connect .img{
-	height: 40px;
-	width: 40px;
-	padding: 7px;
-	border-radius: 15px;
+	margin-left: 10px;
 	}
 	.footer1 p{
 	cursor: pointer;
@@ -374,10 +450,9 @@ footer ul li{
     padding: 10px;
 	}
 	.footer2{
-		margin: 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: 1;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	}
 }
