@@ -17,7 +17,7 @@ CREATE TABLE trips (
 	class TINYINT NOT NULL,
     ticket_number VARCHAR(10) NOT NULL,
     trip_fare DECIMAL(10,3) NOT NULL,
-    cabin VARCHAR(10) NOT NULL,
+    cabin VARCHAR(10),
     passenger_id INT NOT NULL,
     number_of_parents_children INT NOT NULL,
     number_of_siblings_spouses INT NOT NULL,
