@@ -307,6 +307,7 @@ form  {
       }
       .footer p
       {
+        text-align: left;
         font: normal 2vh  "cookie";
       }
       .footer-left ul
@@ -335,11 +336,7 @@ form  {
         padding: 1px;
           text-decoration: none;
       }
-  
-      .footer p
-      {
-        text-align: left;
-      }
+
       .footer-center input[type=email]
       {
         width: fit-content;
