@@ -1,6 +1,6 @@
 -- Total number of passengers who suvrvived
 SELECT COUNT(survived) FROM accidents WHERE survived = 1;
--- answer: 270
+-- answer: 269
 
 
 -- Total number of passengers who didn not survive

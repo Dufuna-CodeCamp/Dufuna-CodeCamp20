@@ -13,7 +13,7 @@ CREATE TABLE passengers (
 
 -- trips table
 CREATE TABLE trips (
-    id INT NOT NULL AUTO INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     passenger_id INT NOT NULL,
     passenger_class INT NOT NULL,
     passenger_ticket VARCHAR(20) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE trips (
 
 -- accident table
 CREATE TABLE accidents (
-    id INT NOT NULL AUTO INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     passenger_id INT NOT NULL,
     survived BOOLEAN NOT NULL,
     PRIMARY KEY(id),
