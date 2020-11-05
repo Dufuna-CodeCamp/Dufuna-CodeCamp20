@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(225, 225, 217, 0.434);
+}
+nav {
+  background: rgba(211, 210, 210, 0.577);
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+#logo {
+  width: 100px;
+  height: auto;
+  display: inline;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+a {
+  color: rgba(34, 34, 34, 0.797);
+}
+label.logo {
+  font-size: 250%;
+  line-height: 80px;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  color: rgba(238, 237, 237, 0.87);
+  font-size: 120%;
+  padding-right: 90px;
+  text-transform: uppercase;
+}
+/*BODY*/
+
+.shirtImg {
+  padding: 30px;
+  width: 25rem;
+  display: inline;
+  float: left;
+}
+.shirtDetails {
+  padding: 30px;
+  margin-left: 300px;
+  line-height: 3.5rem;
+}
+.buyButton {
+  padding: 10px 20px;
+  background-color: orange;
+  color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.header1 {
+  text-transform: uppercase;
+  font-size: larger;
+  color: grey;
+}
+.header2 {
+  color: grey;
+}
+.Qty {
+  width: 70px;
+  height: 40px;
+}
+.shirtDescription {
+  padding: 2px 30px;
+}
+/*Description*/
+.topDescription,
+.paraDescription {
+  color: gray;
+  margin: 5px;
+}
+
+/*Container*/
+.container {
+  color: rgb(161, 158, 158);
+  background-color: rgb(14, 9, 9);
+}
+.imgContainer {
+  display: flex;
+  margin-left: 20px;
+}
+.productImg {
+  flex: 30rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin: 20px;
+  width: 25rem;
+}
+.relatedProd {
+  text-align: center;
+  padding-top: 30px;
+  margin: 30px;
+}
+.imgLabel {
+  text-align: center;
+  display: inline;
+  background-color: rgba(8, 6, 3, 0.027);
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.label {
+  margin-top: 0;
+  font-size: large;
+}
+.labelEx {
+  margin-top: 10px;
+  font-size: large;
+}
+.label2 {
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+/*Footer*/
+footer {
+  padding: 3px;
+  width: 100%;
+  height: 220px;
+  background-color: rgba(187, 187, 187, 0.776);
+  color: white;
+}
+.contact {
+  position: absolute;
+  line-height: 40px;
+  padding-top: 20px;
+  margin-left: 60px;
+  font-size: x-large;
+}
+.newsletter {
+  text-align: center;
+  font-size: larger;
+  margin-top: 20px;
+  line-height: 40px;
+}
+#newsEmail {
+  padding: 10px 60px;
+}
+#newsSubmit {
+  padding: 10px 20px;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+}
+.copyRight {
+  text-align: center;
+  margin-top: 50px;
+}
+.media {
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+#connect {
+  color: rgba(0, 0, 0, 0.461);
+  line-height: 100px;
+}
+
+#imglogo {
+  position: absolute;
+  /*  margin-top: 0; */
+}
+
+.fb {
+  left: 0;
+  width: 20%;
+  border-radius: 7px;
+}
+.tw {
+  left: 40px;
+  width: 21%;
+  border-radius: 7px;
+}
+.gm {
+  left: 80px;
+  width: 26%;
+  border-radius: 7px;
+}
+.yt {
+  left: 130px;
+  width: 26%;
+  border-radius: 7px;
+}
+@media (max-width: 1024px) {
+  .productImg {
+    width: 17rem;
+  }
+}
+@media (max-width: 769px) {
+  .productImg {
+    width: 12rem;
+  }
+}
+@media (max-width: 375px) {
+  nav {
+    background: rgba(211, 210, 210, 0.577);
+    height: 130px;
+    width: 100%;
+    cursor: pointer;
+  }
+  #logo {
+    width: 90px;
+    height: auto;
+    display: inline;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 9px;
+    font-weight: bold;
+    color: rgba(238, 237, 237, 0.87);
+    font-size: 10px;
+    top: 0;
+    margin-top: 5px;
+    margin-right: 180px;
+    text-transform: uppercase;
+  }
+  /*Body*/
+  .shirtImg {
+    padding: 10px;
+    width: 23rem;
+    display: inline;
+    float: left;
+  }
+  .shirtDetails {
+    padding: 10px;
+    margin-left: 30px;
+    line-height: 2rem;
+  }
+  .productImg {
+    width: 5rem;
+  }
+  .shirtDescription {
+    padding: 0px 30px;
+  }
+
+  /*Container*/
+  .container {
+    padding-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    color: rgb(161, 158, 158);
+    background-color: rgb(14, 9, 9);
+  }
+  .imgContainer {
+    display: block;
+    margin-left: 0;
+  }
+  .productImg {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 20px;
+    width: 20rem;
+  }
+  .relatedProd {
+    text-align: center;
+    padding-top: 30px;
+    margin: 30px;
+  }
+  .imgLabel {
+    text-align: center;
+    display: block;
+    border-radius: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .label {
+    margin-top: 0;
+    font-size: large;
+  }
+  .label2 {
+    padding-bottom: 20px;
+    font-size: large;
+  }
+
+  /*FOOTER*/
+
+  .contact {
+    position: absolute;
+    line-height: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  footer {
+    padding: 4px;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(187, 187, 187, 0.776);
+    color: white;
+  }
+  .newsletter {
+    text-align: center;
+    font-size: larger;
+    margin-top: 90px;
+    line-height: 40px;
+  }
+  #newsEmail {
+    padding: 10px 40px;
+  }
+  #newsSubmit {
+    padding: 10px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+  }
+  .copyRight {
+    margin-top: 120px;
+    text-align: center;
+  }
+  #connect {
+    color: rgba(0, 0, 0, 0.461);
+    line-height: 100px;
+  }
+  .media {
+    display: flex;
+    position: absolute;
+    top: 137rem;
+    right: 160px;
+  }
+}
