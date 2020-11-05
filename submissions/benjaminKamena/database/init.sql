@@ -1,34 +1,24 @@
---
--- Database: `ecommerce_store`
---
-
--- --------------------------------------------------------
---
--- Table structure for table `user_admins`
---
+CREATE DATABASE eCommerce_store;
+SHOW DATABASES;
+DROP DATABASE ecommerce_store;
+USE ecommerce_store;
 CREATE TABLE `user_admins` (
-  `admin_id` int(11) NOT NULL AUTO_INCREMENT,
+  `admin_id` int NOT NULL AUTO_INCREMENT,
   `admin_name` varchar(100) NOT NULL,
   `email_address` varchar(100) NOT NULL,
   `admin_password` varchar(200) NOT NULL,
   `phone_number` varchar(20) NOT NULL,
   PRIMARY KEY (`admin_id`)
 );
-
--- --------------------------------------------------------
---
--- Table structure for table `categories`
---
+SHOW TABLES;
+USE ecommerce_store;
 CREATE TABLE `categories` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,
   PRIMARY KEY (`category_id`)
 );
 
--- --------------------------------------------------------
---
--- Table structure for table `products`
---
+USE ecommerce_store;
 CREATE TABLE `products` (
   `product_id` int(11) NOT NULL AUTO_INCREMENT,
   `product_name` varchar(100) NOT NULL,
@@ -44,50 +34,42 @@ CREATE TABLE `products` (
   FOREIGN KEY (`admin_id`) REFERENCES `user_admins` (`admin_id`)
 );
 
--- --------------------------------------------------------
---
--- Table structure for table `customers`
---
+USE ecommerce_store;
 CREATE TABLE `customers` (
   `customer_id` int(11) NOT NULL AUTO_INCREMENT,
   `customer_first_name` varchar(100) NOT NULL,
   `customer_last_name` varchar(100) NOT NULL,
   `customer_email_address` varchar(100) NOT NULL,
   `customer_password` varchar(100) NOT NULL,
-  PRIMARY KEY (`customer_id`),
-  FOREIGN KEY (`contact_details_id`) REFERENCES `contact_details` (`contact_details_id`)
+  PRIMARY KEY (`customer_id`)
 );
 
--- --------------------------------------------------------
---
--- Table structure for table `contact_details`
---
-CREATE TABLE `contact_details` (
-  `contact_details_id` int(11) NOT NULL AUTO_INCREMENT,
-  `street_address` varchar(255) NOT NULL,
-  `city` varchar(100) NOT NULL,
-  `state` varchar(100) NOT NULL,
-  `zip_code` varchar(100) DEFAULT NULL,
-  `country` varchar(100) NOT NULL,
-  `phone_number` varchar(100) NOT NULL,
-  PRIMARY KEY (`contact_details_id`)
+USE ecommerce_store;
+CREATE TABLE `customers_contact_details` (
+  `customer_contact_details_id` int(11) NOT NULL AUTO_INCREMENT,
+  `customer_phone_number` varchar(100) NOT NULL,
+  `customer_contact_details` varchar(250) NOT NULL,
+  `customer_street_address` varchar(255) NOT NULL,
+  `customer_city` varchar(100) NOT NULL,
+  `customer_state` varchar(100) NOT NULL,
+  `customer_zip_code` varchar(100) NULL,
+  `customer_country` varchar(100) NOT NULL,
+  `customersId` int(11) NOT NULL,
+  PRIMARY KEY (`customer_contact_details_id`),
+  FOREIGN KEY(`customersId`) REFERENCES customers(`customer_id`)
 );
 
--- --------------------------------------------------------
---
--- Table structure for table `orders`
---
+USE ecommerce_store;
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL AUTO_INCREMENT,
   `order_amount` decimal(10,2) NOT NULL,
   `order_date` date NOT NULL,
-  PRIMARY KEY (`order_id`)
+  `customersId` int(11) NOT NULL,
+  PRIMARY KEY (`order_id`),
+  FOREIGN KEY (`customersId`) REFERENCES customers (`customer_id`)
 );
 
--- --------------------------------------------------------
---
--- Table structure for table `order_items`
---
+USE ecommerce_store;
 CREATE TABLE `order_items` (
   `order_items_id` int(11) NOT NULL AUTO_INCREMENT,
   `order_id` int(11) NOT NULL,
@@ -99,3 +81,5 @@ CREATE TABLE `order_items` (
   FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`),
   FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)
 );
+
+
