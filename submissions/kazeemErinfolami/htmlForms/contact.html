@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../htmlForms/signUp.html">signUp</a></li>
-      </ul>
-    </nav>
-    <form>
-      <div>
-        <h1>Contact Form</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/contact.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <nav>
+    <label class="logo"><img id="logo" src="../html/images/logo.png"></label>
+    <ul>
+      <li><a href="../html/index.html">Product Page</a></li>
+      <li><a href="./signUp.html">SignUp</a></li>
+      <li><a href="../html/index.html">Home</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="registerContainer">
+      <div class="con-1">
+        <img class="phoneImg" id="imglogo" src="../html/images/phoneLogo.png">
+        <h1 class="reg">Please contact us via these number</h1>
+        <p class="reg" id="num">+234 234 234 0000</p>
+        <p class="reg" id="num">+234 234 234 0000</p>
       </div>
-      <hr>
-      <label for="name"><b>Full Name </b>:</label>
-      <input type="text" placeholder="name" id="name" name="name">
-      <br><br>
-      <label for="email"><b>Email</b> :</label>
-      <input type="email" placeholder="email" id="email" name="email">
-        <br><br>
-      <label for="subject"><b>Subject </b>:</label>
-      <input type="text" placeholder="Subject" id="subject" name="subject">
-        <br><br>
-      <label for="message-input"><b>Text </b>:</label>
-      <textarea placeholder="message input" id="message-input" name="message-input" rows="4" cols="50"></textarea>
-      <br><br>
-      <button type="submit">submit</button>
+      <div class="con-2">
+        <img class="emailImg" id="imglogo" src="../html/images/messageLogo.png">
+        <h1 class="reg">Email Address</h1>
+        <p class="para">support@domain.com</p>
+      </div>
+      <div class="con-3">
+        <p class="reg">or constact us :</p>
+        <ul>
+          <li><img class="fbCon" id="imglogo" src="../html/images/fblogo.png" alt="facebook" /></li>
+          <li><img class="twCon" id="imglogo" src="../html/images/twlogo.png" alt="twitter" /></li>
+          <li><img class="gmCon" id="imglogo" src="../html/images/gmlogo.png" alt="gmail" /></li>
+          <li><img class="ytCon" id="imglogo" src="../html/images/yTlogo.png" alt="youtube" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <img id="messageUs" src="../html/images/messLogo.png">
+    <h3 class="inputMessage">or better still send us a message</h3>
+    <form>
+      <div class="form">
+        <label for="firstName">Full Name :</label>
+        <input class="forminput" type="text" name="fullName" id="fullName" />
+        <label for="email">Email :</label>
+        <input class="forminput" type="email" id="email" name="email" />
+        <label for="subject">Subject :</label>
+        <input class="forminput" type="text" id="subject" name="subject">
+        <label for="message-input">Message :</label>
+        <textarea class="bigInput" id="message" name="message-input" rows="4" cols="50"></textarea>
+        <div class="signupbutton">
+          <button id="submitbtn" type="submit">SEND</button>
+        </div>
+      </div>
     </form>
-  </body>
+  </div>
+  <footer>
+    <div class="contact">
+      <ul>
+        <li><a href="./contact.html">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <p>Sign up for our Newsletter</p>
+      <form id="newsLetter">
+        <input type="text" placeholder="Enter your Email" id="newsEmail" />
+        <button id="newsSubmit" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="media">
+      <h3 id="connect">CONNECT WITH US</h3>
+      <ul>
+        <li><img class="fb" id="imglogo" src="../html/images/fblogo.png" alt="facebook" /></li>
+        <li><img class="tw" id="imglogo" src="../html/images/twlogo.png" alt="twitter" /></li>
+        <li><img class="gm" id="imglogo" src="../html/images/gmlogo.png" alt="gmail" /></li>
+        <li><img class="yt" id="imglogo" src="../html/images/yTlogo.png" alt="youtube" /></li>
+      </ul>
+    </div>
+    <div class="copyRight">&copy; Copyright 2020:
+      <a href="#"> Emarket</a>
+    </div>
+  </footer>
+</body>
+
 </html>
