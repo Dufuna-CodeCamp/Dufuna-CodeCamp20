@@ -124,6 +124,12 @@ footer ul li{
 .footer-connect{
 	padding: 10px;
 }
+.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
+}
 .footer1 p{
 	cursor: pointer;
 	text-align: center;
@@ -258,6 +264,12 @@ footer ul li{
 	.footer-connect{
 	padding: 10px;
 	}
+	.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
+	}
 	.footer1 p{
 	cursor: pointer;
 	text-align: center;
@@ -349,6 +361,12 @@ footer ul li{
 	.footer-connect{
 	padding: 10px;
 	margin-left: 100px;
+	}
+	.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
 	}
 	.footer1 p{
 	cursor: pointer;
