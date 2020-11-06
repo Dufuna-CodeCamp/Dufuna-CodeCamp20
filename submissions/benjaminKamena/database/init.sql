@@ -1,7 +1,9 @@
 CREATE DATABASE eCommerce_store;
 SHOW DATABASES;
-DROP DATABASE ecommerce_store;
-USE ecommerce_store;
+USE eCommerce_store;
+SHOW TABLES;
+SHOW COLUMNS FROM user_admins;
+
 CREATE TABLE `user_admins` (
   `admin_id` int NOT NULL AUTO_INCREMENT,
   `admin_name` varchar(100) NOT NULL,
