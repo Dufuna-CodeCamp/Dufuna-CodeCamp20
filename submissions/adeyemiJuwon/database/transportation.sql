@@ -15,20 +15,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Table structure for table `accidents`
---
-
-DROP TABLE IF EXISTS `accidents`;
-CREATE TABLE `accidents` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `survived` varchar(5) NOT NULL,
-  `passenger_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_accidents_passengers_idx` (`passenger_id`),
-  CONSTRAINT `fk_accidents_passengers` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `passengers`
@@ -42,8 +28,6 @@ CREATE TABLE `passengers` (
   `age` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 
 --
 -- Table structure for table `trips`
@@ -64,7 +48,20 @@ CREATE TABLE `trips` (
   KEY `fk_trips_passengers_idx` (`passenger_id`),
   CONSTRAINT `fk_trips_passengers_idx` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `accidents`
+--
+
+DROP TABLE IF EXISTS `accidents`;
+CREATE TABLE `accidents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `survived` TINYINT (5) NOT NULL,
+  `passenger_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_accidents_passengers_idx` (`passenger_id`),
+  CONSTRAINT `fk_accidents_passengers` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
