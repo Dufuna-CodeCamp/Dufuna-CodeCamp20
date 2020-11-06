@@ -107,10 +107,6 @@ img {
     font-weight: bold;
 }
 
-.showcase-details button {
-    background-color: rgb(255, 140, 0);
-}
-
 #quantity {
     width: 70px;
     height: 25px;
@@ -169,7 +165,7 @@ img {
     height: 25px;
     width: 60% !important;
     border: 1px solid transparent !important;
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 ::placeholder {
@@ -231,7 +227,7 @@ img {
     width: 300px;
 }
 
-.register-txt p { 
+.register-txt p {
     width: 300px;
     font-size: 1.5em;
     font-weight: normal;
@@ -324,7 +320,7 @@ img {
     width: 70%;
     border: none;
     border-bottom: 1px solid #969997;
-    padding: 8px 0px;
+    padding: 8px 0;
     margin-bottom: 5px;
 }
 
@@ -383,7 +379,7 @@ img {
 
 .register-txt {
     margin: auto;
-    padding: 15px 0px 12px 35px;
+    padding: 15px 0 12px 35px;
     font-size: 1.65em;
     display: flex;
     flex-direction: column;
@@ -462,13 +458,13 @@ img {
 /* header and footer mobile */
 .navbar {
     height: 150px;
-}  
+}
 
 .navbar .container {
     height: 150px;
     width: 330px;
     display: block;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .navbar ul {
@@ -552,7 +548,7 @@ img {
 
 .register-form {
     width: 350px;
-    padding: 0px;
+    padding: 0;
     margin: auto;
 }
 
@@ -583,6 +579,6 @@ img {
 }
 
 .send-button {
-margin-left: 0px;
+margin-left: 0;
 }
 }
