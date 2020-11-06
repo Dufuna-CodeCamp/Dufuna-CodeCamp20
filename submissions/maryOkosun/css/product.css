@@ -7,7 +7,6 @@ body{
 	font-size: 16px;
 	padding: 0;
 	height: 152vh;
-
 }
 header img{
 	height: 100px;
@@ -87,11 +86,9 @@ nav a{
 	background-color: white;
 }
 .empty-box img{
-	
 	height: 180px;
 	padding-left: 110px;
 	padding-top: 10px;
-
 }
 .empty-box p{
 	text-align: center;
@@ -170,7 +167,7 @@ footer button {
 		height: 250vh;
 	}
 	.container{
-	margin: 0;
+		margin: 0;
 	}
 	.top{
 		margin: 50px;
@@ -220,11 +217,7 @@ footer button {
 		background-color: white;
 	}
 	.empty-box img{
-		
-		height: 180px;
-		padding-left: 110px;
-		padding-top: 10px;
-
+		padding-left: 60px;
 	}
 	.empty-box p{
 		text-align: center;
@@ -341,11 +334,9 @@ footer button {
 		background-color: white;
 	}
 	.empty-box img{
-		
 		height: 180px;
 		padding-left: 70px;
 		padding-top: 10px;
-
 	}
 	.empty-box p{
 		text-align: center;
@@ -378,8 +369,8 @@ footer button {
 	}
 
 	.right-footer li {
-    padding: 2px;
-    margin-left: 0;
+	    padding: 2px;
+	    margin-left: 0;
 	}
 	.copyright p{
 		padding-top: 150px;
