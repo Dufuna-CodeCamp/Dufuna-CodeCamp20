@@ -1,8 +1,5 @@
 CREATE DATABASE eCommerce_store;
-SHOW DATABASES;
 USE eCommerce_store;
-SHOW TABLES;
-SHOW COLUMNS FROM user_admins;
 
 CREATE TABLE `user_admins` (
   `admin_id` int NOT NULL AUTO_INCREMENT,
@@ -12,15 +9,13 @@ CREATE TABLE `user_admins` (
   `phone_number` varchar(20) NOT NULL,
   PRIMARY KEY (`admin_id`)
 );
-SHOW TABLES;
-USE ecommerce_store;
+
 CREATE TABLE `categories` (
   `category_id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,
   PRIMARY KEY (`category_id`)
 );
 
-USE ecommerce_store;
 CREATE TABLE `products` (
   `product_id` int(11) NOT NULL AUTO_INCREMENT,
   `product_name` varchar(100) NOT NULL,
@@ -36,7 +31,6 @@ CREATE TABLE `products` (
   FOREIGN KEY (`admin_id`) REFERENCES `user_admins` (`admin_id`)
 );
 
-USE ecommerce_store;
 CREATE TABLE `customers` (
   `customer_id` int(11) NOT NULL AUTO_INCREMENT,
   `customer_first_name` varchar(100) NOT NULL,
@@ -46,7 +40,6 @@ CREATE TABLE `customers` (
   PRIMARY KEY (`customer_id`)
 );
 
-USE ecommerce_store;
 CREATE TABLE `customers_contact_details` (
   `customer_contact_details_id` int(11) NOT NULL AUTO_INCREMENT,
   `customer_phone_number` varchar(100) NOT NULL,
@@ -61,7 +54,6 @@ CREATE TABLE `customers_contact_details` (
   FOREIGN KEY(`customersId`) REFERENCES customers(`customer_id`)
 );
 
-USE ecommerce_store;
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL AUTO_INCREMENT,
   `order_amount` decimal(10,2) NOT NULL,
@@ -71,7 +63,6 @@ CREATE TABLE `orders` (
   FOREIGN KEY (`customersId`) REFERENCES customers (`customer_id`)
 );
 
-USE ecommerce_store;
 CREATE TABLE `order_items` (
   `order_items_id` int(11) NOT NULL AUTO_INCREMENT,
   `order_id` int(11) NOT NULL,
