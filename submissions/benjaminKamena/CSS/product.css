@@ -105,13 +105,13 @@ ul li a{
   border-radius: 25px;
 }
 .product-details{
-        margin-left: 50px;
-        margin-top: 50px;
-        padding-top: 14px;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-top: 14px;
     }
-    .product-details h3{
-        font-size: 25px;
-        line-height: 30px;
+.product-details h3{
+  font-size: 25px;
+  line-height: 30px;
     }
     .product-details h4{
         font-size: 22px;
@@ -136,6 +136,7 @@ ul li a{
     .description{
         margin-left: 50px;
     }
+
     .description h3{
         text-align:left;
         font-size: 22px;
@@ -152,9 +153,9 @@ ul li a{
         font-size: 22px;
         font-weight: bold;
         font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
     }
     .description strong{
       color:green;
@@ -188,11 +189,11 @@ ul li a{
         font-size: 22px;
         font-weight: bold;
         font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: center;
-    }
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: center;
+      }
       
 footer {
     background-color: #0066f5;
