@@ -54,13 +54,13 @@ a:hover{
 	margin-left: 40px;
 }
 .cost h3{
-		font-size: 1.1em;
+	font-size: 1.1em;
 	}
 #quantity{
-		font-size: 14px;
-		padding: 5px;
-		width: 60px;
-}	
+	font-size: 14px;
+	padding: 5px;
+	width: 60px;
+}
 #btn{
 	font-weight: bold;
     padding: 10px;
@@ -85,7 +85,7 @@ a:hover{
 .description h3{
 	font-size: 1.1em;
 	text-align: left;
-}  
+}
 .similar{
   	text-align: center;
     background-color: gray;
