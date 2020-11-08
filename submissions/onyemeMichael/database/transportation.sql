@@ -15,6 +15,7 @@ CREATE TABLE passengers (
 -- Trips Table
 CREATE TABLE trips (
 	id INT NOT NULL AUTO_INCREMENT,
+    assigned_cabin VARCHAR(15),
     passenger_class INT NOT NULL,
     passenger_ticket VARCHAR(15) NOT NULL,
     trip_fare DECIMAL(16,4) NOT NULL,
@@ -23,7 +24,6 @@ CREATE TABLE trips (
     passenger_id INT NULL,
     point_of_embarkation VARCHAR(150) NOT NULL,
     PRIMARY KEY(id),
-    FOREIGN KEY(passenger_class) REFERENCES classes(id) ON DELETE CASCADE,
     FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
 );
 
@@ -34,4 +34,4 @@ CREATE TABLE accidents (
     passenger_id INT NOT NULL,
     PRIMARY KEY(id),
     FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
-);
+    );
