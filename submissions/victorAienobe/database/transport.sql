@@ -49,15 +49,15 @@ SELECT COUNT(id) FROM accidents WHERE survived = '0';
 
 SELECT passengers.full_name, passengers.sex
 FROM passengers LEFT JOIN trips
-ON passengers.id = trips.id
-WHERE age < '27' AND embarkation_point != 'S';
+ON passengers.id = trips.passenger_id
+WHERE age < 27 AND embarkation_point != 'S';
 
 -- total number of passengers that embarked at Southampton and survived
 
 SELECT COUNT(accidents.id)
 FROM accidents LEFT JOIN trips
-ON trips.id = accidents.id
-WHERE survived = '1' AND embarkation_point = 'S';
+ON accidents.passenger_id = trips.passenger_id
+WHERE survived = 1 AND embarkation_point = 'S';
 -- RESULT = 218
 
 -- id, name and the total number of passengers who paid a fare greater than $100 and
@@ -65,12 +65,12 @@ WHERE survived = '1' AND embarkation_point = 'S';
 
 SELECT passengers.id, passengers.full_name
 FROM passengers LEFT JOIN trips
-ON passengers.id = trips.id
+ON passengers.id = trips.passenger_id
 WHERE trip_fare > 100 AND age > 35 AND number_of_siblings_spouses > 0;
 
 -- total number
 SELECT COUNT(passengers.id)
 FROM passengers LEFT JOIN trips
-ON passengers.id = trips.id
+ON passengers.id = trips.passenger_id
 WHERE trip_fare > 100 AND age > 35 AND number_of_siblings_spouses > 0;
 -- RESULT = 5
