@@ -172,3 +172,39 @@ textarea {
         text-align: center;
       }
     }
+
+    @media (max-width: 768px) {
+    .main-block {
+        width: 100%;
+        margin-top: auto;
+      }
+    .side-bar {
+      width: 100%;
+      }
+    .footer{
+      position: relative;
+      }
+    .footer-1{
+      width: 50%;
+      text-align: left;
+      margin-bottom: 20px;
+      }
+    .footer-2{
+     width: 50%;
+     text-align: right;
+     margin-bottom: 20px;
+      }
+    #submit{
+     text-align: right;
+      }
+    .footer-3{
+     width: 50%;
+     text-align: right;
+     margin-bottom: 20px;
+      }
+    .footer-bottom{
+     width: 100%;
+     text-align: center;
+      }
+    
+    }
