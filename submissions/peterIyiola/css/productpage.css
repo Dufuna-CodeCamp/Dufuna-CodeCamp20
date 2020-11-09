@@ -22,6 +22,11 @@
         margin-left: 70px;
         line-height: 2px;
 }
+
+.errorMsg   {
+    color:yellow;
+    font-weight: bold;
+}
 label{
     width: fit-content;
 }   
