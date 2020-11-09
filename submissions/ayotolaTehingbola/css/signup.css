@@ -121,15 +121,6 @@ input[type="checkbox"] {
   width: 100%;
   padding: 30px 10px 15px;
   margin: auto;
-  bottom: 0;
-}
-
-.footer {
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding: 30px 10px 15px;
-  margin: auto;
   position: relative;
   bottom: 0;
 }
@@ -140,7 +131,7 @@ input[type="checkbox"] {
 
 .footer-1 {
   text-align: left;
-  width: 33.3%;  
+  width: 33.3%;
 }
 
 .footer-2 {

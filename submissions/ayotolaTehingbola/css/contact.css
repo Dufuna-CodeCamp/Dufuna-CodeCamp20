@@ -11,7 +11,7 @@ a {
   
 a:hover {
     color: teal;
-} 
+}
   
 a:active {
     text-decoration: underline;
@@ -89,8 +89,7 @@ a:active {
     border-radius: 10px;
     background-color: whitesmoke;
     text-align: justify;
-    border: azure;
-}
+  }
 
 .side-bar input,
 textarea {
@@ -115,7 +114,7 @@ textarea {
 
 .footer-1 {
     text-align: left;
-    width: 33.3%;  
+    width: 33.3%;
 }
 
 .footer-2 {
