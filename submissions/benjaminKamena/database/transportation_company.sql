@@ -41,7 +41,7 @@ CREATE TABLE `travel_details` (
 --
 CREATE TABLE `flight_statuses` (
   `flight_statuses_id` int(11) NOT NULL AUTO_INCREMENT,
-  `passenger_survived` BOOLEAN,
+  `passenger_survived` BOOLEAN NOT NULL,
   `passegerID` int(11) NOT NULL,
   PRIMARY KEY (`flight_statuses_id`),
   FOREIGN KEY (`passegerID`) REFERENCES `passegers` (`passeger_id`)
