@@ -262,12 +262,12 @@ figcaption
         padding: 1px;
         margin: 1px;
     }
-    
+
     /*BODY*/
     .left-column, .right-column
     {
         display: block;
-    }  
+    }
 
     .left-column img
     {
@@ -292,7 +292,7 @@ figcaption
         margin: auto;
     }
 
-    #quantity 
+    #quantity
     {
         padding: 1px;
         width: 15px;
@@ -312,7 +312,7 @@ figcaption
         padding: 1px 3px;
     }
 
-    .product-information input[type=button]:hover 
+    .product-information input[type=button]:hover
     {
         background-color: palevioletred;
     }
