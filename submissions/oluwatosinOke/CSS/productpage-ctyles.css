@@ -178,6 +178,7 @@ figcaption
 
 .footer-left{
     width: 30%;
+    padding-left: 400px;
 }
 
 .footer-left a{
@@ -190,7 +191,8 @@ figcaption
 }
 
 .footer-center{
-    width: 35%;
+    width: 29%;
+    padding-right: 20px;
 }
 
 .footer-center input[type=email] {
@@ -386,6 +388,10 @@ figcaption
         width: 100%
     }
 
+    .footer-left{
+        width: 30%;
+        padding-left: 1px;
+    }
     .footer p
     {
         text-align: left;
