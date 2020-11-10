@@ -9,7 +9,7 @@ body{
 header{
 	flex: 1 100%;
 	background-color: #B7EEB7;
-	height: 70px;
+	padding: 50px;
 }
 header *{
 	color: #FF530E;
@@ -42,7 +42,6 @@ a:hover{
 }
 .cavendish img{
 	float: left;
-	height: 180px;
     width: 250px;
     border: 1px solid gray;
     margin: 30px 35px 0 60px;
@@ -103,8 +102,8 @@ a:hover{
 	margin: 20px 80px;
 }
 .similar img{
-	height: 180px;
 	width: 220px;
+	padding: 10px;
 }
 .similar figcaption{
 	font-weight: bold;
@@ -137,8 +136,7 @@ footer ul li{
 #footer-submit{
 	margin-top: 10px;
 	font-size: 15px;
-	width: 80px;
-	height: 30px;
+	padding: 15px;
 	background-color: #B7EEB7;
 	color: #FF530E;
 }
@@ -175,10 +173,11 @@ footer ul li{
 		text-align: left;
 		display: block;
 		height: 14vh;
+		padding: 0;
 	}
 	header .title{
 		clear: both;
-		padding: 10px;
+		padding: 5px;
 		font-size: 15px;
 		height: unset;
 	}
@@ -203,7 +202,6 @@ footer ul li{
 	}
 	.cavendish img{
 	clear: both;
-	height: 100px;
     width: 130px;
     border: 1px solid gray;
     margin: 5px;
@@ -272,11 +270,9 @@ footer ul li{
 	margin: 20px;
 	}
 	.similar figure{
-		height: 100px;
 		width: 120px;
 	}
 	.similar img{
-	height: 60px;
 	width: 80px;
 	}
 	.similar figcaption{
@@ -306,13 +302,12 @@ footer ul li{
 	#footer-email{
 	margin-top: 10px;
 	width: 150px;
-	height: 25px;
+	padding: 10px;
 	}
 	#footer-submit{
 	margin-top: 10px;
 	font-size: 15px;
-	width: 60px;
-	height: 25px;
+	padding: 10px;
 	background-color: #B7EEB7;
 	color: #FF530E;
 	}
@@ -347,7 +342,7 @@ footer ul li{
 	padding: 10px;
 	}
 	header ul li{
-	padding: 5x;
+	padding: 5px;
 	list-style: none;
 	display: inline-block;
 	}
@@ -409,13 +404,11 @@ footer ul li{
 	#footer-email{
 	margin-top: 10px;
 	width: 200px;
-	height: 30px;
+	padding: 10px;
 	}
 	#footer-submit{
 	margin-top: 10px;
 	font-size: 15px;
-	width: 80px;
-	height: 30px;
 	background-color: #B7EEB7;
 	color: #FF530E;
 	}
