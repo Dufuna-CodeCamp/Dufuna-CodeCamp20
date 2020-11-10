@@ -90,7 +90,21 @@ VALUES('Jefferson', 'Mormah', 'jeffbuchi9@gmail.com', 'balakov', '07038431304'),
 	  ('Michelle', 'Ngozi', 'michelle@gmail.com', 'michelline', '08134356789');
       
 INSERT INTO products (product_name, product_description, product_image, unit_price, stock_level, product_status, admin_id, category_id)
-VALUES('teflon adhesive tape');
+VALUES('teflon adhesive tape', 'Adhesive tape is made from teflon cloth (or pure teflon film), treated with sodium or special 
+               reagent on one side, then coated with adhesive. 
+               There are two types of teflon tape: the narrow tapes are normally without release paper and
+                the wide ones are always with release paper.
+               High temperature resistance(-70℃~260℃).
+                Surface smooth, non-stick and easy to clean.
+                Fire retardant.
+                Excellent dimensional stability and high strength.
+                High insulation, anti-ultraviolet, anti-static.
+                Resistant to chemical corrosion, strong acid, alkali and various organic solvents.
+                Easy to use, long service life.
+                We have Teflon adhesive tape with release liner and without release liner.
+                Main thickness: 0.08mm, 0.13mm, 0.18mm, 0.25mm and 0.3mm.
+                Color: Brown, Black or White. Size can be customized , please contact us to get more information . you can leave a message, 
+                we will contact you as soon as possible.', 'C:\Users\ggg\Desktop\Dufuna-CodeCamp20/submissions/jeffersonMormah/introductionToHtml/images/Teflon Image2.jpg', 19500, 50, 'in stock', 1, 1);
 
 INSERT INTO clients (firstname, lastname, email, client_password)
 VALUES('Dangote', 'Agrosack', 'dangote@dangoteagro.com', 'dangote' );
