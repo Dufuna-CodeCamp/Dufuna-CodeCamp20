@@ -54,7 +54,6 @@ a:active {
   .inner-container {
     margin: 30px;
     overflow: hidden;
-    /* min-height: 100vh; */
   }
 
 .main-block {
@@ -206,5 +205,4 @@ textarea {
      width: 100%;
      text-align: center;
       }
-    
     }
