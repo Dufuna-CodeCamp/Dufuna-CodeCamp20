@@ -64,10 +64,10 @@ VALUES(2, 'OHB21153', 45000, 2, 1, 1, 'Lagos'),
       (3, 'OHB21152', 45000, 3, 1, 4, 'Lagos');
       
 INSERT INTO cabin_classes (cabin_number, trip_id)
-VALUES('executive', 1),
-	('executive', 2),
-    ('premium', 3),
-    ('premium', 4);
+VALUES('EXE101', 1),
+	('EXE101', 2),
+    ('PRE111', 3),
+    ('PRE111', 4);
     
 INSERT INTO accidents(survived, died, passenger_id)
 VALUES(1, 0, 1),
