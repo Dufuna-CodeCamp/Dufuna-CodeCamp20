@@ -33,7 +33,7 @@ CREATE TABLE trips (
 
 CREATE TABLE cabin_classes (
 	id INT NOT NULL AUTO_INCREMENT,
-    cabin_number VARCHAR(10) NOT NULL,
+    cabin_class VARCHAR(10) NOT NULL,
     trip_id INT NOT NULL,
     PRIMARY KEY(id),
     FOREIGN KEY(trip_id) REFERENCES trips(id) ON DELETE CASCADE
@@ -63,7 +63,7 @@ VALUES(2, 'OHB21153', 45000, 2, 1, 1, 'Lagos'),
       (4, 'OHB21151', 45000, 1, 2, 3,'Lagos'),
       (3, 'OHB21152', 45000, 3, 1, 4, 'Lagos');
       
-INSERT INTO cabin_classes (cabin_number, trip_id)
+INSERT INTO cabin_classes (cabin_class, trip_id)
 VALUES('EXE101', 1),
 	('EXE101', 2),
     ('PRE111', 3),
