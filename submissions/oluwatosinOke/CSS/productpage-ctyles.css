@@ -273,23 +273,24 @@ figcaption
 
     .left-column img
     {
-        width: 149px;
-        height: 108px;
-        padding-left: 100px;
+        width: 309px;
+        height: 188px;
+        padding-left: 20px;
+        padding-top: 20px;
     }
 
     /*Right-column*/
     .right-column {
-        margin-left: 150px;
+        margin-left: 120px;
         width: 100%;
         margin-top: 1px;
         padding: 1px;
-        font: normal 5px 'Cookie';
+        font: normal 15px 'Cookie';
     }
 
     .product-information h3
     {
-        font: bold 10px 'Cookie';
+        font: bold 18px 'Cookie';
         color: blueviolet;
         margin: auto;
     }
@@ -299,8 +300,8 @@ figcaption
         padding: 1px;
         width: 15px;
         border: 1px solid #555;
-        height: 6px;
-        font-size: 5px;
+        height: 12px;
+        font-size: 10px;
     }
 
     .product-information input[type=button]
@@ -308,7 +309,7 @@ figcaption
         display: inline-block;
         background-color: #00f798a8;
         border-radius: 6px;
-        font-size: 5px;
+        font-size: 10px;
         color: blueviolet;
         text-decoration: none;
         padding: 1px 3px;
@@ -322,8 +323,8 @@ figcaption
     /*product description*/
     .description
     {
-        font: normal 5px 'Cookie';
-        padding-left: 50px;
+        font: normal 15px 'Cookie';
+        padding-left: 30px;
         padding-top: 1px;
     }
 
@@ -336,7 +337,7 @@ figcaption
     /*related product*/
     .bottom-column
     {
-        font: normal 7px 'Cookie';
+        font: normal 18px 'Cookie';
         color: blueviolet;
     }
 
@@ -357,17 +358,17 @@ figcaption
     {
         display: inline-block;
         vertical-align: top;
-        font-size: 5px;
+        font-size: 10px;
         text-decoration: none;
-        padding-left: 65px;
+        padding-left: 25px;
         padding-bottom: 2px;
         padding-top: 1px;
     }
 
     .bottom-column img
     {
-        width: 59px;
-        height: 38px;
+        width: 159px;
+        height: 138px;
     }
 
     figcaption
