@@ -1,8 +1,6 @@
-
 /***************************
         NAVIGATION
 ***************************/
-
 .topnav {
     width: 100%;
     display: flex;
@@ -14,11 +12,9 @@
     height: 10%;
     vertical-align: middle;
 }
-
 .nav-logo {
     width: 10%;
 }
-
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -28,15 +24,12 @@
     justify-content: flex-end;
     padding-right: 3%;
 }
-
 .nav-links ul {
     list-style-type: none;
 }
-
 .nav-links ul li {
     display: inline-block;
 }
-
 .nav-links a {
     float: right;
     font-size: 30px;
@@ -44,7 +37,6 @@
     color: white;
     text-decoration: none;
 }
-
 /***************************
             BODY
  ****************************/
@@ -55,7 +47,6 @@
     order: 1;
     color: #555;
 }
-
 .page-body {
     padding-top: 30px;
     width: 100%;
@@ -64,38 +55,31 @@
     flex-wrap: wrap;
     height: 100%;
 }
-
 /*******BODY WRITE-UP********/
 .body-text {
     flex: 1;
     min-width: 400px;
     vertical-align: middle;
 }
-
 .body-text span h1 , #signin{
     color: #b06aae;
 }
-
 .body-content {
-    position: relative; 
-    display:flex; 
+    position: relative;
+    display:flex;
     justify-content:center;
-    align-items:center; 
-    height: 100%;   
+    align-items:center;
+    height: 100%;
 }
-
-
 /*********BODY SIGN-UP FORM*******/
 .div-form {
     flex: 1;
     min-width: 400px;
 }
-
 .body-form {
     text-align: center;
     width: 80%;
 }
-
 .field-set {
     border-radius: 23px;
     padding-top: 10px;
@@ -103,13 +87,11 @@
     width: 90%;
     text-align: center;
 }
-
 .form-input {
-    text-align:left; 
-    padding-left: 10%;  
+    text-align:left;
+    padding-left: 10%;
     padding-top: 35px;
 }
-
 .input {
     border-radius: 10px;
     border: solid 2px #888;
@@ -120,9 +102,8 @@
     margin: 10px 0 10px 0;
     padding: 10px;
 }
-
 .terms {
-    text-align: center; 
+    text-align: center;
     width: 100%;
 }
 .button {
@@ -134,11 +115,9 @@
     height: 40px;
     font-size: 18px;
 }
-
 /**********************************
             FOOTER
 **************************************/
-
 .footer {
     margin-top: 20px;
     width: 100%;
@@ -151,18 +130,15 @@
     padding-top: 20px;
     vertical-align: middle;
 }
-
 .footer a {
     font-size: 20px;
     padding-left: 50px;
     color: white;
     text-decoration: none;
 }
-
 .footer ul {
     list-style-type: none;
 }
-
 .footer ul li {
     display: inline-block;
     padding: 2px;
@@ -173,37 +149,26 @@
     flex-wrap: wrap;
     width: 100%;
 }
-
 /***********FOOTER LINKS FOR PAGES*********/
 .footer-links {
-    width:30%; 
+    width:30%;
     min-width: 250px;
     text-align: left;
 }
-
 .links {
     width: 90%;
     font-size: 14px;
 }
-
-
 /*******SIGN UP FOR OUR NEWSLETTER**********/
 .footer-news {
     padding-top: 1%;
     width:40%;
     min-width: 250px;
 }
-
-
-/*.email-input {
-    font-size: 50%;
-}*/
-
 .news {
-    width: 100%; 
+    width: 100%;
     text-align: center;
 }
-
 .white-button{
     color: #b06aae;
     padding: 5px;
@@ -213,30 +178,24 @@
     font-style: bold;
     height: 30px;
 }
-
-
 /*CONNECT WITH US*/
 .footer-connect {
-   width: 30%; 
-   min-width: 250px; 
+   width: 30%;
+   min-width: 250px;
 }
-
 .connect {
-  padding-top: 1%;  
-  width: 100%;  
-  text-align: center;  
+  padding-top: 1%;
+  width: 100%;
+  text-align: center;
 }
-
 .social-links {
-   list-style-type: none; 
+   list-style-type: none;
 }
-
 /*COPYRIGHT*/
 .footer-copy {
-   flex: 1 ; 
+   flex: 1 ;
 }
-
 .copy {
-    width: 100%; 
+    width: 100%;
     text-align: center;
 }
