@@ -312,8 +312,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 477px;
+    height: 480px;
     padding-top: 12px;
+    padding-bottom: 25px;
 }
 
 .contact-form input {
@@ -341,12 +342,12 @@ img {
 .send-button {
     background-color: #095ee8;
     width: 17%;
-    margin-top: 10px;
-    margin-left: 255px;
+    margin-top: -10px;
+    margin-left: 295px;
     color: #ffffff;
     border: 1px solid transparent;
-    height: 30px;
-    padding-top: 2px;
+    height: 45px;
+    padding: 3px;
     border-radius: 3px;
     font-weight: bold;
     font-size: 0.9em;
@@ -421,13 +422,17 @@ img {
     height: auto;
 }
 
+.contact-form span {
+    margin-left: -250px;
+}
+
 .contact-form textarea {
-    width: 350px;
+    width: 320px;
 }
 
 .send-button {
    margin-bottom: 30px;
-   margin-right: -15px;
+   margin-right: 60px;
 }
 
 .related-products {
@@ -567,18 +572,26 @@ img {
 .register-fieldset, .contact-form fieldset {
     width: 350px;
     justify-content: center;
-    margin: auto;
+    margin: a
+}
+
+.contact-form {
+    width: 350px;
 }
 
 .contact-form textarea {
-    width: 210px;
+    width: 250px;
+    height: 100px;
 }
 
 .contact-form span {
-    margin-left: -150px;
+    margin-left: -180px;
 }
 
 .send-button {
 margin-left: 0;
+margin-right: -165px;
+width: 85px;
+height: 40px;
 }
 }
