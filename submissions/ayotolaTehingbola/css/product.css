@@ -216,7 +216,7 @@ img:hover {
     width: 100%;
     text-align: center;
     padding-top: 10px;
-    padding-left: 0px;
+    padding-left: 0;
   }
   .related-products {
     margin-top: 12px;
