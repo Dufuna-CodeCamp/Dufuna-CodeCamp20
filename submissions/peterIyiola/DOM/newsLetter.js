@@ -1,18 +1,18 @@
 
 let sendNews = document.getElementById('newsField'),
     newsLetter = document.getElementById('newsLetter');
-    errorMsg = document.getElementById('errorMsg');
+    errorMsg = document.getElementsByClassName('errorMsg');
 
     const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,10})+$/;
       
-    function validations(field,regex ,event, error, result) {
-        if (field.value === '') {
-            errorMsg.innerHTML = error;
+    function validations(event,errorMsg,newsLetter) {
+        if (newsLetter.value === '') {
+            errorMsg.innerHTML = "please enter your email address";
             event.preventDefault();
             return false;
         } 
-        else if (!field.value.match(regex)) {
-            errorMsg.innerHTML = result;
+        else if (!newsLetter.value.match(emailRegex)) {
+            errorMsg.innerHTML = "please enter a valid email address";
             event.preventDefault();
             return false;
         } 
@@ -22,9 +22,5 @@ let sendNews = document.getElementById('newsField'),
         }
         }
 
-    function newsField(e){
-    validations(newsLetter,emailRegex,e,"please enter your email address", "please enter a valid email")
-        
-    }
         sendNews.addEventListener('submit',newsField);
 
