@@ -141,47 +141,47 @@ values(1, 'Adewole Crescent', 'Ikare', 'Ondo', '', 'Nigeria', '+2348087954322'),
 select * from addresses;
 
 /*****************************************/
-/*************** Order Info ****************/
-# Create the Order_Items Table
-create table order_items(
-	id int not null auto_increment,
-    product_id int not null,
-    quantity int not null,
-    total_amount decimal(10, 2) not null,
-    primary key(id),
-    foreign key(product_id) references products(id)
-);
-
-# Insert Values
-insert into order_items(product_id, quantity, total_amount)
-values(2, 5, 600.00),
-(1, 1, 350.00),
-(4, 2, 370.00),
-(3, 5, 1100.00);
-
-# View Table
-select * from order_items;
-
-/*****************************************/
 /*************** Orders Table ****************/
 # Create the Orders Table
 create table orders(
 	id int not null auto_increment,
     customer_id int not null,
-    order_item_id int not null,
     order_amount decimal(10, 2) not null,
     order_date datetime not null,
     primary key(id),
-    foreign key(order_item_id) references order_items(id),
     foreign key(customer_id) references customers(id)
 );
 
 # Insert Values into the Orders Table
-insert into orders(customer_id,order_item_id, order_amount, order_date)
-values(3, 2, 312.00, now()),
-(3, 1, 402.55, now()),
-(1, 3, 122.69, now()),
-(4, 4, 699.99, now());
+insert into orders(customer_id, order_amount, order_date)
+values(3, 312.00, now()),
+(3, 402.55, now()),
+(1, 122.69, now()),
+(4, 699.99, now());
 
 # View Orders Table
 select * from orders;
+
+/*****************************************/
+/*************** Order Info ****************/
+# Create the Order_Items Table
+create table order_items(
+	id int not null auto_increment,
+    order_id int not null,
+    product_id int not null,
+    quantity int not null,
+    total_amount decimal(10, 2) not null,
+    primary key(id),
+    foreign key(order_id) references orders(id),
+    foreign key(product_id) references products(id)
+);
+
+# Insert Values
+insert into order_items(order_id, product_id, quantity, total_amount)
+values(2, 3, 5, 600.00),
+(1, 1, 1, 350.00),
+(4, 2, 2, 370.00),
+(3, 4, 5, 1100.00);
+
+# View Table
+select * from order_items;
