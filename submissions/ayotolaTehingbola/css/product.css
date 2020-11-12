@@ -167,6 +167,8 @@ img:hover {
   }
   .product-1-form{
     width: 65%;
+    padding-left: 45px;
+    padding-top: 50px;
   }
   .related-products-list{
     flex-wrap: wrap;
