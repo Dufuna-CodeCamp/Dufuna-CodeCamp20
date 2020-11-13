@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* header */
+.header{
+    background-color: purple;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 75px;
+    padding-top: 0px;
+}
+
+.header .logo img{
+    height: 75px;
+    width: 200px;
+    margin-left: 15px;
+}
+.header li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 17px;
+    margin-right: 100px;
+}
+
+.header li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+}
+
+.header li a:hover{
+    color: black;
+}
+
+/* Registration */
+.mainbody{
+    display: flex;
+}
+
+.container{
+    flex-basis: 50%;
+}
+
+.registration{
+    font-family: 'Arial';
+    font-size: 18px;
+    margin: 150px 100px 0 180px;
+}
+
+.registration h1, .registration a{
+    color: purple;
+    font-weight: bolder;
+}
+
+.regform{
+    padding: 25px 50px 10px 35px;
+    margin: 65px 120px 40px 0px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.regform .inputbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 420px;
+    margin: 4px;
+    height: 24px;
+}
+
+.regform label{
+    font-family: 'Arial Narrow';
+    font-size: 15px;
+}
+
+.regform .box{
+    margin-left: 80px;
+}
+
+.regform p{
+    color: purple;
+    display: inline;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.regform .signup{
+    background-color: purple;
+    font-size: 13px;
+    color: white;
+    font-family: 'Arial';
+    border: 1px solid purple;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    margin-left: 150px;
+    font-weight: bold;    
+}
+
+/* footer */
+.footer{
+    background-color: purple;
+}
+
+.mainfooter{
+    display: flex;
+    width: 100%;
+}
+
+.containertwo{
+    flex-basis: 50%;
+    padding: 25px 10px 0 40px;
+}
+
+.one li{
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Arial';
+}
+
+.one li a{
+    text-decoration: none;
+    color: white;
+}
+
+.two{
+    padding-left: 0px;
+}
+.two p{
+    color: white;
+    font-family: 'Arial';
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.two .emailletter{
+    padding-left: 5px;
+    border: 1px solid purple;
+    height: 30px;
+    width: 250px;
+}
+
+.mainfooter .two .emailletter::placeholder{
+    color: purple;
+    font-size: 16px;
+    font-family: 'Arial';
+}
+
+.mainfooter .two .submit{
+    border: 1px solid white;
+    height: 29px;
+    width: 70px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Arial';
+    color: purple;
+}
+
+.mainfooter .three p{
+    padding: 7px;
+    font-size: 14px;
+    font-family: "Arial";
+    color: white;
+    margin-left: 0px;
+}
+
+.mainfooter .three img{
+    background-color: transparent;
+    border-radius: 5px;
+    height: 27px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.finalfooter{
+    text-align: center;
+    color: white;
+    font-family: "Arial";
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:640px){
+    body{
+        margin: 0;
+    }
+
+    .header{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 180px;
+    } 
+
+    .header li{
+        display: block;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        line-height: 15px;
+        color: white;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    .header li a{
+        color: white;
+        font-family: 'Arial';
+        text-decoration: none;
+    }
+
+    .header li a:hover{
+        color: black;
+    }
+
+    .header .logo img{
+        display: block;
+        height: 75px;
+    }
+
+    .mainbody{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration{
+        text-align: center;
+        margin: 20px 40px 0;
+    }
+
+    .registration h1{
+        font-size: 30px;
+    }
+
+    .registration p{
+        font-size: 15px;
+    }
+
+    .regform{
+        width: 300px;
+        margin: 25px 30px 30px 40px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .regform label{
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .regform .inputbox{
+        width: 270px;
+    }
+
+    .regform .box{
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+    .regform label p{
+        font-size: 14px;
+    }
+
+    .regform .signup{
+        width: 90px;
+        margin-left: 90px;
+        font-size: 15px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .mainfooter{
+        flex-direction: column;
+    }
+
+    .one{
+        padding: 10px 0 0 20px;
+    }
+
+    .two{
+        padding: 10px 0 0 20px;
+    }
+
+    .two .emailletter{
+        width: 200px;
+    }
+
+    .three{
+        padding: 10px 0 0 15px;
+    }
+
+
+    .finalfooter{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1050px) and (min-width:640px){
+    body{
+        margin: 0;
+    }
+
+    .header{
+       display: flex;
+    } 
+
+    .header li{
+        display: inline-block;
+        margin-right: 50px;
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .mainbody{
+         align-items: center;
+         flex-direction: column;
+    }
+
+    .registration{
+        text-align: center;
+        margin: 20px 40px 0;
+    }
+
+    .registration h1{
+        font-size: 45px;
+    }
+
+    .registration p{
+        font-size: 20px;
+    }
+
+    .regform{
+        width: 600px;
+        margin: 20px 30px 30px 40px;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .regform label{
+        margin-right: 10px;
+        margin-left: 13px;
+    }
+
+    .regform .inputbox{
+        width: 550px;
+        height: 40px;
+        margin-left: 13px;
+    }
+
+    .regform .box{
+        margin-left: 150px;
+    }
+
+    .regform label p{
+        font-size: 15px;
+    }
+
+    .regform .signup{
+        width: 120px;
+        margin-left: 250px;
+        font-size: 15px;
+    }
+
+    footer{
+        width: 100%;
+        }
+
+    .mainfooter{
+        display: grid;
+        bottom: 0;
+        width: 100%;
+        grid-template-columns: auto auto;
+    }
+
+    .one li{
+        font-size: 20px;
+    }
+
+    .two p{
+        font-size: 18px;
+    }
+
+    .two .emailletter{
+        width: 250px;
+        height: 37px;
+    }
+
+    .mainfooter .two .submit{
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .mainfooter .three p{
+        font-size: 20px;
+    }
+
+
+    .finalfooter{
+        align-items: center;
+    }
+
+    .finalfooter p{
+        font-size: 20px;
+    }
+}
