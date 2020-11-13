@@ -183,5 +183,4 @@ values(2, 3, 5, 600.00),
 (4, 2, 2, 370.00),
 (3, 4, 5, 1100.00);
 
-# View Table
 select * from order_items;
