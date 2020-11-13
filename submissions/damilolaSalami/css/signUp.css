@@ -15,7 +15,7 @@
     justify-content: space-between;
     display: flex;
     height: 75px;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .header .logo img{
@@ -62,7 +62,7 @@
 
 .regform{
     padding: 25px 50px 10px 35px;
-    margin: 65px 120px 40px 0px;
+    margin: 65px 120px 40px 0;
     width: 500px;
     border: 1px solid black;
     border-radius: 10px;
@@ -102,7 +102,7 @@
     height: 30px;
     width: 150px;
     margin-left: 150px;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 /* footer */
@@ -133,7 +133,7 @@
 }
 
 .two{
-    padding-left: 0px;
+    padding-left: 0;
 }
 .two p{
     color: white;
@@ -170,7 +170,7 @@
     font-size: 14px;
     font-family: "Arial";
     color: white;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .mainfooter .three img{
@@ -248,7 +248,7 @@
     .regform{
         width: 300px;
         margin: 25px 30px 30px 40px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
 
     .regform label{
@@ -343,7 +343,7 @@
     .regform{
         width: 600px;
         margin: 20px 30px 30px 40px;
-        padding: 20px 10px 10px 10px;
+        padding: 20px 10px 10px;
     }
 
     .regform label{
