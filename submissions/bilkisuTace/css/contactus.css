@@ -1,6 +1,4 @@
-/***************************
-        NAVIGATION
-***************************/
+/*NAVIGATION*/
 .topnav {
     width: 100%;
     display: flex;
@@ -37,9 +35,7 @@
     color: white;
     text-decoration: none;
 }
-/***************************
-            BODY
- ****************************/
+/*BODY*/
 .container {
     display: flex;
     flex-direction: column;
@@ -55,7 +51,7 @@
     flex-wrap: wrap;
     height: 100%;
 }
-/*******BODY WRITE-UP********/
+/*BODY WRITE-UP*/
 .body-text {
     flex: 1;
     min-width: 400px;
@@ -84,7 +80,7 @@
     list-style-type: none;
     padding-left: 35%;
 }
-/*********BODY SIGN-UP FORM*******/
+/*BODY SIGN-UP FORM*/
 .div-form {
     flex: 1;
     min-width: 400px;
@@ -131,9 +127,7 @@
     height: 40px;
     font-size: 18px;
 }
-/**********************************
-            FOOTER
-**************************************/
+/*FOOTER*/
 .footer {
     margin-top: 20px;
     width: 100%;
@@ -165,7 +159,7 @@
     flex-wrap: wrap;
     width: 100%;
 }
-/***********FOOTER LINKS FOR PAGES*********/
+/*FOOTER LINKS FOR PAGES*/
 .footer-links {
     width:30%;
     min-width: 250px;
@@ -175,7 +169,7 @@
     width: 90%;
     font-size: 14px;
 }
-/*******SIGN UP FOR OUR NEWSLETTER**********/
+/*SIGN UP FOR OUR NEWSLETTER*/
 .footer-news {
     padding-top: 1%;
     width:40%;
