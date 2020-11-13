@@ -23,6 +23,7 @@
     width: 200px;
     margin-left: 15px;
 }
+
 .header li{
     display: inline-block;
     list-style-type: none;
@@ -135,6 +136,7 @@
 .two{
     padding-left: 0;
 }
+
 .two p{
     color: white;
     font-family: 'Arial';
@@ -298,7 +300,6 @@
     .three{
         padding: 10px 0 0 15px;
     }
-
 
     .finalfooter{
         padding-top: 20px;
