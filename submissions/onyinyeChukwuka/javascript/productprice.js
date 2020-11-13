@@ -18,4 +18,4 @@ for (i = 0; i < productList.length; i++) {
     const product = productList[i];
     const text = `${product.productName} with ${product.imageUrl} is sold for ${product.productPrice}`;
     console.log(text);
-  };
+  }
