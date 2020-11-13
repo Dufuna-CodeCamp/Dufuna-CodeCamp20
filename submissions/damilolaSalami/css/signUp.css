@@ -202,8 +202,8 @@
         align-items: flex-start;
         flex-direction: column;
         height: 180px;
-    } 
-
+    }
+    
     .header li{
         display: block;
         margin-left: 15px;
@@ -313,7 +313,7 @@
 
     .header{
         display: flex;
-    } 
+    }
 
     .header li{
         display: inline-block;
