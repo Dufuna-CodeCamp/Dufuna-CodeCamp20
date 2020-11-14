@@ -493,11 +493,6 @@ img {
     height: 200px;
     position: relative;
 }
-
-.copyright-text {
-    position: absolute;
-    top: 150px;
-}
 }
 
 /* MEDIA QUERIES FOR MOBILE */
