@@ -605,6 +605,18 @@ img {
     padding-bottom: 20px;
 }
 
+.related-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.related-products h2 {
+    margin-left: -1.5px;
+}
+
 .pp-footer {
     height: 350px;
     position: relative;
