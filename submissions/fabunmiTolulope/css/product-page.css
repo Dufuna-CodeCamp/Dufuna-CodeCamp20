@@ -54,7 +54,7 @@ a:hover{
 }
 .cost h3{
 	font-size: 1.1em;
-	}
+}
 #quantity{
 	font-size: 14px;
 	padding: 5px;
@@ -133,7 +133,7 @@ footer ul li{
 #footer-email{
 	margin-top: 10px;
 	width: 250px;
-	height: 30px;
+	padding: 15px;
 }
 #footer-submit{
 	margin-top: 10px;
@@ -147,7 +147,6 @@ footer ul li{
 	margin-left: 250px;
 }
 .footer-connect .img{
-	height: 40px;
 	width: 40px;
 	padding: 7px;
 	border-radius: 15px;
@@ -378,11 +377,9 @@ footer ul li{
 	margin: 20px 50px;
 	}
 	.similar figure{
-	height: 150px;
 	width: 200px;
 	}
 	.similar img{
-	height: 100px;
 	width: 130px;
 	}
 	footer{
@@ -398,7 +395,7 @@ footer ul li{
 	list-style: none;
 	}
 	.footerlist{
-	margin-right: 50px;
+	margin-right: 40px;
 	}
 	.footerlist ul{
 		padding-inline-start: 0;
@@ -407,19 +404,23 @@ footer ul li{
 		margin: auto;
 	}
 	#footer-email{
-	margin-top: 10px;
-	width: 200px;
-	padding: 10px;
+	margin-top: 5px;
+	width: 150px;
+	padding: 5px;
 	}
 	#footer-submit{
-	margin-top: 10px;
+	margin-top: 5px;
 	font-size: 15px;
+	padding: 5px;
 	background-color: #B7EEB7;
 	color: #FF530E;
 	}
 	.footer-connect{
 	padding: 10px;
-	margin-left: 50px;
+	margin-left: 40px;
+	}
+	.footer-connect img{
+		width: 35px;
 	}
 	.full-footer p{
 	cursor: pointer;
