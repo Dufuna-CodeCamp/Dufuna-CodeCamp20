@@ -107,6 +107,11 @@ img {
     font-weight: bold;
 }
 
+.showcase-details button:active,
+.showcase-details button:hover {
+    background-color: #f9ab04;
+}
+
 #quantity {
     width: 70px;
     height: 25px;
@@ -162,6 +167,27 @@ img {
 }
 
 .footer input[id="footer-input"] {
+    height: 25px;
+    width: 60% !important;
+    border: 1px solid transparent !important;
+    border-radius: 0 !important;
+}
+
+.pp-footer {
+    background-color: #047aed;
+    color: #ffffff;
+    height: 118px;
+    margin-top: -12px;
+}
+
+.pp-footer a {
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 5px;
+    height: 15px;
+}
+
+.pp-footer input[id="footer-input"] {
     height: 25px;
     width: 60% !important;
     border: 1px solid transparent !important;
@@ -456,6 +482,22 @@ img {
     top: 150px;
 }
 
+/* product page tablet */
+#pp-footer-item {
+    position: absolute;
+    right: 155px;
+    top: 60px;
+}
+
+.pp-footer {
+    height: 200px;
+    position: relative;
+}
+
+.copyright-text {
+    position: absolute;
+    top: 150px;
+}
 }
 
 /* MEDIA QUERIES FOR MOBILE */
@@ -568,6 +610,31 @@ img {
     padding-bottom: 20px;
 }
 
+.pp-footer {
+    height: 350px;
+    position: relative;
+    padding-top: 20px;
+}
+
+#pp-footer-item-two {
+    position: absolute;
+    right: 70px;
+    top: 105px;
+}
+
+#pp-footer-item {
+    position: absolute;
+    left: 49px;
+    top: 170px;
+}
+
+.pp-footer input[id="footer-input"] {
+    width: 200px !important;
+}
+
+.ft-navbar-ul {
+    margin-left: -10px;
+}
 /* contact page mobile */
 .register-fieldset, .contact-form fieldset {
     width: 350px;
