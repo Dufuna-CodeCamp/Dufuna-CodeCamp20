@@ -1,7 +1,6 @@
 let submit = document.getElementById("formValidation"),
   firstName = document.getElementById("firstName"),
   lastName = document.getElementById("lastName"),
-  otherName = document.getElementById("otherName"),
   phoneNo = document.getElementById("phoneNo"),
   email = document.getElementById("email"),
   password = document.getElementById("password"),
@@ -28,8 +27,8 @@ function validation( field, regExp, validationErrorMessage, errorMessage, event 
 function formValidation(e) {
   //RegEx
   let nameReg = /^[a-zA-Z]/,
-      phoneReg = /^[\+]?[0-9]{8,14}$/,
-      emailReg = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)*(\.\w{2,10})+$/,
+      phoneReg = /^[+]?[0-9]{8,13}$/,
+      emailReg = /^\w+([-]?\w+)@\w+([-]?\w+)*(\.\w{2,10})+$/,
       passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
 
       //checkValidation
