@@ -80,6 +80,8 @@ a:hover{
 	display: block;
 	flex: 1 100%;
 	width: 100%;
+	padding: 20px;
+	margin: 20px;
 }
 .description h3{
 	font-size: 1.4em;
@@ -94,10 +96,10 @@ a:hover{
 .similar h3{
 	font-size: 1.2em;
 }
-.similar ul li{
+.similar div{
+	display: inline-grid;
 	background-color: white;
 	border: 1px solid gray;
-	display: inline-grid;
 	padding: 20px;
 	margin: 20px 80px;
 }
@@ -352,6 +354,9 @@ footer ul li{
 	list-style-type: none;
 	margin: 0;
     padding: 0;
+	}
+	.cavendish{
+	margin: 10px 25px;
 	}
 	.description{
 	width: 90%;
