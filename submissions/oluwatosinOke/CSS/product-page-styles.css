@@ -224,7 +224,7 @@ figcaption
   height:78px;
 }
 
-@media screen and (max-width:400px)
+@media screen and (max-width:450px)
 {
     header
     {
@@ -442,7 +442,7 @@ figcaption
 
     ::placeholder
     {
-        font: normal 2vh  "cookie";
+        font: normal 10px  "cookie";
     }
   
     .footer-right img
