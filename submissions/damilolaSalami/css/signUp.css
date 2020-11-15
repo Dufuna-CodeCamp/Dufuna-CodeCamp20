@@ -371,7 +371,6 @@ body{
         width: 100%;
         display: grid;
         bottom: 0;
-        width: 100%;
         grid-template-columns: auto auto;
     }
 
