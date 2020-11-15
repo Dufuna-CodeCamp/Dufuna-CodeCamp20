@@ -369,9 +369,6 @@ body{
 
     .mainfooter{
         width: 100%;
-        }
-
-    .mainfooter{
         display: grid;
         bottom: 0;
         width: 100%;
