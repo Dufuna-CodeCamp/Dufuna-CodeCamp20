@@ -1,6 +1,7 @@
 CREATE DATABASE ohonbatransport;
 
 use ohonbatransport;
+SHOW tables;
 
 CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
