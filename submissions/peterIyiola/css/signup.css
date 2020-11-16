@@ -21,9 +21,12 @@
             clear: both;
             width: 100%;
     }
-    .errorMsg   {
-        color:yellow;
-        font-weight: bold;
+     .errorMsg   {
+            color:red;
+            font-weight: bold;
+            display: flex;
+        
+        
     }
     
     

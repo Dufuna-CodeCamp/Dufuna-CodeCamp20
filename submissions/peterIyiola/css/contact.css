@@ -24,8 +24,11 @@ img   {
     margin-left: 15px;
 }
 .errorMsg   {
-    color:yellow;
+    color:red;
     font-weight: bold;
+    display: flex;
+
+
 }
 
 

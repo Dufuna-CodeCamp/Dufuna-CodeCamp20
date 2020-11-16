@@ -1,26 +1,26 @@
 
-let sendNews = document.getElementById('newsField'),
-    newsLetter = document.getElementById('newsLetter');
-    errorMsg = document.getElementsByClassName('errorMsg');
+        let sendNews = document.getElementById('newsField');
+        let newsLetter = document.getElementById('newsLetter');
 
-    const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,10})+$/;
-      
-    function validations(event,errorMsg,newsLetter) {
-        if (newsLetter.value === '') {
-            errorMsg.innerHTML = "please enter your email address";
-            event.preventDefault();
-            return false;
-        } 
-        else if (!newsLetter.value.match(emailRegex)) {
-            errorMsg.innerHTML = "please enter a valid email address";
-            event.preventDefault();
-            return false;
-        } 
-        else {
-            errorMsg.innerHTML = "";
-            return true;
-        }
-        }
+function validations(field, event) {
+    let emailRegex = /[a-z0-9]+@[a-z]+\.com$/i;
+    if (field.value === '') {
+        field.nextElementSibling.innerHTML = "Please enter your email Address";
+        event.preventDefault();
+        return false;
+    } else if (!(field.value.match(emailRegex))) {
+        field.nextElementSibling.innerHTML = "Please enter a valid email";
+        event.preventDefault();
+        return false;
+    } else {
+        field.nextElementSibling.innerHTML = '';
+        return true;
+    }
+}
 
-        sendNews.addEventListener('submit',newsField);
+function newsField(e) {
+    validations(newsLetter, e);
+    return true;
+}
 
+sendNews.addEventListener('submit', newsField);

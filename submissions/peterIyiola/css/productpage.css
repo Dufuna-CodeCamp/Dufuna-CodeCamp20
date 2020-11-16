@@ -24,8 +24,11 @@
 }
 
 .errorMsg   {
-    color:yellow;
+    color:red;
     font-weight: bold;
+    display: flex;
+
+
 }
 label{
     width: fit-content;
@@ -120,6 +123,13 @@ h4  {
       width: 300px;
     height: 400px;
     background-color:white;
+}
+.submit  {
+    width: fit-content;
+    cursor: pointer;
+}
+.submit:hover  {
+ background-color:burlywood;
 }
 
 .flex-container2  {
