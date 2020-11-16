@@ -46,14 +46,14 @@ function validation(
   }
 }
 
-function formValidation(e) {
-  //RegEx
-  let name = "",
-    phoneReg = /^[+]?[0-9]{8,13}$/,
-    emailReg = /[a-z0-9]+@[a-z]+\.com$/i,
-    passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm,
-    confirmPasswordReg = password.value;
+//RegEx
+let name = "",
+  phoneReg = /^[+]?[0-9]{8,13}$/,
+  emailReg = /[a-z0-9]+@[a-z]+\.com$/i,
+  passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm,
+  confirmPasswordReg = password.value;
 
+function formValidation(e) {
   //checkValidation
   validation(firstName, name, firstNameRequired, firstError, e);
   validation(lastName, name, lastNameRequired, lastError, e);
