@@ -65,7 +65,8 @@ header nav
 }
 
 /*Right-column*/
-.right-column {
+.right-column
+{
     width: 65%;
     margin-top: 1px;
     padding: 10px;
@@ -78,13 +79,15 @@ header nav
     color: blueviolet;
 }
 
-#quantity {
+#quantity
+{
     padding: 5px;
     width: 95px;
     border: 1px solid #555;
 }
 
-.product-information input[type=button]{
+.product-information input[type=button]
+{
     display: inline-block;
     background-color: #00f798a8;
     border-radius: 6px;
@@ -94,7 +97,8 @@ header nav
     padding: 12px 30px;
 }
 
-.product-information input[type=button]:hover {
+.product-information input[type=button]:hover
+{
     background-color: palevioletred;
 }
 
@@ -118,11 +122,13 @@ header nav
     font: bold 25px 'Cookie', cursive;
     color: blueviolet;
 }
+
 .bottom-column h3
 {
 text-align: center;
 padding: 1px;
 }
+
 .bottom-column li
 {
     display: inline-block;
@@ -145,6 +151,7 @@ figcaption
     text-align: center;
     color: black;
 }
+
 /*footer*/
 .footer
 {
@@ -181,7 +188,8 @@ figcaption
     padding-left: 400px;
 }
 
-.footer-left a{
+.footer-left a
+{
     color:  blueviolet;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
@@ -190,17 +198,20 @@ figcaption
     text-decoration: none;
 }
 
-.footer-center{
+.footer-center
+{
     width: 29%;
     padding-right: 20px;
 }
 
-.footer-center input[type=email] {
+.footer-center input[type=email]
+{
     width: 30%;
     height: 50px;
 }
 
-.footer-center input[type=button] {
+.footer-center input[type=button]
+{
     width: 10%;
     height: 50px;
     font: bolder 20px 'Cookie', cursive;
@@ -280,7 +291,8 @@ figcaption
     }
 
     /*Right-column*/
-    .right-column {
+    .right-column
+    {
         margin-left: 120px;
         width: 100%;
         margin-top: 1px;
@@ -433,7 +445,8 @@ figcaption
         padding: 1px;
     }
   
-    .footer-center input[type=button] {
+    .footer-center input[type=button]
+    {
         width: fit-content;
         height: 12px;
         font: normal 7px  "cookie";
