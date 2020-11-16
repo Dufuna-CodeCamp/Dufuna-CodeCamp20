@@ -41,12 +41,12 @@ select * from trip_details order by ticket_id asc;
 /*********************************
 *** Creating the trip_status
 */
-create table flight_status(
+create table accident_status(
 	id int not null auto_increment,
-    trip_id int not null,
-    trip_status varchar(20) not null,
+    passenger_id int not null,
+    accident_status varchar(10) not null,
     primary key(id),
-    foreign key(trip_id) references trip_details(id)
+    foreign key(passenger_id) references passengers(id)
 );
 
-select * from flight_status;
+select * from accident_status;
