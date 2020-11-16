@@ -1,7 +1,6 @@
 CREATE DATABASE ohonbatransport;
 
 use ohonbatransport;
-SHOW tables;
 
 CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -20,10 +19,10 @@ CREATE TABLE trips (
     number_of_parents_children INT(11) NOT NULL,
     number_of_siblings_spouse INT(11) NOT NULL,
 	assigned_cabin VARCHAR(10) NOT NULL,
-    passenger_id INT(11) NOT NULL,
+    passenger_id INT NOT NULL,
     point_of_embarkation VARCHAR(255) NOT NULL,
     PRIMARY KEY(id),
-    FOREIGN KEY(passenger_id) REFERENCES passengers(id)
+    FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
 );
 
 CREATE TABLE accidents (
