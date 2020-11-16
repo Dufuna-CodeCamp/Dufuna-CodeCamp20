@@ -29,8 +29,9 @@ CREATE TABLE trips (
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
     survived BOOLEAN NOT NULL,
-    died BOOLEAN NOT NULL,
-    PRIMARY KEY(id)
+    passenger_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
 );
 
 
