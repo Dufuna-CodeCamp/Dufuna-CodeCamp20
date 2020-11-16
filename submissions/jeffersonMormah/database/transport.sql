@@ -30,23 +30,8 @@ CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
     survived BOOLEAN NOT NULL,
     died BOOLEAN NOT NULL,
-    PRIMARY KEY(id),
-    FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
+    PRIMARY KEY(id)
 );
 
-INSERT INTO passengers (firstname, lastname, sex)
-VALUES('Donald', 'Trump', 'Male'),
-	('Anderson', 'Cooper', 'Male'),
-    ('Reese', 'Whitherspoon', 'Female');
 
-INSERT INTO trips (passenger_class, passenger_ticket, trip_fare, assigned_cabin, number_of_parents_children, number_of_siblings_spouse, passenger_id, point_of_embarkation)
-VALUES(2, 'OHB21153', 45000, 'D12', 2, 1, 1, 'Lagos'),
-	  (1, 'OHB21154', 45000, 'D11',3, 2, 2, 'Lagos'),
-      (3, 'OHB21152', 45000, 'D12', 3, 1, 4, 'Lagos');
-      
-    
-INSERT INTO accidents(survived, died)
-VALUES(1, 0),
-	(1, 0),
-    (1, 0);
     
