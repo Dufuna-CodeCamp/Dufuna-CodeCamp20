@@ -44,7 +44,7 @@ select * from trip_details order by ticket_id asc;
 create table accident_status(
 	id int not null auto_increment,
     passenger_id int not null,
-    accident_status varchar(10) not null,
+    accident_status tinyint not null,
     primary key(id),
     foreign key(passenger_id) references passengers(id)
 );
