@@ -13,18 +13,17 @@ CREATE TABLE passengers (
 );
 
 CREATE TABLE trips (
-	id INT NOT NULL AUTO_INCREMENT,
-    passenger_class INT NOT NULL,
-    passenger_ticket VARCHAR(20) NOT NULL,
-    trip_fare DECIMAL(19,4),
-    assigned_cabin INT NOT NULL,
-    number_of_parents_children INT NOT NULL DEFAULT 0,
-    number_of_siblings_spouse INT NOT NULL DEFAULT 0,
-    passenger_id INT NOT NULL,
+	id INT(10) NOT NULL AUTO_INCREMENT,
+    passenger_class INT(10) NOT NULL,
+    passenger_ticket VARCHAR(50) NOT NULL,
+    trip_fare DECIMAL(10,4),
+    number_of_parents_children INT(11) NOT NULL,
+    number_of_siblings_spouse INT(11) NOT NULL,
+	assigned_cabin VARCHAR(10) NOT NULL,
+    passenger_id INT(11) NOT NULL,
     point_of_embarkation VARCHAR(255) NOT NULL,
     PRIMARY KEY(id),
-    FOREIGN KEY(passenger_class) REFERENCES classes(id) ON DELETE CASCADE,
-    FOREIGN KEY(passenger_id) REFERENCES passengers(id) ON DELETE CASCADE
+    FOREIGN KEY(passenger_id) REFERENCES passengers(id)
 );
 
 CREATE TABLE accidents (
