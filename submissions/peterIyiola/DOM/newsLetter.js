@@ -1,19 +1,18 @@
-
         let sendNews = document.getElementById('newsField');
         let newsLetter = document.getElementById('newsLetter');
 
-function validations(field, event) {
+function validations(newsLetter, event) {
     let emailRegex = /[a-z0-9]+@[a-z]+\.com$/i;
-    if (field.value === '') {
-        field.nextElementSibling.innerHTML = "Please enter your email Address";
+    if (newsLetter.value === '') {
+        newsLetter.nextElementSibling.innerHTML = "Please enter your email Address";
         event.preventDefault();
         return false;
     } else if (!(field.value.match(emailRegex))) {
-        field.nextElementSibling.innerHTML = "Please enter a valid email";
+        newsLetter.nextElementSibling.innerHTML = "Please enter a valid email";
         event.preventDefault();
         return false;
     } else {
-        field.nextElementSibling.innerHTML = '';
+        newsLetter.nextElementSibling.innerHTML = '';
         return true;
     }
 }
