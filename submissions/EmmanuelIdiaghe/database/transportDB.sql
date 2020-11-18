@@ -77,3 +77,4 @@ where accident_status > 0 and embarkation_point like "S%";
 select passengers.id, passengers.name_of_passenger, COUNT(*) OVER () AS total_count from passengers 
 inner join trip_details on passengers.id = trip_details.passenger_id 
 where trip_fare > 100 and age > '35' and siblings_or_spouses_aboard > 0;
+############# Answer: 9
