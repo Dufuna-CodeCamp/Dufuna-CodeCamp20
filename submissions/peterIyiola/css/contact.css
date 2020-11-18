@@ -23,6 +23,13 @@ img   {
     line-height: 20px;
     margin-left: 15px;
 }
+.errorMsg   {
+    color:red;
+    font-weight: bold;
+    display: flex;
+
+
+}
 
 
 .flex-container   {
