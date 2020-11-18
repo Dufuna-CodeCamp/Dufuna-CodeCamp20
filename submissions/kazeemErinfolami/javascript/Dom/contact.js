@@ -11,10 +11,8 @@ let fullNameRequired = "⚠️Please enter your Name",
   messageRequired = "⚠️Please enter your Message";
 
 //required validation Error message
-let fullNameError = "no special cha",
-  emailError = "⚠️Please enter a valid email",
-  subjectError = "",
-  messageError = "";
+let fullNameError = "⚠️no special character",
+  emailError = "⚠️Please enter a valid email";
 
 function validation(
   field,
@@ -39,17 +37,15 @@ function validation(
 }
 
 //RegEx
-let name = "",
-  emailReg = /[a-z0-9]+@[a-z]+\.com$/i,
-  subjectReg = "",
-  messageReg = "";
+let nameReg = /^[a-zA-Z]/;
+emailReg = /[a-z0-9]+@[a-z]+\.com$/i;
 
 function formValidation(e) {
   //checkValidation
-  validation(fullName, name, fullNameRequired, fullNameError, e);
+  validation(fullName, nameReg, fullNameRequired, fullNameError, e);
   validation(email, emailReg, emailRequired, emailError, e);
-  validation(subject, subjectReg, subjectRequired, subjectError, e);
-  validation(message, messageReg, messageRequired, messageError, e);
+  validation(subject, "", subjectRequired, "", e);
+  validation(message, "", messageRequired, "", e);
 }
 
 submit.addEventListener("submit", formValidation);
