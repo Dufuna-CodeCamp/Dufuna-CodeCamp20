@@ -1,0 +1,6 @@
+Hello World!!!
+My name is Betty Bada.
+
+I have been able to push my first task to Github.
+I want to be able to learn the processes involved in Software Development.
+
