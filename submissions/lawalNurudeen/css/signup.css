@@ -20,11 +20,6 @@ a {
     text-decoration: none;
 }
 
-nav #brand-logo img {
-    /* margin: 10px 0; */
-    box-shadow: 0 0 10px #555;
-}
-
 .nav-links {
     list-style: none;
     padding: 15px 0;
@@ -133,7 +128,7 @@ footer {
 }
 
 .social-links p {
-    margin: 20px 0 10px 0;
+    margin: 20px 0 10px;
 }
 
 .social-icons img {
