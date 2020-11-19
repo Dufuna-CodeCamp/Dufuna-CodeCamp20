@@ -44,16 +44,20 @@
   <div class="container">
     <img id="messageUs" src="../html/images/messLogo.png">
     <h3 class="inputMessage">or better still send us a message</h3>
-    <form>
+    <form id="formValidation">
       <div class="form">
         <label for="firstName">Full Name :</label>
         <input class="forminput" type="text" name="fullName" id="fullName" />
+        <p class="error"></p>
         <label for="email">Email :</label>
         <input class="forminput" type="email" id="email" name="email" />
+        <p class="error"></p>
         <label for="subject">Subject :</label>
         <input class="forminput" type="text" id="subject" name="subject">
+        <p class="error"></p>
         <label for="message-input">Message :</label>
         <textarea class="bigInput" id="message" name="message-input" rows="4" cols="50"></textarea>
+        <p class="error"></p>
         <div class="signupbutton">
           <button id="submitbtn" type="submit">SEND</button>
         </div>
@@ -88,6 +92,7 @@
       <a href="#"> Emarket</a>
     </div>
   </footer>
+  <script src="../javascript/Dom/contact.js"></script>
 </body>
 
 </html>
