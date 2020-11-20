@@ -16,7 +16,7 @@ WHERE age < 27 AND point_of_embarkation != 'S';
 
 -- total number of the passengers that embarked at Southampton and survived
 SELECT COUNT(*) FROM accidents
-LEFT JOIN trips ON trips.passenger_id
+LEFT JOIN trips ON trips.passenger_id = accidents.passenger_id
 WHERE point_of_embarkation = 'S' AND survived = 1;
 
 -- Answer = 218
