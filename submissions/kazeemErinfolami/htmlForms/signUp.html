@@ -28,29 +28,38 @@
     </div>
     </section>
     <div class="container">
-      <form>
+      <form id="formValidation">
         <div class="form">
-          <label for="firstName">First Name :</label>
-          <input class="forminput" type="text" name="firstName" id="firstName" />
-          <label for="lastName">Last Name :</label>
-          <input class="forminput" type="text" name="lastName" id="lastName" />
-          <label for="otherName">Other Name :</label>
-          <input class="forminput" type="text" name="otherName" id="otherName" />
-          <label for="phoneNo">Phone No :</label>
-          <input class="forminput" type="number" name="phoneNo" id="phoneNo" />
-          <label for="email">Email Address :</label>
-          <input class="forminput" type="email" name="email" id="email" />
-          <label for="password">Password :</label>
-          <input class="forminput" type="password" name="password" id="password" />
-          <label for="confirmPassword">Confirm Password :</label>
-          <input class="forminput" type="password" name="confirmPassword" id="confirmPassword" />
+          <label for="firstName" id="firstNameL">First Name :</label>
+          <input class="forminput" type="text" name="firstName" id="firstName"/>
+          <p class="error"></p>
+          <label for="lastName" id="lastNameL">Last Name :</label>
+          <input class="forminput" type="text" name="lastName" id="lastName"/>
+          <p class="error"></p>
+          <label for="otherName" id="otherNameL">Other Name :</label>
+          <input class="forminput" type="text" name="otherName" id="otherName"/>
+          <p class="error"></p>
+          <label for="phoneNo" id="phoneNoL">Phone No :</label>
+          <input class="forminput" type="text" name="phoneNo" id="phoneNo"/>
+          <p class="error"></p>
+          <label for="email" id="emailL">Email Address :</label>
+          <input class="forminput" type="email" name="email" id="email"/>
+          <p class="error"></p>
+          <label for="password" id="passwordL">Password :</label>
+          <input class="forminput" type="password" name="password" id="password"/>
+          <p class="error"></p>
+          <label for="confirmPassword" id="confirmPasswordL">Confirm Password :</label>
+          <input class="forminput" type="password" name="confirmPassword" id="confirmPassword"/>
+          <p class="error"></p>
         </div>
         <div class="agreeContainer">
-          <label for="agree" class="agree"><input id="box" type="checkbox" name="agree" id="agree" />I agree to the Terms
-          and Conditions</label>
+          <label for="agree" id="agreeL" class="agree">
+          <input id="box" type="checkbox" name="agree" id="agree" required>I agree to the Terms and Conditions</label>
+          <p class="error"></p>
         </div>
         <div class="signupbutton">
           <button type="submit" id="submitbtn">Sign up</button>
+          <p class="error"></p>
         </div>
       </form>
     </div>
@@ -82,7 +91,6 @@
         <a href="#"> Emarket</a>
       </div>
     </footer>
+    <script src="../javascript/Dom/signUp.js"></script>
   </body>
-  
-  </html>
 </html>

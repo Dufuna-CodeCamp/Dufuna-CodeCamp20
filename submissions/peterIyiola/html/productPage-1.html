@@ -28,20 +28,13 @@
       <div class="productdescription">
      <h4>65 INCHES CURVED QLED 4K TV</h4>
      <p>Brand:Samsung</p>
-     <form class="quantity">
-      <label for="Number">Quantity</label>
-      <input list="Number">
-      <datalist id="Number">
-        <option value="1">
-        <option value="2">
-        <option value="3">
-        <option value="4">
-        <option value="5">
-      </datalist>
-    </form>
-   <p>Price:<span>&#8358;</span>750000</p>
-   <p>Shopping Cost:<span>&#8358;</span>750000</p>
-   <button class="btn">BUY NOW</button>
+
+   <p>Quantity:<input id="quantity" type="number" class="productNumber value="1"/></p>
+   <span class="errorMsg"></span>
+   <p>Price:<span id="price">&#8358;</span>750000</p>
+   <p>Shipping Cost:<span id="shippingCost">&#8358;</span>25000</p>
+   <p>Total Cost:<span id="totalCost">&#8358;</span>775000</p>
+   <button class="btn" id="buy">BUY NOW</button>
       </div>
       </div>
       <div class="about">
@@ -83,9 +76,12 @@
             <a href="#">Terms and Conditions</a><br>
          </div>
          <div id="subscribe">
+            <form id="newsField">
             <p>Subscribe to our Newsletter</p>
-            <input type="email" id="email" placeholder="enter your email address"/>
+            <input id="newsLetter" type="email" id="email" placeholder="enter your email address"/>
+            <span class="errorMsg"></span>
             <button class="submit">SUBMIT</button>
+            </form>
          </div>
          <div class="socialmedia">
             <p>Connect with us</p>
@@ -99,6 +95,7 @@
          <p>&copy; 2020 BetterBuys.com All Rights Reserved</p>
       </div>
    </footer>
+   <script src="../DOM/newsLetter.js"></script>
 </body>
 </html>
    </body>

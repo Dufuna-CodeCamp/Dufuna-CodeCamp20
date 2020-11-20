@@ -2,50 +2,110 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Naija Market Place</title>
+        <title>Product Page</title>
+        <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
-    <body>
-        <h1>Naija Market Place: Your online one-stop shop</h1>
-            <nav>
-                <ul>
-                    <li><a href="../html/productPage.html">Home</a></li>
-                    <li><a href="../html-forms/contact-form.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        <h3>Hot deals for you</h3>
-        <div>
-            <img src="images\nikes3.jpg">
-            <h4>Nike thunderstorm White-soled forest-green sneakers for women</h4>
-            <p><b>&#x20A6 18,999.99</b></p>
-            <ul>
-                <li>Lightweight construction with breathable mesh fabric for maximum comfort and performance</li>
-                <li>Lace-up closure for a snug fit</li>
-                <li>High quality EVA sole for traction and exceptional durability</li>
-            </ul>
+
+    <body class="productpage">
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo">Beautify.</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../html/productPage.html">Product Page</a></li>
+                        <li><a href="../html-forms/signUp.html">Sign Up</a></li>
+                        <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <div>
-            <img src="images\nikes2.jpg">
-            <h4>New Arrival White Breathable Flat Sneakers Women Summer Ladies Casual Shoes Lightweight</h4>
-            <p><b>&#x20A6 15,999.99</b></p>
-            <ul>
-                <li>Adult flat sneakers with breathable mesh fabric and rubber soles</li>
-                <li>Fits true to size</li>
-                <li>High qualityPVC instep for comfort and balance</li>
-            </ul>
+        <!-- SHOWCASE PRODUCTS -->
+        <section class="showcase">
+            <div class="container grid">
+                <div class="showcase-img">
+                    <img class="main-img" src="images\nikes2.jpg">
+                </div>
 
-        <div>
-            <p><b>People who bought this also bought:</b></p>
-            <ol>
-                <li><a href="#">Adidas pastel women sneakers blue</a></li>
-                <li><a href="#">Adidas NMD R-1 women sneakers white</a></li>
-                <li><a href="#">Nike Pink ribbon customized Air Max 270</a></li>
-                <li><a href="#">Nike Running Air Zoom Pegasus Sneakers in Gray</a></li>
-            </ol>
+                <div class="showcase-details">
+                    <h4>WHITE-SOLED THUNDERSTORM WOMEN SNEAKERS</h4>
+                    <p>Brand: Nike</p>
+                    <p>Quantity:  <input type="text" name="quantity" id="quantity"></p>
+                    <p>Price: $150</p>
+                    <button type="submit">BUY NOW</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="showcase-product description">
+                <h4 class="description-header">DESCRIPTION</h4>
+                <p class="description-text">This beautiful pair of white sneakers will make a statement whenever you step out. easy casual wear for comfort, you can wear on a casual day to work, a walk with your dog, or for a workout session at the gym.</p>
+            </div>
         </div>
-       
-        
 
+        <section class="related-products">
+            <div class="container">
+                <div class="related-products-header-div">
+                    <h2 class="related-products-heading">RELATED PRODUCTS</h2>
+                </div>
+            </div>
+            <div class="container grid">
+                <div class="products">
+                    <img src="images\nikes1.jpg">
+                    <h4>Black Sneakers</h4>
+                    <strong>Price: $120</strong>
+                </div>
+    
+                <div class="products">
+                    <img src="images\nikes2.jpg">
+                    <h4>White Flat Sneakers</h4>
+                    <strong>Price: $200</strong>
+                </div>
+                
+                <div class="products">
+                    <img src="images\nikes3.jpg">
+                    <h4>Ladies' Green Sneakers</h4>
+                    <strong>Price: $180</strong>
+                </div>
+            </div>
+        </section>
 
+        <!-- Footer -->
+        <footer class="pp-footer">
+            <div class="container grid">
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-item" id="pp-footer-item-two">
+                    <p>Sign up for our Newsletter</p>
+                    <input type="email" placeholder="Enter your email address" id="footer-input">
+                    <button type="button" name="submit" value="submit" id="footer-button">SUBMIT</button>
+                </div>
+    
+                <div class="footer-item" id="pp-footer-item">
+                    <strong>CONNECT WITH US</strong>
+                    <ul class="ft-navbar-ul">
+                        <a href=""><li class="fab fa-facebook fa-2x footer-navbar-li"></li></a>
+                        <a href=""><li class="fab fa-twitter fa-2x footer-navbar-li"></li></a>
+                        <a href=""><li class="far fa-envelope fa-2x footer-navbar-li"></li></a>
+                        <a href=""><li class="fab fa-youtube fa-2x footer-navbar-li"></li></a>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="container related-products-header-div">
+                <div class="copyright-text">
+                    <p>Copyright &copy; 2020.<a href="productPage.html">Beautify.</a>All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

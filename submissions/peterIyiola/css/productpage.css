@@ -14,13 +14,29 @@
 .productpagelink,.contactlink,.signuplink   {
     padding: 9px;
 }
-
 .product    {
         display: flex;
         flex-flow: wrap;
         flex-direction: row;
         margin-left: 70px;
         line-height: 2px;
+}
+.productNumber  {
+    
+    width: 46px;
+    height: 20px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    margin-left: 10px
+
+}
+
+.errorMsg   {
+    color:red;
+    font-weight: bold;
+    display: flex;
+
+
 }
 label{
     width: fit-content;
@@ -31,6 +47,7 @@ label{
 .productdescription {
     margin-left: 50px;
     margin-top: 50px;
+    line-height: 10px;
 }
 .btn    {
     border-radius:10px;
@@ -115,6 +132,13 @@ h4  {
       width: 300px;
     height: 400px;
     background-color:white;
+}
+.submit  {
+    width: fit-content;
+    cursor: pointer;
+}
+.submit:hover  {
+ background-color:burlywood;
 }
 
 .flex-container2  {

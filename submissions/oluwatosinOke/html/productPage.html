@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title> E COMMERCE </title>
+      <meta charset="UTF-8">
+      <meta content="width=device-width, initial-scale=1"
+      name="viewport"/>
+  <title>Sign Up Page</title>
+      <link rel="stylesheet" href="../CSS/product-page-styles.css">
     </head>
     <body>
-        <header>
-            <h1> MY FAVOURITE ONLINE STORE </h1>
-        </header>
-        <ul>
-            <li><a href="../html-forms/contactform.html">Contact Page</a></li>
-        </ul>
-        <nav>
-          Samsung A20
-            <strong> &#x20A6;75,000</strong>
-        </nav>
-        <img src ="./images/samsungA20frontview.jpeg">
-        <ul>
-            <li>6.4" LCD display</li>
-        </ul>
-        <img src ="./images/samsungA20backview.jpeg"> 
-        <ul>
-            <li>Backview with dual 13mp Camera and fingerprint scanner</li>
-         </ul>
-        <strong> Product Description:</strong>
-        <ol>
-            <li> Display:6.4-inch display </li>
-            <li> Storage:32GB </li>
-            <li> RAM:4GB </li>
-            <li> Camera: Front and Rear </li>
-        </ol>
-        <strong> Similar Product from seller: </strong> 
-        <ol>
-            <li> Samsung A21 </li>
-            <li> Samsung A10s </li>
-            <li> Samsung A51 </li>
-        </ol>
+            <div class="form-outline">
+                <header>
+                    <div class="nav-section">
+                        <div id="nav-logo">
+                            <h2>MY FAVORITE ONLINE STORE</h2>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="../html/productPage.html">Product Page</a></li>
+                            <li><a href="../html-forms/contactform.html">Contact Us</a></li>
+                            <li><a href="signup.html">Sign-Up</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="left-column">
+                        <img src ="./images/samsung-galaxy-a20.jpg">   
+                    </div>
+                    <div class="right-column">
+                        <div class="product-information">
+                            <h3>Galaxy A20</h3>
+                            <p>Brand: Samsung</p>
+                            <label for="quantity">Quantity: </label>
+                            <input min="1" type="number" id="quantity" name="quantity" value="0"/>
+                            <p>Price: &#x20A6;75,000</p>
+                            <p>shipping cost: &#x20A6;1,000</p>
+                            <p>Total Cost: &#x20A6;76,000</p>
+                            <input type="button" value="BUY NOW">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Product Description:</p>
+                        <p>This new samsung has a 6.4" LCD display, 32GB Storage,4GB RAM, 13MP front and rear Camera </p>
+                    </div>
+                    <div class="bottom-column"> 
+                        <h3>RELATED PRODUCT</h3>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <img src = "./images/iPhone-11.jpg">
+                                    <figcaption>
+                                        <p>iphone-11</p>
+                                        <p>price: &#x20A6;120,000</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src = "./images/Nokia-6.2.jpg">
+                                    <figcaption><p>Nokia 6.2</p> 
+                                    <p>price: &#x20A6;90,000<p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src = "./images/Infinix-Zero-8.jpg">
+                                    <figcaption><p>Infinix Zero 8</p>
+                                    <p>price: &#x20A6;100,000<p></figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <div class="footer-left">
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-center">
+                            <h3>Sign up for our Newsletter</h3>
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            <input type="button" value="SUBMIT">
+                        </div>
+                        <div class="footer-right">
+                            <h3>Connect With Us</h3>
+                            <a href="http//:www.facebook.com"><img src="../html/images/facebook-logo.png" alt=""></a>
+                            <a href="http//:www.twiiter.com"><img src="../html/images/Twitter-logo.png" alt=""></a>
+                            <a href="http//:www.gmail.com"><img src="../html/images/Gmail-logo.png" alt=""></a>
+                            <a href="http//:www.youtube.com"><img src="../html/images/youtube-logo.png" alt=""></a>
+                        </div>
+                        <p> Copyright &copy; 2020 myfavoriteonlinestore.com</p>
+                        <p>All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
     </body>
 </html>
 

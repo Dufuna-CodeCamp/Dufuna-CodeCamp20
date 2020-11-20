@@ -21,6 +21,13 @@
             clear: both;
             width: 100%;
     }
+     .errorMsg   {
+            color:red;
+            font-weight: bold;
+            display: flex;
+        
+        
+    }
     
     
     .productpagelink {

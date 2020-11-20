@@ -4,54 +4,84 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="banana, plantain, breeds of banana">
 	<meta name="author" content="Fabunmi Tolulope Eniola">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Product page for Greenprint Integrated Services</title>
+    <link rel="stylesheet" type="text/css" href="../css/product-page.css">
 </head>
 <body>
 <header>
-		<h1>Welcome to Greenprint Integrated Services</h1>
+    <h1 class="title">Greenprint</h1> 
+    <nav>
+        <ul class="nav">
+            <li><a href="../html/Productpage.html">Productpage</a></li>
+            <li><a href="../html-forms/SignUp.html">SignUp</a></li>
+            <li><a href="../html-forms/contact-form.html">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
-	<nav>
-		<ul>
-				<li><a href="#"> Home</a></li>
-				<li><a href="#">Blog</a> </li>
-				<li><a href="../HTML/Productpage.html">Productpage</a> </li>
-				<li><a href="../html-forms/contact-form.html">Contact Us</a> </li>
-		</ul>
-	</nav>
-	<hr>
-<section>
-	<h3> Organic Giant Cavendish Banana</h3>
-	<img src="images\cavendish2.jpg"s;>
-	<img src="images\cavendish.jpg";>
-	<p><strong> &#x20A6;10,000</strong></p>
+<section class="cavendish">
+	<img src="../html/images/cavendish.jpg";>
+		<div class="cost">
+			<h3> ORGANIC CAVENDISH BANANA</h3>
+			<p>Brand: Organic Cavendish</p>
+			<label for="quantity">Quantity:</label>
+			<input type="number" name="quantity" id="quantity" value="1">
+			<p>Price: &#x20A6;10,000</p>
+			<p>Shipping Cost: &#x20A6;1,500</p>
+			<p>Total Cost: &#x20A6;11,500</p>
+			<button type="submit" id="btn"><a href="#">BUY NOW</a></button>
+		</div>
 </section>
-<section>
-<p><h3> Product Description </h3>
-	From a cultivars that dominate the international trade in bananas, this <strong>Organic giant Cavendish Banana (<em>Musa sapenticum</em>)</strong> sets the standards in terms of taste and nutrient yield. <br>They are rich in Vitamin C, B6, minerals and dietary fibres. They are a rich energy source with 25%  carbohydrate. <br> It could be used for Banana Starch, flour and chips.<br> They can be eaten raw, used as smoothie and added to your homemade yummy yoghurt and Icecream.
-	<h3>Similar breeds of banana available</h3>
-	<ol>
-		<li type="i">Plantain (Cooking banana) </li>
-		<li type="i"> Grand Nain banana</li>
-		<li type="i"> Gros michel banana</li>
-		<li type="i"> Lady finger banana</li>
-		<li type="i"> <a href="#">  More items </a></li>
-	</ol> 
-</p><hr>
+<div class="description">
+	<h3>DESCRIPTION </h3>
+	<p>From a cultivars that dominate the international trade in bananas, this <strong>Organic giant Cavendish Banana (<em>Musa sapenticum</em>)</strong> sets the standards in terms of taste and nutrient yield. <br>They are rich in Vitamin C, B6, minerals and dietary fibres. They are a rich energy source with 25%  carbohydrate. <br> It could be used for Banana Starch, flour and chips.<br> They can be eaten raw, used as smoothie and added to your homemade yummy yoghurt and Icecream. </p>
+</div>
+<section class="similar">
+	<h3>SIMILAR BREEDS OF BANANA</h3>
+	<div> 
+		<figure>
+			<img src="../html/images/plantain.jpg">
+			<figcaption>Plantain (Cooking banana). <br> Price: &#x20A6;10,000</figcaption>
+			</figure>
+	</div>
+	<div>
+		<figure>
+		<img src="../html/images/gros-michel.jpg">
+		<figcaption> Gros michel banana <br> Price: &#x20A6;10,500 </figcaption>
+		</figure>
+	</div>
+	<div>
+		<figure>
+		<img src="../html/images/lady-finger.jpg">
+		<figcaption> Lady finger banana <br> Price: &#x20A6;8,500 </figcaption>	
+		</figure>
+	</div> 
 </section>
-<nav>
-	<ul>
-		<li><a href="#"> Add to cart</a></li>
-		<li><a href="#">View more products</a> </li>
-	</ul>
-</nav>
 <footer>
-	<p> For more enquiries: <em>contact us on +2347063740223 or send a mail to us at Greenprint@gmail.com</em>
-		<ul>
-			<li><a href="https://wwww.Instagram.com">Instagram</a></li>
-			<li><a href="https://wwww.facebook.com">facebook</a></li>
-		</ul>
-	</p>
-	<p><big>&copy; 2020 Greenprint Integrated Services. Copyrights reserved</big></p>
+    <div class="full-footer">
+    	<div class="footer-without">
+       		<div class="footerlist">
+        		<ul>
+            		<li><a href="../html-forms/contact-form.html">Contact Us</a></li>
+            		<li><a href="#">About Us</a></li>
+            		<li><a href="#">Terms and Conditions</a></li>
+        		</ul>
+       		</div>
+      		<div class="footer-signup">
+        		<h4>Sign up for our Newsletter</h4>
+          		<input type="email" id="footer-email" name="email" placeholder="Enter your email address">
+          		<input type="button" id="footer-submit" value="SUBMIT">
+       		</div>
+    		<div class="footer-connect">
+        		<h4>CONNECT WITH US</h4>
+    			<a href="https://www.facebook.com"><img src="../html/images/facebook-logo.jpg"></a>
+        		<a href="https://www.twitter.com"><img src="../html/images/twitter-logo.jpg"></a>
+        		<a href="https://www.gmail.com"><img src="../html/images/gmail-logo.jpg"></a>
+        		<a href="https://www.youtube.com"><img src="../html/images/youtube-logo.jpg"></a>
+        	</div>
+		</div>
+    <p>&copy; 2020 Greenprint Integrated Services.<br> Copyrights reserved.</p>
+	</div>
 </footer>
 </body>
 </html>

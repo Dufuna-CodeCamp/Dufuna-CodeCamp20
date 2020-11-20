@@ -2,45 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CONTACT FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link href="../CSS/contact_form.css"rel="stylesheet"  >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="body">
+
 <header>
-    <img src="../HTML/Images/fashion.jpg" alt="logo" >
-    <h1>ALL THINGS FASHION (A.T.F)</h1>
+    <!-- website logo image -->
+    <img src="../HTML/Images/fashion.jpg" alt="logo" id="logo" >
+    <div>
+            <ul>
+               <li><a href="">HOME</a></li>  <br>
+                <li><a href="../HTML/Ecommerce.html" >OUR PRODUCT</a></li> <br>
+                <li><a href="../html-forms/contact_form.html"> CONTACT US</a> </li><br>
+                <li><a href="../html-forms/signup.html">SIGN UP</a></li>
+            </ul>
+
+    </div>
+
 </header>
-<nav>
-    <ul>
-        <a href="">HOME</a> <br>
-        <a href="">ABOUT US</a> <br>
-        <a href="../HTML/Ecommerce.html" >OUR PRODUCT</a> <br>
-        <a href="../html-forms/contact_form.html"> CONTACT US</a> <br>
-        <a href="../html-forms/signup.html">SIGN UP</a>
-    </ul>
-</nav>
 
-    <h1>Contact Form</h1>
-    <form>
-        <fieldset>
-            <legend>Contact Form</legend>
+<!-- Main body of the contactform page -->
+<main>
+    <div class="contactUs">
 
-            <label for="firstname">First Name</label><br>
-            <input type="text" name="firstname" id="firstname"> <br>
+        <div id="details">
+             <img src="../HTML/Images/phone.png" alt="phone"/>
+             <h4>Please contact us via these numbers:</h4>
+                <p>+23456789012</p>
+                <p>+23409876543</p>
+             <img src="../HTML/Images/mail.png" alt="email "/>
+                <p><b>Email address:</b></p>
+                <p>Allthingsfashion@gmail.com</p>
+                <p><b>Or connect with us on Social Media: </b></p>
+                <div class="socialmedias">
+                    <div id="facebook"><img src="../HTML/Images/facebook.png" alt="facebook"></div>
+                    <div id="twitter"><img src="../HTML/Images/twitter.png" alt="twitter"></div>
+                    <div id="instagram"><img src="../HTML/Images/instagram.png" alt="instagram"></div>
+                    <div id="gmail"><img src="../HTML/Images/gmail.png" alt="gmail"></div>
+                </div>  
+        </div>     
 
-            <label for="lastname">Last Name</label> <br>
-            <input type="text" name="lastname" id="lastname"> <br>
+        <div class="contact_form">
+            <form class="form">
+              <!--  <fieldset class="field"> -->
+                    <img  class="message" src="../HTML/Images/message.png" alt="message logo"/>
+                    <p class="head"><b>Or better still send us a message </b></p><br>
+    
+                    <label id="label" for="fullname">Full Name</label><br>
+                    <input type="text" name="fullname" class="fullname" id="fullname"> <br>
 
-            <label for="email">Email</label> <br>
-            <input type="email" name="email" id="email" placeholder="Enter your email address"> <br>
+                    <label id="label" for="email">Email</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address"> <br>
 
-            <label for= "comments">Subject:</label> <br>
-            <textarea rows="3" cols="20" name="subject"></textarea> <br>
+                    <label id="label" for= "comments">Subject:</label> <br>
+                    <input type="text" name="Subject" class="subject" id="subject"/><br>
 
-            <label for= "comments">Message Input</label> <br>
-            <textarea name="comments" id="comments"  rows="12" cols="26" ></textarea> <br>
+                    <label id="label" for= "comments">Message Input</label> <br>
+                    <textarea name="comments" id="comments"  rows="5" cols="60" ></textarea> <br>
 
-            <button type="submit">Submit</button> <br>
-        </fieldset>
-    </form>
+                    <button type="submit" id="button">SEND</button> <br>
+               <!-- </fieldset> -->
+            </form>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="coloumn1">
+            <ul>
+                <li><a href="../html-forms/contact_form.html">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="coloumn2">
+            <div class="subscribe">
+                <p>Sign up for our Newsletter</p>
+                 <form id="subscribe">
+                 <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <button type="submit">SUBMIT</button> <br>
+                 </form>
+            </div>
+            <div class="socialmedia">
+                 <P>CONNECT WITH US</P>
+                <div id="facebook"><img src="../HTML/Images/facebook.png" alt="facebook"></div>
+                <div id="twitter"><img src="../HTML/Images/twitter.png" alt="twitter"></div>
+                <div id="instagram"><img src="../HTML/Images/instagram.png" alt="instagram"></div>
+                <div id="gmail"><img src="../HTML/Images/gmail.png" alt="gmail"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2020 AllThingsFashion.com All rights reserved</p>
+    </div>
+
+</footer>
+
+    
 </body>
 </html>

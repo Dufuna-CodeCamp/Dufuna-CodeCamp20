@@ -71,8 +71,11 @@
             </div>
             <div id="subscribe">
                <p>Subscribe to our Newsletter</p>
-               <input type="email" id="emails" placeholder="enter your email address"/>
-               <button class="submit">SUBMIT</button>
+               <form id="newsField">
+            <input type="email" id="newsLetter" placeholder="please type in your email address"/>  
+               <span class="errorMsg"></span>
+               <button type="submit" class="submit">SUBMIT</button>
+               </form>
             </div>
             <div class="socialmedia">
                <p>Connect with us</p>
@@ -87,5 +90,6 @@
          </div>
       </footer>
       <script src="../DOM/signup.js"></script>
+      <script src="../DOM/newsLetter.js"></script>
    </body>
 </html>

@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -200,7 +199,7 @@ footer .footer .coloumn2#connect{
     main #heading{
         width: 60%;
     }
-    main .form #agree{
+    main #form #agree{
         font-size: 1em;
     }
     footer .footer{
