@@ -32,6 +32,8 @@
 }
 .error2 {
     color:red;
+    display: flex;
+    font-weight: bold;
 }
 
 .errorMsg   {
