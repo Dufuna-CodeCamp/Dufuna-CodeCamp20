@@ -1,0 +1,6 @@
+Hello World!
+My name is Ayodamola Feyi-Akinbile
+I have been learning to push my first task to git hub and commit 
+At the end of this program i want to be a full stack developer.
+I want to be useful in creating software products that will change Africa
+
