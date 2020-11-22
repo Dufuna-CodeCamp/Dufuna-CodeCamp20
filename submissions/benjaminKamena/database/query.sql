@@ -29,12 +29,12 @@ OR Embarked = 'C';
 
 -- Q4.  How many of the passengers that embarked at Southampton survived?
 SELECT COUNT(*)
-FROM traveldetail
-RIGHT JOIN survival
-ON survival.PassengerId = traveldetail.PassengerId
-WHERE Embarked = 'S'
-OR survived = 1;
--- After running the query above the answer is 342.
+FROM survival
+RIGHT JOIN traveldetail
+ON traveldetail.PassengerId = survival.PassengerId
+WHERE  Embarked = 'S' 
+AND Survived = 1;
+-- After running the query above the answer is 218.
 
 -- Q5. Get the id, name and the total number of passengers who paid a fare greater 
 -- than $100 and above the age of 35 had siblings or spouses on board?
