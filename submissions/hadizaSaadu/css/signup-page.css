@@ -57,7 +57,7 @@
 #sign {
   width: 64px;
   height: 19px;
-  margin: 12.3px 0 0 0;
+  margin: 12.3px 0 0;
   font-family: "montserrat", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -173,7 +173,7 @@ label {
   margin: 0 0 0 50px;
   border-color: transparent;
   border-radius: 6px;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 50px;
   color: #ffffff;
   font-family: "montserrat", sans-serif;
   font-size: 20px;
