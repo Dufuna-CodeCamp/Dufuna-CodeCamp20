@@ -1,4 +1,4 @@
-let newsSubmit = document.getElementById("newsLetter"),
+let newsLetter = document.getElementById("newsLetter"),
   newsEmail = document.getElementById("newsEmail");
     errorMsg = document.getElementById("newsSubmit");
 
@@ -20,4 +20,4 @@ function emailForm(e) {
         return true
     }
 }
- newsSubmit.addEventListener('submit', emailForm)
+ newsLetter.addEventListener('submit', emailForm)
