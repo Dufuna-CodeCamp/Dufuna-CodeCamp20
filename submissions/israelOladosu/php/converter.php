@@ -3,8 +3,9 @@
 function converter ($type, $value = 0) {
     $onePound =  2.205;
     $oneYard = 1.094;
+    $toLowerCase = strtolower($type);
     if (gettype($value) === "integer" || gettype($value) === "double") {
-         switch ($type) {
+         switch ($toLowerCase) {
         case "kilo":
             echo $value * $onePound . " pounds";
         break;
@@ -24,6 +25,6 @@ function converter ($type, $value = 0) {
    
 }; 
 
-converter("meter", 3);
+converter("Meter", 3);
 
 ?>
