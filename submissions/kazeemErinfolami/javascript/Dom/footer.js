@@ -1,41 +1,23 @@
 let newsSubmit = document.getElementById("newsLetter"),
   newsEmail = document.getElementById("newsEmail");
-
-//required Error message
-let newsEmailRequired = "⚠️Please enter your email";
-//required validation Error message
-let newsEmailError = "⚠️Please enter a valid email";
-
-//validation
-function newsValidation(
-  field,
-  regExp,
-  fieldRequiredError,
-  fieldErrorMessage,
-  event
-) {
-  if (field.value === "") {
-    field.nextElementSibling.innerHTML = fieldRequiredError;
-    event.preventDefault();
-    return false;
-  } //match
-  if (!field.value.match(regExp)) {
-    field.nextElementSibling.innerHTML = fieldErrorMessage;
-    event.preventDefault();
-    return false;
-  } else {
-    field.nextElementSibling.innerHTML = "";
-    return true;
-  }
-}
+    errorMsg = document.getElementById("newsSubmit");
 
 //RegEx
 let newsEmailReg = /[a-z0-9]+@[a-z]+\.com$/i;
 
-function newsFormValidation(e) {
-  //checkValidation
-  newsValidation(newsEmail, newsEmailReg, newsEmailRequired, newsEmailError, e);
-  
+function emailForm(e) {
+    if (newsEmail.value === "") {
+        errorMsg.innerHTML = "Please enter your Email Address";
+        e.preventDefault();
+        return false;
+    } else if (!(newsEmail.value.match(newsEmailReg))) {
+      e.preventDefault();
+        errorMsg.innerHTML = "Please enter a valid email";
+        
+        return false;
+    } else {
+        errorMsg.innerHTML = "";
+        return true
+    }
 }
-
-newsSubmit.addEventListener("submit", newsFormValidation);
+ newsSubmit.addEventListener('submit', emailForm)
