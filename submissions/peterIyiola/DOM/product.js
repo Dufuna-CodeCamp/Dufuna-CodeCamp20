@@ -6,7 +6,7 @@ let quantity = document.getElementById('quantity'),
  
    
 
-function  validation  (event)    {
+function  validation  ()    {
     let regex = /[^0-9]/g;
     if (quantity.value < 1 || quantity.value == "" || (quantity.value.match(regex))){
         buy.disabled = true;
@@ -41,6 +41,5 @@ function  validation  (event)    {
           return true;
         }
       }
-    };
-    
+    }
     quantity.addEventListener("input", validation);
