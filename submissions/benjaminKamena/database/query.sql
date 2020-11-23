@@ -24,8 +24,7 @@ FROM passenger
 INNER JOIN traveldetail
 ON passenger.PassengerId = traveldetail.PassengerId
 WHERE age < 27 
-AND Embarked = 'Q'
-OR Embarked = 'C';
+AND (Embarked = 'Q' OR Embarked = 'C');
 
 -- Q4.  How many of the passengers that embarked at Southampton survived?
 SELECT COUNT(*)
