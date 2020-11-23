@@ -35,13 +35,25 @@ WHERE  Embarked = 'S'
 AND Survived = 1;
 -- After running the query above the answer is 218.
 
--- Q5. Get the id, name and the total number of passengers who paid a fare greater 
+-- Q5. A. Get the id, name and the total number of passengers who paid a fare greater 
 -- than $100 and above the age of 35 had siblings or spouses on board?
 SELECT passenger.PassengerId, passenger.Name
+FROM passenger
+LEFT JOIN traveldetail
+ON passenger.PassengerId = traveldetail.PassengerId
+WHERE Fare > 100
+AND age > 35
+AND SibSp != 0;
+  
+-- Q5. B. the total number of passengers who paid a fare greater than $100 
+-- and above the age of 35 had siblings or spouses on board?
+SELECT COUNT(*)
 FROM passenger
 INNER JOIN traveldetail
 ON passenger.PassengerId = traveldetail.PassengerId
 WHERE Fare > 100
 AND age > 35
-  OR SibSp = 0;
+AND SibSp != 0;
+
+-- answer = 9
   
