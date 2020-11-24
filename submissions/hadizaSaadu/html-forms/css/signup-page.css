@@ -126,8 +126,8 @@
 .bigrec {
   width: 607px;
   height: 900px;
-  margin: 13px 64px 20px 47px;
-  padding: 39px 45px 15px 41px;
+  margin: 13px 55.5px 20px;
+  padding: 39px 41px 15px;
   border: solid 1px #707070;
   border-radius: 23px;
 }
@@ -135,7 +135,7 @@
 label {
   width: 99px;
   height: 22px;
-  margin: 0 6px 5px 0;
+  margin: 0 6px 5px;
   font-family: "montserrat", sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -150,7 +150,7 @@ label {
 #input {
   width: inherit;
   height: 45px;
-  margin: 13px 64px 0 0;
+  margin: 13px 0 0 0;
   line-height: 1.33;
   border: solid 2px #707070;
   border-radius: 12px;
