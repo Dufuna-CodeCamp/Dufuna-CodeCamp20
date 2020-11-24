@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/signup.css">
-    <title>Sign up</title>
-  </head>
-  <body>
-    <nav>
-      <label class="logo"><img id="logo" src="../html/images/logo.png"></label>
-      <ul>
-        <li><a href="../html/index.html">Product Page</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="../htmlForms/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <section>
-      <div class="registerContainer">
-        <h1 class="reg">Register your</h1>
-        <h1 class="reg">Account </h1>
-      
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/signup.css" />
+  <title>Sign up</title>
+</head>
+
+<body>
+  <nav>
+    <label class="logo"><img id="logo" src="../html/images/logo.png" /></label>
+    <ul>
+      <li><a href="../html/index.html">Product Page</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="../htmlForms/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="registerContainer">
+      <h1 class="reg">Register your</h1>
+      <h1 class="reg">Account</h1>
+
       <p class="para">
         Registering an account gives you access to sweet promo and events
         available to only registered customers
       </p>
       <p class="para">Already got an account? <a href="#">Sign in</a></p>
     </div>
-    </section>
-    <div class="container">
-      <form id="formValidation">
-        <div class="form">
-          <label for="firstName" id="firstNameL">First Name :</label>
-          <input class="forminput" type="text" name="firstName" id="firstName"/>
-          <p class="error"></p>
-          <label for="lastName" id="lastNameL">Last Name :</label>
-          <input class="forminput" type="text" name="lastName" id="lastName"/>
-          <p class="error"></p>
-          <label for="otherName" id="otherNameL">Other Name :</label>
-          <input class="forminput" type="text" name="otherName" id="otherName"/>
-          <p class="error"></p>
-          <label for="phoneNo" id="phoneNoL">Phone No :</label>
-          <input class="forminput" type="text" name="phoneNo" id="phoneNo"/>
-          <p class="error"></p>
-          <label for="email" id="emailL">Email Address :</label>
-          <input class="forminput" type="email" name="email" id="email"/>
-          <p class="error"></p>
-          <label for="password" id="passwordL">Password :</label>
-          <input class="forminput" type="password" name="password" id="password"/>
-          <p class="error"></p>
-          <label for="confirmPassword" id="confirmPasswordL">Confirm Password :</label>
-          <input class="forminput" type="password" name="confirmPassword" id="confirmPassword"/>
-          <p class="error"></p>
-        </div>
-        <div class="agreeContainer">
-          <label for="agree" id="agreeL" class="agree">
-          <input id="box" type="checkbox" name="agree" id="agree" required>I agree to the Terms and Conditions</label>
-          <p class="error"></p>
-        </div>
-        <div class="signupbutton">
-          <button type="submit" id="submitbtn">Sign up</button>
-          <p class="error"></p>
-        </div>
+  </section>
+  <div class="container">
+    <form id="formValidation">
+      <div class="form">
+        <label for="firstName" id="firstNameL">First Name :</label>
+        <input class="forminput" type="text" name="firstName" id="firstName" />
+        <p class="error"></p>
+        <label for="lastName" id="lastNameL">Last Name :</label>
+        <input class="forminput" type="text" name="lastName" id="lastName" />
+        <p class="error"></p>
+        <label for="otherName" id="otherNameL">Other Name :</label>
+        <input class="forminput" type="text" name="otherName" id="otherName" />
+        <p class="error"></p>
+        <label for="phoneNo" id="phoneNoL">Phone No :</label>
+        <input class="forminput" type="text" name="phoneNo" id="phoneNo" />
+        <p class="error"></p>
+        <label for="email" id="emailL">Email Address :</label>
+        <input class="forminput" type="email" name="email" id="email" />
+        <p class="error"></p>
+        <label for="password" id="passwordL">Password :</label>
+        <input class="forminput" type="password" name="password" id="password" />
+        <p class="error"></p>
+        <label for="confirmPassword" id="confirmPasswordL">Confirm Password :</label>
+        <input class="forminput" type="password" name="confirmPassword" id="confirmPassword" />
+        <p class="error"></p>
+      </div>
+      <div class="agreeContainer">
+        <label for="agree" id="agreeL" class="agree">
+          <input id="box" type="checkbox" name="agree" id="agree" required />
+          I agree to the Terms and Conditions
+        </label>
+        <p class="error"></p>
+      </div>
+      <div class="signupbutton">
+        <button type="submit" id="submitbtn">Sign up</button>
+        <p class="error"></p>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <div class="contact">
+      <ul>
+        <li><a href="./contact.html">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <p>Sign up for our Newsletter</p>
+      <form id="newsLetter">
+        <input type="text" placeholder="Enter your Email" id="newsEmail" />
+        <button id="newsSubmit" type="submit">Submit</button>
       </form>
     </div>
-    <footer>
-        <div class="contact">
-          <ul>
-            <li><a href="./contact.html">Contact us</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-          </ul>
-        </div>
-          <div class="newsletter">
-            <p>Sign up for our Newsletter</p>
-            <form id="newsLetter">
-              <input type="text" placeholder="Enter your Email" id="newsEmail" />
-              <button id="newsSubmit" type="submit">Submit</button>
-            </form>
-          </div>
-          <div class="media">
-            <h3 id="connect">CONNECT WITH US</h3>
-            <ul>
-              <li><img class="fb" id="imglogo" src="../html/images/fblogo.png" alt="facebook" /></li>
-              <li><img class="tw" id="imglogo" src="../html/images/twlogo.png" alt="twitter" /></li>
-              <li><img class="gm" id="imglogo" src="../html/images/gmlogo.png" alt="gmail" /></li>
-              <li><img class="yt" id="imglogo" src="../html/images/yTlogo.png" alt="youtube" /></li>
-            </ul>
-          </div>
-      <div class="copyRight">&copy; Copyright 2020:
-        <a href="#"> Emarket</a>
-      </div>
-    </footer>
-    <script src="../javascript/Dom/signUp.js"></script>
-  </body>
+    <div class="media">
+      <h3 id="connect">CONNECT WITH US</h3>
+      <ul>
+        <li>
+          <img class="fb" id="imglogo" src="../html/images/fblogo.png" alt="facebook" />
+        </li>
+        <li>
+          <img class="tw" id="imglogo" src="../html/images/twlogo.png" alt="twitter" />
+        </li>
+        <li>
+          <img class="gm" id="imglogo" src="../html/images/gmlogo.png" alt="gmail" />
+        </li>
+        <li>
+          <img class="yt" id="imglogo" src="../html/images/yTlogo.png" alt="youtube" />
+        </li>
+      </ul>
+    </div>
+    <div class="copyRight">
+      &copy; Copyright 2020:
+      <a href="#"> Emarket</a>
+    </div>
+  </footer>
+  <script src="../javascript/Dom/signUp.js"></script>
+  <script src="../javascript/Dom/footer.js"></script>
+</body>
+
 </html>
