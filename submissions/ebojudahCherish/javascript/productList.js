@@ -20,5 +20,5 @@ for (let i = 0; i < productList.length; i++) {
     let product = productList[i];
     let message = `${product.productName} with ${product.imageUrl} is sold for ${product.productprice}`;
     console.log(message);
-};
+}
 
