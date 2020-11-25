@@ -22,7 +22,6 @@
 .topnav {
     width: 100%;
     display: flex;
-    flex-direction: row;
     text-align: left;
     background-color: #b06aae;
     color: white;
