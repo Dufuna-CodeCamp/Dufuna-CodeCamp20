@@ -2,7 +2,7 @@
 SELECT COUNT(survived) FROM accidents WHERE survived = 1;
 /** answer: 269 **/
 
-/** Total number of passengers who didn not survive **/
+/** Total number of passengers who did not survive **/
 SELECT COUNT(survived) FROM accidents WHERE survived = 0;
 /** answer: 419 **/
 
@@ -21,20 +21,22 @@ LEFT JOIN trips
 ON accidents.passenger_id = trips.passenger_id 
 WHERE trips.point_of_embarkation = 'S' 
 AND accidents.survived = 1;
+/** answer: 179 **/
 
-/** name, id and tottal number of passngers who paid a free greater than $100 and above age of 35 had siblings or spouse on board **/
+/** name, id and total number of passngers who paid a fee greater than $100 and above age of 35 had siblings or spouse on board **/
 SELECT passengers.id, passengers.fullname 
 FROM passengers
 LEFT JOIN trips 
 ON passengers.id = trips.passenger_id
 WHERE trips.trip_fare > 100 
 AND trips.number_of_siblings_spouses > 0 
-AND passengers.age > 35; 
+AND passengers.age > 35;
 
-/** the total number of passengers who paid a fare greater than $100 and above the age of 35 with siblings or spouses on board **/
+/** the total number of passengers who paid a fee greater than $100 and above the age of 35 with siblings or spouses on board **/
 SELECT COUNT(*) FROM passengers
 LEFT JOIN trips
 ON passengers.id = trips.passenger_id
 WHERE trip_fare > 100
 AND age > 35 
 AND number_of_siblings_spouses  != 0;
+/** answer: 7 **/
