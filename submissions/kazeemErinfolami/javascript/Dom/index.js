@@ -34,11 +34,10 @@ function productPrice() {
         return false
     }
 }
-
 function shippingPrice() {
     let perPrice = priceValue * qty.value
     if (perPrice < 1000) {
-        shippingRange = 100;
+        let shippingRange = 100;
         shippingCost.innerHTML = shippingRange;
     } else if ((perPrice >= 1000) && (perPrice <= 20000)) {
         shippingRange = 0.15 * perPrice;
@@ -53,23 +52,21 @@ function shippingPrice() {
         return false
     }
 }
-
 function totalPrice() {
-    let perPrice = priceValue * qty.value
     if (qty.value >= 1) {
-        cost.innerHTML = shippingRange + perPrice;
+        let perPrice = priceValue * qty.value,
+            shipCost = Number(shippingCost.innerHTML);
+        cost.innerHTML = perPrice + shipCost;
     } else {
         return false;
     }
 }
-
 function calculate() {
     productQuantity();
     productPrice();
     shippingPrice();
     totalPrice();
 }
-
 qty.addEventListener("input", calculate);
 
 
