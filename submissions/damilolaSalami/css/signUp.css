@@ -47,13 +47,15 @@ body{
 }
 
 .registration{
-    font-size: 18px;
-    margin: 150px 100px 0 180px;
-    padding-right: 300px;
+    font-size: 20px;
+    margin: 120px 5px 0 50px;
+    padding-right: 100px;
+    padding-left: 150px;
 }
 
 .registration p{
-    font-size: 25px;
+    font-size: 23px;
+    padding: 20px 0 10px;
 }
 
 .registration h1, .registration a{
@@ -62,9 +64,9 @@ body{
 }
 
 .regform{
-    padding: 25px 50px 10px 35px;
-    margin: 65px 120px 40px 0;
-    width: 500px;
+    padding: 25px 30px 10px 25px;
+    margin: 40px 10px 40px 70px;
+    width: 400px;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -72,9 +74,9 @@ body{
 .regform .inputbox{
     border: 1px solid black;
     border-radius: 5px;
-    width: 420px;
-    margin: 4px 1px;
-    height: 24px;
+    width: 350px;
+    margin: 4px 0 10px 1px;
+    height: 28px;
 }
 
 .regform label{
@@ -82,7 +84,7 @@ body{
 }
 
 .regform .box{
-    margin-left: 80px;
+    margin: 20px 0 20px 45px;
 }
 
 .regform p{
@@ -98,7 +100,7 @@ body{
     border: 1px solid purple;
     border-radius: 5px;
     padding: 8px 40px;
-    margin-left: 160px;
+    margin-left: 120px;
     font-weight: bold;
 }
 
@@ -227,7 +229,7 @@ body{
     .registration{
         text-align: center;
         margin: 20px 40px 0;
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .registration h1{
@@ -304,7 +306,7 @@ body{
 
     .header li{
         display: inline-block;
-        margin-right: 50px;
+        margin-right: 20px;
         list-style-type: none;
         padding: 10px;
         font-size: 20px;
@@ -317,12 +319,11 @@ body{
 
     .registration{
         text-align: center;
-        margin: 20px 250px 0 230px;
-        padding: 0 120px;
+        margin: 20px 100px 0 100px;
     }
 
     .registration h1{
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .registration p{
@@ -347,7 +348,7 @@ body{
     }
 
     .regform .box{
-        margin-left: 150px;
+        margin-left: 160px;
     }
 
     .regform label p{
