@@ -16,10 +16,10 @@
 	-- B) Inserted records into the admins table
 		INSERT INTO admins (name, email, password, phone_number) 
 			VALUES  ('Cynthia Nwakaeme', 'nwakaemecynthia@gmail', 'openheavens', '+234812838338'),
-					('Leke Ologede', 'lekyinologede@example.com', 'muffins3', '+449383848899'),
-					('Sheila Odor', 'sheilaodor1@sample.com', 'dubabbyboo', '+27894903002'),
-					('David Dave', 'deesquare@sample.com', 'deesquare4life', '+234894903002'),
-					('Darlyntina Nwakaeme', 'darlyntina@yahoo.com', 'march22nd', '+233900880888');
+				('Leke Ologede', 'lekyinologede@example.com', 'muffins3', '+449383848899'),
+				('Sheila Odor', 'sheilaodor1@sample.com', 'dubabbyboo', '+27894903002'),
+				('David Dave', 'deesquare@sample.com', 'deesquare4life', '+234894903002'),
+				('Darlyntina Nwakaeme', 'darlyntina@yahoo.com', 'march22nd', '+233900880888');
 
 -- 2)CATEGORIES
 	-- A)Created the categories table
@@ -32,16 +32,16 @@
 	-- B) Inserted records into the categories table
 		INSERT INTO categories (category_name)
 			VALUES 	('skincare_products'),
-					('hair_extentions'),
-					('accessories'),
-					('clothings'),
-					('footwears');
+				('hair_extentions'),
+				('accessories'),
+				('clothings'),
+				('footwears');
                     
 -- 3) PRODUCTS
 	-- A) Created the products table
 		CREATE TABLE products (
 			product_id INT NOT NULL AUTO_INCREMENT,
-            category_id INT NOT NULL,
+            		category_id INT NOT NULL,
 			admin_id INT NOT NULL,
 			name VARCHAR(50) NOT NULL,
 			description VARCHAR(250) NOT NULL,
@@ -57,9 +57,9 @@
 	-- Inserted records into the products table
 		INSERT INTO products (category_id, admin_id,name, description, image, unit_price, stock_level, status)
 			VALUES 	(1,2,'J-Royalty organic black soap', 'J-royalty Organic African black soap is formulated with loads of organic ingredients, herbs and refined essential oil', LOAD_FILE('E:/Images/soap.jpg'),250.00, 3000, 'out of stock'),
-					(3,4,'32 inches Bone Straight Hair', 'Berry Human hair extension are quality hair from the best hair brand in Nigeria',LOAD_FILE('E:/Images/humanHair.jpg'),150000.00, 20, 'in stock'),
-					(1,3,'Wrap Gown with belt', 'All season, We have got you covered with fantastic clothings raning from Corporate/Native/Casual wears', LOAD_FILE('E:/Images/zeeClothings.jpg'),55000.00, 50, 'low stock'),
-					(2,1,'Tyna block Heels', 'Tynas\' shoes helps you stay confident and classy', LOAD_FILE('E:/Images/tynaShoes.jpg'),15000.00,20,'out of stock');
+				(3,4,'32 inches Bone Straight Hair', 'Berry Human hair extension are quality hair from the best hair brand in Nigeria',LOAD_FILE('E:/Images/humanHair.jpg'),150000.00, 20, 'in stock'),
+				(1,3,'Wrap Gown with belt', 'All season, We have got you covered with fantastic clothings raning from Corporate/Native/Casual wears', LOAD_FILE('E:/Images/zeeClothings.jpg'),55000.00, 50, 'low stock'),
+				(2,1,'Tyna block Heels', 'Tynas\' shoes helps you stay confident and classy', LOAD_FILE('E:/Images/tynaShoes.jpg'),15000.00,20,'out of stock');
 
 -- 4)CUSTOMERS
 	-- Created the customers table
@@ -75,17 +75,17 @@
 	-- Inserted records into the customers table
 		INSERT INTO customers (first_name, last_name, email, password)
 			VALUES 	('Jennifer', 'Koko', 'jennykoko@gmail.com', 'redeemed'),
-					('Kokolyna', 'Bushfield', 'kokobushfield@example.com', 'christcentered'),
-                    ('Anderson', 'Phils', 'philandy@gmail.com', 'ionic2basic'),
-					('Sharon', 'Stone', 'kokobushfield@example.com', 'devyact'),
-					('Kyla', 'Fielder', 'kaylafill@example.com', 'coolgirl2talk2');
+				('Kokolyna', 'Bushfield', 'kokobushfield@example.com', 'christcentered'),
+                    		('Anderson', 'Phils', 'philandy@gmail.com', 'ionic2basic'),
+				('Sharon', 'Stone', 'kokobushfield@example.com', 'devyact'),
+				('Kyla', 'Fielder', 'kaylafill@example.com', 'coolgirl2talk2');
                     
 -- 5) CUSTOMERS' CONTACTS 
 	-- Created the customers' contacts table
     
 		CREATE TABLE customer_contacts (
 			contact_id INT NOT NULL AUTO_INCREMENT,
-            customer_id INT NULL,
+            		customer_id INT NULL,
 			street VARCHAR(150) NOT NULL,
 			city VARCHAR(30) NOT NULL,
 			state VARCHAR(30) NOT NULL,
@@ -99,10 +99,10 @@
 	-- Inserted records into the customer addresses table
 		INSERT INTO customer_contacts (customer_id, street, city, state, zip_code, country, phone)
 			VALUES  (1, '4 Clinton Harrison Street', 'Wuse II', 'Abuja', 23444 , 'Nigeria', '090808198'),
-					(2, 'Plot 21 Reddington Street', 'Lekki Phase 1', 'Lagos', 65655 , 'Nigeria', '45153251365'),
-					(3, '34 Cardogan Estate', 'Gwaripa', 'Abuja', 32432 , 'Nigeria', '09542424524'),
-					(4, '92 Balarabe Musa Cresent', 'Eti Osa II', 'Abuja', 757557 , 'Nigeria', '0812243433'),
-					(5, 'Block 34 Lake View II Estate', 'Festac', 'Abuja', 465242 , 'Nigeria', '070235546226');
+				(2, 'Plot 21 Reddington Street', 'Lekki Phase 1', 'Lagos', 65655 , 'Nigeria', '45153251365'),
+				(3, '34 Cardogan Estate', 'Gwaripa', 'Abuja', 32432 , 'Nigeria', '09542424524'),
+				(4, '92 Balarabe Musa Cresent', 'Eti Osa II', 'Abuja', 757557 , 'Nigeria', '0812243433'),
+				(5, 'Block 34 Lake View II Estate', 'Festac', 'Abuja', 465242 , 'Nigeria', '070235546226');
                     
 -- 6) ORDERS
 	-- A) Created the orders table
@@ -118,10 +118,10 @@
 	-- B) Inserted values into the orders table
 		INSERT INTO orders (clients, order_amount, order_created_at)
 			VALUES  (2, 1250.00, now()),
-					(3, 150000.00, now()),
-					(1, 550000.00, now()),
-					(1, 30000.00, now()),
-					(4, 150000.00, now());
+				(3, 150000.00, now()),
+				(1, 550000.00, now()),
+				(1, 30000.00, now()),
+				(4, 150000.00, now());
                     
 -- 7) ORDER ITEMS
 	-- Created the order items table
@@ -139,7 +139,7 @@
 	-- Inserted records into the order items table
 		INSERT INTO order_items (order_id, product_id, quantity, unit_price, total_amount) 
 			VALUES  (1, 1, 3, 250.00, 1250.00),
-					(2, 2, 1, 150000.00, 150000.00),
-					(3, 3, 10, 55000.00, 550000.00),
-                    (3, 3, 2, 15000.00, 30000.00),
-                    (3, 3, 2, 150000.00, 300000.00);
+				(2, 2, 1, 150000.00, 150000.00),
+				(3, 3, 10, 55000.00, 550000.00),
+                    		(3, 3, 2, 15000.00, 30000.00),
+                    		(3, 3, 2, 150000.00, 300000.00);
