@@ -246,7 +246,7 @@
 			VALUES  (1, '4 Clinton Harrison Street', 'Wuse II', 'Abuja', 23444 , 'Nigeria', '090808198'),
 					(2, 'Plot 21 Reddington Street', 'Lekki Phase 1', 'Lagos', 65655 , 'Nigeria', '45153251365'),
 					(3, '34 Cardogan Estate', 'Gwaripa', 'Abuja', 32432 , 'Nigeria', '09542424524'),
-					(4, '98 Balarabe Musa Cresent', 'Eti Osa II', 'Abuja', 757557 , 'Nigeria', '0812243433'),
+					(4, '92 Balarabe Musa Cresent', 'Eti Osa II', 'Abuja', 757557 , 'Nigeria', '0812243433'),
 					(5, 'Block 34 Lake View II Estate', 'Festac', 'Abuja', 465242 , 'Nigeria', '070235546226');
                     
 -- 6) ORDERS
