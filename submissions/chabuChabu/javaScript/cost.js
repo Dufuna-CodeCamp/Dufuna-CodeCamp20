@@ -3,15 +3,15 @@ let quantity = document.getElementById("quantity")
     shippingCost = document.getElementById("shippingCost"),
     total = document.getElementById("productTotal"),
     buyBtn = document.getElementById("submitButton");
-
+/*Calculates the cost of 1 product and populates fields on page loading*/
 total.innerHTML = parseInt(productPrice.innerHTML)+ parseInt(shippingCost.innerHTML);
 
 quantity.addEventListener("input",grandPrice);
 
 function grandPrice(){
   
-      regexNumber = /^[0-9]+$/;
-      
+     let regexNumber = /^[0-9]+$/;
+     /*Checks to ensure entry is atleast the digit 1 */ 
      if(quantity.value == "" || quantity.value < 1 ||(!quantity.value.match(regexNumber))){
         buyBtn.disabled = true
         document.getElementById("submitButton").style.backgroundColor = "#a6a6a6";
@@ -24,7 +24,7 @@ function grandPrice(){
        document.getElementById("submitButton").style.backgroundColor = "#f79521";
        quantity.nextElementSibling.innerHTML = "";
      }
-
+    /*Calculates the shipping total cost of products*/ 
     cartBasket = parseInt(productPrice.innerText) * quantity.value;
     
     if(cartBasket <= 1000){
@@ -43,6 +43,7 @@ function grandPrice(){
 
     }else{
       total.innerHTML = cartBasket + 25000;
+      total.innerHTML = 25000;
     } 
 }
 
