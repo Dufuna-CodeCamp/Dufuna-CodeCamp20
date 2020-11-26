@@ -29,12 +29,27 @@
 			       </div>
 			       <div class="description-summary">
 			       	  <form action="#" method="post">
-			  			<h2 id="summary-title">BLUE-WHITE COLLAR TEE SHIRT</h2>
-			  			<label id="form-label">Brand: Polka-dot</label><br>
-			  			<label id="form-label">Quantity:</label>
-			  			<input type="text" name="othertname" class="text-input"><br>
-			  			<label id="form-label">Price:$150</label><br>
-			  			<input type="button" name="Submit" class="buy-btn" value="BUY NOW">
+						  <h2 id="summary-title">BLUE-WHITE COLLAR TEE SHIRT</h2>
+						<div>
+                            <label id="form-label">Brand: Polka-dot</label><br>
+						</div>
+			  			<div>
+                            <label id="form-label">Quantity:</label>
+							<input id="quantity" class="text-input" type="number" min="1" value="1">
+							<span class="error-block"></span>
+						</div>
+						<div>
+							<label id="form-label-price">Price&nbsp:$<p id="productPrice">300</p></label>
+						</div>
+						<div>
+							<label id="form-label">Shipping Cost&nbsp:$<p id="shippingCost">100</p></label>
+						</div>
+						<div>
+							<label id="form-label-total">Total Cost&nbsp:$<p id="productTotal">30</p></label>
+						</div>
+						<div>
+							<input type="button" id="submitButton"  class="buy-btn" value="BUY NOW"/>
+						</div>
 			  		</form>
 			       </div>
 			       <div id="product-description">
@@ -102,5 +117,6 @@
 	</div>
 	<!--footer-->
 	<script src="../javaScript/newsletter.js"></script>
+	<script src="../javaScript/cost.js"></script>
 </body>
 </html>
