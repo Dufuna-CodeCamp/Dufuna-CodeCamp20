@@ -1,4 +1,5 @@
 -- CREATED DATABASE FOR TRANSPORTATION COMPANY
+DROP DATABASE IF EXISTS travel_company;
 CREATE DATABASE travel_company;
 USE travel_company;
 
