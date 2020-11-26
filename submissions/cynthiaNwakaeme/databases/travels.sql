@@ -8,7 +8,7 @@ CREATE TABLE passengers (
 	passenger_id INT NOT NULL AUTO_INCREMENT,
 	full_name VARCHAR(50) NOT NULL,
 	sex ENUM('male', 'female') NOT NULL,
-	age FLOAT(3,2), -- allows for records with months sepcified as decimals
+	age INT,
 	PRIMARY KEY (passenger_id)
 );
 CREATE TABLE trips (
@@ -16,7 +16,7 @@ CREATE TABLE trips (
 	passenger_id INT NOT NULL,
 	class ENUM('1', '2', '3') NOT NULL,
 	ticket_number VARCHAR(20) NOT NULL,
-	trip_fare DECIMAL(10,2) NOT NULL,
+	trip_fare DECIMAL(20,2) NOT NULL,
 	cabin VARCHAR(10),
 	number_of_parents_children INT NOT NULL,
 	number_of_siblings_spouses INT NOT NULL,
