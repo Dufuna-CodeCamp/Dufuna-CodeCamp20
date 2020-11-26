@@ -12,3 +12,6 @@ function display($array1, $array2)
         echo "My name is $firstName. I love $hobby. <br >";
     }
 };
+
+// calling the function
+display($name, $hobbies);
