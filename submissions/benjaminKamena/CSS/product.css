@@ -6,7 +6,7 @@ body{
     font-family: Montserrat;
   }
   
-  @media screen and (max-width: 1085px)
+@media screen and (max-width: 1085px)
   {
     header {
       flex-flow: wrap;
@@ -14,104 +14,104 @@ body{
     }
   }
   
-  header{
+header{
     color: white;
     background-color: blue;
     display: flex;
     align-items:center;
   }
   
-  header,.nav-header {
+header,.nav-header {
       margin-right: auto;
     }
   
-  header, .nav-header a h1 img{
+header, .nav-header a h1 img{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  a h1{
+a h1{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     display: -webkit-inline-box;
     color: #fff;
   }
-  a img{
+a img{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border-radius: 50%;
   }
   
-    h2{
-      margin: 0;
-      padding: 0;
-      color: white;
-    }
+h2{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
   
-    p{
-      margin: 0;
-      padding: 0;
-      color: white;
-      font-family: Montserrat;
-    }
-    .nav-content{
-        float: right;
-        margin-top: 15px;
-      }
+p{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Montserrat;
+}
+.nav-content{
+  float: right;
+  margin-top: 15px;
+}
     
-      .nav-content ul{
-        padding: 0;
-        margin: 0;
-      }
+.nav-content ul{
+  padding: 0;
+  margin: 0;
+}
     
-      .nav-content ul li{
-        display: inline;
-        padding: 0 30px;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.19;
-        letter-spacing: normal;
-        text-align: left;
-        color: white;
-      }
-      ul li a{
-        cursor: pointer;
-        font-family: Montserrat;
-        display: -webkit-inline-box;
-        color: #fff;
-        font-weight: bolder;
-        font-size: large;
-      }
-
-      .product {
-        display: flex;
-        flex-wrap: nowrap;
+.nav-content ul li{
+  display: inline;
+  padding: 0 30px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+ul li a{
+  cursor: pointer;
+  font-family: Montserrat;
+  display: -webkit-inline-box;
+  color: #fff;
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: none;
+}
+.product {
+  display: flex;
+  flex-wrap: nowrap;
     }
-    .product-img{
-        border: 1px solid #000;
-        max-width: 469px;
-        margin: 50px 50px 50px 50px;
-        border-radius: 25px;    
+.product-img{
+  border: 1px solid #000;
+  max-width: 469px;
+  margin: 50px 50px 50px 50px;
+  border-radius: 25px;
+}
+.product img , .product-related img{
+  padding: 5px;
+  width: 100%;
+  border-radius: 25px;
+}
+.product-details{
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-top: 14px;
     }
-    .product img , .product-related img{
-        padding: 5px;
-        width: 100%;
-        border-radius: 25px;       
-    }
-    .product-details{
-        margin-left: 50px;
-        margin-top: 50px;
-        padding-top: 14px;
-    }
-    .product-details h3{
-        font-size: 25px;
-        line-height: 30px;
+.product-details h3{
+  font-size: 25px;
+  line-height: 30px;
     }
     .product-details h4{
         font-size: 22px;
@@ -129,12 +129,14 @@ body{
         border-radius: 20px;
         border: none;
         background-color: blue;
+        color: white;
         font-size: 22px;
         line-height: 27px;
     }
     .description{
         margin-left: 50px;
     }
+
     .description h3{
         text-align:left;
         font-size: 22px;
@@ -151,9 +153,9 @@ body{
         font-size: 22px;
         font-weight: bold;
         font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
     }
     .description strong{
       color:green;
@@ -187,11 +189,11 @@ body{
         font-size: 22px;
         font-weight: bold;
         font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: center;
-    }
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: center;
+      }
       
 footer {
     background-color: #0066f5;

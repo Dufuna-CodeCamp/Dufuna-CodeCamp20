@@ -1,0 +1,436 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+body{
+	font-size: 16px;
+	font-family: "Georgia", Times New Roman;
+}
+header{
+	flex: 1 100%;
+	background-color: #B7EEB7;
+	padding: 50px;
+}
+header *{
+	color: #FF530E;
+}
+header .title{
+	float: left;
+	height: inherit;
+	padding: 10px 30px;
+}
+header ul li{
+	float: right;
+	height: inherit;
+	padding: 20px;
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	color: #FF530E;
+}
+a:hover{
+	text-decoration: underline;
+	color: rgb(200, 0, 0);
+	cursor: pointer;
+}
+.cavendish{
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+.cavendish img{
+	float: left;
+    width: 250px;
+    border: 1px solid gray;
+    margin: 30px 35px 0 60px;
+    padding: 15px;
+}
+.cost{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: 40px;
+}
+.cost h3{
+	font-size: 1.1em;
+}
+#quantity{
+	font-size: 14px;
+	padding: 5px;
+	width: 60px;
+}
+#btn{
+	font-weight: bold;
+    padding: 10px;
+    background-color: #B7EEB7;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#btn:disabled{
+	background-color: gray;
+}
+#btn:hover{
+	background-color: gray;
+    color: #FF530E;
+    cursor: pointer;
+    }
+.description{
+	clear: both;
+	display: block;
+	flex: 1 100%;
+	width: 100%;
+	padding: 20px;
+	margin: 20px;
+}
+.description h3{
+	font-size: 1.4em;
+	line-height: 40px;
+	text-align: left;
+}
+.similar{
+  	text-align: center;
+    background-color: gray;
+    padding: 10px;
+}
+.similar h3{
+	font-size: 1.2em;
+}
+.similar div{
+	display: inline-grid;
+	background-color: white;
+	border: 1px solid gray;
+	padding: 20px;
+	margin: 20px 80px;
+}
+.similar img{
+	width: 220px;
+	padding: 10px;
+}
+.similar figcaption{
+	font-weight: bold;
+	text-align: center;
+}
+footer{
+	background-color: #B7EEB7;
+	color: #FF530E;
+	display: flex;
+	flex: 1 100%;
+	width: 100%;
+	align-content: center;
+}
+footer ul li{
+	text-align: left;
+	padding: 5px;
+	list-style: none;
+}
+.footerlist{
+	margin-right: 250px;
+}
+.footer-signup{
+		margin: auto;
+}
+#footer-email{
+	margin-top: 10px;
+	width: 250px;
+	padding: 15px;
+}
+#footer-submit{
+	margin-top: 10px;
+	font-size: 15px;
+	padding: 15px;
+	background-color: #B7EEB7;
+	color: #FF530E;
+}
+.footer-connect{
+	padding: 10px;
+	margin-left: 250px;
+}
+.footer-connect .img{
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
+	}
+.full-footer p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+}
+.footer-without{
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: 1;
+	}
+/**Media queries for mobile**/
+
+@media screen and (max-width: 450px) {
+	*{
+		margin-right: 0;
+	}
+	header{
+		width: 100%;
+		text-align: left;
+		display: block;
+		height: 14vh;
+		padding: 0;
+	}
+	header .title{
+		clear: both;
+		padding: 5px;
+		font-size: 15px;
+		height: unset;
+	}
+	header ul li{
+		clear: both;
+		padding: 5px;
+		float: left;
+	}
+	.nav{
+		font-size: 0.8em;
+		background-color: #B7EEB7;
+    	color: #FF530E;
+		list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+	}
+	.cavendish{
+	display: flex;
+	flex-direction: column;
+  	justify-content: space-between;
+  	margin-left: 20px;
+	}
+	.cavendish img{
+	clear: both;
+    width: 130px;
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 15px;
+	}
+	.cost{
+	font-size: 0.6em;
+	margin: 0;
+	text-align: left;
+	justify-content: left;
+	}
+	.cost h3{
+		font-size: 1.1em;
+	}
+	#quantity{
+		font-size: 12px;
+		padding: 2px;
+		width: 40px;
+	}
+	#btn{
+	font-weight: bold;
+    padding: 2px;
+    background-color: #B7EEB7;
+    font-size: 12px;
+    border-radius: 5px;
+	}
+	#btn:disabled{
+	background-color: gray;
+	}
+	#btn:hover{
+	background-color: gray;
+    color: #FF530E;
+    cursor: pointer;
+    }
+	.description{
+	width: 90%;
+	margin: 10px 20px;
+	}
+	.description h3{
+	padding-top: 10px;
+	font-size: 1.1em;
+	text-align: left;
+	}
+	.description p{
+		font-size: 0.8em;
+		line-height: 25px;
+	}
+	.similar{
+	width: 90%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 18px;
+	}
+	.similar h3{
+	font-size: 0.8em;
+	}
+	.similar ul{
+	margin-left: 0;
+	padding-inline-start: 0;
+	}
+	.similar ul li{
+	background-color: white;
+	border: 1px solid gray;
+	display: inline-grid;
+	padding: 10px;
+	margin: 20px;
+	}
+	.similar figure{
+		width: 120px;
+	}
+	.similar img{
+	width: 80px;
+	}
+	.similar figcaption{
+	font-size: 0.5em;
+	text-align: center;
+}
+	footer{
+	width: 100%;
+	background-color: #B7EEB7;
+	color: #FF530E;
+  	font-size: 11px;
+  	justify-content: center;
+	}
+	footer ul li{
+	text-align: left;
+	padding: 10px;
+	list-style: none;
+	display: block;
+	}
+	.footerlist ul{
+		padding-inline-start: 0;
+		margin: 0;
+	}
+	.footer-signup{
+		margin: 0;
+	}
+	#footer-email{
+	margin-top: 10px;
+	width: 150px;
+	padding: 10px;
+	}
+	#footer-submit{
+	margin-top: 10px;
+	font-size: 15px;
+	padding: 10px;
+	background-color: #B7EEB7;
+	color: #FF530E;
+	}
+	.footer-connect{
+	padding: 10px;
+	margin: 0;
+	}
+	.full-footer p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+    font-size: 10px;
+	}
+	.footer-without{
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	}
+}
+
+/**Media queries for tab*/
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+	*{
+	margin: auto;
+	}
+	header{
+	width: 95%;
+	}
+	header .title{
+	height: inherit;
+	padding: 10px;
+	}
+	header ul li{
+	padding: 5px;
+	list-style: none;
+	display: inline-block;
+	}
+	.nav{
+	background-color: #B7EEB7;
+   	color: #FF530E;
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+	}
+	.cavendish{
+	margin: 10px 25px;
+	}
+	.description{
+	width: 90%;
+	margin: 10px 25px;
+	}
+	.similar h3{
+	font-size: 1.1em;
+	}
+	.similar ul{
+	margin-left: 0;
+	padding-inline-start: 0;
+	align-content: left;
+	}
+	.similar ul li{
+	background-color: white;
+	border: 1px solid gray;
+	display: inline-grid;
+	padding: 10px;
+	margin: 20px 50px;
+	}
+	.similar figure{
+	width: 200px;
+	}
+	.similar img{
+	width: 130px;
+	}
+	footer{
+	width: 95%;
+	background-color: #B7EEB7;
+	color: #FF530E;
+	display: flex;
+	font-size: 14px;
+	}
+	footer ul li{
+	text-align: left;
+	padding: 5px;
+	list-style: none;
+	}
+	.footerlist{
+	margin-right: 40px;
+	}
+	.footerlist ul{
+		padding-inline-start: 0;
+	}
+	.footer-signup{
+		margin: auto;
+	}
+	#footer-email{
+	margin-top: 5px;
+	width: 150px;
+	padding: 5px;
+	}
+	#footer-submit{
+	margin-top: 5px;
+	font-size: 15px;
+	padding: 5px;
+	background-color: #B7EEB7;
+	color: #FF530E;
+	}
+	.footer-connect{
+	padding: 10px;
+	margin-left: 40px;
+	}
+	.footer-connect img{
+		width: 35px;
+	}
+	.full-footer p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+	}
+	.footer-without{
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+}

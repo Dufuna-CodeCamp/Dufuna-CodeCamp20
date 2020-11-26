@@ -1,0 +1,346 @@
+body {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    background-color: #ffffff;
+}
+
+/* for the header */
+
+.header {
+    background-color: #0066f5;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav>.right-side>div {
+    margin-right: 100px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.19;
+    text-align: left;
+}
+
+.tab {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-wrapper {
+    height: 22px;
+}
+
+.link-wrapper a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.camidescription h3, h4 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+/* for the description */
+
+.description h4 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+.description h3 {
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+#button {
+    width: 174px;
+    height: 64px;
+    border-radius: 20px;
+    background-color: #f79521;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* for the related products */
+
+.related {
+    background-color: #ebebeb;
+    padding-bottom: 40px;
+}
+
+.related h4 {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: #5f5f5f;
+    padding-top: 20px;
+}
+
+.display {
+    margin-top: 20px;
+}
+
+.cami {
+    width: 80%;
+    border: 1px solid #707070;
+    margin: auto
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.martens {
+    background-color: #ffffff;
+}
+
+.martens, .platforms, .military {
+    width: 85%;
+    margin: auto;
+}
+
+.martens h4 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.platforms {
+    background-color: #ffffff;
+}
+
+.platforms h4 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+.military {
+    background-color: #ffffff;
+}
+
+.military h4 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.23;
+    text-align: center;
+    color: #5f5f5f;
+}
+
+/* for the footer */
+
+.footer {
+    background-color: #0066f5;
+    padding: 20px;
+    color: #fcf8f8;
+}
+
+.facebook{
+    width: 45px;
+    height: 41px;
+}
+.twitter{
+    width: 48px;
+    height: 43px;
+}
+.gmail{
+    width: 63px;
+    height: 41px;
+}
+.youtube{
+    width: 69px;
+    height: 43px;
+}
+
+.about {
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: left;
+}
+
+#newslettter {
+    width: 253px;
+    height: 44px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+}
+
+#submitbutton {
+    width: 108px;
+    height: 44px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    text-align: center;
+    color: #0066f5;
+}
+
+.newsletter ::placeholder {
+    font-size: 16px;
+    line-height: 1.19;
+    color: #0066f5;
+    padding-left: 5px;
+}
+
+.newsletter h4 {
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: left;
+}
+
+.connect p {
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: left;
+}
+
+.connect img {
+    width: auto;
+}
+
+.newsletter-input {
+    display: flex;
+}
+
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .display {
+        display: flex;
+    }
+    .cami {
+        width: 40%;
+    }
+    .items {
+        display: flex;
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    .martens, .platforms, .military {
+        width: 40%;
+        margin-top: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .socials {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /* justify-content: space-around; */
+    }
+    .related {
+        padding-bottom: 50px;
+    }
+    .right-side {
+        display: flex;
+        margin-left: 30px;
+    }
+    .left-side {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        justify-content: space-between;
+        padding: 2px;
+        height: 70px;
+    }
+    /* for the header */
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-side {
+        display: flex;
+        margin-left: 30px;
+    }
+    .left-side {
+        display: flex;
+    }
+    /* for the main display */
+    .display {
+        display: flex;
+    }
+    .martens {
+        width: 399px;
+        height: 500px;
+    }
+    .military {
+        width: 399px;
+        height: 500px;
+    }
+    .items {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* for the left side */
+    .cami {
+        width: 469px;
+        height: 300x;
+        object-fit: contain;
+        border: solid 1px #707070;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    /* for the right side */
+    .camidescription {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .footer {
+        height: 203px;
+        padding: 20px;
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer>p {
+        text-align: center;
+    }
+    .platforms {
+        width: 399px;
+        height: 500px;
+    }
+    
+    .socials {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+    /* for the related products */
+    .related {
+        height: 600px;
+    }
+}

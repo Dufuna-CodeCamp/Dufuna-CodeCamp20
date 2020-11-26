@@ -5,6 +5,7 @@
         padding:20px;
         column-width: auto;
     }
+    
     h2  {
         width:50%;    
         }
@@ -13,6 +14,22 @@
         margin-right: 10px;
         
     }
+    .error  {
+            font-size: 12px;
+            display: inline-block;
+            color:red;
+            clear: both;
+            width: 100%;
+    }
+     .errorMsg   {
+            color:red;
+            font-weight: bold;
+            display: flex;
+        
+        
+    }
+    
+    
     .productpagelink {
         padding-top: 13px;
     }
@@ -59,7 +76,7 @@
 }
     img {
         height: 40px;
-        width:  100%;
+        width:  70px;
     }    
     .fa {
         padding: 10px;
@@ -109,9 +126,10 @@
           background-color: greenyellow;
           text-align: center;
       }
-      .contacts   {
-        text-align: left;
-        padding-right: 50px;
+      ul  {
+            list-style-type: none;
+            margin-right: 100px;
+       
     }
  
     .flex-item1   {
@@ -146,7 +164,7 @@
     .check  {
         margin:0 auto;
     }
-    .btn{;
+    .btn{
         margin-right:150px;
         margin-left:40px;
     }
@@ -162,7 +180,7 @@
     .container  {
         display: block;
         justify-content: center;
-        width:
+        
         
     }
     .fields {

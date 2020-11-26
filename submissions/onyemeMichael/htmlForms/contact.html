@@ -84,9 +84,10 @@
         <div class="footer newsletter">
             <h3 class="kt">Sign up for our Newsletter</h3>
             <div class="newsletter">
-                <form>
+                <form id="send">
                     <input type="email" name="email" id="letter" placeholder="Enter your email address">
-                    <input type="button" value="SUBMIT">
+                    <button type="submit">SUBMIT</button>
+                    <span class="error-message"></span>
                 </form>
             </div>
         </div>
@@ -100,8 +101,9 @@
               </ul>
         </div><br>
     <p class="kt"> Copyright &copy; 2020 mixstore.com. All rights reserved.</p>
+</footer>
 
 <script src="../domManipulation/contact.js"></script>
-</footer>
+<script src="../domManipulation/newsLetter.js"></script>
 </body>
 </html>
