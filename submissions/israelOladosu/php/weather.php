@@ -8,6 +8,6 @@ if ($temprature <= 20){
      echo 'The weather is just perfect';
 } elseif ($temprature >= 30 && $temprature < 40) {
     echo 'It is hot today';
-} elseif ($temprature >= 40) {
+} else {
     echo 'Am I in the Sahara Desert?!';
 };
