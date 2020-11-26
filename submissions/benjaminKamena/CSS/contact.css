@@ -88,6 +88,7 @@ body{
       color: #fff;
       font-weight: bolder;
       font-size: large;
+      text-decoration: none;
     }
 
     @media screen and (max-width: 986px)
@@ -215,6 +216,7 @@ footer {
       font-size: 18px;
       margin-bottom: 15px;
       font-family: Montserrat;
+    
     }
 .footer-links ul li a {
       text-decoration: none;

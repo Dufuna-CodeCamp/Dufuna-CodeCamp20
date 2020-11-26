@@ -1,0 +1,83 @@
+.contact-area {
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-notes {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.contact-notes .phone-contacts {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px 30px;
+}
+
+.contact-form .form-heading {
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    outline: none;
+    padding: 10px 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form input {
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+
+.contact-form input:first-child {
+    margin-top: 10px;
+}
+
+.contact-form input:last-of-type {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form-button {
+    text-align: right;
+}
+
+#contact-form-button button {
+    background-color: brown;
+    color: white;
+    padding: 7px 3em;
+    border: none;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 850px) {
+    .contact-area {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+        align-items: center;
+        margin: 0 3em;
+    }
+
+    .contact-notes,
+    .form-heading p {
+        font-size: 20px;
+    }
+
+    .contact-area .social-links {
+        margin-top: 15px;
+    }
+}
