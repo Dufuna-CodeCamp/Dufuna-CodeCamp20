@@ -1,68 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Products | Ladies & Gents</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Page | Ladies & Gents</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../css/product.css"/>
 </head>
 <body>
-	<header>	
-		<h1>LADIES & GENTS... <small><i>there's a shoe for everyone.</i></small></h1>
-		<ul>
-			<li><a href="../html-forms/contact.html"><h3>Contact Page</h3></a></li>
-			<li><a href="product.html"><h3>Product Page</h3></a></li>
-		</ul><br>
-	</header><br>
-
-	<p><strong>Nike Sneakers</strong></p>
-	
-	<img src="./images/greysneakers.jpg"> 
-	
-	<img src="./images/colouredsneakers.jpg">
-	
-	<p><em>Price:</em> &#x20A6; 29,700</p>
-
-	<p><strong>ITEM DESCRIPTION</strong></p>
-
-	<p>This Nike Sneakers is known for its comfortability and durability. <br>The upper part is made of 100% pure leather while the sole is sythetic. </p>
-	<p>	SKU: BB123322 <br>
-		Heel Type: Low<br>
-		Main Material: synthetic<br>
-		Model: sneakers<br>
-		Weight (kg): 0.3<br>
-	</p>
-	<hr>
-	<p><h2>Similar Products:</h2></p>
-	<ol>
-		<li>
-			<strong>Blue Lace-up Sneakers</strong> <br>
-			<em>Price:</em> &#x20A6; 25,000<br>
-			
-		</li>
-		<li>
-			<strong>Black and White Adidas Sneakers</strong> <br>
-			<em>Price:</em> &#x20A6; 24,500 <br>
-			
-		</li>
-		<li>
-			<strong>Vans Sneakers</strong> <br>
-			<em>Price:</em> &#x20A6; 28,400 <br>
-			
-		<li>
-			<strong>Red Low-Top Sneakers</strong><br>
-			<em>Price:</em> &#x20A6; 23,800 <br>
-			
-		</li>
-	</ol>
-<footer>
-			<p>
+	<div>
+		<div class="topnav">
+			<div id="nav-logo" class="nav-logo">
+				<a href="#"><img src="../html/images/logo.jpg"/></a>
+			</div>
+			<div class="nav-links">
 				<ul>
-					<li><a href="https://twitter.com"><em>	Twitter</em></a></li>
-					<li><a href="https://facebook.com"><em>Facebook</em></a></li>
-					<li><a href="https://instagram.com"><em>Instagram</em></a></li>
-				</ul>
-			</p>
-		
-	<p> Copyright &copy 2020 Ladies And Gents Inc. All Rights Reserved.</p>
-</footer>
+          <li><a href="../html/product.html">Product Page</a></li>
+          <li><a href="../html-forms/contactUs.html">Contact Us</a></li>
+          <li><a href="../html-forms/signup.html">Sign-up</a></li>
+        </ul>
+			</div>
+		</div>
+		<div class="page-body">
+		<div class="main-product">
+		 <div class="box-a">
+		 	<img src="./images/colouredsneakers.jpg">
+		 </div>
+		 <div class="p-details">
+		  <p class="heading">NIKE SNEAKERS</p>
+		  <p class="sub-head">Brand: Coloured</p>
+		  <label class="quantity" for="quantity">Quantity</label>
+		  <input type="text" name="quantity" id="quantity"/>
+		  <p class="sub-head">Price: $200</p>
+		  <form>
+		   	<button class="button" type="button">BUY NOW</button>
+		  </form>
+			</div>
+		</div>
+		<div class="description">
+		 	<p class="heading">DESCRIPTION</p>
+		 	<p>This Nike Sneakers is known for its comfortability and durability.
+		 	The upper part is made of 100% pure leather while the sole is sythetic.</p>
+		</div>
+		<div class="container">
+		 <div class="related-items">RELATED PRODUCTS</div>
+		 <div class="related-list">
+		 	<div class="box-b">
+		 		<img src="./images/coveredshoes.jpg">
+		 		<p class="details" >Covered Shoes</p>
+		 		<p class="details">Price: $350</p>
+		 	</div>
+		 	<div class="box-c">
+		 		<img src="./images/bluesneakers.jpg">
+		 		<p class="details">Blue Sneakers</p>
+		 		<p class="details">Price: $300</p>
+		 	</div>
+		 	<div class="box-d">
+		 		<img src="./images/peeptoeshoes.jpg">
+		 		<p class="details">Peep-Toe Shoes</p>
+		 		<p class="details">Price: $380</p>
+		 	</div>
+		 </div>
+		</div>
+		</div>
+		<div class="footer">
+			<div class="footer-body">
+				<div class="footer-links">
+					<span class="links">
+						<ul>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+						</ul>
+					</span>
+				</div>
+				<div class="footer-news">
+					<div class="news">
+						<span>
+              <form class="news-form">
+              	<span>
+              		<label id="email" for="email"><b id="news-sign">Sign up for our Newsletter</label>
+              	</span>
+              	<span>
+              		<input class="news-email" type="email" name="email" id="email" placeholder="Enter email address"/>
+               		<button class="white-button" type="button">SUBMIT</button>
+               	</span>
+              </form>
+            </span>
+					</div>
+				</div>
+				<div class="footer-connect">
+					<div class="connect">
+						<span class=""><p>CONNECT WITH US</strong></p>
+              <ul class="social-links">
+                <li><img src="../html/images/facebook.jpg"/></li>
+                <li><img src="../html/images/twitter.jpg"/></li>
+                <li><img src="../html/images/gmail.jpg"/></li>
+                <li><img src="../html/images/youtube.jpg"/></li>
+              </ul>
+            </span>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copy">
+				<div class="copy">
+					Copyright &copy 2020 ladies&gents.com. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
