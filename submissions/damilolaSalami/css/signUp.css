@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial ;
+    }
+
+/* header */
+.header{
+    background-color: purple;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 0;
+}
+
+.header .logo img{
+    width: 200px;
+}
+
+.header li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 17px;
+    margin-right: 100px;
+}
+
+.header li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header li a:hover{
+    color: black;
+}
+
+/* Registration */
+.mainbody{
+    display: flex;
+}
+
+.container{
+    flex-basis: 50%;
+}
+
+.registration{
+    font-size: 20px;
+    margin: 120px 5px 0 50px;
+    padding-right: 100px;
+    padding-left: 150px;
+}
+
+.registration p{
+    font-size: 20px;
+    padding: 20px 0 10px;
+}
+
+.registration h1, .registration a{
+    color: purple;
+    font-weight: bolder;
+}
+
+.regform{
+    padding: 25px 30px 10px 25px;
+    margin: 40px 10px 40px 70px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.regform .inputbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    margin: 4px 0 10px 1px;
+    height: 28px;
+}
+
+.regform label{
+    font-size: 15px;
+}
+
+.regform .box{
+    margin: 20px 0 20px 45px;
+}
+
+.regform p{
+    color: purple;
+    display: inline;
+    font-weight: bold;
+}
+
+.regform .signup{
+    background-color: purple;
+    font-size: 12px;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 8px 40px;
+    margin-left: 120px;
+    font-weight: bold;
+}
+
+/* footer */
+.footer{
+    background-color: purple;
+}
+
+.mainfooter{
+    display: flex;
+    width: 100%;
+}
+
+.footerdiv{
+    flex-basis: 50%;
+    padding: 25px 10px 0 40px;
+}
+
+.contact li{
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.contact li a{
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter{
+    padding-left: 0;
+}
+
+.newsletter p{
+    color: white;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.newsletter .emailletter{
+    padding-left: 5px;
+    border: 1px solid purple;
+    height: 30px;
+    width: 250px;
+}
+
+.mainfooter .newsletter .emailletter::placeholder{
+    color: purple;
+    font-size: 16px;
+}
+
+.mainfooter .newsletter .submit{
+    border: 1px solid white;
+    height: 29px;
+    width: 70px;
+    font-size: 13px;
+    font-weight: bold;
+    color: purple;
+}
+
+.mainfooter .connect p{
+    padding: 7px;
+    font-size: 14px;
+    color: white;
+    margin-left: 0;
+}
+
+.mainfooter .connect img{
+    background-color: transparent;
+    border-radius: 5px;
+    height: 27px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.finalfooter{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:640px){
+    body{
+        margin: 0;
+    }
+
+    .header{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 160px;
+        padding-bottom: 100px;
+    }
+    
+    .header li{
+        display: block;
+        margin: 5px 15px 10px;
+        line-height: 15px;
+        color: white;
+        list-style-type: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .header li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header li a:hover{
+        color: black;
+    }
+
+    .header .logo img{
+        display: block;
+        height: 75px;
+    }
+
+    .mainbody{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration{
+        text-align: center;
+        margin: 20px 40px 0;
+        padding: 0 10px;
+    }
+
+    .registration h1{
+        font-size: 30px;
+    }
+
+    .registration p{
+        font-size: 15px;
+    }
+
+    .regform{
+        width: 300px;
+        margin: 25px 30px 30px 40px;
+        padding: 10px;
+    }
+
+    .regform label{
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .regform .inputbox{
+        width: 270px;
+    }
+
+    .regform .box{
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+    .regform label p{
+        font-size: 14px;
+    }
+
+    .regform .signup{
+        padding: 8px 30px;
+        margin-left: 80px;
+        font-size: 15px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .mainfooter{
+        flex-direction: column;
+    }
+
+    .contact{
+        padding: 10px 0 0 20px;
+    }
+
+    .newsletter{
+        padding: 10px 0 0 20px;
+    }
+
+    .newsletter .emailletter{
+        width: 200px;
+    }
+
+    .connect{
+        padding: 10px 0 0 15px;
+    }
+
+    .finalfooter{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1050px) and (min-width:640px){
+    .header{
+        display: flex;
+    }
+
+    .header li{
+        display: inline-block;
+        margin-right: 20px;
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .mainbody{
+         align-items: center;
+         flex-direction: column;
+    }
+
+    .registration{
+        text-align: center;
+        margin: 20px 100px 0 100px;
+    }
+
+    .registration h1{
+        font-size: 40px;
+    }
+
+    .registration p{
+        font-size: 20px;
+    }
+
+    .regform{
+        width: 600px;
+        margin: 20px 30px 30px 40px;
+        padding: 20px 10px 10px;
+    }
+
+    .regform label{
+        margin-right: 10px;
+        margin-left: 13px;
+    }
+
+    .regform .inputbox{
+        width: 550px;
+        height: 40px;
+        margin-left: 13px;
+    }
+
+    .regform .box{
+        margin-left: 160px;
+    }
+
+    .regform label p{
+        font-size: 15px;
+    }
+
+    .regform .signup{
+        padding: 8px 40px;
+        margin-left: 250px;
+        font-size: 15px;
+    }
+
+    .mainfooter{
+        width: 100%;
+        display: grid;
+        bottom: 0;
+        grid-template-columns: auto auto;
+    }
+
+    .contact li{
+        font-size: 20px;
+    }
+
+    .newsletter p{
+        font-size: 18px;
+    }
+
+    .newsletter .emailletter{
+        width: 250px;
+        height: 37px;
+    }
+
+    .mainfooter .newsletter .submit{
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .mainfooter .connect p{
+        font-size: 20px;
+    }
+    
+    .finalfooter{
+        align-items: center;
+    }
+
+    .finalfooter p{
+        font-size: 20px;
+    }
+}
