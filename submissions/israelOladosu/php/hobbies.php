@@ -9,7 +9,7 @@ function display($array1, $array2)
     for ($i = 0; $i <= count($array1) - 1; $i++) {
         $firstName = $array1[$i];
         $hobby = $array2[$i];
-        echo "My name is $firstName. I love $hobby. <br >";
+        echo "My name is $firstName. I love $hobby." . '<br >';
     }
 };
 
