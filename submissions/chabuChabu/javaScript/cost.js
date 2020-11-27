@@ -43,7 +43,7 @@ function grandPrice(){
 
     }else{
       total.innerHTML = cartBasket + 25000;
-      total.innerHTML = 25000;
+      shippingCost.innerHTML = 25000;
     } 
 }
 
