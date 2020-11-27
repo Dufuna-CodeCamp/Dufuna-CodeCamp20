@@ -28,12 +28,20 @@
           <h4 class="header2">Brand: Polka-dot</h4>
         </li>
         <li>
-          <h4 class="header2">Quality: <input class="Qty" type="text"></h4>
+          <h4 class="header2">Quality: <input class="qty" value=1 id="qty" type="number">
+            <span id="error"></span>
+          </h4>
         </li>
         <li>
-          <h4 class="header2">Price: $34</h4>
+          <h4 class="header2">Price: $<span id="price">340</span> </h4>
         </li>
-        <button class="buyButton" type="submit">Buy now</button>
+        <li>
+          <h4 class="header2">Shipping Cost: $<span id="shippingCost">100</span></h4>
+        </li>
+        <li>
+          <h4 class="header2">Total Cost: $<span id="total">340</span></h4>
+        </li>
+        <button class="buyButton" id="buyButton" type="submit">Buy now</button>
       </ul>
     </div>
     <div class="shirtDescription">
@@ -98,6 +106,8 @@
       <a href="#"> Emarket</a>
     </div>
   </footer>
+  <script src="../javascript/Dom/index.js"></script>
+  <script src="../javascript/Dom/footer.js"></script>
 </body>
 
 </html>

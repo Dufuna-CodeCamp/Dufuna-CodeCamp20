@@ -68,10 +68,14 @@ nav ul li {
 }
 .header2 {
   color: grey;
+  margin-top: -9px;
 }
 .Qty {
-  width: 70px;
-  height: 40px;
+  width: 50px;
+  height: 30px;
+}
+#error{
+  color: crimson;
 }
 .shirtDescription {
   padding: 2px 30px;
@@ -99,7 +103,7 @@ nav ul li {
   padding-top: 10px;
   padding-bottom: 0;
   margin: 20px;
-  width: 25rem;
+  width: 23rem;
 }
 .relatedProd {
   text-align: center;
@@ -204,6 +208,9 @@ footer {
   .productImg {
     width: 12rem;
   }
+  #error{
+  font-size: 10px;
+}
 }
 @media (max-width: 375px) {
   nav {
@@ -237,6 +244,10 @@ footer {
     display: inline;
     float: left;
   }
+  #error{
+  font-size: 7px;
+  font-weight: bolder;
+}
   .shirtDetails {
     padding: 10px;
     margin-left: 30px;
