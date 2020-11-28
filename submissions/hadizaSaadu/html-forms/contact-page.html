@@ -2,25 +2,95 @@
 <html>
   <meta data="UTF-8" />
         <title>contactform</title>
+        <link rel="stylesheet" type="text/css" href="../css/contact-page.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
     <body>
-        <a href="../HTML/E-commerce.html">PRODUCT PAGE</a><br><br>
-      <form>
-        <fieldset>
+      <div class="page">
+        <div id="header">
+            <a href="#" id="logo">LOGO</a>
+            <a href="#" id="product">Product Page</a>
+            <a href="#" id="contact">Contact Form</a>
+            <a href="#" id="sign">Sign-up</a>
+        </div>
+        <div class="center">
+        <img  src="../HTML/images/logos/phone.png"/>
+        <p class="bold"> please contact us via these numbers</p>
+        <p class="norm"> +234 808 509 4147</p>
+        <p class="norm"> +234 703 796 3961</p><br>
+        <img src="../HTML/images/logos/open-mail.jpg"/>
+        <p class="bold"> Email Address:</p>
+        <p class="norm">Suppport@deezahscloset.com</p><br>
+        <p class="bold"> Or Connect With Us</p>
+        <table>
+        
+            <td class="top-logos">
+              <img src="../HTML/images/logos/Facebook.png" />
+              <img src="../HTML/images/logos/Twitter.png" />
+              <img src="../HTML/images/logos/gmail.png" />
+              <img src="../HTML/images/logos/youtube.jpg" />
           
-          <label for "fname">Fulll Name</label><br>
-          <input type="text" name="sname" id="sname"><br><br>
-          <label for="email">Email</label><br>
-          <input type="email" name="email" id="email"><br><br>
-          <label for="subject">Subject</label><br>
-          <input type="text" name="subject" id="subject"><br><br>
-          <label for="message input"> Message Input</label><br>
-          <textarea id="msginput" cols="50" rows="10"></textarea><br><br>
-          <button type="submit" id="submit">Submit</button>
-          <legend>Contact Form</legend>
-        </fieldset>
+          </td>
+        </table>
+</div>
+<br>
+<form>
+        <fieldset class="bigrec2">
+           <div class="upform">        
+             <img src="../HTML/images/logos/closed-mail.png"/>
+             <p class="bold">Or better still send us a message</p>
+           </div>
+        
 
+          <label for="fname"></label><br>
+          <input type="text" name="fname" class="inputs" placeholder="Full Name"><br><br>
+          <label for="subject"></label><br>
+          <input type="email" name="email" class="inputs" placeholder="Email"><br><br>
+          <label for="subject"></label><br>
+          <input type="text" name="subject" class="inputs" placeholder="Subject"><br><br>
+          <label for="message input"> Message</label><br>
+          <textarea cols="82" rows="8"></textarea><br><br>
+          <button type="submit" class="send">Send</button>
+        </fieldset>
+      
       </form>
+      <footer class="footer">
+        <div class="up">
+            <table class="full-size">
+                <tr>
+                    <td>Contact Us</td>
+                    <td class="right">Sign Up for our Newsletter</td>
+                </tr>
+                <tr>
+                    <td>About Us </td>
+                    <td class="right">
+                        <input type="text" name="email" placeholder="Enter your email address" id="input-signup"/>
+                        <button type="submit" class="submit"> SUBMIT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Terms and Conditions</td>
+                    <td class="right">CONNECT WITH US</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="right">
+                        <img src="../HTML/images/logos/Facebook.png" class="logos"/>
+                        <img src="../HTML/images/logos/Twitter.png" class="logos"/>
+                        <img src="../HTML/images/logos/gmail.png" class="logos"/>
+                        <img src="../HTML/images/logos/youtube.jpg" class="logos"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="base">
+                        Copyright-2020-deezahscloset.com-All-rights-reserved
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</div>
     </body>
   
     </html>
