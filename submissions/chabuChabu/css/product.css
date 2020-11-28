@@ -82,13 +82,14 @@ header ul li a:hover {
 }
 #description{
 	padding: 0;
-	margin: 0;
+	margin-top: 35px;
 }
 h2,
 h3{
 	color:#5f5f5f;
 	margin: 0 ;
 	padding: 8px;
+	
 }
 .description-summary{
 	position: absolute;
@@ -100,12 +101,21 @@ h3{
 	color: #5f5f5f;
 	margin-bottom: 0;
 }
-#form-label{
+#form-label,
+#form-label-price,
+#form-label-total{
 	color: #5f5f5f;
 	margin:10px;
 	font-weight: bold;
 	display: inline-block;
 	line-height: 0.7;
+}
+#form-label-price #productPrice,
+#productTotal, 
+#shippingCost {
+	display: inline-block;
+	padding: 0;
+	margin:0;
 }
 .text-input {
 	padding: 8px;
@@ -118,12 +128,11 @@ h3{
 	background-color: #f79521;
 	color: white;
 	width: 35%;
-	height: 50px;
+	height: 35px;
 	border: none;
 	font-weight: bold;
 	border-radius: 14px;
-}
-.related-product{
+	margin-left: 10px;
 }
 .related-product .related-product-title{
 	text-align: center;
@@ -199,6 +208,11 @@ h3{
   color: white;
   text-align: center;
 }
+.error-block {
+	color: red;
+	font-size: 14px;
+	
+}
 .footer-error-block{
 	display: inline-block;
 	color: red;
@@ -220,7 +234,7 @@ ul .nav{
 /**MEDIA QUERIES FOR content**/
 @media screen and (max-width: 1300px){
 	.related-product{
-		height: 600px;
+		height: 540px;
 }
 	.selected-product .product-wrapper{
 	height: 390px;
@@ -229,18 +243,18 @@ ul .nav{
 	width: 50%;
 }
 .description-summary #summary-title{
-	margin-top: 25px;
+	margin-top: 10px;
 	font-size: 20px;
 }
 .related-product .related-product-title{
 	font-size: 23px;
 }
 #descripton-title{
-	font-size: 20px;
+	font-size: 15px;
 }
 #description{
 	font-style: 10px;
-	margin-bottom: 20px;
+	margin-top: 12px;
 }
 .related-product .related-wrapper .similar-products{
 	width: 45%;
@@ -330,13 +344,19 @@ font-size: 17px;
 	font-size: 13px;
 	margin-left: 20px;
 }
+
 #description{
 	font-size: 12px;
 	padding: 10px;
-	margin: 10px;
+	margin: 0 0 12px 0;
+	background-color: white;
+}
+.related-product{
+	margin-top: 30px;
 }
 .related-product .related-wrapper .similar-products{
 	width: 90%;
+	
 }
 .related-product .related-product-title{
 	font-size: 20px;
