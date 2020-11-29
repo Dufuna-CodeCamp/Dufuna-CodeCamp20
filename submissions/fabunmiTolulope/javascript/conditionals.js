@@ -1,24 +1,25 @@
 // The positive difference between 7 and 123 is 116 so this program will print numbers between 1 and 116
-let w = 7;
-let y = 123;
-z = y-w;
+let number1 = 7;
+let number2 = 123;
+positiveDiff = number2 - number1;
+// prog is the programmed variable
 
-for (var x = 1; x <= z; x++) 
+for (var prog = 1; prog <= positiveDiff; prog++) 
 {
-	if (x% 3 === 0 && x% 5 === 0) 
+	if (prog% 3 === 0 && prog% 5 === 0) 
 	{
 		console.log("Software Developer");
 	}
-	else if (x% 3 === 0) 
+	else if (prog% 3 === 0) 
 	{
 		console.log("Software");
 	} 
-	else if (x% 5 === 0) 
+	else if (prog% 5 === 0) 
 	{
 		console.log("Developer");
 	} 
 	else 
 	{
-		console.log(x)
+		console.log(prog)
 	}
 }
