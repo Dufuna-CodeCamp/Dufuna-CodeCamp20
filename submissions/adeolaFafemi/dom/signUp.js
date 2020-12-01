@@ -1,5 +1,5 @@
 // selecting the elements
-let submitForm = document.getElementById('submit-btn');
+let submitForm = document.getElementById('signupform');
 let firstName = document.getElementById('firstname1');
 let lastName = document.getElementById('lastname');
 let otherNames = document.getElementById('othername');
@@ -10,13 +10,12 @@ let confirmPassword = document.getElementById('confirmPassword');
 // regex
 var alphaExp = /^[a-zA-Z ]+$/;
 var numericExp = /^[+]*[0-9]+$/;
-var emailExp ="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
+var emailExp =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
 var passExp =/^(?=(.*[\d]){1,})(?=(.*[a-z]){1,})(?=(.*[A-Z]){1,})(?=(.*[\W]){1,}).{6,}$/;
 // eventListeners
 submitForm.addEventListener("click", validateForm);
 //functions
 function validateForm(e){
-    e.preventDefault();
     firstNameVal(e);
     lastNameVal(e);
     otherNameVal(e);
@@ -110,12 +109,14 @@ function emailVal(event) {
         email.nextElementSibling.innerText ="Please enter your email address";
         event.preventDefault();
         return false;
-    }
-    else {
-        if(!emailInput.match(emailExp)) {
+    }else {
+        if(!emailExp.test(emailInput)) {
             email.nextElementSibling.innerText ="Please Enter a Valid Email Address";
             event.preventDefault();
             return false;
+        } else {
+            email.nextElementSibling.innerText = "";
+            return true;
         }
     }
 }
