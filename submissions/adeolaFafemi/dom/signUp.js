@@ -10,7 +10,7 @@ let confirmPassword = document.getElementById('confirmPassword');
 // regex
 var alphaExp = /^[a-zA-Z ]+$/;
 var numericExp = /^[+]*[0-9]+$/;
-var emailExp =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var emailExp =/^([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 var passExp =/^(?=(.*[\d]){1,})(?=(.*[a-z]){1,})(?=(.*[A-Z]){1,})(?=(.*[\W]){1,}).{6,}$/;
 // eventListeners
 submitForm.addEventListener("click", validateForm);
@@ -112,7 +112,7 @@ function emailVal(event) {
         return false;
     }
     else {
-        if(!emailExp.test(emailInput)) {
+        if(!emailInput.match(emailExp)) {
             email.nextElementSibling.innerText ="Please Enter a Valid Email Address";
             event.preventDefault();
             return false;
