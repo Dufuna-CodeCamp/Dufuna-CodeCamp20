@@ -20,23 +20,16 @@ class UserController
 
     public function index(Request $request, Response $response, $args)
     {
-        //echo "<pre>";
-//        print_r(User::find(1)->get());
-//        echo "</pre>"; exit;
-        $users = User::all();
-        $response->getBody()->write($users->toJson());
-        return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
-        //$response->getBody()->write(json_encode($users));
-//        try {
-//            $query = $this->db->prepare("SELECT * FROM users");
-//            $query->execute();
-//            $users = $query->fetchAll(PDO::FETCH_OBJ);
-//            $response->getBody()->write(json_encode($users));
-//            return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
-//        } catch (PDOException $ex) {
-//            $response->getBody()->write(json_encode(["error" => $ex->getMessage()]));
-//            return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
-//        }
+        try {
+            $query = $this->db->prepare("SELECT * FROM users");
+            $query->execute();
+            $users = $query->fetchAll(PDO::FETCH_OBJ);
+            $response->getBody()->write(json_encode($users));
+            return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
+        } catch (PDOException $ex) {
+            $response->getBody()->write(json_encode(["error" => $ex->getMessage()]));
+            return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
+        }
     }
 
     public function show(Request $request, Response $response, $args)

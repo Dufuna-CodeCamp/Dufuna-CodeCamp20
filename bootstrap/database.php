@@ -7,6 +7,3 @@ $capsule->addConnection($db_connection);
 
 $capsule->bootEloquent();
 $capsule->setAsGlobal();
-//echo "<pre>";
-//print_r($db_connection);
-//echo "</pre>"; exit;
