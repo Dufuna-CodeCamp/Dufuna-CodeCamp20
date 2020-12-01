@@ -19,12 +19,13 @@ function validateForm(e){
     e.preventDefault();
     firstNameVal(e);
     lastNameVal(e);
+    otherNameVal(e);
     phoneVal(e);
     emailVal(e);
     passVal(e);
     confPass(e);
     return true;
-};
+}
 function firstNameVal(event){
     var name = firstName.value;
     
@@ -71,16 +72,18 @@ function lastNameVal(event){
     }
 }
 function otherNameVal(event){
-    var othername = otherName.value;
+    var othername = otherNames.value;
+    if(!othername.length == 0){
         if(!alphaExp.test(othername)) {
-            otherName.nextElementSibling.innerText ="No special characters are allowed";
+            otherNames.nextElementSibling.innerText ="No special characters are allowed";
             event.preventDefault();
             return false;
         }
         else {
-            otherName.nextElementSibling.innerText = "";
+            otherNames.nextElementSibling.innerText = "";
             return true;
         }
+    }
 }
 function phoneVal(event) {
     var phone = phoneNumber.value;
@@ -154,5 +157,5 @@ function confPass(event) {
             confirmPassword.nextElementSibling.innerText = "";
             return true;
         }
-        }
-};
+    }
+}
