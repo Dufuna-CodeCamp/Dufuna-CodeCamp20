@@ -1,8 +1,9 @@
 <?php
+
 $x = 100;
-while($x <150){
+while($x < 150){
     if ($x > 100 && $x < 150){
-      echo "$x <br >";
+      echo "$x <br>";
     }  
     $x++;
 }
@@ -10,7 +11,7 @@ while($x <150){
 $i = 0;
 while($i < 50){
     if ($i > 0 && $i % 2 === 0){
-echo "$i <br >";
+echo "$i <br>";
     }
     $i++;
 }
@@ -18,13 +19,13 @@ echo "$i <br >";
 
 // for ($x = 100; $x < 150; $x++) {
 //     if (xi > 100){
-//    echo "$x <br >";
+//    echo "$x <br>";
 // }
 // };
 
 // for ($i = 0; $i < 50; $i++) {
 //     if ($i > 0 && $i % 2 === 0) {
-//         echo "$i <br >";
+//         echo "$i <br>";
 //     }
 // };
 
