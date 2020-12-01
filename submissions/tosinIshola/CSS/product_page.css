@@ -222,6 +222,15 @@ footer .footer .coloumn2#connect{
     [class*="col-"] {
         width: 100%;
     }
+
+    .three-column{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%
+    }
+    .related{
+        width:35%;
+    }
 }
 
 /* Tablet View*/
@@ -239,6 +248,7 @@ footer .footer .coloumn2#connect{
     main #heading{
         width: 60%;
     }
+
 
     footer .footer{
         display: flex;
