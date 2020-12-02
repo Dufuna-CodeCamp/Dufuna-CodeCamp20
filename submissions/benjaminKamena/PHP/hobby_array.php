@@ -5,6 +5,6 @@ $result = array();
 foreach($eight_people as $key=>$value){
 	$val = $hobbies[$key];
 	$result[$key]=array($value, $val);
-	echo "My name is {$value}. I love {$val}"."<br>";
+	echo "My name is {$value}. I love {$val} <br>";
 	}
 ?>
