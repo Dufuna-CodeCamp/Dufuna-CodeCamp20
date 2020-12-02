@@ -4,8 +4,8 @@
 
     $hobbies = ['movies','music','chatting','video games','swimming','skating','football','basketball'];
 
-    foreach(array_combine($names,$hobbies) as $key => $value) {
-            echo 'My name is ' .$key . ", I love " . $value . "<br>";
+    foreach(array_combine($names,$hobbies) as $firstname => $hobby) {
+            echo 'My name is ' .$firstname . ", I love " . $hobby . "<br>";
         }
 
 ?>
