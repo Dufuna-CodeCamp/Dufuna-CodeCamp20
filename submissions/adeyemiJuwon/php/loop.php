@@ -11,7 +11,7 @@ while($x < 150){
 $i = 0;
 while($i < 50){
     if ($i > 0 && $i % 2 === 0){
-echo $i . "<br>";
+        echo $i . "<br>";
     }
     $i++;
 }
