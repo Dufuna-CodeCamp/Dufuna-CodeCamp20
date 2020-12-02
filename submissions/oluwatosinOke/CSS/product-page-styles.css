@@ -64,6 +64,10 @@ header nav
     padding-left: 350px;
 }
 
+.error {
+    color:red;
+}
+
 /*Right-column*/
 .right-column
 {

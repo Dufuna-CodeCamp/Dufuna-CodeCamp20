@@ -118,6 +118,10 @@ header a
     height: 50px;
     width: 190px;
   }
+
+  .error {
+    color:red;
+}
   
   /*footer*/
   .footer
@@ -179,7 +183,7 @@ header a
   ::placeholder
   {
     color:#5f5f5f;
-    font: normal 36px 'Cookie', cursive;
+    font: normal 26px 'Cookie', cursive;
   }
   
   

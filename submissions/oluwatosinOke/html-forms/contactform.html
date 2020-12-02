@@ -87,8 +87,11 @@
                   </div>
                   <div class="footer-center">
                       <h3>Sign up for our Newsletter</h3>
-                      <input type="email" name="email" id="email" placeholder="Enter your email address">
-                      <input type="button" value="SUBMIT">
+                        <form id="newsletter">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            <button type="submit"> SUBMIT</button><br>
+                            <span class="error"></span>
+                        </form>
                   </div>
                   <div class="footer-right">
                       <h3>Connect With Us</h3>
@@ -102,5 +105,6 @@
               </div>
           </footer>
         </form>
+        <script src="../domManipulation/newsLetter.js"></script>
     </body>
  </html>
