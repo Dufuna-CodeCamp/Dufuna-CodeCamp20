@@ -16,59 +16,37 @@ var passExp =/^(?=(.*[\d]){1,})(?=(.*[a-z]){1,})(?=(.*[A-Z]){1,})(?=(.*[\W]){1,}
 submitForm.addEventListener("click", validateForm);
 //functions
 function validateForm(e){
-    firstNameVal(e);
-    lastNameVal(e);
+    regValidation(e, firstName,alphaExp,"Please enter your first name", "No Numbers or Special Characters are allowed");
+    regValidation(e, lastName,alphaExp,"Please enter your last name", "No Numbers or Special Characters are allowed");
+    regValidation(e, phoneNumber,numericExp,"Please enter your phone number","Please enter a valid phone number");
+    regValidation(e, email ,emailExp,"Please enter your email address", "Please enter a valid email address");
+    regValidation(e, password,passExp,"Please enter your password","Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg. @ and 1 number.");
     otherNameVal(e);
-    phoneVal(e);
-    emailVal(e);
-    passVal(e);
     confPass(e);
     return true;
 }
-function firstNameVal(event){
-    var name = firstName.value;
+function regValidation(event, field,regex,error1,error2){
+    var fieldValue = field.value;
     
-    if(name.length == 0)
+    if(fieldValue.length == 0)
     {
-        firstName.nextElementSibling.innerText ="Please enter your first name";
+        field.nextElementSibling.innerText =error1;
         event.preventDefault();
         return false;
     }
     else
     {
-        if(!alphaExp.test(name)) {
-            firstName.nextElementSibling.innerText ="No Numbers or Special Characters are allowed";
+        if(!regex.test(fieldValue)) {
+            field.nextElementSibling.innerText = error2;
             event.preventDefault();
             return false;
         }
         else {
-            firstName.nextElementSibling.innerText = "";
+            field.nextElementSibling.innerText = "";
             return true;
         }
     }
 
-}
-function lastNameVal(event){
-    var lastname = lastName.value;
-    
-    if(lastname.length == 0)
-    {
-        lastName.nextElementSibling.innerText ="Please enter your last name";
-        event.preventDefault();
-        return false;
-    }
-    else
-    {
-        if(!alphaExp.test(lastname)) {
-            lastName.nextElementSibling.innerText ="No special characters are allowed";
-            event.preventDefault();
-            return false;
-        }
-        else {
-            lastName.nextElementSibling.innerText = "";
-            return true;
-        }
-    }
 }
 function otherNameVal(event){
     var othername = otherNames.value;
@@ -84,61 +62,6 @@ function otherNameVal(event){
         }
     }
 }
-function phoneVal(event) {
-    var phone = phoneNumber.value;
-    if(phone.length == 0) {
-        phoneNumber.nextElementSibling.innerText = "Please enter your phone number";
-        event.preventDefault();
-        return false;
-    }
-    else {
-        if(!numericExp.test(phone)) {
-            phoneNumber.nextElementSibling.innerText = "Please enter a valid phone number";
-            event.preventDefault();
-            return false;
-        }
-        else {
-            phoneNumber.nextElementSibling.innerText = "";
-            return true;
-        }
-    }
-}
-function emailVal(event) {
-    var emailInput = email.value;
-    if(emailInput.length == 0) {
-        email.nextElementSibling.innerText ="Please enter your email address";
-        event.preventDefault();
-        return false;
-    }else {
-        if(!emailExp.test(emailInput)) {
-            email.nextElementSibling.innerText ="Please Enter a Valid Email Address";
-            event.preventDefault();
-            return false;
-        } else {
-            email.nextElementSibling.innerText = "";
-            return true;
-        }
-    }
-}
-function passVal(event) {
-    var passInput = password.value;
-    if(passInput.length == 0) {
-        password.nextElementSibling.innerText ="Please enter your password";
-        event.preventDefault();
-        return false;
-    }
-    else {
-        if(!passExp.test(passInput)) {
-            password.nextElementSibling.innerText ="Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg. @ and 1 number.";
-            event.preventDefault();
-            return false;
-        } else {
-        password.nextElementSibling.innerText = "";
-        return true;
-    }
-}
-}
-
 function confPass(event) {
     pass=password.value;
     pass2 =confirmPassword.value;
