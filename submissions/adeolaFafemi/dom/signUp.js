@@ -30,38 +30,29 @@ function regValidation(event, field,regex,error1,error2){
     
     if(fieldValue.length == 0)
     {
-        field.nextElementSibling.innerText =error1;
+        field.nextElementSibling.innerText = error1;
         event.preventDefault();
         return false;
-    }
-    else
-    {
-        if(!regex.test(fieldValue)) {
+    } else if(!regex.test(fieldValue)) {
             field.nextElementSibling.innerText = error2;
             event.preventDefault();
             return false;
-        }
-        else {
+    } else {
             field.nextElementSibling.innerText = "";
             return true;
         }
-    }
-
-}
+    } 
 function otherNameVal(event){
     var othername = otherNames.value;
-    if(!othername.length == 0){
-        if(!alphaExp.test(othername)) {
+    if((!othername.length == 0)&&(!alphaExp.test(othername))){
             otherNames.nextElementSibling.innerText ="No special characters are allowed";
             event.preventDefault();
             return false;
-        }
-        else {
+        } else {
             otherNames.nextElementSibling.innerText = "";
             return true;
         }
     }
-}
 function confPass(event) {
     pass=password.value;
     pass2 =confirmPassword.value;
@@ -69,17 +60,12 @@ function confPass(event) {
         confirmPassword.nextElementSibling.innerText ="Please confirm your password";
         event.preventDefault();
         return false;
-    }else{
-        if(pass!==pass2)
-        {
+    }else if(pass!==pass2){
             confirmPassword.nextElementSibling.innerText = "Your passwords don't Match";
             event.preventDefault();
             return false;
-        }
-        else
-        {
+    }else{
             confirmPassword.nextElementSibling.innerText = "";
             return true;
         }
     }
-}
