@@ -6,7 +6,7 @@ body{
 	font-size: 16px;
 	font-family: "Georgia", Times New Roman;
 }
-header{  
+header{
 	flex: 1 100%;
 	background-color: #B7EEB7;
 	height: 70px;
@@ -96,7 +96,7 @@ div.conditions{
     color: #FF530E;
     font-size: 15px;
     border-radius: 5px;
-	}	
+}
 footer{
 	background-color: #B7EEB7;
 	color: #FF530E;
@@ -313,7 +313,7 @@ footer ul li{
 	width: 35%;
 	}
 	.reg{
-	padding: 30px 0px 10px 0px;
+	padding: 30px 0 10px;
 	margin: 10px;
 	color: #FF530E;
 	font-size: 1.5em;

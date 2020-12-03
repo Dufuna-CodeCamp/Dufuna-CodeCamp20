@@ -23,8 +23,8 @@ function validation(field, Regex, errorMessage1, errorMessage2, event) {
   }
 function validateForm(event) {
     const nameRegex = /^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/g;
-		phoneNumberRegex = /^[\+]?[0-9]{10,14}$/i;
-    	emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
+		phoneNumberRegex = /^[]?[0-9]{10,14}$/i;
+    	emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,6})+$/;
     	passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
 
     validation(
