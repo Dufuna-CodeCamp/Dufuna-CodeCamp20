@@ -48,14 +48,18 @@
             </div>
         </section>
         <section  class="contact-content">
-            <form class="contact-msg side1">
+            <form class="contact-msg side1" id="contactform">
                 <p><i class="fa fa-envelope"></i></p>
                 <h2>Or better still send us a message</h2>
-                <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br><br>
-                <input type="email" id="email" name="email" placeholder="Email Address"><br><br>
-                <input type="text" id="subject" name="subject" placeholder="Subject"><br><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                <p class="error-block"></p><br><br>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                <p class="error-block"></p><br><br>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <p class="error-block"></p><br><br>
                 <label for="message" class="msg">Message</label><br>
-                <textarea rows="10" cols="40" name="message" class="text-area"></textarea><br><br>
+                <textarea rows="10" cols="40" name="message" class="text-area" id="msg"></textarea>
+                <p class="error-block"></p><br><br>
                 <input type="submit" value="SEND" class="input-send">
             </form>
         </section>
@@ -88,5 +92,6 @@
         <p>&copy;2020 Under9kStore.com All rights reserved.</p>
         </div>
     </footer>
+    <script src="../dom/contactForm.js"></script>
 </body>
 </html>
