@@ -20,9 +20,9 @@ function required(field, error, event) {
     }
 }
 
-function validation(field, regExp, errorMess1, errorMess2, event) {
+function validation(field, regExp, errorMess, event) {
     if (!field.value.match(regExp)) {
-        field.nextElementSibling.innerHTML = errorMess2;
+        field.nextElementSibling.innerHTML = errorMess;
         event.preventDefault();
         return false;
     } else {
@@ -37,7 +37,6 @@ function formValidation(event) {
     validation(
         fullName,
         nameRegex,
-        "Please enter your Name",
         "Please enter a valid name",
         event
     );
@@ -45,7 +44,6 @@ function formValidation(event) {
     validation(
         formEmail,
         emailRegex,
-        "Please enter your email",
         "Please enter a valid email",
         event
     );
