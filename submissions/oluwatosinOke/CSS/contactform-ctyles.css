@@ -145,6 +145,9 @@ color:blueviolet;
     height:78px;
     text-align: center;
 }
+.errorCode {
+    color:red;
+}
 
 .for-input input[type=text],
 .for-input input[type=email]
@@ -154,7 +157,7 @@ color:blueviolet;
     border-radius: 10px;
     height: 50px;
   }
-input[type=submit]
+.form button
 {
     background-color:#00f798a8;
     border-radius: 10px;
@@ -401,7 +404,7 @@ textarea{
         height: 20px;
         color: blueviolet;
   }
-    input[type=submit]
+    .form button
     {
         background-color:#00f798a8;
         border-radius: 1px;
