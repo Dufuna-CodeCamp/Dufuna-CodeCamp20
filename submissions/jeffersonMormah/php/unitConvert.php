@@ -16,10 +16,10 @@ function convertedUnit($value, $unit) {
     }
 }
 
-echo convertedUnit(20, 'kilo') . '<br>';
-// 44.1lbs;
-echo convertedUnit(20, 'meters') . '<br>';
-//21.88 yards
-echo convertedUnit(20, 'celsius') . '<br>';
-//68F
+echo convertedUnit(34, 'kilo') . '<br>';
+// 74.97bs;
+echo convertedUnit(34, 'meters') . '<br>';
+//37.2 yards
+echo convertedUnit(34, 'celsius') . '<br>';
+//93.2F
 ?>
