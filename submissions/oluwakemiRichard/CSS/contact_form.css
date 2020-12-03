@@ -114,7 +114,7 @@ body {
  .main-container {
      overflow: hidden;
      width: 95%;
-     padding: 15px 15px;
+     padding: 15px;
      margin: auto;
  }
  .information {
@@ -122,7 +122,7 @@ body {
     width: 40%;
     text-align: left;
     margin:0 20px;
-    padding: 5px 15px 0 15px;
+    padding: 5px 15px 0;
 
 
  }
@@ -142,9 +142,7 @@ body {
      padding: 0;
      border-radius: 5px;
      display: inline;
-     margin: 10px 10px;
-
-
+     margin: 10px;
  }
  .info1 {
      left: 175px;
@@ -157,10 +155,6 @@ body {
      padding-left: 40px;
      height: 40px;
     
- }
-
- .info-logo li{
-      margin:10px;
  }
 
  button {
