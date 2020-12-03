@@ -6,7 +6,7 @@ $hobbies = ['playing', 'browsing', 'outing', 'sleeping', 'gisting', 'working', '
 
 function display($firstName, $hobby){
     for ($i = 0; $i <= sizeof($firstName) - 1; $i++) {
-        echo "My name is" . " " . $firstName[$i] . "." . " " ."I love" . " ". $hobby[$i]. "<br >";
+        echo "My name is $firstName[$i]. I love $hobby[$i]. <br >";
     }
 };
 
