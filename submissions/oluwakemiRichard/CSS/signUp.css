@@ -1,0 +1,235 @@
+body {
+   font-family: 'Arimo', sans-serif;
+   font-size: 15px;
+   line-height: 1.5em;
+   margin: 0;
+   padding: 0;
+}
+
+.nav{
+   width: 95%;
+   margin: auto;
+   overflow: hidden;
+}
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+header {
+   background:#0000ff;
+   color: white;
+   padding-top: 10px;
+   min-height: 2px;
+}
+header a {
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+}
+header li {
+   display: inline;
+   padding:0 30px;
+}
+header #nav-logo {
+   float: left;
+   padding-bottom: 10px;
+}
+header #nav-logo h2,
+header #nav-logo p {
+   margin:0;
+   padding:0;
+   color:white;
+}
+header nav {
+   float: right;
+   margin-top: 15px;
+}
+
+/* FOOTER */
+footer a {
+   color: white;
+   text-decoration: none;
+}
+
+footer {
+   background-color:#0000ff;
+   overflow: hidden;
+   padding: 15px 0 0 20px;
+}
+
+
+.footer {
+   float: left;
+   width: 33.33%;
+   font-weight: lighter;
+}
+
+.footer li {
+   padding:5px;
+   font-weight: lighter;
+   opacity: 0.5;
+   list-style-type: none;
+}
+
+.footer p {
+   color: white;
+   font-weight: lighter;
+   opacity: 0.5;
+   padding-left: 50px;
+   display: block;
+}
+.logo li {
+   list-style-type: none;
+   padding: 2px;
+   border-radius: 5px;
+   display: inline-grid;
+   margin: 0 10px;
+}
+
+footer nav {
+   overflow: hidden;
+}
+
+img {
+   height: 25px;
+   text-decoration: none;
+}
+
+.main {
+   overflow: hidden;
+   width: 95%;
+   padding: 30px 0;
+   margin: auto;
+}
+.register {
+   float: left;
+   width: 43%;
+   text-align: left;
+   margin:0 20px;
+}
+.signupForm {
+   float: left;
+   width: 40%;
+   padding: 2% 5%;
+ }
+.formInputs {
+   border: 1px solid darkgrey;
+   border-radius: 10px;
+   padding: 2% 5%;
+}
+
+.register h1 {
+   color: #333366;
+   font-weight: bolder;
+   font-size: 30px;
+
+}
+.register p {
+   font-weight: lighter;
+   color:gray;
+
+}
+
+.formInputs input[type=text],
+.formInputs input[type=email],
+.formInputs input[type=password] {
+   width: 85%;
+   border: 1px solid #cccccc;
+   border-radius: 7px;
+   padding: 10px;
+}
+input[type=submit] {
+   background-color: #333366;
+   border-radius: 5px;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   margin:0 50px;
+   font-size: 12px;
+}
+button {
+   background-color: #0000ff;
+   border-radius: 5px;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   margin:0 50px;
+   font-size: 12px;
+}
+
+input[type =text]:hover {
+   color: #0000ff;
+}
+.newsletter form button, input {
+   background-color: white;
+   color: #0000ff;
+   padding: 5px;
+   border-style: none;
+   font-weight: bold;
+}
+
+::placeholder {
+   color: lightblue;
+}
+.copyright {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+ }
+.log-in {
+    color: #0000ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.formCheckbox {
+    color:#0000ff;
+    font-weight:bolder;
+    font-size: 12px;
+    padding-left: 30px;
+
+}
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+    header nav,
+    header .nav-section nav li,
+    header #nav-logo {
+        float: none;
+        text-align: center;
+        padding: 0 3%;
+
+    }
+    .register,
+    .signupForm {
+        float:none;
+        width: 85%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    .register {
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 640px){
+    .register, .signupForm {
+        float:none;
+    }
+    .nav{
+   width: 50%;
+   margin-left: 0;
+   padding-left: 0;
+   display: block;
+    }
+    .nav li{
+        float: left;
+    }
+
+
+}
+@media screen and (max-width: 360px ){
+    .register, .signupForm {
+        float: none;
+    }
+
+}
