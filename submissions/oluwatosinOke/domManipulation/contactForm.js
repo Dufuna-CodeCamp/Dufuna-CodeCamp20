@@ -21,11 +21,6 @@ function required(field, error, event) {
 }
 
 function validation(field, regExp, errorMess1, errorMess2, event) {
-    if (field.value === "") {
-        field.nextElementSibling.innerHTML = errorMess1;
-        event.preventDefault();
-        return false;
-    }
     if (!field.value.match(regExp)) {
         field.nextElementSibling.innerHTML = errorMess2;
         event.preventDefault();
