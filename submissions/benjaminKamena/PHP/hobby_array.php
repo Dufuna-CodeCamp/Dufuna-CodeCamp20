@@ -4,5 +4,5 @@ $hobbies = array("Social media","Singing Gospel","Watching Movies","Window Shopp
 $result = array_combine($eight_people, $hobbies);
 foreach($result as $eight_people => $hobbies){
 	echo "My name is $eight_people. I love $hobbies <br>";
-	}
+}
 ?>
