@@ -5,11 +5,11 @@ while ($i < 150) {
     $i++;
 }
 
-for($i = 1; $i < 50; $i++) {
+for($i = 2; $i < 50; $i++) {
     if($i % 2 === 0) {
         echo $i . "<br>";
     } else {
-        "Invalid input";
+        echo "Invalid input";
     }
 }
 ?>
