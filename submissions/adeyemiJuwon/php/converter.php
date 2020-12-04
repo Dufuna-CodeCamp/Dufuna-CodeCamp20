@@ -4,8 +4,7 @@
  function converter($value, $unit) {
         $pound = 0.4536;
         $yard = 0.9144;
-        $fahrenheit = ($value * 9/5) + 32;
-
+        
         if($unit === "Kg") {
             return round($value/$pound);
 
@@ -13,6 +12,7 @@
             return round($value/$yard);
 
         } elseif($unit === "C") {
+            $fahrenheit = ($value * 9/5) + 32;
             return $fahrenheit;
 
         } else {
