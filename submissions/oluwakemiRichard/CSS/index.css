@@ -154,13 +154,13 @@ input {
    margin: auto;
    padding-left: 20px;
 }
- .lower {
+.lower {
    background-color:lightgray;
    padding-top: 10px;
    padding-left: 50px;
    margin-left: 30px;
    overflow: hidden;
-} 
+}
 h3 {
     text-align: center;
 }
@@ -188,7 +188,7 @@ h3 {
 
 /*MEDIA QUERY */
 
-@media screen and (max-width: 950px) {   
+@media screen and (max-width: 950px) {
  .img-lower {
     width: 280px;
  }
@@ -229,7 +229,7 @@ h3 {
    .img-lower {
       float:none;
       width: 280px;
-      margin-left:0px;
+      margin-left:0;
    }
 
 }
