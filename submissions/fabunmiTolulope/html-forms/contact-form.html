@@ -5,7 +5,7 @@
 	<meta name="author" content="Fabunmi Tolulope Eniola">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact Form page for Greenprint Integrated Services</title>
-    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact-form.css">
 </head>
 <body>
 <header>
@@ -39,16 +39,19 @@
         <a href="https://www.youtube.com"><input type="image" class="img" name="youtube" src="../html/images/youtube-logo.jpg"></a>
     </div>
     </section>
-<form action="#" method="POST"> 
+<form id="contact" method="POST"> 
     <fieldset class="info">
         <img src="../html/images/env2.png">
         <h3>Or better still send us a message.</h3> 
-            <input type="text" id="full-name" name="Full-Name" placeholder="Full name"> <br>
-            <input type="email" id="email" name="Email" placeholder="Email Address"> <br>
-            <input type="text" name="subject" id="subject" placeholder="Subject"> <br>
+            <input type="text" id="full-name" name="Full-Name" placeholder="Full name">
+            <span class="error-block"></span>
+            <input type="email" id="email" name="Email" placeholder="Email Address">
+            <span class="error-block"></span>
+            <input type="text" name="subject" id="subject" placeholder="Subject">
+            <span class="error-block"></span>
             <label id="message">Message:</label><br>
-            <textarea name="message" id="textarea" rows="15" cols="40"></textarea> <br>
-            <br>
+            <textarea name="message" id="textarea" rows="15" cols="40"></textarea>
+            <span class="error-block"></span>
 			<button type="submit" id="btn">Send</button>
 	</fieldset>
 </form>
@@ -79,5 +82,6 @@
     <p>&copy; 2020 Greenprint Integrated Services. Copyrights  reserved.</p>
     </div>
 </footer>
+<script src="../dom/contactForm.js"></script>
 </body>
 </html>
