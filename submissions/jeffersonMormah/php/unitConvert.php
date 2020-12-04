@@ -12,7 +12,7 @@ function convertedUnit($value, $unit) {
         $farenheit = ($value * 9/5) + 32;
         echo $farenheit . "&deg F <br>";
     }else {
-        echo 'Invalid units'
+        echo "Invalid units"
     }
 }
 
