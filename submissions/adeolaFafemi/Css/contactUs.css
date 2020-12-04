@@ -469,3 +469,7 @@
         width: 37px;
     }
 }
+/*error line*/
+#error-line{
+    display: block;
+}

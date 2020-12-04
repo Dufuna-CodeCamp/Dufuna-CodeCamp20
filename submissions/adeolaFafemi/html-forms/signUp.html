@@ -69,9 +69,12 @@
                     </ul>
                 </div>
                 <div class="sign-up box">
-                    <p class="written">Sign up for our Newsletter</p>
-                    <input type="text" class="enter-email" placeholder="Enter your email address">
-                    <button type="submit" class="enter-btn"><p>SUBMIT</p></button>
+                    <form action="" id="news">
+                        <p class="written">Sign up for our Newsletter</p>
+                        <input type="text" class="enter-email" id="emailadd" placeholder="Enter your email address">
+                        <span class="error-block" id="error-line"></span><br>
+                        <button type="submit" class="enter-btn"><p>SUBMIT</p></button>
+                    </form>
                 </div>
                 <div class="connect-us box">
                     <p>CONNECT WITH US</p>
@@ -88,5 +91,6 @@
             </div>
         </footer>
         <script src="../dom/signUp.js"></script>
+        <script src="../dom/newsletterForm.js"></script>
 </body>
 </html>
