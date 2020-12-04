@@ -13,7 +13,7 @@ var numericExp = /^[+]*[0-9]+$/;
 var emailExp =/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,4})+$/;
 var passExp =/^(?=(.*[\d]){1,})(?=(.*[a-z]){1,})(?=(.*[A-Z]){1,})(?=(.*[\W]){1,}).{6,}$/;
 // eventListeners
-submitForm.addEventListener("click", validateForm);
+submitForm.addEventListener("submit", validateForm);
 //functions
 function validateForm(e){
     regValidation(e, firstName,alphaExp,"Please enter your first name", "No Numbers or Special Characters are allowed");

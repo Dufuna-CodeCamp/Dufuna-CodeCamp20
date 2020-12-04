@@ -527,3 +527,7 @@
         font-size: 13px;
     }
 }
+/*error line*/
+#error-line{
+    display: block;
+}

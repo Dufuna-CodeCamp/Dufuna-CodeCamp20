@@ -74,9 +74,12 @@
                 </ul>
             </div>
             <div class="sign-up box">
-                <p class="written">Sign up for our Newsletter</p>
-                <input type="text" class="enter-email" placeholder="Enter your email address">
-                <button type="submit" class="enter-btn"><p>SUBMIT</p></button>
+                <form action="" id="news">
+                    <p class="written">Sign up for our Newsletter</p>
+                    <input type="text" class="enter-email" id="emailadd" placeholder="Enter your email address">
+                    <span class="error-block" id="error-line"></span><br>
+                    <button type="submit" class="enter-btn"><p>SUBMIT</p></button>
+                </form>
             </div>
             <div class="connect-us box">
                 <p>CONNECT WITH US</p>
@@ -90,6 +93,7 @@
         </div>
         <div class="copyright">
         <p>&copy;2020 Under9kStore.com All rights reserved.</p>
-        </div>   
+        </div> 
+        <script src="../dom/newsletterForm.js"></script>  
 </body>
 </html>
