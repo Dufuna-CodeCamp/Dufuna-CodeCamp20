@@ -4,22 +4,22 @@ function convertedUnit($value, $unit) {
 
     if ($unit === 'kilos'){
         $pounds = $value * 2.205;
-        return $pounds;
+        echo $pounds . "lb <br>";
     }elseif ($unit === 'meters'){
         $yards = $value * 1.094;
-        return $yards;
+        echo $yards . "yards <br>";
     }elseif ($unit === 'celsius'){
         $farenheit = ($value * 9/5) + 32;
-        return $farenheit;
+        echo $farenheit . "&deg F <br>";
     }else {
         return 'Invalid units'
     }
 }
 
-echo convertedUnit(34, 'kilo') . '<br>';
+ convertedUnit(34, 'kilos');
 // 74.97bs;
-echo convertedUnit(34, 'meters') . '<br>';
+ convertedUnit(34, 'meters');
 //37.2 yards
-echo convertedUnit(34, 'celsius') . '<br>';
+ convertedUnit(34, 'celsius');
 //93.2F
 ?>
