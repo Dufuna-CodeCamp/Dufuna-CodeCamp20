@@ -1,15 +1,15 @@
 <?php
 
 function convertedUnit($value, $unit) {
-    $pounds = $value * 2.205;
-    $yards = $value * 1.094;
-    $farenheit = ($value * 9/5) + 32;
 
     if ($unit === 'kilos'){
+        $pounds = $value * 2.205;
         return $pounds;
     }elseif ($unit === 'meters'){
+        $yards = $value * 1.094;
         return $yards;
     }elseif ($unit === 'celsius'){
+        $farenheit = ($value * 9/5) + 32;
         return $farenheit;
     }else {
         return 'Invalid units'
