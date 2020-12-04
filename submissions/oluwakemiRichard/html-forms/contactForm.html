@@ -4,34 +4,95 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RealGadgets ContactForm</title>
+        <link href="../css/contact_form.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="nav">
-            <a class="active" href="../HTML/index.html"> Product</a>
-            <a class="active" href="contactForm.html">Contact Form</a>
-            <div class="searchField">
-            <input type="text" placeholder="search.." name="search">
-            <button type="submit">Submit</button>
-        </div>
+        <header>
+            <div class="nav">
+                <div id="nav-logo">
+                    <h2>RealGadgets</h2>
+                </div>
+                <nav>
+                    <ul class="nav-items">
+                        <li><a href="../HTML/index.html">Product Page</a></li>
+                        <li><a href="contactForm.html">Contact Us</a></li>
+                        <li><a href="signUp.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div class="main-container">
+            <div class="information">
+                <div class="info1">
+                    <img src="../HTML/assets/telephone.jpg">
+                    <p><b>Please contact us via these numbers</b></p>
+                    <p class="num">+123 803 303 0000</p>
+                    <p class="num">+123 816 710 6842</p>
+                    <img src="../HTML/assets/opened-message.png">
+                    <p><b>Email Address:</body></b><br>support@domain.com</p>
+                </div>
+                <div class="info-logo">
+                    <p><b>Or Connect with us:</b></p>
+                    <li><img src="../HTML/assets/facebook.png"></li>
+                    <li><img src="../HTML/assets/twitter.png"></li>
+                    <li><img src="../HTML/assets/gmail.png"></li>
+                    <li><img src="../HTML/assets/youtube.jpg"></li>
+                </div>
+            </div>
         <!--Contact Form-->
-        <div id="contactForm" class="contact">
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Contact Form </legend>
-                    <label for="name"><b>Full Name: </b></label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email"><b>Email:  </b></label>
-                    <input type="email" id="email" name="email"><br><br>
-                    <label for="subject"><b>Subject: </b></label>
-                    <input type="text" id="subject" name="subject"><br><br>
-                    <label for="message">Leave your message ... </label><br>
-                    <textarea rows="5" cols="50" name="message" id="message" required></textarea><br>
-                    <button type="submit" name="submit" value="submit">Submit</button>
-
-                </fieldset>
+        <div class="messageForm">
+        
+            <form action="#" id="validateForm" method="post">
                 
+                <div class="inputs">
+                    <img src="../HTML/assets/message.png">
+                    <p>Or better still send us a message</p>
+                    <label for="fullName"> Full Name</label><br>
+                    <input type="text" name="fullName" id="fullName"><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email"><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" name="subject" id="subject"><br>
+                    <label for="messageInput">Message</label><br>
+                    <textarea name="messageInput" id="messageInput" cols="0" rows="8"></textarea><br>
+                    <button type="submit">SEND</button>
+                </div>
             </form>
         </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+    </div>
+    <div class="footer newsletter">
+        <p>Sign up for our Newsletter</p>
+        <div class="newsletter">
+            <form>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <input type="button" value="SUBMIT">
+            </form>
+        </div>
+
+    </div>
+    <div class="footer logo">
+        <p>CONNECT WITH US</p>
+        <li><img src="../HTML/assets/facebook.png"></li>
+        <li><img src="../HTML/assets/twitter.png"></li>
+        <li><img src="../HTML/assets/gmail.png"></li>
+        <li><img src="../HTML/assets/youtube.jpg"></li>
+    </div>
+    <p class="lower-footer">&copy; Copyright2020 realgadgets.com All rights reserved </p>
+
+</footer>
 
     </body>
 </html>

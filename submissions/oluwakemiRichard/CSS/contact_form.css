@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+ }
+
+ .nav{
+     width: 95%;
+     margin: auto;
+     overflow: hidden;
+ }
+ ul {
+     padding: 0;
+     margin: 0;
+ }
+
+ header {
+    background:#0000ff;
+    color: white;
+    padding-top: 10px;
+    min-height: 2px;
+ }
+ header a {
+     color: white;
+     text-decoration: none;
+     font-size: 16px;
+ }
+ header li {
+     display: inline;
+     padding:0 30px;
+ }
+ header #nav-logo {
+     float: left;
+     padding-bottom: 10px;
+ }
+ header #nav-logo h2,
+ header #nav-logo p {
+     margin:0;
+     padding:0;
+     color:white;
+ }
+ header nav {
+     float: right;
+     margin-top: 15px;
+ }
+
+/* FOOTER */
+ footer a {
+     color: white;
+     text-decoration: none;
+ }
+
+ footer {
+     background-color:#0000ff;
+     overflow: hidden;
+     padding: 20px 10px 10px 20px;
+ }
+
+
+ .footer {
+     float: left;
+     width: 33.33%;
+     font-weight: lighter;
+     padding-bottom: 20px;
+ }
+
+ .footer li {
+     padding:5px;
+     font-weight: lighter;
+     opacity: 0.5;
+     list-style-type: none;
+ }
+
+ .footer p {
+     color: white;
+     font-weight: lighter;
+     opacity: 0.5;
+     padding-left: 35px;
+     display: block;
+ }
+ .logo li {
+     list-style-type: none;
+     padding: 2px;
+     border-radius: 5px;
+     display: inline-grid;
+     margin: 0 10px;
+ }
+
+ footer nav {
+     overflow: hidden;
+ }
+ img {
+     height: 25px;
+     text-decoration: none;
+ }
+ .lower-footer {
+     color: #ffffff;
+     margin: 0;
+ }
+
+ ::placeholder {
+    color: lightblue;
+ }
+ input {
+    background-color: white;
+    color: cornflowerblue;
+    padding: 5px;
+    border-style: none;
+    font-weight: bold;
+ }
+
+ .main-container {
+     overflow: hidden;
+     width: 95%;
+     padding: 15px;
+     margin: auto;
+ }
+ .information {
+    float: left;
+    width: 40%;
+    text-align: left;
+    margin:0 20px;
+    padding: 5px 15px 0;
+
+
+ }
+ .messageForm {
+     float: left;
+     width: 40%;
+     padding: 2% 5%;
+      }
+
+ .inputs {
+        border: 1px solid darkgrey;
+        border-radius: 10px;
+        padding: 2% 5%;
+    }
+ .info-logo li {
+     list-style-type: none;
+     padding: 0;
+     border-radius: 5px;
+     display: inline;
+     margin: 10px;
+ }
+ .info1 {
+     left: 175px;
+     top: 20px;
+ }
+ .num {
+    margin-left:40px;
+}
+ .info1 img {
+     padding-left: 40px;
+     height: 40px;
+    
+ }
+
+ button {
+      background-color: #0000ff;
+     color: white;
+     padding: 5px 15px;
+     margin:0 375px;
+     font-size: 12px;
+ }
+ .inputs input[type=text],
+ .inputs input[type=email] {
+     border: none;
+     border-bottom: 2px solid lightgray;
+     width: 95%;
+ }
+ .inputs textarea {
+     width: 95%;
+ }
+ .inputs p {
+     padding-left :30px;
+     font-size: 16px;
+     font-weight: bolder;
+ }
+ .inputs img {
+     padding-left: 120px;
+     height: 50px;
+
+ }
+ @media screen and (max-width: 800px) {
+    header nav,
+    header .nav nav li,
+    header #nav-logo {
+        float: none;
+        text-align: center;
+        padding: 0 3%;
+
+    }
+    .information,
+    .messageForm {
+        float:none;
+        width: 85%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    .information {
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 640px){
+    .nav{
+        max-width: 95%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .nav{
+        width: 42%;
+        margin-left: 0;
+        padding-left: 0;
+        display: inline-block;
+        float: none;
+        text-align: left;
+    }
+    .nav-items{
+        max-width: 70%;
+        text-align:left;
+        padding-left:3%
+    }
+}
+@media screen and (max-width: 360px){
+    .nav{
+        width: 42%;
+    }
+    .nav-items{
+        max-width: 85%;
+        text-align:left;
+        padding-left:3%
+    }
+
+
+}
+
+ 
