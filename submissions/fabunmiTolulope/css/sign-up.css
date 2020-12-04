@@ -6,7 +6,7 @@ body{
 	font-size: 16px;
 	font-family: "Georgia", Times New Roman;
 }
-header{  
+header{
 	flex: 1 100%;
 	background-color: #B7EEB7;
 	height: 70px;
@@ -57,11 +57,11 @@ form{
     justify-content: center;
 }
 .info{
-	width: 50%
+	width: 50%;
     border: solid 3px;
     border-radius: 20px;
-    padding: 25px 35px;
-    height: 600px
+    padding: 10px 15px;
+    height: fit-content;
 }
 #fieldlist{
 	width: 100%;
@@ -72,28 +72,31 @@ form{
 	border: solid 1px;
     border-radius: 10px;
     width: 100%;
-    height: 35px;
-    padding-bottom: 5px;
+    height: 25px;
 }
-#phone-number, #email, #password{
+#phone-number, #email, #password, #confirm-password{
 	border: solid 1px;
     border-radius: 10px;
     width: 100%;
-    height: 35px;
-    padding-bottom: 5px;
+    height: 25px;
+}
+.error-block {
+    font-size: 12px;
+    color: red;
+    padding: 0;
 }
 div.conditions{
 	color: #FF530E;
 }
 .btn{
 	font-weight: bold;
-	margin: 30px 140px;
-    padding: 10px 30px;
+	margin: 5px 100px;
+    padding: 5px 10px;
     background-color: #B7EEB7;
     color: #FF530E;
     font-size: 15px;
     border-radius: 5px;
-	}	
+}
 footer{
 	background-color: #B7EEB7;
 	color: #FF530E;
@@ -205,19 +208,19 @@ footer ul li{
 	border: solid 1px;
 	text-align: left;
     border-radius: 10px;
-    height: 25px;
+    height: 20px;
     padding-bottom: 5px;
 	}
-	#phone-number, #email, #password{
+	#phone-number, #email, #password, #confirm-password{
 	border: solid 1px;
     border-radius: 10px;
     text-align: left;
-    height: 25px;
+    height: 20px;
     padding-bottom: 5px;
 	}
 	.conditions{
-		font-size: 14px;
-		text-align: -webkit-center;
+	font-size: 14px;
+	text-align: -webkit-center;
 	}
 	.btn{
 	font-weight: bold;
@@ -310,7 +313,7 @@ footer ul li{
 	width: 35%;
 	}
 	.reg{
-	padding: 30px 0px 10px 0px;
+	padding: 30px 0 10px;
 	margin: 10px;
 	color: #FF530E;
 	font-size: 1.5em;
@@ -324,8 +327,8 @@ footer ul li{
 	width: 50%;
     border: solid 3px;
     border-radius: 20px;
-    padding: 25px 35px;
-    height: 580px;
+    padding: 10px 15px;
+    height: 600px;
 	}
 	footer{
 	background-color: #B7EEB7;

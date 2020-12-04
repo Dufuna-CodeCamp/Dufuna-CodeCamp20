@@ -5,7 +5,7 @@
 	<meta name="author" content="Fabunmi Tolulope Eniola">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Customer Sign Up page for Greenprint Integrated Services</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/sign-up.css">
 </head>
 <body> 
 <header>
@@ -24,22 +24,29 @@
 	   <p class="reg-word"> Registering an account gives you <br>access to sweet promo and events <br>available only to registered <br>customers. <br><br>Already got an account? <a href="#">Sign in</a>
 	   </p>
     </div>
-    <form  action="#" method="post"> 
+    <form id="validateForm" method="post"> 
     <fieldset class="info">
         <label id="fieldlist">First Name: </label> 
-        <input type="text" class="name" name="first-name" required>
+        <input type="text" class="name" id="first-name">
+        <span class="error-block"></span>
         <label id="fieldlist">Last Name: </label> 
-        <input type="text" class="name" name="last-name" required>
+        <input type="text" class="name" id="last-name">
+        <span class="error-block"></span>
         <label id="fieldlist">Other Names: </label> 
-        <input type="text" class="name" name="other-names" required>
+        <input type="text" class="name" id="other-names">
+        <span class="error-block"></span>
         <label id="fieldlist">Phone Number:</label>
-        <input type="Number" id="phone-number" name="phone-number" required>
+        <input type="Number" id="phone-number" name="phone-number">
+        <span class="error-block"></span>
         <label id="fieldlist">Email Address: </label> 
         <input type="email" id="email" name="email">
+        <span class="error-block"></span>
         <label id="fieldlist">PassWord:</label>
         <input type="passWord" id="password" name="password">
+        <span class="error-block"></span>
         <label id="fieldlist"> Confirm PassWord:</label>
-        <input type="passWord" id="password" name="password"><br>
+        <input type="passWord" id="confirm-password" name="password">
+        <span class="error-block"></span>
         <div class="conditions">
 		  <input type="checkbox" value="conditions">
           <label for="conditions">I agree to the Terms and Conditions</label><br>
@@ -74,5 +81,7 @@
     <p>&copy; 2020 Greenprint Integrated Services. Copyrights  reserved.</p>
     </div>
 </footer>
+<script type="text/javascript" src="../javascript/index.js"></script>
+<script src="../dom/signUp.js"></script>
 </body>
 </html>
