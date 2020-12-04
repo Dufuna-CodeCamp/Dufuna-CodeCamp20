@@ -4,61 +4,97 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ProductPage</title>
+        <link href="../css/index.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
     </head>
     <body>
-        <span><h1>RealGadgets</h1></span>
-        <div >
+        <header>
             <div class="nav">
-                <a class="active" href="index.html"> Product</a>
-                <a class="active" href="../html-forms/contactForm.html">Contact Form</a>
-                <div class="searchField">
-                <input type="text" placeholder="search.." name="search">
-                <button type="submit">Submit</button>
+                <div id="nav-logo">
+                    <h2>RealGadgets</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Product Page</a></li>
+                        <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
+                        <li><a href="../html-forms/signUp.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section>
+            <div class="main-container">
+                <div class="upper-container">
+                    <div class="upper-container1">
+                        <img src="assets/iphone11promax.jpg">
+                    </div>
+                    <div class="upper-container2">
+                        <h4>Apple IPhone 11 Pro Max</h4>
+                        <p>Brand: Apple</p>
+                        <form action="#" method="post">
+                            <div class="check">
+                            <label for="qty">Quantity:</label>
+                            <input type="text" name="qty" id="qty" placeholder="2"><br>
+                            <label for="buy">Price:₦500,000</label><br>
+                            <input type="submit" value="BUY NOW">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="describe">
+                    <h2>DESCRIPTION</h2>
+                    <p>4GB RAM, 256GB ROM Brand New I phone 11 pro max <br>
+                        BODY Dimensions 158 x 77.8 x 8.1 mm (6.22 x 3.06 x 0.32 in) Weight 226 g (7.97 oz) Build Front/back glass, stainless steel frame</p>
+               </div>
+                <div class="lower">
+                    <h3>RELATED PRODUCTS</h3>    
+                    <div class="img-lower img1">
+                        <img src="assets/galaxys20ultra.jpg">
+                        <p>Samsung Galaxy S20 Ultra</p>
+                        <p>Price:₦450,000</p>
+                    </div>
+                    <div class="img-lower img2">
+                        <img src="assets/iphone12promax.jpg">
+                        <p>Apple IPhone 12 Pro Max</p>
+                        <p>Price:₦700,000</p>
+                    </div>
+                    <div class="img-lower img3">
+                        <img src="assets/iphonex_smax.jpg">
+                        <p>Apple IPhone XS Max</p>
+                        <p>Price:₦300,000</p>
+                    </div>
                 </div>
             </div>
-            <div class="main">
-                <div class="product">
-                    <img src="assets/iphone11promax.jpg" alt="Picture of Apple Iphone11 pro max" width="20%" height="15%">
-                    <h2>Apple IPhone 11 Pro Max</h1>
-                    
-                    <p class="price">₦500,000</p>
-                    <p>
-                        <h4>Description</h4>
-                        4GB RAM, 256GB ROM Brand New I phone 11 pro max <br>
-                        BODY Dimensions 158 x 77.8 x 8.1 mm (6.22 x 3.06 x 0.32 in)<br>
-                        Weight 226 g (7.97 oz)<br>
-                        Build Front/back glass, stainless steel frame
-                    </p>
-                    <p><button>Add to Cart</button></p>
-
-                </div>
-                <div class="product">
-                    <img src="assets/galaxys20ultra.jpg" alt="Picture of Samsung Galaxy S20 ultra">
-                    <h2>Samsung Galaxy S20 Ultra</h1>
-                    <p class="price">₦450,000</p>
-                    <p>
-                        <h4>Description</h4>
-                        8GB RAM, 128GB ROM Brand New Samsung Galaxy S20 Ultra <br>
-                        BODY Dimensions 151.7 x 69.1 x 7.9 mm <br>
-                        Weight 163 g <br>
-                        Build back glass, stainless steel frame
-                    </p>
-                    <p><button>Add to Cart</button></p>
-
-                </div>
-                <div>
-                    <p><h4>Other Similar Products :</h4>
-                    <ol>
-                        <li>Samsung Galaxy Note20 Ultra</li>
-                        <li>Huawei P20 Lite Nova</li>
-                        <li>Xiaomi Redmi Note 9 pro</li>
-                        <li>Oppo Reno 3 Pro</li>
-                    </ol>
-                </p>
-                </div>
-
-            </div>
+        </section>
+    
+        <footer>
+        <div class="footer box1">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
         </div>
-
+        <div class="footer newsletter">
+            <p>Sign up for our Newsletter</p>
+            <div class="newsletter">
+                <form action="#" id="validateForm" method="post">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    <input type="button" value="SUBMIT">
+                </form>
+            </div>
+    
+        </div>
+        <div class="footer logo">
+            <p>CONNECT WITH US</p>
+            <li><img src="../HTML/assets/facebook.png"></li>
+            <li><img src="../HTML/assets/twitter.png"></li>
+            <li><img src="../HTML/assets/gmail.png"></li>
+            <li><img src="../HTML/assets/youtube.jpg"></li>
+        </div>
+        <p class="last">&copy; Copyright2020 realgadgets.com All rights reserved </p>
+    
+    </footer>
     </body>
 </html>
