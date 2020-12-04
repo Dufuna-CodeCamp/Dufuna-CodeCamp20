@@ -1,6 +1,5 @@
 let firstName = document.getElementById('firstname');
 let lastName = document.getElementById('lastname');
-let otherNames = document.getElementById('othernames');
 let phoneNumber = document.getElementById('phonenumber');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
@@ -8,7 +7,7 @@ let confirmPassword = document.getElementById('cpassword');
 let signupbutton = document.getElementById('signupbutton');
 
 // to trigger the required error messages when the user clicks the signup button
-signupbutton.addEventListener('click', (e) => {
+signupbutton.addEventListener('click', () => {
     let emailValid = validateEmail(email);
     let numberValid = validateNumber(phoneNumber);
     let passwordValid =  validatePassword(password);
@@ -55,7 +54,7 @@ validateLastName = (lastName) => {
 }
 
 validateNumber = (phoneNumber) => {
-    const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+    const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s/0-9]*$/g;
     if (phoneNumber.value === "") {
         phoneNumber.nextElementSibling.innerHTML = "Please enter your Phone Number";
         return false;
@@ -70,7 +69,7 @@ validateNumber = (phoneNumber) => {
 }
 
 validateEmail = (email) => {
-    const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@]+(\.[^<>()[\]\\.,;:\s@]+)*)|(.+))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (email.value === "") {
         email.nextElementSibling.innerHTML = "Please enter your Email Address";
         return false;
