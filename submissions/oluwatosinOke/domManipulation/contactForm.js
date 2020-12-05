@@ -37,7 +37,7 @@ validation(
 
 validation(
     formEmail,
-    emailRegex,
+    formEmailRegex,
     "This field is required",
     "Please enter a valid email",
     event
