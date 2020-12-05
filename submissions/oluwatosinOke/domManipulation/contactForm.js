@@ -30,7 +30,7 @@ function formValidation(event) {
 validation(
     fullName,
     nameRegex,
-    "This field is required",
+    "Please enter your Name",
     "Please enter a valid name",
     event
 );
@@ -38,7 +38,7 @@ validation(
 validation(
     formEmail,
     formEmailRegex,
-    "This field is required",
+    "Please enter your email",
     "Please enter a valid email",
     event
 );
