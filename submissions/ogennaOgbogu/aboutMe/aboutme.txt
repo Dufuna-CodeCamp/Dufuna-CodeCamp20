@@ -1,3 +1,4 @@
 Dufuna Code Camp is my first step in my career path,
 I want to be able to create airy (if this makes sense), stable, much needed apps, apps that I need to find but are not available.
 I want to be able to say I am a software developer and mean it.
+I'm trying to right a wrong on my pull request too.
