@@ -4,64 +4,59 @@ let form = document.getElementById('validateForm'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message');
 const formEmailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
-    nameRegex = /^[a-zA-Z]/; 
+    nameRegex = /^[a-zA-Z]/,
+    textRegex=  /^[a-zA-Z0-9]/
 
 document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', formValidation, false);
 });
 
-function emailValidation(event) {
-    if (formEmail.value === "") {
-        formEmail.nextElementSibling.innerHTML = "This Field is Required";
+function validation(field, regExp, error, errorMess1, event){
+    if (field.value === "") {
+        field.nextElementSibling.innerHTML = error;
         event.preventDefault();
         return false;
-    }else if (!(formEmail.value.match(formEmailRegex))) {
-        formEmail.nextElementSibling.innerHTML = "Please enter a valid email";
-        event.preventDefault();
-        return false;
+    }
+    if (!field.value.match(regExp)) {
+    field.nextElementSibling.innerHTML = errorMess1;
+    event.preventDefault();
+    return false;
     } else {
-        formEmail.nextElementSibling.innerHTML = "";
-        return true;
+    field.nextElementSibling.innerHTML = "";
+       return true;
     }
 }
-function nameValidation(event) {
-    if (fullName.value === "") {
-        fullName.nextElementSibling.innerHTML = "This Field is Required";
-        event.preventDefault();
-        return false;
-    }else if (!(fullName.value.match(nameRegex))) {
-        fullName.nextElementSibling.innerHTML = "Please enter a valid Name";
-        event.preventDefault();
-        return false;
-    } else {
-        fullName.nextElementSibling.innerHTML = "";
-        return true;
-        }
-}  
-function subjectValidation( event) {
-    if (subject.value === "") {
-        subject.nextElementSibling.innerHTML = "This field is required";
-        event.preventDefault();
-        return false;
-    } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
-        }
-}
-function messageValidation( event) {
-    if (message.value === "") {
-        message.nextElementSibling.innerHTML = "This field is required";
-        event.preventDefault();
-        return false;
-        } else {
-        field.nextElementSibling.innerHTML = "";
-        return true;
-        }
-}
-function formValidation(e) {
-    nameValidation(e);
-    emailValidation(e);
-    subjectValidation(e);
-    messageValidation(e);
-    return true;
+function formValidation(event) {
+validation(
+    fullName,
+    nameRegex,
+    "This field is required",
+    "Please enter a valid name",
+    event
+);
+
+validation(
+    formEmail,
+    emailRegex,
+    "This field is required",
+    "Please enter a valid email",
+    event
+);
+
+validation(
+    subject, 
+    textRegex,
+    "This field is required",
+    "Please enter a message subject", 
+    event
+);
+
+validation(
+    message, 
+    textRegex,
+    "This field is required",
+    "Please enter your Message",
+     event
+);
+return true;
 }
