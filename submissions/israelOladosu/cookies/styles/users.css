@@ -70,15 +70,13 @@
   }
   .container table td {
     display: table-cell;
-  }
-  .container table thead {
-    position: static;
-  }
-  .container table td {
     text-align: center;
   }
   .container table td::before {
     content: '';
+  }
+  .container table thead {
+    position: static;
   }
   .container table thead td {
     font-weight: bold;
