@@ -104,21 +104,20 @@ SELECT * FROM customers_contacts;
 CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
     customer_id INT NOT NULL,
-	order_amount DECIMAL(9, 2) NOT NULL,
     time_of_order DATETIME NOT NULL,
 	PRIMARY KEY (id),
     FOREIGN KEY(customer_id) REFERENCES customers(id)
 );
 
-INSERT INTO orders (customer_id, order_amount, time_of_order)
-VALUE (4, 300.00, now()),
-(8, 343.00, now()),
-(2, 800.00, now()),
-(6, 20.00, now()),
-(7, 600.00, now()),
-(1, 390.00, now()),
-(5, 700.00, now()),
-(3, 990.00, now());
+INSERT INTO orders (customer_id, time_of_order)
+VALUE (4, now()),
+(8, now()),
+(2, now()),
+(6, now()),
+(7, now()),
+(1, now()),
+(5, now()),
+(3, now());
 
 SELECT * FROM orders;
 
@@ -133,38 +132,36 @@ CREATE TABLE products (
     stock_quantity INT NOT NULL,
     stock_level INT NOT NULL,
     category_id INT NOT NULL,
-    order_id INT NOT NULL,
     admin_id INT NOT NULL,
 	PRIMARY KEY (id),
     FOREIGN KEY(category_id) REFERENCES categories(id),
-    FOREIGN KEY (order_id) REFERENCES orders(id),
     FOREIGN KEY (admin_id) REFERENCES admins(id)
 );
 
 ALTER TABLE products MODIFY stock_level VARCHAR(150) NOT NULL;
 
-INSERT INTO products (product_name, description, image ,unit_price ,stock_quantity ,stock_level ,category_id ,order_id ,admin_id)
-VALUE ("Brogues", "Shop a large selection of Loafers, Formal Shoes, Boots, Sneakers & more.", "../html/images/brogues_shoes.jpg", 650.00, 6, 'out of stock', 1, 1, 4 ),
-("CK", "Shop a large selection of wrist watches & more.", "../html/images/men acc.jpg", 900.00, 1, 'in stock', 2, 2, 3 ),
-("BMW", "Be classy", "../html/images/cars.jpg", 650.00, 6, 'in stock', 8, 3, 2 ),
-("MacBook Pro", "feel free and code.", "../html/images/laptop.jpg", 190.00, 3, 'in stock', 6, 3, 5 ),
-("Smart Home Alerm", "make you home to the future", "../html/images/smart_home.jpg", 490.00, 6, 'out of stock', 4, 4, 1 ),
-("Carrots", "make every one salivate", "../html/images/vegetables.jpg", 50.00, 6, 'in of stock', 9, 2, 1 ),
-("LV Bag", "World of fashion", "../html/images/women acc.jpg", 927.00, 9, 'in stock', 3, 5, 2 ),
-("Fan", "Be Free", "../html/images/smart_home.jpg", 620.00, 6, 'out of stock', 7, 6, 3 ),
-("G wagon", "Live it love it.", "../html/images/cars.jpg", 190.00, 3, 'in stock', 8, 7, 4 ),
-("Nokia", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/brogues_shoes.jpg", 490.00, 6, 'out of stock', 5, 8, 5 ),
-("Smart Home Wakke", "make you home to the future", "../html/images/smart_home.jpg", 490.00, 6, 'out of stock', 4, 4, 5 ),
-("shirt", "loke smart always for the environment", "../html/images/men acc.jpg", 490.00, 6, 'in of stock', 2, 5, 1 ),
-("Ps5", "Now you control the world, be smart with you moves", "../html/images/laptop.jpg", 50.00, 6, 'in of stock', 7, 2, 2 ),
-("DG Skirt", "make your bosy smile.", "../html/images/women acc.jpg", 900.00, 1, 'in stock', 3, 8, 3 ),
-("Apple", "Be classy", "../html/images/vegetables.jpg", 650.00, 6, 'in stock', 9, 1, 5 ),
-("Windows 10 pro", "feel free and code.", "../html/images/laptop.jpg", 190.00, 3, 'in stock', 6, 7, 4 ),
-("IPhone", "Be classy", "../html/images/vegetables.jpg", 650.00, 6, 'in stock', 5, 2, 5 ),
-("Zara shoes", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/brogues_shoes.jpg", 490.00, 6, 'out of stock', 1, 3, 4 ),
-("lip stick", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/women acc.jpg", 50.00, 6, 'in of stock', 3, 5, 3 ),
-("LG", "feel free and code.", "../html/images/laptop.jpg", 190.00, 3, 'in stock', 5, 1, 2 ),
-("lip stick", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/women acc.jpg", 50.00, 6, 'in of stock', 3, 8, 1 );
+INSERT INTO products (product_name, description, image ,unit_price ,stock_quantity ,stock_level ,category_id ,admin_id)
+VALUE ("Brogues", "Shop a large selection of Loafers, Formal Shoes, Boots, Sneakers & more.", "../html/images/brogues_shoes.jpg", 650.00, 6, 'out of stock', 1, 4 ),
+("CK", "Shop a large selection of wrist watches & more.", "../html/images/men acc.jpg", 900.00, 1, 'in stock', 2, 3 ),
+("BMW", "Be classy", "../html/images/cars.jpg", 650.00, 6, 'in stock', 8, 2 ),
+("MacBook Pro", "feel free and code.", "../html/images/laptop.jpg", 190.00, 3, 'in stock', 6, 5 ),
+("Smart Home Alerm", "make you home to the future", "../html/images/smart_home.jpg", 490.00, 6, 'out of stock', 4, 1 ),
+("Carrots", "make every one salivate", "../html/images/vegetables.jpg", 50.00, 6, 'in of stock', 9, 1 ),
+("LV Bag", "World of fashion", "../html/images/women acc.jpg", 927.00, 9, 'in stock', 3, 2 ),
+("Fan", "Be Free", "../html/images/smart_home.jpg", 620.00, 6, 'out of stock', 7, 3 ),
+("G wagon", "Live it love it.", "../html/images/cars.jpg", 190.00, 3, 'in stock', 8, 4 ),
+("Nokia", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/brogues_shoes.jpg", 490.00, 6, 'out of stock', 5, 5 ),
+("Smart Home Wakke", "make you home to the future", "../html/images/smart_home.jpg", 490.00, 6, 'out of stock', 4, 5 ),
+("shirt", "loke smart always for the environment", "../html/images/men acc.jpg", 490.00, 6, 'in of stock', 2, 1 ),
+("Ps5", "Now you control the world, be smart with you moves", "../html/images/laptop.jpg", 50.00, 6, 'in of stock', 7, 2 ),
+("DG Skirt", "make your bosy smile.", "../html/images/women acc.jpg", 900.00, 1, 'in stock', 3, 3 ),
+("Apple", "Be classy", "../html/images/vegetables.jpg", 650.00, 6, 'in stock', 9, 5 ),
+("Windows 10 pro", "feel free and code.", "../html/images/laptop.jpg", 190.00, 3, 'in stock', 6, 4 ),
+("IPhone", "Be classy", "../html/images/vegetables.jpg", 650.00, 6, 'in stock', 5, 5 ),
+("Zara shoes", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/brogues_shoes.jpg", 490.00, 6, 'out of stock', 1, 4 ),
+("lip stick", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/women acc.jpg", 50.00, 6, 'in of stock', 3, 3 ),
+("LG", "feel free and code.", "../html/images/laptop.jpg", 190.00, 3, 'in stock', 5, 2 ),
+("lip stick", "selection of Loafers, Formal Shoes, Boots, Sneakers & more", "../html/images/women acc.jpg", 50.00, 6, 'in of stock', 3, 1 );
 
 SELECT * FROM products;
 
