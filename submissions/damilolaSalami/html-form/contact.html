@@ -3,41 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contactUs.css">
     <title>BuyMe Contact</title>
 </head>
 
 <body>
-    <header>
-        <h1><a href="#">BuyMe</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Create a profile</a></li>
-                <li><a href="../html/productpage.html">Product Page</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-    <form>
-        <fieldset>
-        <legend><b>CONTACT US</b></legend>
-            <label for="full name">Full Name:</label> 
-            <input type="text" name="fullname" id="fullname">
-            <br><br>
+    <nav>
+        <div class="header">
+            <div class="logo">
+                <img src="..\html\images\logo.jpg" alt="logo">
+            </div>
            
-            <label for="email">Email:</label>
-			<input type="email" name="email" id="email" placeholder="Enter email address">
-			<br> <br>
+            <div class="headerlinks">
+                <ul>
+                    <li><a href="#">Product page</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="signup.html">Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<div class="contactbody">
+    <div class="callus container">
+        <div class="call">
+           <img src="../html/images/phone.jpg" alt="call">
+            <h3>Please contact us via these numbers:</h3>
+            <p>+234 810 166 2918</p>
+            <p>+123 810 166 2918</p>
+        </div>
+
+        <div class="email">
+            <img src="../html/images/email.jpg" alt="mail">
+            <h3>Email Address:</h3>
+            <p>support@domain.com</p>
+        </div>
         
-            <label for="subject">Subject:</label>
-			<input type="subject" name="subject" id="subject">
-			<br> <br>
-            
-            <label for="comment"> Message</label> <br>
-			<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-            <br> <br>
-                
-			<button type="submit">SUBMIT</button>
-        </fieldset>
-    </form>
+        <div class="social">
+            <h3>Or Connect with us:</h3>
+            <img src="../html/images/facebook.jpg" alt="facebook">
+            <img src="../html/images/twitter.jpg" alt="twitter">
+            <img src="../html/images/gmail.jpg" alt="gmail">
+            <img src="../html/images/youtube.jpg" alt="youtube">
+        </div>
+    </div>
+
+    <section>
+        <form class="emailform container">
+                <img src="../html/images/email1.jpg" alt="email">
+                <h4>Or better still send us a message</h4>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <p>Message</p> 
+                <textarea rows="10" cols="30" name="message" class="msgbox"></textarea>
+                <input type="submit" value="SEND" class="send">
+        </form>
+    </section>
+</div>
+
+<footer class="footer">
+    <div class="mainfooter">
+        <div class="contact footerdiv">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="newsletter footerdiv">
+            <p>Sign up for Newsletter</p>
+            <input type="email" class="emailletter" placeholder="Enter your email address">
+            <input type="button" value="SUBMIT" class="submit">
+        </div>
+
+        <div class="connect footerdiv">
+            <p>CONNECT WITH US</p>
+            <img src="../html/images/facebook.jpg" alt="facebook">
+            <img src="../html/images/twitter.jpg" alt="twitter">
+            <img src="../html/images/gmail.jpg" alt="gmail">
+            <img src="../html/images/youtube.jpg" alt="youtube">
+       </div>
+    </div>
+
+    <div class="finalfooter">
+        <p>&copy;2020 BuyMe.com All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
