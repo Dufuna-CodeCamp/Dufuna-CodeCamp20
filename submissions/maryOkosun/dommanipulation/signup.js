@@ -21,8 +21,8 @@ let firstNameError1 = "Please enter your First Name",
 	confirmPasswordError2 = "Your Password don't match";
 
 let nameRegex = /^[A-Za-z0-9 ]+$/,
-	emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-	phoneRegex = /^[\+0-9]{8,15}$/,
+	emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, //eslint-disable-line
+	phoneRegex = /^[\+0-9]{8,15}$/, //eslint-disable-line
 	pwdRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
 /*FORM VALIDATION*/
