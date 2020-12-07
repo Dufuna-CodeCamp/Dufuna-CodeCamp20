@@ -16,8 +16,7 @@ function validation(field, regExp, error, errorMess1, event){
         field.nextElementSibling.innerHTML = error;
         event.preventDefault();
         return false;
-    }
-    if (!field.value.match(regExp)) {
+    }else if (!field.value.match(regExp)) {
     field.nextElementSibling.innerHTML = errorMess1;
     event.preventDefault();
     return false;
