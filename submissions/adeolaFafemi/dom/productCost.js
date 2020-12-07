@@ -29,18 +29,18 @@ function updatePrice(){
     }
 function updateShipping(){
     var prodprice = productPrice.innerText;
-    if (prodprice < 1000){
+    if (prodprice < 1000) {
         shippingCost.innerText = 100;
-        } else if (prodprice < 20000){
-            var shipcost = parseInt(prodprice) * 0.15;
-            shippingCost.innerText = shipcost
-        } else if ( prodprice < 100000){
+    } else if (prodprice < 20000) {
+        var shipcost = parseInt(prodprice) * 0.15;
+        shippingCost.innerText = shipcost
+    } else if ( prodprice < 100000) {
         var shipcost = parseInt(prodprice) * 0.2;
         shippingCost.innerText = shipcost;
-        } else if (prodprice > 100000) {
+    } else if (prodprice > 100000) {
         shippingCost.innerText = 25000;
-        }
     }
+}
 
 function updateTotal(){
     var shipping = shippingCost.innerText;
