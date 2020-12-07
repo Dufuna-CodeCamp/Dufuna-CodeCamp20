@@ -5,7 +5,7 @@ let form = document.getElementById('validateForm'),
     message = document.getElementById('message');
 const formEmailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
     nameRegex = /^[a-zA-Z]/,
-    textRegex=  /^[a-zA-Z0-9]/
+    textRegex=  /^[a-zA-Z0-9]/;
 
 document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', formValidation, false);
@@ -17,12 +17,12 @@ function validation(field, regExp, error, errorMess1, event){
         event.preventDefault();
         return false;
     }else if (!field.value.match(regExp)) {
-    field.nextElementSibling.innerHTML = errorMess1;
-    event.preventDefault();
-    return false;
+        field.nextElementSibling.innerHTML = errorMess1;
+        event.preventDefault();
+        return false;
     } else {
-    field.nextElementSibling.innerHTML = "";
-       return true;
+        field.nextElementSibling.innerHTML = "";
+        return true;
     }
 }
 function formValidation(event) {
@@ -45,7 +45,7 @@ validation(
 validation(
     subject, 
     textRegex,
-    "This field is required",
+    "Subject is required",
     "Please enter a message subject", 
     event
 );
@@ -53,7 +53,7 @@ validation(
 validation(
     message, 
     textRegex,
-    "This field is required",
+    "Message is required",
     "Please enter your Message",
      event
 );
