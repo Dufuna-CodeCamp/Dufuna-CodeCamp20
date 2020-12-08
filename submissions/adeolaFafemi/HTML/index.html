@@ -32,8 +32,12 @@
                 <h1>Midi Boho Dress</h1>
                 <p>Brand: Pretty Dress</p>
                 <label for="quantity">Quantity:</label>
-                <input type="text" id="quantity" name="quantity" value="2">
-                <p>Price: &#x20A6;8000</p>
+                <input type="number" id="quantity" name="quantity" value="1">
+                <span class="error-block" id="error-input"></span>
+                <p>Price: &#x20A6;<span id="productprice">8000</span></p>
+                <p>Shipping cost: &#x20A6;<span id="shippingcost">0</span></p>
+                <p>Total cost: &#x20A6;<span id="totalcost">0</span></p>
+                <p></p>
                 <input type="submit" id="submit" value="BUY NOW" class="buy-now">
             </div>
         </div>
@@ -94,6 +98,7 @@
         <div class="copyright">
         <p>&copy;2020 Under9kStore.com All rights reserved.</p>
         </div> 
-        <script src="../dom/newsletterForm.js"></script>  
+        <script src="../dom/newsletterForm.js"></script> 
+        <script src="../dom/productCost.js"></script> 
 </body>
 </html>
