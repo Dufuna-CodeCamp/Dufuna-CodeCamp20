@@ -170,17 +170,17 @@ SELECT * FROM products;
 CREATE TABLE orders_items (
 	id INT NOT NULL AUTO_INCREMENT,
     order_id INT NOT NULL,
-    admin_id INT NOT NULL,
+    product_id INT NOT NULL,
     unit_price DECIMAL(9, 2) NOT NULL,
     quantity INT NOT NULL,
     total_amount DECIMAL(9, 2) NOT NULL,
     date_created DATETIME,
     PRIMARY KEY (id),
     FOREIGN KEY (order_id) REFERENCES orders(id),
-    FOREIGN KEY (admin_id) REFERENCES admins(id)
+    FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
-INSERT INTO orders_items (order_id, admin_id, unit_price, quantity, total_amount, date_created)
+INSERT INTO orders_items (order_id, product_id, unit_price, quantity, total_amount, date_created)
 VALUES (1, 4, 208.00, 3, 827.00, now()),
 (2, 5, 269.00, 2, 2080.00, now()),
 (3, 3, 910.00, 4, 3930.00, now()),
