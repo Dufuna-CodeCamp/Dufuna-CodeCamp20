@@ -7,4 +7,5 @@ foreach(array_combine($firsNames,$resHobbies) as $firstname => $hobby){
     echo 'My name is ' .$firstname . ", I love " . $hobby . "<br>";
 }
 
+
 ?>
