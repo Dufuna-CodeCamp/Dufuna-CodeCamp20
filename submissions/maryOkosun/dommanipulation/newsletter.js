@@ -5,7 +5,7 @@ let mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disabl
 
 /*FORM VALIDATION*/
 	
-function emailValidation(newsletter,event){
+function emailValidation(event){
 	if (newsletter.value == ""){
 		newsletter.nextElementSibling.innerHTML = "Please enter your Email Address";
 		event.preventDefault();
@@ -21,7 +21,7 @@ function emailValidation(newsletter,event){
 }
 
 function newsection(e){
-	emailValidation(newsletter,e);
+	emailValidation(e);
 	return true;
 }
 
