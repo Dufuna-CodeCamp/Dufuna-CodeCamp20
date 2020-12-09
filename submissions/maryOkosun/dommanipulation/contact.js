@@ -31,33 +31,23 @@ function fieldValidation(field,Regex, Error1, Error2,event){
 		return true;
 	}
 }
-function subjectValidation(event){
-	if (subject.value == "") {
-		subject.nextElementSibling.innerHTML = subjectError;
-		event.preventDefault();
-		return false;
-	}else{
-		subject.nextElementSibling.innerHTML = "";
-		return true;
-	}
-}
-function messageValidation(event){
-	if (message.value == "") {
-		message.nextElementSibling.innerHTML = messageError;
-		event.preventDefault();
-		return false;
-	}else{
-		message.nextElementSibling.innerHTML = "";
-		return true;
-	}
-}
 
+function messageValidation(field,error,event){
+	if (field.value == "") {
+		field.nextElementSibling.innerHTML = error;
+		event.preventDefault();
+		return false;
+	}else{
+		field.nextElementSibling.innerHTML = "";
+		return true;
+	}
+}
 
 function validateForm(e){
 	fieldValidation(fullName,nameRegex, fullNameError1,fullNameError2,e);
 	fieldValidation(email,emailRegex, emailAddressError1,emailAddressError2,e);
-	subjectValidation(e);
-	messageValidation(e);
+	messageValidation(message,messageError,e);
+	messageValidation(subject,subjectError,e);
 	return true;
 }
 
