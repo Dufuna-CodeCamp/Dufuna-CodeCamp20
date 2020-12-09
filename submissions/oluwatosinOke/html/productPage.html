@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <meta charset="UTF-8">
-      <meta content="width=device-width, initial-scale=1"
-      name="viewport"/>
-  <title>Product Page</title>
-      <link rel="stylesheet" href="../CSS/product-page-styles.css">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>Product Page</title>
+        <link rel="stylesheet" href="../CSS/product-page-styles.css">
     </head>
     <body>
-            <div class="form-outline">
-                <header>
-                    <div class="nav-section">
-                        <div id="nav-logo">
-                            <h2>MY FAVORITE ONLINE STORE</h2>
-                        </div>
+        <div class="form-outline">
+            <header>
+                <div class="nav-section">
+                    <div id="nav-logo">
+                        <h2>MY FAVORITE ONLINE STORE</h2>
                     </div>
-                    <nav>
-                        <ul>
-                            <li><a href="../html/productPage.html">Product Page</a></li>
-                            <li><a href="../html-forms/contactform.html">Contact Us</a></li>
-                            <li><a href="signup.html">Sign-Up</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <div class="container">
-                    <div class="left-column">
-                        <img src ="./images/samsung-galaxy-a20.jpg">   
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../html/productPage.html">Product Page</a></li>
+                        <li><a href="../html-forms/contactform.html">Contact Us</a></li>
+                        <li><a href="signup.html">Sign-Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="left-column">
+                    <img src ="./images/samsung-galaxy-a20.jpg">   
+                </div>
+                <div class="right-column">
+                    <div class="product-information">
+                        <h3>Galaxy A20</h3>
+                        <p>Brand: Samsung</p>
+                        <h4> Quantity:
+                        <input type="number" id="quantity" name="quantity" value="1"/>
+                        <span class="errorCode"></span> </h4>
+                        <p>Price: &#x20A6;<span id="price">75000</span></p>
+                        <p>shipping cost: &#x20A6;<span id="shippingCost">15000</span></p>
+                        <p>Total Cost: &#x20A6;<span id="totalCost">90000</span></p>
+                        <button type="submit" id="btn"> BUY NOW</button>
                     </div>
-                    <div class="right-column">
-                        <div class="product-information">
-                            <h3>Galaxy A20</h3>
-                            <p>Brand: Samsung</p>
-                            <label for="quantity">Quantity: </label>
-                            <input min="1" type="number" id="quantity" name="quantity" value="0"/>
-                            <p>Price: &#x20A6;75,000</p>
-                            <p>shipping cost: &#x20A6;1,000</p>
-                            <p>Total Cost: &#x20A6;76,000</p>
-                            <input type="button" value="BUY NOW">
-                        </div>
-                    </div>
-                    <div class="description">
-                        <p>Product Description:</p>
-                        <p>This new samsung has a 6.4" LCD display, 32GB Storage,4GB RAM, 13MP front and rear Camera </p>
-                    </div>
-                    <div class="bottom-column"> 
-                        <h3>RELATED PRODUCT</h3>
-                        <ul>
-                            <li>
-                                <figure>
-                                    <img src = "./images/iPhone-11.jpg">
-                                    <figcaption>
-                                        <p>iphone-11</p>
-                                        <p>price: &#x20A6;120,000</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src = "./images/Nokia-6.2.jpg">
-                                    <figcaption><p>Nokia 6.2</p> 
-                                    <p>price: &#x20A6;90,000<p></figcaption>
-                                </figure>
-                            </li>
-                            <li>
-                                <figure>
-                                    <img src = "./images/Infinix-Zero-8.jpg">
-                                    <figcaption><p>Infinix Zero 8</p>
-                                    <p>price: &#x20A6;100,000<p></figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="description">
+                    <p>Product Description:</p>
+                    <p>This new samsung has a 6.4" LCD display, 32GB Storage,4GB RAM, 13MP front and rear Camera </p>
+                </div>
+                <div class="bottom-column"> 
+                    <h3>RELATED PRODUCT</h3>
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src = "./images/iPhone-11.jpg">
+                                <figcaption>
+                                    <p>iphone-11</p>
+                                    <p>price: &#x20A6;120,000</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src = "./images/Nokia-6.2.jpg">
+                                <figcaption><p>Nokia 6.2</p> 
+                                <p>price: &#x20A6;90,000<p></figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src = "./images/Infinix-Zero-8.jpg">
+                                <figcaption><p>Infinix Zero 8</p>
+                                <p>price: &#x20A6;100,000<p></figcaption>
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
                 <footer>
                     <div class="footer">
@@ -101,6 +100,8 @@
                     </div>
                 </footer>
             </div>
+        </div>
+        <script src="../domManipulation/productpage.js"></script>
         <script src="../domManipulation/newsLetter.js"></script>
     </body>
 </html>

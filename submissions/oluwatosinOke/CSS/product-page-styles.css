@@ -67,6 +67,9 @@ header nav
 .error {
     color:red;
 }
+.errorCode {
+    color:red;
+}
 
 /*Right-column*/
 .right-column
@@ -101,9 +104,9 @@ header nav
     padding: 12px 30px;
 }
 
-.product-information input[type=button]:hover
+.product-information button
 {
-    background-color: palevioletred;
+    color: blueviolet;
 }
 
 /*product description*/
@@ -323,7 +326,7 @@ figcaption
         font-size: 10px;
     }
 
-    .product-information input[type=button]
+    .product-information button
     {
         display: inline-block;
         background-color: #00f798a8;
@@ -334,7 +337,7 @@ figcaption
         padding: 1px 3px;
     }
 
-    .product-information input[type=button]:hover
+    .product-information button:hover
     {
         background-color: palevioletred;
     }
@@ -452,7 +455,7 @@ figcaption
         padding: 1px;
     }
   
-    .footer-center input[type=button]
+    .footer-center button
     {
         width: fit-content;
         height: 12px;
