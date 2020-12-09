@@ -7,7 +7,6 @@ body{
 	font-size: 16px;
 	padding: 0;
 	height: 120vh;
-
 }
 .error-block{
 	font-size: 10px;
@@ -133,21 +132,21 @@ footer a{
 	margin-left: 5px;
 }
 .middle-footer{
-	width: 40%;
+	width: 45%;
 	float: left;
 	margin-left: 5px;
 	padding-left: 50px;
 	color: white;
 }
 footer input[type=email]{
-	width: 70%;
+	width: 60%;
 }
 footer input[type=email],
 footer button {
 	border-radius: 0;
 	padding: 5px;
 	margin-top: 0;
-	margin-right: 2px;
+	margin-right: 4px;
 }
 .right-footer{
 	width: 35%;
