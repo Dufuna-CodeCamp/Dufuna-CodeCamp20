@@ -93,21 +93,17 @@ header nav
     border: 1px solid #555;
 }
 
-.product-information input[type=button]
+.product-information button
 {
     display: inline-block;
     background-color: #00f798a8;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 26px;
     color: blueviolet;
     text-decoration: none;
     padding: 12px 30px;
 }
 
-.product-information button
-{
-    color: blueviolet;
-}
 
 /*product description*/
 .description

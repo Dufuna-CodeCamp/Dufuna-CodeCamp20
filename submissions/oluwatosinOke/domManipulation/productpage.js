@@ -3,7 +3,7 @@ let quantity = document.getElementById("quantity"),
     shippingCost = document.getElementById("shippingCost"),
     totalCost = document.getElementById("totalCost"),
     button = document.getElementById("btn");
-let sum = Number(price.innerHTML) * quantity.value;
+let subTotal = Number(price.innerHTML) * quantity.value;
 
 document.addEventListener('DOMContentLoaded', function () {
     quantity.addEventListener("input", validate, false);
@@ -17,7 +17,7 @@ function quantityCheck(event) {
         event.preventDefault();
         return false;
     } else {
-        sum = Number(price.innerHTML) * quantity.value;
+        subTotal = Number(price.innerHTML) * quantity.value;
         quantity.nextElementSibling.innerHTML = '';
         button.disabled = false;
         button.style.backgroundColor ="orange";
@@ -26,16 +26,16 @@ function quantityCheck(event) {
 }
     
 function shipping() {
-    if(sum < 1000) {
+    if(subTotal < 1000) {
         shippingCost.innerHTML = 100;
-    } else if(sum >= 1000 && sum <= 20000) {
-        shippingCost.innerHTML = 0.15 * sum;
-    } else if(sum > 20000 && sum <= 100000) {
-        shippingCost.innerHTML = 0.2 * sum;
+    } else if(subTotal >= 1000 && subTotal <= 20000) {
+        shippingCost.innerHTML = 0.15 * subTotal;
+    } else if(subTotal > 20000 && subTotal <= 100000) {
+        shippingCost.innerHTML = 0.2 * subTotal;
     } else {
         shippingCost.innerHTML = 25000;
     }
-    totalCost.innerHTML = Number(shippingCost.innerHTML) + sum;
+    totalCost.innerHTML = Number(shippingCost.innerHTML) + subTotal;
 }
     
 function validate(e) {
