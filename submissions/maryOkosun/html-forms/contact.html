@@ -39,33 +39,38 @@
 				
 				<h2>Or Connect with us:</h2>
 				<ul>
-						<li><img src="../HTML/images/facebook.png"></li>
-						<li><img src="../HTML/images/twiiter.png"></li>
-						<li><img src="../HTML/images/gmail.png"></li>
-						<li><img src="../HTML/images/youtube.png"></li>
-					</ul>
+					<li><img src="../HTML/images/facebook.png"></li>
+					<li><img src="../HTML/images/twiiter.png"></li>
+					<li><img src="../HTML/images/gmail.png"></li>
+					<li><img src="../HTML/images/youtube.png"></li>
+				</ul>
 			</div>
 			<div class="sidebar">
-				<div class="icon">
-					<img src="../HTML/images/close-email.png">
-				</div>
-				<h2>Or better still send us a message</h2>
-			
-			<input type="text" placeholder="Full Name">
-				<br>
-			<input type="email" placeholder="Email address">
-				<br>
-			<input type="text" placeholder="Subject">
-				<br>
-			<label for="comment"> Message</label>
-				<br>
-			<textarea name="comment" id="comment" cols="60" rows="10"></textarea>
-				<br>
-			<button type="submit">SEND</button>
+				<form id="validateForm" method="post">
+	   	        <div class="row">
+       	    <div>
+            	<label for="fullname">Full Name</label>
+				<input type="text" name="fullname" id="fullName">
+				<span class="error-block"></span>
+        	</div>
+			<div>
+				<label for="email">Email Address</label>
+				<input type="email" name="email" id="email">
+				<span class="error-block"></span>
 			</div>
-			
-		</div>
-
+			<div>
+            	<label for="subject">Subject</label>
+				<input type="text" name="subject" id="subject">
+				<span class="error-block"></span>
+        	</div>
+        	<div>
+            	<label for="message">Message</label>
+            	<textarea name="comment" cols="60" rows="10" id="message"></textarea>
+				<span class="error-block"></span>
+        	</div>
+			<button type="submit">SIGNUP</button>
+    			</form>
+    		</div>
 	</main>
 <footer>
 		<div>
@@ -95,5 +100,6 @@
 			</div>
 				
 	</footer>
+	<script src="../dommanipulation/contact.js"></script>
 </body>
 </html>
