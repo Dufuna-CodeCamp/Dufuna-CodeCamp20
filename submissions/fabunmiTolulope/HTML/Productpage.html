@@ -26,9 +26,10 @@
 			<p>Brand: Organic Cavendish</p>
 			<label for="quantity">Quantity:</label>
 			<input type="number" name="quantity" id="quantity" value="1">
-			<p>Price: &#x20A6;10,000</p>
-			<p>Shipping Cost: &#x20A6;1,500</p>
-			<p>Total Cost: &#x20A6;11,500</p>
+			<span class="error-block"></span>
+			<p>Price: &#x20A6; <span id="price"> 10000</span></p>
+			<p>Shipping Cost: &#x20A6; <span id="shippingCost"> 150</span></p>
+			<p>Total Cost: &#x20A6; <span id="totalCost"> 10150</span></p>
 			<button type="submit" id="btn"><a href="#">BUY NOW</a></button>
 		</div>
 </section>
@@ -84,6 +85,7 @@
     <p>&copy; 2020 Greenprint Integrated Services.<br> Copyrights reserved.</p>
 	</div>
 </footer>
-<script src="../dom/newsletterForm.js"></script>
+<script src="../dom/productPage.js"></script>
+<!-- <script src="../dom/newsletterForm.js"></script> -->
 </body>
 </html>
