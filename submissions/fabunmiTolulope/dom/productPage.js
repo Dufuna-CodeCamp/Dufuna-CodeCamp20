@@ -28,7 +28,8 @@ function shippingAmount() {
         shippingCost.innerHTML = parseFloat(0.2 * productPrice);
     } else if (productPrice >= 100000) {
         shippingCost.innerHTML = parseFloat(25000);
-    } totalCost.innerHTML = parseInt(shippingCost.innerHTML) + parseInt(productPrice);
+    }
+    totalCost.innerHTML = parseInt(shippingCost.innerHTML) + parseInt(productPrice);
 }
 
 function totalCostAmount() {
