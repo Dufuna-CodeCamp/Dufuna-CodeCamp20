@@ -7,18 +7,13 @@ let confirmPassword = document.getElementById('cpassword');
 let signupbutton = document.getElementById('signupbutton');
 
 // to trigger the required error messages when the user clicks the signup button
-signupbutton.addEventListener('click', () => {
-    let emailValid = validateEmail(email);
-    let numberValid = validateNumber(phoneNumber);
-    let passwordValid =  validatePassword(password);
-    let confirmPasswordValid = validateConfirmPassword(confirmPassword, password);
-    let firstNameValid = validateFirstName(firstName);
-    let lastNameValid = validateLastName(lastName);
-    if (emailValid && numberValid && passwordValid && confirmPasswordValid && firstNameValid && lastNameValid) {
-        console.log("Validation successful");
-    } else {
-        console.log("Validation failed");
-    }
+signupbutton.addEventListener('submit', () => {
+    validateEmail(email);
+    validateNumber(phoneNumber);
+    validatePassword(password);
+    validateConfirmPassword(confirmPassword, password);
+    validateFirstName(firstName);
+    validateLastName(lastName);
 });
 
 
