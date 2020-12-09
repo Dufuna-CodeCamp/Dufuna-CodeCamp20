@@ -1,6 +1,6 @@
 <?php
 
-function convert($value) {
+    function convert($value) {
         $pounds = ($value * 2.205);
         $yards  = ($value * 1.094);
         $fahrenheit = (($value * 1.8) + 32);
@@ -11,5 +11,5 @@ function convert($value) {
     }
 
     convert(25);
-    
+
 ?>
