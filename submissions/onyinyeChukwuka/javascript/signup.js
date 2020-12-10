@@ -11,7 +11,7 @@ const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s/0-9]*$/g;
 const passwordRegex = (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/);
 
 // to trigger the required error messages when the user clicks the signup button
-signupbutton.addEventListener('click', () => {
+signupbutton.addEventListener('submit', () => {
     validateInput(email, "Please enter your Email Address", "Please enter a valid email", emailRegex);
     validateInput(firstName, "Please enter your First Name", "Please enter a valid first name", nameRegex);
     validateInput(lastName, "Please enter your Last Name", "Please enter a valid last name", nameRegex);
