@@ -29,27 +29,50 @@
 				<p>Already got an account? <a href="#"><span>Sign in</span></a></p>
 			</div>
 			<div class="sidebar">
-				<form>
-				<label for="firstname">First Name</label><br>
-				<input type="text" name="firstname" id="firstname"><br>
-				<label for="lastname"> Last Name</label><br>
-				<input type="text" name="lastname" id="lastname"><br>
-				<label for="othernames"> Other Names</label><br>
-				<input type="text" name="othernames" id="othernames"><br>
-				<label for="phonenumber"> Phone Number</label><br>
-				<input type="text" name="phonenumber" id="phonenumber"><br>
-				<label for="email">Email Address</label><br>
-				<input type="email" name="email" id="email"><br>
-				<label for="password">Password</label><br>
-				<input type="password" name="password"><br>
-				<label for="confirmpassword">Confirm Password</label><br>
-				<input type="confirmpassword" name="confirmpassword"><br>
-				<input type="checkbox">
-				<label for="agreement"><span>I agree to the Terms and Conditions</span> </label>
-				<br>
-				<button>SIGNUP</button>
+				<form id="validateForm" method="post">
+	   	        <div class="row">
+       	    <div>
+            	<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstName">
+				<span class="error-block"></span>
+        	</div>
+            <div>
+				<label for="lastname"> Last Name</label>
+				<input type="text" name="lastname" id="lastName">
+				<span class="error-block"></span>
 			</div>
-		</div>
+            <div>
+				<label for="othernames"> Other Names</label>
+				<input type="text" name="othernames" id="otherNames">
+				<span class="error-block"></span>
+			</div>
+			<div>
+				<label for="phonenumber"> Phone Number</label>
+				<input type="text" name="phonenumber" id="phoneNumber">
+				<span class="error-block"></span>
+			</div>
+			<div>
+				<label for="email">Email Address</label>
+				<input type="email" name="email" id="email">
+				<span class="error-block"></span>
+			</div>
+
+			<div>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password">
+				<span class="error-block"></span>
+			</div>
+			<div>
+				<label for="confirmpassword">Confirm Password</label>
+				<input type="confirmpassword" name="confirmPassword" id="confirmPassword">
+				<span class="error-block"></span>
+			</div>
+			<input type="checkbox">
+			<label for="agreement"><span>I agree to the Terms and Conditions</span></label><br>
+			<button type="submit">SIGNUP</button>
+    			</form>
+    		</div>
+    	</div>
 	</main>
 	<footer>
 		<div>
@@ -79,5 +102,6 @@
 			</div>
 				
 	</footer>
+	<script src="../dommanipulation/signup.js"></script>
 </body>
 </html>

@@ -9,6 +9,10 @@ html,body{
 	margin: 0 auto;
 	font-size: 16px;
 }
+.error-block{
+	font-size: 8px;
+	color: red;
+}
 header img{
 	height: 100px;
 	float: left;
@@ -19,7 +23,7 @@ header img{
 body{
 	margin: 0;
 	padding: 0;
-	height: 120vh;
+	height: 130vh;
 
 }
 nav ul{
@@ -58,9 +62,12 @@ span{
 main h1{
 	font-size: 2em;
 }
+.row div{
+	margin-bottom: 10px;
+}
 .sidebar{
 	width: 40%;
-	height: 530px;
+	height: 650px;
 	float: right;
 	font-size: 12px;
 	margin-top: 20px;
@@ -73,15 +80,16 @@ input[type=text],
 input[type=email],
 input[type=password],
 input[type=confirmpassword]{
-	padding: 8px ;
-	margin: 4px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
 	border-radius: 5px;
 	width: 100%;
 }
 input[type=checkbox]{
 	text-align: center;
 	padding-left: 50px;
-	margin: 8px 20px;
+	margin: 12px 20px;
 }
 main button{
 	display: inline-block;
@@ -97,7 +105,7 @@ main button{
 footer{
 	position: absolute;
 	height: 21%;
-	top: 650px;
+	top: 750px;
 	width: 100%;
 	background-color: #24305E;
 }
