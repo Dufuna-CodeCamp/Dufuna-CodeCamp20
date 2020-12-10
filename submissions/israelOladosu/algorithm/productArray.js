@@ -49,10 +49,7 @@ const print = (msg) => console.log(msg);
 
 const checkArr = (arr1, arr2) => {
   for (var i = 0; i <= arr1.length - 1; i++) {
-    /* this removes the white spaces in the current product name and then assign the result to variable withoutSpaces */
-    var withoutSpaces = arr1[i].replace(/ /g, '');
-
-    if (withoutSpaces.length % 2 == 0) {
+    if (arr1[i].length % 2 == 0) {
       arr2[i] = arr2[i] * 2;
     } else {
       arr2[i] = arr2[i] / 2;
