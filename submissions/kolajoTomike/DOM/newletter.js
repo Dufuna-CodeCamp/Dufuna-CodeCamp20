@@ -1,7 +1,7 @@
 
 let submitForm = document.getElementById('newsletter');
 let email = document.getElementById('email');
-let emailRegex = /^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$/;
+let emailRegex = /^\w+[\w]*\w+((-\w+)|(\w*))[a-z]{2,3}$/;
 
 
     function validateForm(e){
