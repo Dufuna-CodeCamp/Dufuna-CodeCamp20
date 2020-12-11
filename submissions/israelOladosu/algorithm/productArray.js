@@ -21,7 +21,7 @@ const products = [
   'Olympus PEN E-PL6',
 ];
 
-const product_price = [
+const product_prices = [
   500,
   200,
   750,
@@ -58,4 +58,4 @@ const checkArr = (arr1, arr2) => {
   }
 };
 
-checkArr(products, product_price);
+checkArr(products, product_prices);
