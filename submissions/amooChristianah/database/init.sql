@@ -140,7 +140,7 @@ SELECT * FROM orders;
 -- 7. ORDER ITEM TABLE
 -- creating table
 CREATE TABLE order_items(
- id INT NOT NULL auto_increment,
+ id INT NOT NULL AUTO_INCREMENT,
 order_id INT NOT NULL,
 product_id INT NOT NULL,
 quantity INT NOT NULL,
