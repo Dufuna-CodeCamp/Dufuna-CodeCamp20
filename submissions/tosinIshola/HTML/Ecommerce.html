@@ -3,65 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>ALL THINGS FASHION</title>
+     <link href="../CSS/product_page.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 
 <header>
-    <img src="../HTML/Images/fashion.jpg" alt="logo" >
-    <h1>ALL THINGS FASHION (A.T.F)</h1>
+    <!-- website logo image -->
+    <img src="../HTML/Images/fashion.jpg" alt="logo" id="logo" >
+    <div>
+            <ul>
+      
+                <li><a href="../HTML/Ecommerce.html" >OUR PRODUCT</a></li> <br>
+                <li><a href="../html-forms/contact_form.html"> CONTACT US</a> </li><br>
+                <li><a href="../html-forms/signup.html">SIGN UP</a></li>
+            </ul>
+
+    </div>
+
 </header>
-
-<nav>
-    <ul>
-        <a href="">HOME</a> <br>
-        <a href="../HTML/Ecommerce.html" >OUR PRODUCT</a> <br>
-        <a href="../html-forms/contact_form.html"> CONTACT US</a> <br>
-        <a href="../html-forms/signup.html">SIGN UP</a>
-    </ul>
-</nav>
-
-<hr>
-<h2>ABOUT US</h2>
-<p>
-    All Things Fashion (A.T.F) is an online store where different sellers can display and sell any item that has to do with fashion ranging from Cloths, Accesories, Hairs, Body Fitness and Enhancement, Skin Care, Makeup, Shoes and Bags e.t.c and buyers can purchase whatever they need from the store.
-</p>
-<hr>
-
-<h2>OUR PRODUCTS</h2>
-<h3>Adult Female Mannequin</h3>
-    <img src="Images/dummy-2.jpg"  alt="dummy-2">
-    <p><strong>PRICE:#28,000</strong></p>
-    <p>Description: Fashion Female Standing Women Display Mannequin Wholesale Mannequin Doll. This item is useful for displaying garments.
-    It’s a very handy tool for fashion designers, fashion students etc
-    Color: Gold.
-    Top quality and easy to assemble. It is durable and unbreakable.
-    </p>
-
-<section>
-    <h5>Check out list of similar products</h5>
-
-    <ul>
-        <li><a href="">Generic Female Egghead Mannequin</a> </li>
-        <li><a href="">Gold Fiberglass Lingerie Female Mannequin </a> </li>
-        <li><a href="">Gold Mannequin</a> </li>
-    </ul>
-
+<main>
+    
+<section class="main
+    <div class="two-column">
+        <div class="product">
+         <img src="Images/dummy-2.jpg"  alt="dummy-2">
+        </div> 
+            <div class="details">
+                <h2>Adult Female Mannequin<br></h2>
+                <h5>Brand: Italian<br></h5>
+                <h5>Quantity: <input type="text" name="qty" placeholder="2"><br></h5>
+                <p><strong>PRICE:#28,000</strong></p>
+            <button class="btn">BUY NOW</button>
+            </div>
+    </div>
+    <div class="description">
+        <h2>DESCRIPTION</h2>
+            <p>Fashion Female Standing Women Display Mannequin Wholesale Mannequin Doll. This item is useful for displaying garments.
+            It’s a very handy tool for fashion designers, fashion students etc
+            Color: Gold.
+            Top quality and easy to assemble. It is durable and unbreakable.</p>
+    </div>
+    
 </section>
 
-<h3>Sewing Machine</h3>
-    <img src="Images/sewing-machine.jpg" alt="sewing-machine">
-    <p><strong>PRICE:#45,000</strong></p>
-        <p>Description: This sewing machine offers the best performance and extras for its value. With a metal frame and classic Singer features, this machine is great for simple projects like hemming, DIY crafts, and mastering the basics. With four presser feet included, you can add buttonholes, zippers, and piping. There are 23 stitches, including straight, zig zag, scallop, and twin needle sewing. Reviewers love its small size, so it can easily be stashed away when not in use. 
-        </p>
+</main>
 
-<section>
-    <h5>Check out list of similar products</h5>
-    <ul>
-        <li><a href="">Singer Product</a> </li>
-        <li><a href="">Butterfly Product </a> </li>
-        <li><a href="">Brother Product</a> </li>
-    </ul>
-</section>
+<!-- Related Products-->
+<div class="three-column">
+      <h1>RELATED PRODUCTS</h1>
+            <div class="related">
+                 <img src="../HTML/Images/Image1.jpg">
+                 <p>Generic Female Egghead Mannequin</p> 
+                <p>PRICE:#30,000</p>    
+            </div> 
+            <div class="related">
+                <img src="../HTML/Images/Image2.jpg">
+                <p>Gold Fiberglass Lingerie Female Mannequin </p> 
+                 <p>PRICE:#25,000</p>    
+            </div>
+             <div class="related">
+                 <img src="../HTML/Images/Image3.jpg">
+                 <p>Gold Mannequin</p> 
+                <p>PRICE:#40,000</p>   
+            </div>
+</div>
 
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer">
+        <div class="coloumn1">
+            <ul>
+                <li><a href="../html-forms/contact_form.html">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="coloumn2">
+            <div class="subscribe">
+                <p>Sign up for our Newsletter</p>
+                 <form id="subscribe">
+                 <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <button type="submit">SUBMIT</button> <br>
+                 </form>
+            </div>
+            <div class="socialmedia">
+                 <P>CONNECT WITH US</P>
+                <div id="facebook"><img src="../HTML/Images/facebook.png" alt="facebook"></div>
+                <div id="twitter"><img src="../HTML/Images/twitter.png" alt="twitter"></div>
+                <div id="instagram"><img src="../HTML/Images/instagram.png" alt="instagram"></div>
+                <div id="gmail"><img src="../HTML/Images/gmail.png" alt="gmail"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2020 AllThingsFashion.com All rights reserved</p>
+    </div>
+
+</footer>
 </body>
 </html>
