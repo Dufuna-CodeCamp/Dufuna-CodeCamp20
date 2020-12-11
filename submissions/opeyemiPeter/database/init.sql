@@ -7,9 +7,9 @@ create database clearpathShop;
 show databases;
 use clearpathshop;
 
--- 1. Admin table 
+-- 1. admin table 
 -- table creation
-create table Admin( 
+create table admin( 
 		adminId int not null auto_increment,
 		adminName varchar(50) not null,
 		adminEmail varchar(50) not null,
@@ -19,7 +19,7 @@ create table Admin(
 );
 
 -- populating the admin table with values
-insert into Admin (adminName, adminEmail, adminPassword, adminPhoneNumber) 
+insert into admin (adminName, adminEmail, adminPassword, adminPhoneNumber) 
 values
 		('opeyemipeter','opp@gmail.com','opeyemipeter','+2348146412566'),
 		('Danny thompson','DannyT@mail.com','dannypowell','+123456778'),
@@ -28,29 +28,29 @@ values
 		('samad akann', 'smad@mail.com', 'akannsam', '+123678908');
 
 -- show the Admin Table
-select * from Admin;
+select * from admin;
 
 -- 2 Categories table
 -- table creation
-create table Categories(
+create table categories(
 		categoryId int not null auto_increment,
 		categoryName varchar(50) not null,
 		primary key (categoryId)
 );
 -- populating categories with values.
-insert into Categories(categoryName) 
+insert into categories(categoryName) 
 		Values ('male sneakers'),
 			   ('female sneakers'),
 			   ('male flatsole palm'),
 			   ('female flatsole palm');
     
 -- view categories table
-select * from Categories;     
+select * from categories;     
 
 
 -- 3 Product Table
 -- table creation
-create table Product(
+create table product(
 			productId int not null auto_increment,
 			categoryId int not null,
 			adminId int not null,
@@ -61,25 +61,25 @@ create table Product(
             stockLevel int not null,
 			status enum('available', 'unavailable'),
 			primary key(productId),
-			foreign key (categoryId) references Categories (categoryId),
-			foreign key (adminId) references Admin (adminId)
+			foreign key (categoryId) references categories (categoryId),
+			foreign key (adminId) references admin (adminId)
 );
 
 
 
 -- populating the product table with values
-insert into Product (categoryId,adminId,productName, productDescription,image,unitPrice,stockLevel,status) 
+insert into product (categoryId,adminId,productName, productDescription,image,unitPrice,stockLevel,status) 
 values ( 1, 3,'CHUNKY SOLE SNEAKERS', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic assumenda ipsum earum voluptatem odio, sapiente quia tempore repellendus alias aliquam nostrum ex culpa quasi voluptatibus sequi.', load_file('../html/Images/shoes2.jpg'), '1000.00', 30,'available'  ),
 		( 2, 1,'LIGHTENING SOLE EXPLORER (PLAIN)', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic assumenda ipsum earum voluptatem odio, sapiente quia tempore repellendus alias aliquam nostrum ex culpa quasi voluptatibus.', load_file('../html/Images/shoes3.jpg'), ' 3000.00', 35,'available'  ),
         ( 4, 2,'CHUNKY SOLE SNEAKERS', 'Lorem ipsum dolor sit amt   provident at.', load_file('../html/Images/shoes4.jpg'), ' 2000.00', 59,'unavailable'  ),
         ( 3, 4,'CHUNKY SOLE SNEAKERS', 'Sequi laboriosam consequatur possimus id Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias animi sequi asperiores quos, nulla eaque, in, alias earum optio tenetur repellat provident at.', load_file('../html/Images/l.png'), ' 1200.00', 30,'available'  );
 
 -- view product table;
-select * from Product;
+select * from product;
 
 -- 4 customer table 
 -- Table creation
-create table Customers(
+create table customers(
 	customerId int not null auto_increment,
     customerFirstName varchar(50) not null,
     customerLastName varchar(50) not null,
@@ -89,7 +89,7 @@ create table Customers(
 );
 
 -- populating the customers table with values
-insert into Customers(customerFirstName,customerLastName,customerEmailAddress,customerPassword) 
+insert into customers(customerFirstName,customerLastName,customerEmailAddress,customerPassword) 
 values ('fred', 'hammod', 'fredhamod@gmail.com','frednard'),
 ('shnano', 'craig', 'fcraig@gmail.com' ,'shanaonocra'),
 ('fiyinfolu', 'clement', 'clement@gmail.com', 'clementfiyin'),
