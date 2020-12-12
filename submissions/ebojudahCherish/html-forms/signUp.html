@@ -1,88 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.min.css">
-        <link rel="stylesheet" href="../css/styles.css">
-    </head>
 
-    <body>
-        <!-- NAVBAR -->
-        <div class="navbar">
-            <div class="container flex">
-                <h1 class="logo">Beautify.</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../html/productPage.html">Product Page</a></li>
-                        <li><a href="../html-forms/signUp.html">Sign Up</a></li>
-                        <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+        <div class="flex justify-between bg-primary px-2 txt-white">
+            <h1>Beautify.</h1>
+            <div class="py-1">
+                <a class="px-1" href="../html/productPage.html">Product Page</a>
+                <a class="px-1" href="../html-forms/signUp.html">Sign Up</a>
+                <a class="px-1" href="../html-forms/contactForm.html">Contact Us</a>
             </div>
         </div>
-    
-        <section class="welcome-text">
-            <div class="container grid">
-                <div class="register-txt">
-                    <h1 class="register-header">Register your Account</h1>
-                    <p class="register-paragraph">Registering an account gives you access to sweet promo and events available to only registered customers</p>
-                    <br>
-                    <p class="register-question">Already got an acount? <a href="#">Sign in</a></p>
-                </div>
 
-                <div class="register-form">
-                    <form action="#" method="POST" class="sg-form">
+    <section class="welcome-text">
+        <div class="container grid">
+            <div class="register-txt">
+                <h1 class="register-header px-2">Register your Account</h1>
+                <p class="register-paragraph txt-lg line-height px-2">Registering an account gives you access to sweet promo and events
+                    available to only registered customers</p>
+                <br>
+                <p class="register-question txt-sm px-2">Already got an acount? <a href="#">Sign in</a></p>
+            </div>
+
+            <!-- <div class="register-form">
+                <form action="#" method="POST" class="sg-form" id="validateForm">
+                    <div class="register-form">
                         <fieldset class="register-fieldset">
-                            <label for="name">Firstname</label><br>
-                            <input type="text" name="firstname" id="firstname"><br>
+                                <label for="name">Firstname</label>
+                                <input class="mb-1" type="text" name="firstname" id="firstName">
+                                <span class="error-block"></span>
                             <label for="lastname">Lastname</label><br>
-                            <input type="text" name="lastname" id="lastname"><br>
+                            <input type="text" name="lastname" id="lastName"><br>
+                            <span class="error-block"></span>
                             <label for="name">Other Names</label><br>
                             <input type="text" name="othernames" id="othernames"><br>
+                            <span class="error-block"></span>
                             <label for="lastname">Phone Number</label><br>
-                            <input type="text" name="phonenumber" id="phonenumber"><br>
+                            <input type="text" name="phonenumber" id="phoneNumber"><br>
+                            <span class="error-block"></span>
                             <label for="email">Email Address</label><br>
                             <input type="email" name="email" id="email"><br>
+                            <span class="error-block"></span>
                             <label for="email">Password</label><br>
                             <input type="password" name="password" id="password"><br>
+                            <span class="error-block"></span>
                             <label for="email">Confirm Password</label><br>
-                            <input type="password" name="password" id="password"><br>
+                            <input type="password" name="password" id="confirmPassword"><br>
+                            <span class="error-block"></span>
                             <input type="checkbox" name="terms" class="terms-chkbx" value="terms">
                             <label for="terms" class="terms"> I agree to the Terms and Conditions</label><br>
+                            <span class="error-block"></span>
                             <button type="button" name="submit" value="submit" class="register-button">SIGN UP</button>
                         </fieldset>
-                    </form>
-                </div>
-        
-            </div>
-        </section>
-        
-       <!-- Footer -->
-       <footer class="footer">
-        <div class="container grid">
-            <div class="footer-item">
-                <ul class="footer-list">
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                </ul>
+                    </div>
+                </form>
+            </div> -->
+            <div style="border: 1px solid black; width: 85%;" class="rounded-md px-2 py-1">
+                <form action="#" method="" id="validateForm">
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="name">Firstname</label>
+                        <input class="py-1 rounded-sm border-light" type="text" name="firstname" id="firstName">
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="lastname">Lastname</label>
+                        <input class="py-1 rounded-sm border-light" type="text" name="lastname" id="lastName">
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="name">Other Names</label>
+                        <input class="py-1 rounded-sm border-light" type="text" name="othernames" id="otherNames">
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="lastname">Phone Number</label>
+                        <input class="py-1 rounded-sm border-light" type="text" name="phonenumber" id="phoneNumber">
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="email">Email Address</label>
+                        <input class="py-1 rounded-sm border-light" type="email" name="email" id="email">
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="email">Password</label>
+                        <input class="py-1 rounded-sm border-light" type="password" name="password" id="passWord">
+                        <span class="error-block"></span>
+                    </div>
+                    <div class="flex flex-column px-2 py-1">
+                        <label for="email">Confirm Password</label>
+                        <input class="py-1 rounded-sm border-light" type="password" name="password" id="confirmPassword">
+                        <span class="error-block"></span>
+                    </div>
+                   <div class="flex justify-center">
+                        <input type="checkbox" name="terms" class="" value="terms">
+                        <label for="terms" class="terms"> I agree to the Terms and Conditions</label><br>
+                        <span class="error-block"></span>
+                   </div>
+                   <div class="justify-center flex"> <button class="bg-primary py-1 px-4 txt-white border-none rounded-sm txt-bold">SIGN UP</button></div>
+                </form>
             </div>
 
-            <div class="footer-item" id="footer-item-two">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="bg-primary">
+        <div class="flex justify-between px-2">
+            <div class="footer-item flex flex-column">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Terms and Conditions</a>
+            </div>
+
+            <div class="footer-item py-1 txt-white" id="footer-item-two">
                 <p>Sign up for our Newsletter</p>
                 <input type="email" placeholder="Enter your email address" id="footer-input">
-                <button type="button" name="submit" value="submit" id="footer-button">SUBMIT</button>
+                <button type="submit" name="submit" value="submit" id="footer-button">SUBMIT</button>
             </div>
 
-            <div class="footer-item" id="footer-item">
+            <div class="footer-item txt-white py-1" id="footer-item">
                 <strong>CONNECT WITH US</strong>
-                <ul class="ft-navbar-ul">
-                    <a href=""><li class="fab fa-facebook fa-2x footer-navbar-li"></li></a>
-                    <a href=""><li class="fab fa-twitter fa-2x footer-navbar-li"></li></a>
-                    <a href=""><li class="far fa-envelope fa-2x footer-navbar-li"></li></a>
-                    <a href=""><li class="fab fa-youtube fa-2x footer-navbar-li"></li></a>
-                </ul>
+                <div class="ft-navbar-ul">
+                    <a href="">
+                        <i class="fab fa-facebook fa-2x footer-navbar-li"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter fa-2x footer-navbar-li"></i>
+                    </a>
+                    <a href="">
+                        <i class="far fa-envelope fa-2x footer-navbar-li"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-youtube fa-2x footer-navbar-li"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -91,6 +149,9 @@
                 <p>Copyright &copy; 2020.<a href="productPage.html">Beautify.</a>All rights reserved.</p>
             </div>
         </div>
-    </footer>  
-    </body>
-</html>   
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
