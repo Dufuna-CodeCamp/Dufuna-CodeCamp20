@@ -10,7 +10,7 @@
 
     echo ("<br>A PHP program that displays all even number between 0 and 50 <br>");
         
-        for ($i = 1 ; $i < (($threshold-1)/2); ++$i){
+        for ($i = 2; $i < (($threshold-1)/2); ++$i){
             if ( ($i % 2) === 0){
                 echo $i.'<br>';
             }
