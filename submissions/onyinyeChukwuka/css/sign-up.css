@@ -97,7 +97,7 @@ form {
     border-radius: 10px;
     border: solid 2px #5f5f5f;
     display: block;
-    margin-bottom: 36px;
+    margin-bottom: 5px;
 }
 
 #terms {
@@ -136,6 +136,18 @@ form {
     line-height: 1.22;
     text-align: center;
     color: #0066f5;
+}
+
+.error-block{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.22;
+    text-align: left;
+    color: #d74444;
+}
+
+.form-div {
+    margin-bottom: 36px;
 }
 
 /* for the footer */
