@@ -82,7 +82,7 @@ let submitForm = document.getElementById('validateForm'),
     //email field validation regex
     function isEmail(email) {
         //validate email field using regex to accept only valid email format
-        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+        return /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email);
    }
     //email field validation conditions
     function emailFieldValidation(event) {
