@@ -1,6 +1,0 @@
-I'm Nurudeen Lawal. A Chemical Engineer by university education and profession. 
-After watching a few youtube videos on python programming language, I immediately 
-grew interest in web development in entirety, thus I registered for the 
-DUFUNA CODE CAMP FULLSTACK TRACK effectively. I aim to dedicate my time into learning
-fullstack web/javascript development to ease a career switch or enhance freelancing
-opportunities.

@@ -1,4 +1,0 @@
-implimenting & modifying codes to fix errors,
-adapt it to new hardware,
-improve its performance,
-and upgrade interfaces.

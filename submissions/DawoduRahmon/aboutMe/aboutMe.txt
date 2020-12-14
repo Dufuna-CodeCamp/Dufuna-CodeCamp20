@@ -1,2 +1,0 @@
- my name is Rahmon,
-i have been able to push my first task to Github.
