@@ -1,7 +1,6 @@
 let submitForm = document.getElementById('validateForm'),
     firstName = document.getElementById('firstName'),
     lastName = document.getElementById('lastName'),
-    otherName = document.getElementById('otherName'),
     email = document.getElementById('email'),
     number = document.getElementById('number'),
     passWord = document.getElementById('password'),
@@ -36,6 +35,8 @@ let submitForm = document.getElementById('validateForm'),
             firstName.nextElementSibling.innerHTML = "Please enter your First name"
             event.preventDefault();
             return false;
+        }else if(!lettersOnly(firstName.value)) {
+            event.preventDefaulty();
         } else {
             firstName.nextElementSibling.innerHTML = "";
             return true;
@@ -49,6 +50,8 @@ let submitForm = document.getElementById('validateForm'),
             lastName.nextElementSibling.innerHTML = "Please enter your Last name"
             event.preventDefault();
             return false;
+        } else if(!lettersOnly(lastName.value)) {
+            event.preventDefaulty();
         } else {
             lastName.nextElementSibling.innerHTML = "";
             return true;
@@ -68,6 +71,8 @@ let submitForm = document.getElementById('validateForm'),
             number.nextElementSibling.innerHTML = "Please enter your Phone number"
             event.preventDefault();
             return false;
+        } else if(!numbersOnly(number.value)) {
+            event.preventDefaulty();
         } else {
             number.nextElementSibling.innerHTML = "";
             return true;
