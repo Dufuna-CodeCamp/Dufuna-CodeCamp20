@@ -47,37 +47,39 @@
         </div>
         <!--sign up form -->
         <div id="form">
-            <form>
+            <form id="validateForm" method="post">
                 <fieldset id="s-form">
                 <!--Name-->
                     <label for="firstName">First Name</label><br>  
-                    <input type="text" name="firstName" id="firstName" />
-                    <br><br>
+                    <input type="text" name="firstName" id="firstName" onkeyup="lettersOnly(this)" />
+                    <p class="error-block"></p>
                     <label for="lastName">Last Name</label><br>  
-                    <input type="text" name="lastName" id="lastName" />
-                    <br><br>
+                    <input type="text" name="lastName" id="lastName" onkeyup="lettersOnly(this)" />
+                    <p class="error-block"></p>
                     <label for="otherName">Other names</label><br>  
-                    <input type="text" name="otherName" id="otherName" />
-                    <br><br>
+                    <input type="text" name="otherName" id="otherName" onkeyup="lettersOnly(this)" />
+                    <p class="error-block"></p>
                 <!--Phone number--> 
                     <label for="number">Phone Number</label><br>
-                    <input type="text" name="number" id="number" />
-                    <br><br>
+                    <input type="text" name="number" id="number" onkeyup="numbersOnly(this)" />
+                    <p class="error-block"></p>
                 <!--Email-->
                     <label for="email">Email Address</label><br>
                     <input type="email" name="email" id="email" />
-                    <br><br>
+                    <p class="error-block"></p>
                 <!--Password-->
                     <label>Password</label><br>
-                    <input type="password" name="password" id="password" /> 
-                    <br><br>
+                    <input type="password" name="password" id="password" />
+                    <p class="error-block"></p>
                     <label>Confirm Password</label><br>
-                    <input type="password" name="password" id="confirmPassword" /> 
-                    <br><br>
+                    <input type="password" name="password" id="confirmPassword" />
+                    <p class="error-block"></p> 
+                    <br>
                 <!--T/C consent-->
                 <div id="tac">
-                    <input type="checkbox" class="checkbox" name="checkbox" id="terms" /> 
+                    <input type="checkbox" class="checkbox" name="checkbox" id="terms" />
                     <span><label for="terms" id="termsLabel">I agree to the terms and conditions</label></span>
+                    <p class="error-block"></p>
                 </div>
                     <br>
                 <!--button: submit-->
@@ -86,6 +88,9 @@
             </form>
         </div>
     </div>
+
+<script src="../javaScript/signUp.js"></script>
+
 </body>    
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    <!--footer-->
@@ -125,5 +130,6 @@
     </div>
     <!--copyright-->
     <p id="copyright">Copyright &copy; 2020 www.greeneatz.com  All rights reserved.</p>
-</footer>        
+</footer>     
+
 </html>

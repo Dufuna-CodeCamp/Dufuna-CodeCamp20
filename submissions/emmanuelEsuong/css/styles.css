@@ -4,6 +4,10 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+.error-block {
+    font-size: 12px;
+    color: red;
+}
 /* top navigation */
 .topnav {
     overflow: hidden;
@@ -22,6 +26,9 @@ body {
     margin: 15px 50px 0px 0px;
 }
 /* signUp page */
+#supT {
+    height: 500px;
+}
 /* formfield */
 #s-form {
     border-radius: 25px;
