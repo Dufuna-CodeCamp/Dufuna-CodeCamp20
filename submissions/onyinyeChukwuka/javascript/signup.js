@@ -17,7 +17,6 @@ signupbutton.addEventListener('submit', () => {
     validateInput(lastName, "Please enter your Last Name", "Please enter a valid last name", nameRegex);
     validateInput(phoneNumber, "Please enter your Phone Number", "Please enter a valid phone number", phoneRegex);
     validateInput(password, "Please enter your Password", "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number", passwordRegex);
-    // validateInput(confirmPassword, "Please confirm your Password", "Your passwords don't match", passwordRegex);
     validateConfirmPassword(password, confirmPassword, "Your passwords don't match");
 });
 
