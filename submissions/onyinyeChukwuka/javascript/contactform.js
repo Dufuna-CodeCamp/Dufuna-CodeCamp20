@@ -10,13 +10,13 @@ const nameRegex = /^[a-zA-Z]/;
 sendbutton.addEventListener('submit', () => {
     validateInput(email, "Please enter your Email Address", "Please enter a valid email", emailRegex);
     validateInput(fullName, "Please enter your Name", "Please enter a valid first name", nameRegex);
-    validateInput(subject, "Please enter a message subject");
-    validateInput(message, "Please enter your Message");
+    validateMessage(subject, "Please enter a message subject");
+    validateMessage(message, "Please enter your Message");
 });
 
-
+9
 // to print out individual error messages according to the specific text fields
-validateInput = (element, email, fullName, emptyElementMessage, validationFailedMessage, validationRegex) => {
+validateInput = (element,emptyElementMessage, validationFailedMessage, validationRegex) => {
     if (element.value === "") {
         element.nextElementSibling.innerHTML = emptyElementMessage;
         return false;
@@ -30,7 +30,7 @@ validateInput = (element, email, fullName, emptyElementMessage, validationFailed
     }
 }
 
-validateMessage= (element, subject, message, emptyElementMessage) => {
+validateMessage= (element, emptyElementMessage) => {
     if (element.value === "") {
         element.nextElementSibling.innerHTML = emptyElementMessage;
         return false;
