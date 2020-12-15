@@ -7,7 +7,7 @@ const emailRegex = /^(([^<>()[\]\\.,;:\s@]+(\.[^<>()[\]\\.,;:\s@]+)*)|(.+))@((\[
 const nameRegex = /^[a-zA-Z]/;
 
 // to trigger the required error messages when the user clicks the signup button
-sendbutton.addEventListener('click', () => {
+sendbutton.addEventListener('submit', () => {
     validateInput(email, "Please enter your Email Address", "Please enter a valid email", emailRegex);
     validateInput(fullName, "Please enter your Name", "Please enter a valid first name", nameRegex);
     validateInput(subject, "Please enter a message subject");
