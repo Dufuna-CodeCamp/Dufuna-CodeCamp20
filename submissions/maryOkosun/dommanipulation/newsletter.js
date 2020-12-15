@@ -20,9 +20,4 @@ function emailValidation(event){
 	}
 }
 
-function newsection(e){
-	emailValidation(e);
-	return true;
-}
-
-newsForm.addEventListener("submit",newsection);
+newsForm.addEventListener("submit",emailValidation);
