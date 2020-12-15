@@ -35,7 +35,7 @@ validateMessage= (element, subject, message, emptyElementMessage) => {
         element.nextElementSibling.innerHTML = emptyElementMessage;
         return false;
     } else {
-        confirmPassword.nextElementSibling.innerHTML = "";
+        element.nextElementSibling.innerHTML = "";
         return true;
     } 
 }
