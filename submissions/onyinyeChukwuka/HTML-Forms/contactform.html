@@ -62,24 +62,32 @@
                 <img class="mail" src="../html/images/email.png" alt="mail-icon" width="48px" height="37.7px">
                 <p class="better"> Or better still send us a message</p>
                 <!-- This is for the User's fullname-->
-                <label for="fname">Full Name</label><br>
-                <input type="text" id="fullname" placeholder="Full Name" name="fullname"><br><br>
-
+                <div class="form-div">
+                    <label for="fname">Full Name</label><br>
+                    <input type="text" id="fullname" placeholder="Full Name" name="fullname"><br><br>
+                    <span class="error-block"></span>
+                </div>
+                
                 <!-- This is for the User's Email-->
-                <label for="email">Email</label><br>
-                <input type="text" id="email" placeholder="Email" name="email"><br><br>
-
+                <div class="form-div">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" placeholder="Email" name="email"><br><br>
+                    <span class="error-block"></span>
+                </div>
                 <!-- This is for the message subject-->
-                <label>Subject</label><br>
-                <input type="text" id="email" placeholder="Subject" name="email"><br><br>
-
-
-                <!-- This is for the message input -->
-                <div class="text-area">
-                    <label>Message</label><br>
-                    <textarea id="message" cols="50" rows="4" name="message"></textarea>
+                <div class="form-div">
+                    <label>Subject</label><br>
+                    <input type="text" id="subject" placeholder="Subject" name="email"><br><br>
+                    <span class="error-block"></span>
                 </div>
 
+                <!-- This is for the message input -->
+                <div class="form-div">
+                    <div class="text-area">
+                        <label>Message</label><br>
+                        <textarea id="message" cols="50" rows="4" name="message"></textarea>
+                    </div>
+                </div>
                 <!-- This is for the submit button to post the news-->
                 <div class="button-wrapper">
                     <button type="button" id="sendbutton">SEND</button>

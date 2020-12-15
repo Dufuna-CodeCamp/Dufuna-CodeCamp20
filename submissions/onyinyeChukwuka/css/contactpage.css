@@ -205,6 +205,14 @@ label {
     visibility: visible;
 }
 
+.error-block{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.22;
+    text-align: left;
+    color: #d74444;
+}
+
 /* for the footer */
 
 .footer {
