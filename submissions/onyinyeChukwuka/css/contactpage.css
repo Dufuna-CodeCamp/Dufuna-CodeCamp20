@@ -151,7 +151,7 @@ form {
 }
 
 label {
-    visibility: hidden;
+   display: none;
 }
 
 .draft {
@@ -202,7 +202,23 @@ label {
 }
 
 .text-area>label {
-    visibility: visible;
+    display: block;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #5f5f5f;
+}
+
+.error-block{
+    font-size: 12px;
+    line-height: 1.22;
+    text-align: left;
+    color: #d74444;
+}
+.form-div{
+    margin-bottom: 20px;
 }
 
 /* for the footer */
