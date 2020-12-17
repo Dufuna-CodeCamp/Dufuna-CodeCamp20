@@ -2,7 +2,6 @@
 let submitForm = document.querySelector('#validateForm'),
     firstName = document.querySelector('#firstName'),
     lastName = document.querySelector('#lastName'),
-    otherNames = document.querySelector('#otherNames'),
     phoneNumber = document.querySelector('#phoneNumber'),
     email = document.querySelector('#email'),
     password = document.querySelector('#passWord');
@@ -66,7 +65,7 @@ function lastNameValidation(event) {
 
 // phone number field validation
 function phoneNumberValidation(event) {
-    let phoneRegEx = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+    let phoneRegEx = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/im;
     if (phoneNumber.value == '') {
         phoneNumber.nextElementSibling.innerHTML = 'Please enter your phone number';
         event.preventDefault();
@@ -83,7 +82,7 @@ function phoneNumberValidation(event) {
 
 // email field validation 
 function emailFieldValidation(event) {
-    let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let emailRegex = /^(([^<>()[]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!email.value.match(emailRegex)) {
         email.nextElementSibling.innerHTML = 'Please enter a valid email';
         event.preventDefault();
