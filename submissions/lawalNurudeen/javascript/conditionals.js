@@ -1,5 +1,6 @@
 const num1 = 123;
 const num2 = 7;
+const diff = num1 - num2;
 
 for (let i = 1; i <= diff; i++){
     if(i % 3 === 0 && i % 5 === 0){
