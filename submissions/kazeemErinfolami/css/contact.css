@@ -1,0 +1,546 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(225, 225, 217, 0.434);
+}
+nav {
+  background: rgba(211, 210, 210, 0.577);
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+#logo {
+  width: 100px;
+  height: auto;
+  display: inline;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+a {
+  color: rgba(34, 34, 34, 0.797);
+}
+label.logo {
+  font-size: 250%;
+  line-height: 80px;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  color: rgba(238, 237, 237, 0.87);
+  font-size: 120%;
+  padding-right: 90px;
+  text-transform: uppercase;
+}
+.container {
+  margin-top: 40px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-left: 45.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 50px;
+}
+#messageUs {
+  position: absolute;
+  top: 8.3rem;
+  right: 15rem;
+  width: 4.5rem;
+  border-radius: 7px;
+}
+.form {
+  margin-top: 40px;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+.forminput {
+  display: block;
+  width: 420px;
+  height: 36px;
+  border-radius: 10px;
+  border: 3px solid gray;
+}
+.bigInput {
+  display: block;
+  width: 420px;
+  height: 90px;
+  border-radius: 10px;
+  border: 3px solid gray;
+}
+.error{
+  color: crimson
+}
+label {
+  font-size: 100%;
+}
+.agreeContainer {
+  text-align: center;
+}
+.box {
+  margin-top: 0;
+}
+.signupbutton {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#submitbtn {
+  padding: 10px 60px;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+}
+section {
+  position: absolute;
+  top: 230px;
+  right: 0;
+  left: 5rem;
+  text-align: center;
+  margin-right: 55rem;
+  margin-left: 0;
+}
+.inputMessage {
+  text-align: center;
+  margin-top: 70px;
+  color: rgba(34, 34, 34, 0.797);
+}
+
+.registerContainer {
+  font-size: x-large;
+  color: rgba(0, 0, 0, 0.55);
+}
+.phoneImg {
+  top: -60px;
+  left: 150px;
+  width: 2.7rem;
+  border-radius: 7px;
+}
+.emailImg {
+  top: 120px;
+  left: 150px;
+  width: 2.7rem;
+  border-radius: 7px;
+}
+.para {
+  font-size: 20px;
+}
+.reg {
+  font-size: 30px;
+  font-weight: 100;
+}
+#num {
+  font-size: 20px;
+}
+.con-2 {
+  margin-top: 60px;
+}
+.con-3 {
+  margin-top: 40px;
+}
+.fbCon {
+  left: 60px;
+  width: 2.4rem;
+  border-radius: 7px;
+}
+.twCon {
+  left: 112px;
+  width: 2.4rem;
+  border-radius: 7px;
+}
+.gmCon {
+  left: 160px;
+  width: 3rem;
+  border-radius: 7px;
+}
+.ytCon {
+  left: 220px;
+  width: 3rem;
+  border-radius: 7px;
+}
+footer {
+  padding: 3px;
+  width: 100%;
+  height: 220px;
+  background-color: rgba(187, 187, 187, 0.776);
+  color: white;
+}
+.contact {
+  position: absolute;
+  line-height: 40px;
+  padding-top: 20px;
+  margin-left: 60px;
+  font-size: x-large;
+}
+.newsletter {
+  text-align: center;
+  font-size: larger;
+  margin-top: 20px;
+  line-height: 40px;
+}
+#newsEmail {
+  padding: 10px 60px;
+}
+#newsSubmit {
+  padding: 10px 20px;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+}
+.copyRight {
+  text-align: center;
+  margin-top: 50px;
+}
+.media {
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+#connect {
+  color: rgba(0, 0, 0, 0.461);
+  line-height: 100px;
+}
+
+#imglogo {
+  position: absolute;
+  /*  margin-top: 0; */
+}
+
+.fb {
+  left: 0;
+  width: 20%;
+  border-radius: 7px;
+}
+.tw {
+  left: 40px;
+  width: 21%;
+  border-radius: 7px;
+}
+.gm {
+  left: 80px;
+  width: 26%;
+  border-radius: 7px;
+}
+.yt {
+  left: 130px;
+  width: 26%;
+  border-radius: 7px;
+}
+
+/* mediaQuery */
+@media (max-width: 769px) {
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    color: rgba(238, 237, 237, 0.87);
+    font-size: 1rem;
+    padding-right: 30px;
+    text-transform: uppercase;
+  }
+  .forminput {
+    display: block;
+    width: 550px;
+    height: 20px;
+    border-radius: 10px;
+    border: 3px solid gray;
+  }
+  section {
+    position: absolute;
+    top: 140px;
+    right: 14px;
+    left: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .phoneImg {
+    top: -40px;
+    left: 350px;
+    width: 2rem;
+    border-radius: 7px;
+  }
+  .emailImg {
+    top: 90.9px;
+    left: 350px;
+    width: 2rem;
+    border-radius: 7px;
+  }
+  .con-2 {
+    margin-top: 40px;
+  }
+  .con-3 {
+    margin-top: 0;
+  }
+  .fbCon {
+    left: 327px;
+    width: 2rem;
+    border-radius: 7px;
+  }
+  .twCon {
+    left: 380px;
+    width: 2rem;
+    border-radius: 7px;
+  }
+  .gmCon {
+    left: 430px;
+    width: 2.4rem;
+    border-radius: 7px;
+  }
+  .ytCon {
+    left: 270px;
+    width: 2.4rem;
+    border-radius: 7px;
+  }
+  .container {
+    margin-top: 320px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 50px;
+  }
+  #messageUs {
+    position: absolute;
+    top: 26rem;
+    right: 22rem;
+    width: 4.5rem;
+    border-radius: 7px;
+  }
+  .registerContainer {
+    text-align: center;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .para {
+    font-size: 15px;
+  }
+  #submitbtn {
+    padding: 9px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+  }
+  footer {
+    padding: 3px;
+    width: 100%;
+    height: 220px;
+    background-color: rgba(187, 187, 187, 0.776);
+    color: white;
+  }
+  .contact {
+    position: absolute;
+    line-height: 30px;
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 25px;
+  }
+  .newsletter {
+    text-align: end;
+    font-size: larger;
+    margin-right: 10px;
+    margin-top: 10px;
+    line-height: 40px;
+  }
+  #newsEmail {
+    padding: 10px 60px;
+  }
+  #newsSubmit {
+    padding: 10px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+  }
+  .media {
+    display: flex;
+    position: absolute;
+    top: 66rem;
+    right: 200px;
+  }
+  #connect {
+    color: rgba(0, 0, 0, 0.461);
+    line-height: 100px;
+  }
+  .copyRight {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+/* ....mode... */
+@media (max-width: 375px) {
+  nav {
+    background: rgba(211, 210, 210, 0.577);
+    height: 130px;
+    width: 100%;
+    cursor: pointer;
+  }
+  #logo {
+    width: 90px;
+    height: auto;
+    display: inline;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 5px;
+    color: rgba(238, 237, 237, 0.87);
+    font-size: 13px;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 240px;
+    text-transform: uppercase;
+  }
+  .phoneImg {
+    top: -30px;
+    left: 150px;
+    width: 1.7rem;
+    border-radius: 7px;
+  }
+  .emailImg {
+    top: 70px;
+    left: 150px;
+    width: 1.9rem;
+    border-radius: 7px;
+  }
+  section {
+    position: absolute;
+    top: 170px;
+    right: 14px;
+    left: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .con-3 {
+    margin-top: 5px;
+  }
+  .fbCon {
+    left: 97px;
+    width: 2rem;
+    border-radius: 7px;
+  }
+  .twCon {
+    left: 138px;
+    width: 2rem;
+    border-radius: 7px;
+  }
+  .gmCon {
+    left: 175px;
+    width: 2.5rem;
+    border-radius: 7px;
+  }
+  .ytCon {
+    left: 220px;
+    width: 2.5rem;
+    border-radius: 7px;
+  }
+  .registerContainer {
+    text-align: center;
+    font-size: 500px;
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .para {
+    font-size: 15px;
+  }
+  .reg {
+    font-size: 20px;
+  }
+  .container {
+    margin-top: 300px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 50px;
+  }
+  #messageUs {
+    position: absolute;
+    top: 28rem;
+    right: 10rem;
+    width: 3rem;
+    border-radius: 7px;
+  }
+  .inputMessage {
+    text-align: center;
+    margin-top: 60px;
+    color: rgba(34, 34, 34, 0.797);
+  }
+  .form {
+    margin-top: 40px;
+    margin-left: 2rem;
+    margin-right: 4.5rem;
+    margin-bottom: 40px;
+    padding-top: 0;
+  }
+  .forminput {
+    display: block;
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    border: 3px solid gray;
+  }
+  .bigInput {
+    display: block;
+    width: 250px;
+    height: 90px;
+    border-radius: 10px;
+    border: 3px solid gray;
+  }
+  #submitbtn {
+    padding: 9px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+  }
+  .contact {
+    position: absolute;
+    line-height: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  footer {
+    padding: 4px;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(187, 187, 187, 0.776);
+    color: white;
+  }
+  .newsletter {
+    text-align: center;
+    font-size: larger;
+    margin-top: 90px;
+    line-height: 40px;
+  }
+  #newsEmail {
+    padding: 10px 40px;
+  }
+  #newsSubmit {
+    padding: 10px 20px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+  }
+  .copyRight {
+    margin-top: 120px;
+    text-align: center;
+  }
+  #connect {
+    color: rgba(0, 0, 0, 0.461);
+    line-height: 100px;
+  }
+  .media {
+    display: flex;
+    position: absolute;
+    top: 72rem;
+    right: 90px;
+  }
+}
