@@ -14,7 +14,7 @@ sendbutton.addEventListener('submit', () => {
     validateMessage(message, "Please enter your Message");
 });
 
-9
+
 // to print out individual error messages according to the specific text fields
 validateInput = (element,emptyElementMessage, validationFailedMessage, validationRegex) => {
     if (element.value === "") {
