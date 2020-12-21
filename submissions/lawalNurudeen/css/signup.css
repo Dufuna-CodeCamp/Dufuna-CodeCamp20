@@ -81,6 +81,12 @@ a {
   padding: 7px;
 }
 
+.form-area .input-area .error {
+  color: red;
+  font-size: 10px;
+  font-style: italic;
+}
+
 .form-area .terms {
   margin: 5px 0;
   text-align: center;
