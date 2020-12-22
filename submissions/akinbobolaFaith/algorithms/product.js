@@ -47,7 +47,7 @@ var product_price = [
 function productPrices(products, product_price) {
     for (let i = 0; i < products.length; i++) {
         if(products[i].length % 2 === 0) {
-            product_price[i] = Math.pow(product_price[i], 2);
+            product_price[i] *= 2;
         } else {
             product_price[i] /= 2;
         }
