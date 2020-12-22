@@ -44,8 +44,6 @@ const product_price = [
     750.00
 ]
 
-console.log(products.length);
-
 function checkProductArray(array1, array2){
     for(var i = 0; i <= array1.length; i++){
         if(array1[i].length % 2 == 0){
