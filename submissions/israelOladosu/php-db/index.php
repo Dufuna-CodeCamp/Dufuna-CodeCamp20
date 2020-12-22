@@ -22,7 +22,7 @@ include('./classes/queryDb.class.php');
                 echo "<td>". $row['fullname'] . "</td>";
                 echo "<td>". $row['email'] . "</td>";
                 echo "<td>". $row['created_at'] . "</td>";
-                echo "<td>". "<a href='#'>view</a>" . "</td>";
+                echo "<td> <a href='#'>view</a> </td>";
             echo "</tr>";
             };
         echo "</table>";
