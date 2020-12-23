@@ -26,14 +26,16 @@
 			<div class="top-img"><img src="images/image1.png"></div>
 			<div class="top-detail">
 				<h3>TECNO SPARK</h3>
-				<p>Brand: Tecno</p>
-				<label for="quantity">Quantity: </label><input type="number">
-				<p>Price: $150</p>
-				<button>BUY NOW</button>
+				<p>Quantity: <input type="number" value="1" id="quantity">
+				<span class="error-block"></span></p>
+                <p>Price :$ <span id="price">200</span></p>
+                <p>Shipping Cost: $ <span id="shippingCost"></span></p>
+                <p>Total Cost: $ <span id="totalCost"></span></p>
+                <button type="submit" id="buy-btn">Buy Now</button>
 			</div>
 			<div class="top-description">
 				<h1>DESCRIPTION</h1>
-				<p>It has an Android 7.0 (Nougat) OS and a Screen Size of 5.7 inches. A Display Resolution of 1440 x 720 pixels and a Processor of Quad-core MediaTek MT6737. Has a RAM of 2GB and a Storage Space of 16GB. Also an Expansion Slot of 128GB and the Main Camera is 13 megapixels. The Selfie Camera is 13 megapixels and Batteryof 3000mAh.</p>
+				<p>It has an Android 7.0 (Nougat) OS and a Screen Size of 5.7 inches. A Display Resolution of 1440 x 720 pixels and a Processor of Quad-core MediaTek MT6737. Has a RAM of 2GB and a Storage Space of 16GB. Also an Expansion Slot of 128GB and the Main Camera is 13 megapixels. The Selfie Camera is 13 megapixels and Battery of 3000mAh.</p>
 			</div>
 		</div>
 		<div class="bottom">
@@ -91,5 +93,6 @@
 				
 	</footer>
 	<script src="../dommanipulation/newsletter.js"></script>
+	<script src="../dommanipulation/product.js"></script>
 </body>
 </html>
