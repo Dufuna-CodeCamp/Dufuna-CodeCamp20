@@ -5,7 +5,7 @@ include('./classes/queryDb.class.php');
     // an instance of queryDb class to call the getAllUsers method;
     $queryDb = new QueryDb();
 
-    $results = isset($_COOKIE['users'])? unserialize($_COOKIE['users']) : $queryDb->getAllUsers();
+    $results = isset($_COOKIE['customers'])? unserialize($_COOKIE['customers']) : $queryDb->getAllCustomers();
 
     if(count($results) > 0) {
         echo "<table>";
@@ -19,14 +19,16 @@ include('./classes/queryDb.class.php');
         foreach ($results as $row) {
             echo "<tr>";
                 echo "<td>". $row['id'] . "</td>";
-                echo "<td>". $row['fullname'] . "</td>";
+                echo "<td>". $row['firstname'] . $row['lastname'] . "</td>";
                 echo "<td>". $row['email'] . "</td>";
                 echo "<td>". $row['created_at'] . "</td>";
-                echo "<td> <a href='#'>view</a> </td>";
+                echo '<td>'. 
+                        "<a href='#' >view </a>" . 
+                    '</td>';
             echo "</tr>";
-            };
-        echo "</table>";
-        unset($results);
-    } else{
-        echo 'No records matching your query were found';
-    };
+};
+echo "</table>";
+unset($results);
+} else{
+echo 'No records matching your query were found';
+};

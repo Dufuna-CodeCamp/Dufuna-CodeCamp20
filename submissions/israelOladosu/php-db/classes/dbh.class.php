@@ -5,7 +5,7 @@ class Dbh {
     private $host = "localhost";
     private $user = "root";
     private $pwd = "mysql";
-    private $dbName = "cookiesDb";
+    private $dbName = "farmvile";
 
     protected function connect ()  {
         
