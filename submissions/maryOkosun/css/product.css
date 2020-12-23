@@ -8,6 +8,10 @@ body{
 	padding: 0;
 	height: 152vh;
 }
+.error-block{
+	font-size: 10px;
+	color: red;
+}
 header img{
 	height: 100px;
 	float: left;
@@ -112,26 +116,26 @@ footer a{
 	text-decoration: none;
 }
 .left-footer{
-	width: 20%;
+	
 	float: left;
 	margin-left: 5px;
 }
 .middle-footer{
-	width: 40%;
+	width: 45%;
 	float: left;
 	margin-left: 5px;
 	padding-left: 50px;
 	color: white;
 }
 footer input[type=email]{
-	width: 70%;
+	width: 60%;
 }
 footer input[type=email],
 footer button {
 	border-radius: 0;
 	padding: 5px;
 	margin-top: 0;
-	margin-right: 2px;
+	margin-right: 4px;
 }
 .right-footer{
 	width: 35%;
@@ -158,7 +162,7 @@ footer button {
 }
 .copyright p{
 	margin-top: 50px;
-	padding-right: 300px;
+	padding-right: 90px;
 	padding-top: 50px;
 }
 @media screen and (max-width: 768px){
