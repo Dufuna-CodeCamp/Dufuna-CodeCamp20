@@ -9,9 +9,8 @@ let defaultPrice = 15000
 
 quantity.addEventListener('input', updateUI)
 
-function updateUI(e) {
-    if (quantity.value % 1 != 0) {
-    } else if (quantity.value == "" || quantity.value == null) {
+function updateUI() {
+   if (quantity.value == "" || quantity.value == null) {
         setError("Please enter a valid number")
     } else { 
         btn.disabled = false;
