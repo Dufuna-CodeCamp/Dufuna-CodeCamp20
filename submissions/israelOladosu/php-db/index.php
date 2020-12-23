@@ -26,9 +26,9 @@ include('./classes/queryDb.class.php');
                         "<a href='#' >view </a>" . 
                     '</td>';
             echo "</tr>";
-};
-echo "</table>";
-unset($results);
-} else{
-echo 'No records matching your query were found';
-};
+        };
+        echo "</table>";
+        unset($results);
+    } else{
+        echo 'No records matching your query were found';
+    };
