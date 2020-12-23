@@ -42,8 +42,11 @@
             <div class="camidescription">
                 <h3> CAMI'S COMBAT BOOTS</h3>
                 <h4> Brand: River Island</h4>
-                <h4>Quantity: <input type="text" value="1" name="quantity " id="quantity"></h4>
-                <h4> Price: &#x20A6 15,000</h4>
+                <h4 id="quantity-header">Quantity: <input type="number" name="quantity" value="1" id="quantity"></h4>
+                <span class="error-block"></span>
+                <h4> Price: &#x20A6 <span id="price"></span></h4>
+                <h4> Shipping cost: &#x20A6 <span id="shipping"></span></h4>
+                <h4> Total cost: &#x20A6 <span id="total"></span></h4>
                 <button type="submit" id="button"> BUY NOW</button>
             </div>
         </div>
@@ -113,6 +116,7 @@
         <p> &#169; 2020 BootStraps</p>
     </footer>
     <script src="../javascript/newsletter.js"></script>
+    <script src="../javascript/productpage.js"></script>
 </body>
 </body>
 

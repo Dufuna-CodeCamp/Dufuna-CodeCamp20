@@ -70,9 +70,21 @@ nav>.right-side>div {
     font-weight: bold;
     line-height: 1.23;
     text-align: center;
+    cursor: pointer;
     color: #ffffff;
 }
+#button:disabled{
+    background-color: #b1b1b1;
+    cursor: not-allowed;
+}
 
+.error-block{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.22;
+    text-align: left;
+    color: #d74444;
+}
 /* for the related products */
 
 .related {
