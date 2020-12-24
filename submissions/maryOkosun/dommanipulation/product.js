@@ -2,31 +2,24 @@ let quantity = document.getElementById("quantity"),
     price = document.getElementById("price"),
     shippingCost = document.getElementById("shippingCost"),
     totalCost = document.getElementById("totalCost"),
-    button = document.getElementById("buy-btn"),
-    quantityRegex = /^[1-9]+[0-9]*$/;
+    button = document.getElementById("buy-btn");
 
 function quantityValue(){
-    if(!(quantity.value.match(quantityRegex))){
+    var qtyVal;
+    qtyVal = quantity.value;
+    if(isNaN(qtyVal) || qtyVal < 1 || qtyVal == " "){
         quantity.nextElementSibling.innerHTML = "Please enter a valid quantity";
+        document.getElementById('shippingCost').innerHTML = 0;
+        document.getElementById('totalCost').innerHTML = 0;
         button.disabled = true;
-        shippingCost.innerHTML = 0;
-        totalCost.innerHTML = 0;
-        return false;
+        button.style.backgroundColor = "#b89055";
     }
     else{
-        quantity.nextElementSibling.innerHTML = "";
+        quantity.nextElementSibling.innerHTML = " ";
+        shippingValue();
         button.disabled = false;
-    }
-}
-
-function checkInteger(){
-    if(quantity.value   < 1 ){
-        button.disabled = true;
-        shippingCost.innerHTML = 0;
-        totalCost.innerHTML = 0;
-    }
-    else{
-        quantityValue();
+        button.style.backgroundColor = "#f79521";
+        return true;
     }
 }
 
@@ -49,11 +42,4 @@ function shippingValue(){
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
         }
 }
-
-function totalCostValue(){
-    quantityValue();
-    shippingValue();
-    checkInteger();
-    return true;
-}
-quantity.addEventListener("input", totalCostValue);
+quantity.addEventListener("input", quantityValue);

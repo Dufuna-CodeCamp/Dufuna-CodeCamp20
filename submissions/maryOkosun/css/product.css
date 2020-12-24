@@ -60,7 +60,7 @@ nav a{
 	color: #ffffff;
 	background-color: #f79521;
 	border-radius: 15px;
-	border: 1px solid #f79521;
+	border: 1px solid;
 	height: 25px;
 	font-size: 15px;
 	font-weight: bold;
