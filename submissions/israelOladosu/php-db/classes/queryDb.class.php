@@ -30,4 +30,20 @@ class QueryDb extends Dbh
         }
     }
 
+    public function getOrders($id)
+    {
+        try {
+
+            $sql = 'SELECT orders.id, items.quantity, items.unit_price, items.total_amount, orders.made_at, orders.delivery_address, products.product_name FROM items LEFT JOIN orders ON orders.customer_id = items.order_id LEFT JOIN products ON products.id = items.product_id WHERE orders.customer_id = ?';
+
+            $stmt = $this->connect()->prepare($sql);
+            $stmt->execute([$id]);
+            $orders = $stmt->fetchAll();
+
+            $this->storeData('orders', $orders, time() + 3600);
+            return $orders;
+        } catch (PDOException $e) {
+            die("ERROR: Could not execute $sql. " . $e->getMessage());
+        }
+    }
 };
