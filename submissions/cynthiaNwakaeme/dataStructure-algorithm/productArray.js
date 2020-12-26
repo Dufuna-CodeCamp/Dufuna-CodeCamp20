@@ -54,6 +54,6 @@ function productPrice(array_name,array_price) {
         }
         console.log(`The price of ${array_name[product]} is ${array_price[product]}`)
     }  
-};
+}
 productPrice(products,product_price);
  
