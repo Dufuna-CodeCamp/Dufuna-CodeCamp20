@@ -41,13 +41,13 @@ function validateForm(e) {
 }
 
 //Form Validation
-function formValidation(field, Regex, Empty, Unmatched, event){
+function formValidation(field, regex, empty, unmatched, event){
 	if (field.value == ''){
-		field.nextElementSibling.innerHTML = Empty;
+		field.nextElementSibling.innerHTML = empty;
 		event.preventDefault();
 		return false;
-	} else if (!field.value.match(Regex)){
-		field.nextElementSibling.innerHTML = Unmatched;
+	} else if (!field.value.match(regex)){
+		field.nextElementSibling.innerHTML = unmatched;
 		event.preventDefault();
 		return false;
 	}else{
