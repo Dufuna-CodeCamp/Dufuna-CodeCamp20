@@ -46,7 +46,7 @@ let product_price = [
 
 function productPrice(array_name,array_price) {
 
-    for(product = 0; product < array_name.length; product++) {
+    for(let product = 0; product < array_name.length; product++) {
         if((array_price[product] % 2) == 0){
             array_price[product] = array_price[product] * 2;
         }else if((array_price[product] % 2) !== 0){
