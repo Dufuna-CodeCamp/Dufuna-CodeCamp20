@@ -64,7 +64,5 @@ function setProduct() {
     totalUI.innerHTML = total
     quantityHeader.nextElementSibling.innerHTML = "";
 }
-(
     //main function
     setProduct()
-)
