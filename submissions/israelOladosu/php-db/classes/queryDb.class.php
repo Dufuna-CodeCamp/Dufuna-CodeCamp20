@@ -34,10 +34,17 @@ class QueryDb extends Dbh
     {
         try {
 
-            $sql = 'SELECT orders.id, items.quantity, items.unit_price, items.total_amount, orders.made_at, orders.delivery_address, products.product_name FROM items LEFT JOIN orders ON orders.customer_id = items.order_id LEFT JOIN products ON products.id = items.product_id WHERE orders.customer_id = ?';
+            $sql = "SELECT items.quantity, items.unit_price,
+            items.total_amount, orders.made_at, orders.id, 
+            orders.delivery_address, products.product_name 
+            FROM items 
+            LEFT JOIN orders 
+            ON orders.id = items.order_id 
+            LEFT JOIN products 
+            ON products.id = items.product_id 
+            WHERE orders.customer_id = $id";
 
-            $stmt = $this->connect()->prepare($sql);
-            $stmt->execute([$id]);
+            $stmt  = $this->connect()->query($sql);
             $orders = $stmt->fetchAll();
 
             $this->storeData('orders', $orders, time() + 3600);
