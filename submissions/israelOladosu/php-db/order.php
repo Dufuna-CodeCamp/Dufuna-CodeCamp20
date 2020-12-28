@@ -10,7 +10,6 @@ if (isset($_GET['id'])) {
     $queryDb = new QueryDb();
 
     $orders = isset($_COOKIE['orders']) ? unserialize($_COOKIE['orders']) : $queryDb->getOrders($id);
-    $queryDb->removeData("orders");
 } else echo 'unknown customer';
 
 if (count($orders) > 0) {
