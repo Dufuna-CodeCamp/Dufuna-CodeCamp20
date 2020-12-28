@@ -10,6 +10,7 @@ if (isset($_GET['id'])) {
     $queryDb = new QueryDb();
 
     $orders = isset($_COOKIE['orders']) ? unserialize($_COOKIE['orders']) : $queryDb->getOrders($id);
+    $queryDb->removeData("orders");
 } else echo 'unknown customer';
 
 if (count($orders) > 0) {
@@ -31,7 +32,7 @@ if (count($orders) > 0) {
             echo "<td>" . $row['quantity'] . "</td>";
             echo "<td>" . $row['total_amount'] . "</td>";
             echo "<td>" . $row['made_at'] . "</td>";
-            echo "<td>" . $row['delivery_address'] . "</td>";
+            echo "<td>" . $row['street_address'] . ", " . $row['city'] . ", " . $row['state_name'] . ", "  . $row['country'] ."</td>";
         echo "</tr>";
     };
     echo "</table>";
