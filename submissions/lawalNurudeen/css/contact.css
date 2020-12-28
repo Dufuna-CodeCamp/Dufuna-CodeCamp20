@@ -41,13 +41,10 @@
     margin-top: 10px;
 }
 
-.contact-form input:last-of-type {
-    margin-bottom: 20px;
-}
-
 .contact-form label {
     display: block;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 #contact-form-button {
