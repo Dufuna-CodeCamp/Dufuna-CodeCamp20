@@ -16,9 +16,9 @@
     <nav>
       <a href="#" id="brand-logo"><img src="../css/images-and-icons/sales-buyased-logo.png" alt="" height="90px" /></a>
       <ul class="nav-links">
-        <li><a href="/html/products.html">Product Page</a></li>
+        <li><a href="../html/products.html">Product Page</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li><a href="/html-forms/signup.html">Sign-up</a></li>
+        <li><a href="./signup.html">Sign-up</a></li>
       </ul>
     </nav>
 
@@ -53,7 +53,7 @@
         </div>
         <form>
           <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Email Address" />
+          <input type="email" placeholder="Email Address" />
           <input type="text" placeholder="Subject" />
           <label for="message">Message</label>
           <textarea name="message" id="message" rows="10"></textarea>
@@ -67,7 +67,7 @@
     <footer>
       <div class="footer-links">
         <ul class="nav-links">
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="/html-forms/contact.html">Contact Us</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Terms & Conditions</a></li>
         </ul>
@@ -75,8 +75,11 @@
         <div class="newsletter-sociallinks">
           <div class="newsletter">
             <p>Sign up for our Newsletter</p>
-            <form>
-              <input type="text" placeholder="Enter your email address" />
+            <form id="newsletter-form">
+              <div>
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" />
+                <span class="error"></span>
+              </div>
               <button type="submit">SUBMIT</button>
             </form>
           </div>
@@ -98,5 +101,7 @@
         <p>All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="../domManipulation/newsLetterValidation.js" type="text/javascript"></script>
   </body>
 </html>

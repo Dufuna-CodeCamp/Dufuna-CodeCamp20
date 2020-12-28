@@ -81,7 +81,7 @@ a {
   padding: 7px;
 }
 
-.form-area .input-area .error {
+.error {
   color: red;
   font-size: 10px;
   font-style: italic;
@@ -115,8 +115,18 @@ footer {
   padding: 10px 20px;
 }
 
-.newsletter input[type="text"] {
+.newsletter div {
+  flex: 1;
+}
+
+.newsletter input[type="email"] {
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 10px;
+}
+
+.newsletter .error {
+  color: orange;
 }
 
 .newsletter p {
@@ -127,15 +137,11 @@ footer {
   display: flex;
 }
 
-.newsletter input {
-  flex: 1;
-  padding: 10px;
-}
-
 .newsletter button {
-  padding: 7px 15px;
+  padding: 10px 15px;
   margin-left: 5px;
   color: brown;
+  align-self: start;
 }
 
 .social-links p {

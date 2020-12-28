@@ -31,7 +31,7 @@ const matchPasswords = (e) => {
         confirmPassword.nextElementSibling.textContent = "Please confirm your password";
         e.preventDefault();
         return false;
-    } else if(confirmPassword.value !== password.value){
+    } else if (confirmPassword.value !== password.value){
         confirmPassword.nextElementSibling.textContent = "Your passwords do not match";
         e.preventDefault();
         return false;
@@ -48,9 +48,9 @@ const validationRequirements = (e) => {
     fieldValidation(email, emailRegex, "This field is required", "Please enter a valid email", e);
     fieldValidation(password, passwordRegex, "Please enter your password", "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number", e);
     matchPasswords(e);
+    return true;
 }
 
 signUpForm.addEventListener("submit", (e) => {
     validationRequirements(e);
-    return true;
 })
