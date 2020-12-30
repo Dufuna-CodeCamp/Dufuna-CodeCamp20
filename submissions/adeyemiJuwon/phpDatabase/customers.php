@@ -1,19 +1,14 @@
 <?php
+  include('cookies.php');
+  
+  if(!isset($_COOKIE['customers'])) {
+  echo "Cookie named '" .'customers' . "' is not set!";
+} else {
+  echo "Cookie '" . 'customers' . "' is set!<br>";
+  echo "Value is: " . $_COOKIE['customers'];
+}
 try{
-$pdo = new PDO("mysql:host=localhost;dbname=store", 'root', 'mysql');
-     $pdo->setAttribute(Pdo::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
- }catch(PDOException $e){
-     die("ERROR:Could not connect." . $e->getMessage());
- }
-  setcookie("Id",  $row['id'], time()+3600, "/", "", false);
-  setcookie("FullName", $row['first_name'] , time()+3600, "/", "", false);
-  setcookie("email",  $row['email_address'], time()+3600, "/", "", false);
-  setcookie("createAt", $row['create_at'] , time()+3600, "/", "", false);
-    
-try{
-    $sql = "SELECT * FROM customers";
-    $results = $pdo->query($sql);
     if($results ->rowCount() > 0){
         echo "<Table>";
             echo "<tr>";
