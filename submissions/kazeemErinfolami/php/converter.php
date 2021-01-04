@@ -9,16 +9,16 @@ function Converter($converter, $value)
 
         switch ($converter) {
             case "kilo";
-                return $value * $pounds . " " . "pounds";
+                return $value * $pounds . " pounds";
                 break;
             case "meter";
-                return $value * $yard . " " . "yard";
+                return $value * $yard  . " yard";
                 break;
             case "celsius";
-                return ($value * 1.8) + $fahrenheit . " " . "fahrenheit";
+                return ($value * 1.8) + $fahrenheit . " fahrenheit";
                 break;
             default:
-                return "unit undefine for value:" . " " . $value;
+                return "unit undefine for value:" . $value;
         }
     } else {
         return "<h3> Invalid Input </h3>";;
