@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact Form Page</title>
-        <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
@@ -50,15 +50,19 @@
                 </div>
 
                 <div class="contact-form">
-                    <form action="#" method="POST">
+                    <form action="#" method="" id="validateForm">
                         <fieldset>
                                 <p><li class="far fa-envelope fa-2x"></li></p>
                                 <h3>Or better still send us a message</h3>
-                                <input type="text" name="firstname" id="firstname" placeholder="Full Name"><br>
-                                <input type="email" name="email" id="email" placeholder="Email"><br>
-                                <input type="email" name="email" id="email" placeholder="Subject"><br>
+                                <input type="text" name="fullname" id="fullName" placeholder="Full Name">
+                                <span class="error-block"></span><br>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <span class="error-block"></span><br>
+                                <input type="text" name="subject" id="subject" placeholder="Subject">
+                                <span class="error-block"></span><br>
                                 <span>Message:</span><br>
-                                <textarea rows="10" cols="40" name="message" placeholder="Message"></textarea><br>
+                                <textarea rows="10" cols="40" name="message" id="message" placeholder="Message"></textarea>
+                                <span class="error-block"></span><br>
                                 <button type="submit" name="submit" value="submit" class="send-button">SEND</button>
                         </fieldset>
                     </form>
@@ -101,5 +105,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../js/contactform.js"></script>
     </body>
 </html>
