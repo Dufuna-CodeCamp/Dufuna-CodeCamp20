@@ -1,13 +1,25 @@
 <?php
 include('connect.php');
 
+         class QueryDatabase {
+
+     function setData($name, $value, $expire)
+    {
+        setcookie($name, serialize($value), $expire);
+    }
+    
+       function getAllCustomers()
+    {
         try {
             $sql = "SELECT * FROM customers";
-            $results = $pdo->query($sql);
+            $stmt  = $this->connect()->query($sql);
+            $results = $stmt->fetchAll();
 
-            setcookie('customers', $results, time() + 3600,"/", "", false);
+            $this->setData('customers', $results, time() + 3600);
             return $results;
         } catch (PDOException $e) {
             die("ERROR: Could not execute $sql. " . $e->getMessage());
         }
-    
+    }
+}
+?>

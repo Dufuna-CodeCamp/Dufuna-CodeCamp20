@@ -1,15 +1,20 @@
 <?php
   include('cookies.php');
   
-  if(!isset($_COOKIE['customers'])) {
-  echo "Cookie named '" .'customers' . "' is not set!";
+  $results = isset($_COOKIE['customers'])? unserialize($_COOKIE['customers']) : $queryDatabase->getAllCustomers();
+
+
+
+if(isset($_COOKIE['customers'])) {
+   echo "Cookie '" . 'customers' . "' is set!<br>";
 } else {
-  echo "Cookie '" . 'customers' . "' is set!<br>";
-  echo "Value is: " . $_COOKIE['customers'];
+echo "Cookie named '" .'customers' . "' is not set!";
+ 
+  
 }
 try{
     
-    if($results ->rowCount() > 0){
+    if(count($results) > 0){
         echo "<Table>";
             echo "<tr>";
                 echo "<th>ID</th>";
@@ -18,7 +23,7 @@ try{
                 echo "<th>Create At </th>";
                 echo "<th>Actions </th>";
             echo "</tr>";
-            while($row = $results -> fetch()){
+           foreach ($results as $row){
             echo "<tr>";
                 echo "<td>" . $row['id'] . "</td>";
                 echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
