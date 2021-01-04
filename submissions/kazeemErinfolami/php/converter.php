@@ -25,5 +25,7 @@ function Converter($converter, $value)
     }
 }
 
-echo Converter("celsius", 0)
+echo Converter("kilo", 10);
+echo Converter("meter", 7);
+echo Converter("celsius", 0);
 ?>
