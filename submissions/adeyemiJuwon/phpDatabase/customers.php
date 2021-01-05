@@ -1,9 +1,7 @@
 <?php
-  include('cookies.php');
-  
-  $results = isset($_COOKIE['customers'])? unserialize($_COOKIE['customers']) : $queryDatabase->getAllCustomers();
+include('cookies.php');
 
-
+$results = isset($_COOKIE['customers'])? unserialize($_COOKIE['customers']) : $queryDatabase->getAllCustomers();
 
 try{
     
@@ -16,7 +14,7 @@ try{
                 echo "<th>Create At </th>";
                 echo "<th>Actions </th>";
             echo "</tr>";
-           foreach ($results as $row){
+        foreach ($results as $row){
             echo "<tr>";
                 echo "<td>" . $row['id'] . "</td>";
                 echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
@@ -24,15 +22,15 @@ try{
                 echo "<td>" . $row['create_at'] . "</td>";
                 echo "<td>" . '<button> <a href ="#"> Veiw </a> </button>' ."</td>";
             echo "</tr>";
-            }
+        }
         echo "</table>";
-            unset($results);
+        unset($results);
     }else{
         echo "No records matching your query were found";
     }
 }catch(PDOException $e){
     die("ERROR: Could not excute $sql." .$e->getMessage());
-
 }
 unset($pdo);
+
 ?>
