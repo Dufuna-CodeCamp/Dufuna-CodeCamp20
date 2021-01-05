@@ -9,20 +9,21 @@ function Converter($converter, $value)
 
         switch ($converter) {
             case "kilo";
-                return $value * $pounds . " pounds";
+                $result = $value * $pounds . " pounds";
                 break;
             case "meter";
-                return $value * $yard  . " yard";
+                $result = $value * $yard  . " yard";
                 break;
             case "celsius";
-                return ($value * 1.8) + $fahrenheit . " fahrenheit";
+                $result = ($value * 1.8) + $fahrenheit . " fahrenheit";
                 break;
             default:
-                return "unit undefine for value:" . $value;
+                $result = "unit undefine for value:" . $value;
         }
     } else {
-        return "<h3> Invalid Input </h3>";;
+        $result = "<h3> Invalid Input </h3>";;
     }
+    return $result;
 }
 
 echo Converter("kilo", 10);
