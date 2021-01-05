@@ -6,10 +6,10 @@ body{
 	margin: 0 auto;
 	font-size: 16px;
 	padding: 0;
-	height: 152vh;
+	height: 160vh;
 }
 .error-block{
-	font-size: 10px;
+	font-size: 8px;
 	color: red;
 }
 header img{
@@ -44,7 +44,7 @@ nav a{
 .top-img{
 	float: left;
 	width: 30%;
-	margin-right: 20px;
+	margin-right: 80px;
 	border: 1px solid #707070;
 }
 .top-detail{
@@ -60,10 +60,16 @@ nav a{
 	color: #ffffff;
 	background-color: #f79521;
 	border-radius: 15px;
-	border: 1px solid #f79521;
-	height: 35px;
-	font-size: 20px;
+	border: 1px solid;
+	height: 25px;
+	font-size: 15px;
 	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.top-detail button:hover{
+	background-color: #b89055;
+	border: 1px solid #b89055;
 }
 .top-description{
 	padding-top: 20px;
@@ -74,7 +80,7 @@ nav a{
 }
 .bottom{
 	background-color: #ebebeb;
-	height: 375px;
+	height: 400px;
 }
 .bottom h2{
 	text-align: center;
@@ -101,7 +107,7 @@ nav a{
 footer{
 	position: absolute;
 	height: 21%;
-	top: 870px;
+	top: 920px;
 	width: 100%;
 	background-color: #24305E;
 }
@@ -168,7 +174,7 @@ footer button {
 @media screen and (max-width: 768px){
 	body{
 		width: 100%;
-		height: 250vh;
+		height: 195vh;
 	}
 	.container{
 		margin: 0;
@@ -273,7 +279,7 @@ footer button {
 
 @media screen and (max-width: 360px){
 	body{
-		height: 390vh;
+		height: 200vh;
 	}
 	header img{
 		margin: 10px;
