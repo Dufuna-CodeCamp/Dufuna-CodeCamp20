@@ -1,0 +1,7 @@
+Hello World;
+My name is Chioma Udoh;
+I enjoy reading, writing and travelling;
+I am new to coding but I already enjoy it;
+Before the middle of this year, I intend to have achieved my dream of becoming a software engineer;
+Watch out World;
+I have been able to push my first task to github;
