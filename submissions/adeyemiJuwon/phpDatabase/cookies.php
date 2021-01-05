@@ -1,7 +1,7 @@
 <?php
 include('connect.php');
 
-         class QueryDatabase {
+         class queryDatabase {
 
      function setData($name, $value, $expire)
     {

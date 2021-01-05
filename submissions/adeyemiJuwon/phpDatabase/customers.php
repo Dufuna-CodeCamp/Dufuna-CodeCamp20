@@ -5,13 +5,6 @@
 
 
 
-if(isset($_COOKIE['customers'])) {
-   echo "Cookie '" . 'customers' . "' is set!<br>";
-} else {
-echo "Cookie named '" .'customers' . "' is not set!";
- 
-  
-}
 try{
     
     if(count($results) > 0){
