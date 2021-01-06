@@ -1,7 +1,7 @@
 let newsForm = document.querySelector('#validateNews'),
 	newsletter = document.querySelector('#newsletter');
 
-let newsRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+let newsRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/; 
 	
 function emailValidation(newsletter,event){
 	if (newsletter.value == ""){
