@@ -19,10 +19,9 @@ class queryDatabase {
     function getOrders($id){
         try {
 
-            $sql = 'SELECT order_items.quantity, order_items.unit_price,
-            order_items.total_amount, orders.order_date, orders.id, 
-            customers.street_address, customers.city,customers.state, 
-            customers.country, products.name 
+            $sql = 'SELECT products.name,customers.street_address, customers.city,customers.state, 
+            customers.country,order_items.quantity, order_items.unit_price, 
+            order_items.total_amount, orders.order_date, orders.id 
             FROM order_items 
             LEFT JOIN orders ON orders.id = order_items.order_id
             LEFT JOIN customers on orders.customer_id = customers.id
