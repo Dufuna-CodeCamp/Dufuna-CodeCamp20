@@ -27,7 +27,7 @@ class queryDatabase {
             LEFT JOIN orders ON orders.id = order_items.order_id
             LEFT JOIN customers on orders.customer_id = customers.id
             LEFT JOIN products ON products.id = order_items.product_id 
-            WHERE orders.customer_id = ?';
+            WHERE orders.customer_id = customers.id';
 
             $stmt  = $this->connect()->prepare($sql);
             $stmt->execute([$id]);
