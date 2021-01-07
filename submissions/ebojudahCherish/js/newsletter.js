@@ -18,9 +18,5 @@ function emailValidation(newsletter,event){
 	}
 }
 
-function validateNews(e){
-	emailValidation(newsletter,e);
-	return true;
-}
 
-newsForm.addEventListener("submit", validateNews);
+newsForm.addEventListener("submit", emailValidation);
