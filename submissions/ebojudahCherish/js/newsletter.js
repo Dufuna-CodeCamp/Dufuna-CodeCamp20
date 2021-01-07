@@ -3,7 +3,7 @@ let newsForm = document.querySelector('#validateNews'),
 
 let newsRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/; 
 	
-function emailValidation(newsletter,event){
+function emailValidation(event){
 	if (newsletter.value == ""){
 		newsletter.nextElementSibling.innerHTML = "Please enter your Email Address";
 		event.preventDefault();
@@ -17,6 +17,5 @@ function emailValidation(newsletter,event){
 		return true;
 	}
 }
-
 
 newsForm.addEventListener("submit", emailValidation);
