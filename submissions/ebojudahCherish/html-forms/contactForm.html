@@ -81,12 +81,17 @@
                         <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div>
-    
-                <div class="footer-item" id="footer-item-two">
-                    <p>Sign up for our Newsletter</p>
-                    <input type="email" placeholder="Enter your email address" id="footer-input">
-                    <button type="button" name="submit" value="submit" id="footer-button">SUBMIT</button>
+
+                <div class="footer-item">
+                    <form id="validateNews" method="">
+                        <p> Sign up for our Newsletter </p>
+                        <input type="email" name="email" id="newsletter" placeholder="Enter your email address"/>
+                        <span class="error-block"></span>
+                        <button type="submit">SUBMIT</button>
+                    </form>
                 </div>
+
+
     
                 <div class="footer-item" id="footer-item">
                     <strong>CONNECT WITH US</strong>
@@ -106,5 +111,6 @@
             </div>
         </footer>
         <script src="../js/contactform.js"></script>
+        <script src="../js/newsletter.js"></script>
     </body>
 </html>
