@@ -20,7 +20,7 @@ try{
                 echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
                 echo "<td>" . $row['email_address'] . "</td>";
                 echo "<td>" . $row['create_at'] . "</td>";
-                echo "<td>" . "<button> <a href ='orders.php?id='$row['id']''> Veiw </a> </button>" ."</td>";
+                echo "<td>" . "<button> <a href ='orders.php?id=$row['id']> Veiw </a> </button>" ."</td>";
             echo "</tr>";
         }
         echo "</table>";
