@@ -10,7 +10,7 @@ try{
             LEFT JOIN orders ON orders.id = order_items.order_id
             LEFT JOIN customers on orders.customer_id = customers.id
             LEFT JOIN products ON products.id = order_items.product_id 
-            WHERE  orders.customer_id = order_items.id';
+            WHERE  orders.customer_id = customers.id';
             $results = $pdo->query($sql);
             setcookie('order_items',  json_encode($results), time() + 3600);
 
