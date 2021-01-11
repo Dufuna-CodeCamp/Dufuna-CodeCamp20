@@ -15,7 +15,7 @@ try{
             LEFT JOIN products ON products.id = order_items.product_id 
             WHERE  orders.customer_id = '$id'";
             $results = $pdo->query($sql);
-            setcookie('order_items',  json_encode($results), time() + 3600);
+            setcookie('orders',  json_encode($results), time() + 3600);
 
 if($results ->rowCount() > 0) {
     echo "<table>";
@@ -47,11 +47,11 @@ if($results ->rowCount() > 0) {
 }catch(PDOException $e){
     die("ERROR: Could not excute $sql." .$e->getMessage());
 }
-if(isset($_COOKIE['order_items'])) {
-    echo "customers '" . $order_items . "' is set!<br>";
+if(isset($_COOKIE['orders'])) {
+    echo "customers " . $orders . " is set!<br>";
   
 } else {
-  echo "customers '" . 'customers' . "' is not set!";
+  echo "customers " . $orders . " is not set!";
 }
 unset($pdo);
 ?>
