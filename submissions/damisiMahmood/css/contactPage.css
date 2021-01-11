@@ -270,9 +270,9 @@ footer button {
 		font-size: 1.1em;
 		letter-spacing: 1px;
 	}
-	input[type=text], 
+	input[type=text],
 	input[type=email],
-	input[type=password], 
+	input[type=password],
 	input[type=confirmpassword] {
    		 width: 100%;
 	}
