@@ -2,18 +2,18 @@
 
 include('connect.php');
 if( isset($_GET['id']) && strlen($_GET['id']) > 0 ) {
- $id = mysql_real_escape_string( $_GET['id'] );
+     $id =  $_GET['id'];
 }
 
 try{
-     $sql = 'SELECT order_items.unit_price, 
+     $sql = "SELECT order_items.unit_price, 
             order_items.total_amount, orders.order_date, orders.id ,customers.street_address, customers.city,customers.state, 
             customers.country,order_items.quantity, products.name
             FROM order_items 
             LEFT JOIN orders ON orders.id = order_items.order_id
             LEFT JOIN customers on orders.customer_id = customers.id
             LEFT JOIN products ON products.id = order_items.product_id 
-            WHERE  orders.customer_id = '$id'';
+            WHERE  orders.customer_id = '$id'";
             $results = $pdo->query($sql);
             setcookie('order_items',  json_encode($results), time() + 3600);
 
