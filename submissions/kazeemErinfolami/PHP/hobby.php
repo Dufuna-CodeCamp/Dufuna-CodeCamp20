@@ -3,8 +3,8 @@ $names = array("Kazeem", "Paul", "Ronald", "Mane", "Seun", "Ryan", "Lekan", "Tup
 $hobbies = array("coding", "drawing", "writing", "traveling", "dancing", "fishing", "swiming", "hiking", "playing chess");
 
 function sentence ($name, $hobby){
-for($i = 0; $i <= sizeof($name); $i++){
-    echo "my name is $name[$i]. i love $hobby[$i]. <br> ";
-};
+    for($i = 0; $i <= sizeof($name); $i++){
+        echo "my name is $name[$i]. i love $hobby[$i]. <br> ";
+    };
 }
 sentence($name, $hobby);
