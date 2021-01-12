@@ -17,6 +17,12 @@ try{
             $results = $pdo->query($sql);
             setcookie('orders',  json_encode($results), time() + 3600);
 
+            if(isset($_COOKIE['orders'])) {
+                echo "orders is set!<br>";
+            }else {
+                echo "orders is not set!";
+            }
+
 if($results ->rowCount() > 0) {
     echo "<table>";
         echo "<tr>";
@@ -47,11 +53,6 @@ if($results ->rowCount() > 0) {
 }catch(PDOException $e){
     die("ERROR: Could not excute $sql." .$e->getMessage());
 }
-if(isset($_COOKIE['orders'])) {
-    echo "customers " . $orders . " is set!<br>";
-  
-} else {
-  echo "customers " . $orders . " is not set!";
-}
+
 unset($pdo);
 ?>
