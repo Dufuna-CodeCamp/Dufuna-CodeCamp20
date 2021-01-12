@@ -6,60 +6,104 @@
         <meta name="keywords" content="bags, buy bags in lagos, designer bags, raffia bags, leather bags ">
         <meta name="description" content="Designer Bags in Lagos">
         <meta name="author" content="Ayotola Tehingbola">
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/product.css"/>
         <title> Unbranded Bags </title>
     </head>  
         
-    <body>
-        <header>
-            <h2> Unbranded Bags </h2>
-        </header>
+    <body class="container">
+                <div class="header"> 
+                        <header class="logo">
+                            <h2>UNBRANDED</h2>
+                        </header>
+                        <nav class="navbar">
+                            <ul class="navbar-list"> 
+                                <li> <a href="./product.html"> Shop </a></li>
+                                <li> <a href="../htmlForms/contactForm.html"> Contact </a></li>
+                                <li><a href="../htmlForms/signupPage.html"> Sign Up </a></li>
+                            </ul>
+                        </nav>
+                </div>
 
-        <nav>
-            <ul> 
-                <li> <a href="#">About Unbranded</a></li>
-                <li> <a href="#">Shop</a></li>
-                <li> <a href="#">Contact</a></li>
-            </ul>
-        </nav>
-                
-        <!--This section is for the product image-->
-        <section>
-            <img src="img/product1.png" alt="raffia and leather bag">  
-        </section>
+            <div class="inner-container">
+                    <div class="product-1"> 
+                        <div class="product-1-img">
+                            <img src="./img/product-1.jpg" alt="raffia and leather bag" id="product-image">  
+                        </div>
+                            
+                        <div class="product-1-form">
+                            <p><h3> The Modakeke Bag </h3></p>
+                            <p> The Modakeke Bag is the first of <i> Unbranded's Fall 2020 Collection. </i></p>
+                            <p> It is craftfully handwoven and finished with the finest leather. </p>
+                            <p> Measurement approx. M: 23*17*9.5 cm / S: 18*14*9 cm </p>
+                            <p> <label for="Subject"> Quantity: </label>
+                                <input type="number" name="Subject" id="Subject" /></p>
+                            <p><b>Price: &#8358;31,050 </b></p>
+                            <button type="buy-now" id="buy-now">BUY NOW</button>
+                        </div> 
+                    </div>
 
-        <!--This section is for the product name, price and description-->
-        <section>
-            <h4> The Modakeke Bag, $50 </h4>
-            <p> The Modakeke Bag is the first of <i> Unbranded's Fall 2020 Collection. </i> It is craftfully handwoven with raffia
-                and finished with the finest leather. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Molestias animi sequi asperiores quos, nulla eaque, in, alias earum optio tenetur repellat provident at.
-                Hic assumenda ipsum earum hfggakn voluptatem odio, sapiente quia tempore repellendus alias aliquam nostrum ex culpa quasi voluptatibus 
-                sequi laboriosam consequatur possimus id Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </p> 
-                <h3> <a href="#"> Buy Now </a></h3s>
-        </section>
-        
-        <!--This section is for similar products-->
-        <section> 
-            <div>
-             <h3> Similar Products</h3>
-                <ol> 
-                 <li> <h4> <a href="#"> The Ilesha Bag, $62 </a></h4></li>
-                     <img src="img/product2.jpeg" alt="raffia and leather bag"> 
-                </ol>
-          </div>
-        </section>
+                        <div class="related-products">
+                            <h3> Related Products</h3>
+                                <div class="related-products-list"> 
+                                    <div class="product-2"> 
+                                        <img src="./img/product-2.jpg" alt="raffia and leather bag" id="product-image"> 
+                                        <h4> The Oyo Bag </h4>
+                                        <p> &#8358;32,000 </p>
+                                    </div> 
+                                    <div class="product-3"> 
+                                        <img src="./img/product-3.jpg" alt="raffia and leather bag" id="product-image" > 
+                                        <h4> The Idarin Bag </h4> 
+                                        <p> &#8358;27,850 </p>
+                                     </div> 
+                                    <div class="product-4"> 
+                                        <img src="./img/product-4.jpg" alt="raffia and leather bag" id="product-image"> 
+                                        <h4> The Fiditi Bag </h4>
+                                        <p> &#8358;49,000 </p>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="footer-1">
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Terms and Conditions</p>
+                </div>
 
-        <footer>
-            <p> Find us on:</p>
-            <ul>
-                <li> <a href="https://www.Twitter.com">Twitter</a></li>
-                <li> <a href="https://www.Instagram.com">Instagram</a></li>
-                <li> <a href="https://www.meduim.com">Meduim</a></li>
-            </ul>
-            <p> &copy; Ayotola 2020. All rights reserved. </p>
-        </footer>  
+                <div class="footer-2">
+                    <form class="form-2">
+                        <label for="newsletter"> Be the first to be in the know! </label>
+                        <input
+                          type="text"
+                          name="email"
+                          id="submit"
+                          placeholder="Enter your email address here"
+                        />
+                        <br />
+                        <button type="submit">Submit</button>
+                      </form>
+                </div>
+
+                <div class="footer-3">
+                    <p>Find us on:</p>
+                    <div class="footer-icons">
+                        <a href="https://www.Twitter.com">
+                        <img src="../html/img/twittericon.png" />
+                        </a>
+                        <a href="https://www.Instagram.com">
+                        <img src="../html/img/instaicon.png" />
+                        </a>
+                        <a href="https://www.Facebook.com">
+                        <img src="../html/img/fbicon.png" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>Copyright 2020 Unbranded.com. All rights reserved.</p>
+                </div>
+            </footer>
     </body>
-
 </html>

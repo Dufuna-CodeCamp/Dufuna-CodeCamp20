@@ -7,229 +7,229 @@
   box-sizing: border-box;
 }
 body {
- font-family: "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
- color: #5f5f5f;
+  font-family: 'Helvetica Neue', 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #5f5f5f;
 }
 img {
   width: 100%;
   height: auto;
- }
- button{
+}
+button {
   cursor: pointer;
 }
 /* header */
 header {
- background: #004b18;
- display: flex;
- flex-direction: column;
- color: white;
- padding: 1em;
+  background: #004b18;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1em;
 }
-header .logo{
- width:10em;
- margin-left: 0.2em;
+header .logo {
+  width: 10em;
+  margin-left: 0.2em;
 }
-header ul{
- list-style: none;
- margin-left: 0.2em;
+header ul {
+  list-style: none;
+  margin-left: 0.2em;
 }
-header ul li{
- padding: 0.6em;
- margin-left: 2em;
+header ul li {
+  padding: 0.6em;
+  margin-left: 2em;
 }
-header ul li a{
- text-decoration: none;
- color: white;
+header ul li a {
+  text-decoration: none;
+  color: white;
 }
 /* main */
-main{
+main {
   padding: 2em;
 }
-main .heading{
- width: 80%;
+main .heading {
+  width: 80%;
   margin: 1em auto;
- text-align: center ;
+  text-align: center;
 }
-main .heading h1{
- color: #004b18;
+main .heading h1 {
+  color: #004b18;
 }
-main .existed{
- margin-bottom: 1em;
- text-align: center;
- font-size: 1rem;
+main .existed {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1rem;
 }
-main form{
- border: 1px solid #5f5f5f;
- border-radius: 10px;
- width: 80%;
- margin: 0 auto 1em;
- padding: 1em;
+main form {
+  border: 1px solid #5f5f5f;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto 1em;
+  padding: 1em;
 }
-main form input{
- display: block;
- width: 100%;
- border: 1px solid #5f5f5f;
- border-radius: 10px;
- padding: 0.8em;
- margin-bottom: 0.5em;
+main form input {
+  display: block;
+  width: 100%;
+  border: 1px solid #5f5f5f;
+  border-radius: 10px;
+  padding: 0.8em;
+  margin-bottom: 0.5em;
 }
-main form input[type = checkbox] {
- display: inline;
- width: 6%;
- margin-bottom: 1em;
+main form input[type='checkbox'] {
+  display: inline;
+  width: 6%;
+  margin-bottom: 1em;
 }
-main form .agree{
- display: inline;
- font-size: 0.6em;
- font-weight: bold;
- color: #004b18;
- margin-bottom: 1em;
+main form .agree {
+  display: inline;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #004b18;
+  margin-bottom: 1em;
 }
-main form label{
- display: block;
- margin-bottom: 0.5em;
+main form label {
+  display: block;
+  margin-bottom: 0.5em;
 }
-main form .error-block{
+main form .error-block {
   font-size: 0.8em;
   color: red;
   display: block;
 }
-main form button{
- display: block;
- margin: 0.5em auto 0;
- padding: 0.5em 1.5em;
- background: #004b18;
- border: 1px solid #004b18;
- border-radius: 5px;
- color: white;
+main form button {
+  display: block;
+  margin: 0.5em auto 0;
+  padding: 0.5em 1.5em;
+  background: #004b18;
+  border: 1px solid #004b18;
+  border-radius: 5px;
+  color: white;
 }
 /* footer */
-footer{
- background: #004b18;
- color: white;
- padding: 1.5em;
+footer {
+  background: #004b18;
+  color: white;
+  padding: 1.5em;
 }
-footer .row-1 .col-1 ul{
- list-style: none;
- margin-bottom: 1em;
+footer .row-1 .col-1 ul {
+  list-style: none;
+  margin-bottom: 1em;
 }
 footer .row-1 .col-1 ul li a {
- text-decoration: none;
- color: white;
+  text-decoration: none;
+  color: white;
 }
-footer .row-1 .col-2 form{
- margin: 0.5em 0 1em;
+footer .row-1 .col-2 form {
+  margin: 0.5em 0 1em;
 }
-footer .row-1 .col-2 form input{
+footer .row-1 .col-2 form input {
   padding: 0.7em;
   width: 60%;
   border: 2px solid black;
 }
 footer .row-1 .col-2 form input:-ms-input-placeholder,
 footer .row-1 .col-2 form input::placeholder,
-footer .row-1 .col-2 form input::-ms-input-placeholder
-{
+footer .row-1 .col-2 form input::-ms-input-placeholder {
   color: #004b18;
 }
-footer .row-1 .col-2 form button{
+footer .row-1 .col-2 form button {
   padding: 0.7em 1em;
   color: #004b18;
   border: 2px solid black;
 }
-footer p:last-child{
+footer p:last-child {
   width: 70%;
   text-align: center;
- margin: 2em auto 0;
+  margin: 2em auto 0;
 }
-footer .row-1 .col-2 #connect{
+footer .row-1 .col-2 #connect {
   margin-bottom: 0.3em;
 }
 /* social medias */
- .gmail {
+.gmail {
   display: inline-block;
   width: 2.2em;
   margin-left: 0.3em;
 }
-.youtube{
+.youtube {
   display: inline-block;
-  width: 2.7em; 
+  width: 2.7em;
 }
-.facebook{
+.facebook {
   display: inline-block;
-  width: 2em; 
+  width: 2em;
   margin-left: 0.3em;
 }
-.twitter{
+.twitter {
   display: inline-block;
-  width: 1.7em;  
+  width: 1.7em;
   margin-left: 0.3em;
 }
 /* Tablet */
-@media only screen and (min-width: 768px){
-  header{
+@media only screen and (min-width: 768px) {
+  header {
     flex-direction: row;
     justify-content: space-between;
   }
-  header ul{
+  header ul {
     display: flex;
     flex-direction: row;
   }
-  main .heading{
+  main .heading {
     width: 60%;
-   }
- main form .agree{
+  }
+  main form .agree {
     font-size: 1em;
-   }
-footer .row-1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-footer .row-1 .col-1{
-   flex: 0 0 50%;
-   margin-left: 1em;
- }
-footer .row-1 .col-2{
-   flex: 0 0 50%;
- }
+  }
+  footer .row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .row-1 .col-1 {
+    flex: 0 0 50%;
+    margin-left: 1em;
+  }
+  footer .row-1 .col-2 {
+    flex: 0 0 50%;
+  }
 }
 /* desktop view*/
 @media only screen and (min-width: 1025px) {
- main{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
- }
- main .col-1{
-   flex: 0 0 25%;
-   align-self: center;
-   text-align: left;
- }
- main .col-1 .heading{
-   text-align: left;
-   width: 100%;
- }
- main .existed{
-  text-align: left;
-  width: 100%;
-  margin: 0 auto 1em;
- }
- main .col-2{
-   flex: 0 0 55%;
- }
- main .col-2 form{
-  margin: 1em auto;
- }
-footer .row-1 .col-1{
-  flex: 0 0 30%;
-  margin-left: 1em;
-}
- footer .row-1 .col-2{
-   flex: 0 0 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
- }
-footer .row-1 .col-2 form input{
-  width: 65%;
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .col-1 {
+    flex: 0 0 25%;
+    align-self: center;
+    text-align: left;
+  }
+  main .col-1 .heading {
+    text-align: left;
+    width: 100%;
+  }
+  main .existed {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto 1em;
+  }
+  main .col-2 {
+    flex: 0 0 55%;
+  }
+  main .col-2 form {
+    margin: 1em auto;
+  }
+  footer .row-1 .col-1 {
+    flex: 0 0 30%;
+    margin-left: 1em;
+  }
+  footer .row-1 .col-2 {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .row-1 .col-2 form input {
+    width: 65%;
+  }
 }
