@@ -26,7 +26,7 @@
                         echo "<td>" . $row['full_name'] . "</td>";
                         echo "<td>" . $row['email_address'] . "</td>";
                         echo "<td>" . $row['created_at'] . "</td>";
-                        echo "<td>" . "<button>View</button>" . "</td>";
+                        echo "<td>" . '<button>View</button>' . "</td>";
                     echo "</tr>";
                 }
             echo "</table>";
