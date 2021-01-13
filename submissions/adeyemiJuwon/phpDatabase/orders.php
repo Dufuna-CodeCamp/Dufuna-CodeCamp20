@@ -15,7 +15,6 @@ try{
             LEFT JOIN products ON products.id = order_items.product_id 
             WHERE orders.customer_id = '$id' ";
             $stmt = $pdo->query($sql);
-             $stmt->execute([$id]);
             $orders = $stmt->fetchAll();
 
             //set cookies with different method
@@ -24,13 +23,11 @@ try{
             // setcookie("orders",  explode($orders), time() + 3600); need two parameter
 
 
-    if( isset($_GET['id']) && strlen($_GET['id']) > 0 ) {
-        $id =  $_GET['id'];
-     // $orders =  implode($_COOKIE['orders']);
-        $orders =  unserialize($_COOKIE['orders']);
+    if( isset($_COOKIE['orders']) ) {
      // $orders = json_decode (stripslashes($_COOKIE['orders']), true );
-
-
+       $orders =  unserialize($_COOKIE['orders']);
+        // $orders =  implode($_COOKIE['orders']);
+    }
     if (count($orders) > 0) {
         echo "<table>";
             echo "<tr>";
@@ -58,7 +55,7 @@ try{
 } else {
     echo 'No records matching your query were found';
 }
-}
+
 }catch (PDOException $e) {
     die("ERROR: Could not execute $sql. " . $e->getMessage());
 }
