@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-nav a[href*="*"] {
+.head {
     font-size: 31px;
     font-weight: bold;
     color: white;
@@ -50,7 +50,6 @@ a[href*="#"] {
 
 .account {
     width: 250px;
-   /* height: 122px; */
     font-size: 40px;
     font-weight: bold;
     color: olive;
@@ -86,11 +85,12 @@ a[href*="#"] {
 
 img {
     height: 50px;
+    padding: 8px;
 }
 
 #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
     width: 100%;
-    height: 50px;
+    height: 34px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ img {
 
 .ton {
     font-weight: bold;
-    margin-left: 168px;
+    margin-left: 148px;
     padding: 10px 30px;
     background-color: olive;
     color: white;
@@ -113,8 +113,13 @@ img {
 
 .sign {
     display: flex;
-   /* flex-wrap: wrap; */
     flex-direction: column;
+}
+
+.error-block {
+    font-size: 17px;
+    color: red;
+    padding: 0;
 }
 
 footer p {
@@ -123,8 +128,8 @@ footer p {
     margin: auto;
 }
 
-.footer div {
-    padding: 15px 150px -1px 40px ;
+.footer > div {
+    padding: 9px 100px 13px 20px ;
 }
 
 footer ul {
@@ -139,28 +144,34 @@ footer {
 
 .connect p {
     margin: 0;
+    text-align: left;
 }
 
 .connect {
     margin-top: 0;
 }
 
-.newsletter {
+.newsletterSignup {
     margin-top: 10px;
-    padding: 15px 0;
     font-size: 20px;
+    padding-left: 25px;
 }
 
-.newsletter input {
+.newsletterSignup input {
     width: 250px;
     height: 40px;
     font-size: 15px;
 }
 
-.newsletter button {
+.newsletterSignup button {
     color: olive;
     font-weight: bold;
     height: 40px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (min-width: 640px) {
@@ -213,7 +224,7 @@ footer {
 
     .inform {
         width: 500px;
-        height: 725px;
+        height: 790px;
         margin: -50px;
         
     }
@@ -222,33 +233,24 @@ footer {
         height: 650px;
     }
 
-    label,
-    input {
-        margin-bottom: 10px;
-    }
 
     #fname, #lname, #mname, #pnumber, #email, #password, #cpassword {
         width: 100%;
     }
 
-    #terms {
-        text-align: center;
+    .footer > div {
+        padding: 50px 140px 0 40px ;
     }
 
-    .footer div {
-        padding: 50px 150px 0 40px ;
-    }
-
-    .newsletter {
-        margin-top: 10px;
-        padding: 15px;
+    .newsletterSignup {
+        padding: 48px 140px 0 70px;
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1050px) {
     body {
-        margin: 0 -25px 0 0;
+        margin: 0 -52px 0 0;
     }
     nav {
         padding: 25px 35px;
@@ -284,12 +286,12 @@ footer {
 
     .information {
         width: 100%;
-        padding: 23px 50px 70px 54px;
+        padding: 23px 50px 150px 54px;
     }
     
     .inform {
         width: 500px;
-        height: 725px;
+        height: 790px;
         margin: -24px;
     }
     
@@ -301,21 +303,16 @@ footer {
         width: 100%;   
     }
 
-    .term {
-        text-align: center;
-    }
-
     .ton {
         margin-left: 148px;
     }
 
-    .footer div {
+    .footer > div {
         padding: 50px 150px 0 40px ;
     }
 
-    .newsletter {
-        margin-top: 10px;
-        padding: 15px;
+    .newsletterSignup {
+        padding: 48px 140px 0 45px;
         font-size: 20px;
     }
 }

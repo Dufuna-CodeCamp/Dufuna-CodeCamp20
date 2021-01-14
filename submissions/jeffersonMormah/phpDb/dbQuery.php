@@ -1,4 +1,5 @@
 <?php
+
 require_once("cookies.php");
 echo "<h3>Order List</h3>";
 $queryDb = new DbQuery();
@@ -34,3 +35,4 @@ if(count($results) > 0) {
     echo 'No records matching your query were found';
 };
 ?>
+

@@ -1,0 +1,241 @@
+.container   {
+    display: flex;
+    flex:row wrap;
+    justify-content: space-around;
+    padding:40px;
+    margin-left: 100px;
+}
+ul  {
+    list-style-type: none;
+    margin-right: 100px;
+}
+img   {
+    height:30px;
+    width: 40px;
+}
+.fields {
+    width: 100px;
+    margin-left: 200px;
+}
+.error  {
+    display: flex;
+    color: red;
+    line-height: 20px;
+    margin-left: 15px;
+}
+.errorMsg   {
+    color:red;
+    font-weight: bold;
+    display: flex;
+
+
+}
+
+
+.flex-container   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: greenyellow;
+    padding: 5px;
+    justify-content: space-around;
+}
+.head {
+    background-color: greenyellow;
+    flex: row wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.productpagelink {
+    padding-top: 9px;
+}
+.contactformlink {
+    padding-top: 9px;
+}
+.signuppagelink {
+    padding-top: 9px;
+}
+.name   {
+    width:350px;
+    border: none;
+    border-bottom:1px solid;
+    margin-left: 15px;
+}
+.text   {
+    width: 350px;
+    margin-left: 15px;
+}
+label   {
+    margin-left: 15px;
+}
+
+.btn    {
+    border-radius: 1px;
+    color: goldenrod;
+    margin-left: 100px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    margin-left: 290px;
+}
+
+.btn:hover  {
+    background-color:burlywood;
+}
+a   {
+    text-decoration: none;
+}
+.contactdetails {
+    text-align: center;
+    width: 25%;
+    line-height: 1.5px;
+    margin-top: 50px;
+
+}
+h4  {
+    color: rgb(112, 52, 52);
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+.message    {
+    margin-left: 170px;
+    position: relative;
+}
+.messagehead    {
+    text-align: center;
+}
+.field  {
+    width: auto;
+    margin-right: 100px;
+}
+
+
+.flex-container2  {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer    {
+    background-color: greenyellow;
+}
+.submit  {
+    width: fit-content;
+    cursor: pointer;
+}
+.submit:hover  {
+ background-color:burlywood;
+}
+.copy   {
+    text-align: center;
+}
+@media screen and (max-width:480px)    {
+    .flex-container {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .container   {
+        display: block;
+        flex:row wrap;
+        flex-direction: row;
+        justify-content: space-around;    
+    }
+    .contactdetails {
+        margin: 0px auto;
+        width: 60%;
+    
+    }
+    h4  {
+        width:260px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+   
+     .socialmedia   {
+         display: flex;
+         margin-left: 30px;
+         margin-right: auto;
+     }
+     .field {
+            width: 60%;
+            position: relative;
+     }
+
+}
+
+@media screen and (max-width:780px) and (min-width:480px){
+    .flex-container {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .container   {
+        display: block;
+        flex:row wrap;
+        flex-direction: row;
+        justify-content: space-around;    
+    }
+    .contactdetails {
+        margin-right: 50px;
+        width: auto;
+        position: relative;
+    
+    }
+    h4  {
+        width:100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+   
+     .socialmedia   {
+         display: flex;
+         margin-left: 35%;
+         margin-right: auto;
+     }
+     .field {
+            width: auto;
+            margin-left: 80px;
+     }
+     .name  {
+        width:350px;
+        margin: 0px px;
+        position: relative;
+     }
+     .message   {
+         width: auto;
+     }
+
+
+}
+   
+

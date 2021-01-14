@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/productPage.css">
+    <title>Under9k Store</title>
+</head>
+<body class="body">
+    <section>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../HTML/images/image1.jpg" alt="logo">
+                </div>
+                <div class="heading-links">
+                    <ul>
+                        <li><a href="../html-forms/signUp.html">Sign-up</a></li>
+                        <li><a href="../html-forms/contactUs.html">Contact Us</a></li>
+                        <li><a href="index.html">Product Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="product-all">
+        <div class="product-details">
+            <div class="product-image part1">
+                <img src="../HTML/images/image2.jpg" alt= "Dress Image" height="400">
+            </div>
+            <div class="product-figures part1">
+                <h1>Midi Boho Dress</h1>
+                <p>Brand: Pretty Dress</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1">
+                <span class="error-block" id="error-input"></span>
+                <p>Price: &#x20A6;<span id="productprice">8000</span></p>
+                <p>Shipping cost: &#x20A6;<span id="shippingcost">0</span></p>
+                <p>Total cost: &#x20A6;<span id="totalcost">0</span></p>
+                <p></p>
+                <input type="submit" id="submit" value="BUY NOW" class="buy-now">
+            </div>
+        </div>
+        <div class="product-description">
+            <h3>Description</h3>
+            <p>Embroidary floral luxury elegant evening dress. V neck mesh vintage formal dress. Women party dresses.</p>
+        </div>
+    </section> 
+    <section class="related-products">
+        <div class="related-h2">
+            <h2>RELATED PRODUCTS</h2>
+        </div>
+        <div class="recommended">
+            <div class="rec-image image1">
+                <img src="../HTML/images/zara-dress.jpg" alt="">
+                <h2>White floral shirts dress</h2>
+                <h2>Price: &#x20A6;5000</h2>
+            </div>
+            <div class="rec-image image2">
+                <img src="../HTML/images/boho-summer1.jpg" alt="">
+                <h2>Boho summer dress</h2>
+                <h2>Price: &#x20A6;7000</h2>
+            </div>
+            <div class="rec-image image3">
+              <img src="../HTML/images/zara-high.jpg" alt="">
+              <h2>High neck midi dress</h2>
+              <h2>Price: &#x20A6;6000</h2>
+            </div>
+        </div>
+    </section> 
+    <footer class="footer">
+        <div class="footer-div">
+            <div class="contact-us box">
+                <ul>
+                    <li><a href="../htmlForms/contactUs.html">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="sign-up box">
+                <form action="" id="news">
+                    <p class="written">Sign up for our Newsletter</p>
+                    <input type="text" class="enter-email" id="emailadd" placeholder="Enter your email address">
+                    <span class="error-block" id="error-line"></span><br>
+                    <button type="submit" class="enter-btn"><p>SUBMIT</p></button>
+                </form>
+            </div>
+            <div class="connect-us box">
+                <p>CONNECT WITH US</p>
+                <div class="imges">
+                    <img src="../HTML/images/facebook-logo.jpg" alt="" class="smaller">
+                    <img src="../HTML/images/twiiter-logo.jpg" alt="" class="smaller">
+                    <img src="../HTML/images/gmail-logo.jpg" alt="">
+                    <img src="../HTML/images/youtube-logo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+        <p>&copy;2020 Under9kStore.com All rights reserved.</p>
+        </div> 
+        <script src="../dom/newsletterForm.js"></script> 
+        <script src="../dom/productCost.js"></script> 
+</body>
+</html>

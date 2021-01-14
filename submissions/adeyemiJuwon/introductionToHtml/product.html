@@ -39,10 +39,16 @@
     <div class="product-del">
         <h3>XIAOMI MI NOTE PRO 2019</h3>
         <h4>Brand: Xiaomi</h4>
+        <form action="" id="customer-price">
         <h4>Quantity:
-        <input type="number" value="2" name="quantity " id="quantity"></h4>
-        <h4>Price: &#163;891.50 GBP</h4>
-        <button> BUY NOW</button>
+        <input type="number" value="1" name="quantity " id="quantity">
+        <span class="error-message"></span>
+    </h4>
+        <h4>Price: &#163; <span id="price"> 900 </span> GBP </h4>
+        <h4>Shipping Cost: <span id="shippingCost"> </span></h4>
+        <h4>Total Cost: <span id="totalCost"></span></h4>
+        <button type="submit" id="btn" disabled="true"> BUY NOW</button>
+    </form>
     </div>
     </div>
     <div class="description">
@@ -84,8 +90,10 @@
     </div>
     <div>
         <h3>Sign up for the Newsletter</h3>
-        <input type="text" placeholder=" Enter your mail address">
-        <button type="submit"> SUBMIT</button>
+    <form id="newsletter" method="post">
+    <input type="email" placeholder="Enter email" id="email">
+    <button type="submit"> SUBMIT</button><br><br>
+    <span class="error-newsletter"></span>
     </div>
     <div class="social">
         <h3>CONNECT WITH US</h3>
@@ -99,5 +107,7 @@
     </div>
     <p>Copyright &copy; 2020, Martha's Living Brands.</p>
 </footer> 
+<script src="../dom/product.js"></script>
+<script src="../dom/newsletter.js"></script>
 </body>
 </html>

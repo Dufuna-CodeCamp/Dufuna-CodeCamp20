@@ -35,27 +35,34 @@
             </div>
 
             <div class="form2">
-                <form action="#" method="post" class="position-form">
+                <form action="#" id="validateForm" method="post" class="position-form">
                     <div class="fo-input">
                         <label for="firstName"> First Name</label><br>
                         <input type="text" name="firstName" id="firstName"><br>
+                        <span class="error-block"></span><br>
                         <label for="lastName"> Last Name</label><br>
                         <input type="text" name="lastName" id="lastName"><br>
+                        <span class="error-block"></span><br>
                         <label for="otherNames"> Other Names</label><br>
                         <input type="text" name="otherNames" id="otherNames"><br>
+                        <span class="error-block"></span><br>
                         <label for="phone-no"> Phone Number</label><br>
                         <input type="text" name="phone-no" id="phone-no"><br>
+                        <span class="error-block"></span><br>
                         <label for="email">Email Address</label><br>
-                        <input type="email" name="email" id="email"><br>
+                        <input type="text" name="email" id="email"><br>
+                        <span class="error-block"></span><br>
                         <label for="password">Password</label><br>
                         <input type="password" name="password" id="password"><br>
+                        <span class="error-block"></span><br>
                         <label for="password">Confirm Password</label><br>
-                        <input type="password" name="password" id="password"><br>
+                        <input type="password" name="password" id="cpassword"><br>
+                        <span class="error-block"></span><br>
                         <div class="tick-it">
                         <input type="checkbox" name="terms" id="terms" value="terms">
                         <label for="terms">I agree to the Terms and Conditions</label><br>
                         </div>
-                        <input type="submit" value="SIGN UP">
+                        <button type="submit">SIGN UP</button>
                     </div>
 
                  </form>
@@ -75,7 +82,7 @@
         <p>Sign up for our Newsletter</p>
         <div class="newsletter">
             <form>
-                <input type="email" name="email" id="email" placeholder="Enter your email address" style="width: 50%; border-radius:0px; padding:5px">
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
                 <input type="button" value="SUBMIT">
             </form>
         </div>
@@ -91,5 +98,6 @@
     <p class="last">&copy; Copyright2020 pearlsfabrics.com All rights reserved </p>
 
 </footer>
+<script src="../dom/signUp.js"></script>
 </body>
 </html>

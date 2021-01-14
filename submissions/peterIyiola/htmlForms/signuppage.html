@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Better Buys/signup</title>
+      <link href="../css/signup.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="flex-container">
+         <div class="logo">
+            <img src="images/BBlogo.jpg" alt="BetterBuys Logo" />
+         </div>
+         <div class="productpagelink">
+            <a href="#">Product Page</a>
+         </div>
+         <div class="contactlink">
+            <a href="#">Contact Us</a>
+         </div>
+         <div class="signuplink">
+            <a href="#">Sign Up</a>
+         </div>
+      </div>
+      <div class="container">
+         <div class="register">
+            <h2>Register your Account</h2>
+            <p>Registering an account gives you access to sweet promo and events available to only registered customers</p>
+            <p>Already got an account?<a href="#"> sign in</a></p>
+         </div>
+         <fieldset class="fields">
+            <form id="validateForm">
+               <div class="spacing">
+               <label class="first name">First Name</label>
+               <input type="text" class="name" id="firstName"/>
+               <span class="error"></span>
+               <label class="lastname">Last Name</label>
+               <input type="text" class="name" id="lastName"/>
+               <span class="error"></span>
+               <label class="othernames">Other Names</label>
+               <input type="text" class="name" id="otherNames"/>
+               <span class="error"></span>
+               <label class="phone no">Phone Number</label>
+               <input type="text" class="name" id="phoneNumber"/>
+               <span class="error"></span>
+               <label class="email">Email Address</label>
+               <input type="email" class="name" id="email"/>
+               <span class="error"></span>
+               <label class="password">Password</label>
+               <input type="password" class="name" id="password"/>
+               <span class="error"></span>
+               <label class='conf'>Confirm Password</label>
+               <input type="password" class="name" id="confirmPassword"/>
+               <span class="error"></span>
+               <button type="submit" class="btn" id="submitBtn" >Submit</button>
+               </div>
+            </form>
+            <div class="check">
+               <input type="checkbox"  value="check"/>
+               <label class="checkbox">I agree to the terms and conditions</label>
+            </div>
+      </div>
+      </fieldset>
+      <footer>
+         <div class="flex-container2">
+            <div class="contacts">
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+               <li><a href="#">About us</a></li>
+             <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            </div>
+            <div id="subscribe">
+               <p>Subscribe to our Newsletter</p>
+               <form id="newsField">
+            <input type="email" id="newsLetter" placeholder="please type in your email address"/>  
+               <span class="errorMsg"></span>
+               <button type="submit" class="submit">SUBMIT</button>
+               </form>
+            </div>
+            <div class="socialmedia">
+               <p>Connect with us</p>
+               <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-twitter"></a>
+               <a href="#" class="fa fa-linkedin"></a>
+               <a href="#" class="fa fa-youtube"></a>
+            </div>
+         </div>
+         <div class="copyright">
+            <p>&copy; 2020 BetterBuys.com All Rights Reserved</p>
+         </div>
+      </footer>
+      <script src="../DOM/signup.js"></script>
+      <script src="../DOM/newsLetter.js"></script>
+   </body>
+</html>

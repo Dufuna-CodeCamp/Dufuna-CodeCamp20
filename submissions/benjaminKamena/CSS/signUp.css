@@ -68,7 +68,7 @@ a img{
     margin: 0;
   }
 
-  .nav-content ul li{
+.nav-content ul li{
     display: inline;
     padding: 0 30px;
     font-family: Montserrat;
@@ -81,17 +81,18 @@ a img{
     text-align: left;
     color: white;
   }
-  ul li a{
+ul li a{
     cursor: pointer;
     font-family: Montserrat;
     display: -webkit-inline-box;
     color: #fff;
     font-weight: bolder;
     font-size: large;
+    text-decoration: none;
   }
 
 
-  .container{
+.container{
     overflow: hidden;
     padding: 30px 0;
     margin: auto;
@@ -152,13 +153,18 @@ a img{
     display: block;
     margin-top: 0em;
   }
-
+.form .error-block span{
+  font-size: 12px;
+  color:black;
+}
  .side-bar .form-info{
     padding: 20px;
     width: 90%;
     border: 1px solid rgb(129, 129, 129);
     border-radius: 3%;
     margin-bottom: 10px;
+    background-color: beige;
+    color: blue;
   }
   .form-info label {
     width: 99px;

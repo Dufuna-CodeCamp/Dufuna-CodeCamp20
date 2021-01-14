@@ -29,22 +29,30 @@
       <h3>Already got an account? <a href="#" class="text-style-1">Sign in</a></h3>
     </div>
       <aside class="side-bar">
-        <form class="form">
+        <form id="form" class="form" method="POST">
           <div class="form-info">
-            <label for="fName">First Name</label><br>
-            <input type="text" name="firstName" id="firstName"><br><br>
-            <label for="lName">Last Name</label><br>
-            <input type="text" name="lastName" id="lastName"><br><br>
-            <label for="oName">Other Names</label><br>
-            <input type="text" name="otherNames" id="otherNames"><br><br>
-            <label for="pNumber">Phone Number</label><br><br>
-            <input type="tel" name="phoneNumber" id="phoneNumber"><br><br>
+            <label for="firstName">First Name</label><br>
+            <input type="text" name="firstName" id="firstName">
+            
+            <span class="error-block"></span><br><br>
+            <label for="lastName">Last Name</label><br>
+            <input type="text" name="lastName" id="lastName">
+            <span class="error-block"></span><br><br>
+            <label for="otherName">Other Names</label><br>
+            <input type="text" name="otherNames" id="otherNames">
+            <span class="error-block"></span><br><br>
+            <label for="phoneNumber">Phone Number</label><br><br>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+            <span class="error-block"></span><br><br>
             <label for="email">Email Address</label><br>
-            <input type="email" name="email" id="email"><br><br>
-            <label for="pwd">Password</label><br>
-            <input type="password" name="password"><br><br>
-            <label for="cPwd">Confirm Password</label><br>
-            <input type="confirm-password" name="confirm-password"><br><br>
+            <input type="email" name="email" id="email">
+            <span class="error-block"></span><br><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password">
+            <span class="error-block"></span><br><br>
+            <label for="confirm-password">Confirm Password</label><br>
+            <input type="confirm-password" name="confirm-password" id="confirmPassword">
+            <span class="error-block"></span><br><br><br><br>
             <input type="checkbox" name="termsConditions" id="termsConditions">
             <label class="I-agree-to-the-Terms-and-Conditions">I agree to the Terms and Conditions</label><br><br>
             <button type="submit" name="submit-form" id="submit-form"><a class="SIGN-UP">Sign Up</a></button>
@@ -61,11 +69,14 @@
             <li>Terms Conditions</li>
           </ul>
         </div>
+        <form id="newsletterSignUp">
         <div>
            <label for="news-letter">Sign up for our Newsletter</label>
            <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter your email address">
+           <span class="error-block"></span>
            <button type="submit">Submit</button>
         </div>
+      </form>
         <div class="footer-box">
         <h5>CONNECT WITH US</h5>
          <ul>
@@ -78,5 +89,7 @@
       </div>
     </div>
     </footer>
+  <script src="../Dom/signUp.js"></script>
+  <script src="../Dom/newsletter.js"></script>
 </body>
 </html>
