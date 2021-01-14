@@ -7,7 +7,7 @@ CREATE TABLE passengers(
     passenger_id int not null auto_increment,
 	full_name varchar(100) not null,
     sex varchar(10) not null,
-    age int null,
+    age varchar(10),
 	primary key(passenger_id)
 );
 show columns from passengers;
