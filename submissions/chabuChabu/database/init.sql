@@ -66,9 +66,9 @@ foreign key(customer_id) references customers(id)
 create table orders(
 id int not null auto_increment,
 amount decimal(10,2) not null,
-order_date datetime,
+order_date datetime not null,
 customer_id int (11) not null,
-primary key (id),
+primary key (id) ,
 foreign key(customer_id) references customers(id)
 );
 
