@@ -67,7 +67,7 @@ create table orders(
 id int not null auto_increment,
 amount decimal(10,2) not null,
 order_date datetime,
-customer_id int (11),
+customer_id int (11) not null,
 primary key (id),
 foreign key(customer_id) references customers(id)
 );
