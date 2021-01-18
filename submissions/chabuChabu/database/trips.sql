@@ -4,7 +4,7 @@ create table passangers(
 id int not null auto_increment,
 fullname varchar(100) not null,
 sex varchar(10) not null,
-age tinyint(11),
+age varchar(11),
 primary key (id)
 );
 
