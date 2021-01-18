@@ -19,10 +19,10 @@ class DbQuery extends Connected
         try {
             $sql = "SELECT ordering.quantity, ordering.unit_price, ordering.total_amount, orders.order_date, orders.id, customerz.street_address, customerz.city, customerz.state_name, customerz.country, products.product_name
              FROM ordering 
-             LEFT JOIN orders ON orders.id = orderings.order_id
+             LEFT JOIN orders ON orders.id = ordering.order_id
              LEFT JOIN customerz ON orders.customerz_id = customerz.id
-             LEFT JOIN products ON product.id = orderings.product_id
-             WHERE orders.customeerz_id = '$id'";
+             LEFT JOIN products ON product.id = ordering.product_id
+             WHERE orders.customerz_id = '$id'";
             $stmt  = $this->connect()->query($sql);
             $orders = $stmt->fetchAll();
 
