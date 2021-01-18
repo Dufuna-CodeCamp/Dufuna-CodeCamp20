@@ -30,7 +30,7 @@ foreign key(passanger_id) references passangers(id)
 /*It references the passanger table via passanger ID*/
 create table accidents(
 id int not null auto_increment,
-status enum ('survived', 'died') not null,
+status tinyint ('survived', 'died') not null,
 passanger_id int not null,
 primary key(id),
 foreign key (passanger_id) references  passangers(id)
