@@ -12,11 +12,11 @@ use best_buyers;
     
     /----- inserted values into admin table----/
 	insert into best_buyers_admin (name, email, password, phone_number) 
-	values ('peter iyiola', 'peteriyiola@gmail.com', 'pete@1234', '08108088644'),
-	('Joy Chukwu', 'joych@gmail.com', 'joyChu@567', '09067525272'),
-	('Faith Akinsiku', 'fa@gmail.com', 'faithA@794', '07456372527'),
-	('Iyanu Oluwa', 'iyanuO@gmail.com', 'Iyanu@983', '08075985262'),
-	('Cynthia Nkwere','cynthn@gmail.com','cynthN@648','080657578838');
+	values ('peter iyiola', 'peteriyiola@gmail.com', 'pete@1234', 08108088644),
+	('Joy Chukwu', 'joych@gmail.com', 'joyChu@567', 09067525272),
+	('Faith Akinsiku', 'fa@gmail.com', 'faithA@794', 07456372527),
+	('Iyanu Oluwa', 'iyanuO@gmail.com', 'Iyanu@983', 08075985262),
+	('Cynthia Nkwere','cynthn@gmail.com','cynthN@648',080657578838);
     
     /--- created table called categories ---/
     create table categories (
@@ -49,11 +49,11 @@ create table products (
 );
 /--- insert values into products --/
 insert into products (name, description, image, category_id, admin_id, unit_price, stock_level, status)
-values('samsung 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg','500000.00', '2', '4',' 180', 'in stock'),
-('LG 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg','400000.00',' 5', '4', '120', 'in stock'),
-('Hisense 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg','300000.00', '6', '4', '130', 'in stock'),
-('Panasonic 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg','200000.00', '4', '4', '150', 'in stock'),
-('Thermocool 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg','300000.00',' 3', '4', '160', 'in stock');
+values('samsung 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg',500000.00, 2, 4, 180, 'in stock'),
+('LG 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg',400000.00, 5, 4, 120, 'in stock'),
+('Hisense 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg',300000.00, 6, 4, 130, 'in stock'),
+('Panasonic 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg',200000.00, 4, 4, 150, 'in stock'),
+('Thermocool 55 inches qled','smart,android enabled Tv','https://github.com/peteriyiola/Dufuna-CodeCamp20/blob/master/submissions/peterIyiola/htmlForms/images/samsung2.jpg',300000.00, 3, 4, 160, 'in stock');
 
 /--- created customers table --/
 create table customers (
@@ -88,11 +88,11 @@ create table customer_addresses (
 );
 
 insert into customer_addresses (customer_id, street_name,city,state,zip_code,country,phone_number)
-values('1','abejoye','VI','lagos','100449','nigeria','08074949934'),
-('2','akinlabake','ishaga','lagos','100949','nigeria','08074945930'),
-('3','akerele','ikotun','lagos','100449','nigeria','08073949935'),
-('4','adefemi','gbagada','lagos','100679','nigeria','08079949930'),
-('5','adebayo','ipaja','lagos','100959','nigeria','0807594930');
+values(1,'abejoye','VI','lagos',100449,'nigeria',08074949934),
+(2,'akinlabake','ishaga','lagos',100949,'nigeria',08074945930),
+(3,'akerele','ikotun','lagos',100449,'nigeria',08073949935),
+(4,'adefemi','gbagada','lagos',100679,'nigeria',08079949930),
+(5,'adebayo','ipaja','lagos',100959,'nigeria',0807594930);
 
 /--- create table for orders --/
 CREATE TABLE orders (
@@ -106,13 +106,13 @@ CREATE TABLE orders (
 
 insert into orders (customer_orders, order_amount, order_created_at)
 values('1', '350000.00', now()),
-('2', '800000.00', now()),
-('3', '450000.00', now()),
-('1', '300000.00', now()),
-('1', '250000.00', now());
+(2, 800000.00, now()),
+(3, 450000.00, now()),
+(1, 300000.00, now()),
+(1, 250000.00, now());
 
 /-- Created table for order items 
-CREATE TABLE order_items (
+create table order_items (
 	id int not null auto_increment,
 	order_id int not null,
 	product_id int not null,
