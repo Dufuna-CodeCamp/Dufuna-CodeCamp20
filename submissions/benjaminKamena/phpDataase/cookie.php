@@ -1,11 +1,11 @@
 <?php
-include('connected.php');
+include('connect.php');
 
-class dataaseQuery {
+class queryDatabase{
     function setData($name, $value, $expire){
         setcookie($name, serialize($value), $expire);
     }
-    function getCustomer(){
+    function getAllCustomers(){
         try {
             $sql = "SELECT * FROM customers";
             $stmt  = $this->connect()->query($sql);
