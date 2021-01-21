@@ -2,7 +2,7 @@
     function unitConverter($value){
         $pound = $value * 2.20462;
         $yard = $value * 1.09361;
-        $fahrenheit = $value * (9/2)+32;
+        $fahrenheit = $value * (9/5)+32;
 
         echo "$value kilos is equivalent to $pound pounds <br>";
         echo "$value meters is equivalent to $yard yards <br>";
