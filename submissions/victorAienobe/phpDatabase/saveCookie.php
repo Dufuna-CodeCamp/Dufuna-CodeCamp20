@@ -3,15 +3,26 @@
     include_once('connection.php');
     
     //Querying the database to select all information available in the table
-    try {
-        $sql= "SELECT * FROM customer_details";
-        $result = $pdo->query($sql);
-        
-    // setting up the cookie to save the result gotten from the databse
-    setcookie("customer", json_encode($result), time()+7200, "/");
-    include_once('accessCookie.php');
+    class User extends Connect {
+        public function customer() {
+            try {
+                $sql= "SELECT * FROM customer_details";
+                $stmt = $this->conn()->query($sql);
+                $result = $stmt->fetchAll();
+                
+            // setting up the cookie to save the result gotten from the databse
+            setcookie("customer", serialize($result), time()+7200, "/");
+            return $result;
+            } catch (PDOException $e) {
+                die ('could not execute ' . $sql . $e->getMessage());
+            }
+        }
+    }
+    // an instance of the class user to call the customer function
+    $now = new User();
+    $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $now->customer();
 
-        if($result-> rowCount() > 0)  {
+        if(count($result) > 0)  {
             echo "<table>";
                 echo "<tr>";
                     echo "<th> S/N </th>";
@@ -34,7 +45,4 @@
         }   else {
             echo "could not execute query";
         }
-    } catch (PDOException $e) {
-        die ('could not execute ' . $sql . $e->getMessage());
-    }
 ?>
