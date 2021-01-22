@@ -19,7 +19,7 @@ try{
 	       echo "<td> .$row[fullName].</td>";
 	       echo "<td> .$row[EmailAddress].</td>";
 	       echo "<td> .$row[CreatedAt].</td>";
-		  echo '<td>'. "<a href='#' >view </a>" . '</td>';
+		   echo "<td> .$row[Actions].</td>";
 	   echo "</tr>";
 	}
 	echo "</table>";
