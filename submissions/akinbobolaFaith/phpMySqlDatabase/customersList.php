@@ -4,11 +4,11 @@ require_once("cookie.php");
 if (isset($_COOKIE["customers"])) {
     $data = json_decode($_COOKIE["customers"], true);
     } else {
-    echo "Sorry...Not Recognized";
+    return $data;
 }
 
 try {
-    if($result -> rowCount() > 0){
+    if(count($data) > 0){
         echo "<table>";
             echo "<tr>";
                 echo "<th>S/N</th>";
