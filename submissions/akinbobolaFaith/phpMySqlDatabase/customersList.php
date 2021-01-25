@@ -24,7 +24,7 @@ try {
                     echo "<td>" . $row['firstname']  ." ". $row['lastname'] . "</td>";
                     echo "<td>" . $row['email_address'] . "</td>";
                     echo "<td>" . $row['created_at'] . "</td>";
-                    echo "<td>" . "<a href='#'>View</a>" . "</td>";
+                    echo "<td>" . '<a href="#">View</a>' . "</td>";
                 echo "</tr>";
             }
         echo "</table>";
