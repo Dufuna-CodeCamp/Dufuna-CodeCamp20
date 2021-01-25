@@ -7,19 +7,18 @@ try{
 	if(count($results) > 0){
 		echo "<table>";
 		   echo "<tr>";
-		     echo"<th>SN</th>";
-		     echo"<th>fullName</th>";
-		     echo"<th>EmailAddress</th>";
-		     echo"<th>CreatedAt</th>";
-		     echo "<th>Actions</th>";
+		     echo"<th>ID</th>";
+		     echo"<th>Full Name</th";
+		     echo"<th>Email</th>";
+			 echo"<th>Created At</th>";
+			 echo"<th>Actions</th>";
 		   echo"</tr>";
     foreach($results as $row){
 		echo "<tr>";
-           echo "<td> .$row[SN].</td>";
-	       echo "<td> .$row[fullName].</td>";
-	       echo "<td> .$row[EmailAddress].</td>";
-	       echo "<td> .$row[CreatedAt].</td>";
-		   echo "<td> .$row[Actions].</td>";
+           echo "<td>" .$row['customer_id']."</td>";
+	       echo "<td>" .$row['customer_first_name']. " " .$row['customer_last_name']. "</td>";
+	       echo "<td>" .$row['customer_email_address']. "</td>";
+	       echo "<td>" .$row['created_at']. "</td>";
 	   echo "</tr>";
 	}
 	echo "</table>";
