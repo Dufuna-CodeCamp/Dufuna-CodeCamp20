@@ -19,8 +19,8 @@
         }
     }
     // an instance of the class user to call the customer function
-    $now = new User();
-    $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $now->customer();
+    $user = new User();
+    $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $user->customer();
 
         if(count($result) > 0)  {
             echo "<table>";
