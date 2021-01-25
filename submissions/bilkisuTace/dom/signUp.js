@@ -7,7 +7,7 @@ let password = document.getElementById('password');
 let confirmPassword = document.getElementById('cpassword');
 let nameRegex = /^[_A-z]*([_A-z])*$/g;
 let phoneNumberRegex = /^[+]{0,1}[0-9]{11,13}$/i;
-let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3,4})+$/;
+let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(.\w{3,4})+$/;
 let passwordRegex = /^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).(?=.{6,})$/;
 
 
