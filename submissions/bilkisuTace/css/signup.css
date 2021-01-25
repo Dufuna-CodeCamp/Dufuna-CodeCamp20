@@ -101,6 +101,10 @@
     height: 50px;
     margin: 10px 0;
 }
+.error-block {
+    font-size: 12px;
+    color: red;
+}            
 .terms {
     text-align: center;
     width: 100%;
