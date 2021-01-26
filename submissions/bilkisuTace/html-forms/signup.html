@@ -44,36 +44,44 @@
                 </div>
                 <div class="div-form">
                     <span class="body-form">
-                        <form>
+                        <form id="validateForm" method="post">
                           <fieldset class="field-set">
                             <div class="form-input">
 
                             <label for="firstname">First Name</label><br/>
-                            <input class="input" type="text" name="firstname" id="firstname"/><br/>
+                            <input class="input" type="text" name="firstname" id="firstname"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <label for="lastname">Last Name</label><br/>
-                            <input class="input" type="text" name="lastname" id="lastname"/><br/>
+                            <input class="input" type="text" name="lastname" id="lastname"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <label for="othernames">Other Names</label><br/>
-                            <input class="input" type="text" name="othernames" id="othernames"/><br/>
+                            <input class="input" type="text" name="othernames" id="othernames"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <label for="phoneno">Phone Number</label><br/>
-                            <input class="input" type="text" name="phoneno" id="phoneno"/><br/>
+                            <input class="input" type="text" name="phoneno" id="phoneno"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <label for="email">Email Address</label><br/>
-                            <input class="input" type="email" name="email" id="email" size="30"/><br/>
+                            <input class="input" type="text" name="email" id="email" size="30"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <label for="password">Password</label><br/>
-                            <input class="input" type="password" name="password" id="password"/><br/>
+                            <input class="input" type="password" name="password" id="password"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <label for="cpassword">Confirm Password</label><br />
-                            <input class="input" type="password" name="cpassword" id="cpassword"/><br/><br/>
+                            <input class="input" type="password" name="cpassword" id="cpassword"/>
+                            <span class="error-block"></span><br/><br/>
               
                             <div class="terms">
                               <input type="checkbox" name="agree" id="agree" /> I agree to the
                               Terms and Conditions <br/><br/>
               
-                              <button class="button" type="button">SIGN UP</button>
+
+                              <button class="button" type="submit">SIGN UP</button>
                             </div>
                         </div>
                           </fieldset>
@@ -112,7 +120,7 @@
                                     <li><img src="../html/images/twitter.jpg"/></li>
                                     <li><img src="../html/images/gmail.jpg"/></li>
                                     <li><img src="../html/images/youtube.jpg"/></li>
-                                    </ul>               
+                                </ul>               
                             </span>
                         </div>
                     </div>
@@ -126,6 +134,6 @@
                 </div>
             </div>
         </div>
+        <script src="../dom/signUp.js"></script>
     </body>
-
 </html>
