@@ -18,7 +18,8 @@ try{
            echo "<td>" .$row['customer_id']."</td>";
 	       echo "<td>" .$row['customer_first_name']. " " .$row['customer_last_name']. "</td>";
 	       echo "<td>" .$row['customer_email_address']. "</td>";
-	       echo "<td>" .$row['created_at']. "</td>";
+		   echo "<td>" .$row['created_at']. "</td>";
+		   echo "<td>" . '<button><a href ="#"> Veiw </a></button>'."</td>";
 	   echo "</tr>";
 	}
 	echo "</table>";
