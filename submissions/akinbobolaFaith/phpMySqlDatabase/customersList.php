@@ -1,12 +1,12 @@
 <?php
 require_once("cookie.php");
 
-$query = new Query();
+$customer = new Customer();
 
 if (isset($_COOKIE["customers"])) {
     $data = json_decode($_COOKIE["customers"], true);
     } else {
-    $query->allCustomers();
+    $data =$customer->allCustomers();
 }
 
 try {
