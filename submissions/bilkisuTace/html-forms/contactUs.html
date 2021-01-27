@@ -42,15 +42,19 @@
 			</div>
 			<div class="div-form">
 				<span class="body-form">
-					<form>
+					<form id="validateForm" method="post">
 					  	<fieldset>
 							<img src="../html/images/env2.jpg" alt="">
 							<p class="p-heading"><b>Or better still send us a message</b></p>
 							<input class="input" type="text" name="fullname" id="fullname" placeholder="Full Name">
+							<div class="error-block"></div>
 							<input class="input" type="email" name="email" id="email" placeholder="Email Address Here">
+							<div class="error-block"></div>
 							<input class="input" type="text" name="subject" id="subject" placeholder="Subject">
+							<div class="error-block"></div>
 							<label class="message" for="textarea">Message</label>
-							<textarea class="text-area"></textarea>
+							<textarea class="text-area" id="message"></textarea>
+							<div class="error-block"></div>
 							<button class="button" type="submit">Send</button>
 						</fieldset>
 					</form>
@@ -101,5 +105,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="../dom/contactUs.js"></script>
 </body>
 </html>

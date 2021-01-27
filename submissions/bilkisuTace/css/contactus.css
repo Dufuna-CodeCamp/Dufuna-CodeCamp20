@@ -131,6 +131,11 @@
     border-left-style: hidden;
     border-right-style: hidden;
 }
+.error-block {
+    font-size: 12px;
+    color: red;
+    width: 100%;
+}
 .message {
     display: flex;
     width: 100%;
