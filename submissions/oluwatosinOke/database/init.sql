@@ -19,9 +19,9 @@ VALUES ('Phones'),
 -- Create table named admins
 CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
-NAME VARCHAR(30) NOT NULL,
+name VARCHAR(30) NOT NULL,
 email VARCHAR(30) NOT NULL,
-PASSWORD VARCHAR(30) NOT NULL,
+password VARCHAR(30) NOT NULL,
 phone_number VARCHAR(30) NOT NULL,
 PRIMARY KEY (id)
 );
@@ -42,7 +42,7 @@ category_id INT NOT NULL,
 admin_id INT NOT NULL,
 unit_price DECIMAL(6.0) NOT NULL,
 stock_level INT NOT NULL,
-STATUS VARCHAR(30) NOT NULL,
+status VARCHAR(30) NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (category_id) REFERENCES categories (id),
 FOREIGN KEY (admin_id) REFERENCES admins (id)
@@ -61,7 +61,7 @@ id INT NOT NULL AUTO_INCREMENT,
 first_name VARCHAR(30) NOT NULL,
 last_name VARCHAR(30) NOT NULL,
 email_address VARCHAR(30) NOT NULL,
-PASSWORD VARCHAR(30) NOT NULL,
+password VARCHAR(30) NOT NULL,
 PRIMARY KEY (id)
 );
 
@@ -99,7 +99,7 @@ VALUES ('1', 'Dangote close', 'Ikeja', 'Lagos', '2020', 'Nigeria', '2347676'),
 CREATE TABLE orders (
 id INT NOT NULL AUTO_INCREMENT,
 customer_orders INT NOT NULL,
-order_amount INT NOT NULL,
+order_amount DECIMAL(9.0) NOT NULL,
 ordercreated_at DATETIME,
 PRIMARY KEY (id),
 FOREIGN KEY (customer_orders) REFERENCES customers (id)
@@ -119,8 +119,8 @@ id INT NOT NULL AUTO_INCREMENT,
 order_id INT NOT NULL,
 product_id INT NOT NULL,
 quantity INT NOT NULL,
-unit_price INT NOT NULL,
-total_amount INT NOT NULL,
+unit_price DECIMAL(9.0) NOT NULL,
+total_amount DECIMAL(9.0) NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (order_id) REFERENCES orders (id),
 FOREIGN KEY (product_id) REFERENCES products (id)
