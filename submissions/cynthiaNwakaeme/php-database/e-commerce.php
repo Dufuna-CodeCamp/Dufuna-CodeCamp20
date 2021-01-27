@@ -8,7 +8,7 @@ try{
     $sql_db = "CREATE DATABASE taries_empire";
         $pdo->exec($drop_db);
         $pdo->exec($sql_db);
-        echo "Database created successfully"."<br>";
+        echo "Database created successfully <br>";
 
 }catch (PDOException $err) {
     die("ERROR: Could not execute .$sql_db"  .$err->getMessage()) ."<br>";
@@ -30,7 +30,7 @@ try {
     $pdo->exec($use_db);
     $pdo->exec($drop_table);
     $pdo->exec($sql_table);
-    echo "Table created successfully."."<br>";
+    echo "Table created successfully.<br>";
 } catch (PDOException $err) {
     die("ERROR: Could not execute $sql.".$err->getMessage())."<br>";
 }
@@ -49,7 +49,7 @@ try{
         ('Jackson Adams', 'jacksonadams@portal.edu.com', now())";
 
     $pdo->exec($sql_insert);
-    echo "Records inserted successfully"."<br>";
+    echo "Records inserted successfully <br>";
 }catch (PDOException $err) {
         die("ERROR: Could not execute .$sql_insert .".$err->getMessage());
 }
