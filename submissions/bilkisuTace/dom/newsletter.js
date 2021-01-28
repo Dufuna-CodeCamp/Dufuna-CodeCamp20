@@ -20,6 +20,6 @@ function fieldValidation(event) {
   }
 
   
-newsForm.addEventListener("submit", validateNews);
+newsForm.addEventListener("submit", fieldValidation);
 
 
