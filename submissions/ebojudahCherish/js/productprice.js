@@ -29,11 +29,11 @@ function totalShippingCost() {
             price.innerHTML = productPrice;
             shippingCost.innerHTML = parseFloat(0.15 * productPrice);
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
-        } else if ((productPrice >= 1000) && (product <= 20000)) {
+        } else if ((productPrice >= 20000) && (product <= 100000)) {
             price.innerHTML = productPrice;
             shippingCost.innerHTML = parseFloat(0.15 * productPrice);
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
-    } else {
+        } else {
             price.innerHTML = productPrice;
             shippingCost.innerHTML = 25000;
             totalCost.innerHTML = parseFloat(productPrice) + parseFloat(shippingCost.innerHTML);
