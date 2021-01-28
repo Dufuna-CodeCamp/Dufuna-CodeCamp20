@@ -1,6 +1,6 @@
 let newsForm = document.getElementById('validateNews');
 let newsEmail = document.getElementById('newsEmail');
-let newsEmailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3,4})+$/;
+let newsEmailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(.\w{3,4})+$/;
 
 
 function fieldValidation(event) {
