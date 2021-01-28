@@ -104,10 +104,11 @@
                     <div class="footer-news">
                         <div class="news">
                             <span>
-                                <form>
+                                <form id="validateNews" method="post">
                                     <label id="email" for="email"><strong>Sign up for our Newsletter</label></strong><br/><br>
-                                    <input type="email" name="email" id="email" placeholder="Enter your email address"/>
-                                    <button class="white-button" type="button">SUBMIT</button>
+                                    <input type="email" name="email" id="newsEmail" placeholder="Enter your email address"/>
+                                    <button class="white-button" type="submit">SUBMIT</button>
+                                    <span class="error-block"></span>
                                 </form>
                             </span>
                         </div>
@@ -135,5 +136,6 @@
             </div>
         </div>
         <script src="../dom/signUp.js"></script>
+        <script src="../dom/newsletter.js"></script>
     </body>
 </html>
