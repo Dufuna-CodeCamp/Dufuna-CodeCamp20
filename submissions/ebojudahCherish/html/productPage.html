@@ -32,9 +32,11 @@
                 <div class="showcase-details">
                     <h4>WHITE-SOLED THUNDERSTORM WOMEN SNEAKERS</h4>
                     <p>Brand: Nike</p>
-                    <p>Quantity:  <input type="text" name="quantity" id="quantity"></p>
-                    <p>Price: $150</p>
-                    <button type="submit">BUY NOW</button>
+                    <p>Quantity:  <input type="number" name="quantity" value="1" id="quantity"><span class="error-block"></span></p>
+                    <p>Price: $<span id="unitprice">150</span></p>
+                    <p>Shipping cost: $<span id="shippingcost"></span></p>
+                    <p>Total cost: $<span id="totalcost"></span></p>
+                    <button id="buynow" type="submit">BUY NOW</button>
                 </div>
             </div>
         </section>
@@ -112,5 +114,6 @@
         </footer>
 
         <script src="../js/newsletter.js"></script>
+        <script src="../js/productprice.js"></script>
     </body>
 </html>

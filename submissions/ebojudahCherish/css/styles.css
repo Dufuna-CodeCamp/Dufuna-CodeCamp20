@@ -172,6 +172,18 @@ img {
     background-color: #f9ab04;
 }
 
+.showcase-details input::-webkit-outer-spin-button,
+.showcase-details input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.showcase-details input[type=number] {
+    -moz-appearance: textfield ;
+}
+
+
 #quantity {
     width: 70px;
     height: 25px;
