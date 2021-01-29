@@ -18,7 +18,7 @@ echo "<h2> List of Customers at Taries Empire </h2>";
              */
              $result = $stmt->fetchAll();
             setcookie("customer", serialize($result), time() + (86400 * 30), "/", "", false); //60sec *60mins *24hours/day => 86400 = 1 day
-            if ($result = isset($_COOKIE['customer'])){
+            if (isset($_COOKIE['customer'])){
                 $output = unserialize($_COOKIE["customer"]);
             }
                         
