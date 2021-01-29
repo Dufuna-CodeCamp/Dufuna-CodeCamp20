@@ -2,15 +2,17 @@
 
 require_once("connection.php");
 
+echo "<h3> Customer Details </h3>";
+
 //Querying the database to select all information available in the table
 class QueryDb extends Connect {
     public function customer() {
         try {
-            $sql= "SELECT * FROM customers";
+            $sql= "SELECT * FROM customer_details";
             $stmt = $this->conn()->query($sql);
             $result = $stmt->fetchAll();
             
-        // setting up the cookie to save the result in the database
+        // setting up the cookie to save the result in the databsae
         setcookie("customer", serialize($result), time()+7200, "/");
         return $result;
         } catch (PDOException $e) {
@@ -18,8 +20,8 @@ class QueryDb extends Connect {
         }
     }
 }
-// To call the customer function
- $queryDb = new QueryDb();
+//To call the customer function
+$user = new QueryDb();
 $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $user->customer();
 
     if(count($result) > 0)  {
@@ -43,6 +45,6 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $use
         echo "</table>";
         unset($result);
     }   else {
-        echo 'No records matching your query were found';
+        echo "could not execute query";
     }
 ?>
