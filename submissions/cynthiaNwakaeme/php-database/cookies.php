@@ -19,7 +19,8 @@ class Customer{
              */
              $result = $stmt->fetchAll();
             setcookie("customer", serialize($result), time() + (86400 * 30), "/", "", false); //60sec *60mins *24hours/day => 86400 = 1 day   
-        
+            return($result);
+            
         }catch (PDOException $err) {
                 die('ERROR: Could not execute' .$sql . $err->getMessage());
         }
