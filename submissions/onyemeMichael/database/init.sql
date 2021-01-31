@@ -70,7 +70,7 @@ CREATE TABLE customers (
 );
 
 -- Insert into customers table
-INSERT INTO customers (first_name, last_name, email_address, created_at customer_password)
+INSERT INTO customers (first_name, last_name, email_address, created_at, customer_password)
 VALUES ('Paul', 'Onyeme', 'paulonyeme@email.com', now() ,'paul'),
 	   ('Mayowa', 'Ojo', 'mayawaojo@email.com', now() , 'mayowa');
 
