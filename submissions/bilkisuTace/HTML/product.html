@@ -30,10 +30,13 @@
 		  <p class="heading">NIKE SNEAKERS</p>
 		  <p class="sub-head">Brand: Coloured</p>
 		  <label class="quantity" for="quantity">Quantity</label>
-		  <input type="text" name="quantity" id="quantity"/>
-		  <p class="sub-head">Price: $200</p>
+		  <input type="number" name="quantity" id="quantity" value="1"/>
+		  <span class="error-block"></span>
+		  <p class="sub-head">Price: &#x24;<span id="price">200</span></p>
+		  <p class="sub-head">Shipping cost: &#x24;<span id="shippingCost">50</p>
+		  <p class="sub-head">Total cost: &#x24;<span id="totalCost">250</span></p>
 		  <form>
-		   	<button class="button" type="button">BUY NOW</button>
+		   	<button class="button" type="submit" id="buyBtn">BUY NOW</button>
 		  </form>
 			</div>
 		</div>
@@ -111,5 +114,6 @@
 		</div>
 	</div>
 	<script src="../dom/newsletter.js"></script>
+	<script src="../dom/product.js"></script>
 </body>
 </html>
