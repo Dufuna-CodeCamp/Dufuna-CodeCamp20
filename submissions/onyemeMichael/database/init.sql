@@ -61,33 +61,19 @@ VALUES ('Tecno Phantom 9', 'Tecno Phantom 9 smartphone was launched on 10th July
 -- Rigistered Customers Table
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
-    firstname VARCHAR (25) NOT NULL,
-    lastname VARCHAR (25) NOT NULL,
-    email VARCHAR (50) NOT NULL,
+    first_name VARCHAR (25) NOT NULL,
+    last_name VARCHAR (25) NOT NULL,
+    email_address VARCHAR (50) NOT NULL,
+    created_at DATETIME,
     customer_password VARCHAR (50) NOT NULL,
     PRIMARY KEY (id)
 );
 
 -- Insert into customers table
-INSERT INTO customers (firstname, lastname, email, customer_password)
-VALUES ('Paul', 'Onyeme', 'paulonyeme@email.com', 'paul'),
-	   ('Mayowa', 'Ojo', 'mayawaojo@email.com', 'mayowa');
+INSERT INTO customers (first_name, last_name, email_address, created_at customer_password)
+VALUES ('Paul', 'Onyeme', 'paulonyeme@email.com', now() ,'paul'),
+	   ('Mayowa', 'Ojo', 'mayawaojo@email.com', now() , 'mayowa');
 
--- customers_datails table
-CREATE TABLE customer_details(
-        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        full_name VARCHAR(30) NOT NULL,
-        email_address VARCHAR(50) NOT NULL UNIQUE,
-        created_at DATETIME
-    );
-
--- Insert into customers_details table
-    INSERT INTO customer_details(full_name, email_address, created_at) VALUES
-        ('Onyeme Florence', 'onyeme@gmail.com', now()),
-        ('Tolu Chanda', 'tolu@gahoo.com', now()),
-        ('Paul Zuck', 'zuck@gmail.com', now()),
-        ('Victoria Philip', 'vicky@gmail.com', now());
-        
 -- Rigistered Customers Addresses
 CREATE TABLE addresses (
 	id INT NOT NULL AUTO_INCREMENT,

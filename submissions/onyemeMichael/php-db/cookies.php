@@ -8,7 +8,7 @@ echo "<h3> Customer Details </h3>";
 class QueryDb extends Connect {
     public function customer() {
         try {
-            $sql= "SELECT * FROM customer_details";
+            $sql= "SELECT * FROM customers";
             $stmt = $this->conn()->query($sql);
             $result = $stmt->fetchAll();
             
@@ -36,7 +36,7 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $use
             foreach($result as $row) {
                 echo "<tr>";
                     echo "<td>" . $row['id'] . "</td>";
-                    echo "<td>" . $row['full_name'] . "</td>";
+                    echo "<td>" . $row['first_name']. " " .$row['last_name'] ."<td>";
                     echo "<td>" . $row['email_address'] . "</td>";
                     echo "<td>" . $row['created_at'] . "</td>";
                     echo "<td>" . '<button>View</button>' . "</td>";
