@@ -6,18 +6,21 @@
     class View extends  Connect {
         public function list($id) {
             try {
-                //$sql = "SELECT * FROM orders";
-               $sql= "SELECT orders.product_name, orders.order_unit_price,orders.order_quantity,
-               orders.order_total_price, orders.created_date, orders.customer_location, customer_details.id
-                FROM orders LEFT JOIN customer_details ON orders.customer_id = customer_details.id
-                WHERE orders.customer_id = '$id'";
-               
-                $stmt = $this->conn()->query($sql);
-                $result = $stmt->fetchAll();
+                    $sql= "SELECT  order_items.unit_price, order_items.quantity, order_items.total_amount, 
+                    orders.order_created_at, orders.id, products.name, customer_addresses.street_address, customer_addresses.city,
+                    customer_addresses.state, customer_addresses.country
+                    FROM order_items 
+                    LEFT JOIN orders ON orders.id = order_items.order_id
+                    LEFT JOIN products ON products.id = order_items.product_id
+                    LEFT JOIN customer_addresses ON orders.customer_orders = customer_addresses.customer_id
+                    WHERE orders.customer_orders = '$id'";
+                
+                    $stmt = $this->conn()->query($sql);
+                    $result = $stmt->fetchAll();
 
-            // setting up the cookie to save the result gotten from the databse
-                setcookie("view", serialize($result), time()+7200, "/");
-                return $result;
+                // setting up the cookie to save the result gotten from the databse
+                    setcookie("view", serialize($result), time()+7200, "/");
+                    return $result;
                 } catch (PDOException $e) {
                     die ('could not execute ' . $sql . $e->getMessage());
                 }
@@ -41,12 +44,12 @@
             foreach($result as $row) {
                 echo "<tr>";
                     echo "<td>" . $row['id'] . "</td>";
-                    echo "<td>" . $row['product_name'] . "</td>";
-                    echo "<td>" . $row['order_unit_price'] . "</td>";
-                    echo "<td>" . $row['order_quantity'] . "</td>";
-                    echo "<td>" . $row['order_total_price'] . "</td>";
-                    echo "<td>" . $row['created_date'] . "</td>";
-                    echo "<td>" . $row['customer_location'] . "</td>";
+                    echo "<td>" . $row['name'] . "</td>";
+                    echo "<td>" . $row['unit_price'] . "</td>";
+                    echo "<td>" . $row['quantity'] . "</td>";
+                    echo "<td>" . $row['total_amount'] . "</td>";
+                    echo "<td>" . $row['created_at'] . "</td>";
+                    echo "<td>" . $row['street_address'] .", " . $row['city'] . ", " . $row['state'] .", " . $row['country'] . "</td>";
                 echo "</tr>";
             }
         echo "</table>";
