@@ -7,18 +7,13 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
 
-    <body class="productpage">
-        <!-- NAVBAR -->
-        <div class="navbar">
-            <div class="container flex">
-                <h1 class="logo">Beautify.</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../html/productPage.html">Product Page</a></li>
-                        <li><a href="../html-forms/signUp.html">Sign Up</a></li>
-                        <li><a href="../html-forms/contactForm.html">Contact Us</a></li>
-                    </ul>
-                </nav>
+    <body>
+        <div class="flex justify-between bg-primary px-7 py-1 txt-white">
+            <h1>Beautify.</h1>
+            <div class="py-1">
+                <a class="px-1 txt-white" href="../html/productPage.html">Product Page</a>
+                <a class="px-1 txt-white" href="../html-forms/signUp.html">Sign Up</a>
+                <a class="px-1 txt-white" href="../html-forms/contactForm.html">Contact Us</a>
             </div>
         </div>
 
@@ -76,43 +71,48 @@
         </section>
 
         <!-- Footer -->
-        <footer class="pp-footer">
-            <div class="container grid">
-                <div class="footer-item">
-                    <ul class="footer-list">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                    </ul>
+        <div class="bg-primary px-7 py-1">
+            <div class="flex justify-between py-1">
+                <div class="footer-item flex flex-column">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Terms and Conditions</a>
                 </div>
     
                 <div class="footer-item">
-                    <form id="validateNews" method="post">
-                        <p> Sign up for our Newsletter </p>
-                        <input type="email" name="email" id="newsletter" placeholder="Enter your email address"/>
+                    <form id="validateNews">
+                        <p class="txt-white txt-bold py-1"> Sign up for our Newsletter </p>
+                        <input class="px-2 py-1 border-none" type="email" name="email" id="newsletter" placeholder="Enter your email address" />
                         <span class="error-block"></span>
-                        <button type="submit">SUBMIT</button>
+                        <button class="px-1 py-1 border-none txt-pry txt-bold " type="submit">SUBMIT</button>
                     </form>
                 </div>
     
-                <div class="footer-item" id="pp-footer-item">
+                <div class="footer-item txt-white py-1" id="footer-item">
                     <strong>CONNECT WITH US</strong>
-                    <ul class="ft-navbar-ul">
-                        <a href=""><li class="fab fa-facebook fa-2x footer-navbar-li"></li></a>
-                        <a href=""><li class="fab fa-twitter fa-2x footer-navbar-li"></li></a>
-                        <a href=""><li class="far fa-envelope fa-2x footer-navbar-li"></li></a>
-                        <a href=""><li class="fab fa-youtube fa-2x footer-navbar-li"></li></a>
-                    </ul>
+                    <div class="ft-navbar-ul">
+                        <a href="">
+                            <i class="fab fa-facebook fa-2x footer-navbar-li"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter fa-2x footer-navbar-li"></i>
+                        </a>
+                        <a href="">
+                            <i class="far fa-envelope fa-2x footer-navbar-li"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-youtube fa-2x footer-navbar-li"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
     
-            <div class="container related-products-header-div">
-                <div class="copyright-text">
-                    <p>Copyright &copy; 2020.<a href="productPage.html">Beautify.</a>All rights reserved.</p>
+            <div class="container related-products-header-div py-1 txt-white">
+                <div class="copyright-text py-1">
+                    <p>Copyright &copy; 2020. <a class="txt-bold" href="productPage.html">Beautify. </a>All rights reserved.</p>
                 </div>
             </div>
-        </footer>
-
+        </div>
         <script src="../js/newsletter.js"></script>
         <script src="../js/productprice.js"></script>
     </body>
