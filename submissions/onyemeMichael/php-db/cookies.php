@@ -6,23 +6,23 @@ echo "<h3> Customer Details </h3>";
 
 //Querying the database to select all information available in the table
 class QueryDb extends Connect {
-    public function customer() {
+    public function customers() {
         try {
             $sql= "SELECT * FROM customers";
             $stmt = $this->conn()->query($sql);
             $result = $stmt->fetchAll();
             
         // setting up the cookie to save the result in the databsae
-        setcookie("customer", serialize($result), time()+7200, "/");
+        setcookie("customers", serialize($result), time()+7200, "/");
         return $result;
         } catch (PDOException $e) {
             die ('could not execute ' . $sql . $e->getMessage());
         }
     }
 }
-//To call the customer function
-$user = new QueryDb();
-$result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $user->customer();
+//To call the customers function
+$query = new QueryDb();
+$result = isset($_COOKIE['customers']) ? unserialize($_COOKIE['customers']) : $query->customers();
 
     if(count($result) > 0)  {
         echo "<table>";
