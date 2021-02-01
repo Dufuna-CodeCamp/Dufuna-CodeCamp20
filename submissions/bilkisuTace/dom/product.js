@@ -6,14 +6,12 @@ let unitPrice = price.innerHTML;
 
 
 function qtyValidation(){
-    let productPrice = unitPrice * quantity.value,
-        quantityRegex = /^[1-9]+$/;
+    // let productPrice = unitPrice * quantity.value,
+    let quantityRegex = /^[0-9]+$/;
     if (!(quantity.value.match(quantityRegex))) {
         document.getElementById('buyBtn').disabled = true;
         quantity.nextElementSibling.innerHTML = "please enter a valid quantity";
-        productPrice.innerHTML = 0;
-        shippingCost.innerHTML = 0;
-        totalCost.innerHTML = 0;
+        
     } else{
         document.getElementById('buyBtn').disabled = false;
         quantity.nextElementSibling.innerHTML = "";
