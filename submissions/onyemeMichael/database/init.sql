@@ -61,17 +61,18 @@ VALUES ('Tecno Phantom 9', 'Tecno Phantom 9 smartphone was launched on 10th July
 -- Rigistered Customers Table
 CREATE TABLE customers (
 	id INT NOT NULL AUTO_INCREMENT,
-    firstname VARCHAR (25) NOT NULL,
-    lastname VARCHAR (25) NOT NULL,
-    email VARCHAR (50) NOT NULL,
+    first_name VARCHAR (25) NOT NULL,
+    last_name VARCHAR (25) NOT NULL,
+    email_address VARCHAR (50) NOT NULL,
+    created_at DATETIME,
     customer_password VARCHAR (50) NOT NULL,
     PRIMARY KEY (id)
 );
 
 -- Insert into customers table
-INSERT INTO customers (firstname, lastname, email, customer_password)
-VALUES ('Paul', 'Onyeme', 'paulonyeme@email.com', 'paul'),
-	   ('Mayowa', 'Ojo', 'mayawaojo@email.com', 'mayowa');
+INSERT INTO customers (first_name, last_name, email_address, created_at, customer_password)
+VALUES ('Paul', 'Onyeme', 'paulonyeme@email.com', now() ,'paul'),
+	   ('Mayowa', 'Ojo', 'mayawaojo@email.com', now() , 'mayowa');
 
 -- Rigistered Customers Addresses
 CREATE TABLE addresses (
