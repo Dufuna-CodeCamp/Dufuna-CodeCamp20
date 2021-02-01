@@ -28,7 +28,7 @@ FOREIGN KEY (passenger_id) REFERENCES passengers(passenger_id)
 CREATE TABLE accidents (
 id INT NOT NULL AUTO_INCREMENT,
 passenger_id INT NOT NULL,
-survived VARCHAR (50) NOT NULL,
+survived BOOLEAN NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (passenger_id) REFERENCES passengers(passenger_id)
 );
