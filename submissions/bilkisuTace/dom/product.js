@@ -6,8 +6,7 @@ let unitPrice = price.innerHTML;
 
 
 function qtyValidation(){
-    // let productPrice = unitPrice * quantity.value,
-    let quantityRegex = /^[0-9]+$/;
+    let quantityRegex = /[1-9][0-9]*/;
     if (!(quantity.value.match(quantityRegex))) {
         document.getElementById('buyBtn').disabled = true;
         quantity.nextElementSibling.innerHTML = "please enter a valid quantity";
@@ -19,7 +18,7 @@ function qtyValidation(){
 }
 
 function shippingCostValue() {
-    productPrice = unitPrice * quantity.value;
+    let productPrice = unitPrice * quantity.value;
     price.innerHTML = productPrice;
     if (productPrice < 1000) {
         shippingCost.innerHTML = (100);
