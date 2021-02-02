@@ -4,7 +4,7 @@ USE transportation;
 -- create table named passengers
 CREATE TABLE passengers (
 passenger_id INT NOT NULL AUTO_INCREMENT,
-fullname VARCHAR (50) NOT NULL,
+fullname VARCHAR (250) NOT NULL,
 sex VARCHAR (10) NOT NULL,
 age VARCHAR (5),
 PRIMARY KEY (passenger_id)
