@@ -1,36 +1,56 @@
-/*The following query is used to create a table for storing passanger details*/
+/*QUESTION  1*/
 use trips;
-create table passangers(
-id int not null auto_increment,
-fullname varchar(100) not null,
-sex varchar(10) not null,
-age varchar(11),
-primary key (id)
-);
+select count(*) as survivors
+from accidents
+where status = 1;
 
-/*The following query is used to create a table for storing trip details*/
-/*It references the passanger table  via passanger ID*/
-use trips;
-create table trip_details(
-id int not null auto_increment,
-passanger_class int(11) not null,
-ticket_number varchar (50) not null,
-trip_fare decimal(10,2)not null,
-cabin varchar (50),
-parents_childrens int (11),
-spouses_siblings int (11),
-embarkation_point varchar(100) not null,
-passanger_id int not null,
-primary key(id),
-foreign key(passanger_id) references passangers(id)
-);
+/*Answer: 342 passengers survived*/
 
-/*The following query is used to create a table for storing information about accidents*/
-/*It references the passanger table via passanger ID*/
-create table accidents(
-id int not null auto_increment,
-status tinyint (1) not null,
-passanger_id int not null,
-primary key(id),
-foreign key (passanger_id) references  passangers(id)
-);
+/*QUESTION 2 */
+select count(*) as died
+from accidents
+where status = 0;
+
+/*Answer: 549 passengers died*/
+
+/* QUESTION 3*/
+select passangers.fullname,passangers.sex
+from passangers ,trip_details 
+where passangers.id = trip_details.passanger_id
+and passangers.age < 27
+and (trip_details.embarkation_point  = 'C'or trip_details.embarkation_point = 'Q');
+
+/* Name and sex of passengers who embarked at Queenstown and Cherbourg*/
+
+/*QUESTION 4**/
+select count(*) as survived
+from trip_details,accidents
+where trip_details.passanger_id = accidents.passanger_id and trip_details.embarkation_point = 'S' 
+and accidents.status = 1;
+
+/*Answer: 218 passangers from Southampton survived*/
+
+/*QUESTION  5**/
+/* Query below returns names and id of travellers who:
+     a)Were aged over 35 years,
+     b)Paid a fare over 100 
+     c)Had siblings or spouses on board*/
+select passangers.id,passangers.fullname
+from passangers right join trip_details
+on passangers.id = trip_details.passanger_id
+where passangers.age > 35
+and (trip_details.trip_fare > 100) and (trip_details.spouses_siblings > 0 );
+
+/* 9 travellers paid a fare greater than 100,Were aged over 35 years,paid a fare over 100 and
+had siblings or spouses on board*/
+select count(*) as total
+from passangers right join trip_details on passangers.id = trip_details.passanger_id
+where passangers.age > 35
+and (trip_details.trip_fare > 100) and (trip_details.spouses_siblings > 0);
+
+
+
+
+
+
+
