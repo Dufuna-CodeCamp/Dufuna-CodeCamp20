@@ -102,6 +102,10 @@ p {
     width: 50px;
     border-style: solid;
 }
+.error-block {
+    font-size: 14px;
+    color: red;
+}
 .button {
     width: 174px;
     height: 64px;
