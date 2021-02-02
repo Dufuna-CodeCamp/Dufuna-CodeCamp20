@@ -1,22 +1,26 @@
-/****** create transportation database*****/
+/****** Create database****/
 CREATE DATABASE transportation;
-
 
 USE transportation
 
 SHOW TABLES
-/****** create table for passenger*****/
+
+DROP TABLE IF EXISTS passengers
+/******* Create pasengers table*****/
 CREATE TABLE passengers (
 	id INT NOT NULL AUTO_INCREMENT,
 	full_name VARCHAR(150) NOT NULL,
 	sex VARCHAR(6) NOT NULL,
-	age INT NULL,
+	age VARCHAR(30) NULL,
 	created_at DATETIME,
 	PRIMARY KEY (id)
 );
 
 SHOW COLUMNS FROM passengers
-/****** create table for trips*****/
+
+DROP TABLE IF EXISTS trips
+
+/******* Create trips table*****/
 CREATE TABLE trips (
 	id INT NOT NULL AUTO_INCREMENT,
     passenger_id INT NOT NULL,
@@ -33,11 +37,14 @@ CREATE TABLE trips (
 );
 
 SHOW COLUMNS FROM trips
-/****** create table for accidents*****/
+
+DROP TABLE IF EXISTS accidents
+
+/******* Create accidents table*****/
 CREATE TABLE accidents (
 	id INT NOT NULL AUTO_INCREMENT,
 	passenger_id INT NOT NULL,
-	survived INT NOT NULL,
+	survived TINYINT NOT NULL,
 	created_at DATETIME,
 	PRIMARY KEY (id),
     FOREIGN KEY (passenger_id) REFERENCES passengers (id)
