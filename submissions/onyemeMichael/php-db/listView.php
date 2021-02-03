@@ -12,8 +12,8 @@
                     FROM order_items 
                     LEFT JOIN orders ON orders.id = order_items.order_id
                     LEFT JOIN products ON products.id = order_items.product_id
-                    LEFT JOIN addresses ON orders.customer_orders = addresses.customer_id
-                    WHERE orders.customer_orders = '$id'";
+                    LEFT JOIN addresses ON orders.customer_id = addresses.customer_id
+                    WHERE orders.customer_id = '$id'";
                 
                     $stmt = $this->conn()->query($sql);
                     $result = $stmt->fetchAll();

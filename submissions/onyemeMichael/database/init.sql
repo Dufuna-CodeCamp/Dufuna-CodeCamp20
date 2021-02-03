@@ -99,13 +99,13 @@ CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
     order_amount DECIMAL (16,4) NOT NULL,
     order_created_at DATETIME NOT NULL,
-    customer_orders INT NOT NULL,
+    customer_id INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (customer_orders) REFERENCES customers(id) ON DELETE CASCADE
+    FOREIGN KEY (customer_id) REFERENCES customers(id) ON DELETE CASCADE
 );
 
 -- Insert into orders table
-INSERT INTO orders (order_amount, ordered_at, customer_orders)
+INSERT INTO orders (order_amount, order_created_at, customer_id)
 VALUES (138999.0000, now(), 1),
 	   (88000.0000, now(), 2);
 
