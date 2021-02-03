@@ -15,7 +15,6 @@ try {
     $stmt = $this->conn()->query($sql);
     $result = $stmt->fetchAll();
 	setcookie("view", serialize($result), time()+7200, "/");
-	return $result;
 	
 	$result = isset($_COOKIE['view']) ? unserialize($_COOKIE['view']) : $view->getAllCustomers($id);
 	
