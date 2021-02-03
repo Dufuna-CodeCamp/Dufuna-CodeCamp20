@@ -77,9 +77,9 @@ VALUES ('Paul', 'Onyeme', 'paulonyeme@email.com', now() ,'paul'),
 -- Rigistered Customers Addresses
 CREATE TABLE addresses (
 	id INT NOT NULL AUTO_INCREMENT,
-    street_adress VARCHAR (255) NOT NULL,
+    street_address VARCHAR (255) NOT NULL,
     city VARCHAR (50) NOT NULL,
-    state_name VARCHAR (50) NOT NULL,
+    state VARCHAR (50) NOT NULL,
     zipcode INT,
     country VARCHAR (50) NOT NULL,
     phone_number VARCHAR (20) NOT NULL,
@@ -89,7 +89,7 @@ CREATE TABLE addresses (
 );
 
 -- Insert into addresse table
-INSERT INTO addresses (street_adress, city, state_name, zipcode, country, phone_number, customer_id)
+INSERT INTO addresses (street_address, city, state, zipcode, country, phone_number, customer_id)
 VALUES ('Mykel str', 'Apapa', 'Lagos', 100335, 'Nigeria', '08182515388', 1),
        ('Chuks str', 'Yaba', 'Lagos', 100375, 'Nigeria', '07012345678', 2 );
 
@@ -98,14 +98,14 @@ VALUES ('Mykel str', 'Apapa', 'Lagos', 100335, 'Nigeria', '08182515388', 1),
 CREATE TABLE orders (
 	id INT NOT NULL AUTO_INCREMENT,
     order_amount DECIMAL (16,4) NOT NULL,
-    ordered_at DATETIME NOT NULL,
-    customer_id INT NOT NULL,
+    order_created_at DATETIME NOT NULL,
+    customer_orders INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (customer_id) REFERENCES customers(id) ON DELETE CASCADE
+    FOREIGN KEY (customer_orders) REFERENCES customers(id) ON DELETE CASCADE
 );
 
 -- Insert into orders table
-INSERT INTO orders (order_amount, ordered_at, customer_id)
+INSERT INTO orders (order_amount, ordered_at, customer_orders)
 VALUES (138999.0000, now(), 1),
 	   (88000.0000, now(), 2);
 
