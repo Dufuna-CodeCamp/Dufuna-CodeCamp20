@@ -2,9 +2,6 @@
 
 CREATE DATABASE lyc_airline;
 USE lyc_airline;
-SELECT * FROM accident_records;
-SELECT * FROM passengers_details;
-SELECT * FROM travel_details;
 
 
 
@@ -13,7 +10,7 @@ CREATE TABLE passengers_details (
 id INT NOT NULL AUTO_INCREMENT,
 full_name VARCHAR(100) NOT NULL,
 sex VARCHAR(20) NOT NULL,
-age INT NULL,
+age VARCHAR(20) NULL,
 created_at DATETIME,
 PRIMARY KEY (id)
 );
@@ -40,7 +37,7 @@ FOREIGN KEY (passenger_id) REFERENCES passengers_details (id)
 CREATE TABLE accident_records (
 id INT NOT NULL AUTO_INCREMENT,
 passenger_id INT NOT NULL,
-survival_status VARCHAR(20),
+survival_status BOOLEAN NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (passenger_id) REFERENCES passengers_details (id)
 );
