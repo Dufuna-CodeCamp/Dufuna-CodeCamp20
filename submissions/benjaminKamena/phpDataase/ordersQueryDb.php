@@ -13,12 +13,12 @@ try {
     WHERE orders.customer_orders = '$id'";
 
     $stmt = $this->conn()->query($sql);
-    $result = $stmt->fetchAll();
-	setcookie("view", serialize($result), time()+7200, "/");
+    $orders = $stmt->fetchAll();
+	setcookie("view", serialize($orders), time()+7200, "/");
 	
-	$result = isset($_COOKIE['view']) ? unserialize($_COOKIE['view']) : $view->getAllCustomers($id);
+	$orders = isset($_COOKIE['view']) ? unserialize($_COOKIE['view']) : $view->getAllCustomers($id);
 	
-	if (count($results) > 0) {
+	if (count($orders) > 0) {
         echo "<table>";
         echo "<tr>";
         echo "<td>ID</td>";
@@ -29,7 +29,7 @@ try {
         echo "<td>Order Date</td>";
         echo "<td>Customer Location</td>";
         echo "</tr>";
-    foreach ($results as $row){
+    foreach ($orders as $row){
 		echo "<tr>";
         echo "<td>" . $row['order_items_id'] . "</td>";
         echo "<td>" . $row['product_name'] . "</td>";
@@ -41,7 +41,7 @@ try {
         echo "</tr>";
 		};
         echo "</table>";
-        unset($results);
+        unset($orders);
 		}else {
 			echo 'No match';
 			}
