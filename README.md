@@ -14,3 +14,8 @@ composer install
 
 ## Environment Variables
 Make a copy of `.env.example` to `.env` in the root directory. Then fill in your database credentials
+
+## Start PHP in-built web server
+```
+php -S localhost:8080 -t public public/index.php
+```
