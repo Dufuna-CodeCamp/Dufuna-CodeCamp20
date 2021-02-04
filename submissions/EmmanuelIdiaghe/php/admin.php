@@ -86,7 +86,7 @@ try {
                 echo "<td style= 'border: 1px solid black'>" . $row['full_name'] . "</td>";
                 echo "<td style= 'border: 1px solid black'>" . $row['email'] . "</td>";
                 echo "<td style= 'border: 1px solid black'>" . $row['created_at'] . "</td>";
-                echo "<td style= 'border: 1px solid black'>" . "<button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button>" . "</td>";
+                echo "<td style= 'border: 1px solid black'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button></td>";
                 echo "<tr>";
         }
         echo "</table";
