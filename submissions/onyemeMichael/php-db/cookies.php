@@ -39,7 +39,7 @@ $result = isset($_COOKIE['customers']) ? unserialize($_COOKIE['customers']) : $q
                     echo "<td>" . $row['first_name']. " " .$row['last_name'] ."<td>";
                     echo "<td>" . $row['email_address'] . "</td>";
                     echo "<td>" . $row['created_at'] . "</td>";
-                    echo "<td>" . '<button>View</button>' . "</td>";
+                    echo "<td>" . '<button><a href="./listView.php?id='. $row['id'] .'">View</a></button>' . "</td>";
                 echo "</tr>";
             }
         echo "</table>";
