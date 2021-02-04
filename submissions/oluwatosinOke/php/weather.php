@@ -1,7 +1,7 @@
 <?php
 // decleare a variable
 $temp = 26;
-// write the conditions using if__ elseif statement
+// write the conditions using if__elseif statement
 if ($temp <= 20){
     echo "It is freezing today";
 } elseif ($temp > 20 && $temp < 30){
