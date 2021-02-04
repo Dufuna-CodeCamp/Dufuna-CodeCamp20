@@ -8,10 +8,10 @@
      if($unit == 'kg'){
         $result = round($parameter/$pound, 2);
         return $result.'pounds';
-     }else if ($unit == 'm'){
+     }elseif ($unit == 'm'){
         $result = round($parameter/$yard, 2);
         return $result.'yards';
-     } else if ($unit == 'C'){
+     } elseif ($unit == 'C'){
         $result = round(($parameter *9/5) + 32, 2);
         return $result.'F';
      }else{
