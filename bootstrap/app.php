@@ -7,7 +7,7 @@ require __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '../../');
 $dotenv->load();
 
-require __DIR__ . '/../app/config/web.php';
+require 'web.php';
 require 'database.php';
 
 // Instantiate app

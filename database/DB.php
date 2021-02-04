@@ -4,7 +4,8 @@ namespace DB;
 
 use PDO;
 
-class DB {
+class DB
+{
     protected $db_hostname;
     protected $db_username;
     protected $db_password;
