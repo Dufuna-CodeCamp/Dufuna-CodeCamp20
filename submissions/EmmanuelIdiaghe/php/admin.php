@@ -1,11 +1,19 @@
 <?php
 
-session_start();
+//session_start();
 //$user_identity = $_SESSION['sess_id'];
 
 #SetUp Connection
 $usernameDB = "dufuna";//database username
 $passwordDB = "dufuna12345";//database password
+
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 
 try {
     $pdo = new PDO("mysql:host=localhost", $usernameDB, $passwordDB);
@@ -48,16 +56,16 @@ try {
 #Insert into Table
 try {
     $sql = "INSERT INTO customers(full_name, email, created_at)
-    VALUES('Emmanuel Idiaghe', 'emmanuelidiaghe@gmail.com', NOW()),
-    ('Samuel Akintola', 'samuelakintola@gmail.com', NOW()),
-    ('Abubakar Salami', 'abubakasalam@yahoo.com', NOW()),
-    ('Israel Temala', 'israeltemala@gmail.com', NOW()),
-    ('Valentino Ekhasomi', 'valentinoekhasomi@gmail.com', NOW()),
-    ('Uche Ogochuckwu', 'ucheogoch@gmail.com', NOW()),
-    ('Desmond Peterson', 'desmondpeterson@gmail.com', NOW()),
-    ('John Ehigiator', 'johnehigiator@gmail.com', NOW()),
-    ('Nancy Pelosi', 'nancypelosi@gov.ng', NOW()),
-    ('Bernie Sanders', 'berniesanders@yahoo.co.uk', NOW())
+    VALUES('Emmanuel Idiaghe', 'emmanuelidiaghe@gmail.com', NOW())
+    -- ('Samuel Akintola', 'samuelakintola@gmail.com', NOW()),
+    -- ('Abubakar Salami', 'abubakasalam@yahoo.com', NOW()),
+    -- ('Israel Temala', 'israeltemala@gmail.com', NOW()),
+    -- ('Valentino Ekhasomi', 'valentinoekhasomi@gmail.com', NOW()),
+    -- ('Uche Ogochuckwu', 'ucheogoch@gmail.com', NOW()),
+    -- ('Desmond Peterson', 'desmondpeterson@gmail.com', NOW()),
+    -- ('John Ehigiator', 'johnehigiator@gmail.com', NOW()),
+    -- ('Nancy Pelosi', 'nancypelosi@gov.ng', NOW()),
+    -- ('Bernie Sanders', 'berniesanders@yahoo.co.uk', NOW())
     ";
     $pdo->exec($sql);
 
@@ -70,29 +78,38 @@ try {
 try {
     $sql = "SELECT * from customers";
     $result = $pdo->query($sql);
-    if ($result->rowCount() > 0) {
-        echo "<table style= 'border: 1px solid black'>";
-        echo "<tr>";
-            echo "<th style= 'border: 1px solid black'>S/N</th>";
-            echo "<th style= 'border: 1px solid black'>Full Name</th>";
-            echo "<th style= 'border: 1px solid black'>Email Address</th>";
-            echo "<th style= 'border: 1px solid black'>Created At</th>";
-            echo "<th style= 'border: 1px solid black'>Actions</th>";
-        echo "</tr>";
 
-        while ($row = $result->fetch()) {
-            echo "<tr>";
-                echo "<td style= 'border: 1px solid black'>" . $row['id'] . "</td>";
-                echo "<td style= 'border: 1px solid black'>" . $row['full_name'] . "</td>";
-                echo "<td style= 'border: 1px solid black'>" . $row['email'] . "</td>";
-                echo "<td style= 'border: 1px solid black'>" . $row['created_at'] . "</td>";
-                echo "<td style= 'border: 1px solid black'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button></td>";
-                echo "<tr>";
-        }
-        echo "</table";
-        unset($result);
+    while ($row = $result->fetch()) {
+        setcookie("serial_no", $row['id'], time() + (86400 * 30));
+        setcookie("full_name", $row['full_name'], time() + (86400 * 30));
+        setcookie("email", $row['email'], time() + (86400 * 30));
+        setcookie("created_at", $row['created_at'], time() + (86400 * 30));
     }
-    else echo "No record found!";
+    
+    if (isset($_COOKIE["full_name"])) {
+        if ($result->rowCount() > 0) {
+            echo "<table style= 'border: 1px solid black'>";
+                echo "<tr>";
+                    echo "<th style= 'border: 1px solid black'>S/N</th>";
+                    echo "<th style= 'border: 1px solid black'>Full Name</th>";
+                    echo "<th style= 'border: 1px solid black'>Email Address</th>";
+                    echo "<th style= 'border: 1px solid black'>Created At</th>";
+                    echo "<th style= 'border: 1px solid black'>Actions</th>";
+                echo "</tr>";
+    
+                echo "<tr>";
+                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["serial_no"] . "</td>";
+                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["full_name"] . "</td>";
+                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["email"] . "</td>";
+                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["created_at"] . "</td>";
+                    echo "<td style= 'border: 1px solid black'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button></td>";
+                echo "</tr>";
+            echo "</table";
+    
+            unset($result);
+        }
+        else echo "No record found!";
+    } else echo "Sorry, not recognized!";
 
 } catch (PDOException $e) {
     echo "Error : ".$e->getMessage();
