@@ -47,10 +47,3 @@ select count(*) as total
 from passangers right join trip_details on passangers.id = trip_details.passanger_id
 where passangers.age > 35
 and (trip_details.trip_fare > 100) and (trip_details.spouses_siblings > 0);
-
-
-
-
-
-
-
