@@ -36,15 +36,14 @@ try {
     $sql = "SELECT * from customers";
     $result = $pdo->query($sql);
     $details = $result->fetchAll();
-    debug_to_console($details);
+    //debug_to_console($details);
 
-    setcookie("output", serialize($details), time() + (86400 * 30));
-    //unset($_COOKIE["output"]); 
-    //debug_to_console($_COOKIE["output"]);
-    
-    if (isset($_COOKIE["output"])) {
-        $data = unserialize($_COOKIE["output"]);
-        debug_to_console($data);
+    setcookie("show", serialize($details), time() + (86400 * 30));
+    $_COOKIE["show"] = serialize($details);
+    $data = unserialize($_COOKIE["show"]);
+    //debug_to_console($data);
+
+    if (isset($_COOKIE["show"])) {
     
         if (count($data) > 0) {
             echo "<table style= 'border: 1px solid black'>";
@@ -66,11 +65,10 @@ try {
                     echo "</tr>";
                 }
             echo "</table";
-    
-            unset($result);
-        }
-        else echo "No record found!";
-    } else echo "Sorry, not recognized!";
+            //unset($_COOKIE["output"]);
+            //unset($data);
+        } else echo "No record found!";
+    } else echo "Sorry, no customer information!";
 
 } catch (PDOException $e) {
     echo "Error : ".$e->getMessage();
