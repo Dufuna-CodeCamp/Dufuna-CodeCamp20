@@ -1,11 +1,8 @@
 <?php
 
-//session_start();
-//$user_identity = $_SESSION['sess_id'];
-
 #SetUp Connection
-$usernameDB = "dufuna";//database username
-$passwordDB = "dufuna12345";//database password
+$usernameDB = "dufuna";//user
+$passwordDB = "dufuna12345";//user password
 
 function debug_to_console($data) {
     $output = $data;
@@ -24,70 +21,32 @@ try {
     die ("ERROR: Could not connect. " . $e->getMessage()) . "<br>";
 }
 
-#Create Database
+#Use Database
 try {
-    $sql = "CREATE DATABASE IF NOT EXISTS dufuna";
+    $sql = "USE emmy_shop";
     $pdo->exec($sql);
-    echo "Database Created Successfully! <br>";
-    $sql = "USE dufuna";
-    $pdo->exec($sql);
-    echo "Using Database: dufuna <br>";
+    echo "Using Database: emmy_shop <br><hr><br>";
 
 } catch (PDOException $e) {
-    die ("ERROR: Could not create database $sql " . $e->getMessage()) . "<br>";
+    die ("ERROR: Could not use database $sql " . $e->getMessage()) . "<br>";
 }
 
-#Create Table
-try {
-    $sql = "CREATE TABLE IF NOT EXISTS customers (
-        id int not null auto_increment,
-        full_name varchar(50) not null,
-        email varchar(50) not null,
-        created_at DATETIME,
-        primary key(id)
-        )";
-    $pdo->exec($sql);
-    echo "Table Created Successfully! <br>";
-
-} catch (PDOException $e) {
-    die ("ERROR: Could not create table $sql " . $e->getMessage()) . "<br>";
-}
-
-#Insert into Table
-try {
-    $sql = "INSERT INTO customers(full_name, email, created_at)
-    VALUES('Emmanuel Idiaghe', 'emmanuelidiaghe@gmail.com', NOW())
-    -- ('Samuel Akintola', 'samuelakintola@gmail.com', NOW()),
-    -- ('Abubakar Salami', 'abubakasalam@yahoo.com', NOW()),
-    -- ('Israel Temala', 'israeltemala@gmail.com', NOW()),
-    -- ('Valentino Ekhasomi', 'valentinoekhasomi@gmail.com', NOW()),
-    -- ('Uche Ogochuckwu', 'ucheogoch@gmail.com', NOW()),
-    -- ('Desmond Peterson', 'desmondpeterson@gmail.com', NOW()),
-    -- ('John Ehigiator', 'johnehigiator@gmail.com', NOW()),
-    -- ('Nancy Pelosi', 'nancypelosi@gov.ng', NOW()),
-    -- ('Bernie Sanders', 'berniesanders@yahoo.co.uk', NOW())
-    ";
-    $pdo->exec($sql);
-
-    echo "Records Inserted Successfully! <hr><br>";
-
-} catch (PDOException $e) {
-    die ("ERROR: Could not insert into table $sql " . $e->getMessage()) . "<br>";
-}
-
+#Select Table
 try {
     $sql = "SELECT * from customers";
     $result = $pdo->query($sql);
+    $details = $result->fetchAll();
+    debug_to_console($details);
 
-    while ($row = $result->fetch()) {
-        setcookie("serial_no", $row['id'], time() + (86400 * 30));
-        setcookie("full_name", $row['full_name'], time() + (86400 * 30));
-        setcookie("email", $row['email'], time() + (86400 * 30));
-        setcookie("created_at", $row['created_at'], time() + (86400 * 30));
-    }
+    setcookie("output", serialize($details), time() + (86400 * 30));
+    //unset($_COOKIE["output"]); 
+    //debug_to_console($_COOKIE["output"]);
     
-    if (isset($_COOKIE["full_name"])) {
-        if ($result->rowCount() > 0) {
+    if (isset($_COOKIE["output"])) {
+        $data = unserialize($_COOKIE["output"]);
+        debug_to_console($data);
+    
+        if (count($data) > 0) {
             echo "<table style= 'border: 1px solid black'>";
                 echo "<tr>";
                     echo "<th style= 'border: 1px solid black'>S/N</th>";
@@ -96,14 +55,16 @@ try {
                     echo "<th style= 'border: 1px solid black'>Created At</th>";
                     echo "<th style= 'border: 1px solid black'>Actions</th>";
                 echo "</tr>";
-    
-                echo "<tr>";
-                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["serial_no"] . "</td>";
-                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["full_name"] . "</td>";
-                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["email"] . "</td>";
-                    echo "<td style= 'border: 1px solid black'>" . $_COOKIE["created_at"] . "</td>";
-                    echo "<td style= 'border: 1px solid black'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button></td>";
-                echo "</tr>";
+            
+                foreach ($data as $value) {
+                    echo "<tr>";
+                        echo "<td style= 'border: 1px solid black'>" . $value["id"] . "</td>";
+                        echo "<td style= 'border: 1px solid black'>" . $value["first_name"] . "  " . $value["last_name"] . "</td>";
+                        echo "<td style= 'border: 1px solid black'>" . $value["email_address"] . "</td>";
+                        echo "<td style= 'border: 1px solid black'>" . $value["created_at"] . "</td>";
+                        echo "<td style= 'border: 1px solid black'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button></td>";
+                    echo "</tr>";
+                }
             echo "</table";
     
             unset($result);
