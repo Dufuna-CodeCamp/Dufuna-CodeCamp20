@@ -1,9 +1,8 @@
 <?php
+#Variable Declaration
+$notSet = !(isset($_COOKIE["show"])); //cookie not set
 
-#SetUp Connection
-$usernameDB = "dufuna";//user
-$passwordDB = "dufuna12345";//user password
-
+# Function that prints in the console (like console.log)
 function debug_to_console($data) {
     $output = $data;
     if (is_array($output))
@@ -12,40 +11,52 @@ function debug_to_console($data) {
     echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
 }
 
-try {
-    $pdo = new PDO("mysql:host=localhost", $usernameDB, $passwordDB);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected Successfully. Host info: " . $pdo->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS")) . "<br>";
+# Function that sets cookie
+function load() {
+    //SetUp Connection
+    global $pdo;
+    $usernameDB = "dufuna";//user
+    $passwordDB = "dufuna12345";//user password
 
-} catch (PDOException $e) {
-    die ("ERROR: Could not connect. " . $e->getMessage()) . "<br>";
-}
-
-#Use Database
-try {
-    $sql = "USE emmy_shop";
-    $pdo->exec($sql);
-    echo "Using Database: emmy_shop <br><hr><br>";
-
-} catch (PDOException $e) {
-    die ("ERROR: Could not use database $sql " . $e->getMessage()) . "<br>";
-}
-
-#Select Table
-try {
-    $sql = "SELECT * from customers";
+    try {
+        $pdo = new PDO("mysql:host=localhost", $usernameDB, $passwordDB);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Connected Successfully. Host info: " . $pdo->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS")) . "<br>";
+    
+    } catch (PDOException $e) {
+        die ("ERROR: Could not connect. " . $e->getMessage()) . "<br>";
+    }
+    
+    #Use Database
+    try {
+        $sql = "USE emmy_shop";
+        $pdo->exec($sql);
+        echo "Using Database: emmy_shop <br><hr><br>";
+    
+    } catch (PDOException $e) {
+        die ("ERROR: Could not use database $sql " . $e->getMessage()) . "<br>";
+    }
+    
+    $sql = "SELECT * FROM customers";
     $result = $pdo->query($sql);
     $details = $result->fetchAll();
-    //debug_to_console($details);
-
-    setcookie("show", serialize($details), time() + (86400 * 30));
+    setcookie("show", serialize($details), time() + (86400 * 30), "/");
     $_COOKIE["show"] = serialize($details);
-    $data = unserialize($_COOKIE["show"]);
-    //debug_to_console($data);
+}
 
-    if (isset($_COOKIE["show"])) {
-    
-        if (count($data) > 0) {
+
+try {
+    if ($notSet) {
+        load(); //set cookie
+        //debug_to_console($details);
+        debug_to_console("cookie is not set");
+        echo "No customer information found, please <b>REFRESH PAGE</b>";
+    }
+    else {
+        $display = unserialize($_COOKIE["show"]);
+        //debug_to_console($display);
+        debug_to_console("cookie is set");
+        if (count($display) > 0) {
             echo "<table style= 'border: 1px solid black'>";
                 echo "<tr>";
                     echo "<th style= 'border: 1px solid black'>S/N</th>";
@@ -55,7 +66,7 @@ try {
                     echo "<th style= 'border: 1px solid black'>Actions</th>";
                 echo "</tr>";
             
-                foreach ($data as $value) {
+                foreach ($display as $value) {
                     echo "<tr>";
                         echo "<td style= 'border: 1px solid black'>" . $value["id"] . "</td>";
                         echo "<td style= 'border: 1px solid black'>" . $value["first_name"] . "  " . $value["last_name"] . "</td>";
@@ -65,13 +76,11 @@ try {
                     echo "</tr>";
                 }
             echo "</table";
-            //unset($_COOKIE["output"]);
-            //unset($data);
+            //unset($_COOKIE["show"]);
+            //unset($display);
         } else echo "No record found!";
-    } else echo "Sorry, no customer information!";
-
-} catch (PDOException $e) {
-    echo "Error : ".$e->getMessage();
+    }   
+} catch(PDOException $e) {
+    die ("ERROR: $sql " . $e->getMessage()) . "<br>";
 }
-
 ?>
