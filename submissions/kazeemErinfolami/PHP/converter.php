@@ -21,7 +21,7 @@ function Converter($converter, $value)
                 $result = "unit undefine for value:" . $value;
         }
     } else {
-        $result = "<h3> Invalid Input </h3>";;
+        $result = "<h3> invalid input </h3>";;
     }
     return $result;
 }
