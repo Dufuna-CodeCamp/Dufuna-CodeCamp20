@@ -24,10 +24,11 @@ class Orders extends Dbconnect{
     }
 }
 
-$orders = new Orders();
+
 if (isset($_COOKIE["orders"])) {
     $data = json_decode($_COOKIE["orders"], true);
 } else {
+    $orders = new Orders();
     $data = $orders->listView($id);
 }
 
