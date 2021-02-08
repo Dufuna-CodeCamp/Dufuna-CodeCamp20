@@ -8,7 +8,7 @@ USE lyc_airline;
 -- This will create the table for passengers' details
 CREATE TABLE passengers_details (
 id INT NOT NULL AUTO_INCREMENT,
-full_name VARCHAR(100) NOT NULL,
+full_name VARCHAR(250) NOT NULL,
 sex VARCHAR(20) NOT NULL,
 age VARCHAR(20) NULL,
 created_at DATETIME,
