@@ -11,20 +11,20 @@
     </head>
     <body>
         <section>
-        <header> 
-          <img src="../html/images/fashionlogo.png" alt="All Things Fashion">
-          <nav>
+            <header> 
+            <img src="../html/images/fashionlogo.png" alt="All Things Fashion">
+            <nav>
             <ul>
                 <li><a href="../HTML/productPage.html">Product Page</a></li>
                 <li><a href="contactPage.html">Contact Us</a></li>
                 <li><a href="signup.html">Sign-Up</a></li>
             </ul>
-        </nav>
-        </header> 
+            </nav>
+            </header> 
         </section>
-    <br>
-    <main>
-		<div class="contain">
+        <br>
+        <main>
+		    <div class="contain">
 			<div class="main">
 				<div class="icon">
 					<img src="../HTML/images/phone.png">
@@ -52,47 +52,55 @@
 					<img src="../HTML/images/close-email.png">
 				</div>
 				<h2>Or better still send us a message</h2>
-			
-			<input type="text" placeholder="Full Name">
+            
+            <form id="validateForm" method= "POST">     
+                <input type="text" placeholder="Full Name" id="fullname">
+                <span class="error-block"></span>
 				<br>
-			<input type="email" placeholder="Email address">
+                <input type="email" placeholder="Email address" id="email">
+                <span class="error-block"></span>
 				<br>
-			<input type="text" placeholder="Subject">
+                <input type="text" placeholder="Subject" id="subject">
+                <span class="error-block"></span>
                 <br>
-                <br>			<label for="comment"> Message</label>
+                <br>
+                <label for="comment"> Message</label>
 				<br>
-			<textarea name="comment" id="comment" cols="60" rows="10"></textarea>
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                <span class="error-block"></span>
 				<br>
-			<button type="submit">SEND</button>  
+                <button type="submit">SEND</button>
+            </form>
         </div>
-        <br>
-    </div>
-    <footer> 
-        <div class="left-footer"> 
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-            </ul>
+            <br>
         </div>
-        <div class="middle-footer"> 
-            <p> Sign up for our Newsletter </p>
-			<input type="email" name="email" id="email" placeholder="Enter your email address"><button><span>SUBMIT</span></button>
-        </div>
-        <div class="right-footer"> 
-            <p>CONNECT WITH US</p>
-                <ul> 
-                    <li><img src="../HTML/images/facebook.png"></li>
-                    <li><img src="../HTML/images/twitter.png"></li>
-                    <li><img src="../HTML/images/gmail.png"></li>
-                    <li><img src="../HTML/images/youtube.png"></li>
+        <footer> 
+            <div class="left-footer"> 
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
-        </div>  
-        <br>
-        <div>    
-        <div class="copyright"> 
-            <p>Copyright 2020 i-damselseliteshopping.com 2020. All rights reserved.</p>
-        </div>
-    </footer>
+            </div>
+            <div class="middle-footer"> 
+                <p> Sign up for our Newsletter </p>
+			    <input type="email" name="email" id="email" placeholder="Enter your email address"><button><span>SUBMIT</span></button>
+            </div>
+            <div class="right-footer"> 
+                <p>CONNECT WITH US</p>
+                    <ul> 
+                        <li><img src="../HTML/images/facebook.png"></li>
+                        <li><img src="../HTML/images/twitter.png"></li>
+                        <li><img src="../HTML/images/gmail.png"></li>
+                        <li><img src="../HTML/images/youtube.png"></li>
+                    </ul>
+            </div>  
+            <br>
+            <div>    
+            <div class="copyright"> 
+                <p>Copyright 2020 i-damselseliteshopping.com 2020. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="../dom/contactForm.js"></script>
     </body>
 </html>
