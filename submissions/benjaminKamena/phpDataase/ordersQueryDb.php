@@ -1,22 +1,27 @@
 <?php
 
 include('connected.php');
-$id =  $_GET['id'];
-try {
-	$sql= "SELECT  order_items.unit_price, order_items.quantity, order_items.total_amount, 
-	orders.order_created_at, orders.id, products.product_name, addresses.street_address, addresses.city, 
-	addresses.state, addresses.country
-    FROM order_items 
-    LEFT JOIN orders ON orders.id = order_items.order_id
-    LEFT JOIN products ON products.id = order_items.product_id
-    LEFT JOIN addresses ON orders.customer_orders = addresses.customer_id
-    WHERE orders.customer_orders = '$id'";
+ if( isset($_GET['id']) && strlen($_GET['id'])> 0){
+ $id =  $_GET['id'];
+}
 
-    $stmt = $this->conn()->query($sql);
-    $orders = $stmt->fetchAll();
-	setcookie("view", serialize($orders), time()+7200, "/");
-	
-	$orders = isset($_COOKIE['view']) ? unserialize($_COOKIE['view']) : $view->getAllCustomers($id);
+try{
+	$sql = "SELECT order_items.quantity, order_items.unit_price, 
+            order_items.total_amount, orders.order_date, orders.id,customers.street_address, customers.city,customers.state, 
+            customers.country,products.name 
+            FROM order_items 
+            LEFT JOIN orders ON orders.id = order_items.order_id
+            LEFT JOIN customers on orders.customer_id = customers.id
+            LEFT JOIN products ON products.id = order_items.product_id 
+            WHERE orders.customer_id = '$id' ";
+            $stmt = $pdo->query($sql);
+            $orders = $stmt->fetchAll();
+
+            setcookie("orders",  serialize($orders), time() + 3600 );
+
+    if( isset($_COOKIE['orders']) ) {
+       $orders =  unserialize($_COOKIE['orders']);
+    }
 	
 	if (count($orders) > 0) {
         echo "<table>";
