@@ -86,6 +86,11 @@ input[type=checkbox]{
 	padding-left: 50px;
 	margin: 8px 20px;
 }
+.error-block {
+    font-size: 12px;
+    color: red;
+	padding: 0;
+}
 main button{
 	display: inline-block;
 	text-align: center;
