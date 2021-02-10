@@ -59,7 +59,7 @@ function validateForm(event) {
       event);
     fieldValidation(
       confirmpassword,
-      password,
+      passwordRegex,
       "Please confirm your Password",
       "Your passwords don't match.",
       event);
