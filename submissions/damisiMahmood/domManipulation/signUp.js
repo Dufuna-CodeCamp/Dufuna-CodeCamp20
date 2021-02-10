@@ -70,12 +70,7 @@ function validateForm(event) {
       "Please enter your password",
       "Your password should hav a minimum of 6 characters, 1 capital letter , 1 special character eg @ and 1 number.",
       event);
-    fieldValidation(
-      confirmPassword,
-      passwordRegex,
-      "Please confirm your Password",
-      "Your passwords don't match.",
-      event);
+    confirmPasswordValidation(event);
 
       return true;
 }
