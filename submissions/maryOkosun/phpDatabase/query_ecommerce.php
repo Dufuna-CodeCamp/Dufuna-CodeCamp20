@@ -18,7 +18,7 @@ try{
                 echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
                 echo "<td>" . $row['email_address'] . "</td>";
                 echo "<td>" . $row['created_at'] . "</td>";
-                echo "<td>" . '<button><a href ="#">VIEW</a></button>' . "</td>";
+                echo "<td>" . '<button><a href ="./viewQuery.php?id='.$row['id'].'">VIEW</a></button>' . "</td>";
             echo"</tr>";
         }
         echo "</table>";
@@ -31,5 +31,6 @@ try{
  catch(PDOException $e){
      die("ERROR:Could not connect $sql." . $e->getMessage());
   }
+  
   unset($pdo);
  ?>
