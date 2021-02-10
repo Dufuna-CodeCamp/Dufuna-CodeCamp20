@@ -2,14 +2,6 @@
 #Variable Declaration
 $notSet = !(isset($_COOKIE["show"])); //cookie not set
 
-# Function that prints in the console (like console.log)
-function debug_to_console($data) {
-    $output = $data;
-    if (is_array($output))
-        $output = implode(',', $output);
-
-    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-}
 
 # Function that sets cookie
 function load() {
@@ -48,14 +40,10 @@ function load() {
 try {
     if ($notSet) {
         load(); //set cookie
-        //debug_to_console($details);
-        debug_to_console("cookie is not set");
         echo "No customer information found, please <b>REFRESH PAGE</b>";
     }
     else {
         $display = unserialize($_COOKIE["show"]);
-        //debug_to_console($display);
-        debug_to_console("cookie is set");
         if (count($display) > 0) {
             echo "<table style= 'border: 1px solid black'>";
                 echo "<tr>";
@@ -76,8 +64,6 @@ try {
                     echo "</tr>";
                 }
             echo "</table";
-            //unset($_COOKIE["show"]);
-            //unset($display);
         } else echo "No record found!";
     }   
 } catch(PDOException $e) {
