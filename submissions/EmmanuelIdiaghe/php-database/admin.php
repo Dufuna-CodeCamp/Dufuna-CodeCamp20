@@ -1,34 +1,11 @@
 <?php
-#Variable Declaration
+include_once 'connect.php';
 $notSet = !(isset($_COOKIE["show"])); //cookie not set
 
 
 # Function that sets cookie
 function load() {
-    //SetUp Connection
     global $pdo;
-    $usernameDB = "dufuna";//user
-    $passwordDB = "dufuna12345";//user password
-
-    try {
-        $pdo = new PDO("mysql:host=localhost", $usernameDB, $passwordDB);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected Successfully. Host info: " . $pdo->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS")) . "<br>";
-    
-    } catch (PDOException $e) {
-        die ("ERROR: Could not connect. " . $e->getMessage()) . "<br>";
-    }
-    
-    #Use Database
-    try {
-        $sql = "USE emmy_shop";
-        $pdo->exec($sql);
-        echo "Using Database: emmy_shop <br><hr><br>";
-    
-    } catch (PDOException $e) {
-        die ("ERROR: Could not use database $sql " . $e->getMessage()) . "<br>";
-    }
-    
     $sql = "SELECT * FROM customers";
     $result = $pdo->query($sql);
     $details = $result->fetchAll();
@@ -40,7 +17,7 @@ function load() {
 try {
     if ($notSet) {
         load(); //set cookie
-        echo "No customer information found, please <b>REFRESH PAGE</b>";
+        echo "Please <b>REFRESH PAGE</b>";
     }
     else {
         $display = unserialize($_COOKIE["show"]);
@@ -53,14 +30,13 @@ try {
                     echo "<th style= 'border: 1px solid black'>Created At</th>";
                     echo "<th style= 'border: 1px solid black'>Actions</th>";
                 echo "</tr>";
-            
                 foreach ($display as $value) {
                     echo "<tr>";
                         echo "<td style= 'border: 1px solid black'>" . $value["id"] . "</td>";
                         echo "<td style= 'border: 1px solid black'>" . $value["first_name"] . "  " . $value["last_name"] . "</td>";
                         echo "<td style= 'border: 1px solid black'>" . $value["email_address"] . "</td>";
                         echo "<td style= 'border: 1px solid black'>" . $value["created_at"] . "</td>";
-                        echo "<td style= 'border: 1px solid black'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-left: 4px;'>View</button></td>";
+                        echo "<td style= 'border: 1px solid black'><form method='get' action='view.php'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-top: 19px;' type='submit' name='view' value=\"$value[id]\">View</button></form></td>";
                     echo "</tr>";
                 }
             echo "</table";
