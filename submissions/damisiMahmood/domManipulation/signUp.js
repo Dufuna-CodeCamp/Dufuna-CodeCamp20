@@ -4,7 +4,7 @@ let lastName = document.getElementById('lastName');
 let phonenumber = document.getElementById('phonenumber');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
-let confirmpassword = document.getElementById('confirmpassword');
+let confirmPassword = document.getElementById('confirmpassword');
 let nameRegex = /^[_A-z]*([_A-z])*$/g;
 let phoneNumberRegex = /^[-]?[0-9]{10,14}$/i;
 let emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(.\w{3,4})+$/;
@@ -26,6 +26,19 @@ function fieldValidation(field, Regex, errorMsg1, errorMsg2, event) {
       return true;
     }
   }
+function confirmPasswordValidation(event) {
+    if (confirmPassword.value === "")  {
+      confirmPassword.nextElementSibling.innerHTML = "Please confirm your Password";
+      event.preventDefault();
+    } else if (!(password.value == confirmPassword.value)) {
+      confirmPassword.nextElementSibling.innerHTML = "Your passwords don't match";
+      event.preventDefault();
+      return false;
+    } else {
+      confirmPassword.nextElementSibling.innerHTML = "";
+      return true;
+    }
+  }  
 function validateForm(event) {
     fieldValidation(
       firstName,
@@ -58,7 +71,7 @@ function validateForm(event) {
       "Your password should hav a minimum of 6 characters, 1 capital letter , 1 special character eg @ and 1 number.",
       event);
     fieldValidation(
-      confirmpassword,
+      confirmPassword,
       passwordRegex,
       "Please confirm your Password",
       "Your passwords don't match.",
