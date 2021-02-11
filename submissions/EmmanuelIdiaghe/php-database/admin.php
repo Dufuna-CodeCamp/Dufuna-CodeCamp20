@@ -40,14 +40,9 @@ function display() {
 
 
 try {
-    if ($notSet) {
-        $info = load(); //Fetch query and set cookie
-        display();
-    }
-    else {
-        $info = unserialize($_COOKIE["show"]); //Fetch cookie
-        display();
-    }   
+    if ($notSet) $info = load(); //Fetch query and set cookie
+    else $info = unserialize($_COOKIE["show"]); //Fetch cookie 
+    display();
 } catch(PDOException $e) {
     die ("ERROR: $sql " . $e->getMessage()) . "<br>";
 }
