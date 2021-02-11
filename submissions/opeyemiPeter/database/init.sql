@@ -157,7 +157,7 @@ create table orderItem(
  OrderId int not null,
  productId int not null,
  quantity int not null,
- unitPrice int not null,
+ unitPrice decimal not null,
  totalAmount decimal(10, 2) not null,
  primary key(orderItemId),
  foreign key(OrderId) references Orders(OrderId),
