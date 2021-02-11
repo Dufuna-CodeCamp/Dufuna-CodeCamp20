@@ -125,16 +125,16 @@ VALUES(1, 'oxford street','dugbe', 'lagos', 23456, 'united kingdom','08106827158
 
 CREATE TABLE orders(
 id INT NOT NULL AUTO_INCREMENT,
-customers_order_id INT  NOT NULL,
+customer_id INT  NOT NULL,
 Order_amount decimal (25,2) NOT NULL,
 order_time datetime,
 primary key(id),
-foreign key(customers_order_id) references customers(customer_id)
+foreign key(customer_id) references customers(customer_id)
 
 );
 
 -- inserting values into orders
-INSERT INTO orders (customers_order_id, Order_amount, order_time)
+INSERT INTO orders (customer_id, Order_amount, order_time)
 VALUES( 1, 500000.00, now()),
 ( 2, 20000.00, now()),
 ( 4, 1000000.00, now()),

@@ -30,7 +30,7 @@ if (field.value === "") {
     field.nextElementSibling.innerHTML = "";
      return true;
   }
-}""
+}
 function formValidation(event) {
   const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/,
         nameRegex = /^[a-zA-Z]/;
