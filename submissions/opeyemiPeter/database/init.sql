@@ -39,10 +39,11 @@ create table categories(
 );
 -- populating categories with values.
 insert into categories(categoryName) 
-		Values ('male sneakers'),
-			   ('female sneakers'),
-			   ('male flatsole palm'),
-			   ('female flatsole palm');
+		Values 
+			('male sneakers'),
+			('female sneakers'),
+			('male flatsole palm'),
+			('female flatsole palm');
     
 -- view categories table
 select * from categories;     
@@ -58,7 +59,7 @@ create table product(
 			productDescription varchar(250) not null,
 			image blob,
 			unitPrice decimal(9,2) not null,
-            stockLevel int not null,
+      stockLevel int not null,
 			status enum('available', 'unavailable'),
 			primary key(productId),
 			foreign key (categoryId) references categories (categoryId),
@@ -68,11 +69,12 @@ create table product(
 
 
 -- populating the product table with values
-insert into product (categoryId,adminId,productName, productDescription,image,unitPrice,stockLevel,status) 
-values ( 1, 3,'CHUNKY SOLE SNEAKERS', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic assumenda ipsum earum voluptatem odio, sapiente quia tempore repellendus alias aliquam nostrum ex culpa quasi voluptatibus sequi.', load_file('../html/Images/shoes2.jpg'), '1000.00', 30,'available'  ),
+insert into product (categoryId, adminId, productName, productDescription, image, unitPrice, stockLevel, status) 
+values 
+		( 1, 3,'CHUNKY SOLE SNEAKERS', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic assumenda ipsum earum voluptatem odio, sapiente quia tempore repellendus alias aliquam nostrum ex culpa quasi voluptatibus sequi.', load_file('../html/Images/shoes2.jpg'), '1000.00', 30,'available'  ),
 		( 2, 1,'LIGHTENING SOLE EXPLORER (PLAIN)', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic assumenda ipsum earum voluptatem odio, sapiente quia tempore repellendus alias aliquam nostrum ex culpa quasi voluptatibus.', load_file('../html/Images/shoes3.jpg'), ' 3000.00', 35,'available'  ),
-        ( 4, 2,'CHUNKY SOLE SNEAKERS', 'Lorem ipsum dolor sit amt   provident at.', load_file('../html/Images/shoes4.jpg'), ' 2000.00', 59,'unavailable'  ),
-        ( 3, 4,'CHUNKY SOLE SNEAKERS', 'Sequi laboriosam consequatur possimus id Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias animi sequi asperiores quos, nulla eaque, in, alias earum optio tenetur repellat provident at.', load_file('../html/Images/l.png'), ' 1200.00', 30,'available'  );
+  	( 4, 2,'CHUNKY SOLE SNEAKERS', 'Lorem ipsum dolor sit amt   provident at.', load_file('../html/Images/shoes4.jpg'), ' 2000.00', 59,'unavailable'  ),
+  	( 3, 4,'CHUNKY SOLE SNEAKERS', 'Sequi laboriosam consequatur possimus id Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias animi sequi asperiores quos, nulla eaque, in, alias earum optio tenetur repellat provident at.', load_file('../html/Images/l.png'), ' 1200.00', 30,'available'  );
 
 -- view product table;
 select * from product;
@@ -80,7 +82,7 @@ select * from product;
 -- 4 customer table 
 -- Table creation
 create table customers(
-	customerId int not null auto_increment,
+	  customerId int not null auto_increment,
     customerFirstName varchar(50) not null,
     customerLastName varchar(50) not null,
     customerEmailAddress varchar(50) not null,
@@ -89,11 +91,12 @@ create table customers(
 );
 
 -- populating the customers table with values
-insert into customers(customerFirstName,customerLastName,customerEmailAddress,customerPassword) 
-values ('fred', 'hammod', 'fredhamod@gmail.com','frednard'),
-('shnano', 'craig', 'fcraig@gmail.com' ,'shanaonocra'),
-('fiyinfolu', 'clement', 'clement@gmail.com', 'clementfiyin'),
-('suite', 'funmi', 'funmisuite@gmail.com', 'suiteees');
+insert into customers(customerFirstName, customerLastName, customerEmailAddress, customerPassword) 
+values 
+	('fred', 'hammod', 'fredhamod@gmail.com','frednard'),
+	('shnano', 'craig', 'fcraig@gmail.com' ,'shanaonocra'),
+	('fiyinfolu', 'clement', 'clement@gmail.com', 'clementfiyin'),
+	('suite', 'funmi', 'funmisuite@gmail.com', 'suiteees');
 
 -- view customers page 
 select * from Customers;
@@ -117,7 +120,8 @@ drop table CustomersAddress;
 
 -- populating the customeraddress table
 insert into CustomersAddress(customerId, customerStreet, customerState, customerCity, customerZipCode, customerCountry, customerPhone )
-values  (1, ' no 2 New Bodija', 'Oyo', 'Ibadan', 23454, 'Nigeria','+234567890'),
+values  
+		(1, ' no 2 New Bodija', 'Oyo', 'Ibadan', 23454, 'Nigeria','+234567890'),
 		(2, ' no 45 New Garage', 'Oyo', 'Ibadan', 23454, 'Nigeria','+2309876543'),
 		(3, ' no 34 Moniya', 'Oyo', 'Ibadan', 23454, 'Nigeria','+234564321'),
 		(4, ' no 478 Iwo road', 'Oyo', 'Ibadan', 23454, 'Nigeria','+2345654456');
@@ -128,20 +132,21 @@ select * from CustomersAddress;
 -- 6 Order table
 -- table creation 
 create table Orders(
-	orderId int not null auto_increment,
-			clientOrder int not null,
-			orderAmount decimal(25,2) not null,
-			orderCreateAt datetime,
-			primary key  (orderId),
-			foreign key (clientOrder) REFERENCES Customers (customerId)
-            );
+		orderId int not null auto_increment,
+		clientOrder int not null,
+		orderAmount decimal(25,2) not null,
+		orderCreateAt datetime,
+		primary key  (orderId),
+		foreign key (clientOrder) REFERENCES Customers (customerId)
+);
 -- populationg the orders with values
 
-insert into Orders (clientOrder,orderAmount,orderCreateAt)
-values (1 , 1000.00, now()),
-(2, 3000.00, now()),
-(3, 3000.00, now()),
-(4, 1200.00, now());
+insert into Orders (clientOrder, orderAmount, orderCreateAt)
+values
+	(1 , 1000.00, now()),
+	(2, 3000.00, now()),
+	(3, 3000.00, now()),
+	(4, 1200.00, now());
 
 -- view Order table
 
@@ -162,8 +167,9 @@ create table orderItem(
 );
 
 -- populating the orderitem
-insert into OrderItem(OrderId, productId, quantity,unitPrice, totalAmount)
-values (1, 1, 3, 1000, 3000),
+insert into OrderItem(OrderId, productId, quantity, unitPrice, totalAmount)
+values 
+		(1, 1, 3, 1000, 3000),
 		(2, 2, 3, 3000, 9000),
 		(3, 4, 2, 1200, 2400),
 		(4, 4, 8, 1200, 9600);
