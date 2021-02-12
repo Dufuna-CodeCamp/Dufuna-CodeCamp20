@@ -10,7 +10,7 @@ CREATE TABLE registeredPassengers (
  id INT NOT NULL AUTO_INCREMENT,
  fullName VARCHAR(50) NOT NULL,
  sex VARCHAR(6) NOT NULL,
- age INT,
+ age VARCHAR(4),
  PRIMARY KEY(id)
 );
 SELECT * FROM registeredPassengers; 
@@ -40,6 +40,8 @@ CREATE TABLE accidentCases(
  accidentStatus tinyint not null,
  primary key(id),
  foreign key(passengerId) references registeredPassengers(id)
-)
+);
 
 SELECT * FROM accidentCases;
+
+
