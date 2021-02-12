@@ -1,4 +1,37 @@
--- DATABASE FOR AMPLETOGS
+USE facebook_company;
+
+SHOW TABLES;
+SHOW COLUMNS FROM employees;
+
+INSERT INTo employees (name,email, gender, address, job_title, created_at)
+ VALUES('john doe', 'johndoe@gmail.com', 'male', '23 white street', 'web developer', now()),
+ ('mike edwards', 'mikeedwards@gmail.com', 'male', '34 new jersey street', 'doctor', now()),
+ ('perri shakes', 'perrishakes@gmail.com', 'female', '44 north london street', 'footballer', now()),
+ ('drayton jordan', 'draytonjordan@gmail.com', 'male', '23 new jersey street', 'engineer', now());
+ 
+ SELECT * FROM employees;
+ 
+ ALTER TABLE employees DROP address;
+ 
+ ALTER TABLE employees ADD address VARCHAR(255) NULL;
+ 
+ ALTER TABLE employees MODIFY GENDER VARCHAR(8);
+ 
+ CREATE TABLE payrolls (
+ id INT NOT NULL AUTO_INCREMENT,
+ employee_id INT NOT NULL,
+ amount DECIMAL (10.2) NOT NULL,
+ created_at DATETIME,
+ PRIMARY KEY (id),
+ FOREIGN KEY (employee_id) REFERENCES employees (id)
+ );
+ 
+ INSERT INTO payrolls (employee_id, amount,created_at)
+ VALUES (3, 100000.00, now()),
+ (1, 100000.00, now()),
+ (2, 100000.00, now());
+ 
+ -- DATABASE FOR AMPLETOGS
 -- TABLES TO BE CREATED
 -- 1. Admin Table
 -- 2. Categories Table
@@ -123,11 +156,11 @@ INSERT INTO admin_users (name,email,password,phonenumber)
  -- creating table
  CREATE TABLE orders(
  id INT NOT NULL auto_increment,
- customer_order_id INT NOT NULL,
+ customer_id INT NOT NULL,
  order_amount decimal(25,2) NOT NULL,
  order_time datetime,
  PRIMARY KEY (id),
- FOREIGN KEY (customer_order_id) REFERENCES customers (id)
+ FOREIGN KEY (customer_id) REFERENCES customers (id)
  );
  -- inserting values into orders
 INSERT INTO orders(customer_order_id, order_amount, order_time)
@@ -140,7 +173,7 @@ SELECT * FROM orders;
 -- 7. ORDER ITEM TABLE
 -- creating table
 CREATE TABLE order_items(
- id INT NOT NULL AUTO_INCREMENT,
+ id INT NOT NULL auto_increment,
 order_id INT NOT NULL,
 product_id INT NOT NULL,
 quantity INT NOT NULL,
