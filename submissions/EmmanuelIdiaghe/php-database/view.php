@@ -12,7 +12,16 @@ function loadCustomer() {
     global $pdo;
     global $customer_id;
     
-    $sql = "SELECT  orders.customer_id, products.name_of_product, products.unit_price, order_items.quantity, order_items.total_amount, orders.order_date, addresses.street_name, addresses.city_name, addresses.state_name, addresses.country
+    $sql = "SELECT  orders.customer_id,
+                    products.name_of_product,
+                    products.unit_price,
+                    order_items.quantity,
+                    order_items.total_amount,
+                    orders.order_date,
+                    addresses.street_name,
+                    addresses.city_name,
+                    addresses.state_name,
+                    addresses.country
     FROM orders
     LEFT JOIN order_items ON order_items.order_id = orders.id
     LEFT JOIN products ON products.id = order_items.product_id
