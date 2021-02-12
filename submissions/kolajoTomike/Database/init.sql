@@ -34,9 +34,9 @@ VALUES('JOY CYNTHIA', 'joycynthia@gmail.com','joy345', '0908765442'),
 -- 2. creating categories TABLE
 
 CREATE TABLE categories(
-category_id INT NOT NULL AUTO_INCREMENT,
+id INT NOT NULL AUTO_INCREMENT,
 category_name VARCHAR(50) NOT NULL,
-PRIMARY KEY(category_id)
+PRIMARY KEY(id)
 );
 
 
@@ -80,7 +80,7 @@ INSERT INTO products (admin_id,category_id,name, description_name, image, unit_p
 
 -- 4 Registered customer
 CREATE TABLE customers(
-customer_id int not null auto_increment,
+id int not null auto_increment,
 first_name varchar(25) not null,
 last_name varchar(25) not null,
 email varchar(30) not null,
@@ -100,7 +100,7 @@ VALUES ('jerry' , 'hogan', 'jerryhogan@gmail.com', 'jerry345'),
 
 -- 5 CREATE CUSTOMER_CONTACT
 CREATE TABLE customer_contacts(
-contact_id INT NOT NULL AUTO_INCREMENT,
+id INT NOT NULL AUTO_INCREMENT,
 customer_id INT  NULL,
 street VARCHAR(100) NOT NULL,
 city VARCHAR(40) NOT NULL,
@@ -108,7 +108,7 @@ state VARCHAR(30) NOT NULL,
 zip_code SMALLINT,
 country VARCHAR(30) NOT NULL,
 phone VARCHAR(20) NOT NULL,
-primary key(contact_id),
+primary key(id),
 FOREIGN KEY(customer_id) REFERENCES customers(customer_id)
 );
 -- inserting records into customer_contact
