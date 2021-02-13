@@ -1,6 +1,10 @@
 <?php
-include("cookie.php");
-$results = isset($_COOKIE['view'])? unserialize($_COOKIE['view']) : $View->viewcustomersDetails($id);
+
+include("cookie2.php");
+
+if( isset($_COOKIE['results']) ) {
+      $results =  unserialize($_COOKIE['results']);
+   }
 
 try{
     if($results->rowCount()>0){
