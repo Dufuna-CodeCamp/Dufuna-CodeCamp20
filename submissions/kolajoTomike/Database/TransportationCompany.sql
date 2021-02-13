@@ -37,7 +37,7 @@ select * from trip;
 CREATE TABLE accidents_cases (
 id INT NOT NULL AUTO_INCREMENT,
 passenger_id INT NOT NULL,
-accident_status TINYINT(5) NOT NULL,
+accident_status TINYINT(1) NOT NULL,
 primary key (id),
 foreign key (passenger_id) references passengers(id)
 );
