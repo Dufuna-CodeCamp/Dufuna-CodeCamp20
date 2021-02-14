@@ -94,7 +94,7 @@ INSERT INTO admin_users (name,email,password,phonenumber)
  image blob,
   unit_price decimal(25,2) NOT NULL,
   stock_level INT NOT NULL,
- status ENUM ('in stock', 'out of stock', 'low stock') NOT NULL,
+ status ENUM ('in stock', 'out of stock', 'low stock'),
  PRIMARY KEY (id),
  FOREIGN KEY (admin_user_id) REFERENCES admin_users (id),
   FOREIGN KEY (category_id) REFERENCES categories (id)
@@ -134,21 +134,18 @@ INSERT INTO admin_users (name,email,password,phonenumber)
  -- creating table
  CREATE TABLE customers_addresses(
  id INT NOT NULL AUTO_INCREMENT,
- customer_id INT NOT NULL,
  firstname VARCHAR(255) NOT NULL,
  lastname VARCHAR(255) NOT NULL,
  email VARCHAR(50) NOT NULL,
  password VARCHAR(50) NOT NULL,
- address VARCHAR(255) NOT NULL,
  PRIMARY KEY (id),
- FOREIGN KEY (customer_id) REFERENCES customers (id)
   );
   -- inserting values into customers_addresses
- INSERT INTO customers_addresses(customer_id,firstname,lastname,email,password,address)
- VALUES(3, 'adenike', 'adebayo', 'adenikeadebayo@gmail.com', 'olanike', 'old college street berger,lagos'),
- (2,'chioma', 'akpotha', 'chiomaakpotha@gmail.com', 'akpos', 'radissonblue victoria island,lagos'),
- (4,'sharon', 'abidomin', 'aasharon@gmail.com', 'sharon', 'college cresent yaba,lagos'),
- (1,'kolade', 'adeleke', 'adelekekolade@gmail.com', 'kolaadeleke', 'fagba street,ikaja,lagos');
+ INSERT INTO customers_addresses(firstname,lastname,email,password)
+ VALUES('adenike', 'adebayo', 'adenikeadebayo@gmail.com', 'olanike'),
+ ('chioma', 'akpotha', 'chiomaakpotha@gmail.com', 'akpos'),
+ ('sharon', 'abidomin', 'aasharon@gmail.com', 'sharon'),
+ ('kolade', 'adeleke', 'adelekekolade@gmail.com', 'kolaadeleke');
  
  SELECT * FROM customers_addresses;
  
@@ -177,7 +174,7 @@ CREATE TABLE order_items(
 order_id INT NOT NULL,
 product_id INT NOT NULL,
 quantity INT NOT NULL,
-unit_prices INT NOT NULL,
+unit_prices decimal(25,2),
 total_amount decimal(25,2),
  PRIMARY KEY (id),
  FOREIGN KEY (order_id) REFERENCES orders (id),
