@@ -1,4 +1,16 @@
 -- ----------------------------
+-- Table structure for customers
+-- ----------------------------
+CREATE TABLE customers (
+  customer_id int(11) NOT NULL AUTO_INCREMENT,
+  first_name varchar(20) NOT NULL,
+  last_name varchar(20) NOT NULL,
+  email varchar(20) NOT NULL,
+  password varchar(20) NOT NULL,
+  PRIMARY KEY (customer_id)
+)
+
+ -- ----------------------------
 -- Table structure for addresses
 -- ----------------------------
 CREATE TABLE addresses (
@@ -22,7 +34,7 @@ CREATE TABLE admins (
   name varchar(100) NOT NULL,
   email varchar(50) NOT NULL,
   password varchar(70) NOT NULL,
-  phone varchar(20) NOT NULL,
+  phone_number varchar(20) NOT NULL,
   PRIMARY KEY (admin_id)
 ) 
 
@@ -33,18 +45,6 @@ CREATE TABLE categories (
   category_id int(11) NOT NULL AUTO_INCREMENT,
   category_name varchar(255) NOT NULL,
   PRIMARY KEY (category_id)
-) 
-
--- ----------------------------
--- Table structure for customers
--- ----------------------------
-CREATE TABLE customers (
-  customer_id int(11) NOT NULL AUTO_INCREMENT,
-  first_name varchar(20) NOT NULL,
-  last_name varchar(20) NOT NULL,
-  email varchar(20) NOT NULL,
-  password varchar(20) NOT NULL,
-  PRIMARY KEY (customer_id)
 ) 
 
 -- ----------------------------
