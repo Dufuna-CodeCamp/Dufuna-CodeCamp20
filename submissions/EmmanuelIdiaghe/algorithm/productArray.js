@@ -19,5 +19,5 @@ for (let index = 0; index < products.length; index++) {
 
 //Prints the new price
 for (let counter = 0; counter < product_price.length; counter++) {
-    console.log("The price of " + products[counter] + "is " + product_price[counter]);   
+    console.log("The price of " + products[counter] + " is " + product_price[counter]);   
 }
