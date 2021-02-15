@@ -34,24 +34,31 @@
     </div>
 
     <section>
-        <form class="regform container">
+        <form class="regform container" id="validateForm">
             <label for="firstname">First Name</label>
             <input type="text" name="firstname" id="firstname" class="inputbox">
+            <span class="error-block"></span>
             <label for="lastname">Last Name</label>
             <input type="text" name="lastname" id="lastname" class="inputbox">
+            <span class="error-block"></span>
             <label for="othernames">Other Names</label>
             <input type="text" name="othernames" id="othernames" class="inputbox">
+            <span class="error-block"></span>
             <label for="phonenumber">Phone Number</label>
-            <input type="tel" name="phonenumber" id="phonenumber" class="inputbox">
+            <input type="tel" name="phonenumber" id="phoneNumber" class="inputbox">
+            <span class="error-block"></span>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" class="inputbox">
+            <span class="error-block"></span>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" class="inputbox">
+            <span class="error-block"></span>
             <label for="confirmpassword">Confirm Password</label>
-            <input type="password" name="confirmpassword" id="confrimpassword" class="inputbox">
-            <input type="checkbox" name="terms" id="terms" class="box">
-            <label for="terms"><p> I agree to the Terms and Conditions</p></label>
-            <input type="button" value="SIGN UP" class="signup"> 
+            <input type="password" name="confirmpassword" id="confirmpassword" class="inputbox">
+            <span class="error-block"></span>
+            <input type="checkbox" name="terms" id="termsbox" class="box">
+            <label for="terms" id="terms"><p> I agree to the Terms and Conditions</p></label>
+            <input type="button" value="SIGN UP" class="signup" id="signupbtn"> 
         </form>
     </section>
 </div>
@@ -86,5 +93,6 @@
 
     </div>
 </footer>
+<script src="../domManipulation/signUpform.js"></script>
 </body>
 </html>
