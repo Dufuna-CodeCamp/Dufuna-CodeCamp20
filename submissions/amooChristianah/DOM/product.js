@@ -1,21 +1,21 @@
-let qty = document.getElementById("qty-num"),
-  productPrice = document.getElementById("product-price"),
-  shippingCost = document.getElementById("shipping-cost"),
-  totalCost = document.getElementById("total-cost"),
-  priceBtn = document.getElementById("pricing-btn"),
+let quantity = document.getElementById("qty-number"),
+  productPrice = document.getElementById("product-Price"),
+  shippingCost = document.getElementById("shipping-Cost"),
+  totalCost = document.getElementById("total-Cost"),
+  priceButton = document.getElementById("pricing-button"),
   intRegexp = /[^0-9]/g;
 
 function productSale() {
 
 
-  if (qty.value < 1 || qty.value == "" || qty.value.match(intRegexp)) {
-    priceBtn.disabled = true;
+  if (quantity.value < 1 || quantity.value == "" || quantity.value.match(intRegexp)) {
+    priceButton.disabled = true;
     shippingCost.innerHTML = 0;
     totalCost.innerHTML = 0;
     return false;
   } else {
-    priceBtn.disabled = false;
-    let entirePrice = (qty.value * productPrice.innerHTML);
+    priceButton.disabled = false;
+    let entirePrice = (quantity.value * productPrice.innerHTML);
     if (entirePrice < 1000) {
       shippingCost.innerHTML = parseFloat(100);
       totalCost.innerHTML =
@@ -38,4 +38,4 @@ function productSale() {
   }
 }
 
-qty.addEventListener("input", productSale);
+quantity.addEventListener("input", productSale);
