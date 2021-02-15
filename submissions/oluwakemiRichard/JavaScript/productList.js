@@ -18,6 +18,6 @@ let productList = [
 ];
     for(var  i in productList){
         console.log(productList[i]['productName'] + " with " + productList[i]['imageUrl'] + " is sold for  " + productList[i]['productPrice']+"\n")
-    };
+    }
     
  
