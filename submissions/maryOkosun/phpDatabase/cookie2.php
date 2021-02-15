@@ -1,7 +1,8 @@
 <?php
 
 include('connection.php');
- if( isset($_GET['id'])) {
+
+if( isset($_GET['id'])) {
     $id =  $_GET['id'];
 }
 
@@ -15,13 +16,10 @@ try{
     WHERE orders.customer_id ='$id' ";
     $stmt = $this->connect()->query($sql);
     $results = $stmt->fetchAll();
-
-    setcookie("results",  serialize($results), time() + 3600 );
     
+    setcookie("results",  serialize($results), time() + 3600 ); 
     }
 catch(PDOException $e){
     die("ERROR:Could not connect $sql." . $e->getMessage());
-} 
-}    
-}
+    } 
 ?>
