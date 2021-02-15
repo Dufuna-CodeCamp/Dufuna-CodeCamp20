@@ -1,4 +1,24 @@
 -- ----------------------------
+-- Table structure for admins
+-- ----------------------------
+CREATE TABLE admins (
+  admin_id int(11) NOT NULL AUTO_INCREMENT,
+  name varchar(100) NOT NULL,
+  email varchar(50) NOT NULL,
+  password varchar(70) NOT NULL,
+  phone_number varchar(20) NOT NULL,
+  PRIMARY KEY (admin_id)
+) 
+-- ----------------------------
+-- Table structure for categories
+-- ----------------------------
+CREATE TABLE categories (
+  category_id int(11) NOT NULL AUTO_INCREMENT,
+  category_name varchar(255) NOT NULL,
+  PRIMARY KEY (category_id)
+) 
+
+-- ----------------------------
 -- Table structure for products
 -- ----------------------------
 CREATE TABLE products (
@@ -17,14 +37,6 @@ CREATE TABLE products (
   CONSTRAINT products_fk_2 FOREIGN KEY (admin_id) REFERENCES admins (admin_id) ON DELETE CASCADE ON UPDATE CASCADE
 )
 
--- ----------------------------
--- Table structure for categories
--- ----------------------------
-CREATE TABLE categories (
-  category_id int(11) NOT NULL AUTO_INCREMENT,
-  category_name varchar(255) NOT NULL,
-  PRIMARY KEY (category_id)
-) 
 
 -- ----------------------------
 -- Table structure for customers
@@ -85,16 +97,6 @@ CREATE TABLE order_items (
 ) 
 
 
--- ----------------------------
--- Table structure for admins
--- ----------------------------
-CREATE TABLE admins (
-  admin_id int(11) NOT NULL AUTO_INCREMENT,
-  name varchar(100) NOT NULL,
-  email varchar(50) NOT NULL,
-  password varchar(70) NOT NULL,
-  phone_number varchar(20) NOT NULL,
-  PRIMARY KEY (admin_id)
-) 
+
 
 
