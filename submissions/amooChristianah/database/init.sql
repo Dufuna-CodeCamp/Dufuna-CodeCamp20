@@ -85,7 +85,7 @@ INSERT INTO admin_users (name,email,password,phonenumber)
  
  -- 3. PRODUCT TABLE
  -- creating table
-    CREATE TABLE product(
+    CREATE TABLE products(
  id INT NOT NULL AUTO_INCREMENT,
   admin_user_id INT NOT NULL,
  category_id INT NOT NULL,
@@ -101,13 +101,13 @@ INSERT INTO admin_users (name,email,password,phonenumber)
   );
   -- inserting values into product
  
- INSERT INTO product (category_id,admin_user_id,name,description, image, unit_price, stock_level, status)
+ INSERT INTO products (category_id,admin_user_id,name,description, image, unit_price, stock_level, status)
  VALUES(2,3,'MADDISSON JAMES SWEATSHIRT','Ellie Wilde', load_file('images/demo.jpg'), 1000.00, 25, 'in stock' ),
  (1,2,'BRAND ELLIE DIVAS TOP','lorem ipsum', load_file('images/product-1.jpg'), 3500.00, 40, 'in stock' ),
  (3,1,'ANGILI QUE WHITE TOP','dolor sit amet', load_file('images/demo.jpg'), 3500.00, 15, 'in stock' ),
  (4,4,'ELLAS BOUQ FAIRY TOP','Ellie fendi venche', load_file('images/product-2.jpg'), 3500.00, 05, 'in stock' );
  
- SELECT * FROM product;
+ SELECT * FROM products;
  
  -- 4. CUSTOMERS TABLE
  -- creating table
