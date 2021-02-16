@@ -5,7 +5,7 @@ CREATE TABLE `passengers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `full_name` varchar(50) NOT NULL,
   `sex` varchar(20) NOT NULL,
-  `age` int(10) DEFAULT NULL,
+  `age` varchar(10) NULL,
   PRIMARY KEY (`id`)
 ) 
 
@@ -26,20 +26,15 @@ CREATE TABLE `trips` (
   KEY `trips_fk_1` (`passenger_id`),
   CONSTRAINT `trips_fk_1` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) 
 )  
- 
+
 -- ----------------------------
 -- Table structure for `accidents`
 -- ----------------------------
 CREATE TABLE `accidents` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `status` enum(Did not Survive,Survived) NOT NULL,
+  `status` tinyint(1) NOT NULL,
   `passenger_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `passenger_id` (`passenger_id`),
   CONSTRAINT `accidents_fk_1` FOREIGN KEY (`passenger_id`) REFERENCES `passengers` (`id`) 
 ) 
-
-
-
-
-
