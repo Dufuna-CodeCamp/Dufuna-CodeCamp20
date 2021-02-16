@@ -1,25 +1,23 @@
-let submitform = document.getElementById("validateForm");
-    firstname = document.getElementById("firstname");
-    lastname = document.getElementById("lastname");
-    othernames = document.getElementById("othernames");
-    phonenumber = document.getElementById("phoneNumber");
-    email = document.getElementById("email");
-    password = document.getElementById("password");
+const submitform = document.getElementById("validateForm"),
+    firstname = document.getElementById("firstname"),
+    lastname = document.getElementById("lastname"),
+    othernames = document.getElementById("othernames"),
+    phonenumber = document.getElementById("phoneNumber"),
+    email = document.getElementById("email"),
+    password = document.getElementById("password"),
     confirmpassword= document.getElementById("confirmpassword");
 
-var nameRegex =  /^[a-zA-Z ]+$/;
-var pnumberRegex = /^[+]*[0-9]+$/;
-var emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,6})+$/;
-var passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
+const nameRegex =  /^[a-zA-Z ]+$/,
+    pnumberRegex = /^[+]*[0-9]+$/,
+    emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,6})+$/,
+    passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
 
 function formValidation (field, Regex, error_one, error_two, event) {
     if (field.value === "") {
         field.nextElementSibling.innerHTML = error_one;
         event.preventDefault();
         return false;
-    }
-
-    if (!field.value.match(Regex)) {
+    } else if (!field.value.match(Regex)) {
         field.nextElementSibling.innerHTML = error_two;
         event.preventDefault();
         return false;
