@@ -1,5 +1,5 @@
 <?php
-include('cookies.php');
+include('connection.php');
 
 
 if(isset($_COOKIE['customers'])){
