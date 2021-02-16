@@ -36,7 +36,7 @@ DROP TABLE tripdetails;
 -- Creating Accident case table
 CREATE TABLE accidentCases(
  id int not null auto_increment,
- passengerId int not null default(1),
+ passengerId int not null,
  accidentStatus tinyint not null,
  primary key(id),
  foreign key(passengerId) references registeredPassengers(id)
