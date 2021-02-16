@@ -29,15 +29,19 @@
                 <div class="top-detail">
                     <h3>Madeline Satchel</h3>
                     <p>Brand: Jimmy Choo</p>
-                    <label for="quantity">Quantity: </label><input type="number">
-                    <p>Price: $2,250</p>
-                    <button>BUY NOW</button>
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" name="quantity" id="quantity" value="1">
+                    <span class="error-block"></span>
+                    <p>Price: $ <span id="cost"> 2250</span></p>
+                    <p>Shipping Cost: $ <span id="shippingCost"> 100</span></p>
+                    <p>Total Cost: $ <span id="totalCost"> 2,350</span></p>
+                    <button type="submit" id="btn">BUY NOW</button>
                 </div>
                 <div class="top-description">
                     <h1>DESCRIPTION</h1>
                     <p>New for the season, featuring a rigid construction and top handle, this style
                         has plenty of room in the main compartment for all your essentials. Decorated with an invisible button and gold chain, 
-                        ear yours on the shoulder or carry in hand.</p>
+                        wear yours on the shoulder or carry in hand.</p>
                 </div>
             </div>  
         <div class="bottom">
@@ -93,5 +97,6 @@
         </div>
     </footer>
     <script src="../domManipulation/newsletter.js"></script>
+    <script src="../domManipulation/product.js"></script>
     </body>
 </html>
