@@ -19,7 +19,7 @@ DROP TABLE registeredpassengers;
 -- Creating the Passenger trip details table
 CREATE TABLE tripDetails (
  id INT NOT NULL AUTO_INCREMENT,
- passengerId INT NOT NULL default(1),
+ passengerId INT NOT NULL,
  passengerClass INT NOT NULL ,
  passengerTicketNo VARCHAR(50) NOT NULL,
  tripFare DECIMAL(19,4) NOT NULL,
