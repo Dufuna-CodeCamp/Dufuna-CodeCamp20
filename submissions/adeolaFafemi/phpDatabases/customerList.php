@@ -9,9 +9,6 @@ if(isset($_COOKIE['customers'])){
     $allData = $pdo->query($sql)->fetchAll();
     setcookie('customers', serialize($allData), time() + 3600);
  }
-//  setcookie('customers',  '', time() -60);
-// var_dump (serialize($allData));
-// var_dump ($allData);
 
 try{
     if(count($allData) > 0){
