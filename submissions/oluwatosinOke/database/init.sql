@@ -62,15 +62,16 @@ first_name VARCHAR(30) NOT NULL,
 last_name VARCHAR(30) NOT NULL,
 email_address VARCHAR(30) NOT NULL,
 password VARCHAR(30) NOT NULL,
+created_at DATETIME,
 PRIMARY KEY (id)
 );
 
 -- INSERT values into Table named customers
-INSERT INTO customers (first_name, last_name, email_address, PASSWORD)
-VALUES ('Aliko', 'Dangote', 'alikodangote@gmail.com', 'spagetti'),
-('Meghan', 'Markle', 'merganmarkle@gmail.comn', 'princess'),
-('Kim', 'Kardasian', 'kimk@gmail.comn', 'northwest'),
-('David', 'Adeleke','davidomusic@gmail.com', 'goodtime');
+INSERT INTO customers (first_name, last_name, email_address, PASSWORD, created_at)
+VALUES ('Aliko', 'Dangote', 'alikodangote@gmail.com', 'spagetti',NOW()),
+('Meghan', 'Markle', 'merganmarkle@gmail.comn', 'princess', NOW()),
+('Kim', 'Kardasian', 'kimk@gmail.comn', 'northwest', NOW()),
+('David', 'Adeleke','davidomusic@gmail.com', 'goodtime', NOW());
 
 
 -- CREATE TABLE named customers_address
