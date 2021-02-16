@@ -1,7 +1,6 @@
 const submitform = document.getElementById("validateForm"),
     firstname = document.getElementById("firstname"),
     lastname = document.getElementById("lastname"),
-    othernames = document.getElementById("othernames"),
     phonenumber = document.getElementById("phoneNumber"),
     email = document.getElementById("email"),
     password = document.getElementById("password"),
