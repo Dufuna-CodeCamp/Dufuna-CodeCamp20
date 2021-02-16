@@ -31,7 +31,7 @@ class TableRows extends RecursiveIteratorIterator {
   }
 
   function endChildren() {
-    echo "</tr>" . "\n";
+    echo "</tr> . \n";
   }
 }
 
