@@ -69,10 +69,10 @@ SELECT * FROM accidentCases;
 # 5. 
 select registeredPassengers.id, registeredPassengers.fullName, COUNT(*) OVER () AS total_count
 from registeredPassengers 
-join tripDetails on registeredPassengers.id = tripDetails.id 
+join tripDetails on registeredPassengers.id = tripDetails.passengerId 
 where tripFare > 100 and age > '35' and numberOfSiblingsSpouse > 0;
  
- -- Answer 7
+ -- Answer 0
 
     
     
