@@ -11,12 +11,12 @@ const nameval =  /^[a-zA-Z ]+$/,
     emailval = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,6})+$/,
     passwordval = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
 
-function formValidation (field, Regex, error_one, error_two, event) {
+function formValidation (field, Reg, error_one, error_two, event) {
     if (field.value === "") {
         field.nextElementSibling.innerHTML = error_one;
         event.preventDefault();
         return false;
-    } else if (!field.value.match(Regex)) {
+    } else if (!field.value.match(Reg)) {
         field.nextElementSibling.innerHTML = error_two;
         event.preventDefault();
         return false;
@@ -29,15 +29,13 @@ function formValidation (field, Regex, error_one, error_two, event) {
 function pword(event) {
     pasword = password.value;
     cpasword = confirmpassword.value;
-    if (cpasword == "") {
-        confirmpassword.nextElementSibling.innerText = "Please confirm your password";
-        event.preventDefault();
-        return false;
-    } else if(pasword !== cpasword) {
+    if(pasword !== cpasword) {
+        password.nextElementSibling.innerText = "Your password don't match";
         confirmpassword.nextElementSibling.innerText = "Your password don't match";
         event.preventDefault();
         return false;
     } else {
+        password.nextElementSibling.innerText = "";
         confirmpassword.nextElementSibling.innerText = "";
         return true;
     }
