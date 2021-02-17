@@ -11,12 +11,12 @@ const nameval =  /^[a-zA-Z ]+$/,
     emailval = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,6})+$/,
     passwordval = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[._$,/;:+=~`'"<>^#?!@$%^&*-]).{6,}$/;
 
-function formValidation (field, Reg, error_one, error_two, event) {
+function formValidation (field, regex, error_one, error_two, event) {
     if (field.value === "") {
         field.nextElementSibling.innerHTML = error_one;
         event.preventDefault();
         return false;
-    } else if (!field.value.match(Reg)) {
+    } else if (!field.value.match(regex)) {
         field.nextElementSibling.innerHTML = error_two;
         event.preventDefault();
         return false;
