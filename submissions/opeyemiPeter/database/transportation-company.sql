@@ -10,7 +10,7 @@ CREATE TABLE registeredPassengers (
  id INT NOT NULL AUTO_INCREMENT,
  fullName VARCHAR(50) NOT NULL,
  sex VARCHAR(6) NOT NULL,
- age VARCHAR(4),
+ age VARCHAR(4) ,
  PRIMARY KEY(id)
 );
 SELECT * FROM registeredPassengers; 
@@ -36,7 +36,7 @@ DROP TABLE tripdetails;
 -- Creating Accident case table
 CREATE TABLE accidentCases(
  id int not null auto_increment,
- passengerId int not null,
+ passengerId int not null default(1),
  accidentStatus tinyint not null,
  primary key(id),
  foreign key(passengerId) references registeredPassengers(id)
@@ -63,17 +63,25 @@ SELECT * FROM accidentCases;
     ( "Q%"| "C%"));
     
 # 4. Number of passengers who embarked at Southampton and survived
-	SELECT count(*) from accidentCases left join tripdetails on accidentcases.id = tripdetails.id where accidentStatus > 0 and embarkationPoint = 'S';
+	SELECT count(*) from accidentCases left join tripdetails on accidentcases.passengerId = tripdetails.passengerId where accidentStatus > 0 and embarkationPoint = 'S';
     -- Answers => 218;
 
-# 5. 
+# 5. Get the id, name and the total number of passengers 
+-- who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board?
 select registeredPassengers.id, registeredPassengers.fullName, COUNT(*) OVER () AS total_count
 from registeredPassengers 
-join tripDetails on registeredPassengers.id = tripDetails.passengerId 
-where tripFare > 100 and age > '35' and numberOfSiblingsSpouse > 0;
- 
- -- Answer 0
+join tripDetails on tripDetails.passengerId = registeredPassengers.id
+where tripFare > 100 and age > '35' and numberOfSiblingsSpouse != 0;
 
+select count(*) from registeredpassengers left join tripdetails
+on registeredpassengers.id = tripdetails.passengerId
+where tripFare > 100 and numberOfSiblingsSpouse != 0 and age > '35';
+    
+-- total number of passengers who paid a fare greater than $100 and 
+-- above the age of 35 with siblings or spouses on board
+SELECT COUNT(*) FROM registeredpassengers 
+inner join tripdetails on registeredpassengers.id = tripdetails.passengerId
+where tripFare > 100 and age > '35' and numberOfSiblingsSpouse > 0; 
     
     
 
