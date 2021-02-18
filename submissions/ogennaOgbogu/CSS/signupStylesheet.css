@@ -112,7 +112,7 @@ div.left-sideregister>p>strong>a {
 }
 
 
-#signupbutton {
+#sign-up-button {
     width: 180px;
     height: 45px;
     border-radius: 4px solid black;
@@ -130,7 +130,7 @@ div.left-sideregister>p>strong>a {
   
 }
 
-.tandc {
+.terms-and-conditions {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -144,13 +144,13 @@ div.left-sideregister>p>strong>a {
     display: flex;
 }
 
-footer>.aboutus {
+footer>.about-us {
     padding-top: 30px;
     padding-right: 100px;
     margin-left: 20px;
 }
 
-footer>.aboutus>p>a {
+footer>.about-us>p>a {
     font-size: 18px;
     text-decoration: none;
     text-align: left;
@@ -164,7 +164,9 @@ footer>.aboutus>p>a {
 }
 
 .social-img {
-    display: inline-block;
+    display: inline;
+    width: 40px;
+    height: 30px;
 }
 
 .social-network>p {
@@ -209,14 +211,14 @@ div.contact {
     color: green;
 }
 
-.lcright>p {
+.copy-right>p {
     display: block;
     background-color:rgba(000, 255, 000, 0.4);
     margin: auto;
     text-align: center;
 }
 
-.rightfooter {
+.right-footer {
     display: flex;
 }
 
@@ -246,7 +248,7 @@ div.contact {
         line-height: 0.5
         
     }
-    .rightside {
+    .right-side {
         font-size: 12px;
         padding: 0 10px 10px;
     }
@@ -295,12 +297,12 @@ div.contact {
         font-size: 10px;
     }
 
-    .tandc {
+    .terms-and-conditions {
         font-size: 12px;
         white-space: nowrap;
     }
 
-    #signupbutton {
+    #sign-up-button {
         font-size: 10px;
         width: 85px;
         height: 30px;
@@ -318,16 +320,16 @@ div.contact {
         margin-top: 15px;
     }
     
-    footer>.aboutus {
+    footer>.about-us {
         padding: 0;
         margin: 0;
     }
     
-    footer>.aboutus>p {
+    footer>.about-us>p {
             margin: 0;
     }
     
-    footer>.aboutus>p>a {
+    footer>.about-us>p>a {
             line-height: 2;
             font-size: 15px;
             
@@ -343,13 +345,13 @@ div.contact {
         padding-top: 0;
     }
 
-    .lcright {
+    .copy-right {
         display: block;
         margin: auto;
         text-align: center;
     }
 
-    .candc {
+    .newsletter-sign-up {
         padding: 5px 0;
     }
 
@@ -375,7 +377,7 @@ div.contact {
         height: 35px;
     }
 
-    .rightfooter {
+    .right-footer {
         display: block;
     }
     
@@ -418,7 +420,7 @@ div.contact {
        flex-wrap: wrap;
     }
 
-    .footer>.aboutus>p>a {
+    .footer>.about-us>p>a {
         padding-left: 60px;
         white-space: nowrap;
     }
@@ -436,16 +438,16 @@ div.contact {
         padding: 0 0 0 20px;
     }
 
-    .candc>.contact {
+    .newsletter-sign-up>.contact {
         padding: 40px 20px 0;
         
     }
 
-    .lcright {
+    .copy-right {
         margin: auto;
     }
 
-    .rightfooter {
+    .right-footer {
         display: block;
     }
     
