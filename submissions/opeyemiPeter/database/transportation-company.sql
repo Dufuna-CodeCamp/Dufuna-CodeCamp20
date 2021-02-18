@@ -24,8 +24,8 @@ CREATE TABLE trip_details (
  passenger_ticket_no VARCHAR(50) NOT NULL,
  trip_fare DECIMAL(19,4) NOT NULL,
  cabin VARCHAR(20),
- number_of_parents_Children INT NOT NULL DEFAULT  0,
- number_0f_siblings_spouse    INT NOT NULL DEFAULT 0,
+ number_of_parents_Children INT NOT NULL,
+ number_0f_siblings_spouse    INT NOT NULL,
  embarkation_point VARCHAR(10) NOT NULL,
  PRIMARY KEY(id),
  FOREIGN KEY(passenger_id) REFERENCES registered_passengers(id)
