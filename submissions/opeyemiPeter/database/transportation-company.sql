@@ -69,13 +69,15 @@ drop tables accident_cases;
     -- Answers => 218;
 
     
--- 5 total number of passengers who paid a fare greater than $100 and 
--- above the age of 35 with siblings or spouses on board
-# 5. SELECT COUNT(*) FROM registered_passengers 
+-- 5 
+-- a . The total number of passengers who paid a fare greater than $100 and above the age of 35 with siblings or spouses on board
+ 
+    SELECT COUNT(*) FROM registered_passengers 
     inner join trip_details on registered_passengers.id = trip_details.id
     where trip_fare > 100 and age > '35' and number_0f_siblings_spouse > 0; 
-    
     -- Anwser => 9
+
+-- b .  The id, name and the total number of passengers who paid a fare greater than $100 and above the age of 35 with siblings or spouses on board.
     select registered_passengers.id, registered_passengers.full_name, COUNT(*) OVER () AS total_count
     from registered_passengers 
     join trip_details on trip_Details.id = registered_passengers.id
