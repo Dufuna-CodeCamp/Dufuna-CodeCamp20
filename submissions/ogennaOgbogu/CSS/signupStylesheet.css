@@ -8,9 +8,9 @@ html,body
 {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -68,7 +68,7 @@ div.right-sidetab>a {
     font-size: 20px;
     text-align: left;
     line-height: 1.23;
-} 
+}
 
 
 .left-sideregister>h3 {
@@ -84,7 +84,7 @@ div.right-sidetab>a {
 div.left-sideregister>p>strong>a {
     color: lightgreen;
     text-decoration: underline;
-    text-underline-position: below; 
+    text-underline-position: below;
     text-decoration-color: lightgreen;
 }
 
@@ -108,7 +108,7 @@ div.left-sideregister>p>strong>a {
     border-radius: 10px;
     border: solid 2px;
     margin-bottom: 9px;
-    margin-top: 0.5px;  
+    margin-top: 0.5px;
 }
 
 
@@ -125,8 +125,8 @@ div.left-sideregister>p>strong>a {
 }
 
 .button1 {
-    display: flex;  
-    justify-content: center;  
+    display: flex;
+    justify-content: center;
   
 }
 
@@ -141,7 +141,7 @@ div.left-sideregister>p>strong>a {
 .footer {
     background-color: rgba(000, 255, 000, 0.4);
     width: 100%;
-    display: flex;    
+    display: flex;
 }
 
 footer>.aboutus {
@@ -212,7 +212,6 @@ div.contact {
 .lcright>p {
     display: block;
     background-color:rgba(000, 255, 000, 0.4);
-    /* margin: 0; */
     margin: auto;
     text-align: center;
 }
@@ -249,7 +248,7 @@ div.contact {
     }
     .rightside {
         font-size: 12px;
-        padding: 0px 10px 10px 10px;
+        padding: 0 10px 10px 10px;
     }
 
 
@@ -320,12 +319,12 @@ div.contact {
     }
     
     footer>.aboutus {
-        padding: 0px;
-        margin: 0px;
+        padding: 0;
+        margin: 0;
     }
     
     footer>.aboutus>p {
-            margin: 0px;
+            margin: 0;
     }
     
     footer>.aboutus>p>a {
@@ -335,33 +334,33 @@ div.contact {
         }
     
     div.contact {
-        padding-left: 0px;
+        padding-left: 0;
         padding-top: 10px;
     }
     
     div.social-network {
-        padding-left: 0px;
-        padding-top: 0px;
+        padding-left: 0;
+        padding-top: 0;
     }
 
     .lcright {
         display: block;
         margin: auto;
-        text-align: center;    
+        text-align: center;
     }
 
     .candc {
-        padding: 5px 0px 5px 0px;
+        padding: 5px 0;
     }
 
  
     .contact>.newsletter {
         display: flex;
-        padding: 5px 0px 5px 0px;
+        padding: 5px 0;
     }
     
     .newsletter>input[for="text"] {
-        padding: 0px 7px 0px 0px;
+        padding: 0 7px 0 0;
     }
     
     #submitbutton {
@@ -393,11 +392,11 @@ div.contact {
     }
 
     #fname, #lname, #oname, #phoneno, #email, #password, #password2 {
-        width: 100%;  
+        width: 100%;
     }
 
     .register {
-        margin: 0px;
+        margin: 0;
         padding: 10px;
     }
 
@@ -434,11 +433,11 @@ div.contact {
     
 
     .social-network {
-        padding: 0px 0px 0px 20px;
+        padding: 0 0 0 20px;
     }
 
     .candc>.contact {
-        padding: 40px 20px 0px 20px;
+        padding: 40px 20px 0 20px;
         
     }
 
