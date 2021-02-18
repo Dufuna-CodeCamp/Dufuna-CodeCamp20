@@ -1,4 +1,4 @@
-const submitform = document.getElementById("validateForm"),
+const validateForm = document.getElementById("validateForm"),
     firstname = document.getElementById("firstname"),
     lastname = document.getElementById("lastname"),
     phonenumber = document.getElementById("phoneNumber"),
@@ -52,4 +52,4 @@ function validatedForm (e) {
     return true;
 }
 
-submitform.addEventListener("submit", validatedForm);
+validateForm.addEventListener("submit", validatedForm);
