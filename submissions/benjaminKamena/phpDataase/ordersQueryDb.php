@@ -23,12 +23,10 @@ function view($id){
 
     if(isset($_COOKIE['orders'])){
         $orders =  unserialize($_COOKIE['orders']);
-} else{
-	$new_data = $order -> view($id);
-	};
-
+    }
+    
 try{
-    if (count($new_data) > 0) {
+    if (count($orders) > 0) {
 		echo "<table>";
 		echo "<tr>";
 		echo "<td>ID</td>";
@@ -39,7 +37,7 @@ try{
         echo "<td>Order Date</td>";
         echo "<td>Customer Location</td>";
         echo "</tr>";
-     foreach ($new_data as $row){
+     foreach ($orders as $row){
 		echo "<tr>";
         echo "<td>" . $row['order_items_id'] . "</td>";
         echo "<td>" . $row['product_name'] . "</td>";
@@ -51,7 +49,7 @@ try{
         echo "</tr>";
     }
     echo "</table>";
-    unset($new_data);
+    unset($orders);
 } else {
     echo 'No match';
 };
