@@ -13,14 +13,4 @@ function name_hobby($names, $hobbies){
 
 name_hobby($names, $hobbies);
 
-// This is for individual linking
-// echo "My name is".$names[0], ". I love".$hobbies[0]. ". <br>";
-// echo "My name is".$names[1], ". I love".$hobbies[1]. ". <br>";
-// echo "My name is".$names[2], ". I love".$hobbies[2]. ". <br>";
-// echo "My name is".$names[3], ". I love".$hobbies[3]. ". <br>";
-// echo "My name is".$names[4], ". I love".$hobbies[4]. ". <br>";
-// echo "My name is".$names[5], ". I love".$hobbies[5]. ". <br>";
-// echo "My name is".$names[6], ". I love".$hobbies[6]. ". <br>";
-// echo "My name is".$names[7], ". I love".$hobbies[7]. ". <br>";
-
 ?>
