@@ -8,12 +8,14 @@ USE transportation;
 -- Creating Passenger table 
 CREATE TABLE registered_passengers (
  id INT NOT NULL AUTO_INCREMENT,
- full_name VARCHAR(50) NOT NULL,
+ full_name VARCHAR(100) NOT NULL,
  sex VARCHAR(6) NOT NULL,
  age VARCHAR(4) ,
  PRIMARY KEY(id)
 );
 SELECT * FROM registered_passengers;
+select COUNT(*) from registered_passengers;
+DROP table registered_passengers;
 -- Creating the Passenger trip details table
 CREATE TABLE trip_details (
  id INT NOT NULL AUTO_INCREMENT,
@@ -29,16 +31,19 @@ CREATE TABLE trip_details (
  FOREIGN KEY(passenger_id) REFERENCES registered_passengers(id)
 );
 SELECT * FROM trip_details;
+DROP table trip_details;
+select COUNT(*) from trip_details;
 
 -- Creating Accident case table
 CREATE TABLE accident_cases(
  id int not null auto_increment,
- passenger_id int not null default(1),
+ passenger_id int not null,
  accident_status tinyint not null,
  primary key(id),
  foreign key(passenger_id) references registered_passengers(id)
 );
 Select * from accident_cases;
+select COUNT(*) from accident_cases;
 drop tables accident_cases;
 -- Task 3 Transportation Data Query.
 
@@ -63,24 +68,14 @@ drop tables accident_cases;
     accident_status > 0 and embarkation_point = 'S';
     -- Answers => 218;
 
-# 5. Get the id, name and the total number of passengers 
--- who paid a fare greater than $100 and above the age of 35 had siblings or spouses on board?
-select registered_passengers.id, registered_passengers.full_name, COUNT(*) OVER () AS total_count
-from registered_passengers 
-join trip_details on trip_Details.passenger_id = registered_passengers.id
-where trip_fare > 100 and age > '35' and number_of_siblings_spouse != 0;
-
-select count(*) from registeredpassengers left join tripdetails
-on registeredpassengers.id = tripdetails.passengerId
-where tripFare > 100 and numberOfSiblingsSpouse != 0 and age > '35';
     
 -- total number of passengers who paid a fare greater than $100 and 
 -- above the age of 35 with siblings or spouses on board
-SELECT COUNT(*) FROM registeredpassengers 
-inner join tripdetails on registeredpassengers.id = tripdetails.passengerId
-where tripFare > 100 and age > '35' and numberOfSiblingsSpouse > 0; 
+SELECT COUNT(*) FROM registered_passengers 
+inner join trip_details on registered_passengers.id = trip_details.id
+where trip_fare > 100 and age > '35' and number_0f_siblings_spouse > 0; 
     
-    
+    -- Anwser => 9
 
 
 
