@@ -14,7 +14,7 @@ function formValidation (field, regex, error_one, error_two, event) {
         field.nextElementSibling.innerHTML = error_one;
         event.preventDefault();
         return false;
-    } if (!field.value.match(regex)) {
+    } else if (!field.value.match(regex)) {
         field.nextElementSibling.innerHTML = error_two;
         event.preventDefault();
         return false;
@@ -32,4 +32,4 @@ function validation (event) {
     return true;
 }
 
-contactForm.addEventListener("submit", formValidation);
+contactForm.addEventListener("submit", validation);
