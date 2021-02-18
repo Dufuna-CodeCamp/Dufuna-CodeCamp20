@@ -2,9 +2,8 @@ const contactForm = document.getElementById("contactForm"),
     fullName = document.getElementById("fullName"),
     email = document.getElementById("email"),
     subject = document.getElementById("subject"),
-    message = document.getElementById("message");
-
-const nameVal =  /^[a-zA-Z ]+$/,
+    message = document.getElementById("message"),
+    nameVal =  /^[a-zA-Z ]+$/,
     emailVal = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,6})+$/,
     messageVal = /^[a-zA-Z]/;
 
