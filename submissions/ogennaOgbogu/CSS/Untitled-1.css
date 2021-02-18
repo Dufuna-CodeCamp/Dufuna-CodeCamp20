@@ -1,0 +1,275 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,body
+
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+body {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+
+
+nav>.left-tab>.logo>h2 {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+div.header {
+    background-color: lightgreen;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.left-tab {
+    justify-content: space-between;
+    display: flex;
+}
+
+.right-sidetab {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-right: 40px;
+    text-align: left;
+}
+
+div.right-sidetab>a {
+    color:black;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+
+.register {
+    
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 180px;
+    margin-left: 80px;
+}
+
+.flexbar {
+    display:flex;
+}
+
+.left-sideregister>p {
+
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.23;
+} 
+
+
+.left-sideregister>h3 {
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.15;
+    color: lightgreen;
+   
+}
+
+div.left-sideregister>p>strong>a {
+    color: lightgreen;
+    text-decoration: underline;
+    text-underline-position: below; 
+    text-decoration-color: lightgreen;
+}
+
+
+.submission {
+    padding: 20px;
+    height: 600px;
+    width: 600px;
+    text-align: left;
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+
+#fname, #lname, #oname, #phoneno, #email, #password, #password2 {
+    width: 550px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 2px;
+    margin-bottom: 9px;
+    margin-top: 0.5px;  
+}
+
+
+#signupbutton {
+    width: 180px;
+    height: 45px;
+    border-radius: 4px solid black;
+    background-color: lightgreen;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: center;
+    color: black;
+}
+
+.button1 {
+    display: flex;  
+    justify-content: center;  
+  
+}
+
+.tandc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+.footer {
+    background-color: rgba(000, 255, 000, 0.4);
+    width: 100%;
+    display: flex;
+    
+}
+
+footer>.aboutus {
+    padding-top: 30px;
+    padding-right: 100px;
+    margin-left: 20px;
+}
+
+footer>.aboutus>p>a {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+
+.social-network {
+        padding-top: 30px;
+        padding-left: 220px;
+}
+
+.social-img {
+    display: inline-block;
+}
+
+.social-network>p {
+    font-size: 15px;
+    line-height: 1.30;
+    color: black;
+}
+
+
+div.contact {
+    padding-left: 100px;
+    padding-top: 50px;
+    justify-content: center;
+    font-size: 15px;
+    
+} 
+
+
+
+.cright {
+    padding-top: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#newsletter {
+    width: 270px;
+    height: 50px;
+    border: solid 2px black;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+#submitbutton {
+    width: 180px;
+    height: 45px;
+    border-radius: 4px solid black;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: center;
+    color:green;
+}
+
+#submitbutton:hover {
+    background-color: black;
+    color: green;
+}
+
+
+@media screen and (min-width: 375px) {
+    .flexbar {
+        display: block;}
+
+    .register {
+        margin: auto;
+        padding: 5px;
+    }
+
+    .left-sideregister>h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .left-sideregister>p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .left-sideregister>br {
+        display: none;
+    }
+
+    .submission {
+        padding: 10px;
+        width: 80%;
+        text-align: left;
+        height: fit-content;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: auto;
+    }
+
+    .left-tab {
+        display: block;
+    }
+    
+    .logo {
+        white-space: nowrap;
+
+    }
+
+    div.right-sidetab>a {
+        line-height: 0;
+        padding: 10px;
+        display: block;
+    }
+
+    #fname, #lname, #oname, #phoneno, #email, #password, #password2 {
+        width: 100%;
+        justify-content: center;
+        font-size: 10px;
+    }
+}
