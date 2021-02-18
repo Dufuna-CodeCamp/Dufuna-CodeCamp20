@@ -2,7 +2,7 @@
 
 // This program will display every number between 100 and 150 using while loop
 $x = 101;
-while ($x <= 150) {
+while ($x < 150) {
 	echo "Number: $x <br>";
 	$x++;
 }
