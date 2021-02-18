@@ -9,7 +9,7 @@ while ($x <= 150) {
 
 // This program will display even numbers between 0 and 50 using for loop
 for($y = 2; $y < 50; $y++){
-    if($y > 0 && $y % 2 === 0){
+    if($y % 2 === 0){
         echo "Number: $y <br>";
     };
 }
