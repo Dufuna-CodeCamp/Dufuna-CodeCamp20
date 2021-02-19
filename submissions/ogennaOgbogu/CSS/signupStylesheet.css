@@ -160,13 +160,15 @@ footer>.about-us>p>a {
 
 .social-network {
         padding-top: 30px;
-        padding-left: 250px;
+        padding-left: 220px;
 }
 
 .social-img {
     display: inline;
-    width: 40px;
+    width: 30px;
     height: 30px;
+    white-space: nowrap;
+    padding-right: 10px;
 }
 
 .social-network>p {
