@@ -7,7 +7,10 @@ class Customer extends Connection {
     public function test()  {
         try{
             /* ACCESSING E-COMMERCE DATABASE AND QUERYING THE DATABASE*/
-            $sql = "SELECT * FROM customers";
+            $sql = "SELECT customers.customer_id, customers.first_name, customers.last_name, customers.email,orders.order_created_at
+                     FROM customers
+                    JOIN orders ON orders.order_id = customers.customer_id
+                    WHERE customer_id > 0";
             $stmt = $this->connect()->query($sql);
             $result = $stmt->fetchAll();
             
@@ -34,11 +37,11 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $try
     if(count($result) > 0){
         echo"<table>";
             echo"<tr>";
-                echo"<th> S/N <th>";
-                echo"<th> Full Name <th>";
-                echo"<th> Email Address <th>";
-                echo"<th> Created At <th>";
-                echo"<th> Actions <th>";
+                echo"<th> S/N </th>";
+                echo"<th> Full Name </th>";
+                echo"<th> Email Address </th>";
+                echo"<th> Created At </th>";
+                echo"<th> Actions </th>";
             echo"</tr>";
         // Loop through to access records (Objects in an array i.e datatype <=> JSON formatt)
         foreach($result as $row){
@@ -46,7 +49,7 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $try
                 echo "<td>" . $row['customer_id'] ."</td>";
                 echo "<td>" . $row['first_name']. $row['last_name'] ."</td>";
                 echo "<td>" . $row['email'] ."</td>";
-                echo "<td>" . $row['created_at'] ."</td>";
+                echo "<td>" . $row['order_created_at'] ."</td>";
                 echo "<td>" . '<button><a href="#">View</a></button>' . "</td>";
             echo"</tr>";
         }
