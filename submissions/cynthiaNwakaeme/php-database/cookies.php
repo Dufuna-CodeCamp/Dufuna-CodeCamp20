@@ -27,8 +27,8 @@ class Customer extends Connection {
     }
 }
 
-$try = new Customer();
-$result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $try->test();
+$customer = new Customer();
+$result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $customer->test();
 
 
     // To display results on the browser as a table, we convert the result to array/object.
