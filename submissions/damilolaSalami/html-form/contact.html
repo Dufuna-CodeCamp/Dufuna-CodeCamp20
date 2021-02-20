@@ -49,14 +49,18 @@
     </div>
 
     <section>
-        <form class="emailform container">
+        <form id="contactForm" class="emailform container">
                 <img src="../html/images/email1.jpg" alt="email">
                 <h4>Or better still send us a message</h4>
-                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                <input type="text" id="fullname" name="fullName" placeholder="Full Name">
+                <span class="error-block"></span>
                 <input type="email" id="email" name="email" placeholder="Email Address">
+                <span class="error-block"></span>
                 <input type="text" id="subject" name="subject" placeholder="Subject">
+                <span class="error-block"></span>
                 <p>Message</p> 
-                <textarea rows="10" cols="30" name="message" class="msgbox"></textarea>
+                <textarea rows="10" cols="30" id="message" name="message" class="msgbox"></textarea>
+                <span class="error-block"></span>
                 <input type="submit" value="SEND" class="send">
         </form>
     </section>
@@ -72,10 +76,11 @@
             </ul>
         </div>
 
-        <div class="newsletter footerdiv">
+        <div class="newsletter footerdiv" id="newsLetter">
             <p>Sign up for Newsletter</p>
-            <input type="email" class="emailletter" placeholder="Enter your email address">
-            <input type="button" value="SUBMIT" class="submit">
+            <input type="email" id="emailLetter" class="emailletter" placeholder="Enter your email address">
+            <span class="error-block"></span>
+            <input type="button" id="submitEmail" value="SUBMIT" class="submit">
         </div>
 
         <div class="connect footerdiv">
@@ -91,5 +96,7 @@
         <p>&copy;2020 BuyMe.com All rights reserved.</p>
     </div>
 </footer>
+<script src="../domManipulation/contactForm.js"></script>
+<script src="../domManipulation/newsletter.js"></script>
 </body>
 </html>
