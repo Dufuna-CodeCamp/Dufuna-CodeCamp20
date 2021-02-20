@@ -203,14 +203,14 @@ footer {
 .right-footer {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 footer>.about-us {
     padding-top: 30px;
     padding-right: 100px;
     margin-left: 20px;
-    width: 30%;
+    width: 20%;
 }
 
 footer>.about-us>p>a {
