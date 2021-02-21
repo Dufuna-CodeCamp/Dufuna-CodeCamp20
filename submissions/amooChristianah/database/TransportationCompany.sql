@@ -69,8 +69,7 @@ select count(*) from accident_cases;
     -- Result = 218
     
 #5. The id, name and the total number of passengers who paid a fare greater than $100 and above at the age od 35 with siblings and spouses on board
-	SELECT passengers.id, passengers.full_name,
-    COUNT(*) OVER () AS total_count  FROM passengers 
+	SELECT passengers.id, passengers.full_name FROM passengers 
     LEFT JOIN trip_details ON trip_details.id = passengers.id
     WHERE trip_fare > 100 AND age > 35 AND number_of_siblings_spouse !=0; 
     
