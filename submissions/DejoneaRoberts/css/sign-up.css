@@ -1,0 +1,258 @@
+
+/*-- -----------------------GENERAL----------------------- --*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  font-family: 'Lato' , sans-serif;
+}
+
+/*-- -----------------------NAV----------------------- --*/
+ nav {
+   background-color: purple;
+ }
+nav ul,
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 20px 0;
+  line-height: 50px;
+}
+
+.nav-list {
+  align-items: left;
+  padding: 0 20px;
+  line-height:22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item a:hover,
+.reg a:hover {
+  color: black;
+}
+/*-------------------------DESCRIPTION-------------------------*/
+div h2 {
+  color: purple;
+}
+
+.reg {
+  text-align: center;
+  padding: 0 30px 0;
+  margin: 0 10% 0 ;
+}
+
+.reg a {
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+
+}
+/*-------------------------CONTACT-FORM-------------------------*/
+fieldset{
+  margin: 0 9% 28px;
+  border-radius: 15px;
+  padding: 26px;
+}
+fieldset label {
+  line-height: 30px;
+  font-size: 15px;
+}
+fieldset input {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  width: 100%;
+  height:30px;
+  box-shadow: none;
+}
+
+#terms {
+  height: auto;
+  width: auto;
+}
+.terms {
+  font-size: 13px;
+  color: purple;
+  font-weight: bold;
+}
+.sign-button {
+  text-align: center;
+}
+
+.sign-button button{
+  background-color: purple;
+  border: purple 1px;
+  color: white;
+  border-radius: 8px;
+  height: 26px;
+  width: 100px;
+}
+/*-------------------------FOOTER-------------------------*/
+footer {
+  background-color: purple;
+  color: white;
+  padding: 0 20px;
+  line-height:22px;
+}
+.wrapper {
+  display: grid;
+  column-gap: 20px;
+}
+.footer-list {
+  padding-top: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: black;
+}
+
+footer label {
+  line-height: 30px;
+}
+footer input {
+  height: 28px;
+  width: 70%;
+}
+footer button {
+  background-color: white;
+  border: white 1px;
+  height: 28px;
+  color: purple;
+  font-weight: bold;
+}
+
+img {
+  height: 35px;
+  width: auto;
+  padding-right: 10px;
+}
+
+.copyright{
+  text-align: center;
+}
+
+/*-------------------------WEB-RESPONSIVENESS-------------------------*/
+
+@media screen and (min-width: 600px){
+  nav {
+    padding: 20px 30px;
+  }
+  nav ul {
+    float: right;
+    display: inline;
+
+  }
+  nav li {
+    display: inline;
+    float: left;
+    padding: 0 0 0 15px;
+  }
+  .title {
+    display: inline;
+    line-height: normal;
+  }
+
+  fieldset {
+    margin: 0 12% 30px;
+  }
+  .reg {
+    margin: 0 22% 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #b {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .footer-list {
+    padding-top: 30px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .reg {
+    padding: 22% 20% 0;
+    margin: 0;
+    text-align: center;
+    text-align: left;
+  }
+  .description p {
+    font-size: 25px;
+  }
+  .sign-up {
+    padding-top: 30px;
+  }
+
+  .main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main h2 {
+    font-size: 32px;
+
+  }
+
+  .footer-list {
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  .logos {
+    margin-top: -10px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr 2fr;
+  }
+  .logos {
+    padding: 0;
+  }
+  footer {
+    padding: 0 20px;
+    line-height: normal;
+  }
+
+  footer a {
+    line-height: 30px;
+  }
+  .logos {
+    display: inline-block;
+  }
+
+  footer img {
+    width: auto;
+    height: 40px;
+  }
+  #yt {
+    padding: 0;
+  }
+
+  #b {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
+
+}
