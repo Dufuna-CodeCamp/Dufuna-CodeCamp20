@@ -71,8 +71,8 @@ where accident_status > 0 and embarkation_point = 'S';
 -- Answer = 218;
 
 -- 5 Name,Id,total number of people that paid trip fare more than $100 and above the age of 35 with siblings or spouses on board
-select passengers.id, passengers.full_name, COUNT(*) OVER () AS total_count from passengers 
-inner join trips on trips.id = passengers.id 
+select passengers.id, passengers.full_name from passengers 
+ join trips on trips.id = passengers.id 
 where trip_fare > 100 and age > '35' and siblings_or_spouses_abroad != 0;
 
 
