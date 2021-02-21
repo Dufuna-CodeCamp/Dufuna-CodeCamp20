@@ -13,7 +13,7 @@ class Customer extends Connection {
                     WHERE customer_id > 0";
             $stmt = $this->connect()->query($sql);
             $result = $stmt->fetchAll();
-            
+       
             /* GENERATING COOKIES
             1. result is initalized to get all records from database
             2. This result is serialize to change the array/object to simple string/text file which is required to create cookies.
@@ -49,7 +49,7 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $cus
                 echo "<td>" . $row['first_name']. $row['last_name'] ."</td>";
                 echo "<td>" . $row['email'] ."</td>";
                 echo "<td>" . $row['order_created_at'] ."</td>";
-                echo "<td>" . '<button><a href="#">View</a></button>' . "</td>";
+                echo "<td>" . '<button><a href="./order-cookies.php?id=' . $row['customer_id'] . '">View</a></button>' . "</td>";
             echo"</tr>";
         }
         echo"<table>";
