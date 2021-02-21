@@ -7,8 +7,10 @@ class Customer extends Connection {
     public function test()  {
         try{
             /* ACCESSING E-COMMERCE DATABASE AND QUERYING THE DATABASE*/
-            $sql = "SELECT * FROM customers";
-
+            $sql = "SELECT customers.customer_id, customers.first_name, customers.last_name, customers.email,orders.order_created_at
+                     FROM customers
+                    JOIN orders ON orders.order_id = customers.customer_id
+                    WHERE customer_id > 0";
             $stmt = $this->connect()->query($sql);
             $result = $stmt->fetchAll();
             
@@ -25,9 +27,8 @@ class Customer extends Connection {
     }
 }
 
-$try = new Customer();
-$result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $try->test();
-
+$customer = new Customer();
+$result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $customer->test();
 
     // To display results on the browser as a table, we convert the result to array/object.
     //$output = unserialize($_COOKIE["customer"]);
@@ -47,8 +48,8 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $try
                 echo "<td>" . $row['customer_id'] ."</td>";
                 echo "<td>" . $row['first_name']. $row['last_name'] ."</td>";
                 echo "<td>" . $row['email'] ."</td>";
-                echo "<td>" . $row['created_at'] ."</td>";
-                echo "<td>" . '<button> <a href="#">View</a> </button>' . "</td>";
+                echo "<td>" . $row['order_created_at'] ."</td>";
+                echo "<td>" . '<button><a href="#">View</a></button>' . "</td>";
             echo"</tr>";
         }
         echo"<table>";
@@ -58,3 +59,4 @@ $result = isset($_COOKIE['customer']) ? unserialize($_COOKIE['customer']) : $try
     }else{
         echo 'No records matching your query were found.';
     }
+

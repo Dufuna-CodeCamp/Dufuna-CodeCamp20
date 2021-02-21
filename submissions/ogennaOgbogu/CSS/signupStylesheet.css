@@ -1,0 +1,456 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,body
+
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+
+
+nav>.left-tab>.logo>h2 {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+div.header {
+    background-color: lightgreen;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.left-tab {
+    justify-content: space-between;
+    display: flex;
+}
+
+.right-sidetab {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-right: 40px;
+    text-align: left;
+}
+
+div.right-sidetab>a {
+    color:black;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+
+.register {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 180px;
+    margin-left: 80px;
+}
+
+.flexbar {
+    display:flex;
+}
+
+.left-sideregister>p {
+
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.23;
+}
+
+
+.left-sideregister>h3 {
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.15;
+    color: lightgreen;
+   
+}
+
+div.left-sideregister>p>strong>a {
+    color: lightgreen;
+    text-decoration: underline;
+    text-underline-position: below;
+    text-decoration-color: lightgreen;
+}
+
+
+.submission {
+    padding: 20px;
+    height: 600px;
+    width: 600px;
+    text-align: left;
+    float: right;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+
+#fname, #lname, #oname, #phoneno, #email, #password, #password2 {
+    width: 550px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 2px;
+    margin-bottom: 9px;
+    margin-top: 0.5px;
+}
+
+
+#sign-up-button {
+    width: 180px;
+    height: 45px;
+    border-radius: 4px solid black;
+    background-color: lightgreen;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: center;
+    color: black;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.terms-and-conditions {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+.footer {
+    background-color: rgba(000, 255, 000, 0.4);
+    width: 100%;
+    display: flex;
+}
+
+footer>.about-us {
+    padding-top: 30px;
+    padding-right: 100px;
+    margin-left: 20px;
+}
+
+footer>.about-us>p>a {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+
+.social-network {
+        padding-top: 30px;
+        padding-left: 220px;
+}
+
+.social-img {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.social-network>p {
+    font-size: 15px;
+    line-height: 1.30;
+    color: black;
+}
+
+
+div.contact {
+    padding-left: 100px;
+    padding-top: 50px;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
+
+
+#newsletter {
+    width: 270px;
+    height: 50px;
+    border: solid 2px black;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+#submitbutton {
+    width: 180px;
+    height: 45px;
+    border-radius: 4px solid black;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: center;
+    color:green;
+}
+
+#submitbutton:hover {
+    background-color: black;
+    color: green;
+}
+
+.copy-right>p {
+    display: block;
+    background-color:rgba(000, 255, 000, 0.4);
+    margin: auto;
+    text-align: center;
+}
+
+.right-footer {
+    display: flex;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    .flexbar {
+        display: block;
+    }
+
+    .register {
+        margin: auto;
+        padding: 5px;
+    }
+
+    .logo {
+        white-space: nowrap;
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .right-sidetab {
+        margin: auto;
+        padding-top: 0;
+        padding-left: 8px;
+        line-height: 0.5
+        
+    }
+    .right-side {
+        font-size: 12px;
+        padding: 0 10px 10px;
+    }
+
+
+    div.right-sidetab>a {
+        padding: 5px;
+        font-size: 12px;
+        display: block;
+        margin: 0;
+    }
+
+    .left-sideregister>h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .left-sideregister>p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .left-sideregister>br {
+        display: none;
+    }
+
+    .left-tab {
+        display: block;
+    }
+
+    .submission {
+        padding: 10px;
+        width: 80%;
+        text-align: left;
+        height: fit-content;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: auto;
+        float: none;
+    }
+
+    #fname, #lname, #oname, #phoneno, #email, #password, #password2 {
+        width: 100%;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    .terms-and-conditions {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    #sign-up-button {
+        font-size: 10px;
+        width: 85px;
+        height: 30px;
+        background-color: rgba(000, 222, 000, 0.2);
+    }
+
+    .button1 {
+        padding-bottom: 10px;
+    }
+
+    
+    footer {
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    
+    footer>.about-us {
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer>.about-us>p {
+            margin: 0;
+    }
+    
+    footer>.about-us>p>a {
+            line-height: 2;
+            font-size: 15px;
+            
+        }
+    
+    div.contact {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    
+    div.social-network {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .copy-right {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .newsletter-sign-up {
+        padding: 5px 0;
+    }
+
+ 
+    .contact>.newsletter {
+        display: flex;
+        padding: 5px 0;
+    }
+    
+    .newsletter>input[for="text"] {
+        padding: 0 7px 0 0;
+    }
+    
+    #submitbutton {
+        width: 85px;
+        height: 35px;
+        margin-left: 10px;
+    }
+
+
+    #newsletter {
+        width: 220px;
+        height: 35px;
+    }
+
+    .right-footer {
+        display: block;
+    }
+    
+    
+
+    
+
+}
+
+
+    @media screen and (min-width: 850px) and (max-width: 1200px){
+    .flexbar {
+        flex-direction: column;
+    }
+
+    #fname, #lname, #oname, #phoneno, #email, #password, #password2 {
+        width: 100%;
+    }
+
+    .register {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .left-sideregister>h3,.left-sideregister>p {
+        text-align: center;
+    }
+
+    
+    .submission {
+        
+        height: fit-content;
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+    
+    footer {
+       margin-top: 20px;
+       flex-wrap: wrap;
+    }
+
+    .footer>.about-us>p>a {
+        padding-left: 60px;
+        white-space: nowrap;
+    }
+
+    .newsletter {
+        display: flex;
+    }
+
+    #submitbutton {
+        margin-left: 10px;
+    }
+    
+
+    .social-network {
+        padding: 0 0 0 20px;
+    }
+
+    .newsletter-sign-up>.contact {
+        padding: 40px 20px 0;
+        
+    }
+
+    .copy-right {
+        margin: auto;
+    }
+
+    .right-footer {
+        display: block;
+    }
+    
+    }
