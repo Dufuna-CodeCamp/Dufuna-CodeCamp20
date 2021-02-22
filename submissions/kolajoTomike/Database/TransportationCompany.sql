@@ -75,25 +75,9 @@ select passengers.id, passengers.full_name from passengers
  join trips on trips.id = passengers.id 
 where trip_fare > 100 and age > '35' and siblings_or_spouses_abroad != 0;
 
-
- -- 6 The total number of passengers who paid a fare greater than $100 and above the age of 35 with siblings or spouses on board
+-- 6 The total number of passengers who paid a fare greater than $100 and above the age of 35 with siblings or spouses on board
 SELECT COUNT(*) FROM passengers
 	join trips on trips.id = passengers.id
     where trip_fare > 100 and age > 35 and siblings_or_spouses_abroad > 0;
   
-  -- Answer = 9 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
+  -- Answer = 9  
