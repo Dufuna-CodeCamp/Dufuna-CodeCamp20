@@ -1,8 +1,5 @@
 <?php
 require_once("cookie.php");
-try {
-  	$sql = "SELECT * FROM customers";
-  	$result= $pdo->query($sql);
     if ($result->rowCount()>0){
         echo "<table style='border: solid 1px black'>";
         	echo "<tr>";
@@ -25,11 +22,8 @@ try {
         //free result set
         unset($result);
     }else{
-        echo "no Records matching your Query were found";
+        echo "No Records matching your Query were found";
     }
-}catch (PDOException $e) {
-    die ('could not execute ' . $sql . $e->getMessage());
-}
 // close connection
 unset($pdo);
 ?>
