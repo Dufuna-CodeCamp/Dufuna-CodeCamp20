@@ -11,7 +11,6 @@ html,body {
     overflow-y: auto;
 }
 
-
 body {
     font-family: 'Montserrat', 'Raleway', sans-serif;
 }
@@ -25,7 +24,6 @@ nav {
     margin: 0 10px;
 }
 
-
 .left-tab {
     width: 50%;
     float: left;
@@ -36,13 +34,12 @@ nav {
     width: 50%;
     text-align: end;
     margin: auto;
-
 }
-.right-sidetab>a {
+
+.right-sidetab > a {
     text-decoration: none;
     color: black;
     padding: 0 30px;
-    
 }
 
 main {
@@ -62,24 +59,24 @@ main {
     margin: auto;
 }
 
-.phone-sign>p:nth-child(2) {
+.phone-sign > p:nth-child(2) {
     font-weight: bold;
 }
 
-.phone-sign>p>a {
+.phone-sign > p > a {
     text-decoration: none;
     color: black;
 }
 
-.open-email>img {
+.open-email > img {
     padding-top: 10px;
 }
 
-.open-email>p {
+.open-email > p {
     font-weight: bold;
 }
 
-.open-email>p>a {
+.open-email > p > a {
     text-decoration: none;
     color: black;
     font-weight: normal;
@@ -89,7 +86,7 @@ main {
     padding-top: 20px;
 }
 
-.social-media>p {
+.social-media > p {
     font-weight: bold;
 }
 
@@ -103,36 +100,38 @@ main {
     padding: 30px;
 }
 
-.message>img {
+.message > img {
     display: block;
     margin: auto;
     padding-bottom: 10px;
 }
 
-.message>p {
+.message > p {
     text-align: center;
     margin: auto;
     padding-bottom: 10px;
 }
 
-.form>input.full-name,.form>input.email,.form>input.subject {
+.form > input.full-name,
+.form > input.email,
+.form > input.subject {
     width: 100%;
-    height: 0;
+    height: auto;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
 }
 
-.form>textarea.message2 {
+.form > textarea.message2 {
     width: 100%;
     height: 150px;
 }
 
-.form>button {
+.form > button {
     width: 60px;
 }
 
-.form>button.submit-text {
+.form > button.submit-text {
     float: right;
     background: rgba(000, 255, 000, 0.4);
     color: black;
@@ -142,37 +141,37 @@ main {
     padding-top: 10px;
 }
 
-.about-us>p>a {
+.about-us > p > a {
     text-decoration: none;
     color: black;
 }
 
-.contact>input#news-letter {
+.contact > input#news-letter {
     margin-top: 10px;
     width: 250px;
     height: 40px;
     font-size: medium;
 }
 
-.social-img>img:nth-child(1) {
+.social-img > img:nth-child(1) {
     width: 41px;
     height: 40px;
     padding: 5px;
 }
 
-.social-img>img:nth-child(2) {
+.social-img > img:nth-child(2) {
     width: 50px;
     height: 40px;
     padding: 5px;
 }
 
-.social-img>img:nth-child(3) {
+.social-img > img:nth-child(3) {
     width: 50px;
     height: 40px;
     padding: 5px;
 }
 
-.social-img>img:nth-child(4) {
+.social-img > img:nth-child(4) {
     width: 60px;
     height: 40px;
     padding: 5px;
@@ -184,13 +183,13 @@ main {
     justify-content: space-between;
 }
 
-button#submit-button {
+button #submit-button {
     width: 70px;
     height: 40px;
     color: darkgreen;
 }
 
-.contact>input::placeholder {
+.contact > input::placeholder {
     color: darkgreen;
 }
 
@@ -206,14 +205,14 @@ footer {
     width: 80%;
 }
 
-footer>.about-us {
+footer > .about-us {
     padding-top: 30px;
     padding-right: 100px;
     margin-left: 20px;
     width: 20%;
 }
 
-footer>.about-us>p>a {
+footer > .about-us > p > a {
     font-size: 18px;
     text-decoration: none;
     text-align: left;
@@ -222,7 +221,6 @@ footer>.about-us>p>a {
 
 .contact {
     margin: auto;
-
 }
 
 .copy-right {
@@ -231,7 +229,6 @@ footer>.about-us>p>a {
 }
 
 @media screen and (max-width: 850px) {
-
 
 nav {
     display: block;
@@ -251,7 +248,7 @@ nav {
     text-align: inherit;
 }
 
-.right-sidetab>a {
+.right-sidetab > a {
     text-decoration: none;
     color: black;
     padding: 5px 0;
@@ -277,7 +274,7 @@ main {
        width: auto;
 }
 
-.message>p {
+.message > p {
     font-weight: bold;
     padding-bottom: 15px;
 }
@@ -295,7 +292,7 @@ main {
     width: 100%;
 }
 
-.contact>input#news-letter {
+.contact > input#news-letter {
     margin-right: 8px;
     width: 70%;
 }
@@ -304,11 +301,10 @@ button#submit-button {
     width: 25%;
 }
 
-.social-network>p {
+.social-network > p {
     margin-bottom: 0;
     font-weight: bold;
 }
-
 }
 
 @media screen and (min-width: 851px) and (max-width: 1200px) {
@@ -317,7 +313,7 @@ button#submit-button {
         text-align: end;
     }
 
-    .right-sidetab>a {
+    .right-sidetab > a {
         margin: auto;
         padding: 0 20px;
     }
@@ -349,7 +345,7 @@ button#submit-button {
         width: 50%;
     }
 
-    .contact>input#news-letter {
+    .contact > input#news-letter {
         margin-right: 8px;
         width: 70%;
     }
@@ -358,9 +354,8 @@ button#submit-button {
         width: 25%;
     }
 
-    .social-network>p {
+    .social-network > p {
         margin-bottom: 0;
         font-weight: bold;
     }
-
 }
