@@ -219,15 +219,13 @@ img {
     padding-top: 20px;
     padding-left: 15px;
   }
-  .logos {
-    margin-top: -10px;
-  }
   .wrapper {
     grid-template-columns: 1fr 2fr;
   }
   .logos {
     padding: 0;
     display: inline-block;
+    margin-top: -10px;
   }
   footer {
     padding: 0 20px;
