@@ -1,4 +1,5 @@
 <?php
+
 require_once("connection.php");
 try {
     $sql = "SELECT * FROM customers";
