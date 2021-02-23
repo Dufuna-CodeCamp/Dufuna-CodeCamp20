@@ -7,9 +7,7 @@ try {
     setcookie("customers", "view", time()+7200, "/");
     return $result;
 } catch (PDOException $e) {
-die ('haaa...could not execute ' . $sql . $e->getMessage());
+die ('Sorry...Could not Execute ' . $sql . $e->getMessage());
 }
-
-$result = isset($_COOKIE['view']) ? unserialize($_COOKIE['view']) : $view->list($id);
 
 ?>
