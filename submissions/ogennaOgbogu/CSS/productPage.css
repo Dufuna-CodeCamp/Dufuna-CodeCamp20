@@ -102,8 +102,8 @@ button.buy-button {
     padding: 0 20px 20px;
 }
 
-.product-two , 
-.product-three , 
+.product-two ,
+.product-three ,
 .product-four {
     background-color: white;
     padding: 20px;
@@ -277,8 +277,8 @@ footer > .about-us > p > a {
         padding: 0;
     }
 
-    .product-two , 
-    .product-three , 
+    .product-two ,
+    .product-three ,
     .product-four {
         background-color: white;
         display: block;
