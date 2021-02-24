@@ -1,5 +1,8 @@
 <?php
 require_once("cookie.php");
+$queryDb = new DbQuery();
+$results = isset($_COOKIE['view'])? unserialize($_COOKIE['view']) : $queryDb->getAllCustomers();
+   
     if ($result->rowCount()>0){
         echo "<table style='border: solid 1px black'>";
         	echo "<tr>";
@@ -19,7 +22,6 @@ require_once("cookie.php");
             	echo "</tr>";
         	}
         echo "</table>";
-        //free result set
         unset($result);
     }else{
         echo "No Records matching your Query were found";
