@@ -1,0 +1,188 @@
+body {
+    margin: 0px;
+    font-family: 'Encode Sans', sans-serif;
+    background-color: lightseagreen;
+}
+
+.top {
+    display:  flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#taskbtn1 {
+    border: none;
+    background-color: rgb(81, 81, 82);
+    color: white;
+    font-size: 12px;
+    padding: 10px 10px;
+}
+
+#taskbtn1:hover {
+    background: gray;
+}
+
+#taskbtn1:active {
+    background-color:rgb(81, 81, 82);
+    box-shadow: rgb(48, 184, 194);
+    transform: translateY(4px);
+  }
+
+#taskbtn2 {
+    border: none;
+    background-color: rgb(81, 81, 82);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#taskbtn2:hover {
+    background: gray;
+}
+
+#heading1{
+    margin-bottom: 0px;
+}
+
+#heading2{
+    margin-top: 0px;
+}
+
+.side2 {
+    display: 
+    flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.word_below{
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.line1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+   
+}
+
+#word1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#word2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#word3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h6 {
+    color:lightseagreen;
+    font-size: 10px;
+}
+
+.center {
+    border: 2px; 
+    color: white;
+    border-color: none;
+    padding-bottom: 10px;
+    background-color: rgb(81, 81, 82);
+    height: 400px;
+    width: 600px;
+    text-align: left;
+    margin: 40px;
+    margin-left: 30%;
+    padding: 40px;
+    display: inline-block;
+}
+
+.row {
+    display:  flex;
+}
+
+
+#task_input {
+    width: 60%;
+    border-color: white;
+    border-radius: 1px;
+    width: 250px;
+    font-size: 12px;
+    padding: 5px;
+    
+}
+
+.error-block {
+    display: block;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white
+}
+
+
+#btn {
+    background-color:lightseagreen;
+    border-radius: 1px;
+    border: none;
+    padding: 8.5px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.line1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+   
+}
+
+#check1, #check2, #check3 {
+    border: none;
+    background-color: rgb(81, 81, 82);
+    color: white;
+    cursor: pointer;
+}
+
+#check1:hover, #check2:hover, #check3:hover {
+    background: gray;
+}
+
+.binimage1 {
+    margin-left: 42%;
+    border: none;
+    background-color: rgb(81, 81, 82);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+
+.binimage2 {
+    margin-left: 42%;
+    border: none;
+    background-color: rgb(81, 81, 82);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+
+.binimage3 {
+    margin-left: 42%;
+    border: none;
+    background-color: rgb(81, 81, 82);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+
+.binimage3:hover, .binimage2:hover, .binimage1:hover {
+    background: gray;
+}
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI DESIGN</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="center">
+  <div class="top">
+    <div class="side1">
+      <h4 id="heading1">Saturday, June 1</h4>
+      <h6 id="heading2">3 Active Tasks</h6>
+    </div>
+    <div class="side2">
+      <button id="taskbtn1" type="submit">Incomplete tasks</button>
+      <button id="taskbtn2" type="submit">Completed tasks</button>
+    </div>
+  </div>
+  <form id="validateForm" method="post">
+    <div class="row">
+      <div class="part1">
+        <input type="text" name="task_input" id="task_input" placeholder="Enter a task...">
+        <span class="error-block"></span>
+      </div>
+      <div>
+        <button id="btn" type="submit">Add Task</button>
+      </div>
+    </div>
+  </form>
+  <div class="word_below">
+    <hr><br>
+    <div class="line1">
+      <button type = "button" id="check1"><i class="fa fa-check-circle-o"></i></button>
+      <p id="word1">Client meeting @ 2:30pm</p><br>
+      <button onclick="removeElement1()" class="binimage1"><i class="fa fa-trash"></i></button>
+    </div>
+    <hr><br>
+    <div class="line1">
+      <button type = "button" id="check2"><i class="fa fa-check-circle-o"></i></button>
+      <p id="word2">Design app interface</p><br>
+      <button onclick="removeElement2()" class="binimage2"><i class="fa fa-trash"></i></button>
+    </div>
+    <hr><br>
+    <div class="line1">
+      <button type = "button" id="check3"><i class="fa fa-check-circle-o"></i></button>
+      <p id="word3">Learn Node.js</p>
+      <button onclick="removeElement3()" class="binimage3"><i class="fa fa-trash"></i></button>
+    </div>
+    <hr>
+  </div>
+</div>
+<script src="design.js"></script>
+</body>
+</html>
