@@ -7,7 +7,7 @@ switch ($temperature) {
 	case ($temperature > 20) && ($temperature < 30):
 		echo "The weather is just perfect.";
 		break;
-	case ($temperature > 30) && ($temperature < 40:
+	case ($temperature > 30) && ($temperature < 40):
 		echo "It's so hot today";
 		break;
 	case ($temperature >= 40):
