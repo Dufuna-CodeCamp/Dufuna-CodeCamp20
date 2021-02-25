@@ -1,6 +1,6 @@
 <?php
 require_once("cookie.php");
-$queryDb = new DbQuery();
+$queryDb = new QueryDb();
 $results = isset($_COOKIE['view'])? unserialize($_COOKIE['view']) : $queryDb->getAllCustomers();
    
     if ($result->rowCount()>0){
