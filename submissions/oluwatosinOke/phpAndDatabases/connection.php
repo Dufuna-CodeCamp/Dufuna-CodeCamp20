@@ -2,7 +2,7 @@
 //connecting to the mysql database
   
 try {
-  $pdo = new PDO("mysql: host=localhost; dbname=e_store", "root", "tocyn");
+  $pdo = new PDO("mysql: host=localhost; dbname=my_favorite_online_store", "root", "tocyn");
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   //echo "Connected Succefully....";
   return $pdo;
