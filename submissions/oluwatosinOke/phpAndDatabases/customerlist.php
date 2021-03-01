@@ -18,7 +18,7 @@ $results = isset($_COOKIE['view'])? unserialize($_COOKIE['view']) : $queryDb->ge
             		echo "<td style='border: solid 1px black'>" . $row['first_name'] . ' ' . $row['last_name'] . "</td>";
             		echo "<td style='border: solid 1px black'>" . $row['email_address'] . "</td>";
             		echo "<td style='border: solid 1px black'>" . $row['created_at'] . "</td>";
-            		echo "<td style='border: solid 1px black'>" . '<button><a href="#">View</a></button>' . "</td>";
+            		echo "<td style='border: solid 1px black'>" . '<button><a href="./customersOrder.php?id='. $row['id'] .'">View</a></button>' . "</td>";
             	echo "</tr>";
         	}
         echo "</table>";
