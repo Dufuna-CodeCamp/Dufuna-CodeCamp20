@@ -1,14 +1,27 @@
 <?php
 require_once("connection.php");
-try {
-    $sql=   "SELECT  other_items.unit_price, other_items.quantity, other_items.total_amount, 
-                orders.ordercreated_at, orders.id, products.product_name, customers_address.street_address,
-                customers_address.city, customers_address.state, customers_address.country
-            FROM other_items
-            LEFT JOIN orders ON orders.id = other_items.order_id
-            LEFT JOIN products ON products.id = other_items.product_id
-            LEFT JOIN customers_address ON orders.customer_orders = customers_address.customer_id";
-    $result= $pdo->query($sql);
+class QueryDb {
+    public function getAllCustomers() {
+        try {
+            $sql="SELECT  other_items.unit_price, other_items.quantity, other_items.total_amount, 
+                        orders.ordercreated_at,orders.id, products.product_name, customers_address.street_address,
+                        customers_address.city, customers_address.state, customers_address.country
+                    FROM other_items
+                    LEFT JOIN orders ON orders.id = other_items.order_id
+                    LEFT JOIN products ON products.id = other_items.product_id
+                    LEFT JOIN customers_address ON orders.customer_orders = customers_address.customer_id";
+            $result= $pdo->query($sql);
+            // setting up the cookie to save the result gotten from the databse
+            setcookie("customers", "view", time()+7200, "/");
+            return $result;
+        } catch (PDOException $e) {
+            die ('Sorry...Could not Execute ' . $sql . $e->getMessage());
+        }
+    }
+}
+$queryDb = new QueryDb();
+$results = isset($_COOKIE['view'])? unserialize($_COOKIE['view']) : $queryDb->getAllCustomers();
+    
     if ($result->rowCount()>0){
         echo "<table style='border: solid 1px black'>";
             echo "<tr >";
@@ -37,9 +50,6 @@ try {
     }else{
         echo "no Records matching your Query were found";
     }
-}catch (PDOException $e) {
-    die ('could not execute ' . $sql . $e->getMessage());
-}
 // close connection
 unset($pdo);
 ?>   
