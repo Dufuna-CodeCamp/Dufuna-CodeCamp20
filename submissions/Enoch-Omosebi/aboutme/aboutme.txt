@@ -1,8 +1,0 @@
-hello world 
-my name is Enoch Omosebi
-
-ive been able to push my first task on git hub
-
-
-What i hope to achieve at the end of this program
-what i hope to achieve is a better understanding in full stack web development as well as a certificate to help in my present field of study and in the near by future..work.      

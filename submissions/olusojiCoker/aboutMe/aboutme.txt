@@ -1,6 +1,0 @@
-Hello world
-My name is Olusoji Coker.
-
-I have been able to push my first task to git hub.
-
-At the end of this program I aim to acquire skills that will enable me develop applications to solve problems.
