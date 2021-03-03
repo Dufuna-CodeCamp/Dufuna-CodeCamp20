@@ -5,7 +5,6 @@ for($i = 101; $i < 150; $i++){
 }
 //Display even numbers between 0 and 50
 $x = 0;
-
 while($x < 50) {
     if($x % 2 == 0){
         echo $x ."<br>"; 
