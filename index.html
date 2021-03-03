@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Checker</title>
+
+  <!-- Import our css styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Weather Checker
+      </a>
+    </div>
+  </nav>
+
+  <div class="container-fluid current-weather">
+    <div class="my-5">
+      <div class="form-floating mb-3 floating-input">
+        <input type="text" class="form-control location" id="floatingInput">
+        <label for="floatingInput">Enter A City Name</label>
+        <p class="err-msg p-2"></p>
+      </div>
+
+      <div class="card shadow">
+        <div class="card-body info">
+          <div class="card mb-3 shadow">
+            <h5 class="card-header">Description</h5>
+            <div class="card-body">
+              <span class="weather-icon"><img src="" /></span>
+              <p class="card-text desc text-center"></p>
+            </div>
+          </div>
+
+          <div class="card mb-3 shadow">
+            <h5 class="card-header">City/Country</h5>
+            <div class="card-body">
+              <p class="card-text city text-center"></p>
+            </div>
+          </div>
+
+          <div class="card mb-3 shadow">
+            <h5 class="card-header">Temperature</h5>
+            <div class="card-body temp-body">
+              <p class="card-text temp"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 more-info shadow">
+          <h5 class="card-header">More Info</h5>
+          <div class="card-body">
+            <div class="input-group flex-nowrap mb-3">
+              <span class="input-group-text">Min-Temp:</span>
+              <p class="card-text form-control input-group temp-min"></p>
+            </div>
+
+            <div class="input-group flex-nowrap mb-3">
+              <span class="input-group-text">Max-Temp:</span>
+              <p class="card-text form-control input-group temp-max"></p>
+            </div>
+
+            <div class="input-group flex-nowrap mb-3">
+              <span class="input-group-text">Humidity:</span>
+              <p class="card-text form-control input-group humidity"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center info">
+        <div class="desc col-md-4 ml-2"></div>
+        <div class="city col-md-4 ml-2"></div>
+        <div class="temp col-md-4 ml-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>

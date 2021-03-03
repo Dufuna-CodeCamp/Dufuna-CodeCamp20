@@ -1,0 +1,54 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.city, .desc{
+  font-size: medium;
+}
+.desc {
+  text-transform: capitalize;
+}
+.location {
+  font-size: larger;
+  border-radius: 15px;
+  border-bottom: 2px solid #2a9d8f;
+}
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.q {
+  margin: 0 auto;
+}
+.floating-input {
+  width: 350px;
+  margin: 0 auto;
+}
+.card-header {
+  color: #2a9d8f;
+}
+.temp-body {
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.err-msg {
+  color: red;
+  text-transform: capitalize;
+}
+.err-msg:empty {
+  display: none;
+}
+.weather-icon {
+  float: left;
+}
+.more-info {
+  margin: 0 auto;
+  width: 300px;
+}
+
+@media screen and (min-width: 1200px) {
+  .current-weather {
+    max-width: 1200px;
+  }
+}
