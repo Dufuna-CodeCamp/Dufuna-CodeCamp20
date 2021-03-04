@@ -38,7 +38,7 @@ class ArticleController
 
         $article->save();
 
-        $response->getBody()->write((json_encode(["status" => "success", "data" => [$article]])));
+        $response->getBody()->write((json_encode(["status" => "success", "data" => $article])));
         return $response->withHeader('Content-Type', 'application/json')
             ->withStatus(200);
     }
@@ -59,7 +59,7 @@ class ArticleController
 
         $article->save();
 
-        $response->getBody()->write(json_encode(["status" => "success", "data" => [$article]]));
+        $response->getBody()->write(json_encode(["status" => "success", "data" => $article]));
         return $response->withHeader('Content-Type', 'application/json')
             ->withStatus(200);
     }
@@ -100,7 +100,7 @@ class ArticleController
 
         $article->save();
 
-        $response->getBody()->write(json_encode(["status" => "success", "data" => [$article]]));
+        $response->getBody()->write(json_encode(["status" => "success", "data" => $article]));
         return $response->withHeader('Content-Type', 'application/json')
             ->withStatus(200);
     }
@@ -123,7 +123,7 @@ class ArticleController
             return $response->withHeader('Content-Type', 'application/json')->withStatus(404);
         }
 
-        $response->getBody()->write(json_encode(["status" => "success", "data" => [$article]]));
+        $response->getBody()->write(json_encode(["status" => "success", "data" => $article]));
         return $response->withHeader('Content-Type', 'application/json')
             ->withStatus(200);
     }

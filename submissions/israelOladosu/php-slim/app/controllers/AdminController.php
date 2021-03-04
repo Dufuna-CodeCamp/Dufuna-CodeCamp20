@@ -31,7 +31,7 @@ class AdminController
 
         $admin->save();
 
-        $response->getBody()->write(json_encode(["status" => "success", "data" => [$admin]]));
+        $response->getBody()->write(json_encode(["status" => "success", "data" => $admin]));
         return $response->withHeader('Content-Type', 'application/json')
             ->withStatus(200);
     }
@@ -76,7 +76,7 @@ class AdminController
 
         $admin->save();
 
-        $response->getBody()->write(json_encode(["status" => "success", "data" => [$admin]]));
+        $response->getBody()->write(json_encode(["status" => "success", "data" => $admin]));
 
         return $response->withHeader('Content-Type', 'application/json')
             ->withStatus(200);
