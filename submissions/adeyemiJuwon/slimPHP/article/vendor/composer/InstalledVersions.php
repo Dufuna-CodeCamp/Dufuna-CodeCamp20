@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'f3b2f858be1e93abf62b5f6c6deb2f9c44398239',
     'name' => 'samju200/article',
   ),
   'versions' => 
@@ -245,12 +245,12 @@ private static $installed = array (
     ),
     'samju200/article' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'f3b2f858be1e93abf62b5f6c6deb2f9c44398239',
     ),
     'slim/pdo' => 
     array (
