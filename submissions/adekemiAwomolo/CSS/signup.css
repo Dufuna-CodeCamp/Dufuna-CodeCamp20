@@ -50,7 +50,7 @@ body,html{
 .container-1 div{
 	padding-top:1rem;
 	flex-basis: 100%;
-	text-align:center;	
+	text-align:center;
 }
 .container-2{
 	display:inline-block;
@@ -72,7 +72,7 @@ body,html{
 	font-weight: bolder;
 }
 .footer-bottom{
-	background: orange; 
+	background: orange;
 	text-align: center;
 	color:white
 }
@@ -190,7 +190,7 @@ input[type=text]{
 	}
 	.box-1 div{
 		margin-top:3rem;
-	}  
+	}
      .foot-1 div,.foot-2 div, .foot-3 div{
      	padding-top:5px;
      	padding-bottom:10px;
@@ -209,7 +209,7 @@ input[type=text]{
 			grid-template-rows: auto;
 			grid-template-areas:
 			"foot-1  foot-2"
-			"foot-1 foot-3";  
+			"foot-1 foot-3";
 	}
 	.foot-1{
 		grid-area: foot-1;
