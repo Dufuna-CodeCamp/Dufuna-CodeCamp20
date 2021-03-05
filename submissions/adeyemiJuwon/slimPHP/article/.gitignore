@@ -10,6 +10,10 @@
 
 #composer vendor files
 /routes
+/database.
+app/
+bootstrap\
+\public
 
 
 
