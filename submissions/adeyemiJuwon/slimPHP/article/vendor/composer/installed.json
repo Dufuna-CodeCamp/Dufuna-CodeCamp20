@@ -96,7 +96,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../doctrine/inflector"
+            "install-path": "../../../../slimPHP/article/vendor/doctrine/inflector"
         },
         {
             "name": "fig/http-message-util",
@@ -155,7 +155,7 @@
                 "issues": "https://github.com/php-fig/http-message-util/issues",
                 "source": "https://github.com/php-fig/http-message-util/tree/1.1.5"
             },
-            "install-path": "../fig/http-message-util"
+            "install-path": "../../../../slimPHP/article/vendor/fig/http-message-util"
         },
         {
             "name": "graham-campbell/result-type",
@@ -224,7 +224,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../graham-campbell/result-type"
+            "install-path": "../../../../slimPHP/article/vendor/graham-campbell/result-type"
         },
         {
             "name": "illuminate/collections",
@@ -281,7 +281,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../illuminate/collections"
+            "install-path": "../../../../slimPHP/article/vendor/illuminate/collections"
         },
         {
             "name": "illuminate/container",
@@ -335,7 +335,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../illuminate/container"
+            "install-path": "../../../../slimPHP/article/vendor/illuminate/container"
         },
         {
             "name": "illuminate/contracts",
@@ -386,7 +386,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../illuminate/contracts"
+            "install-path": "../../../../slimPHP/article/vendor/illuminate/contracts"
         },
         {
             "name": "illuminate/database",
@@ -457,7 +457,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../illuminate/database"
+            "install-path": "../../../../slimPHP/article/vendor/illuminate/database"
         },
         {
             "name": "illuminate/macroable",
@@ -506,7 +506,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../illuminate/macroable"
+            "install-path": "../../../../slimPHP/article/vendor/illuminate/macroable"
         },
         {
             "name": "illuminate/support",
@@ -577,7 +577,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../illuminate/support"
+            "install-path": "../../../../slimPHP/article/vendor/illuminate/support"
         },
         {
             "name": "nesbot/carbon",
@@ -673,7 +673,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../nesbot/carbon"
+            "install-path": "../../../../slimPHP/article/vendor/nesbot/carbon"
         },
         {
             "name": "nikic/fast-route",
@@ -726,7 +726,7 @@
                 "issues": "https://github.com/nikic/FastRoute/issues",
                 "source": "https://github.com/nikic/FastRoute/tree/master"
             },
-            "install-path": "../nikic/fast-route"
+            "install-path": "../../../../slimPHP/article/vendor/nikic/fast-route"
         },
         {
             "name": "phpoption/phpoption",
@@ -798,7 +798,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../phpoption/phpoption"
+            "install-path": "../../../../slimPHP/article/vendor/phpoption/phpoption"
         },
         {
             "name": "psr/container",
@@ -854,7 +854,7 @@
                 "issues": "https://github.com/php-fig/container/issues",
                 "source": "https://github.com/php-fig/container/tree/master"
             },
-            "install-path": "../psr/container"
+            "install-path": "../../../../slimPHP/article/vendor/psr/container"
         },
         {
             "name": "psr/http-factory",
@@ -912,7 +912,7 @@
             "support": {
                 "source": "https://github.com/php-fig/http-factory/tree/master"
             },
-            "install-path": "../psr/http-factory"
+            "install-path": "../../../../slimPHP/article/vendor/psr/http-factory"
         },
         {
             "name": "psr/http-message",
@@ -968,7 +968,7 @@
             "support": {
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
-            "install-path": "../psr/http-message"
+            "install-path": "../../../../slimPHP/article/vendor/psr/http-message"
         },
         {
             "name": "psr/http-server-handler",
@@ -1028,7 +1028,7 @@
                 "issues": "https://github.com/php-fig/http-server-handler/issues",
                 "source": "https://github.com/php-fig/http-server-handler/tree/master"
             },
-            "install-path": "../psr/http-server-handler"
+            "install-path": "../../../../slimPHP/article/vendor/psr/http-server-handler"
         },
         {
             "name": "psr/http-server-middleware",
@@ -1088,7 +1088,7 @@
                 "issues": "https://github.com/php-fig/http-server-middleware/issues",
                 "source": "https://github.com/php-fig/http-server-middleware/tree/master"
             },
-            "install-path": "../psr/http-server-middleware"
+            "install-path": "../../../../slimPHP/article/vendor/psr/http-server-middleware"
         },
         {
             "name": "psr/log",
@@ -1141,7 +1141,7 @@
             "support": {
                 "source": "https://github.com/php-fig/log/tree/1.1.3"
             },
-            "install-path": "../psr/log"
+            "install-path": "../../../../slimPHP/article/vendor/psr/log"
         },
         {
             "name": "psr/simple-cache",
@@ -1195,7 +1195,7 @@
             "support": {
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
-            "install-path": "../psr/simple-cache"
+            "install-path": "../../../../slimPHP/article/vendor/psr/simple-cache"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -1242,7 +1242,7 @@
                 "issues": "https://github.com/ralouphie/getallheaders/issues",
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
-            "install-path": "../ralouphie/getallheaders"
+            "install-path": "../../../../slimPHP/article/vendor/ralouphie/getallheaders"
         },
         {
             "name": "slim/pdo",
@@ -1297,7 +1297,7 @@
                 "source": "https://github.com/FaaPz/Slim-PDO/tree/master"
             },
             "abandoned": "faapz/pdo",
-            "install-path": "../slim/pdo"
+            "install-path": "../../../../slimPHP/article/vendor/slim/pdo"
         },
         {
             "name": "slim/psr7",
@@ -1381,7 +1381,7 @@
                 "issues": "https://github.com/slimphp/Slim-Psr7/issues",
                 "source": "https://github.com/slimphp/Slim-Psr7/tree/1.3.0"
             },
-            "install-path": "../slim/psr7"
+            "install-path": "../../../../slimPHP/article/vendor/slim/psr7"
         },
         {
             "name": "slim/slim",
@@ -1498,7 +1498,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../slim/slim"
+            "install-path": "../../../../slimPHP/article/vendor/slim/slim"
         },
         {
             "name": "symfony/console",
@@ -1598,7 +1598,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/console"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/console"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1680,7 +1680,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-ctype"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/polyfill-ctype"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -1764,7 +1764,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-intl-grapheme"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/polyfill-intl-grapheme"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -1851,7 +1851,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-intl-normalizer"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/polyfill-intl-normalizer"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1934,7 +1934,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-mbstring"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/polyfill-mbstring"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -2016,7 +2016,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-php73"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/polyfill-php73"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -2102,7 +2102,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-php80"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/polyfill-php80"
         },
         {
             "name": "symfony/service-contracts",
@@ -2184,7 +2184,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/service-contracts"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/service-contracts"
         },
         {
             "name": "symfony/string",
@@ -2270,7 +2270,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/string"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/string"
         },
         {
             "name": "symfony/translation",
@@ -2366,7 +2366,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/translation"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/translation"
         },
         {
             "name": "symfony/translation-contracts",
@@ -2447,7 +2447,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/translation-contracts"
+            "install-path": "../../../../slimPHP/article/vendor/symfony/translation-contracts"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2530,7 +2530,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../vlucas/phpdotenv"
+            "install-path": "../../../../slimPHP/article/vendor/vlucas/phpdotenv"
         },
         {
             "name": "voku/portable-ascii",
@@ -2607,7 +2607,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../voku/portable-ascii"
+            "install-path": "../../../../slimPHP/article/vendor/voku/portable-ascii"
         }
     ],
     "dev": true,
