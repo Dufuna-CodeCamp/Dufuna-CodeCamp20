@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'f3b2f858be1e93abf62b5f6c6deb2f9c44398239',
+    'reference' => 'd6ef162a353cf735fed64964ef0635987e6b74cc',
     'name' => 'samju200/article',
   ),
   'versions' => 
@@ -226,7 +226,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'f3b2f858be1e93abf62b5f6c6deb2f9c44398239',
+      'reference' => 'd6ef162a353cf735fed64964ef0635987e6b74cc',
     ),
     'slim/pdo' => 
     array (
