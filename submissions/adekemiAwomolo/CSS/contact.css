@@ -18,7 +18,7 @@ body,html{
 .container-1 div{
 	padding-top:1rem;
 	flex-basis: 100%;
-	text-align:center;	
+	text-align:center;
 }
 .container-2{
 	display:inline-block;
@@ -56,16 +56,14 @@ body,html{
 .footer{
 	margin-bottom:0;
 	background:orange;
-	padding:10px;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    padding-top:2rem;
 }
 .footer a{
 	text-decoration: none;
 	color:white;
-}
-.footer{
-	display: flex;
-	flex-direction: row;
-	padding-top:2rem;
 }
 .footer li{
 	color:white;
@@ -170,7 +168,7 @@ li{
                 grid-template-rows: auto;
                 grid-template-areas:
                 "foot-1  foot-2"
-                "foot-1 foot-3";  
+                "foot-1 foot-3";
         }
         .foot-1{
             grid-area: foot-1;
