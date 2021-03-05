@@ -9,7 +9,7 @@
 
 
 #composer vendor files
-/routes
+routes
 /database.
 app/
 bootstrap\
