@@ -33,7 +33,7 @@ body,html{
 button{
     background:orange;
     color:white;
-    padding:10px 30px 10px 30px;
+    padding:10px 30px;
     border-radius:14px;
     border:1px solid orange;
     font-weight: bolder;
@@ -109,16 +109,16 @@ input[type=text]{
 .footer{
 	margin-bottom:0;
 	background:orange;
-	padding:10px;
-}
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    display: flex;
+    flex-direction: row;
+    padding-top:2rem;
+    }
 .footer a{
 	text-decoration: none;
 	color:white;
-}
-.footer{
-	display: flex;
-	flex-direction: row;
-	padding-top:2rem;
 }
 .footer li{
 	color:white;
@@ -193,7 +193,7 @@ li{
                     grid-template-rows: auto;
                     grid-template-areas:
                     "foot-1  foot-2"
-                    "foot-1 foot-3";  
+                    "foot-1 foot-3";
             }
             .foot-1{
                 grid-area: foot-1;
