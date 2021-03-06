@@ -9,8 +9,8 @@
 
 
 #composer vendor files
-/routes
-/database
+/vendor
+
 
 
 

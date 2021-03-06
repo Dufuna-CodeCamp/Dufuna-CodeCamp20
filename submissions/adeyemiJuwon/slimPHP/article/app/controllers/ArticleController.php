@@ -130,12 +130,12 @@ class ArticleController{
             $query =$this->db->prepare("SELECT * FROM articles WHERE id =:id");
             $query->bindParam(':id', $id);
             $query->execute();
-            $user =$query->fetch();
-            if(!$user){
+            $article =$query->fetch();
+            if(!$article){
                 $response->getBody()->write(json_encode(['error'=>'Article not found']));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(404);
             }
-            $response->getBody()->write(json_encode($user));
+            $response->getBody()->write(json_encode($article));
             return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
         }catch(PDOException $ex){
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
