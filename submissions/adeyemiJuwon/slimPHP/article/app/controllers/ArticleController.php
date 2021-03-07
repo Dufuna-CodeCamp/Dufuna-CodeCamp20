@@ -19,19 +19,6 @@ class ArticleController{
         $this->db =(new DB())->connect();
     }
 
-    public function index(Request $request, Response $response, $args){
-        try{
-            $query =$this->db->prepare("SELECT * FROM articles");
-            $query->execute();
-            $articles =$query->fetchAll();
-            $response->getBody()->write(json_encode(['status' => 'success','data' => $articles]));
-            return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
-        }catch(PDOException $ex){
-             $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
-             return $response ->withHeader('Content-Type', 'application/json')->withStatus(500);
-        }
-    }
-
 
     public function createArticle(Request $request, Response $response, $args){
         
