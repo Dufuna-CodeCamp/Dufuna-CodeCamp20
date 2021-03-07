@@ -24,8 +24,7 @@ class ArticleController{
             $query =$this->db->prepare("SELECT * FROM articles");
             $query->execute();
             $articles =$query->fetchAll();
-            $response->getBody()->write(json_encode(['status' => 'success',
-'data' => $articles]));
+            $response->getBody()->write(json_encode(['status' => 'success','data' => $articles]));
             return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
         }catch(PDOException $ex){
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
@@ -56,8 +55,7 @@ class ArticleController{
              $query =$this->db->prepare("SELECT * FROM articles");
             $query->execute();
             $articles =$query->fetchAll();
-            $response->getBody()->write(json_encode(['status' => 'success',
-'data' => $articles]));
+            $response->getBody()->write(json_encode(['status' => 'success','data' => $articles]));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
 
         }catch(PDOException $ex){
@@ -67,23 +65,23 @@ class ArticleController{
     }
     public function updateArticle(Request $request, Response $response, $args)  {
        $id = $args['id'];
-        $title = $request->getParsedBody()['title'];
-         $description = $request->getParsedBody()['description'];
-       $status = $request->getParsedBody()['status'];
+       $title = $request->getParsedBody()['title'];
+       $description = $request->getParsedBody()['description'];
        
 
         try{
-            $query = $this->db->prepare("UPDATE articles SET title = :title, description = :description, status = :status WHERE id =$id");
+            $query = $this->db->prepare("UPDATE articles SET title = :title, description = :description WHERE id =$id");
             $query->bindParam(':title', $title);
             $query->bindParam(':description', $description);
-            $query->bindParam(':status', $status);
             $query->execute();
-             $query =$this->db->prepare("SELECT * FROM articles");
+             $query =$this->db->prepare("SELECT * FROM articles  WHERE id = $id");
             $query->execute();
-            $articles =$query->fetchAll();
-            $response->getBody()->write(json_encode(['status' => 'success',
-'data' => $articles]));
-
+            $article =$query->fetch();
+            if(!$articles){
+                $response->getBody()->write(json_encode(['error'=>'Article not found']));
+             return $response ->withHeader('Content-Type', 'application/json')->withStatus(404);
+            }
+            $response->getBody()->write(json_encode(['status' => 'success','data' => $article]));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
         }catch(PDOException $ex){
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
@@ -103,20 +101,54 @@ class ArticleController{
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(400);
         }
     }
-     public function getArticlesStatus(Request $request, Response $response, $args){
-        $status = $args['status'];
+    
+     public function publishArticle(Request $request, Response $response, $args){
+        
+        $id = $args['id'];
+        $status = $args['published'];
+
+
         try{
-            
-            $query =$this->db->prepare("SELECT * FROM articles WHERE status =:status");
+             $query =$this->db->prepare("UPDATE articles SET  status = :status WHERE id =:id");
+             $query->bindParam(':id', $id);
             $query->bindParam(':status', $status);
             $query->execute();
-            $article =$query->fetchall();
-            if(!$article){
+
+             $query = $this->db->prepare("SELECT * FROM articles  WHERE id =:id");
+            $query->bindParam(':id', $id);
+            $query->execute();
+            $article = $query->fetch();
+            if(!$article) {
+            $response->getBody()->write(json_encode(['error' => 'Article not found']));
+            return $response->withHeader('Content-Type', 'application/json')->withStatus(404);
+        } else if ('status' ==='published') {
+            $response->getBody()->write(json_encode(['error' => 'Article already published']));
+            return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
+        }
+        
+             $response->getBody()->write(json_encode(['status' => 'success',
+'data' => $article]));
+            return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
+
+           
+        }catch(PDOException $ex){
+             $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
+             return $response ->withHeader('Content-Type', 'application/json')->withStatus(500);
+        }
+    }
+    public function getPublishedArticles(Request $request, Response $response, $args){
+        $status = $args['published'];
+        try{
+
+            $query =$this->db->prepare("SELECT * FROM articles WHERE status =:status");
+                 $query->bindParam(':status', $status);
+            $query->execute();
+            $articles =$query->fetchall();
+            if(!$articles){
                 $response->getBody()->write(json_encode(['error'=>'Article not found']));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(404);
             }
-            $response->getBody()->write(json_encode(['status' => 'sucess',
-'data' => $article]));
+            $response->getBody()->write(json_encode(['status' => 'sucess','data' => $articles]));
             return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
         }catch(PDOException $ex){
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
