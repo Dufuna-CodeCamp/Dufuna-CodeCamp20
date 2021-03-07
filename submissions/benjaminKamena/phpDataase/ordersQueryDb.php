@@ -21,10 +21,10 @@ function view($id){
         }catch (PDOException $e) {
             die("ERROR: Could not execute $sql. " . $e->getMessage());
         }
+    };
 
     if(isset($_COOKIE['orders'])){
-
-        $orders =  unserialize($_COOKIE['orders']);
+        $orders = isset($_COOKIE['orders'])? unserialize($_COOKIE['orders']) : $queryDatabase->getAllCustomers();
     }
     try{
         if (count($orders) > 0) {
@@ -54,7 +54,6 @@ function view($id){
     } else {
         echo 'No match';
     };
-} 
 }catch (PDOException $e) {
     die("ERROR: Could not execute $sql. " . $e->getMessage());
 };
