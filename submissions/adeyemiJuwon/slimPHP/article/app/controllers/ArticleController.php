@@ -9,19 +9,14 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use PDO;
 use PDOException;
 
-
-
 class ArticleController{
 
-
-     private $db;
+    private $db;
     public function __construct(){
-        $this->db =(new DB())->connect();
+    $this->db =(new DB())->connect();
     }
 
-
     public function createArticle(Request $request, Response $response, $args){
-        
         $requestData = $request->getParsedBody();
         $title = $requestData['title'];
         $description= $requestData['description'];
@@ -29,7 +24,8 @@ class ArticleController{
         $created_by = $requestData['created_by'];
         $createAt = date('y-m-d H:i:s');
 
-        $sql =  'INSERT INTO articles (title, description, status, created_by, created_at )VALUES(:title, :description, :status,:created_by, :created_at)';
+        $sql =  'INSERT INTO articles (title, description, status, created_by, created_at )
+        VALUES(:title, :description, :status,:created_by, :created_at)';
  
         try{
             $query = $this->db->prepare($sql);
@@ -39,23 +35,22 @@ class ArticleController{
             $query->bindParam(':created_by', $created_by);
             $query->bindParam(':created_at', $createAt);
             $query->execute();
-             $query =$this->db->prepare("SELECT * FROM articles");
+            $query =$this->db->prepare("SELECT * FROM articles");
             $query->execute();
             $articles =$query->fetchAll();
             $response->getBody()->write(json_encode(['status' => 'success','data' => $articles]));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
-
         }catch(PDOException $ex){
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(400);
         }
     }
+    
     public function updateArticle(Request $request, Response $response, $args)  {
        $id = $args['id'];
        $title = $request->getParsedBody()['title'];
        $description = $request->getParsedBody()['description'];
        
-
         try{
             $query = $this->db->prepare("UPDATE articles SET title = :title, description = :description WHERE id =$id");
             $query->bindParam(':title', $title);
@@ -74,11 +69,12 @@ class ArticleController{
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(400);
         }
-
    }
+
     public function deleteArticle(Request $request, Response $response, $args){
-       $id = $args['id'];
-        try{
+        $id = $args['id'];
+        
+       try{
             $query =$this->db->prepare("DELETE FROM articles WHERE id= $id");
             $query->execute();
             $response->getBody()->write(json_encode(['status' => 'success','message'=>'This article was successfully deleted']));
@@ -93,7 +89,6 @@ class ArticleController{
         
         $id = $args['id'];
         $status = $args['published'];
-
 
         try{
              $query =$this->db->prepare("UPDATE articles SET  status = :status WHERE id =:id");
@@ -112,21 +107,18 @@ class ArticleController{
             $response->getBody()->write(json_encode(['error' => 'Article already published']));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(400);
         }
-        
-             $response->getBody()->write(json_encode(['status' => 'success',
-'data' => $article]));
-            return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);
-
-           
+             $response->getBody()->write(json_encode(['status' => 'success','data' => $article]));
+            return $response ->withHeader('Content-Type', 'application/json')->withStatus(200);  
         }catch(PDOException $ex){
              $response->getBody()->write(json_encode(['error'=>$ex->getMessage()]));
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(500);
         }
     }
+
     public function getPublishedArticles(Request $request, Response $response, $args){
         $status = $args['published'];
+        
         try{
-
             $query =$this->db->prepare("SELECT * FROM articles WHERE status =:status");
                  $query->bindParam(':status', $status);
             $query->execute();
@@ -142,10 +134,11 @@ class ArticleController{
              return $response ->withHeader('Content-Type', 'application/json')->withStatus(500);
         }
     }
+
     public function getArticle(Request $request, Response $response, $args){
         $id = $args['id'];
+        
         try{
-            
             $query =$this->db->prepare("SELECT * FROM articles WHERE id =:id");
             $query->bindParam(':id', $id);
             $query->execute();
