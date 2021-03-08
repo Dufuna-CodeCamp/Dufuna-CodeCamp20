@@ -4,7 +4,6 @@ use Slim\Routing\RouteCollectorProxy;
 use App\Controller\ArticleController;
 use App\Middleware\JsonParserMiddleware;
 
-
 $app->group('/api', function(RouteCollectorProxy $group){
 
     //GET ALL ARTICLE
