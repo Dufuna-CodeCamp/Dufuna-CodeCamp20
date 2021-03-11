@@ -1,7 +1,6 @@
 CREATE DATABASE idamsels_shop;
 USE idamsels_shop;
 
-
 -- USER ADMINS TABLE
 CREATE TABLE admins (
 id INT NOT NULL AUTO_INCREMENT,
