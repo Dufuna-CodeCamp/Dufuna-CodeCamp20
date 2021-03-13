@@ -1,98 +1,115 @@
-let submitForm = document.getElementById('formvalidation');
-firstName = document.getElementById('firstName');
-lName = document.getElementById('lastName');
-otherName = document.getElementById('otherName');
-mobile = document.getElementById('phone');
-email = document.getElementById('email');
-password = document.getElementById('password');
-confirm_password = document.getElementById('password2');
+let submitForm = document.getElementById("formvalidation");
+    firstName = document.getElementById('firstname');
+    lastName = document.getElementById("lastname");
+    email = document.getElementById('email');
+    password = document.getElementById('password');
+    confirm_password = document.getElementById("password2");
+    mobile = document.getElementById('phone-no');
 
-
-function required(field, event) {
-    if (field.value == '') {
-    field.nextElementSibling.innerHTML ='This field is required';
-    event.preventDefault();
-    return false;
+function required(field, event){
+    if(field.value == ''){
+        field.nextElementSibling.innerHTML ='This field is required';
+        event.preventDefault();
+        return false;
+    } else{
+        field.nextElementSibling.innerHTML="";
+        return true;
     }
-    else {
-        field.nextElementSibling.innerHTML ="";
+}
+function firstNameValidation(event){
+    let nameReg = /^[a-zA-Z]+$/;
+    if(!firstName.value.match(nameReg)){
+        firstName.nextElementSibling.innerHTML ='Enter only letters';
+        event.preventDefault();
+        return false;
+    }else{
+        firstName.nextElementSibling.innerHTML ='';
+        return true;
+    }
+}
+function secondNameValidation(event){
+    let nameReg = /^[a-zA-Z]+$/;
+    if(!lastName.value.match(nameReg)){
+        lastName.nextElementSibling.innerHTML ='Enter only letters';
+        event.preventDefault();
+        return false;
+    }else{
+        lastName.nextElementSibling.innerHTML ='';
+        return true;
+    }
+}
+function emailValidation(event){
+    let emailReg= /^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/;
+        if(!email.value.match(emailReg)){
+        email.nextElementSibling.innerHTML ='Enter a valid email'
+        event.preventDefault();
+        return false;
+    }
+    else{
+        email.nextElementSibling.innerHTML ="";
+        return true;
+    }
+}
+function passwordValidation(event){
+    let passwordReg = /^[a-zA-Z0-9]+$/i;
+    if(!password.value.match(passwordReg)){
+        password.nextElementSibling.innerHTML ='Password Must Contain Letters and Numbers Only';
+        event.preventDefault();
+        return false;
+    }
+    else if(!(password.value.length >=6)){
+        password.nextElementSibling.innerHTML ='Password length must not be less than 6';
+        event.preventDefault();
+        return false;
+    }
+    else{
+        password.nextElementSibling.innerHTML="";
+        return true;
+    }
+}
+function confirmPassword_Validation(event){
+    let passwordReg = /^[a-zA-Z0-9]+$/i;
+    if(!confirm_password.value.match(passwordReg)){
+        confirm_password.nextElementSibling.innerHTML ='Password Must Contain Letters and Numbers Only';
+        event.preventDefault();
+        return false;
+    }
+    else if((password.value && password.value) != confirm_password.value){
+        confirm_password.nextElementSibling.innerHTML ='Password do not match';
+        event.preventDefault();
+        return false;
+    }
+    else{
+      confirm_password.nextElementSibling.innerHTML='';
+      return true;
+    }
+}
+
+function mobilevalidation(event){
+    let mobileReg = /^\(?\d{5}\)?-?\s*-?\d{6}$/;
+    if(!mobile.value.match(mobileReg)){
+        mobile.nextElementSibling.innerHTML ="Enter a Valid Phone Number";
+        event.preventDefault();
+        return false;
+    }
+    else{
+        mobile.nextElementSibling.innerHTML ='';
         return true;
     }
 }
 
-function emailValidation(event){
-        let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(!email.value.match(emailRegex)) {
-            email.nextElementSibling.innerHTML = "Please enter a valid email";
-            event.preventDefault();
-            return false;
-        }
-        else{
-            email.nextElementSibling.innerHTML ='';
-            return true;
-        }
-    }
-
-    function passwordValidation(event){
-        let pwdRegex = /^[a-z0-9]+$/i;
-        if(!password.value.match(pwdRegex)) {
-            password.nextElementSibling.innerHTML ="Password must contain letters or numbers only";
-            event.preventDefault();
-            return false;
-        } else if(!(password.value.length >= 6)) {
-            password.nextElementSibling.innerHTML ='Password length should be equal to or greater than 6';
-            event.preventDefault();
-            return false;
-        }
-        else{
-            password.nextElementSibling.innerHTML = '';
-            return true;
-        
-        }
-    }
-    function passwordConfirmation(event){
-        if((password.value && password.value) != confirm_password.value){
-            confirm_password.nextElementSibling.innerHTML = "Passwords do not match";
-            event.preventDefault();
-            return false;
-        }
-        else{
-            confirm_password.nextElementSibling.innerHTML ="";
-            return true;
-        }
-    }
-
-
-    function mobilevalidation(event){
-        if(!mobile.value.length < 11){
-            mobile.nextElementSibling.innerHTML = "Phone number must be 11 digits only";
-            event.preventDefault();
-            return false;  
-        }
-        else{
-            mobile.nextElementSibling.innerHTML ='';
-            return true;
-        }
-    }
-
- function validateForm(e){
-     required(firstName, e);
-     required(otherName, e);
-     required(mobile, e);
-     required(email , e);
-     required(password, e);
-     required(confirm_password, e);
-     required(lName, e);
-     emailValidation(e);
-     passwordValidation(e);
-     passwordConfirmation(e);
-     mobilevalidation(e);
-     return true;
- }
-
-
-
- submitForm.addEventListener('submit' ,validateForm);
-
-
- 
+function validateForm(e){
+    required(firstName, e);
+    required(lastName, e);
+    required(email, e);
+    required(password, e);
+    required(confirm_password, e);
+    firstNameValidation(e);
+    secondNameValidation(e);
+    emailValidation(e);
+    passwordValidation(e);
+    confirmPassword_Validation(e);
+    mobilevalidation(e);
+    return true;
+}
+submitForm.addEventListener('submit' ,validateForm);
