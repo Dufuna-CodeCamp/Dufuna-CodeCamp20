@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sign up</title>
-	<link rel="stylesheet" href='../CSS/style.css'>
+	<link rel="stylesheet" href='../CSS/signup.css'>
 </head>
 <body>
 <div class='header'>
@@ -31,41 +31,58 @@
 		<div class='box-3'>
 			<br>
 			<br>
+			<form id='formvalidation'>
 		    	<fieldset class='fieldset'>
 					<label for='firstName'>First Name</label>
 					<br>
-					<input type='text' id='text' name='firstName'>
+					<input type='text' id='firstname' name='firstName'>
+					<span class='error-message'></span>
 			
 					<label for='firstName'>Last Name</label>
 					<br>
-					<input type='text' id='Last' name='lastName'>
+					<input type='text' id='lastname' name='lastName'>
+					<span class='error-message'></span>
+
 				
 					<label for='firstName'>Other Names</label>
 					<br>
 					<input type='text' id='otherName' name='otherName'>
+					<span class='error-message'></span>
+
 				
 					<label for='firstName'>Phone Number</label>
 					<br>
 					<input type='number' id='phone-no' name='phoneno'>
+					<span class='error-message'></span>
+
 					
 					<label for='firstName'>Email Address</label>
 					<br>
 					<input type='email' id='email' name='emailName'>
+					<span class='error-message'></span>
+
 					<label for ='password'>Password</label>
 					<br>
 					<input type='password' id='password' name='password'>
+					<span class='error-message'></span>
+
 				
 					<label for ='password'>Confirm Password</label>
 					
 					<input type='password' id='password2' name='password2'>
+					<span class='error-message'></span>
+
 					<div class='input-1 input-button'>
 					<input type='checkbox'id='checkbox'>I agree to the terms and conditions.
 					<br>
 					<button id='btnn'>SIGN UP</button>
 				</div>
 				</fieldset>
+				</form>
 		</div>
 	</div>
+	<br>
+	<br>
 	<div class="footer">
 		<div class='container-2 footer-item select-2'>
 			<div class='foot-1'>
@@ -88,6 +105,6 @@
 		</div>
 	</div>
 	<div class='footer-bottom'>&copy; Farmvisco.com 2021.All Rights Reserved.</div>
-
+<script src="../dom/signup.js"></script>
 </body>
 </html>
