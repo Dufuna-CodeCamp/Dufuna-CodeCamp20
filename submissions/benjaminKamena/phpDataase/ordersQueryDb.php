@@ -3,6 +3,10 @@
 include('connected.php');
 $id =  $_GET['id'];
 
+class Query{
+    function setData($name, $value, $expire){
+        setcookie($name, serialize($value), $expire);
+}
 function view($id){
 	try{
 		$sql = "SELECT order_items.quantity, order_items.unit_price, 
@@ -13,19 +17,20 @@ function view($id){
             LEFT JOIN customers on orders.customer_id = customers.id
             LEFT JOIN products ON products.id = order_items.product_id 
             WHERE orders.customer_id = '$id' ";
-            $stmt = $pdo->query($sql);
-            $orders = $stmt->fetchAll();
+            $stmt = $this->connect()->query($sql);
+            $order = $stmt->fetchAll();
+            $this->setData('query',$order, time() + 3600);
+            return $orders;
 
-            setcookie("orders",  serialize($orders), time() + 3600 );
-
-        }catch (PDOException $e) {
+        }
+        catch (PDOException $e) {
             die("ERROR: Could not execute $sql. " . $e->getMessage());
         }
-    };
-
-    if(isset($_COOKIE['orders'])){
-        $orders = isset($_COOKIE['orders'])? unserialize($_COOKIE['orders']) : $queryDatabase->getAllCustomers();
     }
+}
+
+$query = new Query();
+$order = isset($_COOKIE['query'])? unserialize($_COOKIE['query']) : $query->view($id);
     try{
         if (count($orders) > 0) {
             echo "<table>";
