@@ -1,0 +1,4 @@
+Hello Mentor;
+Below is the link to the leetcode solution on Data Structure and Algorithm.
+
+https://drive.google.com/drive/folders/11RAeT-9zQ1sSnIqFnStPTyHw1M3U6YGK?usp=sharing
