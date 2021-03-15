@@ -28,6 +28,16 @@ let submitForm = document.getElementById("formvalidation");
         }
     
 }
+function emailValidation(event){
+    if(!(confirm_password.value == password.value)){
+        confirm_password.nextElementSibling.innerHTML ="Password do not match";
+        event.preventDefault();
+        return false;
+    }
+    else {
+        return true;
+    }
+}
     function formValidation(event){
         required(
             firstName,
@@ -64,12 +74,9 @@ let submitForm = document.getElementById("formvalidation");
             passWordMessage,
             event
         );
-        required(
-            confirm_password,
-            passwordReg,
-            "Please Confirm Your Password",
-            'Password do not match',
-            event
+          required(confirm_password, event);           
+          emailValidation(event);
         );
+        return true;
     }
     submitForm.addEventListener('submit', formValidation);
