@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sign up</title>
-	<link rel="stylesheet" href='../CSS/style.css'>
+	<link rel="stylesheet" href='../CSS/signup.css'>
 </head>
 <body>
 <div class='header'>
@@ -66,6 +66,8 @@
 				</fieldset>
 		</div>
 	</div>
+	<br>
+	<br>
 	<div class="footer">
 		<div class='container-2 footer-item select-2'>
 			<div class='foot-1'>
@@ -77,8 +79,11 @@
 				<li>Sign up for our Newsletter
 					<br>
 					<br>
-					<input id='email' type='signup-1'>
-				    <input type="submit" placeholder="submit">
+					<form id ='newsletter'>
+						<input id='newsemail' type='signup-1'>
+						<a class='error-block'></a>
+						<input type="submit" placeholder="submit">
+						</form>
 			</li>
 			</div>
 			<div class='foot-3'>
@@ -88,6 +93,7 @@
 		</div>
 	</div>
 	<div class='footer-bottom'>&copy; Farmvisco.com 2021.All Rights Reserved.</div>
+	<script src="../dom/newsletter.js"></script>
 
 </body>
 </html>
