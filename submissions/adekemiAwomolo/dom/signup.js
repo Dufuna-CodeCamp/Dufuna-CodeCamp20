@@ -71,7 +71,5 @@ let submitForm = document.getElementById("formvalidation");
             'Password do not match',
             event
         );
-        passwordValidation(password, confirm_password, event);
-return true;
     }
     submitForm.addEventListener('submit', formValidation);
