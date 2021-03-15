@@ -20,7 +20,7 @@ function validate_data(field,event){
 function newsValidation(event){
     validate_data(newspaper_email, event);
     return true;
-};
+}
 
 
 newsletter.addEventListener('submit', newsValidation);
