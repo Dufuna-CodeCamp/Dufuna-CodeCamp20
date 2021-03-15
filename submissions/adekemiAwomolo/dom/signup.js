@@ -7,7 +7,7 @@ let submitForm = document.getElementById("formvalidation");
     mobile = document.getElementById('phone-no');
     nameReg =/^[a-zA-Z]+$/i;
     mobileReg =/^\(?\d{5}\)?-?\s*-?\d{6}$/;
-    emailReg=/^(([a-zA-Z0-9_\-]+)@([a-zA-Z0-9_\-]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-]+)@{[a-zA-Z0-9_\-]+0\.([a-zA-Z]{2,5}){1,25})+)*$/i;
+    emailReg=/^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,10})+$/;
     passwordReg =/(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
     passWordMessage ='Password is invalid';
 
