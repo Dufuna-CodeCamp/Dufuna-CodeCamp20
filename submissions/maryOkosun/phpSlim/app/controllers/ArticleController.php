@@ -17,24 +17,6 @@ class ArticleController
         $this->db = (new DB())->connect();
     }
 
-    /*public function index(Request $request, Response $response, $args)
-    {
-        try {
-            $query = $this->db->prepare("select *
-            from articles
-            inner join admin
-            on articles.id = admin.id
-            where articles.created_by = admin.name;");
-            $query->execute();
-            $article = $query->fetchAll();
-            $response->getBody()->write(json_encode($article));
-            return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
-        } catch (PDOException $ex) {
-            $response->getBody()->write(json_encode(["error" => $ex->getMessage()]));
-            return $response->withHeader('Content-Type', 'application/json')->withStatus(500);
-        }
-    }*/
-
     public function getArticle(Request $request, Response $response, $args)
     {
         $id = $args['id'];
@@ -67,17 +49,16 @@ class ArticleController
         $title = $requestData['title'];
         $description = $requestData['description'];
         $created_by = $requestData['created_by'];
-        $createdAt = date('Y-m-d H:i:s');
+        $created_at = date('Y-m-d H:i:s');
 
-        $sql = "INSERT INTO articles (title, description, status, created_by, created_at) VALUES (:title, :description, :status, :created_by, :created_at)";
+        $sql = "INSERT INTO articles (title, description, created_by, created_at) VALUES (:title, :description, :created_by, :created_at)";
 
         try {
             $query = $this->db->prepare($sql);
             $query->bindParam(':title', $title);
             $query->bindParam(':description', $description);
-            $query->bindParam(':status', $status);
             $query->bindParam(':created_by', $created_by);
-            $query->bindParam(':created_at', $createdAt);
+            $query->bindParam(':created_at', $created_at);
             $query->execute();
             $query =$this->db->prepare("SELECT * FROM articles");
             $query->execute();
