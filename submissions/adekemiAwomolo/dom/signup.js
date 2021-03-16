@@ -28,7 +28,7 @@ let submitForm = document.getElementById("formvalidation");
         }
     
 }
-function emailValidation(event){
+function passwordValidation(event){
     if(!(confirm_password.value == password.value)){
         confirm_password.nextElementSibling.innerHTML ="Password do not match";
         event.preventDefault();
@@ -75,7 +75,7 @@ function emailValidation(event){
             event
         );
           required(confirm_password, event);           
-          emailValidation(event);
+          passwordValidation(event);
         );
         return true;
     }
