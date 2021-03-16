@@ -11,7 +11,5 @@ Thumbs.db
 # composer vendor dir
 /vendor
 
-DB_HOSTNAME = "localhost"
-DB_USERNAME = "root"
-DB_PASSWORD = "mysql"
-DB_NAME = "publish_house"
+#composer.lock files
+composer.lock

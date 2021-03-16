@@ -1,6 +1,6 @@
 {
-    "name": "dufuna/slim-api",
-    "description": "Simple API with Slim",
+    "name": "marienoir/article",
+    "description": "api for publishing company",
     "require": {
         "slim/slim": "4.*",
         "slim/psr7": "^1.3",
