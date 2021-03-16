@@ -7,7 +7,7 @@ use Slim\Routing\RouteCollectorProxy;
 $app->group('/api', function (RouteCollectorProxy $group) {
    
     // Get all Articles
-    $group->get('/articles', ArticleController::class.':index');
+    //$group->get('/articles', ArticleController::class.':index');
     
     // Get article by id
     $group->get('/articles/{id}', ArticleController::class.':getArticle');

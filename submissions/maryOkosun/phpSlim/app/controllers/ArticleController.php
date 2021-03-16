@@ -17,7 +17,7 @@ class ArticleController
         $this->db = (new DB())->connect();
     }
 
-    public function index(Request $request, Response $response, $args)
+    /*public function index(Request $request, Response $response, $args)
     {
         try {
             $query = $this->db->prepare("select *
@@ -33,7 +33,7 @@ class ArticleController
             $response->getBody()->write(json_encode(["error" => $ex->getMessage()]));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(500);
         }
-    }
+    }*/
 
     public function getArticle(Request $request, Response $response, $args)
     {
@@ -43,7 +43,7 @@ class ArticleController
             from articles
             inner join admin
             on articles.id = admin.id
-            where articles.created_by = admin.name and articles.id = :id;");
+            where articles.id = :id;");
             $query->bindParam(":id", $id);
             $query->execute();
             $article = $query->fetch();
@@ -66,7 +66,6 @@ class ArticleController
         $requestData = $request->getParsedBody();
         $title = $requestData['title'];
         $description = $requestData['description'];
-        $status = $requestData['status'];
         $created_by = $requestData['created_by'];
         $createdAt = date('Y-m-d H:i:s');
 
