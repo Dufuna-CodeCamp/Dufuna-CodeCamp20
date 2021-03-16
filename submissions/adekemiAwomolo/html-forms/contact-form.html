@@ -42,22 +42,29 @@
         </p>
 </div>
 <div class='wrapper-2'>
-	<form>
+	<form id ='validation'>
 		<fieldset class='fieldset'>
             <p>
             <span class="iconify" data-icon="bx-bxs-envelope" data-inline="false" style="color: orange;" data-width="58px" data-height="58px"></span>
             </p>
 				<h3> or better  still send us a message</h3>
 				<br><br>
-					<input type='text' name='name' placeholder="Full Name">
-					<br>
-					<input type='email' name='name' placeholder='Email'>
-					<br>
-					<input type='text' name='name' placeholder='Subject'>
-					<h2 class='message'>Message</h2>
-					<textarea name="message" rows='10' cols='45' id='message' placeholder="Enter your message."></textarea>
-					<br><br>
-					<button>Submit</button>
+                <input type='text' name='name' placeholder="Full Name" id='fullname'>
+                <h6 class='error-code'></h6>
+
+                <input type='email' name='name' placeholder='Email' id='email'>
+                <h6 class='error-code'></h6>
+            
+
+                <input type='text' name='name' placeholder='Subject' id='formsubject'>
+                <h6 class='error-code'></h6>
+
+                <h2 class='message'>Message</h2>
+                <textarea name="message" rows='10' cols='45' id='message' placeholder="Enter your message."></textarea>
+                <h6 id='error-codes'></h6>
+
+                <br>
+                <button id ='btn-form'>Submit</button>
 		</fieldset>
 	</form>
 </div>
@@ -89,6 +96,7 @@
     </div>
 </div>
 <div class='footer-bottom'>&copy; Farmvisco.com 2021.All Rights Reserved.</div>
+<script src='../dom/contatcForm.js'></script>
 
 </body>
 </html>
