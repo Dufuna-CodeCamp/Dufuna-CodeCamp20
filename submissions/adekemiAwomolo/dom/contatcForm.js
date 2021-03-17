@@ -4,7 +4,7 @@ subjectForm = document.getElementById('formsubject');
 fullname = document.getElementById('fullname');
 email_form = document.getElementById('email');
 message_form = document.getElementById('message')
-emailReg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
+emailReg=/^\w+([\-]?\w+)*@\w+([\-]?\w+)*(\.\w{2,6})+$/;
 nameReg =/^[a-zA-Z]/;
 function contactValidation(e,field, RegExp,message1, message){
     if(field.value == ''){
