@@ -18,7 +18,8 @@ const Regex = /^[1-9]/;
             btn.style.background = 'orange';
         }  
         if(quant.value >= 1){
-           let productPrice = quant.value * 400;
+         let perUnit = 400;
+           let productPrice = quant.value * perUnit;
             price.innerHTML =productPrice;
         
         }else{
@@ -26,7 +27,8 @@ const Regex = /^[1-9]/;
         }    
  }
     function shippingCost(){
-    let productPrice =  quant.value * 400;
+     let perUnit = 400;
+    let productPrice =  quant.value * perUnit;
     if(productPrice < 1000){
         let shippingFee = 100;
         shipping.innerHTML = shippingFee;
