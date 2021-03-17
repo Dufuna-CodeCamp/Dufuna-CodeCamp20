@@ -20,7 +20,7 @@ body {
 /*******FORM*********/
 
 form {
-  width: 70%;
+  width: 85%;
   height: 50px;
   margin: 20px auto;
   display: flex;
@@ -64,7 +64,6 @@ form button {
   padding: 50px;
   background-color: rgb(238, 144, 20);
   border-radius: 8px;
-  /* position: relative; */
 }
 
 .todoLists li {

@@ -5,7 +5,7 @@ export default function Footer({ filterList }) {
   const [todos, setTodos] = useContext(AppContext);
 
   const ItemLeft = () => {
-    return todos.filter((todo) => todo.complete === false);
+    return todos.filter((todo) => !todo.complete);
   };
 
   const deleteTodo = () => {
