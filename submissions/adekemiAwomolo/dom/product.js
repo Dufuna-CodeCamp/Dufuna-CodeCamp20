@@ -8,7 +8,7 @@ const Regex = /^[1-9]/;
  function quantity_price(){
      if(!quant.value.match(Regex)){
          btn.disable = true;
-         btn.style.background = 'black';
+         btn.style.background = 'gray':
          quant.nextElementSibling.innerHTML ="  Kindly enter a valid Number";
          quant.nextElementSibling.style.color = 'brown';
         }
