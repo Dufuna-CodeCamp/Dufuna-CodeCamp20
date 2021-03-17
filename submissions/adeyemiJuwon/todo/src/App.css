@@ -86,6 +86,7 @@ form button {
 .todoLists li .active {
   opacity: 0.5;
   text-decoration: line-through;
+  color: green;
 }
 .todoLists li input {
   margin-right: 5px;

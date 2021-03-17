@@ -1,8 +1,29 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from './AppProvider';
+import Footer from './Footer';
+import FilterButton from './FilterButton';
+
+const FILTER_MAP = {
+  All: () => true,
+  Active: (todo) => !todo.complete,
+  Completed: (todo) => todo.complete,
+};
+
+const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 export default function List() {
   const [todos, setTodos] = useContext(AppContext);
+  const [filter, setFilter] = useState('All');
+
+  const filterList = FILTER_NAMES.map((name) => (
+    <FilterButton
+      key={name}
+      name={name}
+      isPressed={name === filter}
+      setFilter={setFilter}
+    />
+  ));
+
   const initialDnDState = {
     draggedFrom: null,
     draggedTo: null,
@@ -90,33 +111,38 @@ export default function List() {
       }
       return todo;
     });
-    // setDragAndDrop(todos);
   };
 
   return (
-    <ul className="todoLists">
-      {todos.map((todo, index) => (
-        <li
-          key={index}
-          data-position={index}
-          draggable
-          onDragStart={onDragStart}
-          onDragOver={onDragOver}
-          onDrop={onDrop}
-          onDragLeave={onDragLeave}
-          onChange={changeIndex}
-        >
-          <label htmlFor="todo" className={todo.complete ? 'active' : ''}>
-            {todo.name}
-          </label>
-          <input
-            type="checkbox"
-            checked={todo.complete}
-            className="checkbox"
-            onChange={() => checkComplete(todo.id)}
-          />
-        </li>
-      ))}
-    </ul>
+    <>
+      <div className="section">
+        <ul className="todoLists">
+          {todos.filter(FILTER_MAP[filter]).map((todo, index) => (
+            <li
+              key={index}
+              data-position={index}
+              draggable
+              onDragStart={onDragStart}
+              onDragOver={onDragOver}
+              onDrop={onDrop}
+              onDragLeave={onDragLeave}
+              onChange={changeIndex}
+              complete={todo.complete}
+            >
+              <label htmlFor="todo" className={todo.complete ? 'active' : ''}>
+                {todo.name}
+              </label>
+              <input
+                type="checkbox"
+                checked={todo.complete}
+                className="checkbox"
+                onChange={() => checkComplete(todo.id)}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Footer filterList={filterList} />
+    </>
   );
 }
