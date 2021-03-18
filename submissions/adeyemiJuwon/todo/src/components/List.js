@@ -1,90 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from './AppProvider';
-import Footer from './Footer';
-import FilterButton from './FilterButton';
-
-const FILTER_MAP = {
-  All: () => true,
-  Active: (todo) => !todo.complete,
-  Completed: (todo) => todo.complete,
-};
-
-const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 export default function List() {
   const [todos, setTodos] = useContext(AppContext);
-  const [filter, setFilter] = useState('All');
-
-  const filterList = FILTER_NAMES.map((name) => (
-    <FilterButton
-      key={name}
-      name={name}
-      isPressed={name === filter}
-      setFilter={setFilter}
-    />
-  ));
-
-  const initialDnDState = {
-    draggedFrom: null,
-    draggedTo: null,
-    isDragging: false,
-    originalOrder: [],
-    updatedOrder: [],
-  };
-  const [dragAndDrop, setDragAndDrop] = useState(initialDnDState);
-  const onDragStart = (event) => {
-    const initialPosition = Number(event.currentTarget.dataset.position);
-
-    setDragAndDrop({
-      ...dragAndDrop,
-      draggedFrom: initialPosition,
-      isDragging: true,
-      originalOrder: todos,
-    });
-  };
-
-  const onDragOver = (event) => {
-    event.preventDefault();
-    let newTodo = dragAndDrop.originalOrder;
-    const draggedFrom = dragAndDrop.draggedFrom;
-    const draggedTo = Number(event.currentTarget.dataset.position);
-    const itemDragged = newTodo[draggedFrom];
-    const remainingItems = newTodo.filter(
-      (item, index) => index !== draggedFrom
-    );
-
-    newTodo = [
-      ...remainingItems.slice(0, draggedTo),
-      itemDragged,
-      ...remainingItems.slice(draggedTo),
-    ];
-
-    if (draggedTo !== dragAndDrop.draggedTo) {
-      setDragAndDrop({
-        ...dragAndDrop,
-        updatedOrder: newTodo,
-        draggedTo: draggedTo,
-      });
-    }
-  };
-
-  const onDrop = (event) => {
-    setTodos(dragAndDrop.updatedOrder);
-
-    setDragAndDrop({
-      ...dragAndDrop,
-      draggedFrom: null,
-      draggedTo: null,
-      isDragging: false,
-    });
-  };
-
-  const onDragLeave = () => {
-    setDragAndDrop({
-      ...dragAndDrop,
-      draggedTo: null,
-    });
-  };
 
   const checkComplete = (id) => {
     const newTodos = [...todos];
@@ -98,37 +16,15 @@ export default function List() {
 
     setTodos(newTodos);
   };
-  const changeIndex = () => {
-    const newTodos = [...todos];
-    const newIndex = newTodos.length - 1;
-    newTodos.filter((todo) => {
-      if (todo.complete === true) {
-        const newcomplete = newTodos.splice(newTodos.indexOf(todo), 1);
-        const newInComplete = newTodos.splice(todo, newIndex);
-        const newTodo = [...newInComplete, ...newcomplete];
-
-        return setTodos(newTodo);
-      }
-      return todo;
-    });
+  const ItemLeft = () => {
+    return todos.filter((todo) => !todo.complete);
   };
-
   return (
     <>
       <div className="section">
         <ul className="todoLists">
-          {todos.filter(FILTER_MAP[filter]).map((todo, index) => (
-            <li
-              key={index}
-              data-position={index}
-              draggable
-              onDragStart={onDragStart}
-              onDragOver={onDragOver}
-              onDrop={onDrop}
-              onDragLeave={onDragLeave}
-              onChange={changeIndex}
-              complete={todo.complete}
-            >
+          {todos.map((todo) => (
+            <li key={todo.id} complete={todo.complete}>
               <label htmlFor="todo" className={todo.complete ? 'active' : ''}>
                 {todo.name}
               </label>
@@ -142,7 +38,9 @@ export default function List() {
           ))}
         </ul>
       </div>
-      <Footer filterList={filterList} />
+      <div className="footer">
+        <p className="item-left"> {ItemLeft().length} items left</p>
+      </div>
     </>
   );
 }
