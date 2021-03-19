@@ -18,7 +18,7 @@ export default class AddTodo extends Component {
         <form autoComplete="off" onSubmit={this.onSubmit}>
           <input
             type="text"
-            name="name"
+            name="todo"
             required
             placeholder="Create a new todo..."
             value={this.state.todo}
