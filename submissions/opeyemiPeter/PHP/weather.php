@@ -10,7 +10,7 @@
         echo "It's so hot today";
       }
       else {
-        echo "Am I in the ahara Desert?";
+        echo "Am I in the Sahara Desert?";
       }
     }
     weatherCheck(42);
