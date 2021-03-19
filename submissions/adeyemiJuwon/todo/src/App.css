@@ -142,7 +142,10 @@ form button {
     margin-bottom: -50px;
   }
   .header h1 {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+  .form h1 {
+    font-size: 70px;
   }
   form {
     width: 100%;
