@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+*{
+    color: #333;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: teal;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-right: 15px;
+    padding-left: 9px;
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+.container{
+    width: 85%;
+    margin: 40px auto;
+    margin-bottom: 70px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.container form input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-bottom: 40px;
+    width: 100%;
+    font-weight: 400;
+    outline: none;
+
+}
+
+#password{
+    margin-bottom: 20px;
+}
+
+.container label{
+    /* font-size: 14px; */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.google-login{
+    border: 1px solid #333;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.google-login img{
+    width: 18px;
+    vertical-align: middle;
+    /* padding-left: 5px; */
+    margin-right: 15px;
+}
+
+.google-login a{
+    color: #333;
+}
+
+.others p{
+    text-align: left;
+    font-size: 13px;
+}
+
+button{
+    background-color: rgb(21, 148, 252);
+    color: white;
+    padding: 15px 0;
+    border: none;
+}
+
+@media screen and (min-width:470px){
+    .container{
+        width: 400px;
+        margin: 70px auto;
+    }
+}
+
+@media screen and (min-width:992px){
+    body{
+        font-size: 18px;
+    }
+
+    .container h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .container{
+        width: 30%;
+        margin: 90px auto;
+    }
+
+    .container form input[type="text"]{
+        font-size: 20px;
+    }
+
+    .google-login{
+        padding: 10px 0;
+    }
+
+    #password{
+        margin-bottom: 40px;
+    }
+
+    .others p{
+        font-size: 16px;
+    }
+
+    button{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+}
+
+/* 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
+    border: 2px solid black;
+    width: 500px;
+}
+
+.container h2{
+    color: #333;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.google-login{
+    border: 1px solid #333;
+    width: 400px;
+    text-align: center;
+    height: 50px;
+}
+
+.google-login img{
+    width: 72px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.google-login a{
+    color: #333;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.container form input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-bottom: 70px;
+    width: 400px;
+    font-size: large;
+    font-weight: 400;
+    outline: none;
+}
+
+.container label{
+    margin-bottom: 70px;
+    margin-top: -30px;
+}
+
+button{
+    background-color: rgb(21, 148, 252);
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: -50px;
+} */
+
