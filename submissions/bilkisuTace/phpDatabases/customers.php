@@ -1,37 +1,30 @@
 <?php
-include('db_con.php');
 include('setCookies.php');
+setData();
+$results = json_decode($_COOKIE['customers'], true);
 
-$sql = "SELECT customer_id, first_name, last_name, email, created_at FROM customers";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
+if (isset($results) && count($results) > 0) {
   echo '
     <table cellpadding="1" cellspacing="1" border="1">
       <tr>
       <th>S/N</th>
-      <th>Full Name</th> 
+      <th>Full Name</th>
       <th>Email Address</th>
       <th>Created At</th>
       <th>Actions</th>
-    </tr>       
-  ';
-  
-$results = [];
-while($row = mysqli_fetch_assoc($result)) {
-  $results[] = $row;
-  echo "
-    <tr>
-      <td>" . $row["customer_id"]. "</td>
-      <td>" . $row["first_name"]. " " . $row["last_name"]."</td>
-      <td>" . $row["email"]. "</td>
-      <td>" . $row["created_at"]. "</td>
-      <td></td>
     </tr>
+  ';
+  foreach($results as $result) {
+    echo "
+      <tr>
+        <td>" . $result["customer_id"]. "</td>
+        <td>" . $result["first_name"]. " " . $result["last_name"]."</td>
+        <td>" . $result["email"]. "</td>
+        <td>" . $result["created_at"]. "</td>
+        <td></td>
+      </tr>
     ";
   }
-  setData('customers', $results, time() + 3600);
-
   echo '
   </table>
   ';
