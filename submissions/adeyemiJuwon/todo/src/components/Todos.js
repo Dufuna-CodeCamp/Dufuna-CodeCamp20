@@ -4,7 +4,7 @@ import TodoList from './TodoItem';
 export default class Todos extends Component {
   render() {
     return (
-      <>
+      <div>
         <div className="section">
           <ul className="todoLists">
             {this.props.todos.map((todo) => {
@@ -21,7 +21,7 @@ export default class Todos extends Component {
         <div className="footer">
           <p className="item-left">{this.props.itemLeft.length} items left</p>
         </div>
-      </>
+      </div>
     );
   }
 }
