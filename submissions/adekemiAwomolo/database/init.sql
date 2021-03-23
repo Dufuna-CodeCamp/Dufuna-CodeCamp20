@@ -52,7 +52,7 @@ stock_quantity INT NOT NULL,
 stock_status VARCHAR(200) NOT NULL,
 category_id INT NOT NULL,
 PRIMARY KEY(id),
-FOREIGN KEY(product-category_id) REFERENCES categories (id),
+FOREIGN KEY(product_category_id) REFERENCES categories (id),
 FOREIGN KEY(admin_id) REFERENCES admins (id)
 );
 
