@@ -42,7 +42,7 @@ SELECT * FROM admins;
 
 CREATE TABLE products_details(
 id INT NOT NULL AUTO_INCREMENT,
-product-category_id INT NOT NULL,
+product_category_id INT NOT NULL,
 product_name VARCHAR(100) NOT NULL,
 description TEXT NOT NULL,
 images BLOB NOT NULL,
@@ -50,15 +50,14 @@ admin_id INT NOT NULL,
 unit_price DECIMAL (9,2) NOT NULL,
 stock_quantity INT NOT NULL,
 stock_status VARCHAR(200) NOT NULL,
-category_id INT NOT NULL,
 PRIMARY KEY(id),
 FOREIGN KEY(product_category_id) REFERENCES categories (id),
 FOREIGN KEY(admin_id) REFERENCES admins (id)
 );
 
-INSERT INTO products_details(productCategory_id,product_name,description,images,admin_id,unit_price,stock_quantity,stock_status,category_id)
-VALUES(1,'Tomatoes','Fresh Tomatoes from the farm, 100% naturally packed, without chemicals','../html/asset/pepper.jpeg',1, 200.00,100,'in stock',1),
-(2,'Vegetables','Fresh Veggies from the farm, 100% naturally packed, without chemicals','../html/asset/pepper.jpeg',1, 100.00,100,'in stock',2);
+INSERT INTO products_details(product_category_id,product_name,description,images,admin_id,unit_price,stock_quantity,stock_status)
+VALUES(1,'Tomatoes','Fresh Tomatoes from the farm, 100% naturally packed, without chemicals','../html/asset/pepper.jpeg',1, 200.00,100,'in stock'),
+(2,'Vegetables','Fresh Veggies from the farm, 100% naturally packed, without chemicals','../html/asset/pepper.jpeg',1, 100.00,100,'in stock');
 
 SELECT * FROM products_details;
 
