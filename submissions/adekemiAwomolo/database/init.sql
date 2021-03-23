@@ -39,6 +39,7 @@ VALUES('Aneke Paul', 'neke@hotmail.com','america' ,'234typo', '0706099884', now(
 SELECT * FROM admins;
 
 /*product_details database*/
+
 CREATE TABLE products_details(
 id INT NOT NULL AUTO_INCREMENT,
 product-category_id INT NOT NULL,
@@ -131,7 +132,7 @@ order_item_id int not null auto_increment,
  product_id int not null,
  quantity int not null,
  unit_price decimal not null,
- total-amount decimal(10, 2) not null,
+ total_amount decimal(10, 2) not null,
  primary key(order_item_id),
  foreign key(Order_id) references orders(id),
  foreign key(product_id) references products_details(id)
