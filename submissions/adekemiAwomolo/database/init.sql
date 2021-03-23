@@ -41,7 +41,7 @@ SELECT * FROM admins;
 /*product_details database*/
 CREATE TABLE products_details(
 id INT NOT NULL AUTO_INCREMENT,
-productCategory_id INT NOT NULL,
+product-category_id INT NOT NULL,
 product_name VARCHAR(100) NOT NULL,
 description TEXT NOT NULL,
 images BLOB NOT NULL,
@@ -51,7 +51,7 @@ stock_quantity INT NOT NULL,
 stock_status VARCHAR(200) NOT NULL,
 category_id INT NOT NULL,
 PRIMARY KEY(id),
-FOREIGN KEY(productCategory_id) REFERENCES categories (id),
+FOREIGN KEY(product-category_id) REFERENCES categories (id),
 FOREIGN KEY(admin_id) REFERENCES admins (id)
 );
 
@@ -126,18 +126,18 @@ SELECT * FROM orders;
 /*single_order database*/
 
 CREATE TABLE single_orders(
-orderItemId int not null auto_increment,
- OrderId int not null,
- productId int not null,
+order_item_id int not null auto_increment,
+ Order_id int not null,
+ product_id int not null,
  quantity int not null,
- unitPrice decimal not null,
- totalAmount decimal(10, 2) not null,
- primary key(orderItemId),
- foreign key(OrderId) references orders(Id),
- foreign key(productId) references products_details(Id)
+ unit_price decimal not null,
+ total-amount decimal(10, 2) not null,
+ primary key(order_item_id),
+ foreign key(Order_id) references orders(id),
+ foreign key(product_id) references products_details(id)
 );
 
-INSERT INTO single_ordersss(OrderId, productId, quantity,unitPrice, totalAmount)
+INSERT INTO single_ordersss(Order_id, product_id, quantity,unit_price, total_amount)
 values (1, 1, 3, 1000, 3000);
 
 SELECT * FROM single_order;
