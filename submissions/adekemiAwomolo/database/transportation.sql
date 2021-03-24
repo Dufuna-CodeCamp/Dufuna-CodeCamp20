@@ -4,11 +4,11 @@ USE transport;
 
 /*create passengers table*/
 CREATE TABLE passengers(
-passengers_id INT NOT NULL AUTO_INCREMENT,
+id INT NOT NULL AUTO_INCREMENT,
 fullname VARCHAR(100) NOT NULL,
 sex VARCHAR(50) NOT NULL,
 age VARCHAR(20) ,
-PRIMARY KEY (passengers_id)
+PRIMARY KEY (id)
 );
 
 
@@ -24,7 +24,7 @@ numbers_of_parents_children_aboard INT NOT NULL,
 numbers_of_sibings_and_spouses_aboard INT NOT NULL,
 point_of_embarkation VARCHAR(200) NOT NULL,
 PRIMARY KEY(id),
-FOREIGN KEY(passengers_id) REFERENCES passengers(passengers_id)
+FOREIGN KEY(passengers_id) REFERENCES passengers(id)
 );
 
 /*accident table*/
@@ -33,5 +33,5 @@ id INT NOT NULL AUTO_INCREMENT,
 passengers_id INT NOT NULL,
 passengers_survived BOOLEAN NOT NULL,
 PRIMARY KEY(id),
-FOREIGN KEY(passengers_id) REFERENCES passengers(passengers_id)
+FOREIGN KEY(passengers_id) REFERENCES passengers(id)
 );
