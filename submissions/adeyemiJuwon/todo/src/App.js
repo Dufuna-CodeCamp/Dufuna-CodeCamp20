@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Form from './Form';
-import Todos from './Todos';
+import Form from './components/Form';
+import Todos from './components/Todos';
 import './App.css';
 
 export default class App extends Component {

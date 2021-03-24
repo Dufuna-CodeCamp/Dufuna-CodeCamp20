@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoList from './TodoItem';
+import TodoList from './TodoList';
 
 export default class Todos extends Component {
   render() {

@@ -26,6 +26,7 @@ form button {
   outline: none;
   border-bottom: 1px solid #555;
   margin: 0 5px;
+  height: 50px;
   border-radius: 8px;
 }
 form input {

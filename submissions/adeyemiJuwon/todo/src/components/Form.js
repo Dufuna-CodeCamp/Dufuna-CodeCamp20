@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { IoIosAdd } from 'react-icons/io';
 
 export default class AddTodo extends Component {
   state = {
@@ -26,7 +25,7 @@ export default class AddTodo extends Component {
           />
 
           <button type="submit" className={this.state.todo ? '' : 'disabled'}>
-            <IoIosAdd />
+            +
           </button>
         </form>
       </div>
