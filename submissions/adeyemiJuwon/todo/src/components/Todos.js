@@ -7,10 +7,11 @@ export default class Todos extends Component {
       <div>
         <div className="section">
           <ul className="todoLists">
-            {this.props.todos.map((todo) => {
+            {this.props.todos.map((todo, index) => {
               return (
                 <TodoList
-                  key={todo.id}
+                  key={index}
+                  id={index}
                   todo={todo}
                   markComplete={this.props.markComplete}
                 />

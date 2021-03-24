@@ -9,7 +9,6 @@ export default class App extends Component {
   };
   addtodo = (todo) => {
     const newTodo = {
-      id: new Date().getTime().toString(),
       todo: todo,
       completed: false,
     };
@@ -18,8 +17,8 @@ export default class App extends Component {
 
   markComplete = (id) => {
     this.setState({
-      todos: this.state.todos.filter((todo) => {
-        if (todo.id === id) {
+      todos: this.state.todos.filter((todo, index) => {
+        if (index === id) {
           todo.completed = !todo.completed;
         }
         return todo;
