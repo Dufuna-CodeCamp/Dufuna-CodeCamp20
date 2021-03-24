@@ -1,5 +1,5 @@
 <?php
-// 1. Attempt MySQL server connection.Assuming you are running MySQL
+// 1. Attempt MySQL server connection.
 
 try{
     $pdo = new PDO ("mysql:host=localhost;dbname=kwathu","root","mysql");
