@@ -126,14 +126,14 @@ SELECT * FROM orders;
 /*single_order database*/
 
 CREATE TABLE single_orders(
-order_item_id int not null auto_increment,
- Order_id int not null,
+ id int not null auto_increment,
+ order_id int not null,
  product_id int not null,
  quantity int not null,
  unit_price decimal not null,
  total_amount decimal(10, 2) not null,
  primary key(order_item_id),
- foreign key(Order_id) references orders(id),
+ foreign key(id) references orders(id),
  foreign key(product_id) references products_details(id)
 );
 
