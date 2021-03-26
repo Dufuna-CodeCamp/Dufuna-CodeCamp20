@@ -1,7 +1,11 @@
 <?php
 include('setCookies.php');
-setData();
-$results = json_decode($_COOKIE['customers'], true);
+if(!isset($_COOKIE['customers'])){
+  $results = setData();
+}else{
+  $results = unserialize($_COOKIE['customers'], ["allowed_classes" => false]);
+}
+
 
 if (isset($results) && count($results) > 0) {
   echo '
@@ -21,7 +25,7 @@ if (isset($results) && count($results) > 0) {
         <td>" . $result["first_name"]. " " . $result["last_name"]."</td>
         <td>" . $result["email"]. "</td>
         <td>" . $result["created_at"]. "</td>
-        <td></td>
+        <td style='border: solid 1px black'>" . '<a href="./order_list.php?id='. $result['customer_id'] .'">View</a>' . "</td>
       </tr>
     ";
   }
