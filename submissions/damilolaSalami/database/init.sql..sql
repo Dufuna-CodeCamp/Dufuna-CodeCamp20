@@ -112,7 +112,7 @@ VALUES (1, 1, 4000, now()),
 (4, 4, 20000, now());
 
 
-CREATE TABLE other_items(
+CREATE TABLE ordered_items(
 id INT NOT NULL AUTO_INCREMENT,
 order_id INT NOT NULL,
 product_id INT NOT NULL,
@@ -124,7 +124,7 @@ FOREIGN KEY (order_id) REFERENCES orders (id),
 FOREIGN KEY (product_id) REFERENCES products (id)
 );
 
-INSERT INTO other_items (order_id, product_id, quantity, unit_price, total_amount)
+INSERT INTO ordered_items (order_id, product_id, quantity, unit_price, total_amount)
 VALUES (1, 1, 5, 4000, 20000),
 (2, 2, 10, 10000, 100000),
 (3, 3, 15, 15000, 225000),
