@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>unthu drug store</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-header">
+          <a href="#">
+            <img src="../html/img/unthus.png" alt="unthus">
+            <h1>Unthu Drug Store</h1>
+          </a>
+        </div>
+        <div class="nav-content">
+          <ul>
+            <li><a href="#">Product page</a></li>
+            <li><a href="../htmlForms/contact.html">Contact us</a></li>
+            <li><a href="../htmlForms/signUp.html">Sign up</a></li>
+          </ul>
+        </div>
+    </header>
+    <section>
+        <div class="product">
+            <div class="product-img">
+                <a href="#">
+                    <img src="img/covid-19.jpg" alt="covid">
+                </a>
+            </div>
+            <div class="product-details">
+                <h3>COVID-19 VACCINE</h3>
+                <h4>Brand: Trade Kings Product</h4>
+                <h4>Quantity: <input type="number" value="1" name="quantity" id="quantity"></span><span class="error-block"></span></h4>
+                <h4>Price : K <span id="price">1000</span></h4>
+                <h4>Shipping Cost: K <span id="shippingCost"></span></h4>
+                <h4>Total Cost: K <span id="totalCost"></span></h4>
+                <button type="submit" id="btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="description">
+            <h3>DESCRIPTION</h3>
+            <P>The world is hoping a safe and effective COVID-19 vaccine will soon become available. 
+                So far, more than 160 candidate vaccines are in development, one of them is the vaccine above
+                This Vaccine has been proven working by WHO.It is into tablets, 
+                which is taken once and the virus is <strong>GONE</strong></P>
+        </div>
+        <div class="related-product">
+            <h3>RELATED PRODUCTS</h3>
+            <div class="product-related">
+                <div class="hiv-product">
+                    <a href="#">
+                        <img src="../html/img/HIV-00.jpg" alt="hiv-cure-image">
+                        <h5>HIV Vaccine</h5>
+                        <h5>Price: k3597</h5>
+                    </a>
+                    
+                </div>
+                <div class="aids-product">
+                    <a href="#">
+                        <img src="../html/img/cancer-cure.jpg" alt="cancer">
+                        <h5>Cancer cure</h5>
+                        <h5>Price: k1597</h5>
+                    </a>
+                </div>
+                <div class="cancer-product">
+                    <a href="#">
+                        <img src="../html/img/anal-fistula.jpg" alt="fistula">
+                        <h5>Fistula cure</h5>
+                        <h5>Price: k2597</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer>
+    <div class="footer-links">
+        <div>
+          <ul>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Terms Conditions</li>
+          </ul>
+        </div>
+        <form id="newsletterSignUp">
+        <div>
+           <label for="news-letter">Sign up for our Newsletter</label>
+           <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter your email address">
+           <span class="error-block"></span>
+           <button type="submit">Submit</button>
+        </div>
+       </form>
+        <div class="social">
+        <h5>CONNECT WITH US</h5>
+         <ul class="social-links">
+          <li><a href="https://web.facebook.com/benjamin.kamena"><img src="../html/img/facebook-logo.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="../html/img/twitter-logo.png" alt="twitter"></a></li>
+          <li><a href="#"><img src="../html/img/gmail-logo.png" alt="email"></a></li>
+          <li><a href="#"><img src="../html/img/youtube.png" alt="youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+        <p>Copyright &copy, 2020 unthu.com All rights reserved.</p>
+</footer>
+</section>
+<script src="../Dom/newsletter.js"></script>
+<script src="../Dom/product.js"></script>
+</body>
+</html>

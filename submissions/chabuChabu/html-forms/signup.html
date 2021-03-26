@@ -1,41 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" >
-        <title>Sign up</title>
-    </head>
-    <body >
-        <h1>Kwathu</h1><hr>
-        <div>
-          <a href="contact-form.html">Contact form</a>
-          <a href="../introToHtml/product.html">Product</a>
-        </div>
-        <h4>Create your account by providing the following details.</h4>
-        <form ">
-          <fieldset>
-            <legend><strong>Sign up</strong></legend><br>
-            <label>Title:</label><br>
-              <select name="title" id="title">
-                <option value="select" selected="">select..</option>
-                <option value="mr">Mr</option>
-                <option value="mrs">Mrs</option>
-                <option value="miss">Miss</option>
-                <option value="ms">Ms</option>
-                <option value="dr">Dr</option>
-              </select><br><br>
-            <label>First Name:</label><br>
-            <input type="text" name="firstname" id="firstname" ><br><br>
-            <label>Last Name:</label><br>
-            <input type="text" name="lastname" id="lastname" ><br><br>
-            <label>Email:</label><br>
-            <input type="email" name="email" id="email" ><br><br>
-            <label>Password</label><br>
-            <input type="password" name="password"><br><br>
-            <label>Confirm Password</label><br>
-            <input type="confirm-password" name="confirm-password"><br><br>
-            <button type="submit">Sign Up</button>
-          </fieldset>
-        </form>
-            <p>&copy; 2020 Kwathu</p>   
-    </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sign-up page</title>
+	<!--Custom Styling-->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!--Google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h1 class="logo-text">KWATHU</h1>
+		</div>
+		<ul class="nav">
+			<li><a href="product.html">Product Page</a></li>
+                        <li><a href="contact-form.html">Contact Us</a></li>
+                        <li><a href="#">Sign-up</a></li>
+		</ul>
+	</header>
+	<!--page Wrapper-->
+	<div class="page-wrapper">
+	<!--Page content-->
+		<div class="content clearfix">
+			<div class="main-content">
+				<h1 class="registration-title">Register your <br> Account</h1>
+				<div class="section-one">
+					<p class="reg-wording">
+						Registering an account gives you<br>access to sweet promo and events<br> available only to registered<br> customers<br><br> Already got an account? &nbsp <a href="#">Sign in</a>
+					</p>
+				</div>
+				
+			</div>
+			<div class="sidebar">
+			  	<div class=" section-form">
+			  		<form id="validateSignUp" action="#" method="post">
+						<div>
+							<label id="form-label">First Name</label>
+							<input type="text" id="firstName" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+			  			<div>
+                            <label id="form-label">Last Name</label>
+							<input type="text" id="lastName" class="text-input"  >
+							<span class="error-block"></span>   
+						</div>
+			  			<div>
+							<label id="form-label">Other Name</label>
+							<input type="text" id="otherName" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+						<div>
+							<label id="form-label">Phone Number</label>
+							<input type="text" id="phoneNumber" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+			  	        <div>
+							<label id="form-label">Email Address</label>
+							<input type="text" id="emailAddress" class="text-input">
+							<span class="error-block"></span>
+						</div>
+			  			<div>
+                            <label id="form-label">Password</label>
+							<input type="text" id="password" class="text-input" >
+							<span class="error-block"></span>   
+						</div>
+			  			<div>
+							<label id="form-label">Confirm Password</label>
+							<input type="text" id="confirmPassword" class="text-input" >
+							<span class="error-block"></span>
+						</div>
+			  			<label id="terms"><input type="checkbox" name="conditionscheckbox" class="checkbox">I agree to the Terms and Conditions</label>
+			  			<input type="submit" class="btn" value="SIGN UP">
+			  		</form>
+			  	</div>
+	          </div>
+		</div>
+		
+	</div>
+	<!-- footer-->
+	<div class="footer ">
+		<div class="footer-content">
+			<div class="footer-section about">
+      			<ul>
+      				<li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+      			</ul>
+      	   </div>
+      	   <div class="footer-section">
+				 <form id="validateNewsletter">
+					<p>Sign up for our Newsletter</p>
+					<input class="footer-email" id="newsletter" placeholder="Enter your email address">
+					<button type="submit" class="footer-button">SUBMIT</button><br>
+                    <span class="footer-error-block"></span>
+				 </form>
+      	   </div>
+      	   <div class="footer-section newslatter">
+                <p>CONNECT WITH US</p>
+      			<a href="https://www.facebook.com"><input type="image" name="facebook" src="../html/images/facebook-logo.jpg"></a>
+                <a href="https://www.twitter.com"><input type="image" name="twitter" src="../html/images/twiiter-logo.jpg"></a>
+                <a href="https://www.gmail.com"><input type="image" name="gmail" src="../html/images/gmail-logo.jpg"></a>
+                <a href="https://www.youtube.com"><input type="image" name="youtube" src="../html/images/youtube-logo.jpg"></a>
+      		</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		&copy; Copyright 2020 Kwathu All rights reserved
+	</div>
+	<!--footer-->
+	<script src="../javaScript/signup.js"></script>
+	<script src="../javaScript/newsletter.js"></script>
+</body>
 </html>

@@ -2,68 +2,101 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Form</title>
+        <link rel="stylesheet" type="text/css" href="../css/contactForm.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
+        
         <nav>
-            <h1>Zeezy Stores</h1>
-            <input type="text" placeholder="Search.." name="search">
             <ul>
-                <a href="#">Men Wear</a>
-                <a href="#">Shoes</a>
-                <a href="#">Watches</a>
-                <a href="#">Sunglasses</a>
-                <a href="#">Accessories</a>
-                <a href="#">Women Fashion</a>
-                <a href="#">Awoof Sales</a>
+                <a class="head" href="#">Zeezy Stores</a>
+                <li><a href="signUp.html">Sign Up</a></li>
+                <li><a href="../htmlForms/contactForm.html">Contact Us</a></li>
+                <li><a href="../html/index.html">Product Page</a></li>
             </ul>
         </nav>
-        <h1>Contact Us</h1>
-        
-        <form>
-            <fieldset>
-                <legend>Contact Form</legend>
-                <label for="fname">Fist Name</label><br>
-                <input type="text" name="fname" id="fname"><br><br>
-                <label for="lname">Last Name</label><br>
-                <input type="text" name="lname" id="lname"><br><br>
-                <label for="mname">Middle Name</label><br>
-                <input type="text" name="mname" id="mname"><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
-                <label for="subject">Subject</label><br>
-                <input type="text" name="subject" id="subject"><br><br>
-                <label for="input">Message Input</label><br>
-                <textarea name="input" id="input" cols="30" rows="10"></textarea><br><br>
-                <button>Submit</button>
-            </fieldset>
-        </form>
+        <div class="contactus">    
+            <div class="contact">
+                <div class="p1">
+                    <img src="../html/image/ic_call_24px.png">
+                    <p class="number">Please contact us via these numbers: </p>
+                    <p class="num">+123 803 303 0000 <br> +123 816 710 6842 </p>
+                </div>
+                <br>
+                <div class="p2">
+                    <img src="../html/image/ic_email_24px.png">
+                    <p class="address">Email Address:</p>
+                    <p class="domain">support@domain.com</p>
+                </div>
+                <br>
+                <div class="p3">
+                    <p class="connect1">Or Connect with Us:</p>
+                    <img src="../html/image/facebook-logo.png">
+                    <img src="../html/image/twitter-logo.png">
+                    <img src="../html/image/mail-logo.png">
+                    <img src="../html/image/youtube-logo.png">
+                </div>           
+            </div>
+            
+            
+            <form class="informate">
+                <fieldset class="formate">
+                    <div class="mate">
+                        <div class="image">
+                            <img src="../html/image/ic_drafts_24px.png"><br>
+                        </div>
+                        <p>Or better still send us a message</p><br>
+                        <input type="text" name="fname" id="fname" placeholder="Full Name">
+                        <span class="error-block"></span><br><br>
+                        <input type="email" name="email_address" id="email" placeholder="Email">
+                        <span class="error-block"></span><br><br>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <span class="error-block"></span><br><br>
+                        <label for="input">Message</label><br>
+                        <textarea name="input" id="input" cols="30" rows="10"></textarea>
+                        <span class="error-block"></span><br><br>
+                        <button type="submit" class="ton">SEND</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
         
         <footer>
-            
-        
-            <h5>COPORATE</h5>
-            <ul>    
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Orders And ReturnsS</a></li>
-                <li><a href="#">Terms Of Service</a></li>
-            </ul>
-
-            <h5>YOU LINK</h5> 
-            <ul>
-                <li><a href="#">Delivery Query</a></li>
-                <li><a href="#">Store Location</a></li>
-                <li><a href="#">Customer Service</a></li>
-                <li><a href="#">Privacy And Policy</a></li>
-            </ul> 
-
-            <h5>SUPPORT</h5>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="footer">
+                <div>
+                    <ul>
+                        <li><a href="../htmlForms/contactForm.html">Contact Us</a></li><br>
+                        <li><a href="#">About Us</a></li><br>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <br><br>
+                <form class="newsletterSignup">
+                    <label for="newsletter">Sign Up for our Newsletter</label><br><br>
+                    <div class="news">
+                        <div class="letter">
+                            <input type="text" name="newsletter" id="newsletter" placeholder="Enter your email address">
+                            <div class="error-block" id="error"></div>
+                        </div>
+                        <div class="letter-I"><button type="submit">SUBMIT</button></div>
+                    </div>
+                </form>
+                <br><br>
+                <div class="connect">
+                    <p>CONNECT WITH US</p>
+                    <img src="../html/image/facebook-logo.png">
+                    <img src="../html/image/twitter-logo.png">
+                    <img src="../html/image/mail-logo.png">
+                    <img src="../html/image/youtube-logo.png">
+             
+                </div>
+                <br>       
+            </div>
             <p> Copyright &copy; 2020 zeezystores.com. All rights reserved.</p>
         </footer>
+        <script src="../dom/contactForm.js"></script>
+        <script src="../dom/newsletter.js"></script>
     </body>
 </html>

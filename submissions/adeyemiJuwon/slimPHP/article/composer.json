@@ -1,0 +1,21 @@
+{
+  "name": "samju200/article",
+  "description": "publishing house api",
+  "require": {
+    "slim/slim": "4.*",
+    "slim/psr7": "^1.3",
+    "slim/pdo": "^1.10",
+    "vlucas/phpdotenv": "^5.3",
+    "illuminate/database": "^8.30"
+  },
+  "autoload": {
+    "psr-4": {
+      "DB\\": "database",
+      "App\\Controller\\": "app/controllers",
+      "App\\Middleware\\": "app/middlewares"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8080 -t public"
+  }
+}

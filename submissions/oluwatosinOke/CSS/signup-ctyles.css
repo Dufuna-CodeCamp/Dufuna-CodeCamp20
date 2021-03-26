@@ -1,0 +1,375 @@
+
+form  {
+    width: 100%;
+    height: 100%;
+}
+ body{
+   margin: 0;
+ }
+
+/* header */
+header
+  {
+    background: #00f798a8;
+    color: blueviolet;
+    padding-top: 1px;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    font: bolder 30px cursive, "cookie";
+}
+header a
+  {
+    color: blueviolet;
+    text-decoration: none;
+    font: bolder 30px cursive, "cookie";
+}
+  
+  header li
+  {
+    display: inline;
+    padding:0 30px;
+  }
+  
+  header #nav-logo
+  {
+    float: left;
+    margin: 15px;
+  }
+  
+  header #nav-logo h2
+  {
+    margin:0;
+    padding:0;
+  }
+  header nav
+  {
+    float: right;
+    margin-top: 15px;
+  }
+  
+  /*body*/
+  .con
+  {
+    overflow: hidden;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  
+  .act
+  {
+    margin:20px 1px 20px 20px;
+    float: left;
+    padding-left:7em;
+    width: 35%;
+    text-align: left;
+  }
+  
+  .act h1
+  {
+    color:blueviolet;
+    font: 2em sans-serif;
+  }
+  
+  .act h3, .act h4
+  {
+    line-height: 1.23;
+    color: #5f5f5f
+  }
+  
+  .log-in
+  {
+    font-weight: bold;
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  .form
+  {
+    border: solid 1px blueviolet;
+    line-height:1.7;
+    font-size: 25px;
+    border-radius: 23px;
+    margin-left: 250px;
+    float: left;
+    width: 35%;
+    padding: 2%;
+  }
+  
+  .for-input input[type=text],
+  .for-input input[type=email],
+  .for-input input[type=password]
+  {
+    width: 100%;
+    border: 1px solid #5f5f5f;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 25px;
+  }
+  
+  .form button
+  {
+    background-color:#00f798a8;
+    border-radius: 5px;
+    color: blueviolet;
+    padding: 10px;
+    font-size: 22px;
+    height: 50px;
+    width: 190px;
+  }
+
+  .errorCode {
+    color:red;
+}
+  .error {
+    color:red;
+}
+  
+  /*footer*/
+  .footer
+  {
+    font-size: 20px;
+    background-color:#00f798a8;
+    color:blueviolet;
+    padding: 55px 50px;
+    margin-top: 30px;
+    height: fit-content;
+  }
+  
+  .footer p
+  {
+     text-align: center;
+     font: normal 30px 'Cookie', cursive;
+  }
+  .footer-left ul
+  {
+    list-style:none;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right
+  {
+      display: inline-block;
+      vertical-align: top;
+      font: bold 30px 'Cookie', cursive;
+  }
+  .footer-left{
+      width: 30%;
+  }
+  
+  .footer-left a{
+      color:  blueviolet;
+      font: normal 36px 'Cookie', cursive;
+      margin: 0;
+      display:inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+  }
+  
+  .footer-center{
+      width: 35%;
+  }
+  
+  .footer-center input[type=email] {
+      width: 30%;
+      height: 50px;
+  }
+  
+  .footer-center button{
+      width: 10%;
+      height: 50px;
+      font: bolder 20px 'Cookie', cursive;
+      color:black;
+  }
+  ::placeholder
+  {
+    color:#5f5f5f;
+    font: normal 26px 'Cookie', cursive;
+  }
+  
+  
+  .footer-right
+  {
+      width: 25%;
+  }
+  
+  .footer-right img
+  {
+    width:106px;
+    height:78px;
+  }
+   
+  
+  @media screen and (max-width:400px)
+  {
+      header
+      {
+          height: fit-content;
+          display: block;
+          width: 100%;
+          font: bolder 7px  "cookie";
+          padding-bottom: 1em;
+      }
+  
+      header #nav-logo
+      {
+          margin: 1px;
+      }
+  
+      header nav
+      {
+          float: left;
+          margin-top: 1px;
+      }
+  
+      header ul
+      {
+          margin-top: auto;
+          font: bolder 7px "cookie";
+          float: right;
+      }
+  
+      header a
+      {
+          font: bolder 7px  "cookie";
+      }
+  
+      header li
+      {
+          display: inline-block;
+          padding: 1px;
+          margin: 1px;
+      }
+  
+      .con
+      {
+          padding: 1px;
+      }
+       
+      .act
+      {
+          display:block;
+          width: 100%;
+          margin: 1px;
+          padding-top: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 1px;
+          font: bolder 12px "cookie";
+      }
+  
+      .act h1
+      {
+          margin-top: 1px;
+          font: bolder 20px  "cookie";
+      }
+  
+      .act h3, .act h4
+      {
+          line-height: 1.2;
+          margin-top: 1px;
+          margin-bottom: 3px;
+      }
+  
+      .form
+      {
+          font: normal 2vh  "cookie";
+          margin-bottom: 1px;
+          margin-top: 1px;
+          margin-left: 15px;
+          width:75%;
+          height: fit-content;
+          padding-left: 25px;
+          border-radius: 15px;
+      }
+      .for-input input[type=text],
+      .for-input input[type=email],
+      .for-input input[type=password]
+      {
+          border: 1px solid #5f5f5f;
+          height: 15px;
+          width: 89%;
+          padding: 1px;
+      }
+  
+      input[type=submit]
+      {
+          background-color:#00f798a8;
+          border-radius: 2px;
+          color: blueviolet;
+          padding: 1px;
+          font: normal 2vh  "cookie";
+          height: 20px;
+          width: 60px;
+      }
+  
+      .footer
+      {
+        font: normal 2vh  "cookie";
+        background-color:#00f798a8;
+        color:blueviolet;
+        padding: 1px;
+        margin-top: 1px;
+        height: fit-content;
+        width: 100%
+      }
+      .footer p
+      {
+        text-align: left;
+        font: normal 2vh  "cookie";
+      }
+      .footer-left ul
+      {
+        list-style:none;
+        margin: 1px;
+        padding: 1px;
+      }
+  
+      .footer-left,
+      .footer-center,
+      .footer-right
+      {
+      display: block;
+      font: normal 2vh  "cookie";
+      width: 100%;
+      }
+  
+      .footer-left a,
+      .footer-right h3,
+      .footer-center h3,
+      .footer p{
+        color:  blueviolet;
+        font: normal 2vh  "cookie";
+        margin: 1px;
+        padding: 1px;
+        text-decoration: none;
+      }
+
+      .footer-center input[type=email]
+      {
+        width: fit-content;
+        height: 15px;
+        padding: 1px;
+      }
+  
+      .footer-center input[type=button] {
+        width: fit-content;
+        height: 17px;
+        font: normal 7px  "cookie";
+        color:black;
+      }
+      ::placeholder
+      {
+        font: normal 2vh  "cookie";
+      }
+  
+      .footer-right img
+      {
+        width:32px;
+        height:28px;
+      }
+  }
+  

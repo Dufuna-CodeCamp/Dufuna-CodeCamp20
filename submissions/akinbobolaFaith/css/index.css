@@ -1,0 +1,305 @@
+body {
+    margin: 0 -52px 0 0;
+    font-family: 'Lato' , sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.head {
+    font-size: 31px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul,
+.related-products ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:link,
+a:hover {
+    text-decoration: none;
+    color: palegreen;
+}
+
+a:visited {
+    color: white;
+}
+
+a[href*="#"] {
+    color: white;
+}
+
+footer img {
+    height: 50px;
+}
+
+.oxford img {
+    height: 186px;
+    width: 56%;
+    border: 1px solid gray;
+    margin: 30px 36px 0 76px;
+}
+
+.brand {
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.brand h3 {
+    line-height: 1.0;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0.5;
+}
+
+input {
+    width: 50px;
+    height: 30px;
+}
+
+.oxford button {
+    background: #f79521;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.oxford button:disabled {
+    background:#b1b1b1;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.oxford {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin-left: 30px;
+    line-height: 1.25;
+}
+
+.related-products {
+    text-align: center;
+    background-color: rgb(202, 210, 221);
+    padding: 10px;
+}
+
+.related-products li {
+    display: inline-grid;
+    padding: 30px;
+    margin: 0 25px 14px 25px;
+    border: 1px solid white;
+    background-color: white;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.related-products img {
+    height: 150px;
+    margin-left: 70px;
+}
+
+img {
+    height: 50px;
+    padding: 8px;
+}
+
+.error-block {
+    font-size: 15px;
+    color: red;
+    padding: 0;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.footer > div {
+    padding: 9px 100px 13px 20px ;
+}
+
+footer ul {
+    margin: 5px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: olive;
+    color: white;
+}
+
+.connect p {
+    margin: 0;
+    text-align: left;
+}
+
+.connect {
+    margin-top: 0;
+}
+
+.newsletterSignup {
+    margin-top: 10px;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+.newsletterSignup input {
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.newsletterSignup button {
+    color: olive;
+    font-weight: bold;
+    height: 40px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        margin: 0;
+    }
+
+    nav {
+        padding: 25px 35px;
+    
+    }
+    
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .oxford {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .oxford img {
+        height: 186px;
+        width: 12%;
+        border: 1px solid gray;
+        margin: 30px 30px 0 30px;
+    }
+    
+    .footer > div {
+        padding: 50px 140px 0 40px ;
+    }
+
+    .newsletterSignup {
+        padding: 48px 140px 0 40px;
+        font-size: 20px;
+    }
+
+    .related-products {
+        text-align: center;
+        background-color: rgb(202, 210, 221);
+        padding: 10px;
+    }
+    
+    .related-products li {
+        display: inline-grid;
+        padding: 30px;
+        margin: 0 50px 14px 0;
+        border: 1px solid white;
+        background-color: white;
+        font-weight: bold;
+        line-height: 0.5;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1050px) {
+    body {
+        margin: 0;
+    }
+
+    nav {
+        padding: 25px 35px;
+    
+    }
+    
+    nav li {
+        display: inline;
+        padding: 8px;
+        margin-right: 50px;
+        float: right;
+    }
+
+    .oxford {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .oxford img {
+        height: 186px;
+        width: 20%;
+        border: 1px solid gray;
+        margin: 30px 30px 0 30px;
+    }
+
+    .footer > div {
+        padding: 50px 150px 0 40px ;
+    }
+
+    .newsletterSignup {
+        padding: 48px 140px 0 45px;
+        font-size: 20px;
+    }
+
+    .related-products {
+        text-align: center;
+        background-color: rgb(202, 210, 221);
+        padding: 10px;
+    }
+    
+    .related-products li {
+        display: inline-grid;
+        padding: 30px;
+        margin: 0 50px 14px 0;
+        border: 1px solid white;
+        background-color: white;
+        font-weight: bold;
+        line-height: 0.5;
+    }
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+    padding: 10px 10px 10px 27px;
+    line-height: 1.7;
+    background-color: olive;
+    color: white;
+    position: relative;
+}

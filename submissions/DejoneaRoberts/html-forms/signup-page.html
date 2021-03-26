@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/sign-up.css">
+  </head>
+
+  <body>
+    <nav>
+      <br><a class="title" href="#">SWITCHSTOP</a>
+      <ul class="nav-list">
+        <div class="container">
+          <li class="nav-item"> <a href="../html/product-page.html">Home</a></li>
+          <li class="nav-item"> <a href="signup-page.html">Sign Up</a></li>
+          <li class="nav-item"> <a href="contact-page.html">Contact Us</a></li><br>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <div class="reg" class="maincol">
+        <br><h2>Register your Account</h2>
+        <div class="description">
+          <p>
+            Registering an account gives you
+            access to sweet promo and events
+            available to only registered customers
+            <br><br>Already got an account?
+            <a href="#">Sign In</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="sign" class="maincol">
+        <form class="sign-up" enctype="multipart/form-data" action="#" method="post">
+          <fieldset>
+            <label for="firstname">First Name:</label><br>
+            <input type="text" name="firstname" id="firstname"/><br>
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" name="lastname" id="lastname"/><br>
+            <label for="othername">Other Names:</label><br>
+            <input type="text" name="othername" id="othername"/><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" name="phone" id="phone"/><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" id="email"/><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password"/><br>
+            <label for="confirm">Confirm Password:</label><br>
+            <input type="password" name="confirm" id="confirm"/><br><br>
+            <div class="sign-button">
+              <input type="checkbox" name="terms" id="terms"/>
+              <label class="terms" for="terms">I agree to the Terms and Conditions</label><br>
+              <button type="submit" name="button">SIGN UP</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="wrapper">
+        <li id="a" class="cols">
+          <ul class="footer-list">
+            <li><a href="../html-forms/contact-page">Contact Us</a</li>
+            <li> <a href="#">About Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li><br>
+          </ul>
+        </li>
+
+        <div id="b">
+          <li class="cols">
+            <form class="email-footer" action="#" method="post">
+              <label for="email-sign">Sign up for our Newsletter</label><br>
+              <input placeholder=" Enter your email address"type="email-sign" name="email-sign" id="email-sign"/>
+              <button type="submit" name="email-button">SUBMIT</button>
+            </form>
+          </li>
+
+          <li class="cols">
+            <div class="logos">
+              <p>CONNECT WITH US</p>
+              <img id="fb" src="../html/images/facebook-logo.png" alt="">
+              <img id="fb" src="../html/images/twitter-logo.png" alt="">
+              <img id="mail" src="../html/images/mail-logo.png" alt="">
+              <img id="yt" src="../html/images/youtube-logo.png" alt="">
+            </div>
+          </li>
+        </div>
+      </ul>
+
+      <p class="copyright">&copy; 2021 SWITCHSTOP.COM<br>All Rights Reserved</p>
+
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    color: rgb(99, 99, 99);
+}
+
+.nav-container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+
+/* THE HEADER */
+
+header {
+    background: #9d426b;
+    color: white;
+    padding-top: 10px;
+    min-height: 25px;
+    border-bottom: goldenrod 3px solid;
+}
+
+header a {
+    color: white;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 30px;
+}
+
+#nav-branding {
+    float: left;
+    padding-bottom: 10px;
+}
+
+#nav-branding h2,
+#nav-branding p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav {
+    float: right;
+    margin-top: 15px;
+}
+
+header a:hover {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* THE CONTAINER */
+
+main {
+    margin: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+/* MAIN */
+
+.main-img {
+    float: left;
+    height: 260px;
+    width: 230px;
+    margin: 2px 0 5px 8px;
+    border: 1px solid #818181;
+}
+
+.main-img img {
+    width: 200px;
+    padding: 10px 20px;
+    height: 230px;
+}
+
+
+/* MAIN IMAGE DETAILS */
+
+.img-details {
+    float: left;
+    width: 330px;
+    margin-left: 30px;
+}
+
+#quantity h4,
+#quantity input {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*TO REMOVE THE ARROWS IN AN INPUT[type="number"] for Chrome, Safari, Edge, Opera  */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    height: 25px;
+    width: 50px;
+    /* Firefox */
+    -moz-appearance: textfield;
+}
+
+.img-details button {
+    width: 100px;
+    border-radius: 12px;
+    background-color: goldenrod;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    height: 40px;
+}
+
+.description {
+    margin: 0 35px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.description h4 {
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+
+/* ASIDE: THIS IS FOR RELATED PRODUCT */
+
+aside {
+    background-color: rgb(231, 227, 227);
+    padding: 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+.img-slide {
+    float: left;
+    width: 30%;
+    height: 285px;
+    margin: 20px 0 0 30px;
+    background-color: white;
+}
+
+.img-slide a img {
+    width: 188px;
+    height: 200px;
+    margin: 10px 85px 0 85px;
+}
+
+.img-slide p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.errorMessage {
+    color: yellow;
+    display: block;
+    font-weight: bold;
+}
+
+
+/* THE FOOTER */
+
+footer {
+    background-color: #9d426b;
+    padding: 20px 0 0 50px;
+    color: white;
+    overflow: hidden;
+    clear: both;
+}
+
+.footer-box,
+.footer-box-2,
+.footer-box-3 {
+    float: left;
+    width: 32%;
+}
+
+.footer-box ul li,
+.footer-box-3 ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+.footer-box-2 button[type="submit"] {
+    height: 30px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #9d426b;
+    font-weight: bold;
+}
+
+.footer-box-2 input[type="email"] {
+    height: 20px;
+    padding: 3px 18px 3px;
+    font-size: 11px;
+}
+
+.footer-box-3 h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box-3 ul li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.footer-box-3 ul li img {
+    width: 35px;
+    height: 30px;
+}
+
+footer p {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* HANDLING RESPONSIVENESS / RESOLUTIONS */
+
+@media screen and (max-width:594px) {
+    header nav,
+    header #nav-branding,
+    header .nav-container nav li {
+        float: none;
+        text-align: left;
+        display: block;
+    }
+    .main-img {
+        padding: 0 20px;
+    }
+    aside {
+        padding-bottom: 50px;
+    }
+    aside .img-slide {
+        float: none;
+        width: 310px;
+    }
+    .img-slide {
+        margin: 30px auto;
+        display: block;
+    }
+    .footer-box,
+    .footer-box-2,
+    .footer-box-3 {
+        float: none;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .slide1,
+    .slide2,
+    .slide3 {
+        width: 340px;
+    }
+    .footer-box,
+    .footer-box-2 {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .footer-box-3 {
+        float: none;
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .footer-box-3 ul li {
+        display: inline;
+    }
+    footer p {
+        text-align: center;
+    }
+}

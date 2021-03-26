@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/product.css">
+  <title>Product Page</title>
+</head>
+
+<body>
+  <nav>
+    <label class="logo"><img id="logo" src="../html/images/logo.png"></label>
+    <ul>
+      <li><a href="../html/index.html">Product Page</a></li>
+      <li><a href="../htmlForms/signUp.html">SignUp</a></li>
+      <li><a href="../htmlForms/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div>
+    <div><img class="shirtImg" id="" src="../html/images/shirtIMG.jpg" alt="facebook"></div>
+    <div class="shirtDetails">
+      <ul>
+        <li>
+          <h2 class="header1">Blue White Collar T-Shirt</h2>
+        </li>
+        <li>
+          <h4 class="header2">Brand: Polka-dot</h4>
+        </li>
+        <li>
+          <h4 class="header2">Quality: <input class="qty" value=1 id="qty" type="number">
+            <span id="error"></span>
+          </h4>
+        </li>
+        <li>
+          <h4 class="header2">Price: $<span id="price">340</span> </h4>
+        </li>
+        <li>
+          <h4 class="header2">Shipping Cost: $<span id="shippingCost">100</span></h4>
+        </li>
+        <li>
+          <h4 class="header2">Total Cost: $<span id="total">340</span></h4>
+        </li>
+        <button class="buyButton" id="buyButton" type="submit">Buy now</button>
+      </ul>
+    </div>
+    <div class="shirtDescription">
+      <h2 class="topDescription">Description</h2>
+      <p class="paraDescription">The main pocket (where your laptop goes) as well as the top flap, are made with wild
+        hemp, harvested, spun and
+        handwoven
+        here in Nepal.
+        The inside has Tibetain sheeps' wool for an effective, natural and sustainable padding (instead of chemical
+        based
+        neoprene used in most cases).
+        The smaller, front pocket uses recycled wild hemp cloth - from bags used by farmers from rural Nepal. This is
+        slightly
+        thinner than the other wild hemp fabric in this item and because of its past use is beautifully soft. This front
+        pocket
+        can accommodate your laptop charger as well as a note book/pens etc. making it super convenient.
+      </p>
+    </div>
+    <div class="container">
+      <h2 class="relatedProd">Related Products</h2>
+      <ul class="imgContainer">
+        <li class="imgLabel"><img class="productImg" src="../html/images/capimgs.jpg" alt="Cap">
+          <p class="label">Men Cap</p>
+          <p class="label2">price: $20</p>
+        </li>
+        <li class="imgLabel"><img class="productImg" src="../html/images/shoe.jpg" alt="Shoe">
+          <p class="labelEx">Men Shoes</p>
+          <p class="label2">price: $34</p>
+        </li>
+        <li class="imgLabel"><img class="productImg" src="../html/images/watch pic.jpeg" alt="Watch">
+          <p class="label">Wrist Watch</p>
+          <p class="label2">price: $175</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="contact">
+      <ul>
+        <li><a href="./contact.html">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <p>Sign up for our Newsletter</p>
+      <form id="newsLetter">
+        <input type="text" placeholder="Enter your Email" id="newsEmail" />
+        <button id="newsSubmit" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="media">
+      <h3 id="connect">CONNECT WITH US</h3>
+      <ul>
+        <li><img class="fb" id="imglogo" src="../html/images/fblogo.png" alt="facebook" /></li>
+        <li><img class="tw" id="imglogo" src="../html/images/twlogo.png" alt="twitter" /></li>
+        <li><img class="gm" id="imglogo" src="../html/images/gmlogo.png" alt="gmail" /></li>
+        <li><img class="yt" id="imglogo" src="../html/images/yTlogo.png" alt="youtube" /></li>
+      </ul>
+    </div>
+    <div class="copyRight">&copy; Copyright 2020:
+      <a href="#"> Emarket</a>
+    </div>
+  </footer>
+  <script src="../javascript/Dom/index.js"></script>
+  <script src="../javascript/Dom/footer.js"></script>
+</body>
+
+</html>

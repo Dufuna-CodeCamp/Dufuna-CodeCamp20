@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link href="../css/sign-up.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="left-side">
+                <div class="tab">
+                    <strong>BOOTSTRAPS</strong>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="link-wrapper">
+                    <a href="../html/index.html"> Product Page </a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="../html-forms/contactform.html">Contact Us</a>
+                </div>
+                <div class="link-wrapper">
+                    <a href="../css/sign-up.html">Sign-up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="presentation">
+            <div class="sidebar">
+                <p>
+                <h4> Register your<br> Account</h4>
+                </p>
+                <p> Registering an account gives you<br> access to sweet promo and events<br> available to only
+                    registered<br> customers </p>
+                <p> Already got an account? <strong>Sign in</strong> </p>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="form-div">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="texts" id="firstname" name="firstname">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="texts" id="lastname" name="lastname">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="othernames">Other Names</label>
+                        <input type="text" class="texts" id="othernames" name="othernames">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="text" class="texts" id="phonenumber" name="phonenumber">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="email">Email Address </label>
+                        <input type="text" class="texts" id="email" name="email">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="password">Password</label>
+                        <input type="password" class="texts" id="password" name="password">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="form-div">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" class="texts" id="cpassword" name="cpassword">
+                        <span class="error-block"></span>
+                    </div>
+
+                    <div class="confirm">
+                        <div>
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms"> I agree to the Terms and Conditions</label>
+                        </div>
+                        <button type="button" id="signupbutton">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="about">
+                    <p> Contact Us </p>
+                    <p> About Us </p>
+                    <p> Terms and Conditions </p>
+                </div>
+
+                <div class="socials">
+                    <div class="newsletter">
+                        <label for="email">Sign up for our Newsletter</label>
+                        <div class="newsletter-input">
+                            <input type="text" id="newslettter" name="email" placeholder="Enter your email address">
+                            <span class="error-block"></span>
+                            <button type="button" id="submitbutton">SUBMIT</button>
+                        </div>
+
+                    </div>
+
+                    <div class="connect">
+                        <p> CONNECT WITH US</p>
+                        <div class="images">
+                            <img src="../html/images/logos_facebook.png" class="facebook" alt="facebook_logo">
+                            <img src="../html/images/twitter.png" class="twitter" alt="twitter_logo">
+                            <img src="../html/images/logos_google-gmail.png" class="gmail" alt="gmail_logo">
+                            <img src="../html/images/logos_youtube.png" class="youtube" alt="youtube_logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p> &#169; 2020 BootStraps</p>
+        </footer>
+    </main>
+    <script src="../javascript/signup.js"></script>
+    <script src="../javascript/newsletter.js"></script>
+</body>
+
+</html>

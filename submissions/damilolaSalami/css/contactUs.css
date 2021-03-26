@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial ;
+    }
+
+/* header */
+.header{
+    background-color: purple;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 0;
+}
+
+.header .logo img{
+    width: 200px;
+}
+
+.header li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 17px;
+    margin-right: 100px;
+}
+
+.header li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header li a:hover{
+    color: black;
+}
+
+/* Registration */
+.contactbody{
+    display: flex;
+}
+
+.container{
+    flex-basis: 50%;
+    padding-bottom: 200px;
+    font-size: 20px;
+}
+
+.call{
+    padding-bottom: 30px;
+}
+
+.email{
+    padding-bottom: 30px;
+}
+
+.email p{
+    padding: 20px;
+}
+
+.social{
+    line-height: 50px;
+    text-align: center;
+}
+
+.social img{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.callus{
+    font-size: 20px;
+    margin: 120px 5px 0 50px;
+    padding-right: 100px;
+    padding-left: 150px;
+    text-align: center;
+}
+
+.callus p{
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.container img{
+    border-radius: 5px;
+    height: 35px;
+    width: 38px;
+}
+
+.container p{
+    font-size: x-large;
+}
+
+.emailform{
+    padding: 25px 30px 10px 25px;
+    margin: 100px 10px 40px 80px;
+    width: 450px;
+    border: 1px solid black;
+    line-height: 40px;
+}
+
+.emailform h4{
+    text-align: center;
+}
+
+.emailform img{
+    margin-left: 170px;
+}
+
+.emailform input{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 390px;
+    margin: 4px 0 10px 1px;
+    height: 28px;
+    line-height: 20px;
+}
+
+.emailform p{
+    font-size: 15px;
+}
+
+.msgbox{
+    width: 390px;
+}
+
+.emailform .send{
+    background-color: purple;
+    font-size: 13px;
+    color: white;
+    width: 110px;
+    font-weight: bolder;
+    margin-left: 280px;
+}
+
+/* footer */
+.footer{
+    background-color: purple;
+}
+
+.mainfooter{
+    display: flex;
+    width: 100%;
+}
+
+.footerdiv{
+    flex-basis: 50%;
+    padding: 25px 10px 0 40px;
+}
+
+.contact li{
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.contact li a{
+    text-decoration: none;
+    color: white;
+}
+
+.newsletter{
+    padding-left: 0;
+}
+
+.newsletter p{
+    color: white;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.newsletter .emailletter{
+    padding-left: 5px;
+    border: 1px solid purple;
+    height: 30px;
+    width: 250px;
+}
+
+.mainfooter .newsletter .emailletter::placeholder{
+    color: purple;
+    font-size: 16px;
+}
+
+.mainfooter .newsletter .submit{
+    border: 1px solid white;
+    height: 29px;
+    width: 70px;
+    font-size: 13px;
+    font-weight: bold;
+    color: purple;
+}
+
+.mainfooter .connect p{
+    padding: 7px;
+    font-size: 14px;
+    color: white;
+    margin-left: 0;
+}
+
+.mainfooter .connect img{
+    background-color: transparent;
+    border-radius: 5px;
+    height: 27px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.finalfooter{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:640px){
+    body{
+        margin: 0;
+    }
+
+    .header{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 160px;
+        padding-bottom: 100px;
+    }
+    
+    .header li{
+        display: block;
+        margin: 5px 15px 10px;
+        line-height: 15px;
+        color: white;
+        list-style-type: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .header li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header li a:hover{
+        color: black;
+    }
+
+    .header .logo img{
+        display: block;
+        height: 75px;
+    }
+
+    .contactbody{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .callus{
+        text-align: center;
+        margin: 20px 10px 0;
+        padding: 0 5px;
+    }
+
+    .callus h3{
+        font-size: 15px;
+    }
+
+    .callus p{
+        font-size: 15px;
+    }
+
+    .call{
+        padding-bottom: 15px;
+    }
+    
+    .email{
+        padding-bottom: 5px;
+    }
+
+    .social img{
+        height: 30px;
+        width: 35px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .emailform{
+        width: 280px;
+        margin: 10px 30px 30px;
+        padding: 10px;
+    }
+
+    .emailform input{
+        width: 250px;
+    }
+
+    .emailform img{
+        margin: 5px 110px;
+    }
+
+    .emailform h4{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .emailform .msgbox{
+        width: 250px;
+    }
+
+    .emailform .send{
+        margin-left: 180px;
+        font-size: 14px;
+        width: 70px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .mainfooter{
+        flex-direction: column;
+    }
+
+    .contact{
+        padding: 10px 0 0 20px;
+    }
+
+    .newsletter{
+        padding: 10px 0 0 20px;
+    }
+
+    .newsletter .emailletter{
+        width: 200px;
+    }
+
+    .connect{
+        padding: 10px 0 0 15px;
+    }
+
+    .finalfooter{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1050px) and (min-width:640px){
+    .header{
+        display: flex;
+    }
+
+    .header li{
+        display: inline-block;
+        margin-right: 20px;
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .contactbody{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .callus{
+        margin: 40px 10px 0;
+        padding: 0 5px;
+    }
+
+    .emailform{
+        margin: 10px;
+        width: 500px;
+    }
+
+    .emailform input{
+        width: 450px;
+    }
+
+    .emailform .msgbox{
+        width: 450px;
+    }
+
+    .emailform .send{
+        margin-left: 340px;
+    }
+
+    .emailform img{
+        margin-left: 200px;
+    }
+
+    .emailform h4{
+        font-size: 25px;
+        padding-top: 2px;
+    }
+
+    .mainfooter{
+        width: 100%;
+        display: grid;
+        bottom: 0;
+        grid-template-columns: auto auto;
+    }
+
+    .contact li{
+        font-size: 20px;
+    }
+
+    .newsletter p{
+        font-size: 18px;
+    }
+
+    .newsletter .emailletter{
+        width: 250px;
+        height: 37px;
+    }
+
+    .mainfooter .newsletter .submit{
+        width: 90px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .mainfooter .connect p{
+        font-size: 20px;
+    }
+    
+    .finalfooter{
+        align-items: center;
+    }
+
+    .finalfooter p{
+        font-size: 20px;
+    }
+}

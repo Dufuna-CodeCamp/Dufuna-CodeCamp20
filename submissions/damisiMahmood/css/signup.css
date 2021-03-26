@@ -1,0 +1,310 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header img{
+	height: 78px;
+	float: left;
+	padding-bottom: 20px;
+	margin-top: 0.5px;
+	margin-left: 30px;
+}
+html,body{
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 16px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 120vh;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: goldenrod;
+	text-align: right;
+}
+nav li{
+	display: inline-block;
+	padding: 20px;
+}
+nav a{
+	height: 40%;
+	line-height: 40%;
+	font-size: 20px;
+	text-decoration: none;
+	color:white;
+}
+span{
+	color: goldenrod;
+	font-weight: bold;
+}
+main a{
+	color: goldenrod;
+}
+.container{
+	margin: 10px ;
+}
+.main{
+	width: 30%;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	padding-left: 0;
+	line-height: 35px;
+	word-spacing: 5px;
+}
+main h1{
+	font-size: 2em;
+}
+.sidebar{
+	width: 40%;
+	height: 530px;
+	float: right;
+	font-size: 12px;
+	margin-top: 20px;
+	border:solid 5px goldenrod ;
+	border-radius: 23px;
+	margin-right: 60px;
+	padding:20px;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=confirmpassword]{
+	padding: 8px ;
+	margin: 4px;
+	border-radius: 5px;
+	width: 100%;
+}
+input[type=checkbox]{
+	text-align: center;
+	padding-left: 50px;
+	margin: 8px 20px;
+}
+.error-block {
+    font-size: 12px;
+    color: red;
+	padding: 0;
+}
+main button{
+	display: inline-block;
+	text-align: center;
+	margin-top:15px;
+	margin-left: 120px;
+	width: 130px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: goldenrod;
+	color: white;
+}
+footer{
+	position: absolute;
+	height: 21%;
+	top: 650px;
+	width: 100%;
+	background-color:goldenrod;
+}
+footer li{
+	padding: 4px;
+	list-style-type: none;
+}
+footer a{
+	line-height: 1px;
+	color: white;
+	text-decoration: none;
+}
+.left-footer{
+	width: 20%;
+	float: left;
+	margin-left: 5px;
+}
+.middle-footer{
+	width: 40%;
+	float: left;
+	margin-left: 5px;
+	padding-left: 50px;
+	color: white;
+}
+footer input[type=email]{
+	width: 70%;
+}
+footer input[type=email],
+footer button {
+	border-radius: 0;
+	padding: 5px;
+	margin-top: 0;
+	margin-right: 2px;
+}
+.right-footer{
+	width: 35%;
+	float: right;
+	color: white;
+	margin-left: 5px;
+}
+.right-footer ul{
+	padding: 0;
+}
+.right-footer li{
+	display: inline;
+	padding: 8px;
+	margin-right: 5px;
+}
+.right-footer img{
+	height: 30px;
+}
+.copyright{
+	font-size: 15px;
+	height: 30px;
+	color: white;
+	text-align: center;
+}
+.copyright p{
+	margin-top: 50px;
+	padding-right: 90px;
+	padding-top: 50px;
+}
+@media screen and (max-width: 768px){
+	html,body{
+		width: 100%;
+		height: 150vh;
+	}
+	.main{
+		width: 50%;
+		text-align: center;
+		margin-top: 8px;
+		margin-left: 100px;
+		padding-left: 50px;
+		word-spacing: 10px;
+	}
+	.sidebar{
+		width: 80%;
+		margin-top: 10px;
+		margin-right: 80px;
+		margin-left: 80px;
+		height: 520px;
+		padding: 7px 40px;
+	}
+	footer{
+		height: 250px;
+		top: 950px;
+	}
+	footer a{
+		line-height: 3px;
+	}
+	.left-footer{
+		width: 40%;
+	}
+	.middle-footer{
+		width: 50%;
+		float: right;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.right-footer{
+		width: 50%;
+	}
+	.right-footer li{
+		padding: 5px;
+		margin-left: 10px;
+	}
+	.right-footer img{
+		height: 20px;
+	}
+	.copyright p{
+		margin-top: 100px;
+		padding-top: 120px;
+	}
+	footer input[type=email]{
+		width: 80%;
+	}
+	footer button {
+		padding: 2px;
+		margin-left: 3px;
+		margin-right: 1px;
+	}
+}
+
+
+@media screen and (max-width: 360px){
+	header img{
+		margin: 10px;
+		display: none;
+	}
+	nav ul{
+		text-align:left;
+	}
+	nav li{
+		display: inline-block;
+		width: 50%;
+		padding: 10px;
+	}
+	main button{
+		margin-left: 30px;
+	}
+	.main {
+	    padding: 0;
+	    line-height: 24px;
+	    width: 100%;
+	    margin-left: 3px;
+	    margin-right: 3px;
+	}
+	main h1{
+		font-size: 1.5em;
+	}
+	.sidebar{
+		width: 90%;
+		margin-right: 7px;
+		margin-left: 1px;
+		margin-top: 0;
+		height: 510px;
+	}
+	input[type=text],
+	input[type=email],
+	input[type=password],
+	input[type=confirmpassword] {
+   		 width: 100%;
+	}
+	input[type=checkbox] {
+	    margin: 0 1px;
+	}
+	footer{
+		height: 49%;
+		margin-top: 150px;
+		border-top: 60px;
+		padding-left: 25px;
+		font-size: 0.8em;
+	}
+	footer button {
+		padding: 5px;
+	}
+	
+	.left-footer,
+	.right-footer,
+	.middle-footer{
+		width: 100%;
+	}
+	footer input[type=email] {
+    	width: 70%;
+	}
+	.left-footer ul{
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	.right-footer li {
+    padding: 2px;
+    margin-left: 0;
+	}
+	.copyright p{
+		padding-top: 150px;
+		padding-right: 0;
+		font-size: 12px;
+	}
+
+}

@@ -1,0 +1,386 @@
+*{
+	box-sizing: border-box;
+	margin: auto;
+}
+body{
+	font-size: 16px;
+	font-family: "Georgia", Times New Roman;
+}
+header{
+	flex: 1 100%;
+	background-color: #B7EEB7;
+	height: 70px;
+}
+header *{
+	color: #FF530E;
+}
+header .title{
+	float: left;
+	height: inherit;
+	padding: 10px 30px;
+}
+header ul li{
+	float: right;
+	height: inherit;
+	padding: 20px;
+	list-style: none;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	color: #FF530E;
+}
+a:hover{
+	text-decoration: underline;
+	color: rgb(200, 0, 0);
+	cursor: pointer;
+}
+.media{
+	display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
+.register{
+	display: block;
+	text-align: center;
+	font-size: 150%;
+}
+.reg{
+	padding-top: 100px;
+	margin: 10px 5px;
+	color: #FF530E;
+}
+form{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.info{
+	width: 50%;
+    border: solid 3px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    height: fit-content;
+}
+#fieldlist{
+	width: 100%;
+    display: flex;
+    padding: 5px
+}
+.name{
+	border: solid 1px;
+    border-radius: 10px;
+    width: 100%;
+    height: 25px;
+}
+#phone-number, #email, #password, #confirm-password{
+	border: solid 1px;
+    border-radius: 10px;
+    width: 100%;
+    height: 25px;
+}
+.error-block {
+    font-size: 12px;
+    color: red;
+    padding: 0;
+}
+div.conditions{
+	color: #FF530E;
+}
+.btn{
+	font-weight: bold;
+	margin: 5px 100px;
+    padding: 5px 10px;
+    background-color: #B7EEB7;
+    color: #FF530E;
+    font-size: 15px;
+    border-radius: 5px;
+}
+footer{
+	background-color: #B7EEB7;
+	color: #FF530E;
+	display: flex;
+	align-content: center;
+}
+footer ul li{
+	text-align: left;
+	padding: 5px;
+	list-style: none;
+}
+.footer-signup{
+		margin: auto;
+}
+#footer-email{
+	margin-top: 10px;
+	width: 250px;
+	height: 30px;
+}
+#footer-submit{
+	margin-top: 10px;
+	font-size: 15px;
+	width: 80px;
+	height: 30px;
+	background-color: #B7EEB7;
+	color: #FF530E;
+}
+.footer-connect{
+	padding: 10px;
+}
+.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
+}
+.footer1 p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+}
+
+/**Media queries for mobile**/
+
+@media screen and (max-width: 450px) {
+	*{
+		width: 100%;
+	}
+	header{
+		text-align: left;
+		display: block;
+		height: 18vh;
+	}
+	header .title{
+		clear: both;
+		padding: 10px;
+		font-size: 18px;
+		height: unset;
+	}
+	header ul li{
+		clear: both;
+		padding: 5px;
+		float: left;
+	}
+	footer, header{
+		justify-content: space-around;
+	}
+	.nav{
+		background-color: #B7EEB7;
+    	color: #FF530E;
+		list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+	}
+	.media{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+	}
+	.register{
+	display: block;
+	text-align: center;
+	font-size: 120%;
+	}
+	.reg{
+	padding-top: 0;
+	margin: 0 5px;
+	color: #FF530E;
+	}
+	.info{
+	left: 60%;
+	width: 300px;
+	height: fit-content;
+	border: solid 3px;
+	border-radius: 20px;
+	padding: 0;
+	}
+	form{
+	line-height: 60%;
+    display: flex;
+    flex: 1;
+	}
+	#fieldlist{
+    display: flex;
+    padding: 5px;
+    margin: 0;
+	}
+	.name{
+	border: solid 1px;
+	text-align: left;
+    border-radius: 10px;
+    height: 20px;
+    padding-bottom: 5px;
+	}
+	#phone-number, #email, #password, #confirm-password{
+	border: solid 1px;
+    border-radius: 10px;
+    text-align: left;
+    height: 20px;
+    padding-bottom: 5px;
+	}
+	.conditions{
+	font-size: 14px;
+	text-align: -webkit-center;
+	}
+	.btn{
+	font-weight: bold;
+	margin: 10px 20px;
+    padding: 10px 30px;
+    background-color: #B7EEB7;
+    color: #FF530E;
+    font-size: 15px;
+    border-radius: 5px;
+	}
+	footer{
+	background-color: #B7EEB7;
+	color: #FF530E;
+  	font-size: 14px;
+  	justify-content: center;
+	}
+	footer ul li{
+	text-align: left;
+	padding: 5px;
+	list-style: none;
+	display: block;
+	padding-inline-start: 0;
+	}
+	.footerlist{
+		padding: 0;
+		text-align: left;
+	}
+	.footer-signup{
+		margin: auto;
+	}
+	#footer-email{
+	margin-top: 10px;
+	width: 150px;
+	height: 25px;
+	}
+	#footer-submit{
+	margin-top: 10px;
+	font-size: 15px;
+	width: 60px;
+	height: 25px;
+	background-color: #B7EEB7;
+	color: #FF530E;
+	}
+	.footer-connect{
+	padding: 10px;
+	}
+	.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
+	}
+	.footer1 p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+    font-size: smaller;
+	}
+}
+
+/**Media queries for web*/
+
+@media screen and (min-width: 600px) {
+*{
+	margin: auto;
+	}
+.media{
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+	}
+	header{
+	width: 100%;
+	}
+	header .title{
+	float: left;
+	height: inherit;
+	padding: 10px 20px;
+	}
+	header ul li{
+	float: right;
+	height: inherit;
+	padding: 5x;
+	list-style: none;
+	display: inline-block;
+	}
+	.register{
+	text-align: center;
+	font-size: 120%;
+	width: 35%;
+	}
+	.reg{
+	padding: 30px 0 10px;
+	margin: 10px;
+	color: #FF530E;
+	font-size: 1.5em;
+	}
+	.reg-word{
+	margin: 10px;
+	font-weight: bold;
+	font-size: 1.3em;
+	}
+	.info{
+	width: 50%;
+    border: solid 3px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    height: 600px;
+	}
+	footer{
+	background-color: #B7EEB7;
+	color: #FF530E;
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+	}
+	footer ul li{
+	text-align: left;
+	padding: 5px;
+	list-style: none;
+	}
+	.footerlist{
+	margin-right: 100px;
+	}
+	.footer-signup{
+		margin: auto;
+	}
+	#footer-email{
+	margin-top: 10px;
+	width: 250px;
+	height: 30px;
+	}
+	#footer-submit{
+	margin-top: 10px;
+	font-size: 15px;
+	width: 80px;
+	height: 30px;
+	background-color: #B7EEB7;
+	color: #FF530E;
+	}
+	.footer-connect{
+	padding: 10px;
+	margin-left: 100px;
+	}
+	.footer-connect .img{
+	height: 40px;
+	width: 40px;
+	padding: 7px;
+	border-radius: 15px;
+	}
+	.footer1 p{
+	cursor: pointer;
+	text-align: center;
+    padding: 10px;
+	}
+	.footer2{
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: 1;
+	}
+}

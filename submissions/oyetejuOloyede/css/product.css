@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 27px;
+    font-family: oswald PT sans serif;
+}
+
+.container{
+    width:500px;
+    margin:0;
+}
+
+.button{
+    background-color:red;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    text-align: center;
+}
+
+.clr{
+    clear:both;
+}
+
+.header-block{
+    position: relative;
+    background-color: red;
+    padding:10px;
+    height: 50px;
+    /*Header Color and Height*/
+    width: 100%;
+}
+.logo-container{
+    float: left;
+}
+
+.logo-container>a>img{
+    width: 40%;
+    height: 40%;
+}
+.header-right{
+    float: right;
+    list-style: none;
+}
+.header-right>li{
+    display: inline;
+    margin: 10px;
+}
+.header-right>li>a{
+    text-decoration: none;
+    color: white;
+}
+.header-links:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.clr{
+    clear:both;
+}
+
+/**********************************
+  PAGE:PRODUCT
+  ***********************************/
+  .product {
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    width: 90%;
+    margin-left: 50px;
+}
+.product-img{
+    border: 1px solid #000;
+    max-width: 469px;
+    margin: 50px 0 0 0;
+}
+.product img , .product-related img{
+    width: 100%;
+}
+.product-twelve{
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 14px;
+}
+.product-twelve h3{
+    font-size: 16px;
+    line-height: 30px;
+}
+.product-twelve h4{
+    font-size: 16px;
+    line-height: 27px;
+    margin:20px 0;
+}
+.product-twelve input{
+    max-width: 70px;
+    height: 37px;
+    padding-left: 5px;
+}
+.product-twelve button{
+    width: 170px;
+    height: 47px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f79521;
+    font-size: 16px;
+    line-height: 27px;
+}
+.description{
+    margin-left: 50px;
+}
+.description h3{
+    text-align:left;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 23px;
+}
+.description p{
+    text-align:left;
+    margin:8px 0 30px 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+.related-product{
+    background-color: #ebebeb;
+}
+.related-product h3{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.product-related{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.dont, .unfreedom, .political{
+    width: 30%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+    height: inherit;
+}
+.product-related h5 {
+    text-align: center;
+    color: #000;
+}
+
+/**********************************
+  FOOTER
+  ***********************************/
+ 
+.box-3{
+    background-color: red;
+    color:#fff;
+    padding:20px;
+}
+
+.box-3 h6{
+    text-align: center;
+}
+
+.box-3-right>li>a{
+    text-decoration: none;
+    color:white;
+}
+
+.button{
+    background-color:red;
+    color:white;
+    text-align: center;
+}
+
+.block{
+    float:left;
+    width:32%;
+}
+
+@media (max-width: 640px){
+    body{
+        width: 100%;
+    }
+    .header-block {
+        width:100%;
+        height: 120px;
+    }
+    .header-right-cont{
+        margin: auto;
+        width: auto;
+       
+    }
+    .header-right{
+        margin: auto;
+       
+    }
+    .header-right li{
+       display: block;
+       width: 100%;
+       text-align: center;
+    }
+
+    .product-img{
+        margin: 10px;
+    }
+    .product-twelve button{
+        width: 130px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .description h3, .description p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .description p{
+        margin: 10px;
+    }
+    .product-twelve h3, .product-twelve h4{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .dont, .unfreedom, .political{
+        flex-basis: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;       
+    }
+    .political{
+        margin-bottom: 20px;
+    }
+    .product-related{
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .box-3{
+        width: 100%;
+    }
+    .block{
+        display: block;
+        clear: both;
+        width:100%; 
+    }
+    .block>ul>li{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .box-3 h6{
+        text-align: center;
+        font-size: 12px;
+        width: 80%;
+    }
+}
