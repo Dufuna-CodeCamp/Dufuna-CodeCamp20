@@ -25,7 +25,7 @@ if (isset($results) && count($results) > 0) {
         <td>" . $result["first_name"]. " " . $result["last_name"]."</td>
         <td>" . $result["email"]. "</td>
         <td>" . $result["created_at"]. "</td>
-        <td style='border: solid 1px black'>" . '<a href="./order_list.php?id='. $result['customer_id'] .'">View</a>' . "</td>
+        <td style='border: solid 1px black'>" . '<button>view</button>' . "</td>
       </tr>
     ";
   }
