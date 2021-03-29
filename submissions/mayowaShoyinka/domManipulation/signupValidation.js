@@ -1,3 +1,8 @@
+
+
+
+
+
 let signupForm = document.getElementById('signupValidation'),
     firstName = document.getElementById('firstName'),
     lastName = document.getElementById('lastName'),
@@ -5,7 +10,9 @@ let signupForm = document.getElementById('signupValidation'),
     emailAddress = document.getElementById('emailAddress'),
     password = document.getElementById('password'),
     confirmPassword = document.getElementById('confirmPassword')
+
 ;
+
   function validateSignup(field,regdex,errorOne,errorTwo, event) {
   if(field.value === ""){
     field.nextElementSibling.innerHTML = errorOne;
@@ -20,7 +27,8 @@ let signupForm = document.getElementById('signupValidation'),
      return true;
   }
 }
- function signupValidating(event) {
+
+ function signupValidate(event) {
     let nameRegex =  /^[A-Za-z]+$/,
         phoneRegex = /^[+]?[0-9]{8,14}$/i,
         emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
@@ -45,5 +53,7 @@ let signupForm = document.getElementById('signupValidation'),
         "Please confirm your password","Your password do not match",event);
     return true;
 }
-signupForm.addEventListener("submit", signupValidating);
+
+
+signupForm.addEventListener("submit", signupValidate);
 
