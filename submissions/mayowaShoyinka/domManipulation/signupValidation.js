@@ -1,5 +1,3 @@
-
-
 let signupForm = document.getElementById('signupValidation'),
     firstName = document.getElementById('firstName'),
     lastName = document.getElementById('lastName'),
@@ -12,19 +10,19 @@ let signupForm = document.getElementById('signupValidation'),
   if(field.value === ""){
       field.nextElementSibling.innerHTML = errorOne;
       event.preventDefault();
-    return false;
+      return false;
   } else if(!field.value.match(regdex)){
       field.nextElementSibling.innerHTML = errorTwo;
       event.preventDefault();
-     return false;
+      return false;
    } else{
        field.nextElementSibling.innerHTML = "";
-     return true;
+       return true;
   }
 }
 
+ let passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 function passwordValidation(password1, password2, event) {
-    const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[a-zA-Z]).{6,}$/;
 
     if ((password1.value && password2.value) === "") {
         password1.nextElementSibling.innerHTML = "Please enter your password";
