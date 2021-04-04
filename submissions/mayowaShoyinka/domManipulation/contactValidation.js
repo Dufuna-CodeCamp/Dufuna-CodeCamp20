@@ -6,12 +6,12 @@ let contactForm = document.getElementById('contactValidation'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message');
 
-function validateContact(field,regdex,errorOne,errorTwo, event) {
+function validateContact(field,regex,errorOne,errorTwo, event) {
   if(field.value === ""){
         field.nextElementSibling.innerHTML = errorOne;
         event.preventDefault();
         return false;
-  } else if(!field.value.match(regdex)){
+  } else if(!field.value.match(regex)){
         field.nextElementSibling.innerHTML = errorTwo;
         event.preventDefault();
         return false;
