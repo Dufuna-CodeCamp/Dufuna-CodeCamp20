@@ -31,7 +31,7 @@ function validateMessage(field, errorOne, event){
 }
 
 let nameRegex =  /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/,
-    emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+    emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
 
  function contactValidate(event) {
          validateContact(fullName, nameRegex, "Please enter your Name","Please enter a valid Name",event);
