@@ -84,7 +84,7 @@ class ArticleController
 
     //5. Show all published articles
     public function allArticles(Request $request, Response $response) {
-        $articles = Article::all();
+        $articles = Article::where('status_', '=', 'published')->get();
         if($articles) {
             $response->getBody()->write(json_encode(['status' => 'success', 'data' => $articles]));
             return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
