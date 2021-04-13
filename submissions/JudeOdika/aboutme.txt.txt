@@ -1,6 +1,0 @@
-Hello World!
-My name is Jude Odika.
-
-I have been able to push my first task to Github.
-
-I have also submitted my first Pull Request.
