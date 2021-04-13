@@ -1,9 +1,10 @@
 <?php
-// 1. Attempt MySQL server connection.
+/*Attempt MySQL server connection.Assuming you are running MySQL
+server with defualt settings (user 'root' with a password)*/
 try{
     $pdo = new PDO ("mysql:host=localhost;dbname=kwathu","root","mysql");
     
-// 2. Set the PDO error mode to exception
+    //Set the PDO error mode to exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $e){

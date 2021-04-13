@@ -37,7 +37,7 @@ if (!empty($result)) {
            echo"<td>{$row['full_name']}</td>";
            echo"<td>{$row['email']}</td>";
            echo"<td>{$row['created_at']}</td>";
-           echo"<td><input type='button' value='View'></td>";
+           echo "<td>" . '<button><a href="./viewOrder.php?id=' . $row['id'] . '">View</a></button>' . "</td>";
         echo"</tr>"; 
        }
     echo"</table>";
