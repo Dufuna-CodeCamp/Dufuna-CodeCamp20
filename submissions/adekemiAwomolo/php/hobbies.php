@@ -22,6 +22,7 @@ $user_hobbies =[
 ];
 
 foreach($user_names as $first => $hobbies) {
-    echo "My name is ".$user_names[$first]. ",". "  I love ".$user_hobbies {$first}."." ."<br>";
+    echo "My name is ". $user_names[$first]. ", I love ".$user_hobbies {$first} ." .<br>";
 };
 
+?>
