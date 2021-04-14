@@ -33,7 +33,7 @@ function validateMessage(field, errorOne, event){
 }
 
 
-let nameRegex =  /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/,
+let nameRegex =  /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/, 
     emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
 
  function contactValidate(event) {
