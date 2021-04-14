@@ -1,6 +1,4 @@
 <?php
-
-
 //using a reusuable function to hold the variable and parameter.
 function weather($temp){
     if($temp <= 20){
@@ -16,16 +14,8 @@ function weather($temp){
 }
 //call the function and pass the value of the parameter.
 weather(65);
-
-
 //run multiple tests on the function to test the conditions
-
 /*weather(6);
 weather(40);
 weather(25);*/
-
-
-
-
-
 ?>
