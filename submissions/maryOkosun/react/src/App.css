@@ -78,8 +78,7 @@ h1{
 input [type=checkbox]{
   display: inline-block;
   width: 25px;
-} 
-
+}
 .hide-display{
   display: none;
 }
