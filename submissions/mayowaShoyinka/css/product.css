@@ -51,7 +51,7 @@ margin-top: 30px;
   float: left;
 }
 .two-center input{
-  width: 40px;
+  width: 70px;
   padding: 5px;
 
 }
@@ -76,12 +76,18 @@ margin-top: 30px;
  margin: 0 auto;
  display: block;
 }
-.btn{
+.two-center .btn{
   width: 100px;
   height: 55px;
-  border-radius: 20px;
+   border-radius: 20px;
   background-color: #661141;
   color: #fff;
+ 
+}
+.qty-error{
+  display: block;
+  color: red;
+  font-weight: bold;
 }
 /*------------------- Three-Column-Container Starts Here------------------*/
 .three-column-container{

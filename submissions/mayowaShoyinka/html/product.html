@@ -24,11 +24,16 @@
                  <img src="../html/img/product-1.png">     
             </div> 
             <div class="two-center">
-                <h2>BROWN SHOE & BAG <br></h2>
-                <h5>Brand: Italian<br></h5>
-                <h5>Quantity: <input type="text" name="qty" placeholder="2"><br></h5>
-                <h5>Price: &#x24;700 <br></h5>
-            <button class="btn">BUY NOW</button>
+                <form action="" method="post">
+                    <h2>BROWN SHOE & BAG <br></h2>
+                    <h5>Brand: Italian<br></h5>
+                    <h5>Quantity: <input type="number" id="quantity" placeholder="1">
+                    <span class="qty-error"></span></h5>
+                    <h5>Price: &#x24; <span id="unitPrice">700 </span></h5>
+                    <h5>Shipping Cost: &#x24; <span id="shippingCost">50</span></h5>
+                    <h5>Total Cost: &#x24; <span id="totalProduct">1400</span></h5>
+                    <input type="submit" class="btn" id="Button" value="BUY NOW">
+                </form>
             </div>
     </div>
     <div class="description">
@@ -80,5 +85,6 @@
             </div>
             <p>Copyright 2020 Karl Fashion.com All rights reserved</p>
     </div>
+    <script src="../domManipulation/productValidation.js"></script>
 </body>
 </html>
