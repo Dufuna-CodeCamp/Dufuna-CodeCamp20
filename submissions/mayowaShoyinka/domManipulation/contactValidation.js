@@ -1,3 +1,5 @@
+
+
 let contactForm = document.getElementById('contactValidation'),
     fullName = document.getElementById('fullName'),
     emailAddress = document.getElementById('emailAddress'),
