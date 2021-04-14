@@ -111,11 +111,6 @@ footer ul {
    padding: 0 8%;
  }
 
- #contact-form span {
-   color: red;
-   font-size: 12px;
- }
-
  textarea {
      width: 100%;
      height: 180px;
