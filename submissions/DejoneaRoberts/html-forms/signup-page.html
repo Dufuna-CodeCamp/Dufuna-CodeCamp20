@@ -34,23 +34,29 @@
       </div>
 
       <div class="sign" class="maincol">
-        <form class="sign-up" enctype="multipart/form-data" action="#" method="post">
+        <form id="sign-form" class="sign-up">
           <fieldset>
             <label for="firstname">First Name:</label><br>
-            <input type="text" name="firstname" id="firstname"/><br>
+            <input type="text" name="firstname" id="firstname"/>
+            <span class="error-block"></span><br>
             <label for="lastname">Last Name:</label><br>
-            <input type="text" name="lastname" id="lastname"/><br>
+            <input type="text" name="lastname" id="lastname"/>
+            <span class="error-block"></span><br>
             <label for="othername">Other Names:</label><br>
-            <input type="text" name="othername" id="othername"/><br>
+            <input type="text" name="othername" id="othername"/>
+            <span class="error-block"></span><br>
             <label for="phone">Phone Number:</label><br>
-            <input type="text" name="phone" id="phone"/><br>
+            <input type="text" name="phone" id="phone"/>
+            <span class="error-block"></span><br>
             <label for="email">Email Address:</label><br>
-            <input type="email" name="email" id="email"/><br>
-
+            <input type="email" name="email" id="email"/>
+            <span class="error-block"></span><br>
             <label for="password">Password:</label><br>
-            <input type="password" name="password" id="password"/><br>
+            <input type="password" name="password" id="password"/>
+            <span class="error-block"></span><br>
             <label for="confirm">Confirm Password:</label><br>
-            <input type="password" name="confirm" id="confirm"/><br><br>
+            <input type="password" name="confirm" id="confirm"/>
+            <span class="error-block"></span><br>
             <div class="sign-button">
               <input type="checkbox" name="terms" id="terms"/>
               <label class="terms" for="terms">I agree to the Terms and Conditions</label><br>
@@ -95,6 +101,7 @@
       <p class="copyright">&copy; 2021 SWITCHSTOP.COM<br>All Rights Reserved</p>
 
     </footer>
+    <script src="../DOM/signUp.js" charset="utf-8"></script>
 
   </body>
 </html>

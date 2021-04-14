@@ -79,6 +79,11 @@ fieldset input {
   box-shadow: none;
 }
 
+#sign-form span {
+  color: red;
+  font-size: 12px;
+}
+
 #terms {
   height: auto;
   width: auto;

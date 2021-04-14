@@ -1,17 +1,15 @@
-
-
 let contactForm = document.getElementById('contactValidation'),
     fullName = document.getElementById('fullName'),
     emailAddress = document.getElementById('emailAddress'),
     subject = document.getElementById('subject'),
     message = document.getElementById('message');
 
-function validateContact(field,regex,errorOne,errorTwo, event) {
+function validateContact(field,regdex,errorOne,errorTwo, event) {
   if(field.value === ""){
         field.nextElementSibling.innerHTML = errorOne;
         event.preventDefault();
         return false;
-  } else if(!field.value.match(regex)){
+  } else if(!field.value.match(regdex)){
         field.nextElementSibling.innerHTML = errorTwo;
         event.preventDefault();
         return false;
@@ -33,7 +31,7 @@ function validateMessage(field, errorOne, event){
 }
 
 
-let nameRegex =  /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/, 
+let nameRegex =  /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/,
     emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
 
  function contactValidate(event) {
