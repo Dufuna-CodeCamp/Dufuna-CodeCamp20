@@ -14,6 +14,11 @@ h3 {
   opacity: 0.8;
 }
 
+.error-block {
+   color: red;
+   font-size: 12px;
+ }
+
 /*-- -----------------------NAV----------------------- --*/
 nav {
   background-color: purple;
