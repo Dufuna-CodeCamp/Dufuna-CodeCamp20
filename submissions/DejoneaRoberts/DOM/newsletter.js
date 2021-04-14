@@ -1,6 +1,5 @@
 let newsForm = document.getElementById('news-form');
 let emailNews = document.getElementById('email-sign');
-
 let emailRegex = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
 
 function newsValidation(field, fieldRegex, error1, error2, event) {
