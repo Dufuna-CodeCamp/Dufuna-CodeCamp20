@@ -2,24 +2,19 @@ let newsForm = document.getElementById('news-form');
 let emailNews = document.getElementById('email-sign');
 var emailRegex =/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,4})+$/;
 
-function newsValidation(field, fieldRegex, error1, error2, event) {
+function newsValidation(event) {
 
-    if(field.value === "") {
-        field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = error1;
+    if(emailNews.value === "") {
+        emailNews.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = "Please enter your email address";
         event.preventDefault();
-    } else if (!field.value.match(fieldRegex)) {
-        field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = error2;
+    } else if (!emailNews.value.match(emailRegex)) {
+        emailNews.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = "Please enter a valid email";
         event.preventDefault();
         return false;
     } else {
-        field.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = "";
+        emailNews.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = "";
         return true;
     }
 }
 
-function validationsubmitForm(event) {
-    newsValidation( emailNews, emailRegex, "Please enter your email address", "Please enter a valid email", event);
-    return true;
-}
-
-newsForm.addEventListener("submit", validationsubmitForm);
+newsForm.addEventListener("submit", newsValidation);
