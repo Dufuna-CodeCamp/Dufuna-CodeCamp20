@@ -5,4 +5,4 @@ I have been able to push my first task to Github.
 
 I have also submitted my first Pull Request.
 
-By the end of this program, I hope to have developed my software engineering capabilities enough to be able to solve real world problems with it.
+By the end of this program, I hope to have developed my software engineering capabilities enough to be able to solve real world problems.
