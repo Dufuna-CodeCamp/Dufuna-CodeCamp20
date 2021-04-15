@@ -72,7 +72,8 @@ function App() {
       isCompleted: false
     }
   ]);
-
+  
+  //eslint-disable-next-line
   useEffect(() => {
     setTodosRemaining(todos.filter(todo => !todo.isCompleted).length)
   });
