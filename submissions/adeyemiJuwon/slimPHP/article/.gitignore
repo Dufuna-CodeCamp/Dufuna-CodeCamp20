@@ -1,0 +1,20 @@
+# extension
+.idea
+.env
+
+
+
+# Mac DS_Store Files
+.DS_Store
+
+
+#composer vendor files
+/vendor
+
+
+
+
+
+#   composer.lock files
+
+composer.lock

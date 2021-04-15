@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Raleway:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!--------------- Header Starts Here--------------->
-    <div class="navigation-header">   
+    <!--------------- Header Starts Here--------------->
+    <div class="navigation-header">
         <img src="../html/img/logo-1.png" class="logo" alt="company-logo">
-        <div class="navigation-header-link">  
+        <div class="navigation-header-link">
             <a href="#">Product page</a>
             <a href="#">Contact Us</a>
             <a href="signup.html">Sign-up</a>
@@ -18,41 +18,54 @@
     </div>
  <!----------------- Body Starts Here--------------->
 <section id="form-container"> 
-			<!--form-left -->
-			<div class="form-left">
-				<h1>Register your <br> Account</h1>
-				<p>Registering an account gives you access to <br> sweet promo and events available to only registered customers</p>
-				<h4>Already have an account? <a href="#">Sign in </a></h4>
-			</div>
-			<!--form-right -->
-			<div class="form-right">
-				<form action="">
-					<label for="firstname">First Name</label><br>
-					<input type="text" name="firstname"><br>
-					<label for="lastname">Last Name</label><br>
-					<input type="text" name="lastname"><br>
-					<label for="othername">Other Name</label><br>
-					<input type="text" name="othername"><br>
-					<label for="phone">Phone</label><br>
-					<input type="text" name="phone"><br>
-					<label for="email">Email Address</label><br>
-					<input type="email" name="email-address"><br>
-					<label for="password">Password</label><br>
-					<input type="password" name="password"><br>
-					<label for="lastname">Confirm Password</label><br>
-					<input type="password" name="Cpassword"><br>			
-					<input type="checkbox" class="checkbox">
-					<label for="t-c">I agree to the Terms and Conditions</label>
-					<br>
-					<button type="button">SIGN UP</button>
-				</form>	
-			</div>			
-		</div>
-	</div>	
+            <!--form-left -->
+            <div class="form-left">
+                <h1>Register your <br> Account</h1>
+                <p>Registering an account gives you access to <br> sweet promo and events available to only registered customers</p>
+                <h4>Already have an account? <a href="#">Sign in </a></h4>
+            </div>
+            <!--form-right -->
+            <div class="form-right">
+                <form id="signupValidation" method="post">
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" name="firstname" id="firstName">
+                    <span class="error-block"></span> <br>
+
+                    <label for="lastname">Last Name</label><br>
+                    <input type="text" name="lastname" id="lastName">
+                    <span class="error-block"></span> <br>
+
+                    <label for="othername">Other Name</label><br>
+                    <input type="text" name="otherName"><br>
+
+                    <label for="phoneNumber">Phone</label><br>
+                    <input type="text" name="phone" id="phoneNumber">
+                    <span class="error-block"></span> <br>
+
+                    <label for="email">Email Address</label><br>
+                    <input type="email" name="email-address" id="emailAddress">
+                    <span class="error-block"></span> <br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password">
+                    <span class="error-block"></span> <br>
+
+                    <label for="confirmPassword">Confirm Password</label><br>
+                    <input type="password" name="ConfirmPassword" id="confirmPassword"> 
+                    <span class="error-block"></span> <br>
+
+                    <label for="checkbox" type="checkbox" />
+                    <input type="checkbox" id="checkbox"> I agree to these Terms and Conditions</label>
+    
+                    <input type="submit" class="btn" value="SIGN UP">
+                </form> 
+            </div>          
+        </div>
+    </div>  
 </section>
     <!-------------------- Footer Starts Here -------------->
     <div class="footer-container">
-    		<div class="footer-left">
+            <div class="footer-left">
                 <ul>
                     <li><a href="#">Contact Us </a></li>
                     <li><a href="#">About Us </a></li>
@@ -73,5 +86,6 @@
             </div>
             <p>Copyright 2020 Karl Fashion.com All rights reserved</p>
     </div>
+    <script src="../domManipulation/signupValidation.js"></script>
 </body>
 </html>

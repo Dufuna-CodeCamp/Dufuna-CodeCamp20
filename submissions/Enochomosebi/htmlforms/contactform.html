@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+
+    <!--- linking pages-->
+    <div>
+        <a href="../html/thatclothplug.html">Product</a>
+          
+    </div>
+
+
+    <h2>CONTACT US</h2>
+    <!--- first part basic details-->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+        <label for="first_name">First Name</label> 
+        <input type="text" name="first_name" id="first_name"> <br><br>
+        <label for="last_name">Last Name</label> 
+        <input type="text" name="last_name" id="last_name"> <br><br>
+        <label for="phone_number">Phone number</label> 
+        <input type="phone_number" name="phone_number" id="phone_number"><br><br>
+        <label for="address">Address</label> 
+        <input type="text" name="address" id="address"> <br><br>
+        </div>
+        <!----product ID-->
+        <div>
+            <label for="product id">Product ID</label>
+            <input type="text" name="productID" placeholder="Input Product ID"><br><br>
+        </div>
+        <!-- Email and open account-->
+        <div>
+            <label for="email_address">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Insert your email address"><br><br>
+            <label for="Username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="country_of_residence">Country of residence</label>
+            <input type="text" name="country_of_residence" id="contry_of_residence"><br><br>
+        </div>
+        <!----reason for contacting-->
+        <div>
+            <label for="subject">Enter subject here</label><br>
+            <textarea name="subject" id="subject" rows="15" cols="50" placeholder="we are listening....."></textarea> <br>
+        </div>
+        <!----buttons with function-->
+        <div>
+            <button type="submit" onclick="alert('Thank you for your response')" name="button">Submit</button>
+            <button type="reset" >Reset</button>
+        </div>
+        <footer>&copy; 2021 thatclothplug.com</footer>
+
+</body>
+</html>

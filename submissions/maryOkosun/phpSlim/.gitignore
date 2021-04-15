@@ -1,0 +1,15 @@
+# phpstorm project files
+.idea
+.env
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# composer vendor dir
+/vendor
+
+#composer.lock files
+composer.lock
