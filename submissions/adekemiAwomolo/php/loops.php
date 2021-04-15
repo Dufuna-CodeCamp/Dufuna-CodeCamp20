@@ -1,5 +1,4 @@
 <?php 
-
 //loop through 100 to 150
 echo "******** Result ******* <br>";
 
@@ -13,10 +12,6 @@ for($num = 2; $num < 50; $num++){
     if($num % 2 == 0){
         echo $num. "<br>";
         
-        }
-        
+        }     
 }
-
-
-
 ?>
