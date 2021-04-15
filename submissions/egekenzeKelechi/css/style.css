@@ -1,156 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-html,
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
 }
 
-*{
+html,
+body{
     color: #333;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 a{
     text-decoration: none;
-    color: teal;
+    color: #333;
 }
 
-li{
+ul{
     list-style: none;
 }
 
-img{
-    width: 100%;
-}
-
-p{
-    text-align: center;
-}
-
+/* Header Section */
 nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: burlywood;
+    color: white;
+    background: rgb(47, 93, 245);
+    padding-left: 15px;
+    padding-bottom: 20px;
 }
 
-nav ul{
-    display: flex;
+nav h1{
+    padding: 10px 0;
 }
 
 nav li{
-    padding-right: 15px;
-    padding-left: 9px;
+    padding: 5px 0;
 }
 
-nav a{
-    color: whitesmoke;
+nav a {
+    color: white;
+}
+
+/* End header section */
+
+/* #Body Section */
+#body{
+    width: 100%;
+    padding-top: 15px;
+}
+
+#body h2{
+    text-align: center;
+    color: rgb(55, 138, 247);
+}
+
+#body p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#body a{
+    color: blue;
+    text-decoration:underline;
 }
 
 .container{
-    width: 85%;
-    margin: 40px auto;
-    margin-bottom: 70px;
+    width: 80%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 15px auto;
 }
 
 .container form{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin: 15px;
+    /* padding-bottom: 5px; */
 }
 
-.container form input[type="text"]{
-    border: none;
-    border-bottom: 1px solid #333;
-    margin-bottom: 40px;
-    width: 100%;
-    font-weight: 400;
-    outline: none;
-
-}
-
-#password{
-    margin-bottom: 20px;
-}
-
-.container label{
-    /* font-size: 14px; */
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.google-login{
+.container form input{
     border: 1px solid #333;
-    width: 100%;
-    text-align: center;
-    padding: 14px 0;
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
 }
 
-.google-login img{
-    width: 18px;
-    vertical-align: middle;
-    /* padding-left: 5px; */
-    margin-right: 15px;
+.container form input[type="checkbox"]{
+    margin-right: 8px;
 }
 
-.google-login a{
-    color: #333;
+.container form p{
+    color: rgb(15, 123, 247);
+    font-size: 12px;
 }
 
-.others p{
-    text-align: left;
-    font-size: 13px;
-}
-
-button{
-    background-color: rgb(21, 148, 252);
+.container form button{
+    margin:  auto;
+    width: 70px;
+    height: 30px;
     color: white;
-    padding: 15px 0;
+    background: rgb(16, 96, 202);
     border: none;
 }
 
-@media screen and (min-width:470px){
-    .container{
-        width: 400px;
-        margin: 70px auto;
-    }
+/* End #Body Section */
+
+/* FOOTER SECTION */
+footer{
+    background:  rgb(16, 96, 202);
+    padding-left: 15px;
+    padding-top: 15px;
+    color: white;
 }
 
-@media screen and (min-width:992px){
-    body{
+.newsletter p{
+    padding-bottom: 5px;
+}
+
+.newsletter input{
+    padding: 5px;
+}
+
+.newsletter button{
+    padding: 5px;
+    width: 70px;
+    color: blue;
+}
+
+.nav{
+    padding-bottom: 10px;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav li{
+    padding-bottom: 5px;
+}
+
+.social{
+    padding-top: 10px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 15px 0;
+}
+/* END of footer */
+
+@media only screen and (min-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav li{
+        padding: 20px;
         font-size: 18px;
     }
 
-    .container h2{
-        text-align: center;
-        margin-bottom: 40px;
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .container{
-        width: 30%;
-        margin: 90px auto;
+    .social{
+        grid-column: 2 / span 1;
     }
 
-    .container form input[type="text"]{
-        font-size: 20px;
-    }
-
-    .google-login{
-        padding: 10px 0;
-    }
-
-    #password{
-        margin-bottom: 40px;
-    }
-
-    .others p{
-        font-size: 16px;
-    }
-
-    button{
-        margin-bottom: 20px;
-        font-size: 18px;
+    .copyright{
+        grid-column: 1 / span 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
