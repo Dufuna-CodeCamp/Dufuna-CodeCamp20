@@ -20,8 +20,8 @@ try{
                 echo "<td>" . $row['first_name'] . " " . $row['last_name'] . "</td>";
                 echo "<td>" . $row['email_address'] . "</td>";
                 echo "<td>" . $row['created_at'] . "</td>";
-               echo "<td>" . '<button><a> View </a></button>' ."</td>";
-            echo "</tr>";
+                echo "<td>" . '<button><a href ="customersOrderList.php?id='. $row['id'] . '"> Veiw </a></button>' ."</td>";
+             echo "</tr>";
         }
         echo "</table>";
         unset($results);
