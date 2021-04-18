@@ -10,15 +10,6 @@ session_start();
 
 class ArticleController
 {
-    public function index(Request $request, Response $response)
-    {
-        $articles = Article::all();
-
-        $response->getBody()->write(json_encode(["status" => "success", "data" => [$articles]]));
-        return $response->withHeader('Content-Type', 'application/json')
-            ->withStatus(200);
-    }
-
     public function create(Request $request, Response $response)
     {
         if (!isset($_SESSION['admin'])) {
