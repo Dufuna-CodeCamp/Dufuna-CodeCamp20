@@ -7,7 +7,6 @@ let quantity = document.getElementById('quantity'),
     perUnit = price.innerHTML,
     productPrice = perUnit * quantity.value,
     numRegex = /^[1-9]+[0-9]*$/;
-;
 
 function quantityError() {
     if (!quantity.value.match(numRegex))  {
