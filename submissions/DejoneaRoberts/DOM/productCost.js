@@ -4,27 +4,12 @@ let quantity = document.getElementById('quantity'),
     shipping = document.getElementById('shipping')
     totalCost = document.getElementById('total-cost'),
     button = document.getElementById('buy-btn'),
-    perUnit = price.innerHTML,
-    productPrice = perUnit * quantity.value,
+    perUnit = 199,
     numRegex = /^[1-9]+[0-9]*$/;
 
-function quantityError() {
-    if (!quantity.value.match(numRegex))  {
-        button.disabled = true;
-        quantity.nextElementSibling.nextElementSibling.innerHTML = "Please enter a valid quantity";
-    }else {
-        button.disabled = false;
-        quantity.nextElementSibling.innerHTML = "";
-    }
-}
-
 function priceCalc() {
-        if (quantity.value > 0) {
-        productPrice = quantity.value * perUnit;
-        price.innerHTML = productPrice.toFixed(2);
-    }else {
-        return false;
-    }
+  productPrice = quantity.value * perUnit;
+  price.innerHTML = productPrice.toFixed(2);
 }
 
 function shippingCalc() {
@@ -37,28 +22,31 @@ function shippingCalc() {
     } else if ((productPrice >= 20000) && (productPrice <= 100000)) {
         tempShipping = 0.2 * productPrice;
         shipping.innerHTML = tempShipping.toFixed(2);
-    } else if (productPrice >= 100000) {
+    } else {
         tempShipping = 25000;
         shipping.innerHTML = tempShipping.toFixed(2);
-    } else {
-        return true;
     }
 }
 
 function totalCalc() {
-    if (quantity.value > 0) {
-        tempTotal = tempShipping + productPrice
-        totalCost.innerHTML = tempTotal.toFixed(2)
-    } else{
-        return true;
+  tempTotal = tempShipping + productPrice
+  totalCost.innerHTML = tempTotal.toFixed(2)
+}
+
+function quantityError() {
+    if (!quantity.value.match(numRegex))  {
+        button.disabled = true;
+        quantity.nextElementSibling.nextElementSibling.innerHTML = "Please enter a valid quantity";
+        console.log("quantity error")
+    }else {
+        button.disabled = false;
+        quantity.nextElementSibling.nextElementSibling.innerHTML = "";
+        console.log("no quantity error")
+        priceCalc()
+        shippingCalc()
+        totalCalc()
     }
 }
 
-function productCalc() {
-    quantityError();
-    priceCalc();
-    shippingCalc();
-    totalCalc();
-}
+quantity.addEventListener("input", quantityError);
 
-quantity.addEventListener("input", productCalc);
