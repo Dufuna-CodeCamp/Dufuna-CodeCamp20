@@ -37,11 +37,9 @@ function quantityError() {
     if (!quantity.value.match(numRegex))  {
         button.disabled = true;
         quantity.nextElementSibling.nextElementSibling.innerHTML = "Please enter a valid quantity";
-        console.log("quantity error")
     }else {
         button.disabled = false;
         quantity.nextElementSibling.nextElementSibling.innerHTML = "";
-        console.log("no quantity error")
         priceCalc()
         shippingCalc()
         totalCalc()
