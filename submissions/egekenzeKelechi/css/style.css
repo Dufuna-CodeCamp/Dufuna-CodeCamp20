@@ -48,17 +48,20 @@ nav a {
     padding-top: 15px;
 }
 
-#body h2{
+.first {
     text-align: center;
+    padding: 15px 0;
+}
+
+.first p{
+    padding: 5px 0;
+}
+
+.first h2{
     color: rgb(55, 138, 247);
 }
 
-#body p{
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-#body a{
+.first a{
     color: blue;
     text-decoration:underline;
 }
@@ -143,12 +146,20 @@ footer{
     padding-top: 10px;
 }
 
+.social img{
+    width: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
 .copyright{
     text-align: center;
     padding: 15px 0;
 }
 /* END of footer */
 
+
+/* TABLET VIEW */
 @media only screen and (min-width: 768px){
     nav{
         display: flex;
@@ -179,5 +190,35 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin: auto;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social{
+        grid-column: 3;
+    }
+
+    .social img{
+        width: 40px;
+        padding-right: 10px;
+        padding-top: 5px;
     }
 }
