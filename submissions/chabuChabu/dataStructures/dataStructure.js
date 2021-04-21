@@ -53,7 +53,3 @@ var product_price = [
           console.log("The price of "+products[i]+ " is " +product_price[i]/2+ ".");
         }
     }
-
-
-
- 
