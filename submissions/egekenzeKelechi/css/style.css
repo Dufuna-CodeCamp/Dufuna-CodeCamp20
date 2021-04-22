@@ -159,6 +159,68 @@ footer{
 /* END of footer */
 
 
+/* Contact US */
+
+.social-2 img{
+    width: 25px;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+
+.bold-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container-2{
+    width: 80%;
+    border: 1px solid #333;
+    margin: 20px auto;
+}
+
+.container-2 form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.container-2 form input{
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.container-2 textarea{
+    margin-bottom: 10px;
+}
+
+.container-2 form button{
+    color: white;
+    background: rgb(16, 96, 202);
+    border: none;
+    padding: 10px 4px;
+    width: 70px;
+    /* margin-left: 150px; */
+}
+
+.btn{
+    text-align: right;
+}
+
+.inner-div{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.inner-div p{
+    font-size: 13px;
+}
+
+/* END OF CONTACT */
+
+
 /* TABLET VIEW */
 @media only screen and (min-width: 768px){
     nav{
