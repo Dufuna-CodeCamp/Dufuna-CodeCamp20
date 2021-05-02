@@ -239,6 +239,12 @@ footer{
     padding-top: 10px;
 }
 
+.inside input{
+    width: 50px;
+    text-align: center;
+    outline: none;
+}
+
 .inside-div{
     width: 80%;
     text-align: left;
