@@ -63,7 +63,7 @@ nav a {
 
 .first a{
     color: blue;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .container{
@@ -221,9 +221,78 @@ footer{
 /* END OF CONTACT */
 
 
+/* PRODUCTS CSS */
+.img-div{
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.img-div img{
+    width: 200px;
+}
+
+.inside{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.inside-div{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inside h4{
+    padding-top: 10px;
+}
+
+.inside button{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.second{
+    background-color: rgb(156, 156, 156);
+    width: 100%;
+    height: 100%;
+}
+
+.second h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card{
+    width: 80%;
+    padding: 20px 0;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.card-div{
+    text-align: center;
+    height: 260px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.card-div img{
+    width: 200px;   
+}
+/* END OF PRODUCTS CSS */
+
+
 /* TABLET VIEW */
 @media only screen and (min-width: 768px){
-    nav{
+     nav{ 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -250,6 +319,24 @@ footer{
         padding-bottom: 20px;
     }
 
+    .firsts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    .inside-div{
+        grid-column: 1 / span 3;
+        align-content: flex-start;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
     footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -277,6 +364,8 @@ footer{
     }
 }
 
+
+/* Larger Screens */
 @media only screen and (min-width: 992px){
     #body{
         display: grid;
@@ -289,6 +378,19 @@ footer{
         justify-content: center;
         text-align: left;
         margin: auto;
+    }
+
+    .firsts{
+        grid-column: 1 /span 2;
+    }
+
+    .second{
+        grid-column: 1 /span 2;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     footer{

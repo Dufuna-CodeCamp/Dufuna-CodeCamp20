@@ -2,81 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../style.css"> -->
-    <title>Products ::</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Products</title>
 </head>
 <body>
-    <nav>
-        <h2>SuperStore.ng</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="../html-forms/contact.html">Contact</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="../html-forms/signup.html">Sign Up</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <h1>SuperStore.ng</h1>
+            <ul>
+                <li><a href="./products.html">Product Page</a></li>
+                <li><a href="../html-forms/contact.html">Contact Us</a></li>
+                <li><a href="../html-forms/sign-up.html">Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="products">
-        <h2>Products</h2>
-        <hr>
-        <div class="container">
-            <h3>Apple iPhone X</h3>
-            <img src="./img/iphone-x.png" alt="" height="200px">
-            <h4>Price: $315.00</h4>
-            <h4>Product Details</h4>
-            <p>CPU Speed (GHz): 2.40
-                Display Size (inches): 5.8
-                Features: 4G
-                Hard Disk (GB): 64
-                Megapixels: 12.0
-                Operating System: iOS
-                Memory Size (GB): 64
-                Internal Memory(GB): 3
-                Color: Silver
-                Main Material: Metal
-                Model: iPhone X
-                Product Line: MOBILE LINKS77
-                Size (L x W x H cm): 14.36*7.09*.77
-                Weight (kg): 0.174</p>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="container">
-            <h3>Apple iPhone 8</h3>
-            <img src="./img/iphone7.png" alt="" height="200px">
-            <h4>Price: $215.00</h4>
-            <h4>Product Details</h4>
-            <p>CPU Speed (GHz): 2.40
-                Display Size (inches): 6.5
-                Features: 4G
-                Hard Disk (GB): 64
-                Megapixels: 10.0
-                Operating System: iOS
-                Memory Size (GB): 64
-                Internal Memory(GB): 3
-                Color: White
-                Main Material: Metal
-                Model: iPhone X
-                Product Line: MOBILE LINKS77
-                Size (L x W x H cm): 14.36*7.09*.77
-                Weight (kg): 0.174</p>
-        </div>
-        <br>
-        <br>
-        <p>Other Apple Products you might like</p>
-        <ol>
-            <li><a href="#">Macbook Pro</a></li>
-            <li><a href="#">Apple iWatch</a></li>
-            <li><a href="#">Apple iPad</a></li>
-        </ol>
-    </section>
+    <main>
+        <section id="body">
+            <div class="firsts">
+                <div class="img-div"><img src="../html/img/iphone-x.png" alt="Image of an iPhone" /></div>
+                <div class="inside">
+                    <h3>Apple iPhone X</h3>
+                    <p>Brand: Apple</p>
+                    <p>Quantity: <input type="text" placeholder="2"></p>
+                    <p>Price: $1000</p>
+                    <button>Buy Now</button>
+                </div>
+                <!--<div class="inside"> -->
+                    <div class="inside-div">
+                        <h4>DESCRIPTION</h4>
+                        <p>This is an apple Iphone X. Built with lots of love and happiness. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorum blanditiis molestiae rerum, corporis dolorem enim nulla soluta ab sunt necessitatibus sed cupiditate expedita dolore quia? Libero officia incidunt beatae?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second">
+                <h4>RELATED PRODUCTS</h4>
+                <div class="card">
+                    <div class="card-div">
+                        <img src="../html/img/iphone7.png" alt="Image of an iPhone" width="200px"/>
+                        <p>Apple iPhone 7</p>
+                        <p>Price $500</p>
+                    </div>
+                
+                    <div class="card-div">
+                        <img src="../html/img/iphone7.png" alt="Image of an iPhone" width="200px"/>
+                        <p>Apple iPhone 7</p>
+                        <p>Price $500</p>
+                    </div>
+
+                    <div class="card-div">
+                        <img src="../html/img/iphone7.png" alt="Image of an iPhone" width="200px"/>
+                        <p>Apple iPhone 7</p>
+                        <p>Price $500</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        All Rights Reserved <sup>&copy;</sup>. <br> Made with &hearts; by Keicee32, 2021.
+        <div class="nav">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <p>Sign up for our Newsletter</p>
+            <input type="text" name="" id="" placeholder="Enter your email address">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="social">
+            <p>CONNECT WITH US</p>
+            <img src="../html/img/social-media/facebook-2.png"/>
+            <img src="../html/img/social-media/twitter-icon.png"/>
+            <img src="../html/img/social-media/gmail.png"/>
+            <img src="../html/img/social-media/youtube.png"/>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2020 Keicee32.com &nbsp;</p>
+            <p> All rights reserved</p>
+        </div>
     </footer>
 </body>
 </html>
