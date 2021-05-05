@@ -1,0 +1,21 @@
+{
+    "name": "dufuna/article",
+    "description": "Slim Api for publishing house",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.3",
+        "vlucas/phpdotenv": "^5.3",
+        "illuminate/database": "^7.29"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB\\": "database",
+            "App\\Model\\": "app/models",
+            "App\\Controller\\": "app/controllers",
+            "App\\Middleware\\": "app/middlewares"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    }
+  }
