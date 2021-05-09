@@ -70,9 +70,9 @@ function App() {
       isCompleted: false
     }
   ]);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    setTodosRemaining(todos.filter(todo => !todo.isCompleted).length, Todo)
+    setTodosRemaining(todos.filter(todo => !todo.isCompleted).length)
   });
 
 
