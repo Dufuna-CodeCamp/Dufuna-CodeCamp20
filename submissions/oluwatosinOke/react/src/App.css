@@ -176,7 +176,7 @@
     .todo-button button{
     padding: 1px;
     font-size: 11px;
-    border-radius: 0px;
+    border-radius: 1px;
     display: inline-block;
     width:30px;
     border: powderblue;
@@ -184,12 +184,12 @@
   
     .todo-list {
     position:absolute;
-    border-radius:0px;
+    border-radius:1px;
     width: 290px;
-    margin: 0px;
+    margin: 1px;
     margin-top: 25px;
-    margin-left: 0px;
-    padding: 0px;
+    margin-left: 1px;
+    padding: 1px;
     }
   
     .todo {
@@ -200,10 +200,10 @@
     }
   
     .todo-footer{
-    margin-left:0px;
+    margin-left:1px;
     margin-top: 275px;
     width: 300px;
-    border-radius: 0px;
+    border-radius: 1px;
     }
   
     .todo-footer p {
@@ -260,7 +260,7 @@
     top: 1px;
     width: 5px;
     height: 7px;
-    border:0px solid green;
+    border:1px solid green;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
