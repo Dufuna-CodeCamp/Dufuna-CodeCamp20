@@ -72,7 +72,7 @@ function App() {
   ]);
 
   useEffect(() => {
-    setTodosRemaining(todos.filter(todo => !todo.isCompleted).length)
+    setTodosRemaining(todos.filter(todo => !todo.isCompleted).length, todos)
   });
 
 
