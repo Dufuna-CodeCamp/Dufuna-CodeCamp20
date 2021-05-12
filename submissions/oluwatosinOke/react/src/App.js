@@ -49,26 +49,7 @@ function TodoForm({ addTodo }) {
 function App() {
   const [todosRemaining,setTodosRemaining] = useState(0); 
   const [todos, setTodos] = React.useState([
-    {
-      text: "Attend Family Meeting" ,
-      isCompleted: false
-    },
-    {
-      text: "Pick up cloths from dry cleaner",
-      isCompleted: false
-    },
-    {
-      text: "Plan date night",
-      isCompleted: false
-   },
-   {
-    text: "Brainstorm for designs",
-    isCompleted: false
- },
-    { 
-      text: "Order groceries",
-      isCompleted: false
-    }
+    
   ]);
 // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
