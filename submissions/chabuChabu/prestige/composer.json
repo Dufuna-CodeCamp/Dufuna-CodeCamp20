@@ -1,0 +1,23 @@
+{
+    "name":"prestige/articles-api",
+    "description": "article publishing api",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.4",
+        "vlucas/phpdotenv": "^5.3",
+        "illuminate/database": "^8.40"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB\\":"database",
+            "App\\Controller\\":"app/controllers",
+            "App\\Constants\\":"app/constants",
+            "App\\Middleware\\":"app/middlewares",
+            "App\\Model\\":"app/models"
+            
+        }
+    },
+    "scripts": {
+        "start":"php -S localhost:8080 -t public"
+    }
+}
