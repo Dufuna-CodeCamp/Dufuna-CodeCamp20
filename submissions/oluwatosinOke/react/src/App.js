@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 
-
 function Todo({ todo, index, completeTodo }) {
+  const todoStatus = todo.isCompleted
   return (
     <div className="todo"
       style={{ textDecoration: todo.isCompleted ? "line-through" : "",color: todo.isCompleted ? "green" : ""}}>
       {todo.text}
       <div>
         <label className='container'>
-        <input type="checkbox"  onClick={() => completeTodo(index)}/>
+        <input type="checkbox"  onClick={() => completeTodo(index, todoStatus)}/>
         <span className="checkmark"></span>
         </label>
       </div>
@@ -46,7 +46,8 @@ function TodoForm({ addTodo }) {
 }
 
 function App() {
-  const [todosRemaining,setTodosRemaining] = useState(0); 
+  const [todosRemaining,setTodosRemaining] = useState(0);
+  //const [todoStatus ]= Todo.iscomplete ;
   const [todos, setTodos] = React.useState([
     
   ]);
@@ -61,9 +62,9 @@ function App() {
     setTodos(newTodos);
   };
 
-  const completeTodo = index => {
+  const completeTodo = (index, todoStatus) => {
     const newTodos = [...todos];
-    newTodos[index].isCompleted = true;
+    newTodos[index].isCompleted = !todoStatus;
     setTodos(newTodos);
   };
 
