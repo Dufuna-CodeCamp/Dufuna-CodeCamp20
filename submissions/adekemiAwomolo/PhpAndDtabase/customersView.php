@@ -37,8 +37,8 @@ echo "<table>";
         echo "<td>". $row['unit_price']. "</td>";
         echo "<td>". $row['quantity']."</td>";
         echo "<td>". $row['total_amount']. "</td>";
-        echo "<td>". $row['created_at']. " "."</td>" ." " ;
-        echo "<td>"."  ". $row['street_address']." ". $row['city']. " ".$row['state'].$row['country']. "</td>";
+        echo "<td>". $row['created_at'] . "</td>" ;
+        echo "<td>" . $row['street_address']. $row['city']. $row['state'].$row['country']. "</td>";
         echo "</tr>";
     }
     echo "</table>";
