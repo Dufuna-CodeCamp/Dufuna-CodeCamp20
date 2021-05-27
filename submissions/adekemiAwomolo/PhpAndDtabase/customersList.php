@@ -15,9 +15,9 @@ function display() {
             foreach ($info as $value) {
                 echo "<tr>";
                     echo "<td>" . $value["id"] . "</td>";
-                    echo "<td>" . $value["full_name"] . "</td>";
+                    echo "<td>" . $value["first_name"] . $value["last_name"] "</td>";
                     echo "<td>". $value["email"] . "</td>";
-                    echo "<td>" . $value["created_at"] . "</td>";
+                    echo "<td>" . $value["date_created"] . "</td>";
                     echo "<td style= 'border: 1px solid black'><form method='get' action='customersView.php'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-top: 19px;' type='submit' name='view' value=\"$value[id]\">View</button></form></td>";
                 echo "</tr>";
             }

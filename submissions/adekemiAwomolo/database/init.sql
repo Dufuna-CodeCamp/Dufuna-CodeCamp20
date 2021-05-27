@@ -132,12 +132,12 @@ CREATE TABLE single_orders(
  quantity int not null,
  unit_price decimal not null,
  total_amount decimal(10, 2) not null,
- primary key(order_item_id),
+ primary key(order_id),
  foreign key(id) references orders(id),
  foreign key(product_id) references products_details(id)
 );
 
-INSERT INTO single_ordersss(Order_id, product_id, quantity,unit_price, total_amount)
+INSERT INTO single_orders(Order_id, product_id, quantity,unit_price, total_amount)
 values (1, 1, 3, 1000, 3000);
 
 SELECT * FROM single_order;
