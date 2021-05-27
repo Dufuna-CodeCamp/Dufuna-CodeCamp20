@@ -3,7 +3,13 @@ require_once('connection.php');
 
     try{
     global $pdo;
-    $sql = "SELECT  * FROM orders";
+    $sql = "SELECT  orders.unit_price, orders.quantity, orders.total_price,ordered_time.created_at,ordered_time.id, 
+    product_details.name,customers_address.street,customers_address.city,customers_address.state,customers_address.country
+                    FROM orders
+                     LEFT JOIN ordered_time ON ordered_time.id = orders.id
+                    LEFT JOIN product_details ON product_details.id = orders.id
+                    LEFT JOIN customers_address ON customers_address.id = orders.id
+                ";
     $result = $pdo->query($sql);
     setcookie("customers_orders",time() +3600, "/");
     if(isset($_COOKIE["customers_orders"])){
@@ -23,12 +29,12 @@ require_once('connection.php');
         while($row = $result->fetch()){
             echo "<tr>";
             echo "<td>". $row['id']. "</td>";
-            echo "<td>". $row['product_name']. "</td>";
-            echo "<td>". $row['order_unit_price']. "</td>";
+            echo "<td>". $row['name']. "</td>";
+            echo "<td>". $row['unit_price']. "</td>";
             echo "<td>". $row['quantity']."</td>";
-            echo "<td>". $row['order_total_price']. "</td>";
-            echo "<td>". $row['created_date']. "</td>";
-            echo "<td>". $row['customers_location_address']. $row['customers_location_city'].$row['customers_location_state'].$row['customers_location_country']. "</td>";
+            echo "<td>". $row['total_price']. "</td>";
+            echo "<td>". $row['created_at']. "</td>";
+            echo "<td>". $row['street']." ". $row['city']. " ".$row['state'].$row['country']. "</td>";
             echo "</tr>";
         }
         echo "</table>";
