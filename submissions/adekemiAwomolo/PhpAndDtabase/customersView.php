@@ -15,7 +15,7 @@ require_once('connection.php');
     FROM single_orders
     LEFT JOIN orders ON orders.id = single_orders.order_id
     LEFT JOIN products_details ON products_details.id = single_orders.product_id
-    LEFT JOIN customers_information ON orders.customers_orders = customers_information.customers_id";
+    LEFT JOIN customers_information ON orders.customers_id = customers_information.customers_id";
     $result = $pdo->query($sql);
 setcookie("customers_orders",time() +3600, "/");
 if(isset($_COOKIE["customers_orders"])){
