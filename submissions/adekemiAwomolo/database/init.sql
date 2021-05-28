@@ -107,12 +107,12 @@ SELECT * FROM  customers_information;
 
 CREATE TABLE orders(
 id INT NOT NULL AUTO_INCREMENT,
-customers_id VARCHAR(100) NOT NULL,
-customers_orders INT NOT NULL,
+customers_id INT NOT NULL,
+/*customers_orders INT NOT NULL,*/
 amount DECIMAL(9,2) NOT NULL,
 created_at DATETIME,
 PRIMARY KEY(id),
-FOREIGN KEY(customers_orders) REFERENCES customers(id)
+FOREIGN KEY(customers_id) REFERENCES customers(id)
 );
 
 INSERT INTO orders(customers_id, customers_orders, amount, created_at)
