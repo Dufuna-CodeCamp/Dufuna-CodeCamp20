@@ -1,0 +1,4 @@
+article.sql
+vendor
+composer.lock
+.env
