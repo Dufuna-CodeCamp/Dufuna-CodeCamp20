@@ -49,18 +49,18 @@ function display() {
             echo "</tr>";
         }
         echo "</table>";
-        unset($result);} 
+        unset($result);
+    } 
     else{  
         echo "record not found";
     }
 } 
 
-try {
+try{
 if ($notSet) $info = load(); //Fetch query and set cookie
 else $info = unserialize($_COOKIE["orders"]); //Fetch cookie 
 display();
-}
-catch(PDOException $e) {
+}catch(PDOException $e){
 die ("ERROR: $sql " . $e->getMessage()) . "<br>";
 }
 
