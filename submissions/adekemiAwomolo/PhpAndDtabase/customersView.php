@@ -26,7 +26,7 @@ function display() {
 }
 
 try {
-    if ($notSet) $info = load(); //Fetch query and set cookie
+    if ($notSet) $info = display(); //Fetch query and set cookie
     else $info = unserialize($_COOKIE["named_list"]); //Fetch cookie 
     display();
 } 
