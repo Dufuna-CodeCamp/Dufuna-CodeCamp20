@@ -25,30 +25,30 @@ function load() {
     }
     
 function display() {
-    global $info;
+global $info;
 if(count($info) > 0){
 echo "<table>";
-    echo "<tr>";
-        echo "<th>ID</th>";
-        echo "<th>Product_Name</th>";
-        echo "<th>Unit_Price</th>";
-        echo "<th>Quantity</th>";
-        echo "<th>Total_Price</th>";
-        echo "<th>Created_Date</th>";
-        echo "<th>Address</th>";
-        echo "</tr>";
-   foreach ($info as $value){
-    echo "<tr>";
-        echo "<td>". $value['id']. "</td>";
-        echo "<td>". $value['product_name']. "</td>";
-        echo "<td>". $value['unit_price']. "</td>";
-        echo "<td>". $value['quantity']."</td>";
-        echo "<td>". $value['total_amount']. "</td>";
-        echo "<td>". $value['created_at'] . "</td>" ;
-        echo "<td>" . $value['street_address']. $value['city']. $value['state'].$value['country']. "</td>";
-        echo "</tr>";
-    }
-    echo "</table>";
+echo "<tr>";
+echo "<th>ID</th>";
+echo "<th>Product_Name</th>";
+echo "<th>Unit_Price</th>";
+echo "<th>Quantity</th>";
+echo "<th>Total_Price</th>";
+echo "<th>Created_Date</th>";
+echo "<th>Address</th>";
+echo "</tr>";
+foreach ($info as $value){
+echo "<tr>";
+echo "<td>". $value['id']. "</td>";
+echo "<td>". $value['product_name']. "</td>";
+echo "<td>". $value['unit_price']. "</td>";
+echo "<td>". $value['quantity']."</td>";
+echo "<td>". $value['total_amount']. "</td>";
+echo "<td>". $value['created_at'] . "</td>" ;
+echo "<td>" . $value['street_address']. $value['city']. $value['state'].$value['country']. "</td>";
+echo "</tr>";
+}
+echo "</table>";
 
 unset($result);
 
@@ -57,11 +57,11 @@ echo "record not found";
 }
 } 
 try {
-    if ($notSet) $info = display(); //Fetch query and set cookie
-    else $info = unserialize($_COOKIE["orders"]); //Fetch cookie 
-    display();
+if ($notSet) $info = load(); //Fetch query and set cookie
+else $info = unserialize($_COOKIE["orders"]); //Fetch cookie 
+display();
 } catch(PDOException $e) {
-    die ("ERROR: $sql " . $e->getMessage()) . "<br>";
+die ("ERROR: $sql " . $e->getMessage()) . "<br>";
 }
 
 unset($pdo);
