@@ -5,16 +5,7 @@ $info;
 $notSet = !(isset($_COOKIE["orders"]));
 function load() {
     global $pdo;
-    $sql = "SELECT single_orders.unit_price,
-    single_orders.quantity, 
-    single_orders.total_amount,
-    orders.id,
-    orders.created_at,
-    products_details.product_name,
-    customers_information.street_address,
-    customers_information.city,
-    customers_information.state,
-    customers_information.country
+    $sql = "SELECT single_orders.unit_price,single_orders.quantity, single_orders.total_amount,orders.id,orders.created_at,products_details.product_name,customers_information.street_address,customers_information.city,customers_information.state,customers_information.country
     FROM single_orders
     LEFT JOIN orders ON orders.id = single_orders.order_id
     LEFT JOIN products_details ON products_details.id = single_orders.product_id
@@ -57,12 +48,12 @@ function display() {
 } 
 
 try{
-if ($notSet) $info = load(); //Fetch query and set cookie
-else $info = unserialize($_COOKIE["orders"]); //Fetch cookie 
-display();
-}catch(PDOException $e){
-die ("ERROR: $sql " . $e->getMessage()) . "<br>";
+    if($notSet)$info = load();
+    else $info =unserialize($_COOKIE["orders"]);
+    display();
 }
-
+catch(PDOException $e){
+    die ("ERROR: $sql " . $e->getMessage()) . "<br>";
+}
 unset($pdo);
 ?>
