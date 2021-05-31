@@ -1,37 +1,68 @@
 <?php
-include_once("cookies.php");
+require_once('connection.php');
 
+$info;
+$notSet = !(isset($_COOKIE["orders"]));
+function load() {
+    global $pdo;
+    $sql = "SELECT single_orders.unit_price,
+    single_orders.quantity, 
+    single_orders.total_amount,
+    orders.id,
+    orders.created_at,
+    products_details.product_name,
+    customers_information.street_address,
+    customers_information.city,
+    customers_information.state,
+    customers_information.country
+    FROM single_orders
+    LEFT JOIN orders ON orders.id = single_orders.order_id
+    LEFT JOIN products_details ON products_details.id = single_orders.product_id
+    LEFT JOIN customers_information ON orders.customers_id = customers_information.customers_id";
+    $result = $pdo->query($sql);
+    setcookie("orders", serialize($result), time() + 0, "/");
+    return $result;
+    }
+    
 function display() {
     global $info;
-    if (count($info) > 0) {
-        echo "<table style= 'border: 1px solid black'>";
-        echo "<tr>";
-        echo "<th>S/N</th>";
-        echo "<th>Full Name</th>";
-        echo "<th>Email Address</th>";
-        echo "<th>Created At</th>";
-        echo "<th'>Actions</th>";
+if(count($info) > 0){
+echo "<table>";
+    echo "<tr>";
+        echo "<th>ID</th>";
+        echo "<th>Product_Name</th>";
+        echo "<th>Unit_Price</th>";
+        echo "<th>Quantity</th>";
+        echo "<th>Total_Price</th>";
+        echo "<th>Created_Date</th>";
+        echo "<th>Address</th>";
         echo "</tr>";
-        foreach ($info as $value) {
-        echo "<tr>";
-        echo "<td>" . $value["id"] . "</td>";
-        echo "<td>" . $value["first_name"]. " " . $value["last_name"] . "</td>";                    
-        echo "<td>". $value["email"] . "</td>";
-        echo "<td>" . $value["date_created"] . "</td>";
-        echo "<td style= 'border: 1px solid black'><form method='get' action='customersView.php'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-top: 19px;' type='submit' name='view' value=\"$value[id]\">View</button></form></td>";
+   foreach ($info as $value){
+    echo "<tr>";
+        echo "<td>". $value['id']. "</td>";
+        echo "<td>". $value['product_name']. "</td>";
+        echo "<td>". $value['unit_price']. "</td>";
+        echo "<td>". $value['quantity']."</td>";
+        echo "<td>". $value['total_amount']. "</td>";
+        echo "<td>". $value['created_at'] . "</td>" ;
+        echo "<td>" . $value['street_address']. $value['city']. $value['state'].$value['country']. "</td>";
         echo "</tr>";
-        }
-        echo "</table";
-    } else echo "No record found!";
-}
+    }
+    echo "</table>";
 
+unset($result);
+
+} else{
+echo "record not found";
+}
+} 
 try {
     if ($notSet) $info = display(); //Fetch query and set cookie
-    else $info = unserialize($_COOKIE["named_list"]); //Fetch cookie 
+    else $info = unserialize($_COOKIE["orders"]); //Fetch cookie 
     display();
-} 
-catch(PDOException $e) {
+} catch(PDOException $e) {
     die ("ERROR: $sql " . $e->getMessage()) . "<br>";
 }
+
 unset($pdo);
 ?>
