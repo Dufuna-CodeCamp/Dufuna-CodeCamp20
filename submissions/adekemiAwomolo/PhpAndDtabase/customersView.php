@@ -1,57 +1,37 @@
 <?php
-require_once('connection.php');
-    try{
-    global $pdo;
-    $sql = "SELECT single_orders.unit_price,
-    single_orders.quantity, 
-    single_orders.total_amount,
-    orders.id,
-    orders.created_at,
-    products_details.product_name,
-    customers_information.street_address,
-    customers_information.city,
-    customers_information.state,
-    customers_information.country
-    FROM single_orders
-    LEFT JOIN orders ON orders.id = single_orders.order_id
-    LEFT JOIN products_details ON products_details.id = single_orders.product_id
-    LEFT JOIN customers_information ON orders.customers_id = customers_information.customers_id";
-    $result = $pdo->query($sql);
-setcookie("customers_orders",time() +3600, "/");
-if(isset($_COOKIE["customers_orders"])){
-if($result ->rowCount() > 0){
-echo "<table>";
-    echo "<tr>";
-        echo "<th>ID</th>";
-        echo "<th>Product_Name</th>";
-        echo "<th>Unit_Price</th>";
-        echo "<th>Quantity</th>";
-        echo "<th>Total_Price</th>";
-        echo "<th>Created_Date</th>";
-        echo "<th>Address</th>";
-        echo "</tr>";
-    while($row = $result->fetch()){
-    echo "<tr>";
-        echo "<td>". $row['id']. "</td>";
-        echo "<td>". $row['product_name']. "</td>";
-        echo "<td>". $row['unit_price']. "</td>";
-        echo "<td>". $row['quantity']."</td>";
-        echo "<td>". $row['total_amount']. "</td>";
-        echo "<td>". $row['created_at'] . "</td>" ;
-        echo "<td>" . $row['street_address']. $row['city']. $row['state'].$row['country']. "</td>";
-        echo "</tr>";
-    }
-    echo "</table>";
+include_once("cookies.php");
 
-unset($result);
-
-} else{
-echo "record not found";
+function display() {
+    global $info;
+    if (count($info) > 0) {
+        echo "<table style= 'border: 1px solid black'>";
+        echo "<tr>";
+        echo "<th>S/N</th>";
+        echo "<th>Full Name</th>";
+        echo "<th>Email Address</th>";
+        echo "<th>Created At</th>";
+        echo "<th'>Actions</th>";
+        echo "</tr>";
+        foreach ($info as $value) {
+        echo "<tr>";
+        echo "<td>" . $value["id"] . "</td>";
+        echo "<td>" . $value["first_name"]. " " . $value["last_name"] . "</td>";                    
+        echo "<td>". $value["email"] . "</td>";
+        echo "<td>" . $value["date_created"] . "</td>";
+        echo "<td style= 'border: 1px solid black'><form method='get' action='customersView.php'><button style= 'color: black; background-color: #DAF943; border-radius: 20%; margin-top: 19px;' type='submit' name='view' value=\"$value[id]\">View</button></form></td>";
+        echo "</tr>";
+        }
+        echo "</table";
+    } else echo "No record found!";
 }
+
+try {
+    if ($notSet) $info = load(); //Fetch query and set cookie
+    else $info = unserialize($_COOKIE["named_list"]); //Fetch cookie 
+    display();
 } 
-} 
- catch(PDOException $e){
-     die("ERROR: could not execute $sql.". $e->getMessage());
- }
+catch(PDOException $e) {
+    die ("ERROR: $sql " . $e->getMessage()) . "<br>";
+}
 unset($pdo);
 ?>
