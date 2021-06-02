@@ -1,7 +1,7 @@
 <?php
 
 try{
-$pdo = new PDO("mysql:host=localhost;dbname=customers_list","root","root");
+$pdo = new PDO("mysql:host=localhost;dbname=e_commerce","root","root");
 
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 //echo "connected successfully" . $pdo->getAttribute(constant("PDO::ATTR_CONNECTION_STATUS"));
