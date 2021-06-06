@@ -31,12 +31,12 @@ let oldShippingPrice = shipping.innerHTML,
     oldPrice = price.innerHTML;
 
 
-window.addEventListener('load', function(){
-    if(productQuantity.value >= 1 && price.innerHTML < 1000){
-        // price.innerHTML = productQuantity.value * price.innerHTML;
-        shipping.innerHTML = 100;
-        totalCost.innerHTML = parseInt(shipping.innerHTML) + parseInt(price.innerHTML);
-    }
+// window.addEventListener('load', function(){
+//     if(productQuantity.value >= 1 && price.innerHTML < 1000){
+//         // price.innerHTML = productQuantity.value * price.innerHTML;
+//         shipping.innerHTML = 100;
+//         totalCost.innerHTML = parseInt(shipping.innerHTML) + parseInt(price.innerHTML);
+//     }
 
     // if(productQuantity.value == 1 && price.innerHTML == 1000 || price.innerHTML <= 20000){
     //     // price.innerHTML = productQuantity.value * price.innerHTML;
@@ -57,8 +57,7 @@ window.addEventListener('load', function(){
     //     shipping.innerHTML = 25000;
     //     totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
     // }
-})
-
+// })
 
 productQuantity.addEventListener('keyup', function(){
 
@@ -68,46 +67,61 @@ productQuantity.addEventListener('keyup', function(){
         button.style.backgroundColor = "grey";
         shipping.innerHTML = "";
         totalCost.innerHTML = "";
-
-    }else if(price.innerHTML <= 1000  && productQuantity.value >= 1){
+    } else {
         price.innerHTML = productQuantity.value * price.innerHTML;
-        shipping.innerHTML = oldShippingPrice;
-        totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
-        error.innerHTML = "";
-        button.disabled = false;
-        button.style.backgroundColor = null;
-        price.innerHTML = oldPrice;
+        // let newPrice = basePrice * productQuantity.value;
+        // price.innerHTML = newPrice;
 
-    }else if(price.innerHTML >= 1000 && price.innerHTML <= 20000 && productQuantity.value >= 1){
-        price.innerHTML = productQuantity.value * price.innerHTML;
-        result = 0.15 * price.innerHTML;
-        shipping.innerHTML = result;
-        totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
-        error.innerHTML = "";
-        button.disabled = false;
-        button.style.backgroundColor = null;
-        price.innerHTML = oldPrice;
-
-    }else if(price.innerHTML >= 20000 && price.innerHTML <= 100000 && productQuantity.value >= 1){
-        price.innerHTML = productQuantity.value * price.innerHTML;
-        result = 0.20 * price.innerHTML;
-        shipping.innerHTML = result;
-        totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
-        error.innerHTML = "";
-        button.disabled = false;
-        button.style.backgroundColor = null;
-        price.innerHTML = oldPrice;
-        // return oldPrice;
-        
-    }else{
-        error.innerHTML = "";
-        button.disabled = false;
-        button.style.backgroundColor = null;
-        shipping.innerHTML = "";
-        totalCost.innerHTML = "";
-        // price.innerHTML = oldPrice;
-
-        // return oldPrice;
+        if(price.innerHTML < 1000  && productQuantity.value >= 1){
+            
+            shipping.innerHTML = oldShippingPrice;
+            totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
+            error.innerHTML = "";
+            button.disabled = false;
+            button.style.backgroundColor = null;
+            price.innerHTML = oldPrice;
+    
+        }else if(price.innerHTML >= 1000 && price.innerHTML < 20000 && productQuantity.value >= 1){
+            // price.innerHTML = productQuantity.value * price.innerHTML;
+            result = 0.15 * price.innerHTML;
+            shipping.innerHTML = result;
+            totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
+            error.innerHTML = "";
+            button.disabled = false;
+            button.style.backgroundColor = null;
+            price.innerHTML = oldPrice;
+    
+        }else if(price.innerHTML >= 20000 && price.innerHTML <= 100000 && productQuantity.value >= 1){
+            // price.innerHTML = productQuantity.value * price.innerHTML;
+            result = 0.20 * price.innerHTML;
+            shipping.innerHTML = result;
+            totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
+            error.innerHTML = "";
+            button.disabled = false;
+            button.style.backgroundColor = null;
+            price.innerHTML = oldPrice;
+            // return oldPrice;
+            
+        }else if(price.innerHTML > 100000 && productQuantity.value >= 1){
+            // price.innerHTML = productQuantity.value * price.innerHTML;
+            shipping.innerHTML = 25000;
+            totalCost.innerHTML = parseInt(price.innerHTML) + parseInt(shipping.innerHTML);
+            error.innerHTML = "";
+            button.disabled = false;
+            button.style.backgroundColor = null;
+            price.innerHTML = oldPrice;
+            // return oldPrice;
+            
+        }else{
+            error.innerHTML = "";
+            button.disabled = false;
+            button.style.backgroundColor = null;
+            shipping.innerHTML = "";
+            totalCost.innerHTML = "";
+            // price.innerHTML = oldPrice;
+    
+            // return oldPrice;
+        }
     }
 
     
