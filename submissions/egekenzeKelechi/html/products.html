@@ -26,9 +26,11 @@
                 <div class="inside">
                     <h3>Apple iPhone X</h3>
                     <p>Brand: Apple</p>
-                    <p>Quantity: <input type="text" placeholder="2"></p>
-                    <p>Price: $1000</p>
-                    <button>Buy Now</button>
+                    <p>Quantity: <input type="text" id="product-qty" value="1"></p><span class="error-message"></span>
+                    <p>Price: $<span class="product-price">1000</span></p>
+                    <p>Shipping Cost: $<span class="shipping">100</span></p>
+                    <p>Total Cost: $<span class="totalCost">1100</span></p>
+                    <button id="btn">Buy Now</button>
                 </div>
                 <!--<div class="inside"> -->
                     <div class="inside-div">
@@ -88,5 +90,7 @@
             <p> All rights reserved</p>
         </div>
     </footer>
+
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
