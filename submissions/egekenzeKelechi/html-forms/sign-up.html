@@ -29,22 +29,38 @@
             
             <div class="container">
                 <form action="#">
-                    <label for="First">First Name</label>
-                    <input type="text" name="" id="">
-                    <label for="Last">Last Name</label>
-                    <input type="text" name="" id="">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="" id="firstName">
+                    <span class="error-message"></span>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="" id="lastName">
+                    <span class="error-message"></span>
+
                     <label for="Other">Other Names</label>
-                    <input type="text" name="" id="">
-                    <label for="Phone">Phone Number</label>
-                    <input type="text" name="" id="">
-                    <label for="Phone">Email</label>
-                    <input type="text" name="" id="">
-                    <label for="Password">Password</label>
-                    <input type="password" name="" id="">
-                    <label for="Confirm Password">Confirm Password</label>
-                    <input type="password" name="" id="">
-                    <p><input type="checkbox">I agree to the Terms and Conditions</p>
-                    <button type="submit">Sign Up</button>
+                    <input type="text" name="" id="Other">
+                    <span class="error-message"></span>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="" id="phone">
+                    <span class="error-message"></span>
+
+                    <label for="email">Email</label>
+                    <input type="text" name="" id="email">
+                    <span class="error-message"></span>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="password">
+                    <span class="error-message"></span>
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="" id="confirmPassword">
+                    <span class="error-message"></span>
+
+                    <p><input type="checkbox" id="checkbox">I agree to the Terms and Conditions</p>
+                    <span class="error-message"></span>
+
+                    <button type="submit" id="btn-submit">Sign Up</button>
                 </form>
             </div>
         </section>
@@ -75,5 +91,8 @@
             <p> All rights reserved</p>
         </div>
     </footer>
+
+    <!-- <script src="DOM/signUp.js"></script> -->
+    <script src="../javascript/conditionals.js"></script>
 </body>
 </html>

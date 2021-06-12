@@ -20,6 +20,10 @@ ul{
     list-style: none;
 }
 
+.error-message{
+    color: red;
+}
+
 /* Header Section */
 nav{
     color: white;
