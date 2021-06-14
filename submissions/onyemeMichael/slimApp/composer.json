@@ -1,0 +1,24 @@
+{
+    "name": "pubhouse/slim-api",
+    "description": "Slim-app",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.4",
+        "vlucas/phpdotenv": "^5.3",
+        "illuminate/database": "^8.44"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB\\": "database",
+            "App\\Controller\\": "app/controller",
+            "App\\Model\\": "app/models"
+
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
