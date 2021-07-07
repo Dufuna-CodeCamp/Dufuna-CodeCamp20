@@ -42,17 +42,21 @@
         </div>
       </div>
 
-      <form enctype="multipart/form-data" action="#" method="post">
+      <form id="contact-form">
         <fieldset>
           <div class="intro">
             <img src="../html/images/closed-mail.png" alt="">
             <h3>Or better still send us a message</h3>
           </div>
-          <input type="text" placeholder="Full Name"name="fullname" id="fullname"/><br>
-          <input type="email" name="email" id="mail-add" placeholder="Email Address"/><br>
-          <input type="text" name="subject" placeholder="Subject"> <br>
+          <input type="text" placeholder="Full Name"name="fullname" id="fullname"/>
+          <span class="error-block"></span><br>
+          <input type="email" name="email" id="mail-add" placeholder="Email Address"/>
+          <span class="error-block"></span><br>
+          <input type="text" name="subject" placeholder="Subject">
+          <span class="error-block"></span><br>
           <label for="message">Message</label><br>
-          <textarea name="message" id="message" cols="" rows="" max-width="100%"></textarea><br><br>
+          <textarea name="message" id="message" cols="" rows="" max-width="100%"></textarea>
+          <span class="error-block"></span><br><br>
           <div class="send-button">
             <button type="submit" name="send">SEND</button><br>
           </div>
@@ -74,10 +78,11 @@
 
       <div id="b">
         <li class="cols">
-          <form class="email-footer" action="#" method="post">
+          <form id="news-form" class="email-footer">
             <label for="email-sign">Sign up for our Newsletter</label><br>
             <input placeholder=" Enter your email address"type="email-sign" name="email-sign" id="email-sign"/>
-            <button type="submit" name="email-button">SUBMIT</button>
+            <button type="submit" name="email-button">SUBMIT</button><br>
+            <span class="error-block"></span><br>
           </form>
         </li>
 
@@ -95,6 +100,8 @@
 
     <p class="copyright">&copy; 2021 SWITCHSTOP.COM<br>All Rights Reserved</p>
   </footer>
+  <script src="../DOM/contact.js" charset="utf-8"></script>
+  <script src="../DOM/newsletter.js" charset="utf-8"></script>
 
 </html>
 

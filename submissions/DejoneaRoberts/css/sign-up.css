@@ -11,6 +11,11 @@ body {
   font-family: 'Lato' , sans-serif;
 }
 
+.error-block {
+   color: red;
+   font-size: 12px;
+ }
+
 /*-- -----------------------NAV----------------------- --*/
  nav {
    background-color: purple;
@@ -78,6 +83,7 @@ fieldset input {
   height:30px;
   box-shadow: none;
 }
+
 
 #terms {
   height: auto;

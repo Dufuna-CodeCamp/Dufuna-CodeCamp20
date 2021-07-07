@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    color: #333;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+.error-message{
+    color: red;
+}
+
+/* Header Section */
+nav{
+    color: white;
+    background: rgb(47, 93, 245);
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+nav h1{
+    padding: 10px 0;
+}
+
+nav li{
+    padding: 5px 0;
+}
+
+nav a {
+    color: white;
+}
+
+/* End header section */
+
+/* #Body Section */
+#body{
+    width: 100%;
+    padding-top: 15px;
+}
+
+.first {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.first p{
+    padding: 5px 0;
+}
+
+.first h2{
+    color: rgb(55, 138, 247);
+}
+
+.first a{
+    color: blue;
+    text-decoration: underline;
+}
+
+.container{
+    width: 80%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    /* padding-bottom: 5px; */
+}
+
+.container form input{
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.container form input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+.container form p{
+    color: rgb(15, 123, 247);
+    font-size: 12px;
+}
+
+.container form button{
+    margin:  auto;
+    width: 70px;
+    height: 30px;
+    color: white;
+    background: rgb(16, 96, 202);
+    border: none;
+}
+
+/* End #Body Section */
+
+/* FOOTER SECTION */
+footer{
+    background:  rgb(16, 96, 202);
+    padding-left: 15px;
+    padding-top: 15px;
+    color: white;
+}
+
+.newsletter p{
+    padding-bottom: 5px;
+}
+
+.newsletter input{
+    padding: 5px;
+}
+
+.newsletter button{
+    padding: 5px;
+    width: 70px;
+    color: blue;
+}
+
+.nav{
+    padding-bottom: 10px;
+}
+
+.nav a{
+    color: white;
+}
+
+.nav li{
+    padding-bottom: 5px;
+}
+
+.social{
+    padding-top: 10px;
+}
+
+.social img{
+    width: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 15px 0;
+}
+/* END of footer */
+
+
+/* Contact US */
+
+.social-2 img{
+    width: 25px;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+
+.bold-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container-2{
+    width: 80%;
+    border: 1px solid #333;
+    margin: 20px auto;
+}
+
+.container-2 form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.container-2 form input{
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.container-2 textarea{
+    margin-bottom: 10px;
+}
+
+.container-2 form button{
+    color: white;
+    background: rgb(16, 96, 202);
+    border: none;
+    padding: 10px 4px;
+    width: 70px;
+    /* margin-left: 150px; */
+}
+
+.btn{
+    text-align: right;
+}
+
+.inner-div{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.inner-div p{
+    font-size: 13px;
+}
+
+/* END OF CONTACT */
+
+
+/* PRODUCTS CSS */
+.img-div{
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.img-div img{
+    width: 200px;
+}
+
+.inside{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.inside input{
+    width: 50px;
+    text-align: center;
+    outline: none;
+}
+
+.inside-div{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inside h4{
+    padding-top: 10px;
+}
+
+.inside button{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.second{
+    background-color: rgb(156, 156, 156);
+    width: 100%;
+    height: 100%;
+}
+
+.second h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card{
+    width: 80%;
+    padding: 20px 0;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.card-div{
+    text-align: center;
+    height: 260px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.card-div img{
+    width: 200px;   
+}
+/* END OF PRODUCTS CSS */
+
+
+/* TABLET VIEW */
+@media only screen and (min-width: 768px){
+     nav{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav li{
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .bold-text{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contact-div,
+    .email-div {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .firsts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    .inside-div{
+        grid-column: 1 / span 3;
+        align-content: flex-start;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social{
+        grid-column: 2 / span 1;
+    }
+
+    .social-2{
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .social-2 img{
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    .copyright{
+        grid-column: 1 / span 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Larger Screens */
+@media only screen and (min-width: 992px){
+    #body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin: auto;
+    }
+
+    .firsts{
+        grid-column: 1 /span 2;
+    }
+
+    .second{
+        grid-column: 1 /span 2;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social{
+        grid-column: 3;
+    }
+
+    .social img{
+        width: 40px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+}
