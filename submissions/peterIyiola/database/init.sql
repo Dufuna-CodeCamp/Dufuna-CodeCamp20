@@ -1,7 +1,7 @@
 use best_buyers;
 
 /----- created admin table----/
-	create table best_buyers_admin(
+	create table admin(
 	id int not null auto_increment,
 	name varchar(50) not null,
 	password varchar(50) not null,
@@ -11,7 +11,7 @@ use best_buyers;
 	);
     
     /----- inserted values into admin table----/
-	insert into best_buyers_admin (name, email, password, phone_number) 
+	insert into admin (name, email, password, phone_number) 
 	values ('peter iyiola', 'peteriyiola@gmail.com', 'pete@1234', 08108088644),
 	('Joy Chukwu', 'joych@gmail.com', 'joyChu@567', 09067525272),
 	('Faith Akinsiku', 'fa@gmail.com', 'faithA@794', 07456372527),
@@ -38,14 +38,14 @@ create table products (
 	name varchar(50) not null,
 	description varchar(250) not null,
 	image blob not null,
-    category_id int not null,
-    admin_id int not null,
+    	category_id int not null,
+    	admin_id int not null,
 	unit_price decimal(5,0) not null,
-    stock_level int not null,
-    status varchar(20) not null,
+    	stock_level int not null,
+    	status varchar(20) not null,
 	primary key (id),
-    foreign key (category_id) references categories (id) on delete cascade,
-    foreign key (admin_id) references best_buyers_admin (id) on delete cascade
+    	foreign key (category_id) references categories (id) on delete cascade,
+    	foreign key (admin_id) references best_buyers_admin (id) on delete cascade
 );
 /--- insert values into products --/
 insert into products (name, description, image, category_id, admin_id, unit_price, stock_level, status)
@@ -83,16 +83,16 @@ create table customer_addresses (
 	zip_code int,
 	country varchar(20) not null,
 	phone_number varchar(15) not null,
-    primary key (id),
+    	primary key (id),
 	foreign key (customer_id) references customers (id) on delete cascade
 );
 
 insert into customer_addresses (customer_id, street_name,city,state,zip_code,country,phone_number)
-values('1','abejoye','VI','lagos',100449,'nigeria',08074949934),
-('2','akinlabake','ishaga','lagos',100949,'nigeria',08074945930),
-('3','akerele','ikotun','lagos',100449,'nigeria',08073949935),
-('4','adefemi','gbagada','lagos',100679,'nigeria',08079949930),
-('5','adebayo','ipaja','lagos',100959,'nigeria',0807594930);
+values(1,'abejoye','VI','lagos',100449,'nigeria','08074949934'),
+(2,'akinlabake','ishaga','lagos',100949,'nigeria','08074945930'),
+(3,'akerele','ikotun','lagos',100449,'nigeria','08073949935'),
+(4,'adefemi','gbagada','lagos',100679,'nigeria','08079949930'),
+(5,'adebayo','ipaja','lagos',100959,'nigeria','0807594930');
 
 /--- create table for orders --/
 CREATE TABLE orders (
@@ -119,7 +119,7 @@ CREATE TABLE order_items (
 	quantity int not null,
 	unit_price decimal(9,2) not null,
 	total_amount decimal(10,2) not null,
-    primary key (id),
+    	primary key (id),
 	foreign key (order_id) references orders (id) on delete cascade,
 	foreign key (product_id) references products (id) on delete cascade
 );
