@@ -9,4 +9,3 @@ for (var number = 1; number <= 123 - 7; number++) {
         console.log("Software");
     } else (console.log(number));
 }
-
