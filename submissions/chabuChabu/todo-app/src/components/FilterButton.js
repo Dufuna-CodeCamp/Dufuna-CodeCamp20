@@ -10,7 +10,6 @@ function FilterButton (props) {
             <span>{props.name}</span> 
         </span>
     )
-
 }
 
 export default FilterButton;
