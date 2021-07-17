@@ -9,8 +9,7 @@ const FILTER_MAP = {
   Items:() => true,
   Active: task => !task.completed,
   Completed: task => task.completed,
-
-};
+  };
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
@@ -18,7 +17,6 @@ function App(props) {
 
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState('Items');
-
 
   function addTask(name) {
     const newTask = {id: "todo-" + nanoid(),name: name, completed:false}
@@ -43,7 +41,6 @@ function App(props) {
      setTasks(completed);
   }
    /*eslint-disable */
-   
    //suppress all warnings between comments
    const tasklist = tasks
    .filter(FILTER_MAP[filter])
