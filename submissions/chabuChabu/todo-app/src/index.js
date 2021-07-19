@@ -5,9 +5,7 @@ import App from './App';
 const DATA = []
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App tasks={DATA}/>
-  </React.StrictMode>,
+    <App tasks={DATA}/>,
   document.getElementById('root')
 );
 // If you want to start measuring performance in your app, pass a function
