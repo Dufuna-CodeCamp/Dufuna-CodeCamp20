@@ -3,8 +3,6 @@ import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 
-
-
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo}) => {
   const [edit, setEdit] = useState({
     id: null,
@@ -23,13 +21,12 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo}) => {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   };
 
- console.log(todos);
   return todos.map((todo, index) => (
     <div
       className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
       key={index}
     >
-      <div key={todo.id} onClick={() => completeTodo(todo.id)} style={{ textDecoration: todo.isCompleted ? "line-through" : "",color: todo.isCompleted ? "" : ""}}>
+      <div key={todo.id} onClick={() => completeTodo(todo.id)} style={{ textDecoration: todo.isCompleted ? "line-through" : ""}}>
         {todo.text}
       </div>
       <div className='icons'>
