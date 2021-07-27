@@ -6,12 +6,9 @@ function TodoList() {
   const [todosLeft,setTodosRemaining] = useState(0);
   const [todos, setTodos] = useState([]);
   useEffect(() => {
-    setTodosRemaining(todos.filter(todo => !todo.isCompleted).length);
-    
-  },
-[ todos])
+    setTodosRemaining(todos.filter(todo => !todo.isCompleted).length); 
+  }, [todos])
    
-
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;

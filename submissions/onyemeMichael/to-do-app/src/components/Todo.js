@@ -41,7 +41,7 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo}) => {
         <div>
           <label className='container'>
           <input type="checkbox"  onClick={() => completeTodo(todo.id)}/>
-          <span className="checkmark"></span>
+          <span className="checkmark" />
           </label>
         </div>
       </div>
