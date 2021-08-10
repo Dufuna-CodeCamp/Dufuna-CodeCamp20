@@ -69,7 +69,7 @@ function validateEmail(field, event){
         }
     }
 
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    let emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/
     if(!field.value.match(emailRegex)){
         field.nextElementSibling.innerHTML = "Please enter a valid email";
         event.preventDefault();
