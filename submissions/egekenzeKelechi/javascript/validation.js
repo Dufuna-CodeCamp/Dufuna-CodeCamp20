@@ -245,3 +245,5 @@ let contactForm = (e) => {
 contact_submitButton.addEventListener("click", (e) => {
     contactForm(e);
 })
+
+/* CONTACT FORM VALIDATION ENDS HERE */
