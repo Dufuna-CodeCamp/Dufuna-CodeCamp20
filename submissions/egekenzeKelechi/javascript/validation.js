@@ -8,7 +8,7 @@ let form_validation = document.querySelector("#formValidation"),
 
 
 function validateNames(field, event){
-    let regex = /^[0-9!@#$%^&*)\(+=._-]*$/g;
+    let regex = /^[0-9!@#$%^&*)(+=._-]*$/g;
 
     // regex_specialChar_check
     if(field.value == ""){
