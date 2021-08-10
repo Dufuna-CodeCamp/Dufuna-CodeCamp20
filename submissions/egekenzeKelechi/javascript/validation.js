@@ -8,7 +8,7 @@ let form_validation = document.querySelector("#formValidation"),
 
 
 function validateNames(field, event){
-    let regex = /^[0-9!@#\$%\^\&*\)\(+=._-]*$/g;
+    let regex = /^[0-9!@#$%^&*)\(+=._-]*$/g;
 
     // regex_specialChar_check
     if(field.value == ""){
@@ -48,7 +48,7 @@ function validatePhone(field, event){
         }
     }
 
-    let number = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+    let number = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s./0-9]*$/g;
     if(!field.value.match(number)){
         field.nextElementSibling.innerHTML = "Please enter a valid phone number";
         event.preventDefault();
@@ -101,7 +101,7 @@ function validatePassword(field, field2, event){
         return false;
     }
 
-    let regularExpression = /^(?=.*[0-9])(?=.*[- ?!@#$%^&*\/\\])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9- ?!@#$%^&*\/\\]{6,30}$/;
+let regularExpression = /^(?=.*[0-9])(?=.*[- ?!@#$%^&*/])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9- ?!@#$%^&*//]{6,30}$/;
     if(!field.value.match(regularExpression)){
         field.nextElementSibling.innerHTML = "Your password should have a minimum of 6 characters, 1 capital letter, 1 special character eg @ and 1 number";
         event.preventDefault();
