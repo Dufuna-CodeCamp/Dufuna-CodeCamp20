@@ -131,37 +131,6 @@ function validate(e) {
 /* SIGN_UP FORM VALIDATION ENDS HERE */
 
 
-// NewsLetter Validation
-// let newsletterInput = document.querySelector("#newsletterInput");
-// let newsletterButton = document.querySelector('#newsletterButton');
-
-// function validateNewsletterFields(field, event){
-//     if(field.value == ""){
-//         if(field.id == "newsletterInput"){
-//             field.nextElementSibling.innerHTML = "Please enter your Email Address";
-//             event.preventDefault();
-//             return false;
-//         }
-//     }
-
-//     let emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/
-//     if(!field.value.match(emailRegex)){
-//         field.nextElementSibling.innerHTML = "Please enter a valid email";
-//         event.preventDefault();
-//         return false;
-//     }
-
-//     field.nextElementSibling.innerHTML = "";
-//     return true;
-// }
-
-// newsletterButton.addEventListener('click', (e) => {
-//     validateNewsletterFields(newsletterInput, e);
-// });
-
-
-/* NEWSLETTER VALIDATION ENDS HERE */
-
 // Contact Form Validation
 let fullName = document.querySelector("#fullName"),
     contactEmail = document.querySelector('#contactEmail'),
