@@ -126,7 +126,7 @@ function validate(e) {
     return true;
 }
 
-// form_validation.addEventListener('submit', validate);
+form_validation.addEventListener('submit', validate);
 
 /* SIGN_UP FORM VALIDATION ENDS HERE */
 
