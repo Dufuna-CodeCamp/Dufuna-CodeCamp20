@@ -7,6 +7,8 @@ let form_validation = document.querySelector("#formValidation"),
     confirmPass = document.querySelector('#confirmPassword');
 
 
+
+    // Validation For SignUp Form
 function validateNames(field, event){
     let regex = /^[0-9!@#$%^&*)(+=._-]*$/g;
 
@@ -125,3 +127,92 @@ function validate(e) {
 }
 
 form_validation.addEventListener('submit', validate);
+
+/* SIGN_UP FORM VALIDATION ENDS HERE */
+
+
+// Contact Form Validation
+let fullName = document.querySelector("#fullName"),
+    contactEmail = document.querySelector('#contactEmail'),
+    subject = document.querySelector('#subject'),
+    message = document.querySelector('#message'),
+    contact_submitButton = document.querySelector('#contact_submitButton');
+
+function validateNames(field, event){
+    let regex = /^[0-9!@#$%^&*)(+=._-]*$/g;
+
+    // regex_specialChar_check
+    if(field.value == ""){
+        if(field.id == "fullName"){
+            field.nextElementSibling.innerHTML = "Please enter your Name";
+            event.preventDefault();
+            return false;
+        }
+        
+    }else if(field.value.match(regex)){
+        field.nextElementSibling.innerHTML = "Special Characters are not allowed";
+        event.preventDefault();
+        return false;
+
+    }else{
+
+        field.nextElementSibling.innerHTML = "";
+        return true;
+    }
+
+}
+
+function validateEmail(field, event){
+    if(field.value == ""){
+        if(field.id == "contactEmail"){
+            field.nextElementSibling.innerHTML = "Please enter your Email Address";
+            event.preventDefault();
+            return false;
+        }
+    }
+
+    let emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/
+    if(!field.value.match(emailRegex)){
+        field.nextElementSibling.innerHTML = "Please enter a valid email";
+        event.preventDefault();
+        return false;
+    }
+
+    field.nextElementSibling.innerHTML = "";
+    return true;
+}
+
+
+function requiredValidation(field, event){
+    if(field.value == ""){
+        if(field.id == "subject"){
+            field.nextElementSibling.innerHTML = "Please enter a message subject";
+            event.preventDefault();
+            return false;
+        }
+
+        if(field.id == "message"){
+            field.nextElementSibling.innerHTML = "Please enter your Message";
+            event.preventDefault();
+            return false;
+        }
+
+    }else{
+        field.nextElementSibling.innerHTML = "Please enter a message subject";
+        return true;
+    }
+}
+
+let contactForm = (e) => {
+    validateNames(fullName, e);
+    validateEmail(contactEmail,e);
+    requiredValidation(subject, e);
+    requiredValidation(message, e);
+}
+
+
+contact_submitButton.addEventListener("click", (e) => {
+    contactForm(e);
+})
+
+/* CONTACT FORM VALIDATION ENDS HERE */
