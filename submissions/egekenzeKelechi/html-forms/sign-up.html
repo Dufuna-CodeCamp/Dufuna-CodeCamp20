@@ -28,7 +28,7 @@
             </div>
             
             <div class="container">
-                <form action="#">
+                <form action="#" id="formValidation">
                     <label for="firstName">First Name</label>
                     <input type="text" name="" id="firstName">
                     <span class="error-message"></span>
@@ -76,8 +76,9 @@
         </div>
         <div class="newsletter">
             <p>Sign up for our Newsletter</p>
-            <input type="text" name="" id="" placeholder="Enter your email address">
-            <button type="submit">Submit</button>
+            <input type="text" name="" id="newsletterInput" placeholder="Enter your email address">
+            <span class="error-message"></span>
+            <button type="submit" id="newsletterButton">Submit</button>
         </div>
         <div class="social">
             <p>CONNECT WITH US</p>
@@ -93,6 +94,6 @@
     </footer>
 
     <!-- <script src="DOM/signUp.js"></script> -->
-    <script src="../javascript/conditionals.js"></script>
+    <script src="../javascript/validation.js"></script>
 </body>
 </html>
