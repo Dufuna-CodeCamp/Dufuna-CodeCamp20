@@ -185,6 +185,12 @@ button#submit-button {
     color: darkgreen;
 }
 
+span.error-block {
+    color: red;
+    font-family: monospace;
+    size: 0.5em;
+}
+
 footer {
     background-color: rgba(000, 255, 000, 0.4);
     display: block;

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,11 +47,12 @@
                             
                             <p>Apples
                             <p>Type: Green Apples</p>
-                            <p>Quantity: <input type="number" class="quantity" name="quantity"></p>
-                            <p>Price: &#8358 1000/KG</p>
-                            <p>Shipping cost: &#8358 500</p>
-                            <p>Total cost: &#8358 1500</p>
-                            <button class="buy-button">BUY NOW</button>
+                            <p>Quantity: <input type="number" value="1" id="quantity" class="quantity" name="quantity">
+                            <span class="error-block"></span></p>
+                            <p>Product Price: &#8358 <span id="price">500</span>/KG</p>
+                            <p>Shipping cost: &#8358 <span id="shippingCost"></span></p>
+                            <p>Total cost: &#8358 <span id="totalCost"></span></p>
+                            <button class="buy-button" type="button" onclick="quantityResult()" id="buy-button">BUY NOW</button>
                        
                         </div>
                     
@@ -151,7 +151,7 @@
             </div>
 
         </footer>
-
+        <script src="../javaScript/productPage.js"></script>
     </body>
     
 </html>
