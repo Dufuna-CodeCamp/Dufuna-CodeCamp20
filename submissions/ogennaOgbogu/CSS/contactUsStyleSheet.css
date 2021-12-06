@@ -137,6 +137,16 @@ main {
     color: black;
 }
 
+span.error-block {
+    color: red;
+    font-family: monospace;
+    size: 0.5em;
+}
+
+.form>label {
+    padding-top: 5px;
+}
+
 .about-us {
     padding-top: 10px;
 }
@@ -183,9 +193,11 @@ main {
     justify-content: space-between;
 }
 
-button #submit-button {
-    width: 70px;
+button#submit-button {
     height: 40px;
+    width: 80px;
+    background-color: white;
+    border-radius: 5px;
     color: darkgreen;
 }
 
