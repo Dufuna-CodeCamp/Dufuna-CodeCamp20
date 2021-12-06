@@ -95,7 +95,6 @@ form {
     height: 35px;
     border-radius: 10px;
     border: solid 2px;
-    margin-bottom: 10px;
     margin-top: 1px;
 }
 
@@ -103,6 +102,21 @@ form {
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+
+.terms-and-conditions p {
+    margin: 0;
+}
+
+.right-side p {
+    margin-bottom: 0;
+}
+
+.error-block {
+    color: red;
+    font-family: monospace;
+    font-size: 10px;
+    padding-bottom: 10px;
 }
 
 #sign-up-button {

@@ -5,7 +5,7 @@ let quantity = document.getElementById("quantity"),
     button = document.getElementById("buy-button");
 
 
-    quantityRegex = /[1-9][0-9]*/;
+    quantityRegex = /^[1-9]+[0-9]*$/;
 //function for quantity validation
 function quantityResult(){
 
