@@ -1,7 +1,6 @@
 let submitForm = document.getElementById("validateForm"),
     firstName = document.getElementById('fname'),
     lastName = document.getElementById('lname'),
-    otherName = document.getElementById('oname'),
     phoneNumber = document.getElementById('phoneno'),
     email = document.getElementById('email'),
     password = document.getElementById('password'),
