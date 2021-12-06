@@ -178,7 +178,7 @@ form {
     justify-content: space-between;
 }
 
-button#submit-button {
+#submit-button {
     height: 40px;
     width: 80px;
     background-color: white;    
@@ -290,7 +290,7 @@ footer > .about-us > p > a {
         width: 70%;
     }
 
-    button#submit-button {
+    #submit-button {
         width: 25%;
     }
 
@@ -354,7 +354,7 @@ footer > .about-us > p > a {
             width: 70%;
         }
 
-        button#submit-button {
+        #submit-button {
             width: 25%;
         }
 

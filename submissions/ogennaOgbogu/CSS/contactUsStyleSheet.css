@@ -193,7 +193,7 @@ span.error-block {
     justify-content: space-between;
 }
 
-button#submit-button {
+#submit-button {
     height: 40px;
     width: 80px;
     background-color: white;
@@ -309,7 +309,7 @@ main {
     width: 70%;
 }
 
-button#submit-button {
+#submit-button {
     width: 25%;
 }
 
@@ -362,7 +362,7 @@ button#submit-button {
         width: 70%;
     }
 
-    button#submit-button {
+    #submit-button {
         width: 25%;
     }
 
