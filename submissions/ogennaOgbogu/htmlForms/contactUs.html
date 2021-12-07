@@ -70,21 +70,29 @@
                     <form class="form">
                         <label for="full-name">Full name</label>
                         <br>
-                        <input type="text" class="full-name" name="full-name">
+                        <input type="text" class="full-name" name="full-name" id="full-name">
+                        <span class="error-block"></span>
+                        <br>
                         <br>
                         <label for="email">Email Address</label>
                         <br>
-                        <input type="email" class="email" name="email">
+                        <input type="email" class="email" name="email" id="email">
+                        <span class="error-block"></span>
+                        <br>
                         <br>
                         <label for="subject">Subject</label>
                         <br>
-                        <input type="text" class="subject" name="subject">
+                        <input type="text" class="subject" name="subject" id="subject">
+                        <span class="error-block"></span>
+                        <br>
                         <br>
                         <label for="message2">Message</label>
                         <br>
-                        <textarea class="message2" name="message2"></textarea>
                         <br>
-                        <button type="submit" class="submit-text">SEND</button>
+                        <textarea class="message2" name="message2" id="message2"></textarea>
+                        <span class="error-block"></span>
+                        <br>
+                        <button type="submit" class="submit-text" id="submit-text">SEND</button>
                     </form>
 
                 </div>
@@ -105,8 +113,9 @@
                         <div class="contact">
                             <label for="email">Sign up for our Newsletter</label>
                             <br>
-                            <input type="text" name="newsletter" id="news-letter" placeholder="Enter your email address" required/>
-                            <button type="button" id="submit-button">SUBMIT</button>
+                            <input type="text" name="newsletter" id="news-letter" placeholder="Enter your email address"/>
+                            <span class="error-block"></span>
+                            <button type="submit" id="submit-button">SUBMIT</button>
                         </div>
 
                         <div class="social-network">
@@ -123,5 +132,7 @@
             <div class="copy-right"><p>&#169; 2020 Eden In Lagos</p>
             </div>
         </footer>
+        <script src = "../domManipulation/contactUsValidation.js"></script>
+        <script src = "../domManipulation/newsletterValidation.js"></script>
     </body>
 </html>

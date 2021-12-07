@@ -50,52 +50,52 @@
              
             <!--right side-->
                 <div class="form">
-                    <form>
+                    <form id="validateForm">
 
                         <div class="right-side">
 
-                            <label for="fname">First Name:</label>
-                            <br>
+                            <p>First Name:</p>
                             <input type="text" class="text" name="fname" id="fname"/>
+                            <span class="error-block"></span>
                             <br>
 
-                            <label for="lname">Last Name:</label>
-                            <br>
+                            <p>Last Name:</p>
                             <input type="text" class="text" name="lname" id="lname"/>
+                            <span class="error-block"></span>
                             <br>
 
-                            <label for="oname">Other Names:</label>
-                            <br>
+                            <p>Other Names:</p>
                             <input type="text" class="text" name="oname" id="oname"/>
+                            <span class="error-block"></span>
                             <br>
-                                
-                            <label for="phoneno">Phone Number:</label>
-                            <br>
+
+                            <p>Phone Number:</p>
                             <input type="number" class="text" name="phoneno" id="phoneno"/>
+                            <span class="error-block"></span>
                             <br>
-                            
-                            <label for="email">Email Address:</label>
-                            <br>
+
+                            <p>Email Address:</p>
                             <input type="email" class="text" name="email" id="email"/>
+                            <span class="error-block"></span>
                             <br>
 
-                            <label for="password">Password:</label>
-                            <br>
-                            <input type="password" class="text" name="password" id="password"/>
+                            <p>Password:</p>
+                            <input type="password" class="text" name="password" id="password" oncopy="return false" onpaste="return false" oncut="return false"/>
+                            <span class="error-block"></span>
                             <br>
 
-                            <label for="password2">Confirm Password:</label>
-                            <br>
-                            <input type="password2" class="text" name="password2" id="password2"/>
+                            <p>Confirm Password:</p>
+                            <input type="password" class="text" name="password2" id="password2" oncopy="return false" onpaste="return false" oncut="return false"/>
+                            <span class="error-block"></span>
                             <br>
 
                             <div class="terms-and-conditions">
                                 <input type="checkbox" name="terms" id="terms"/>
-                                <label for="terms">I agree to the Terms and Conditions</label>
+                                <p for="terms">I agree to the Terms and Conditions</p>
                             </div>
 
                             <div class="button1">
-                            <button type="button" id="sign-up-button">SIGN UP</button>
+                            <button type="submit" id="sign-up-button">SIGN UP</button>
                             </div>
                     
                         </div>
@@ -122,10 +122,11 @@
                     
                     <div class="contact">
 
-                        <label for="email">Sign up for our Newsletter</label>
+                        <p for="email">Sign up for our Newsletter</p>
                         <br>
                         <input type="text" name="newsletter" id="news-letter" placeholder="Enter your email address" required/>
-                        <button type="button" id="submit-button">SUBMIT</button>
+                        <span class="error-block"></span>
+                        <button type="submit" id="submit-button">SUBMIT</button>
                     
                     </div>
 
@@ -150,6 +151,9 @@
             </div>
 
         </footer>
+
+        <script src="../domManipulation/signUp.js"></script>
+        <script src="../domManipulation/newsletterValidation.js"></script>
 
     </body>
 
