@@ -17,7 +17,6 @@ const ToDoItems = (props) => {
                             type={props.inputType}
                             onClick={props.handleClick}
                             value={item.key}
-                            // handleFilter={props.handleFilter}
                         />
                         <label htmlFor={item.key}></label>
                         </li>

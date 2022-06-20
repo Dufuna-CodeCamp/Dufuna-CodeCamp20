@@ -25,7 +25,6 @@ const ToDoItem = (props) => {
             </label>
             
         </li>
-        //  console.log(props);
     );
 }
 

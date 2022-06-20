@@ -5,8 +5,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* font-size: 15px; */
-  /* font-weight: bold; */
   line-height: 1.5;
   height: 100%;
   background: linear-gradient(180deg, #37393b 40%, white 0);
@@ -16,10 +14,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
-/* *::before, *::after {
-  box-sizing: border-box;
-} */
 
 .container {
  max-width: 100%;
@@ -143,8 +137,6 @@ input[type="checkbox"]:checked::before {
 
 .footer {
   padding: 7px 8px;
-  /* text-align: center; */
-  /* font-size: 15px; */
 }
 
 #list-heading {
@@ -173,7 +165,6 @@ input[type="checkbox"]:checked::before {
 .footer-btn {
   padding-left: 4px;
   background-color: white;
-  /* padding: 0%; */
 }
 
 #footer-button li {
@@ -224,10 +215,6 @@ input[type="checkbox"]:checked::before {
   .form-input input {
     width: 60%;
   }
-
-  /* #footer-completed {
-    top: -55px;
-  } */
 }
 
 @media screen and (max-width: 330px) {
