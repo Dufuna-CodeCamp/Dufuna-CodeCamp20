@@ -77,7 +77,6 @@ input[type="checkbox"] {
   float: right;
   appearance: none;
   outline: 0;
-  cursor: pointer;
 }
 
 input[type="checkbox"]::before {
@@ -144,6 +143,7 @@ input[type="checkbox"]:checked::before {
   top: -31px;
   float: left;
   padding-left: 39px;
+  color: rgb(85, 80, 80);
 }
 
 #footer-completed {
@@ -169,10 +169,6 @@ input[type="checkbox"]:checked::before {
 
 #footer-button li {
   list-style-type: none;
-}
-
-#list-heading {
-  color: rgb(85, 80, 80);
 }
 
 .all,
@@ -235,7 +231,7 @@ input[type="checkbox"]:checked::before {
   }
 
   .header {
-    padding: 10px 0 0 0;
+    padding: 10px 0 0;
     font-size: 30px;
   }
 
