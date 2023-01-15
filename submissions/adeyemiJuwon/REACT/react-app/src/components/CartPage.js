@@ -31,7 +31,7 @@ function CartPage() {
         <h4>Cart</h4>
       </div>
 
-      <h2>Cart</h2>
+      <h1>Cart</h1>
       <div className="table_cart">
         <p>{cartItems?.length} Items</p>
         <p>Remove all</p>
