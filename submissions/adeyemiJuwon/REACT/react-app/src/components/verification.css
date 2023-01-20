@@ -1,0 +1,125 @@
+.verification_header > h1 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+.verification_header > h1 > span > p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ad4c4c;
+  margin-top: -5px;
+}
+.verification_sub_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.verification_sub_sub {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.verification_sub_sub > p {
+  color: #696969;
+  margin-top: -20px;
+}
+.head_link_location {
+  color: #ad4c4c !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+.verification_form > div > label,
+.expired > div > label {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.verification_form > div {
+  margin-top: 20px;
+}
+.verification_form > div > input,
+.verification_form > div > select {
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding-left: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #696969;
+  font-size: 20px;
+  line-height: 30px;
+}
+input:focus {
+  border: none;
+}
+.verification_form > div > select {
+  width: 102%;
+  height: 45px;
+  justify-content: space-between;
+}
+.verification_form > div > select > option :hover {
+  background-color: red;
+}
+.verification_form > select:focus {
+  border: none;
+}
+.expired {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.expired > div > input {
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding-left: 16px;
+  color: #696969;
+  font-size: 20px;
+  line-height: 30px;
+}
+.expired > div {
+  display: flex;
+  flex-direction: column;
+}
+.expiredDate {
+  width: 90%;
+}
+.cvv > input {
+  width: 100%;
+}
+.btn {
+  text-align: center;
+}
+.submit {
+  background: #ad4c4c;
+  border: none;
+  border-radius: 5px;
+  margin: 40px auto;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  width: 70%;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+.submit:hover {
+  background-color: #ffffff;
+  color: #ad4c4c;
+  border: 1px solid #ad4c4c;
+}
+.error {
+  color: #ad4c4c;
+}
+@media screen and (max-width: 900px) {
+  .head_link_location {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
