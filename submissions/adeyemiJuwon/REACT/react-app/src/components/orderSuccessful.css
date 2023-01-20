@@ -7,13 +7,12 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
+  text-align: center;
 }
 .success > h1 {
   font-size: 25px;
   line-height: 38px;
-  text-align: center;
   color: #5ea304;
-  text-align: center;
   margin-top: 50px;
 }
 .success > p {
@@ -21,5 +20,4 @@
   font-size: 20px;
   line-height: 30px;
   color: #696969;
-  text-align: center;
 }
