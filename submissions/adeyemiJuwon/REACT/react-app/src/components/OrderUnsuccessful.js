@@ -1,5 +1,5 @@
 import React from 'react';
-import Unsuccess from './images/unsuccess.jpg';
+import Unsuccess from './images/Illustration_failed.svg';
 import './orderUnsuccessful.css';
 function OrderUnsuccessful() {
   return (

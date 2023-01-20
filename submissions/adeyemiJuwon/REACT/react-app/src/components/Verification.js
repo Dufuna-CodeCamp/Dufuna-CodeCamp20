@@ -4,6 +4,7 @@ import { BiCurrentLocation } from 'react-icons/bi';
 import './verification.css';
 import validation from './validation';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function Verification() {
   const [values, setValues] = useState({
@@ -40,6 +41,7 @@ function Verification() {
   }, [values]);
   return (
     <div className="verification">
+      <Navbar />
       <div className="head_link">
         <p>Home</p> <MdOutlineNavigateNext className="head_link_next" />{' '}
         <p>cart</p> <MdOutlineNavigateNext className="head_link_next" />{' '}

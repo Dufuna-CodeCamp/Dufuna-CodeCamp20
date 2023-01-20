@@ -1,18 +1,14 @@
-import FastFood from './images/fastfood.jpg';
-import Cocktail from './images/cocktail.jpg';
-import Cutlery from './images/cutlery.jpg';
-import Vegetable from './images/vegetable.jpg';
-import Where from './images/where.jpg';
-import Want from './images/want.jpg';
-import Run from './images/run.png';
-import Kfc1 from './images/kfc1.jpg';
-import Kfc2 from './images/kfc2.jpg';
-import Kfc3 from './images/kfc3.jpg';
-import Kfc4 from './images/kfc4.jpg';
-import Crp1 from './images/crp1.jpg';
-import Crp2 from './images/crp2.jpg';
-import Crp3 from './images/crp3.jpg';
-import Crp4 from './images/crp4.jpg';
+import FastFood from './images/fast-food.svg';
+import Cocktail from './images/Drinks_Cocktails.svg';
+import Cutlery from './images/resturant.svg';
+import Vegetable from './images/Vegetables_Drinks.svg';
+import Where from './images/Illustration_1.svg';
+import Want from './images/illustration_2.svg';
+import Run from './images/illustration_3.svg';
+import Kfc1 from './images/image4.svg';
+import Crp1 from './images/image1.svg';
+import Crp2 from './images/image2.svg';
+import Crp3 from './images/image3.svg';
 
 export const pickInterest = [
   {
@@ -72,19 +68,19 @@ export const kfc = [
   },
   {
     id: 2,
-    img: Kfc2,
+    img: Kfc1,
     name: 'Zinger Burger',
     price: 3000,
   },
   {
     id: 3,
-    img: Kfc3,
+    img: Kfc1,
     name: 'Chicken strips',
     price: 2500,
   },
   {
     id: 4,
-    img: Kfc4,
+    img: Kfc1,
     name: 'Yamilicious',
     price: 4500,
   },
@@ -110,7 +106,7 @@ export const crp = [
   },
   {
     id: 8,
-    img: Crp4,
+    img: Crp3,
     name: 'Crunchy wings',
     price: 1750,
   },
