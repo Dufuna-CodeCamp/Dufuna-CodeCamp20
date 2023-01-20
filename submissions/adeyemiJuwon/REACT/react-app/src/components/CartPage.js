@@ -8,9 +8,11 @@ import {
   increaseCartQty,
 } from '../features/cart/cartSlice';
 import { MdOutlineNavigateNext } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 function CartPage() {
   const dispatch = useDispatch();
+  let navigate = useNavigate();
   const cart = useSelector((state) => state.cart);
   const { cartItems, cartTotalAmount, deliveryFee } = cart;
 
@@ -23,7 +25,13 @@ function CartPage() {
   useEffect(() => {
     dispatch(getTotal());
   }, [cart, dispatch]);
-
+  const handleCheckout = () => {
+    if (cartTotalAmount > 0) {
+      navigate('/cart/verification');
+    } else {
+      navigate('/vendor');
+    }
+  };
   return (
     <div className="cart">
       <div className="head_link">
@@ -91,7 +99,9 @@ function CartPage() {
           </p>
         </div>
       </div>
-      <button className="checkout">Checkout</button>
+      <button className="checkout" onClick={handleCheckout}>
+        Checkout
+      </button>
     </div>
   );
 }
