@@ -1,0 +1,25 @@
+.unsuccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+}
+.unsuccess > h1 {
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  color: #ff644a;
+  text-align: center;
+  margin-top: 50px;
+}
+.unsuccess > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
+  text-align: center;
+}

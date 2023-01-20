@@ -6,6 +6,8 @@ import Vendor from './components/Vendor';
 import CartPage from './components/CartPage';
 import Footer from './components/Footer';
 import Verification from './components/Verification';
+import OrderSuccessful from './components/OrderSuccessful';
+import OrderUnsuccessful from './components/OrderUnsuccessful';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/vendor" element={<Vendor />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/cart/verification" element={<Verification />} />
+          <Route path="/success" element={<OrderSuccessful />} />
+          <Route path="/unsuccess" element={<OrderUnsuccessful />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -3,6 +3,7 @@ import { MdOutlineNavigateNext } from 'react-icons/md';
 import { BiCurrentLocation } from 'react-icons/bi';
 import './verification.css';
 import validation from './validation';
+import { useNavigate } from 'react-router-dom';
 
 function Verification() {
   const [values, setValues] = useState({
@@ -13,9 +14,9 @@ function Verification() {
     cardExpiredDate: '',
     cardCvv: '',
   });
+  const navigate = useNavigate();
 
   const [errors, setErrors] = useState({});
-  // const [submit, setSubmit] = useState(false);
 
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: [e.target.value] });
@@ -25,6 +26,11 @@ function Verification() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validation(values));
+    if (values.cardNumber) {
+      navigate('/success');
+    } else {
+      navigate('/unsuccess');
+    }
 
     console.log(errors);
     console.log(values);
