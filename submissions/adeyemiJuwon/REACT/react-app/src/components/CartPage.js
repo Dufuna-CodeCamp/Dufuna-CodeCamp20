@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import Run from './images/run.png';
 import './cartPage.css';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import {
   decreaseCartQty,
   getTotal,
   increaseCartQty,
 } from '../features/cart/cartSlice';
-import { MdOutlineNavigateNext } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function CartPage() {
   const dispatch = useDispatch();
@@ -18,6 +18,7 @@ function CartPage() {
 
   const handleIncreaseQuantity = (CartItem) => {
     dispatch(increaseCartQty(CartItem));
+    console.log(CartItem);
   };
   const handleDecreaseQuantity = (CartItem) => {
     dispatch(decreaseCartQty(CartItem));
@@ -25,20 +26,18 @@ function CartPage() {
   useEffect(() => {
     dispatch(getTotal());
   }, [cart, dispatch]);
+
   const handleCheckout = () => {
-    if (cartTotalAmount > 0) {
+    if (cartTotalAmount) {
       navigate('/cart/verification');
     } else {
       navigate('/vendor');
     }
   };
+
   return (
     <div className="cart">
-      <div className="head_link">
-        <p>Home</p> <MdOutlineNavigateNext className="head_link_next" />{' '}
-        <h4>Cart</h4>
-      </div>
-
+      <Navbar />
       <h1>Cart</h1>
       <div className="table_cart">
         <p>{cartItems?.length} Items</p>

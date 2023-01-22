@@ -4,24 +4,29 @@ import Crp from './images/crp.png';
 import './vendor.css';
 import KfcFood from './KfcFood';
 import ChickenFood from './ChickenFood';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../features/cart/cartSlice';
 import { MdOutlineNavigateNext } from 'react-icons/md';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Vendor() {
   const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
 
+  const { carts } = cart;
   const handleAddToCart = (items) => {
     dispatch(addToCart(items));
+    console.log(carts);
   };
 
   return (
     <div className="vendor">
+      <Navbar />
       <div className="head_link">
         <p>Home</p> <MdOutlineNavigateNext className="head_link_next" />{' '}
         <h4>Vendors</h4>
       </div>
-
       <h1>All Vendors</h1>
       <div className="kfc">
         <div className="kfc_logo">
@@ -52,6 +57,7 @@ function Vendor() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
